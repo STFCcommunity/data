@@ -1,0 +1,1228 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Ship schema",
+    "description": "A schema for ships used in STFC.",
+    "default": {},
+    "examples": [
+        {
+            "ship_name": "USS Saladin",
+            "rarity": "uncommon",
+            "grade": 3,
+            "ship_class": "interceptor",
+            "faction": "federation",
+            "img_url": "url",
+            "ship_ability": {
+                "title": "Protector",
+                "description": "When the Station..."
+            },
+            "blueprints": {
+                "quantity": 100,
+                "cost": 200
+            },
+            "requirements": [
+                {
+                    "name": "shipyard",
+                    "level": 28
+                }
+            ],
+            "scrap_info": {
+                "scrapable": true,
+                "required_scrapyard_level": 42
+            },
+            "tiers": [
+                {
+                    "tier": 1,
+                    "build_time": 1468800,
+                    "repair_time": 30000,
+                    "components": [
+                        {
+                            "id": 1,
+                            "name": "Phaser Bank",
+                            "img_url": "url",
+                            "build_cost": {
+                                "resources": [
+                                    {
+                                        "type": "tritanium",
+                                        "value": 1300000
+                                    }
+                                ],
+                                "materials": [
+                                    {
+                                        "type": "gas",
+                                        "rarity": "common",
+                                        "grade": 3,
+                                        "value": 275
+                                    }
+                                ]
+                            },
+                            "repair_cost": [
+                                {
+                                    "type": "tritanium",
+                                    "value": 46437
+                                }
+                            ],
+                            "additional_info": [
+                                {
+                                    "name": "min damage",
+                                    "value": 11019
+                                }
+                            ]
+                        }
+                    ],
+                    "levels": [
+                        {
+                            "level": 2,
+                            "ship_xp": 800,
+                            "ability_bonus": 16.0,
+                            "scrap_details": {
+                                "scrap_time": 895620,
+                                "rewards": [
+                                    {
+                                        "type": "gas",
+                                        "rarity": "common",
+                                        "grade": 3,
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required": [
+        "ship_name",
+        "rarity",
+        "grade",
+        "ship_class",
+        "faction",
+        "img_url",
+        "ship_ability",
+        "blueprints",
+        "requirements",
+        "scrap_info",
+        "tiers",
+    ],
+    "properties": {
+        "ship_name": {
+            "$id": "#/properties/ship_name",
+            "type": "string",
+            "title": "The ship_name schema",
+            "description": "Name of the ship.",
+            "default": "",
+            "examples": [
+                "USS Saladin"
+            ]
+        },
+        "rarity": {
+            "$id": "#/properties/rarity",
+            "type": "string",
+            "title": "The rarity schema",
+            "description": "Rarity of the ship",
+            "default": "",
+            "examples": [
+                "common",
+                "uncommon",
+                "rare",
+                "epic"
+            ]
+        },
+        "grade": {
+            "$id": "#/properties/grade",
+            "type": "integer",
+            "title": "The grade schema",
+            "description": "The grade of the ship with stars",
+            "default": 0,
+            "examples": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        "ship_class": {
+            "$id": "#/properties/ship_class",
+            "type": "string",
+            "title": "The ship_class schema",
+            "description": "The class instance of the ship",
+            "default": "",
+            "examples": [
+                "interceptor",
+                "explorer",
+                "battleship",
+                "survey"
+            ]
+        },
+        "faction": {
+            "$id": "#/properties/faction",
+            "type": "string",
+            "title": "The faction schema",
+            "description": "The faction where the ship belongs to.",
+            "default": "",
+            "examples": [
+                "neutral",
+                "federation",
+                "romulan",
+                "klingon",
+                "augment",
+                "rogue"
+            ]
+        },
+        "img_url": {
+            "$id": "#/properties/img_url",
+            "type": "string",
+            "title": "The img_url schema",
+            "description": "The URL of the ships image",
+            "default": "",
+            "examples": [
+                "url"
+            ]
+        },
+        "ship_ability": {
+            "$id": "#/properties/ship_ability",
+            "type": "object",
+            "title": "The ship_ability schema",
+            "description": "Instance for the ability of the ship.",
+            "default": {},
+            "examples": [
+                {
+                    "title": "Protector",
+                    "description": "When the Station..."
+                }
+            ],
+            "required": [
+                "title",
+                "description"
+            ],
+            "properties": {
+                "title": {
+                    "$id": "#/properties/ship_ability/properties/title",
+                    "type": "string",
+                    "title": "The title schema",
+                    "description": "Title of the ability.",
+                    "default": "",
+                    "examples": [
+                        "Protector"
+                    ]
+                },
+                "description": {
+                    "$id": "#/properties/ship_ability/properties/description",
+                    "type": "string",
+                    "title": "The description schema",
+                    "description": "Full explanation of the ability.",
+                    "default": "",
+                    "examples": [
+                        "When the Station..."
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "blueprints": {
+            "$id": "#/properties/blueprints",
+            "type": "object",
+            "title": "The blueprints schema",
+            "description": "Information about the blueprints for the ship.",
+            "default": {},
+            "examples": [
+                {
+                    "quantity": 100,
+                    "cost": 200
+                }
+            ],
+            "required": [
+                "quantity",
+                "cost"
+            ],
+            "properties": {
+                "quantity": {
+                    "$id": "#/properties/blueprints/properties/quantity",
+                    "type": "integer",
+                    "title": "The quantity schema",
+                    "description": "Number of blueprints needed to build the ship.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "cost": {
+                    "$id": "#/properties/blueprints/properties/cost",
+                    "type": "integer",
+                    "title": "The cost schema",
+                    "description": "Cost of a single blueprint for the ship.",
+                    "default": 0,
+                    "examples": [
+                        200
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "requirements": {
+            "$id": "#/properties/requirements",
+            "type": "array",
+            "title": "The requirements schema",
+            "description": "List of all requirements needed before the ship can be build.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "name": "shipyard",
+                        "level": 28
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/requirements/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/requirements/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "Instance of a requirement.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "name": "shipyard",
+                                "level": 28
+                            }
+                        ],
+                        "required": [
+                            "name",
+                            "level"
+                        ],
+                        "properties": {
+                            "name": {
+                                "$id": "#/properties/requirements/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "The name of the required item.",
+                                "default": "",
+                                "examples": [
+                                    "shipyard"
+                                ]
+                            },
+                            "level": {
+                                "$id": "#/properties/requirements/items/anyOf/0/properties/level",
+                                "type": "integer",
+                                "title": "The level schema",
+                                "description": "The level of the required item needed.",
+                                "default": 0,
+                                "examples": [
+                                    28
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "scrap_info": {
+            "$id": "#/properties/scrap_info",
+            "default": {},
+            "description": "Information about scrapping the ship.",
+            "examples": [
+                {
+                    "scrapable": true,
+                    "required_scrapyard_level": 42
+                }
+            ],
+            "required": [
+                "scrapable"
+            ],
+            "title": "The scrap_info schema",
+            "type": "object",
+            "properties": {
+                "scrapable": {
+                    "$id": "#/properties/scrap_info/properties/scrapable",
+                    "type": "boolean",
+                    "title": "The scrapable schema",
+                    "description": "Boolean wether the ship can be scrapped or not.",
+                    "default": true,
+                    "examples": [
+                        true
+                    ]
+                },
+                "required_scrapyard_level": {
+                    "$id": "#/properties/scrap_info/properties/required_scrapyard_level",
+                    "type": "integer",
+                    "title": "The required_scrapyard_level schema",
+                    "description": "The scrapyard level needed to scrap the ship.",
+                    "default": 0,
+                    "examples": [
+                        42
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "tiers": {
+            "$id": "#/properties/tiers",
+            "type": "array",
+            "title": "The tiers schema",
+            "description": "List of all ship tiers.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "tier": 1,
+                        "build_time": 1468800,
+                        "repair_time": 30000,
+                        "components": [
+                            {
+                                "id": 1,
+                                "name": "Phaser Bank",
+                                "img_url": "url",
+                                "build_cost": {
+                                    "resources": [
+                                        {
+                                            "type": "tritanium",
+                                            "value": 1300000
+                                        }
+                                    ],
+                                    "materials": [
+                                        {
+                                            "type": "gas",
+                                            "rarity": "common",
+                                            "grade": 3,
+                                            "value": 275
+                                        }
+                                    ]
+                                },
+                                "repair_cost": [
+                                    {
+                                        "type": "tritanium",
+                                        "value": 46437
+                                    }
+                                ],
+                                "additional_info": [
+                                    {
+                                        "name": "min damage",
+                                        "value": 11019
+                                    }
+                                ]
+                            }
+                        ],
+                        "levels": [
+                            {
+                                "level": 2,
+                                "ship_xp": 800,
+                                "ability_bonus": 16.0,
+                                "scrap_details": {
+                                    "scrap_time": 895620,
+                                    "rewards": [
+                                        {
+                                            "type": "gas",
+                                            "rarity": "common",
+                                            "grade": 3,
+                                            "value": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/tiers/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/tiers/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "Tier schema",
+                        "default": {},
+                        "examples": [
+                            {
+                                "tier": 1,
+                                "build_time": 1468800,
+                                "repair_time": 30000,
+                                "components": [
+                                    {
+                                        "id": 1,
+                                        "name": "Phaser Bank",
+                                        "img_url": "url",
+                                        "build_cost": {
+                                            "resources": [
+                                                {
+                                                    "type": "tritanium",
+                                                    "value": 1300000
+                                                }
+                                            ],
+                                            "materials": [
+                                                {
+                                                    "type": "gas",
+                                                    "rarity": "common",
+                                                    "grade": 3,
+                                                    "value": 275
+                                                }
+                                            ]
+                                        },
+                                        "repair_cost": [
+                                            {
+                                                "type": "tritanium",
+                                                "value": 46437
+                                            }
+                                        ],
+                                        "additional_info": [
+                                            {
+                                                "name": "min damage",
+                                                "value": 11019
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "levels": [
+                                    {
+                                        "level": 2,
+                                        "ship_xp": 800,
+                                        "ability_bonus": 16.0,
+                                        "scrap_details": {
+                                            "scrap_time": 895620,
+                                            "rewards": [
+                                                {
+                                                    "type": "gas",
+                                                    "rarity": "common",
+                                                    "grade": 3,
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "tier",
+                            "build_time",
+                            "repair_time",
+                            "components",
+                            "levels"
+                        ],
+                        "properties": {
+                            "tier": {
+                                "$id": "#/properties/tiers/items/anyOf/0/properties/tier",
+                                "type": "integer",
+                                "title": "The tier schema",
+                                "description": "The current tier number.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "build_time": {
+                                "$id": "#/properties/tiers/items/anyOf/0/properties/build_time",
+                                "type": "integer",
+                                "title": "The build_time schema",
+                                "description": "The total build time for the current tier (in seconds)",
+                                "default": 0,
+                                "examples": [
+                                    1468800
+                                ]
+                            },
+                            "repair_time": {
+                                "$id": "#/properties/tiers/items/anyOf/0/properties/repair_time",
+                                "type": "integer",
+                                "title": "The repair_time schema",
+                                "description": "The total repair time for the current tier (in seconds)",
+                                "default": 0,
+                                "examples": [
+                                    30000
+                                ]
+                            },
+                            "components": {
+                                "$id": "#/properties/tiers/items/anyOf/0/properties/components",
+                                "type": "array",
+                                "title": "The components schema",
+                                "description": "List of all components of the current tier.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "id": 1,
+                                            "name": "Phaser Bank",
+                                            "img_url": "url",
+                                            "build_cost": {
+                                                "resources": [
+                                                    {
+                                                        "type": "tritanium",
+                                                        "value": 1300000
+                                                    }
+                                                ],
+                                                "materials": [
+                                                    {
+                                                        "type": "gas",
+                                                        "rarity": "common",
+                                                        "grade": 3,
+                                                        "value": 275
+                                                    }
+                                                ]
+                                            },
+                                            "repair_cost": [
+                                                {
+                                                    "type": "tritanium",
+                                                    "value": 46437
+                                                }
+                                            ],
+                                            "additional_info": [
+                                                {
+                                                    "name": "min damage",
+                                                    "value": 11019
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "Single component schema",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "id": 1,
+                                                    "name": "Phaser Bank",
+                                                    "img_url": "url",
+                                                    "build_cost": {
+                                                        "resources": [
+                                                            {
+                                                                "type": "tritanium",
+                                                                "value": 1300000
+                                                            }
+                                                        ],
+                                                        "materials": [
+                                                            {
+                                                                "type": "gas",
+                                                                "rarity": "common",
+                                                                "grade": 3,
+                                                                "value": 275
+                                                            }
+                                                        ]
+                                                    },
+                                                    "repair_cost": [
+                                                        {
+                                                            "type": "tritanium",
+                                                            "value": 46437
+                                                        }
+                                                    ],
+                                                    "additional_info": [
+                                                        {
+                                                            "name": "min damage",
+                                                            "value": 11019
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "required": [
+                                                "id",
+                                                "name",
+                                                "img_url",
+                                                "build_cost",
+                                                "repair_cost",
+                                                "additional_info"
+                                            ],
+                                            "properties": {
+                                                "id": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/id",
+                                                    "type": "integer",
+                                                    "title": "The id schema",
+                                                    "description": "Id of the component.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        1
+                                                    ]
+                                                },
+                                                "name": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/name",
+                                                    "type": "string",
+                                                    "title": "The name schema",
+                                                    "description": "Name of the component.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "Phaser Bank"
+                                                    ]
+                                                },
+                                                "img_url": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/img_url",
+                                                    "type": "string",
+                                                    "title": "The img_url schema",
+                                                    "description": "An URL of the component image.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "url"
+                                                    ]
+                                                },
+                                                "build_cost": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost",
+                                                    "type": "object",
+                                                    "title": "The build_cost schema",
+                                                    "description": "All cost needed to upgrade the component",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "resources": [
+                                                                {
+                                                                    "type": "tritanium",
+                                                                    "value": 1300000
+                                                                }
+                                                            ],
+                                                            "materials": [
+                                                                {
+                                                                    "type": "gas",
+                                                                    "rarity": "common",
+                                                                    "grade": 3,
+                                                                    "value": 275
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "resources",
+                                                        "materials"
+                                                    ],
+                                                    "properties": {
+                                                        "resources": {
+                                                            "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/resources",
+                                                            "type": "array",
+                                                            "title": "The resources schema",
+                                                            "description": "All resources needed to upgrade the component.",
+                                                            "default": [],
+                                                            "examples": [
+                                                                [
+                                                                    {
+                                                                        "type": "tritanium",
+                                                                        "value": 1300000
+                                                                    },
+                                                                    {
+                                                                        "type": "dilithium",
+                                                                        "value": 100
+                                                                    }
+                                                                ]
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "items": {
+                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/resources/items",
+                                                                "anyOf": [
+                                                                    {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/resources/items/anyOf/0",
+                                                                        "type": "object",
+                                                                        "title": "The first anyOf schema",
+                                                                        "description": "Single resource to upgrade the component.",
+                                                                        "default": {},
+                                                                        "examples": [
+                                                                            {
+                                                                                "type": "tritanium",
+                                                                                "value": 1300000
+                                                                            }
+                                                                        ],
+                                                                        "required": [
+                                                                            "type",
+                                                                            "value"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/resources/items/anyOf/0/properties/type",
+                                                                                "type": "string",
+                                                                                "title": "The type schema",
+                                                                                "description": "Type of resource needed.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "tritanium",
+                                                                                    "dilithium"
+                                                                                ]
+                                                                            },
+                                                                            "value": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/resources/items/anyOf/0/properties/value",
+                                                                                "type": "integer",
+                                                                                "title": "The value schema",
+                                                                                "description": "The amount needed of the current resource.",
+                                                                                "default": 0,
+                                                                                "examples": [
+                                                                                    1300000
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "additionalProperties": true
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "materials": {
+                                                            "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials",
+                                                            "type": "array",
+                                                            "title": "The materials schema",
+                                                            "description": "All materials and others needed to upgrade the component.",
+                                                            "default": [],
+                                                            "examples": [
+                                                                [
+                                                                    {
+                                                                        "type": "gas",
+                                                                        "rarity": "common",
+                                                                        "grade": 3,
+                                                                        "value": 275
+                                                                    },
+                                                                    {
+                                                                        "type": "ship xp",
+                                                                        "value": 200
+                                                                    }
+                                                                ]
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "items": {
+                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items",
+                                                                "anyOf": [
+                                                                    {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0",
+                                                                        "default": {},
+                                                                        "description": "Single material or other to upgrade the component.",
+                                                                        "examples": [
+                                                                            {
+                                                                                "type": "gas",
+                                                                                "rarity": "common",
+                                                                                "grade": 3,
+                                                                                "value": 275
+                                                                            },
+                                                                            {
+                                                                                "type": "ship xp",
+                                                                                "value": 200
+                                                                            }
+                                                                        ],
+                                                                        "required": [
+                                                                            "type",
+                                                                            "value"
+                                                                        ],
+                                                                        "title": "The first anyOf schema",
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/type",
+                                                                                "type": "string",
+                                                                                "title": "The type schema",
+                                                                                "description": "The type of material or other needed.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "gas",
+                                                                                    "ship xp"
+                                                                                ]
+                                                                            },
+                                                                            "rarity": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/rarity",
+                                                                                "type": "string",
+                                                                                "title": "The rarity schema",
+                                                                                "description": "(Optional) The rarity of the material.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "common",
+                                                                                    "uncommon",
+                                                                                    "rare",
+                                                                                    "epic"
+                                                                                ]
+                                                                            },
+                                                                            "grade": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/grade",
+                                                                                "type": "integer",
+                                                                                "title": "The grade schema",
+                                                                                "description": "(Optional) The grade in stars of the material.",
+                                                                                "default": 0,
+                                                                                "examples": [
+                                                                                    1,
+                                                                                    2,
+                                                                                    3,
+                                                                                    4
+                                                                                ]
+                                                                            },
+                                                                            "value": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/value",
+                                                                                "type": "integer",
+                                                                                "title": "The value schema",
+                                                                                "description": "The value needed of the current material or other.",
+                                                                                "default": 0,
+                                                                                "examples": [
+                                                                                    275
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "additionalProperties": true
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                },
+                                                "repair_cost": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/repair_cost",
+                                                    "type": "array",
+                                                    "title": "The repair_cost schema",
+                                                    "description": "List of all costs involved in repairing the ship.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            {
+                                                                "type": "tritanium",
+                                                                "value": 46437
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/repair_cost/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/repair_cost/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The first anyOf schema",
+                                                                "description": "Single cost instance.",
+                                                                "default": {},
+                                                                "examples": [
+                                                                    {
+                                                                        "type": "tritanium",
+                                                                        "value": 46437
+                                                                    }
+                                                                ],
+                                                                "required": [
+                                                                    "type",
+                                                                    "value"
+                                                                ],
+                                                                "properties": {
+                                                                    "type": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/repair_cost/items/anyOf/0/properties/type",
+                                                                        "type": "string",
+                                                                        "title": "The type schema",
+                                                                        "description": "Type of resource or other needed to repair the ship.",
+                                                                        "default": "",
+                                                                        "examples": [
+                                                                            "tritanium",
+                                                                            "dilithium",
+                                                                            "fortified baakonite"
+                                                                        ]
+                                                                    },
+                                                                    "value": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/repair_cost/items/anyOf/0/properties/value",
+                                                                        "type": "integer",
+                                                                        "title": "The value schema",
+                                                                        "description": "The value needed of the current resource or other.",
+                                                                        "default": 0,
+                                                                        "examples": [
+                                                                            46437
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "additional_info": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info",
+                                                    "type": "array",
+                                                    "title": "The additional_info schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            {
+                                                                "name": "min damage",
+                                                                "value": 11019
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The first anyOf schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": {},
+                                                                "examples": [
+                                                                    {
+                                                                        "name": "min damage",
+                                                                        "value": 11019
+                                                                    }
+                                                                ],
+                                                                "required": [
+                                                                    "name",
+                                                                    "value"
+                                                                ],
+                                                                "properties": {
+                                                                    "name": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/items/anyOf/0/properties/name",
+                                                                        "type": "string",
+                                                                        "title": "The name schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": "",
+                                                                        "examples": [
+                                                                            "min damage"
+                                                                        ]
+                                                                    },
+                                                                    "value": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/items/anyOf/0/properties/value",
+                                                                        "type": "integer",
+                                                                        "title": "The value schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": 0,
+                                                                        "examples": [
+                                                                            11019
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "levels": {
+                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels",
+                                "type": "array",
+                                "title": "The levels schema",
+                                "description": "All XP levels of the current tier.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "level": 2,
+                                            "ship_xp": 800,
+                                            "ability_bonus": 16.0,
+                                            "scrap_details": {
+                                                "scrap_time": 895620,
+                                                "rewards": [
+                                                    {
+                                                        "type": "gas",
+                                                        "rarity": "common",
+                                                        "grade": 3,
+                                                        "value": 0
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0",
+                                            "default": {},
+                                            "description": "Single level of the current tier.",
+                                            "examples": [
+                                                {
+                                                    "level": 2,
+                                                    "ship_xp": 800,
+                                                    "ability_bonus": 16.0,
+                                                    "scrap_details": {
+                                                        "scrap_time": 895620,
+                                                        "rewards": [
+                                                            {
+                                                                "type": "gas",
+                                                                "rarity": "common",
+                                                                "grade": 3,
+                                                                "value": 0
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "required": [
+                                                "level",
+                                                "ship_xp",
+                                                "ability_bonus"
+                                            ],
+                                            "title": "The first anyOf schema",
+                                            "type": "object",
+                                            "properties": {
+                                                "level": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/level",
+                                                    "type": "integer",
+                                                    "title": "The level schema",
+                                                    "description": "Level number of this instance.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        1,
+                                                        2
+                                                    ]
+                                                },
+                                                "ship_xp": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/ship_xp",
+                                                    "type": "integer",
+                                                    "title": "The ship_xp schema",
+                                                    "description": "Ship XP needed to upgrade the ship to this level.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        800
+                                                    ]
+                                                },
+                                                "ability_bonus": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/ability_bonus",
+                                                    "type": "number",
+                                                    "title": "The ability_bonus schema",
+                                                    "description": "Current ability bonus with this level.",
+                                                    "default": 0.0,
+                                                    "examples": [
+                                                        16.0
+                                                    ]
+                                                },
+                                                "scrap_details": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details",
+                                                    "type": "object",
+                                                    "title": "The scrap_details schema",
+                                                    "description": "Scrapping details for when the ship is scrapped at this level.",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "scrap_time": 895620,
+                                                            "rewards": [
+                                                                {
+                                                                    "type": "gas",
+                                                                    "rarity": "common",
+                                                                    "grade": 3,
+                                                                    "value": 0
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "scrap_time",
+                                                        "rewards"
+                                                    ],
+                                                    "properties": {
+                                                        "scrap_time": {
+                                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/scrap_time",
+                                                            "type": "integer",
+                                                            "title": "The scrap_time schema",
+                                                            "description": "The total time needed to scrap the ship (in seconds)",
+                                                            "default": 0,
+                                                            "examples": [
+                                                                895620
+                                                            ]
+                                                        },
+                                                        "rewards": {
+                                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards",
+                                                            "type": "array",
+                                                            "title": "The rewards schema",
+                                                            "description": "List of all rewards when scrapping the ship at this level.",
+                                                            "default": [],
+                                                            "examples": [
+                                                                [
+                                                                    {
+                                                                        "type": "gas",
+                                                                        "rarity": "common",
+                                                                        "grade": 3,
+                                                                        "value": 0
+                                                                    }
+                                                                ]
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "items": {
+                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items",
+                                                                "anyOf": [
+                                                                    {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0",
+                                                                        "default": {},
+                                                                        "description": "Single reward instance.",
+                                                                        "examples": [
+                                                                            {
+                                                                                "type": "gas",
+                                                                                "rarity": "common",
+                                                                                "grade": 3,
+                                                                                "value": 0
+                                                                            }
+                                                                        ],
+                                                                        "required": [
+                                                                            "type",
+                                                                            "value"
+                                                                        ],
+                                                                        "title": "The first anyOf schema",
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/type",
+                                                                                "type": "string",
+                                                                                "title": "The type schema",
+                                                                                "description": "Type of resource, material or other of the reward.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "gas"
+                                                                                ]
+                                                                            },
+                                                                            "rarity": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/rarity",
+                                                                                "type": "string",
+                                                                                "title": "The rarity schema",
+                                                                                "description": "(Optional) Rarity of the reward.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "common",
+                                                                                    "uncommon",
+                                                                                    "rare",
+                                                                                    "epic"
+                                                                                ]
+                                                                            },
+                                                                            "grade": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/grade",
+                                                                                "type": "integer",
+                                                                                "title": "The grade schema",
+                                                                                "description": "(Optional) Grade of the reward.",
+                                                                                "default": 0,
+                                                                                "examples": [
+                                                                                    1,
+                                                                                    2,
+                                                                                    3,
+                                                                                    4
+                                                                                ]
+                                                                            },
+                                                                            "value": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/value",
+                                                                                "type": "integer",
+                                                                                "title": "The value schema",
+                                                                                "description": "The amount of this reward that will be given when scrapped.",
+                                                                                "default": 0,
+                                                                                "examples": [
+                                                                                    0
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "additionalProperties": true
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
