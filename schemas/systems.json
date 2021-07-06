@@ -9,10 +9,11 @@
             "datapoints": [
                 {
                     "scopely_id": 1,
+                    "name": "P'Jem",
                     "warp": 16,
                     "token_needed": false,
                     "token_info": {
-                        "token_type": "/token/...",
+                        "token_type": "/token/1",
                         "token_amount": 1
                     },
                     "system_type": "hub",
@@ -28,7 +29,7 @@
                     },
                     "hostile_details": [
                         {
-                            "hostile_type": "/hostile/...",
+                            "hostile_type": "/hostile/1",
                             "hostile_count": 1
                         }
                     ]
@@ -45,105 +46,50 @@
     "properties": {
         "data_type": {
             "$id": "#/properties/data_type",
-            "type": "string",
-            "title": "The data_type schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": "",
+            "description": "Describes the type of data points below.",
+            "enum": [
+                "systems",
+                "hostiles",
+                "alliances",
+                "players"
+            ],
             "examples": [
                 "systems"
-            ]
+            ],
+            "title": "The data_type schema",
+            "type": "string"
         },
         "datapoints": {
             "$id": "#/properties/datapoints",
             "type": "array",
             "title": "The datapoints schema",
-            "description": "An explanation about the purpose of this instance.",
+            "description": "A list of datapoints of the given data_type.",
             "default": [],
-            "examples": [
-                [
-                    {
-                        "scopely_id": 1,
-                        "warp": 16,
-                        "token_needed": false,
-                        "token_info": {
-                            "token_type": "/token/...",
-                            "token_amount": 1
-                        },
-                        "system_type": "hub",
-                        "system_space": "none",
-                        "hub_details": {
-                            "hub_number": 6,
-                            "hub_size": 16
-                        },
-                        "mine_details": {
-                            "mine_size": 200000,
-                            "mine_number": 6,
-                            "mine_material": "iso1"
-                        },
-                        "hostile_details": [
-                            {
-                                "hostile_type": "/hostile/...",
-                                "hostile_count": 1
-                            }
-                        ]
-                    }
-                ]
-            ],
             "additionalItems": true,
             "items": {
                 "$id": "#/properties/datapoints/items",
                 "anyOf": [
                     {
                         "$id": "#/properties/datapoints/items/anyOf/0",
-                        "type": "object",
-                        "title": "The first anyOf schema",
-                        "description": "An explanation about the purpose of this instance.",
                         "default": {},
-                        "examples": [
-                            {
-                                "scopely_id": 1,
-                                "warp": 16,
-                                "token_needed": false,
-                                "token_info": {
-                                    "token_type": "/token/...",
-                                    "token_amount": 1
-                                },
-                                "system_type": "hub",
-                                "system_space": "none",
-                                "hub_details": {
-                                    "hub_number": 6,
-                                    "hub_size": 16
-                                },
-                                "mine_details": {
-                                    "mine_size": 200000,
-                                    "mine_number": 6,
-                                    "mine_material": "iso1"
-                                },
-                                "hostile_details": [
-                                    {
-                                        "hostile_type": "/hostile/...",
-                                        "hostile_count": 1
-                                    }
-                                ]
-                            }
-                        ],
+                        "description": "Format of a system datapoint.",
                         "required": [
                             "scopely_id",
                             "warp",
                             "token_needed",
-                            "token_info",
                             "system_type",
                             "system_space",
-                            "hub_details",
-                            "mine_details",
-                            "hostile_details"
+                            "name"
                         ],
+                        "title": "The first anyOf schema",
+                        "type": "object",
                         "properties": {
                             "scopely_id": {
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/scopely_id",
                                 "type": "integer",
                                 "title": "The scopely_id schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "ID assigned by Scopely for this datapoint.",
                                 "default": 0,
                                 "examples": [
                                     1
@@ -153,7 +99,7 @@
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/warp",
                                 "type": "integer",
                                 "title": "The warp schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Warp distance from a warp 1 system.",
                                 "default": 0,
                                 "examples": [
                                     16
@@ -163,7 +109,7 @@
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/token_needed",
                                 "type": "boolean",
                                 "title": "The token_needed schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Is a token needed for accessing this system.",
                                 "default": false,
                                 "examples": [
                                     false
@@ -173,14 +119,8 @@
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/token_info",
                                 "type": "object",
                                 "title": "The token_info schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Detailed information about the token needed.",
                                 "default": {},
-                                "examples": [
-                                    {
-                                        "token_type": "/token/...",
-                                        "token_amount": 1
-                                    }
-                                ],
                                 "required": [
                                     "token_type",
                                     "token_amount"
@@ -189,10 +129,9 @@
                                     "token_type": {
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/token_info/properties/token_type",
                                         "default": "",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "enum": [],
+                                        "description": "An object link to a type of token.",
                                         "examples": [
-                                            "/token/..."
+                                            "/token/1"
                                         ],
                                         "title": "The token_type schema",
                                         "pattern": "^/token/[0-9]$",
@@ -202,7 +141,7 @@
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/token_info/properties/token_amount",
                                         "type": "integer",
                                         "title": "The token_amount schema",
-                                        "description": "An explanation about the purpose of this instance.",
+                                        "description": "Amount of tokens needed for accessing this system.",
                                         "default": 0,
                                         "examples": [
                                             1
@@ -214,7 +153,7 @@
                             "system_type": {
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/system_type",
                                 "default": "",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Hub systems interconnect multiple systems, leaf have only one warp path.",
                                 "enum": [
                                     "hub",
                                     "leaf"
@@ -228,15 +167,15 @@
                             "system_space": {
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/system_space",
                                 "default": "",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Type of space this system is in.",
                                 "enum": [
-                                    "none",
+                                    "normal",
                                     "origin",
                                     "deep",
                                     "dark"
                                 ],
                                 "examples": [
-                                    "none"
+                                    "normal"
                                 ],
                                 "title": "The system_space schema",
                                 "type": "string"
@@ -245,14 +184,8 @@
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/hub_details",
                                 "type": "object",
                                 "title": "The hub_details schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Details about the hubs in this system.",
                                 "default": {},
-                                "examples": [
-                                    {
-                                        "hub_number": 6,
-                                        "hub_size": 16
-                                    }
-                                ],
                                 "required": [
                                     "hub_number",
                                     "hub_size"
@@ -262,7 +195,7 @@
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/hub_details/properties/hub_number",
                                         "type": "integer",
                                         "title": "The hub_number schema",
-                                        "description": "An explanation about the purpose of this instance.",
+                                        "description": "Number of hubs present.",
                                         "default": 0,
                                         "examples": [
                                             6
@@ -272,7 +205,7 @@
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/hub_details/properties/hub_size",
                                         "type": "integer",
                                         "title": "The hub_size schema",
-                                        "description": "An explanation about the purpose of this instance.",
+                                        "description": "Size of the hubs present.",
                                         "default": 0,
                                         "examples": [
                                             16
@@ -285,15 +218,8 @@
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details",
                                 "type": "object",
                                 "title": "The mine_details schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Details about the mines in this system.",
                                 "default": {},
-                                "examples": [
-                                    {
-                                        "mine_size": 200000,
-                                        "mine_number": 6,
-                                        "mine_material": "iso1"
-                                    }
-                                ],
                                 "required": [
                                     "mine_size",
                                     "mine_number",
@@ -304,7 +230,7 @@
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details/properties/mine_size",
                                         "type": "integer",
                                         "title": "The mine_size schema",
-                                        "description": "An explanation about the purpose of this instance.",
+                                        "description": "Number of units in a just resetted mine.",
                                         "default": 0,
                                         "examples": [
                                             200000
@@ -314,7 +240,7 @@
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details/properties/mine_number",
                                         "type": "integer",
                                         "title": "The mine_number schema",
-                                        "description": "An explanation about the purpose of this instance.",
+                                        "description": "Numbe of mines in this system.",
                                         "default": 0,
                                         "examples": [
                                             6
@@ -323,7 +249,7 @@
                                     "mine_material": {
                                         "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details/properties/mine_material",
                                         "default": "",
-                                        "description": "An explanation about the purpose of this instance.",
+                                        "description": "Material to be mined.",
                                         "examples": [
                                             "iso1"
                                         ],
@@ -349,7 +275,11 @@
                                             "3co",
                                             "3go",
                                             "4co",
-                                            "4go"
+                                            "4go",
+                                            "lat",
+                                            "myc",
+                                            "ddata",
+                                            "cdata"
                                         ],
                                         "type": "string"
                                     }
@@ -360,16 +290,8 @@
                                 "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details",
                                 "type": "array",
                                 "title": "The hostile_details schema",
-                                "description": "An explanation about the purpose of this instance.",
+                                "description": "Details about hostiles in this system",
                                 "default": [],
-                                "examples": [
-                                    [
-                                        {
-                                            "hostile_type": "/hostile/...",
-                                            "hostile_count": 1
-                                        }
-                                    ]
-                                ],
                                 "additionalItems": true,
                                 "items": {
                                     "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items",
@@ -378,14 +300,8 @@
                                             "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items/anyOf/0",
                                             "type": "object",
                                             "title": "The first anyOf schema",
-                                            "description": "An explanation about the purpose of this instance.",
+                                            "description": "Details of one hostile.",
                                             "default": {},
-                                            "examples": [
-                                                {
-                                                    "hostile_type": "/hostile/...",
-                                                    "hostile_count": 1
-                                                }
-                                            ],
                                             "required": [
                                                 "hostile_type",
                                                 "hostile_count"
@@ -395,9 +311,6 @@
                                                     "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items/anyOf/0/properties/hostile_type",
                                                     "default": "",
                                                     "description": "The hostile type is a cross-reference to a hostile data_type, referenced by scopely_id",
-                                                    "examples": [
-                                                        "/hostile/..."
-                                                    ],
                                                     "title": "The hostile_type schema",
                                                     "pattern": "^/hostiles/[0-9]$",
                                                     "type": "string"
@@ -406,7 +319,7 @@
                                                     "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items/anyOf/0/properties/hostile_count",
                                                     "type": "integer",
                                                     "title": "The hostile_count schema",
-                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "description": "The amount of hostiles of this type present",
                                                     "default": 0,
                                                     "examples": [
                                                         1
