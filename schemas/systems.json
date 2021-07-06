@@ -1,0 +1,429 @@
+{
+    "$id": "http://example.com/example.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "default": {},
+    "description": "A schema to describe data use in STFC, on online MMORPG",
+    "examples": [
+        {
+            "data_type": "systems",
+            "datapoints": [
+                {
+                    "scopely_id": 1,
+                    "warp": 16,
+                    "token_needed": false,
+                    "token_info": {
+                        "token_type": "/token/...",
+                        "token_amount": 1
+                    },
+                    "system_type": "hub",
+                    "system_space": "none",
+                    "hub_details": {
+                        "hub_number": 6,
+                        "hub_size": 16
+                    },
+                    "mine_details": {
+                        "mine_size": 200000,
+                        "mine_number": 6,
+                        "mine_material": "iso1"
+                    },
+                    "hostile_details": [
+                        {
+                            "hostile_type": "/hostile/...",
+                            "hostile_count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required": [
+        "data_type",
+        "datapoints"
+    ],
+    "title": "/",
+    "type": "object",
+    "properties": {
+        "data_type": {
+            "$id": "#/properties/data_type",
+            "type": "string",
+            "title": "The data_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "systems"
+            ]
+        },
+        "datapoints": {
+            "$id": "#/properties/datapoints",
+            "type": "array",
+            "title": "The datapoints schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "scopely_id": 1,
+                        "warp": 16,
+                        "token_needed": false,
+                        "token_info": {
+                            "token_type": "/token/...",
+                            "token_amount": 1
+                        },
+                        "system_type": "hub",
+                        "system_space": "none",
+                        "hub_details": {
+                            "hub_number": 6,
+                            "hub_size": 16
+                        },
+                        "mine_details": {
+                            "mine_size": 200000,
+                            "mine_number": 6,
+                            "mine_material": "iso1"
+                        },
+                        "hostile_details": [
+                            {
+                                "hostile_type": "/hostile/...",
+                                "hostile_count": 1
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/datapoints/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/datapoints/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "scopely_id": 1,
+                                "warp": 16,
+                                "token_needed": false,
+                                "token_info": {
+                                    "token_type": "/token/...",
+                                    "token_amount": 1
+                                },
+                                "system_type": "hub",
+                                "system_space": "none",
+                                "hub_details": {
+                                    "hub_number": 6,
+                                    "hub_size": 16
+                                },
+                                "mine_details": {
+                                    "mine_size": 200000,
+                                    "mine_number": 6,
+                                    "mine_material": "iso1"
+                                },
+                                "hostile_details": [
+                                    {
+                                        "hostile_type": "/hostile/...",
+                                        "hostile_count": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "scopely_id",
+                            "warp",
+                            "token_needed",
+                            "token_info",
+                            "system_type",
+                            "system_space",
+                            "hub_details",
+                            "mine_details",
+                            "hostile_details"
+                        ],
+                        "properties": {
+                            "scopely_id": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/scopely_id",
+                                "type": "integer",
+                                "title": "The scopely_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "warp": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/warp",
+                                "type": "integer",
+                                "title": "The warp schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    16
+                                ]
+                            },
+                            "token_needed": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/token_needed",
+                                "type": "boolean",
+                                "title": "The token_needed schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "token_info": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/token_info",
+                                "type": "object",
+                                "title": "The token_info schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "token_type": "/token/...",
+                                        "token_amount": 1
+                                    }
+                                ],
+                                "required": [
+                                    "token_type",
+                                    "token_amount"
+                                ],
+                                "properties": {
+                                    "token_type": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/token_info/properties/token_type",
+                                        "default": "",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "enum": [],
+                                        "examples": [
+                                            "/token/..."
+                                        ],
+                                        "title": "The token_type schema",
+                                        "pattern": "^/token/[0-9]$",
+                                        "type": "string"
+                                    },
+                                    "token_amount": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/token_info/properties/token_amount",
+                                        "type": "integer",
+                                        "title": "The token_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "system_type": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/system_type",
+                                "default": "",
+                                "description": "An explanation about the purpose of this instance.",
+                                "enum": [
+                                    "hub",
+                                    "leaf"
+                                ],
+                                "examples": [
+                                    "hub"
+                                ],
+                                "title": "The system_type schema",
+                                "type": "string"
+                            },
+                            "system_space": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/system_space",
+                                "default": "",
+                                "description": "An explanation about the purpose of this instance.",
+                                "enum": [
+                                    "none",
+                                    "origin",
+                                    "deep",
+                                    "dark"
+                                ],
+                                "examples": [
+                                    "none"
+                                ],
+                                "title": "The system_space schema",
+                                "type": "string"
+                            },
+                            "hub_details": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/hub_details",
+                                "type": "object",
+                                "title": "The hub_details schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "hub_number": 6,
+                                        "hub_size": 16
+                                    }
+                                ],
+                                "required": [
+                                    "hub_number",
+                                    "hub_size"
+                                ],
+                                "properties": {
+                                    "hub_number": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/hub_details/properties/hub_number",
+                                        "type": "integer",
+                                        "title": "The hub_number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            6
+                                        ]
+                                    },
+                                    "hub_size": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/hub_details/properties/hub_size",
+                                        "type": "integer",
+                                        "title": "The hub_size schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            16
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "mine_details": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details",
+                                "type": "object",
+                                "title": "The mine_details schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "mine_size": 200000,
+                                        "mine_number": 6,
+                                        "mine_material": "iso1"
+                                    }
+                                ],
+                                "required": [
+                                    "mine_size",
+                                    "mine_number",
+                                    "mine_material"
+                                ],
+                                "properties": {
+                                    "mine_size": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details/properties/mine_size",
+                                        "type": "integer",
+                                        "title": "The mine_size schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            200000
+                                        ]
+                                    },
+                                    "mine_number": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details/properties/mine_number",
+                                        "type": "integer",
+                                        "title": "The mine_number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            6
+                                        ]
+                                    },
+                                    "mine_material": {
+                                        "$id": "#/properties/datapoints/items/anyOf/0/properties/mine_details/properties/mine_material",
+                                        "default": "",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "examples": [
+                                            "iso1"
+                                        ],
+                                        "title": "The mine_material schema",
+                                        "enum": [
+                                            "iso1",
+                                            "iso2",
+                                            "iso3",
+                                            "dil",
+                                            "trit",
+                                            "par",
+                                            "2c",
+                                            "2o",
+                                            "2g",
+                                            "3g",
+                                            "3o",
+                                            "3g",
+                                            "4g",
+                                            "4o",
+                                            "4g",
+                                            "2co",
+                                            "2go",
+                                            "3co",
+                                            "3go",
+                                            "4co",
+                                            "4go"
+                                        ],
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "hostile_details": {
+                                "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details",
+                                "type": "array",
+                                "title": "The hostile_details schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "hostile_type": "/hostile/...",
+                                            "hostile_count": 1
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "hostile_type": "/hostile/...",
+                                                    "hostile_count": 1
+                                                }
+                                            ],
+                                            "required": [
+                                                "hostile_type",
+                                                "hostile_count"
+                                            ],
+                                            "properties": {
+                                                "hostile_type": {
+                                                    "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items/anyOf/0/properties/hostile_type",
+                                                    "default": "",
+                                                    "description": "The hostile type is a cross-reference to a hostile data_type, referenced by scopely_id",
+                                                    "examples": [
+                                                        "/hostile/..."
+                                                    ],
+                                                    "title": "The hostile_type schema",
+                                                    "pattern": "^/hostiles/[0-9]$",
+                                                    "type": "string"
+                                                },
+                                                "hostile_count": {
+                                                    "$id": "#/properties/datapoints/items/anyOf/0/properties/hostile_details/items/anyOf/0/properties/hostile_count",
+                                                    "type": "integer",
+                                                    "title": "The hostile_count schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        1
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
