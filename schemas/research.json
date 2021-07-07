@@ -1,0 +1,717 @@
+{
+    "$id": "http://example.com/example.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "default": {},
+    "description": "A schema for research in STFC.",
+    "examples": [
+        {
+            "research_name": "Station Armor Piercing",
+            "description": "Increases the Armor Piercing...",
+            "location": {
+                "tree": "station",
+                "column": 20,
+                "row": 3
+            },
+            "url": "url",
+            "levels": [
+                {
+                    "level": 1,
+                    "increased_power": 10750,
+                    "bonus": {
+                        "value": 1,
+                        "percentage": true
+                    },
+                    "research_time": 291240,
+                    "requirements": [
+                        {
+                            "name": "R&D Department",
+                            "level": 25
+                        }
+                    ],
+                    "required_by": [
+                        {
+                            "name": "battleships focus",
+                            "level": 1
+                        }
+                    ],
+                    "research_costs": {
+                        "resources": [
+                            {
+                                "type": "dilithium",
+                                "value": 152000
+                            }
+                        ],
+                        "materials": [
+                            {
+                                "type": "crystal",
+                                "rarity": "common",
+                                "grade": 3,
+                                "value": 190
+                            }
+                        ]
+                    },
+                    "rewards": [
+                        {
+                            "type": "mission token",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required": [
+        "research_name",
+        "description",
+        "location",
+        "url",
+        "levels"
+    ],
+    "title": "The root schema",
+    "type": "object",
+    "properties": {
+        "research_name": {
+            "$id": "#/properties/research_name",
+            "default": "",
+            "description": "The research name.",
+            "examples": [
+                "Station Armor Piercing"
+            ],
+            "title": "The research_name schema",
+            "type": "string"
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "default": "",
+            "description": "The research description",
+            "examples": [
+                "Increases the Armor Piercing..."
+            ],
+            "title": "The description schema",
+            "type": "string"
+        },
+        "location": {
+            "$id": "#/properties/location",
+            "default": {},
+            "description": "Location of where the research belongs to.",
+            "examples": [
+                {
+                    "tree": "station",
+                    "column": 20,
+                    "row": 3
+                }
+            ],
+            "required": [
+                "tree",
+                "column",
+                "row"
+            ],
+            "title": "The location schema",
+            "type": "object",
+            "properties": {
+                "tree": {
+                    "$id": "#/properties/location/properties/tree",
+                    "default": "",
+                    "description": "The tree to which the research belongs to.",
+                    "examples": [
+                        "station",
+                        "outlaws",
+                        "territory"
+                    ],
+                    "title": "The tree schema",
+                    "type": "string"
+                },
+                "column": {
+                    "$id": "#/properties/location/properties/column",
+                    "default": 0,
+                    "description": "The column where the research can be found. Horizontal in the research tab.",
+                    "examples": [
+                        20
+                    ],
+                    "title": "The column schema",
+                    "type": "integer"
+                },
+                "row": {
+                    "$id": "#/properties/location/properties/row",
+                    "default": 0,
+                    "description": "The row where the research can be found. Vertical in the research tab.",
+                    "examples": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "title": "The row schema",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": true
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "default": "",
+            "description": "The image URL of the research.",
+            "examples": [
+                "url"
+            ],
+            "title": "The url schema",
+            "type": "string"
+        },
+        "levels": {
+            "$id": "#/properties/levels",
+            "default": [],
+            "description": "List of all levels the research has.",
+            "examples": [
+                [
+                    {
+                        "level": 1,
+                        "increased_power": 10750,
+                        "bonus": {
+                            "value": 1,
+                            "percentage": true
+                        },
+                        "research_time": 291240,
+                        "requirements": [
+                            {
+                                "name": "R&D Department",
+                                "level": 25
+                            }
+                        ],
+                        "required_by": [
+                            {
+                                "name": "battleships focus",
+                                "level": 1
+                            }
+                        ],
+                        "research_costs": {
+                            "resources": [
+                                {
+                                    "type": "dilithium",
+                                    "value": 152000
+                                }
+                            ],
+                            "materials": [
+                                {
+                                    "type": "crystal",
+                                    "rarity": "common",
+                                    "grade": 3,
+                                    "value": 190
+                                }
+                            ]
+                        },
+                        "rewards": [
+                            {
+                                "type": "mission token",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "title": "The levels schema",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/levels/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/levels/items/anyOf/0",
+                        "default": {},
+                        "description": "Single level instance.",
+                        "examples": [
+                            {
+                                "level": 1,
+                                "increased_power": 10750,
+                                "bonus": {
+                                    "value": 1,
+                                    "percentage": true
+                                },
+                                "research_time": 291240,
+                                "requirements": [
+                                    {
+                                        "name": "R&D Department",
+                                        "level": 25
+                                    }
+                                ],
+                                "required_by": [
+                                    {
+                                        "name": "battleships focus",
+                                        "level": 1
+                                    }
+                                ],
+                                "research_costs": {
+                                    "resources": [
+                                        {
+                                            "type": "dilithium",
+                                            "value": 152000
+                                        }
+                                    ],
+                                    "materials": [
+                                        {
+                                            "type": "crystal",
+                                            "rarity": "common",
+                                            "grade": 3,
+                                            "value": 190
+                                        }
+                                    ]
+                                },
+                                "rewards": [
+                                    {
+                                        "type": "mission token",
+                                        "value": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "level",
+                            "increased_power",
+                            "bonus",
+                            "research_time",
+                            "requirements",
+                            "required_by",
+                            "research_costs"
+                        ],
+                        "title": "The first anyOf schema",
+                        "type": "object",
+                        "properties": {
+                            "level": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/level",
+                                "default": 0,
+                                "description": "Level number of the current research level.",
+                                "examples": [
+                                    1
+                                ],
+                                "title": "The level schema",
+                                "type": "integer"
+                            },
+                            "increased_power": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/increased_power",
+                                "default": 0,
+                                "description": "The amount by which the power increases after upgrading.",
+                                "examples": [
+                                    10750
+                                ],
+                                "title": "The increased_power schema",
+                                "type": "integer"
+                            },
+                            "bonus": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/bonus",
+                                "default": {},
+                                "description": "Instance for the research bonus.",
+                                "examples": [
+                                    {
+                                        "value": 1,
+                                        "percentage": true
+                                    }
+                                ],
+                                "required": [
+                                    "value",
+                                    "percentage"
+                                ],
+                                "title": "The bonus schema",
+                                "type": "object",
+                                "properties": {
+                                    "value": {
+                                        "$id": "#/properties/levels/items/anyOf/0/properties/bonus/properties/value",
+                                        "default": 0,
+                                        "description": "The bonus value of the current level.",
+                                        "examples": [
+                                            1
+                                        ],
+                                        "title": "The value schema",
+                                        "type": "integer"
+                                    },
+                                    "percentage": {
+                                        "$id": "#/properties/levels/items/anyOf/0/properties/bonus/properties/percentage",
+                                        "default": true,
+                                        "description": "Boolean wether the bonus value is a percentage or not.",
+                                        "examples": [
+                                            true,
+                                            false
+                                        ],
+                                        "title": "The percentage schema",
+                                        "type": "boolean"
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "research_time": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/research_time",
+                                "default": 0,
+                                "description": "The time required to upgrade the research to this level (in seconds).",
+                                "examples": [
+                                    291240
+                                ],
+                                "title": "The research_time schema",
+                                "type": "integer"
+                            },
+                            "requirements": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/requirements",
+                                "default": [],
+                                "description": "List of all requirements before an upgrade to this level is possible.",
+                                "examples": [
+                                    [
+                                        {
+                                            "name": "R&D Department",
+                                            "level": 25
+                                        }
+                                    ]
+                                ],
+                                "title": "The requirements schema",
+                                "type": "array",
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/levels/items/anyOf/0/properties/requirements/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/requirements/items/anyOf/0",
+                                            "default": {},
+                                            "description": "Single requirement instance.",
+                                            "examples": [
+                                                {
+                                                    "name": "R&D Department",
+                                                    "level": 25
+                                                }
+                                            ],
+                                            "required": [
+                                                "name",
+                                                "level"
+                                            ],
+                                            "title": "The first anyOf schema",
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/requirements/items/anyOf/0/properties/name",
+                                                    "default": "",
+                                                    "description": "Name of the building or research that is required.",
+                                                    "examples": [
+                                                        "R&D Department"
+                                                    ],
+                                                    "title": "The name schema",
+                                                    "type": "string"
+                                                },
+                                                "level": {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/requirements/items/anyOf/0/properties/level",
+                                                    "default": 0,
+                                                    "description": "The level of the building or research required.",
+                                                    "examples": [
+                                                        25
+                                                    ],
+                                                    "title": "The level schema",
+                                                    "type": "integer"
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "required_by": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/required_by",
+                                "default": [],
+                                "description": "List of all buildings or research that demands this upgrade first.",
+                                "examples": [
+                                    [
+                                        {
+                                            "name": "battleships focus",
+                                            "level": 1
+                                        }
+                                    ]
+                                ],
+                                "title": "The required_by schema",
+                                "type": "array",
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/levels/items/anyOf/0/properties/required_by/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/required_by/items/anyOf/0",
+                                            "default": {},
+                                            "description": "Single required by instance.",
+                                            "examples": [
+                                                {
+                                                    "name": "battleships focus",
+                                                    "level": 1
+                                                }
+                                            ],
+                                            "required": [
+                                                "name",
+                                                "level"
+                                            ],
+                                            "title": "The first anyOf schema",
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/required_by/items/anyOf/0/properties/name",
+                                                    "default": "",
+                                                    "description": "Name of the building or research that demands the upgrade.",
+                                                    "examples": [
+                                                        "battleships focus"
+                                                    ],
+                                                    "title": "The name schema",
+                                                    "type": "string"
+                                                },
+                                                "level": {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/required_by/items/anyOf/0/properties/level",
+                                                    "default": 0,
+                                                    "description": "The level of the building or research that demands this upgrade.",
+                                                    "examples": [
+                                                        1
+                                                    ],
+                                                    "title": "The level schema",
+                                                    "type": "integer"
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "research_costs": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/research_costs",
+                                "default": {},
+                                "description": "Instance of all costs involved in upgrading to this level.",
+                                "examples": [
+                                    {
+                                        "resources": [
+                                            {
+                                                "type": "dilithium",
+                                                "value": 152000
+                                            }
+                                        ],
+                                        "materials": [
+                                            {
+                                                "type": "crystal",
+                                                "rarity": "common",
+                                                "grade": 3,
+                                                "value": 190
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "required": [
+                                    "resources",
+                                    "materials"
+                                ],
+                                "title": "The research_costs schema",
+                                "type": "object",
+                                "properties": {
+                                    "resources": {
+                                        "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/resources",
+                                        "default": [],
+                                        "description": "List of all resources required.",
+                                        "examples": [
+                                            [
+                                                {
+                                                    "type": "dilithium",
+                                                    "value": 152000
+                                                }
+                                            ]
+                                        ],
+                                        "title": "The resources schema",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/resources/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/resources/items/anyOf/0",
+                                                    "default": {},
+                                                    "description": "Single resource instance.",
+                                                    "examples": [
+                                                        {
+                                                            "type": "dilithium",
+                                                            "value": 152000
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "type",
+                                                        "value"
+                                                    ],
+                                                    "title": "The first anyOf schema",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "type": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/resources/items/anyOf/0/properties/type",
+                                                            "default": "",
+                                                            "description": "Type of resource required.",
+                                                            "examples": [
+                                                                "dilithium"
+                                                            ],
+                                                            "title": "The type schema",
+                                                            "type": "string"
+                                                        },
+                                                        "value": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/resources/items/anyOf/0/properties/value",
+                                                            "default": 0,
+                                                            "description": "Amount required of the current resource.",
+                                                            "examples": [
+                                                                152000
+                                                            ],
+                                                            "title": "The value schema",
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "materials": {
+                                        "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials",
+                                        "default": [],
+                                        "description": "List of all materials and others required.",
+                                        "examples": [
+                                            [
+                                                {
+                                                    "type": "crystal",
+                                                    "rarity": "common",
+                                                    "grade": 3,
+                                                    "value": 190
+                                                }
+                                            ]
+                                        ],
+                                        "title": "The materials schema",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0",
+                                                    "default": {},
+                                                    "description": "Single material or other instance.",
+                                                    "examples": [
+                                                        {
+                                                            "type": "crystal",
+                                                            "rarity": "common",
+                                                            "grade": 3,
+                                                            "value": 190
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "type",
+                                                        "value"
+                                                    ],
+                                                    "title": "The first anyOf schema",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "type": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/type",
+                                                            "default": "",
+                                                            "description": "Type of material or other required.",
+                                                            "examples": [
+                                                                "crystal"
+                                                            ],
+                                                            "title": "The type schema",
+                                                            "type": "string"
+                                                        },
+                                                        "rarity": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/rarity",
+                                                            "default": "",
+                                                            "description": "(Optional) Rarity of the material.",
+                                                            "examples": [
+                                                                "common"
+                                                            ],
+                                                            "title": "The rarity schema",
+                                                            "type": "string"
+                                                        },
+                                                        "grade": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/grade",
+                                                            "default": 0,
+                                                            "description": "(Optional) Grade in stars of the material.",
+                                                            "examples": [
+                                                                3
+                                                            ],
+                                                            "title": "The grade schema",
+                                                            "type": "integer"
+                                                        },
+                                                        "value": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/value",
+                                                            "default": 0,
+                                                            "description": "Amount required of the current material or other.",
+                                                            "examples": [
+                                                                190
+                                                            ],
+                                                            "title": "The value schema",
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            "rewards": {
+                                "$id": "#/properties/levels/items/anyOf/0/properties/rewards",
+                                "default": [],
+                                "description": "(Optional) List of all rewards given by upgrading to this level.",
+                                "examples": [
+                                    [
+                                        {
+                                            "type": "mission token",
+                                            "value": 1
+                                        }
+                                    ]
+                                ],
+                                "title": "The rewards schema",
+                                "type": "array",
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/levels/items/anyOf/0/properties/rewards/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/rewards/items/anyOf/0",
+                                            "default": {},
+                                            "description": "Single reward instance.",
+                                            "examples": [
+                                                {
+                                                    "type": "mission token",
+                                                    "value": 1
+                                                }
+                                            ],
+                                            "required": [
+                                                "type",
+                                                "value"
+                                            ],
+                                            "title": "The first anyOf schema",
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/rewards/items/anyOf/0/properties/type",
+                                                    "default": "",
+                                                    "description": "Type of the reward.",
+                                                    "examples": [
+                                                        "mission token"
+                                                    ],
+                                                    "title": "The type schema",
+                                                    "type": "string"
+                                                },
+                                                "value": {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/rewards/items/anyOf/0/properties/value",
+                                                    "default": 0,
+                                                    "description": "Amount given of this reward after upgrading to this level.",
+                                                    "examples": [
+                                                        1
+                                                    ],
+                                                    "title": "The value schema",
+                                                    "type": "integer"
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
