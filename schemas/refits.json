@@ -1,0 +1,244 @@
+{
+    "$id": "http://example.com/example.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "default": {},
+    "description": "A schema for refits (ship skins and projectiles) for STFC.",
+    "examples": [
+        {
+            "refit_name": "Infinitus",
+            "description": "+50% Nanoprobes...",
+            "refit_type": "ship skin",
+            "ship": {
+                "$ref": ""
+            },
+            "rarity": "uncommon",
+            "img_url": "url",
+            "costs": {
+                "specific_shards": {
+                    "shard_name": "Infinitus Shard",
+                    "img_url": "url",
+                    "quantity": 60
+                },
+                "base_shards": [
+                    {
+                        "shard_name": "rare projectile shard",
+                        "img_url": "url",
+                        "quantity": 50
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "refit_name",
+        "refit_type",
+        "rarity",
+        "img_url",
+        "costs"
+    ],
+    "title": "The root schema",
+    "type": "object",
+    "properties": {
+        "refit_name": {
+            "$id": "#/properties/refit_name",
+            "default": "",
+            "description": "Name of the refit.",
+            "title": "The refit_name schema",
+            "type": "string",
+            "examples": [
+                "Infinitus"
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "default": "",
+            "description": "Description of the refit (Only for ship skins).",
+            "title": "The description schema",
+            "type": "string",
+            "examples": [
+                "+50% Nanoprobes..."
+            ]
+        },
+        "refit_type": {
+            "$id": "#/properties/refit_type",
+            "default": "",
+            "description": "Type of the refit.",
+            "title": "The refit_type schema",
+            "type": "string",
+            "enum": [
+                "ship skin",
+                "projectile"
+            ],
+            "examples": [
+                "ship skin"
+            ]
+        },
+        "ship": {
+            "$id": "#/properties/ship",
+            "default": {},
+            "description": "Info about the ship for which the refit is meant (Only for ship skins).",
+            "title": "The ship schema",
+            "type": "object",
+            "required": [
+                "$ref"
+            ],
+            "properties": {
+                "$ref": {
+                    "$id": "#/properties/ship/properties/%24ref",
+                    "default": "",
+                    "description": "Reference to the ship's file.",
+                    "title": "The $ref schema",
+                    "type": "string",
+                    "examples": [
+                        ""
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "rarity": {
+            "$id": "#/properties/rarity",
+            "default": "",
+            "description": "Rarity of the refit.",
+            "title": "The rarity schema",
+            "type": "string",
+            "enum": [
+                "common",
+                "uncommon",
+                "rare",
+                "epic"
+            ],
+            "examples": [
+                "uncommon"
+            ]  
+        },
+        "img_url": {
+            "$id": "#/properties/img_url",
+            "default": "",
+            "description": "The image URL of the refit.",
+            "title": "The img_url schema",
+            "type": "string",
+            "examples": [
+                "url"
+            ]
+        },
+        "costs": {
+            "$id": "#/properties/costs",
+            "default": {},
+            "description": "Instance of all costs for unlocking the refit.",
+            "title": "The costs schema",
+            "type": "object",
+            "required": [
+                "specific_shards",
+                "base_shards"
+            ],
+            "properties": {
+                "specific_shards": {
+                    "$id": "#/properties/costs/properties/specific_shards",
+                    "default": {},
+                    "description": "Info about the specific shards required for the refit.",
+                    "title": "The specific_shards schema",
+                    "type": "object",
+                    "required": [
+                        "shard_name",
+                        "img_url",
+                        "quantity"
+                    ],
+                    "properties": {
+                        "shard_name": {
+                            "$id": "#/properties/costs/properties/specific_shards/properties/shard_name",
+                            "default": "",
+                            "description": "Name of the shard.",
+                            "title": "The shard_name schema",
+                            "type": "string",
+                            "examples": [
+                                "Infinitus Shard"
+                            ]
+                        },
+                        "img_url": {
+                            "$id": "#/properties/costs/properties/specific_shards/properties/img_url",
+                            "default": "",
+                            "description": "The image URL of the shard.",
+                            "title": "The img_url schema",
+                            "type": "string",
+                            "examples": [
+                                "url"
+                            ]
+                        },
+                        "quantity": {
+                            "$id": "#/properties/costs/properties/specific_shards/properties/quantity",
+                            "default": 0,
+                            "description": "Total amount required of the shard.",
+                            "title": "The quantity schema",
+                            "type": "integer",
+                            "examples": [
+                                60
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "base_shards": {
+                    "$id": "#/properties/costs/properties/base_shards",
+                    "default": [],
+                    "description": "List of all general shards required.",
+                    "title": "The base_shards schema",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/costs/properties/base_shards/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/costs/properties/base_shards/items/anyOf/0",
+                                "default": {},
+                                "description": "Single general shard instance.",
+                                "title": "The first anyOf schema",
+                                "type": "object",
+                                "required": [
+                                    "shard_name",
+                                    "img_url",
+                                    "quantity"
+                                ],
+                                "properties": {
+                                    "shard_name": {
+                                        "$id": "#/properties/costs/properties/base_shards/items/anyOf/0/properties/shard_name",
+                                        "default": "",
+                                        "description": "Name of the shard.",
+                                        "title": "The shard_name schema",
+                                        "type": "string",
+                                        "examples": [
+                                            "rare projectile shard"
+                                        ]
+                                    },
+                                    "img_url": {
+                                        "$id": "#/properties/costs/properties/base_shards/items/anyOf/0/properties/img_url",
+                                        "default": "",
+                                        "description": "The image URL of the shard.",
+                                        "title": "The img_url schema",
+                                        "type": "string",
+                                        "examples": [
+                                            "url"
+                                        ]
+                                    },
+                                    "quantity": {
+                                        "$id": "#/properties/costs/properties/base_shards/items/anyOf/0/properties/quantity",
+                                        "default": 0,
+                                        "description": "Total amount required of the shard.",
+                                        "title": "The quantity schema",
+                                        "type": "integer",
+                                        "examples": [
+                                            50
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
