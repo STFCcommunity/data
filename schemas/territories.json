@@ -1,0 +1,437 @@
+{
+    "$id": "http://example.com/example.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "default": {},
+    "description": "A schema for territory in STFC.",
+    "examples": [
+        {
+            "zone_name": "thaylen",
+            "zone_tier": 1,
+            "clan": "corvallen",
+            "particle": "quantum",
+            "takeover_info": {
+                "datetime": {
+                    "weekday": "wednesday",
+                    "time": "3PM UCT"
+                },
+                "costs": [
+                    {
+                        "material": "1⇴ Refined Isogen",
+                        "quantity": 450000
+                    }
+                ]
+            },
+            "services": [
+                {
+                    "service_name": "advanced shield enhancer",
+                    "description": "+50% base Shield Health...",
+                    "rarity": "rare",
+                    "costs": [
+                        {
+                            "material": "1⇴ Refined Isogen",
+                            "quantity": 200000
+                        }
+                    ]
+                }
+            ],
+            "systems": [
+                {
+                    "$ref": "ref",
+                    "warp_paths": [
+                        {
+                            "$ref": "ref"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required": [
+        "zone_name",
+        "zone_tier",
+        "clan",
+        "particle",
+        "takeover_info",
+        "services",
+        "systems"
+    ],
+    "title": "The root schema",
+    "type": "object",
+    "properties": {
+        "zone_name": {
+            "$id": "#/properties/zone_name",
+            "default": "",
+            "description": "Name of the territory zone.",
+            "examples": [
+                "thaylen"
+            ],
+            "title": "The zone_name schema",
+            "type": "string"
+        },
+        "zone_tier": {
+            "$id": "#/properties/zone_tier",
+            "default": 0,
+            "description": "Tier of the territory zone.",
+            "examples": [
+                1
+            ],
+            "title": "The zone_tier schema",
+            "enum": [
+                1,
+                2,
+                3
+            ],
+            "type": "integer"
+        },
+        "clan": {
+            "$id": "#/properties/clan",
+            "default": "",
+            "description": "Clan to which the territory zone belongs.",
+            "examples": [
+                "corvallen"
+            ],
+            "title": "The clan schema",
+            "enum": [
+                "trill",
+                "bolian",
+                "tholian",
+                "breen",
+                "suliban",
+                "corvallen"
+            ],
+            "type": "string"
+        },
+        "particle": {
+            "$id": "#/properties/particle",
+            "default": "",
+            "description": "The particle which the territory holds.",
+            "examples": [
+                "quantum"
+            ],
+            "title": "The particle schema",
+            "enum": [
+                "quantum",
+                "phantom",
+                "surax"
+            ],
+            "type": "string"
+        },
+        "takeover_info": {
+            "$id": "#/properties/takeover_info",
+            "default": {},
+            "description": "All info about the takeover of the territory zone.",
+            "required": [
+                "datetime",
+                "costs"
+            ],
+            "title": "The takeover_info schema",
+            "type": "object",
+            "properties": {
+                "datetime": {
+                    "$id": "#/properties/takeover_info/properties/datetime",
+                    "default": {},
+                    "description": "Info about when the takeover takes place.",
+                    "required": [
+                        "weekday",
+                        "time"
+                    ],
+                    "title": "The datetime schema",
+                    "type": "object",
+                    "properties": {
+                        "weekday": {
+                            "$id": "#/properties/takeover_info/properties/datetime/properties/weekday",
+                            "default": "",
+                            "description": "On which day the takeover takes place.",
+                            "examples": [
+                                "wednesday"
+                            ],
+                            "title": "The weekday schema",
+                            "enum": [
+                                "monday",
+                                "tuesday",
+                                "wednesday",
+                                "thursday",
+                                "friday",
+                                "saturday",
+                                "sunday"
+                            ],
+                            "type": "string"
+                        },
+                        "time": {
+                            "$id": "#/properties/takeover_info/properties/datetime/properties/time",
+                            "default": "",
+                            "description": "At which time the takeover of the territory zone begins. (UTC)",
+                            "examples": [
+                                "3PM UTC"
+                            ],
+                            "title": "The time schema",
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "costs": {
+                    "$id": "#/properties/takeover_info/properties/costs",
+                    "default": [],
+                    "description": "List of alles costs required to start the takeover.",
+                    "title": "The costs schema",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/takeover_info/properties/costs/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0",
+                                "default": {},
+                                "description": "Single cost instance.",
+                                "required": [
+                                    "material",
+                                    "quantity"
+                                ],
+                                "title": "The first anyOf schema",
+                                "type": "object",
+                                "properties": {
+                                    "material": {
+                                        "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/material",
+                                        "default": "",
+                                        "description": "The material required to start the takeover.",
+                                        "enum": [
+                                            "1⇴ Refined Isogen",
+                                            "2⇴ Refined Isogen",
+                                            "3⇴ Refined Isogen",
+                                            "Progenitor Core",
+                                            "Progenitor Diode",
+                                            "Progenitor Emitter",
+                                            "Progenitor Reactor"
+                                        ],
+                                        "examples": [
+                                            "1⇴ Refined Isogen"
+                                        ],
+                                        "title": "The material schema",
+                                        "type": "string"
+                                    },
+                                    "quantity": {
+                                        "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/quantity",
+                                        "default": 0,
+                                        "description": "The amount required of the material.",
+                                        "examples": [
+                                            450000
+                                        ],
+                                        "title": "The quantity schema",
+                                        "type": "integer"
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        "services": {
+            "$id": "#/properties/services",
+            "default": [],
+            "description": "List of all services in the territory zone.",
+            "title": "The services schema",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/services/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/services/items/anyOf/0",
+                        "default": {},
+                        "description": "Single territory service instance.",
+                        "required": [
+                            "service_name",
+                            "description",
+                            "rarity",
+                            "costs"
+                        ],
+                        "title": "The first anyOf schema",
+                        "type": "object",
+                        "properties": {
+                            "service_name": {
+                                "$id": "#/properties/services/items/anyOf/0/properties/service_name",
+                                "default": "",
+                                "description": "Name of the territory service.",
+                                "examples": [
+                                    "advanced shield enhancer"
+                                ],
+                                "title": "The service_name schema",
+                                "type": "string"
+                            },
+                            "description": {
+                                "$id": "#/properties/services/items/anyOf/0/properties/description",
+                                "default": "",
+                                "description": "Description of the territory service.",
+                                "examples": [
+                                    "+50% base Shield Health..."
+                                ],
+                                "title": "The description schema",
+                                "type": "string"
+                            },
+                            "rarity": {
+                                "$id": "#/properties/services/items/anyOf/0/properties/rarity",
+                                "default": "",
+                                "description": "Rarity of the service",
+                                "examples": [
+                                    "rare"
+                                ],
+                                "title": "The rarity schema",
+                                "enum": [
+                                    "common",
+                                    "uncommon",
+                                    "rare"
+                                ],
+                                "type": "string"
+                            },
+                            "costs": {
+                                "$id": "#/properties/services/items/anyOf/0/properties/costs",
+                                "default": [],
+                                "description": "List of all costs required to activate the service.",
+                                "title": "The costs schema",
+                                "type": "array",
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/services/items/anyOf/0/properties/costs/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0",
+                                            "default": {},
+                                            "description": "Single territory service cost instance.",
+                                            "required": [
+                                                "material",
+                                                "quantity"
+                                            ],
+                                            "title": "The first anyOf schema",
+                                            "type": "object",
+                                            "properties": {
+                                                "material": {
+                                                    "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/material",
+                                                    "default": "",
+                                                    "description": "The material required to activate the service.",
+                                                    "examples": [
+                                                        "1⇴ Refined Isogen"
+                                                    ],
+                                                    "title": "The material schema",
+                                                    "enum": [
+                                                        "1⇴ Refined Isogen",
+                                                        "2⇴ Refined Isogen",
+                                                        "3⇴ Refined Isogen",
+                                                        "Progenitor Core",
+                                                        "Progenitor Diode",
+                                                        "Progenitor Emitter",
+                                                        "Progenitor Reactor"
+                                                    ],
+                                                    "type": "string"
+                                                },
+                                                "quantity": {
+                                                    "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/quantity",
+                                                    "default": 0,
+                                                    "description": "The amount required of the material.",
+                                                    "examples": [
+                                                        200000
+                                                    ],
+                                                    "title": "The quantity schema",
+                                                    "type": "integer"
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "systems": {
+            "$id": "#/properties/systems",
+            "default": [],
+            "description": "List of all systems inside the territory zone.",
+            "title": "The systems schema",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/systems/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/systems/items/anyOf/0",
+                        "default": {},
+                        "description": "Single territory system instance.",
+                        "examples": [
+                            {
+                                "$ref": "ref",
+                                "warp_paths": [
+                                    {
+                                        "$ref": "ref"
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "$ref",
+                            "warp_paths"
+                        ],
+                        "title": "The first anyOf schema",
+                        "type": "object",
+                        "properties": {
+                            "$ref": {
+                                "$id": "#/properties/systems/items/anyOf/0/properties/%24ref",
+                                "default": "",
+                                "description": "Reference to the json system file.",
+                                "examples": [
+                                    "ref"
+                                ],
+                                "title": "The $ref schema",
+                                "type": "string"
+                            },
+                            "warp_paths": {
+                                "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths",
+                                "default": [],
+                                "description": "List of all warp paths going out the system.",
+                                "title": "The warp_paths schema",
+                                "type": "array",
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items/anyOf/0",
+                                            "default": {},
+                                            "description": "Single warp path instance.",
+                                            "required": [
+                                                "$ref"
+                                            ],
+                                            "title": "The first anyOf schema",
+                                            "type": "object",
+                                            "properties": {
+                                                "$ref": {
+                                                    "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items/anyOf/0/properties/%24ref",
+                                                    "default": "",
+                                                    "description": "Reference to the json system file.",
+                                                    "examples": [
+                                                        "ref"
+                                                    ],
+                                                    "title": "The $ref schema",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
