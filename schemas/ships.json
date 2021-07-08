@@ -801,7 +801,8 @@
                                             "required": [
                                                 "level",
                                                 "ship_xp",
-                                                "ability_bonus"
+                                                "ability_bonus",
+                                                "additional_officer_slot"
                                             ],
                                             "title": "The first anyOf schema",
                                             "type": "object",
@@ -834,6 +835,16 @@
                                                     "default": 0.0,
                                                     "examples": [
                                                         16.0
+                                                    ]
+                                                },
+                                                "additional_officer_slot": {
+                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/additional_officer_slot",
+                                                    "type": "boolean",
+                                                    "title": "The additional_officer_slot schema",
+                                                    "description": "Boolean wether or not the current level opens a new officer slot.",
+                                                    "default": false,
+                                                    "examples": [
+                                                        true
                                                     ]
                                                 },
                                                 "scrap_details": {
