@@ -92,18 +92,6 @@
             "$id": "#/properties/bonuses",
             "default": {},
             "description": "(Optional) Instance for bonuses the building offers.",
-            "examples": [
-                {
-                    "bonus1": {
-                        "name": "repair speed bonus",
-                        "percentage": true
-                    },
-                    "bonus2": {
-                        "name": "repair cost efficiency",
-                        "percentage": true
-                    }
-                }
-            ],
             "required": [
                 "bonus1"
             ],
@@ -116,12 +104,6 @@
                     "title": "The bonus1 schema",
                     "description": "First bonus information.",
                     "default": {},
-                    "examples": [
-                        {
-                            "name": "repair speed bonus",
-                            "percentage": true
-                        }
-                    ],
                     "required": [
                         "name",
                         "percentage"
@@ -156,12 +138,6 @@
                     "title": "The bonus2 schema",
                     "description": "(Optional) Second bonus information.",
                     "default": {},
-                    "examples": [
-                        {
-                            "name": "repair cost efficiency",
-                            "percentage": true
-                        }
-                    ],
                     "required": [
                         "name",
                         "percentage"
@@ -182,7 +158,7 @@
                             "type": "boolean",
                             "title": "The percentage schema",
                             "description": "Boolean wether the bonus is a percentage or a number.",
-                            "default": false,
+                            "default": true,
                             "examples": [
                                 true
                             ]
@@ -199,49 +175,6 @@
             "title": "The levels schema",
             "description": "List of all building levels.",
             "default": [],
-            "examples": [
-                [
-                    {
-                        "level": 35,
-                        "increased_power": 4000,
-                        "requirements": [
-                            {
-                                "name": "operations",
-                                "level": 35
-                            }
-                        ],
-                        "bonuses": {
-                            "bonus1": 1.0,
-                            "bonus2": 1.3
-                        },
-                        "build_time": 1383840,
-                        "build_costs": {
-                            "resources": [
-                                {
-                                    "type": "parsteel",
-                                    "value": 183110400
-                                }
-                            ],
-                            "materials": [
-                                {
-                                    "type": "crystal",
-                                    "rarity": "common",
-                                    "grade": 3,
-                                    "value": 1300
-                                }
-                            ]
-                        },
-                        "rewards": [
-                            {
-                                "type": "gas",
-                                "rarity": "raw",
-                                "grade": 3,
-                                "value": 40000
-                            }
-                        ]
-                    }
-                ]
-            ],
             "additionalItems": true,
             "items": {
                 "$id": "#/properties/levels/items",
@@ -250,54 +183,12 @@
                         "$id": "#/properties/levels/items/anyOf/0",
                         "default": {},
                         "description": "Single building level instance.",
-                        "examples": [
-                            {
-                                "level": 35,
-                                "increased_power": 4000,
-                                "requirements": [
-                                    {
-                                        "name": "operations",
-                                        "level": 35
-                                    }
-                                ],
-                                "bonuses": {
-                                    "bonus1": 1.0,
-                                    "bonus2": 1.3
-                                },
-                                "build_time": 1383840,
-                                "build_costs": {
-                                    "resources": [
-                                        {
-                                            "type": "parsteel",
-                                            "value": 183110400
-                                        }
-                                    ],
-                                    "materials": [
-                                        {
-                                            "type": "crystal",
-                                            "rarity": "common",
-                                            "grade": 3,
-                                            "value": 1300
-                                        }
-                                    ]
-                                },
-                                "rewards": [
-                                    {
-                                        "type": "gas",
-                                        "rarity": "raw",
-                                        "grade": 3,
-                                        "value": 40000
-                                    }
-                                ]
-                            }
-                        ],
                         "required": [
                             "level",
                             "increased_power",
                             "requirements",
                             "build_time",
-                            "build_costs",
-                            "rewards"
+                            "build_costs"
                         ],
                         "title": "The first anyOf schema",
                         "type": "object",
@@ -328,14 +219,6 @@
                                 "title": "The requirements schema",
                                 "description": "List of all requirements for upgrading to this level.",
                                 "default": [],
-                                "examples": [
-                                    [
-                                        {
-                                            "name": "operations",
-                                            "level": 35
-                                        }
-                                    ]
-                                ],
                                 "additionalItems": true,
                                 "items": {
                                     "$id": "#/properties/levels/items/anyOf/0/properties/requirements/items",
@@ -346,12 +229,6 @@
                                             "title": "The first anyOf schema",
                                             "description": "Single requirement instance.",
                                             "default": {},
-                                            "examples": [
-                                                {
-                                                    "name": "operations",
-                                                    "level": 35
-                                                }
-                                            ],
                                             "required": [
                                                 "name",
                                                 "level"
@@ -387,12 +264,6 @@
                                 "$id": "#/properties/levels/items/anyOf/0/properties/bonuses",
                                 "default": {},
                                 "description": "(Optional) Instance holding the values of the bonuses.",
-                                "examples": [
-                                    {
-                                        "bonus1": 1.0,
-                                        "bonus2": 1.3
-                                    }
-                                ],
                                 "required": [
                                     "bonus1"
                                 ],
@@ -438,24 +309,6 @@
                                 "title": "The build_costs schema",
                                 "description": "Holds all costs involved with upgrading to this level.",
                                 "default": {},
-                                "examples": [
-                                    {
-                                        "resources": [
-                                            {
-                                                "type": "parsteel",
-                                                "value": 183110400
-                                            }
-                                        ],
-                                        "materials": [
-                                            {
-                                                "type": "crystal",
-                                                "rarity": "common",
-                                                "grade": 3,
-                                                "value": 1300
-                                            }
-                                        ]
-                                    }
-                                ],
                                 "required": [
                                     "resources",
                                     "materials"
@@ -467,14 +320,6 @@
                                         "title": "The resources schema",
                                         "description": "List of all resources required.",
                                         "default": [],
-                                        "examples": [
-                                            [
-                                                {
-                                                    "type": "parsteel",
-                                                    "value": 183110400
-                                                }
-                                            ]
-                                        ],
                                         "additionalItems": true,
                                         "items": {
                                             "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/resources/items",
@@ -485,12 +330,6 @@
                                                     "title": "The first anyOf schema",
                                                     "description": "Single resource instance.",
                                                     "default": {},
-                                                    "examples": [
-                                                        {
-                                                            "type": "parsteel",
-                                                            "value": 183110400
-                                                        }
-                                                    ],
                                                     "required": [
                                                         "type",
                                                         "value"
@@ -502,10 +341,13 @@
                                                             "title": "The type schema",
                                                             "description": "Type of resources required.",
                                                             "default": "",
-                                                            "examples": [
+                                                            "enum": [
                                                                 "parsteel",
                                                                 "tritanium",
                                                                 "dilithium"
+                                                            ],
+                                                            "examples": [
+                                                                "parsteel"
                                                             ]
                                                         },
                                                         "value": {
@@ -530,16 +372,6 @@
                                         "title": "The materials schema",
                                         "description": "List of all materials and others required.",
                                         "default": [],
-                                        "examples": [
-                                            [
-                                                {
-                                                    "type": "crystal",
-                                                    "rarity": "common",
-                                                    "grade": 3,
-                                                    "value": 1300
-                                                }
-                                            ]
-                                        ],
                                         "additionalItems": true,
                                         "items": {
                                             "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials/items",
@@ -548,14 +380,6 @@
                                                     "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials/items/anyOf/0",
                                                     "default": {},
                                                     "description": "Single material instance.",
-                                                    "examples": [
-                                                        {
-                                                            "type": "crystal",
-                                                            "rarity": "common",
-                                                            "grade": 3,
-                                                            "value": 1300
-                                                        }
-                                                    ],
                                                     "required": [
                                                         "type",
                                                         "value"
@@ -580,11 +404,14 @@
                                                             "title": "The rarity schema",
                                                             "description": "(Optional) Rarity of the material.",
                                                             "default": "",
-                                                            "examples": [
+                                                            "enum": [
                                                                 "common",
                                                                 "uncommon",
                                                                 "rare",
                                                                 "epic"
+                                                            ],
+                                                            "examples": [
+                                                                "common"
                                                             ]
                                                         },
                                                         "grade": {
@@ -593,11 +420,15 @@
                                                             "title": "The grade schema",
                                                             "description": "(Optional) Grade in stars of the material.",
                                                             "default": 0,
-                                                            "examples": [
+                                                            "enum": [
                                                                 1,
                                                                 2,
                                                                 3,
-                                                                4
+                                                                4,
+                                                                5
+                                                            ],
+                                                            "examples": [
+                                                                1
                                                             ]
                                                         },
                                                         "value": {
@@ -625,16 +456,6 @@
                                 "title": "The rewards schema",
                                 "description": "List of all possible rewards given after upgrading to this level.",
                                 "default": [],
-                                "examples": [
-                                    [
-                                        {
-                                            "type": "gas",
-                                            "rarity": "raw",
-                                            "grade": 3,
-                                            "value": 40000
-                                        }
-                                    ]
-                                ],
                                 "additionalItems": true,
                                 "items": {
                                     "$id": "#/properties/levels/items/anyOf/0/properties/rewards/items",
@@ -643,14 +464,6 @@
                                             "$id": "#/properties/levels/items/anyOf/0/properties/rewards/items/anyOf/0",
                                             "default": {},
                                             "description": "Single reward item instance.",
-                                            "examples": [
-                                                {
-                                                    "type": "gas",
-                                                    "rarity": "raw",
-                                                    "grade": 3,
-                                                    "value": 40000
-                                                }
-                                            ],
                                             "required": [
                                                 "type",
                                                 "value"
@@ -685,6 +498,13 @@
                                                     "title": "The grade schema",
                                                     "description": "(Optional) Grade in stars of the material.",
                                                     "default": 0,
+                                                    "enum": [
+                                                        1,
+                                                        2,
+                                                        3,
+                                                        4,
+                                                        5
+                                                    ],
                                                     "examples": [
                                                         3
                                                     ]
