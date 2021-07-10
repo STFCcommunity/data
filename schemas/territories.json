@@ -2,7 +2,6 @@
     "$id": "http://example.com/example.json",
     "$schema": "http://json-schema.org/draft-07/schema",
     "default": {},
-    "title": "The root schema",
     "description": "A schema for territory in STFC.",
     "examples": [
         {
@@ -13,38 +12,28 @@
             "takeover_info": {
                 "datetime": {
                     "weekday": "wednesday",
-                    "time": "3PM UCT"
+                    "time": "3PM UTC"
                 },
-                "costs": [
-                    {
-                        "material": "1⇴ Refined Isogen",
-                        "quantity": 450000
-                    }
-                ]
+                "costs": [{
+                    "material": "1⇴ Refined Isogen",
+                    "quantity": 450000
+                }]
             },
-            "services": [
-                {
-                    "service_name": "advanced shield enhancer",
-                    "description": "+50% base Shield Health...",
-                    "rarity": "rare",
-                    "costs": [
-                        {
-                            "material": "1⇴ Refined Isogen",
-                            "quantity": 200000
-                        }
-                    ]
-                }
-            ],
-            "systems": [
-                {
-                    "$ref": "ref",
-                    "warp_paths": [
-                        {
-                            "$ref": "ref"
-                        }
-                    ]
-                }
-            ]
+            "services": [{
+                "service_name": "advanced shield enhancer",
+                "description": "+50% base Shield Health...",
+                "rarity": "rare",
+                "costs": [{
+                    "material": "1⇴ Refined Isogen",
+                    "quantity": 200000
+                }]
+            }],
+            "systems": [{
+                "$ref": "ref",
+                "warp_paths": [{
+                    "$ref": "ref"
+                }]
+            }]
         }
     ],
     "required": [
@@ -56,6 +45,7 @@
         "services",
         "systems"
     ],
+    "title": "The root schema",
     "type": "object",
     "properties": {
         "zone_name": {
@@ -163,6 +153,32 @@
                             "description": "At which time the takeover of the territory zone begins. (UTC)",
                             "title": "The time schema",
                             "type": "string",
+                            "enum": [
+                                "12am UTC",
+                                "1am UTC",
+                                "2am UTC",
+                                "3am UTC",
+                                "4am UTC",
+                                "5am UTC",
+                                "6am UTC",
+                                "7am UTC",
+                                "8am UTC",
+                                "9am UTC",
+                                "10am UTC",
+                                "11am UTC",
+                                "12pm UTC",
+                                "1pm UTC",
+                                "2pm UTC",
+                                "3pm UTC",
+                                "4pm UTC",
+                                "5pm UTC",
+                                "6pm UTC",
+                                "7pm UTC",
+                                "8pm UTC",
+                                "9pm UTC",
+                                "10pm UTC",
+                                "11pm UTC"
+                            ],
                             "examples": [
                                 "3PM UTC"
                             ]
