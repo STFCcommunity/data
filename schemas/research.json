@@ -48,6 +48,12 @@
                                 "grade": 3,
                                 "value": 190
                             }
+                        ],
+                        "others": [
+                            {
+                                "type": "gamma particle",
+                                "value": 1
+                            }
                         ]
                     },
                     "rewards": [
@@ -347,10 +353,7 @@
                                 "$id": "#/properties/levels/items/anyOf/0/properties/research_costs",
                                 "default": {},
                                 "description": "Instance of all costs involved in upgrading to this level.",
-                                "required": [
-                                    "resources",
-                                    "materials"
-                                ],
+                                "required": [],
                                 "title": "The research_costs schema",
                                 "type": "object",
                                 "properties": {
@@ -409,7 +412,7 @@
                                     "materials": {
                                         "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials",
                                         "default": [],
-                                        "description": "List of all materials and others required.",
+                                        "description": "List of all materials required.",
                                         "title": "The materials schema",
                                         "type": "array",
                                         "additionalItems": true,
@@ -419,9 +422,11 @@
                                                 {
                                                     "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0",
                                                     "default": {},
-                                                    "description": "Single material or other instance.",
+                                                    "description": "Single material instance.",
                                                     "required": [
                                                         "type",
+                                                        "rarity",
+                                                        "grade",
                                                         "value"
                                                     ],
                                                     "title": "The first anyOf schema",
@@ -430,9 +435,14 @@
                                                         "type": {
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/type",
                                                             "default": "",
-                                                            "description": "Type of material or other required.",
+                                                            "description": "Type of material required.",
                                                             "title": "The type schema",
                                                             "type": "string",
+                                                            "enum": [
+                                                                "gas",
+                                                                "ore",
+                                                                "crystal"
+                                                            ],
                                                             "examples": [
                                                                 "crystal"
                                                             ]
@@ -440,7 +450,7 @@
                                                         "rarity": {
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/rarity",
                                                             "default": "",
-                                                            "description": "(Optional) Rarity of the material.",
+                                                            "description": "Rarity of the material.",
                                                             "title": "The rarity schema",
                                                             "type": "string",
                                                             "enum": [
@@ -456,7 +466,7 @@
                                                         "grade": {
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/grade",
                                                             "default": 0,
-                                                            "description": "(Optional) Grade in stars of the material.",
+                                                            "description": "Grade in stars of the material.",
                                                             "title": "The grade schema",
                                                             "type": "integer",
                                                             "enum": [
@@ -473,7 +483,7 @@
                                                         "value": {
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/materials/items/anyOf/0/properties/value",
                                                             "default": 0,
-                                                            "description": "Amount required of the current material or other.",
+                                                            "description": "Amount required of the material.",
                                                             "title": "The value schema",
                                                             "type": "integer",
                                                             "examples": [
@@ -485,9 +495,56 @@
                                                 }
                                             ]
                                         }
+                                    },
+                                    "others": {
+                                        "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/others",
+                                        "default": [],
+                                        "description": "List of all others required.",
+                                        "title": "The others schema",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/others/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/others/items/anyOf/0",
+                                                    "default": {},
+                                                    "description": "Single other cost instance.",
+                                                    "required": [
+                                                        "type",
+                                                        "value"
+                                                    ],
+                                                    "title": "The first anyOf schema",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "type": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/others/items/anyOf/0/properties/type",
+                                                            "type": "string",
+                                                            "title": "The type schema",
+                                                            "description": "Type of other required.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "gamma particle"
+                                                            ]
+                                                        },
+                                                        "value": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/research_costs/properties/others/items/anyOf/0/properties/value",
+                                                            "type": "integer",
+                                                            "title": "The value schema",
+                                                            "description": "Amount required of the other cost.",
+                                                            "default": 0,
+                                                            "examples": [
+                                                                1
+                                                            ]
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
                                     }
                                 },
-                                "additionalProperties": true
+                                "additionalProperties": false
                             },
                             "rewards": {
                                 "$id": "#/properties/levels/items/anyOf/0/properties/rewards",
