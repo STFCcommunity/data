@@ -55,6 +55,12 @@
                                         "grade": 3,
                                         "value": 275
                                     }
+                                ],
+                                "others": [
+                                    {
+                                        "type": "charged nanoprobes",
+                                        "value": 500
+                                    }
                                 ]
                             },
                             "repair_cost": [
@@ -85,16 +91,31 @@
                             "level": 2,
                             "ship_xp": 800,
                             "ability_bonus": 16.0,
+                            "additional_officer_slot": true,
                             "scrap_details": {
                                 "scrap_time": 895620,
-                                "rewards": [
-                                    {
-                                        "type": "gas",
-                                        "rarity": "common",
-                                        "grade": 3,
-                                        "value": 1
-                                    }
-                                ]
+                                "rewards": {
+                                    "resources": [
+                                        {
+                                            "type": "tritanium",
+                                            "value": 1300000
+                                        }
+                                    ],
+                                    "materials": [
+                                        {
+                                            "type": "gas",
+                                            "rarity": "common",
+                                            "grade": 3,
+                                            "value": 275
+                                        }
+                                    ],
+                                    "others": [
+                                        {
+                                            "type": "ship xp",
+                                            "value": 25000
+                                        }
+                                    ]
+                                }
                             }
                         }
                     ]
@@ -466,10 +487,7 @@
                                                     "title": "The build_cost schema",
                                                     "description": "All cost needed to upgrade the component",
                                                     "default": {},
-                                                    "required": [
-                                                        "resources",
-                                                        "materials"
-                                                    ],
+                                                    "required": [],
                                                     "properties": {
                                                         "resources": {
                                                             "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/resources",
@@ -527,7 +545,7 @@
                                                             "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials",
                                                             "type": "array",
                                                             "title": "The materials schema",
-                                                            "description": "All materials and others needed to upgrade the component.",
+                                                            "description": "All materials needed to upgrade the component.",
                                                             "default": [],
                                                             "additionalItems": true,
                                                             "items": {
@@ -535,10 +553,12 @@
                                                                 "anyOf": [
                                                                     {
                                                                         "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0",
-                                                                        "description": "Single material or other to upgrade the component.",
+                                                                        "description": "Single material to upgrade the component.",
                                                                         "default": {},
                                                                         "required": [
                                                                             "type",
+                                                                            "rarity",
+                                                                            "grade",
                                                                             "value"
                                                                         ],
                                                                         "title": "The first anyOf schema",
@@ -548,18 +568,22 @@
                                                                                 "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/type",
                                                                                 "type": "string",
                                                                                 "title": "The type schema",
-                                                                                "description": "The type of material or other needed.",
+                                                                                "description": "The type of material needed.",
                                                                                 "default": "",
-                                                                                "examples": [
+                                                                                "enum": [
                                                                                     "gas",
-                                                                                    "ship xp"
+                                                                                    "ore",
+                                                                                    "crystal"
+                                                                                ],
+                                                                                "examples": [
+                                                                                    "gas"
                                                                                 ]
                                                                             },
                                                                             "rarity": {
                                                                                 "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/rarity",
                                                                                 "type": "string",
                                                                                 "title": "The rarity schema",
-                                                                                "description": "(Optional) The rarity of the material.",
+                                                                                "description": "The rarity of the material.",
                                                                                 "default": "",
                                                                                 "enum": [
                                                                                     "common",
@@ -575,7 +599,7 @@
                                                                                 "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/grade",
                                                                                 "type": "integer",
                                                                                 "title": "The grade schema",
-                                                                                "description": "(Optional) The grade in stars of the material.",
+                                                                                "description": "The grade in stars of the material.",
                                                                                 "default": 1,
                                                                                 "enum": [
                                                                                     1,
@@ -592,7 +616,7 @@
                                                                                 "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/materials/items/anyOf/0/properties/value",
                                                                                 "type": "integer",
                                                                                 "title": "The value schema",
-                                                                                "description": "The value needed of the current material or other.",
+                                                                                "description": "The value needed of the material.",
                                                                                 "default": 0,
                                                                                 "examples": [
                                                                                     275
@@ -603,9 +627,56 @@
                                                                     }
                                                                 ]
                                                             }
+                                                        },
+                                                        "others": {
+                                                            "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/others",
+                                                            "type": "array",
+                                                            "title": "The others schema",
+                                                            "description": "All other costs required to upgrade the component.",
+                                                            "default": [],
+                                                            "additionalItems": true,
+                                                            "items": {
+                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/others/items",
+                                                                "anyOf": [
+                                                                    {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/others/items/anyOf/0",
+                                                                        "default": {},
+                                                                        "description": "Single other cost instance.",
+                                                                        "title": "The first anyOf schema",
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "type",
+                                                                            "value"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/others/items/anyOf/0/properties/type",
+                                                                                "type": "string",
+                                                                                "title": "The type schema",
+                                                                                "description": "The type of cost required.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "charged nanoprobes"
+                                                                                ]
+                                                                            },
+                                                                            "value": {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/build_cost/properties/others/items/anyOf/0/properties/value",
+                                                                                "type": "integer",
+                                                                                "title": "The value schema",
+                                                                                "description": "The amount required of this cost.",
+                                                                                "default": 0,
+                                                                                "examples": [
+                                                                                    500
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "additionalProperties": true
+                                                                    }
+                                                                ]
+                                                            }
                                                         }
                                                     },
-                                                    "additionalProperties": true
+                                                    "additionalProperties": false
                                                 },
                                                 "repair_cost": {
                                                     "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/repair_cost",
@@ -870,83 +941,200 @@
                                                         },
                                                         "rewards": {
                                                             "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards",
-                                                            "type": "array",
+                                                            "type": "object",
                                                             "title": "The rewards schema",
-                                                            "description": "List of all rewards when scrapping the ship at this level.",
-                                                            "default": [],
-                                                            "additionalItems": true,
-                                                            "items": {
-                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items",
-                                                                "anyOf": [
-                                                                    {
-                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0",
-                                                                        "default": {},
-                                                                        "description": "Single reward instance.",
-                                                                        "required": [
-                                                                            "type",
-                                                                            "value"
-                                                                        ],
-                                                                        "title": "The first anyOf schema",
-                                                                        "type": "object",
-                                                                        "properties": {
-                                                                            "type": {
-                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/type",
-                                                                                "type": "string",
-                                                                                "title": "The type schema",
-                                                                                "description": "Type of resource, material or other of the reward.",
-                                                                                "default": "",
-                                                                                "examples": [
-                                                                                    "gas"
-                                                                                ]
-                                                                            },
-                                                                            "rarity": {
-                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/rarity",
-                                                                                "type": "string",
-                                                                                "title": "The rarity schema",
-                                                                                "description": "(Optional) Rarity of the reward.",
-                                                                                "default": "",
-                                                                                "enum": [
-                                                                                    "common",
-                                                                                    "uncommon",
-                                                                                    "rare",
-                                                                                    "epic"
+                                                            "description": "List of all rewards gained from scrapping at current level.",
+                                                            "default": {},
+                                                            "required": [],
+                                                            "properties": {
+                                                                "resources": {
+                                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources",
+                                                                    "type": "array",
+                                                                    "title": "The resources schema",
+                                                                    "description": "List of all resources gained.",
+                                                                    "default": [],
+                                                                    "additionalItems": true,
+                                                                    "items": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items",
+                                                                        "anyOf": [
+                                                                            {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items/anyOf/0",
+                                                                                "type": "object",
+                                                                                "title": "The first anyOf schema",
+                                                                                "description": "Single resource instance.",
+                                                                                "default": {},
+                                                                                "required": [
+                                                                                    "type",
+                                                                                    "value"
                                                                                 ],
-                                                                                "examples": [
-                                                                                    "common"
-                                                                                ]
-                                                                            },
-                                                                            "grade": {
-                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/grade",
-                                                                                "type": "integer",
-                                                                                "title": "The grade schema",
-                                                                                "description": "(Optional) Grade of the reward.",
-                                                                                "default": 1,
-                                                                                "enum": [
-                                                                                    1,
-                                                                                    2,
-                                                                                    3,
-                                                                                    4,
-                                                                                    5
-                                                                                ],
-                                                                                "examples": [
-                                                                                    1
-                                                                                ]
-                                                                            },
-                                                                            "value": {
-                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyOf/0/properties/value",
-                                                                                "type": "integer",
-                                                                                "title": "The value schema",
-                                                                                "description": "The amount of this reward that will be given when scrapped.",
-                                                                                "default": 0,
-                                                                                "examples": [
-                                                                                    0
-                                                                                ]
+                                                                                "properties": {
+                                                                                    "type": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items/anyOf/0/properties/type",
+                                                                                        "type": "string",
+                                                                                        "title": "The type schema",
+                                                                                        "description": "The type of resource gained.",
+                                                                                        "default": "",
+                                                                                        "enum": [
+                                                                                            "parsteel",
+                                                                                            "tritanium",
+                                                                                            "dilithium"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "tritanium"
+                                                                                        ]
+                                                                                    },
+                                                                                    "value": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items/anyOf/0/properties/value",
+                                                                                        "type": "integer",
+                                                                                        "title": "The value schema",
+                                                                                        "description": "The amount of this resource gained.",
+                                                                                        "default": 0,
+                                                                                        "examples": [
+                                                                                            1300000
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "additionalProperties": true
                                                                             }
-                                                                        },
-                                                                        "additionalProperties": true
+                                                                        ]
                                                                     }
-                                                                ]
-                                                            }
+                                                                },
+                                                                "materials": {
+                                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials",
+                                                                    "type": "array",
+                                                                    "title": "The materials schema",
+                                                                    "description": "List of all materials gained.",
+                                                                    "default": [],
+                                                                    "additionalItems": true,
+                                                                    "items": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items",
+                                                                        "anyOf": [
+                                                                            {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0",
+                                                                                "type": "object",
+                                                                                "title": "The first anyOf schema",
+                                                                                "description": "Single material instance.",
+                                                                                "default": {},
+                                                                                "required": [
+                                                                                    "type",
+                                                                                    "rarity",
+                                                                                    "grade",
+                                                                                    "value"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "type": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/type",
+                                                                                        "type": "string",
+                                                                                        "title": "The type schema",
+                                                                                        "description": "Type of material gained.",
+                                                                                        "default": "",
+                                                                                        "enum": [
+                                                                                            "gas",
+                                                                                            "ore",
+                                                                                            "crystal"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "gas"
+                                                                                        ]
+                                                                                    },
+                                                                                    "rarity": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/rarity",
+                                                                                        "type": "string",
+                                                                                        "title": "The rarity schema",
+                                                                                        "description": "The rarity of the gained material.",
+                                                                                        "default": "",
+                                                                                        "enum": [
+                                                                                            "common",
+                                                                                            "uncommon",
+                                                                                            "rare",
+                                                                                            "epic"
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            "common"
+                                                                                        ]
+                                                                                    },
+                                                                                    "grade": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/grade",
+                                                                                        "type": "integer",
+                                                                                        "title": "The grade schema",
+                                                                                        "description": "The grade in stars of the gained material.",
+                                                                                        "default": 0,
+                                                                                        "enum": [
+                                                                                            1,
+                                                                                            2,
+                                                                                            3,
+                                                                                            4,
+                                                                                            5
+                                                                                        ],
+                                                                                        "examples": [
+                                                                                            3
+                                                                                        ]
+                                                                                    },
+                                                                                    "value": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/value",
+                                                                                        "type": "integer",
+                                                                                        "title": "The value schema",
+                                                                                        "description": "The amount of this material gained.",
+                                                                                        "default": 0,
+                                                                                        "examples": [
+                                                                                            275
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "additionalProperties": true
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "others": {
+                                                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others",
+                                                                    "type": "array",
+                                                                    "title": "The others schema",
+                                                                    "description": "List of all others gained.",
+                                                                    "default": [],
+                                                                    "additionalItems": true,
+                                                                    "items": {
+                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items",
+                                                                        "anyOf": [
+                                                                            {
+                                                                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items/anyOf/0",
+                                                                                "type": "object",
+                                                                                "title": "The first anyOf schema",
+                                                                                "description": "Single other reward instance.",
+                                                                                "default": {},
+                                                                                "required": [
+                                                                                    "type",
+                                                                                    "value"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "type": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items/anyOf/0/properties/type",
+                                                                                        "type": "string",
+                                                                                        "title": "The type schema",
+                                                                                        "description": "The type of other reward gained.",
+                                                                                        "default": "",
+                                                                                        "examples": [
+                                                                                            "ship xp"
+                                                                                        ]
+                                                                                    },
+                                                                                    "value": {
+                                                                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items/anyOf/0/properties/value",
+                                                                                        "type": "integer",
+                                                                                        "title": "The value schema",
+                                                                                        "description": "The amount of this other reward gained.",
+                                                                                        "default": 0,
+                                                                                        "examples": [
+                                                                                            25000
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "additionalProperties": true
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "additionalProperties": false
                                                         }
                                                     },
                                                     "additionalProperties": true
