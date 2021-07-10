@@ -35,20 +35,20 @@
                     },
                     "build_time": 1383840,
                     "build_costs": {
-                        "resources": [
-                            {
-                                "type": "parsteel",
-                                "value": 183110400
-                            }
-                        ],
-                        "materials": [
-                            {
-                                "type": "crystal",
-                                "rarity": "common",
-                                "grade": 3,
-                                "value": 1300
-                            }
-                        ]
+                        "resources": [{
+                            "type": "parsteel",
+                            "value": 183110400
+                        }],
+                        "materials": [{
+                            "type": "crystal",
+                            "rarity": "common",
+                            "grade": 3,
+                            "value": 1300
+                        }],
+                        "others": [{
+                            "type": "ascend key",
+                            "value": 100
+                        }]
                     },
                     "rewards": [
                         {
@@ -309,10 +309,7 @@
                                 "title": "The build_costs schema",
                                 "description": "Holds all costs involved with upgrading to this level.",
                                 "default": {},
-                                "required": [
-                                    "resources",
-                                    "materials"
-                                ],
+                                "required": [],
                                 "properties": {
                                     "resources": {
                                         "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/resources",
@@ -370,7 +367,7 @@
                                         "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials",
                                         "type": "array",
                                         "title": "The materials schema",
-                                        "description": "List of all materials and others required.",
+                                        "description": "List of all materials required.",
                                         "default": [],
                                         "additionalItems": true,
                                         "items": {
@@ -382,6 +379,8 @@
                                                     "description": "Single material instance.",
                                                     "required": [
                                                         "type",
+                                                        "rarity",
+                                                        "grade",
                                                         "value"
                                                     ],
                                                     "title": "The first anyOf schema",
@@ -391,18 +390,22 @@
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials/items/anyOf/0/properties/type",
                                                             "type": "string",
                                                             "title": "The type schema",
-                                                            "description": "Type of material or other required.",
+                                                            "description": "Type of material required.",
                                                             "default": "",
+                                                            "enum": [
+                                                                "gas",
+                                                                "ore",
+                                                                "crystal"
+                                                            ],
                                                             "examples": [
-                                                                "crystal",
-                                                                "ascend key"
+                                                                "crystal"
                                                             ]
                                                         },
                                                         "rarity": {
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials/items/anyOf/0/properties/rarity",
                                                             "type": "string",
                                                             "title": "The rarity schema",
-                                                            "description": "(Optional) Rarity of the material.",
+                                                            "description": "Rarity of the material.",
                                                             "default": "",
                                                             "enum": [
                                                                 "common",
@@ -418,7 +421,7 @@
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials/items/anyOf/0/properties/grade",
                                                             "type": "integer",
                                                             "title": "The grade schema",
-                                                            "description": "(Optional) Grade in stars of the material.",
+                                                            "description": "Grade in stars of the material.",
                                                             "default": 0,
                                                             "enum": [
                                                                 1,
@@ -435,7 +438,7 @@
                                                             "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/materials/items/anyOf/0/properties/value",
                                                             "type": "integer",
                                                             "title": "The value schema",
-                                                            "description": "Amount required of the current material or other.",
+                                                            "description": "Amount required of the material.",
                                                             "default": 0,
                                                             "examples": [
                                                                 1300
@@ -446,9 +449,50 @@
                                                 }
                                             ]
                                         }
+                                    },
+                                    "others": {
+                                        "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/others",
+                                        "type": "array",
+                                        "title": "The others schema",
+                                        "description": "List of all other costs.",
+                                        "default": [],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/others/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/others/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "Single other cost instance.",
+                                                    "default": {},
+                                                    "required": [
+                                                        "type",
+                                                        "value"
+                                                    ],
+                                                    "properties": {
+                                                        "type": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/others/items/anyOf/0/properties/type",
+                                                            "type": "string",
+                                                            "title": "The type schema",
+                                                            "description": "Type of other required.",
+                                                            "default": ""
+                                                        },
+                                                        "value": {
+                                                            "$id": "#/properties/levels/items/anyOf/0/properties/build_costs/properties/others/items/anyOf/0/properties/value",
+                                                            "type": "integer",
+                                                            "title": "The value schema",
+                                                            "description": "Amount required of the other cost.",
+                                                            "default": 0
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
                                     }
                                 },
-                                "additionalProperties": true
+                                "additionalProperties": false
                             },
                             "rewards": {
                                 "$id": "#/properties/levels/items/anyOf/0/properties/rewards",
@@ -487,9 +531,15 @@
                                                     "title": "The rarity schema",
                                                     "description": "(Optional) Rarity of the material.",
                                                     "default": "",
-                                                    "examples": [
+                                                    "enum": [
                                                         "raw",
-                                                        "uncommon"
+                                                        "common",
+                                                        "uncommon",
+                                                        "rare", 
+                                                        "epic"
+                                                    ],
+                                                    "examples": [
+                                                        "raw"
                                                     ]
                                                 },
                                                 "grade": {
