@@ -34,15 +34,15 @@
                     "officer_ability_value": 0.3,
                     "requirements": {
                         "credits": 1100,
-                        "badges": 0,
+                        "badges": 1,
                         "xp": 50000,
                         "shards": 100,
-                        "others": {
-                            "borg": {
+                        "others": [
+                            {
                                 "name": "assimilated nanoprobes",
                                 "value": 1
                             }
-                        }
+                        ]
                     }
                 }
             ]
@@ -343,14 +343,9 @@
                                 "$id": "#/properties/ranks/items/anyOf/0/properties/requirements",
                                 "default": {},
                                 "description": "All requirements and costs before the officer can be upgraded to this rank.",
-                                "required": [
-                                    "credits",
-                                    "badges",
-                                    "xp",
-                                    "shards"
-                                ],
                                 "title": "The requirements schema",
                                 "type": "object",
+                                "required": [],
                                 "properties": {
                                     "credits": {
                                         "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/credits",
@@ -375,7 +370,7 @@
                                     "xp": {
                                         "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/xp",
                                         "default": 0,
-                                        "description": "Amount of officer xp required for all levels for the rank.",
+                                        "description": "Amount of officer xp required to upgrade the officer and additional levels.",
                                         "title": "The xp schema",
                                         "type": "integer",
                                         "examples": [
@@ -393,49 +388,52 @@
                                         ]
                                     },
                                     "others": {
-                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others",
-                                        "type": "object",
+                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items",
+                                        "type": "array",
                                         "title": "The others schema",
-                                        "description": "Group of all other requirements for special officers.",
-                                        "default": {},
+                                        "description": "List of all other requirements for special officers.",
+                                        "default": [],
                                         "required": [],
-                                        "properties": {
-                                            "borg": {
-                                                "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/properties/borg",
-                                                "type": "object",
-                                                "title": "The borg schema",
-                                                "description": "Instance for special officers.",
-                                                "default": {},
-                                                "required": [
-                                                    "name",
-                                                    "value"
-                                                ],
-                                                "properties": {
-                                                    "name": {
-                                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/properties/borg/properties/name",
-                                                        "type": "string",
-                                                        "title": "The name schema",
-                                                        "description": "Name of the special requirement.",
-                                                        "default": "",
-                                                        "examples": [
-                                                            "assimilated nanoprobes"
-                                                        ]
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0",
+                                                    "default": {},
+                                                    "description": "Single other requirement instance.",
+                                                    "required": [
+                                                        "name",
+                                                        "value"
+                                                    ],
+                                                    "title": "The first anyOf schema",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "name": {
+                                                            "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0/properties/name",
+                                                            "type": "string",
+                                                            "title": "The name schema",
+                                                            "description": "Name of the other requirement.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "assimilated nanoprobes"
+                                                            ]
+                                                        },
+                                                        "value": {
+                                                            "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0/properties/value",
+                                                            "type": "integer",
+                                                            "title": "The value schema",
+                                                            "description": "Value of the other requirement.",
+                                                            "default": 0,
+                                                            "examples": [
+                                                                1
+                                                            ]
+                                                        }
                                                     },
-                                                    "value": {
-                                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/properties/borg/properties/value",
-                                                        "type": "integer",
-                                                        "title": "The value schema",
-                                                        "description": "Value of the special requirement.",
-                                                        "default": 0,
-                                                        "examples": [
-                                                            1
-                                                        ]
-                                                    }
-                                                },
-                                                "additionalProperties": true
-                                            }
-                                        },
-                                        "additionalProperties": true
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
                                     }
                                 },
                                 "additionalProperties": true
