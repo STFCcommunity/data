@@ -1,577 +1,593 @@
 {
-    "$id": "http://example.com/example.json",
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "default": {},
-    "type": "object",
-    "title": "The root schema",
-    "description": "A schema for armadas in STFC.",
-    "examples": [
+  "$id": "http://example.com/example.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "The root schema",
+  "description": "A schema for armadas in STFC.",
+  "required": [
+    "armada_name",
+    "level",
+    "rarity",
+    "description",
+    "systems",
+    "rewards",
+    "stats",
+    "weapons"
+  ],
+  "type": "object",
+  "additionalProperties": true,
+  "default": {},
+  "examples": [
+    {
+      "description": "This major base is Klingon...",
+      "armada_name": "Klingon Fortress",
+      "group": "klingon",
+      "level": 36,
+      "rarity": "epic",
+      "rewards": [
         {
-            "armada_name": "Klingon Fortress",
-            "group": "klingon",
-            "level": 36,
-            "rarity": "epic",
-            "description": "This major base is Klingon...",
-            "systems": [
-                {
-                    "$ref": "reference to system file"
-                }
-            ],
-            "rewards": [
-                {
-                    "type": "federation points",
-                    "value": 14400
-                }
-            ],
-            "stats": {
-                "attack": {
-                    "damage_per_round": 1594000,
-                    "armor_pierce": 82997,
-                    "shield_pierce": 68351,
-                    "accuracy": 71402,
-                    "crit_change": 0.1,
-                    "crit_damage": 1.5
-                },
-                "defense": {
-                    "armor": 267000,
-                    "shield_deflect": 305100,
-                    "dodge": 356000
-                },
-                "health": {
-                    "shield_health": 20185000,
-                    "hull_health": 40371000
-                }
-            },
-            "weapons": [
-                {
-                    "weapon_id": "E1",
-                    "weapon_type": "energy",
-                    "quantity": 2,
-                    "firing_pattern": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-                    "weapon_stats": {
-                        "damage_per_round": 1594000,
-                        "armor_pierce": 82997,
-                        "shield_pierce": 68351,
-                        "accuracy": 71402,
-                        "crit_change": 0.1,
-                        "crit_damage": 1.5,
-                        "min_damage": 201900,
-                        "max_damage": 246700
-                    }
-                }
-            ]
+          "type": "federation points",
+          "value": 14400
         }
-    ],
-    "required": [
-        "armada_name",
-        "level",
-        "rarity",
-        "description",
-        "systems",
-        "rewards",
-        "stats",
-        "weapons"
-    ],
-    "properties": {
-        "armada_name": {
-            "$id": "#/properties/armada_name",
-            "default": "",
-            "description": "The name of the armada.",
-            "title": "The armada_name schema",
-            "type": "string",
-            "examples": [
-                "Klingon Fortress"
-            ]
+      ],
+      "stats": {
+        "attack": {
+          "accuracy": 71402,
+          "armor_pierce": 82997,
+          "crit_change": 0.1,
+          "crit_damage": 1.5,
+          "damage_per_round": 1594000,
+          "shield_pierce": 68351
         },
-        "group": {
-            "$id": "#/properties/group",
-            "default": "",
-            "description": "(Optional) Group of the armada, faction or territorial.",
-            "title": "The group schema",
-            "type": "string",
-            "examples": [
-                "klingon"
-            ]
+        "defense": {
+          "armor": 267000,
+          "dodge": 356000,
+          "shield_deflect": 305100
         },
-        "level": {
-            "$id": "#/properties/level",
-            "default": 0,
-            "description": "Level of the armada.",
-            "title": "The level schema",
-            "type": "integer",
-            "examples": [
-                36
-            ]
-        },
-        "rarity": {
-            "$id": "#/properties/rarity",
-            "default": "",
-            "description": "Rarity of the armada.",
-            "title": "The rarity schema",
-            "type": "string",
-            "enum": [
-                "uncommon",
-                "rare",
-                "epic"
-            ],
-            "examples": [
-                "epic"
-            ]
-        },
-        "description": {
-            "$id": "#/properties/description",
-            "default": "",
-            "description": "The armada description.",
-            "title": "The description schema",
-            "type": "string",
-            "examples": [
-                "This major base is Klingon..."
-            ]
-        },
-        "systems": {
-            "$id": "#/properties/systems",
-            "default": [],
-            "description": "List of all systems harboring this type of armada.",
-            "title": "The systems schema",
-            "type": "array",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/systems/items",
-                "anyOf": [
-                    {
-                        "$id": "#/properties/systems/items/anyOf/0",
-                        "default": {},
-                        "description": "Single system instance.",
-                        "title": "The first anyOf schema",
-                        "type": "object",
-                        "required": [
-                            "$ref"
-                        ],
-                        "properties": {
-                            "$ref": {
-                                "$id": "#/properties/systems/items/anyOf/0/properties/%24ref",
-                                "default": "",
-                                "description": "Reference to the system file.",
-                                "title": "The $ref schema",
-                                "type": "string",
-                                "examples": [
-                                    "reference to system file"
-                                ]
-                            }
-                        },
-                        "additionalProperties": true
-                    }
-                ]
-            }
-        },
-        "rewards": {
-            "$id": "#/properties/rewards",
-            "default": [],
-            "description": "List of all rewards gained by destroying the armada.",
-            "title": "The rewards schema",
-            "type": "array",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/rewards/items",
-                "anyOf": [
-                    {
-                        "$id": "#/properties/rewards/items/anyOf/0",
-                        "default": {},
-                        "description": "Single reward instance.",
-                        "title": "The first anyOf schema",
-                        "type": "object",
-                        "required": [
-                            "type",
-                            "value"
-                        ],
-                        "properties": {
-                            "type": {
-                                "$id": "#/properties/rewards/items/anyOf/0/properties/type",
-                                "default": "",
-                                "description": "Type of reward gained.",
-                                "title": "The type schema",
-                                "type": "string",
-                                "examples": [
-                                    "federation points"
-                                ]
-                            },
-                            "value": {
-                                "$id": "#/properties/rewards/items/anyOf/0/properties/value",
-                                "default": 0,
-                                "description": "The amount of this reward type gained.",
-                                "title": "The value schema",
-                                "type": "integer",
-                                "examples": [
-                                    14400
-                                ]
-                            }
-                        },
-                        "additionalProperties": true
-                    }
-                ]
-            }
-        },
-        "stats": {
-            "$id": "#/properties/stats",
-            "default": {},
-            "description": "Instance of the armada stats.",
-            "title": "The stats schema",
-            "type": "object",
-            "required": [
-                "attack",
-                "defense",
-                "health"
-            ],
-            "properties": {
-                "attack": {
-                    "$id": "#/properties/stats/properties/attack",
-                    "default": {},
-                    "description": "All armada attack stats.",
-                    "title": "The attack schema",
-                    "type": "object",
-                    "required": [
-                        "damage_per_round",
-                        "armor_pierce",
-                        "shield_pierce",
-                        "accuracy",
-                        "crit_change",
-                        "crit_damage"
-                    ],
-                    "properties": {
-                        "damage_per_round": {
-                            "$id": "#/properties/stats/properties/attack/properties/damage_per_round",
-                            "default": 0,
-                            "description": "The total average damage per round.",
-                            "title": "The damage_per_round schema",
-                            "type": "integer",
-                            "examples": [
-                                1594000
-                            ]
-                        },
-                        "armor_pierce": {
-                            "$id": "#/properties/stats/properties/attack/properties/armor_pierce",
-                            "default": 0,
-                            "description": "The total average armor piercing.",
-                            "title": "The armor_pierce schema",
-                            "type": "integer",
-                            "examples": [
-                                82997
-                            ]
-                        },
-                        "shield_pierce": {
-                            "$id": "#/properties/stats/properties/attack/properties/shield_pierce",
-                            "default": 0,
-                            "description": "The total average shield piercing.",
-                            "title": "The shield_pierce schema",
-                            "type": "integer",
-                            "examples": [
-                                68351
-                            ]
-                        },
-                        "accuracy": {
-                            "$id": "#/properties/stats/properties/attack/properties/accuracy",
-                            "default": 0,
-                            "description": "The total average accuracy.",
-                            "title": "The accuracy schema",
-                            "type": "integer",
-                            "examples": [
-                                71402
-                            ]
-                        },
-                        "crit_change": {
-                            "$id": "#/properties/stats/properties/attack/properties/crit_change",
-                            "default": 0.0,
-                            "description": "The total average critical chance in percentage.",
-                            "title": "The crit_change schema",
-                            "type": "number",
-                            "examples": [
-                                0.1
-                            ]
-                        },
-                        "crit_damage": {
-                            "$id": "#/properties/stats/properties/attack/properties/crit_damage",
-                            "default": 0.0,
-                            "description": "The total average critical damage in percentage.",
-                            "title": "The crit_damage schema",
-                            "type": "number",
-                            "examples": [
-                                1.5
-                            ]
-                        }
-                    },
-                    "additionalProperties": true
-                },
-                "defense": {
-                    "$id": "#/properties/stats/properties/defense",
-                    "default": {},
-                    "description": "All armada defense stats.",
-                    "title": "The defense schema",
-                    "type": "object",
-                    "required": [
-                        "armor",
-                        "shield_deflect",
-                        "dodge"
-                    ],
-                    "properties": {
-                        "armor": {
-                            "$id": "#/properties/stats/properties/defense/properties/armor",
-                            "default": 0,
-                            "description": "The total armada armor.",
-                            "title": "The armor schema",
-                            "type": "integer",
-                            "examples": [
-                                267000
-                            ]
-                        },
-                        "shield_deflect": {
-                            "$id": "#/properties/stats/properties/defense/properties/shield_deflect",
-                            "default": 0,
-                            "description": "The total armada shield deflection.",
-                            "title": "The shield_deflect schema",
-                            "type": "integer",
-                            "examples": [
-                                305100
-                            ]
-                        },
-                        "dodge": {
-                            "$id": "#/properties/stats/properties/defense/properties/dodge",
-                            "default": 0,
-                            "description": "The total armada dodge capability.",
-                            "title": "The dodge schema",
-                            "type": "integer",
-                            "examples": [
-                                356000
-                            ]
-                        }
-                    },
-                    "additionalProperties": true
-                },
-                "health": {
-                    "$id": "#/properties/stats/properties/health",
-                    "default": {},
-                    "description": "All armada health stats.",
-                    "title": "The health schema",
-                    "type": "object",
-                    "required": [
-                        "shield_health",
-                        "hull_health"
-                    ],
-                    "properties": {
-                        "shield_health": {
-                            "$id": "#/properties/stats/properties/health/properties/shield_health",
-                            "default": 0,
-                            "description": "The total armada shield health.",
-                            "title": "The shield_health schema",
-                            "type": "integer",
-                            "examples": [
-                                20185000
-                            ]
-                        },
-                        "hull_health": {
-                            "$id": "#/properties/stats/properties/health/properties/hull_health",
-                            "default": 0,
-                            "description": "The total armada hull health.",
-                            "title": "The hull_health schema",
-                            "type": "integer",
-                            "examples": [
-                                40371000
-                            ]
-                        }
-                    },
-                    "additionalProperties": true
-                }
-            },
-            "additionalProperties": false
-        },
-        "weapons": {
-            "$id": "#/properties/weapons",
-            "default": [],
-            "description": "List of all grouped armada weapons. Grouped by same stats.",
-            "title": "The weapons schema",
-            "type": "array",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/weapons/items",
-                "anyOf": [
-                    {
-                        "$id": "#/properties/weapons/items/anyOf/0",
-                        "default": {},
-                        "description": "Single armada weapon instance.",
-                        "title": "The first anyOf schema",
-                        "type": "object",
-                        "required": [
-                            "weapon_id",
-                            "weapon_type",
-                            "quantity",
-                            "firing_pattern",
-                            "weapon_stats"
-                        ],
-                        "properties": {
-                            "weapon_id": {
-                                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_id",
-                                "default": "",
-                                "description": "Id of the weapon, for displaying purposes.",
-                                "title": "The weapon_id schema",
-                                "type": "string",
-                                "examples": [
-                                    "E1"
-                                ]
-                            },
-                            "weapon_type": {
-                                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_type",
-                                "default": "",
-                                "description": "The type of weapon.",
-                                "title": "The weapon_type schema",
-                                "type": "string",
-                                "enum": [
-                                    "energy",
-                                    "kinetic"
-                                ],
-                                "examples": [
-                                    "energy"
-                                ]
-                            },
-                            "quantity": {
-                                "$id": "#/properties/weapons/items/anyOf/0/properties/quantity",
-                                "default": 0,
-                                "description": "The number of weapons with same stats.",
-                                "title": "The quantity schema",
-                                "type": "integer",
-                                "examples": [
-                                    2
-                                ]
-                            },
-                            "firing_pattern": {
-                                "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern",
-                                "default": [],
-                                "description": "The weapon firing pattern.",
-                                "title": "The firing_pattern schema",
-                                "minItems": 15,
-                                "maxItems": 15,
-                                "type": "array",
-                                "additionalItems": true,
-                                "items": {
-                                    "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern/items",
-                                    "anyOf": [
-                                        {
-                                            "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern/items/anyOf/0",
-                                            "default": 0,
-                                            "description": "Single firing instance. Number of shots per round.",
-                                            "title": "The first anyOf schema",
-                                            "type": "integer",
-                                            "examples": [
-                                                1
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "weapon_stats": {
-                                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats",
-                                "default": {},
-                                "description": "All weapon specific stats.",
-                                "title": "The weapon_stats schema",
-                                "type": "object",
-                                "required": [
-                                    "damage_per_round",
-                                    "armor_pierce",
-                                    "shield_pierce",
-                                    "accuracy",
-                                    "crit_change",
-                                    "crit_damage",
-                                    "min_damage",
-                                    "max_damage"
-                                ],
-                                "properties": {
-                                    "damage_per_round": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/damage_per_round",
-                                        "default": 0,
-                                        "description": "The damage per round of this weapon.",
-                                        "title": "The damage_per_round schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            1594000
-                                        ]
-                                    },
-                                    "armor_pierce": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/armor_pierce",
-                                        "default": 0,
-                                        "description": "The armor piercing of this weapon.",
-                                        "title": "The armor_pierce schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            82997
-                                        ]
-                                    },
-                                    "shield_pierce": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/shield_pierce",
-                                        "default": 0,
-                                        "description": "The shield piercing of this weapon.",
-                                        "title": "The shield_pierce schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            68351
-                                        ]
-                                    },
-                                    "accuracy": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/accuracy",
-                                        "default": 0,
-                                        "description": "The accuracy of this weapon.",
-                                        "title": "The accuracy schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            71402
-                                        ]
-                                    },
-                                    "crit_change": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_change",
-                                        "default": 0.0,
-                                        "description": "The critical chance of this weapon in percentage.",
-                                        "title": "The crit_change schema",
-                                        "type": "number",
-                                        "examples": [
-                                            0.1
-                                        ]
-                                    },
-                                    "crit_damage": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_damage",
-                                        "default": 0.0,
-                                        "description": "The critical damage of this weapon in percentage.",
-                                        "title": "The crit_damage schema",
-                                        "type": "number",
-                                        "examples": [
-                                            1.5
-                                        ]
-                                    },
-                                    "min_damage": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/min_damage",
-                                        "default": 0,
-                                        "description": "The minimum amount of damage the weapon caused.",
-                                        "title": "The min_damage schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            201900
-                                        ]
-                                    },
-                                    "max_damage": {
-                                        "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/max_damage",
-                                        "default": 0,
-                                        "description": "The maximum amount of damage the weapon caused.",
-                                        "title": "The max_damage schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            246700
-                                        ]
-                                    }
-                                },
-                                "additionalProperties": true
-                            }
-                        },
-                        "additionalProperties": true
-                    }
-                ]
-            }
+        "health": {
+          "hull_health": 40371000,
+          "shield_health": 20185000
         }
+      },
+      "systems": [
+        {
+          "$ref": "reference to system file"
+        }
+      ],
+      "weapons": [
+        {
+          "firing_pattern": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "quantity": 2,
+          "weapon_id": "E1",
+          "weapon_stats": {
+            "accuracy": 71402,
+            "armor_pierce": 82997,
+            "crit_change": 0.1,
+            "crit_damage": 1.5,
+            "damage_per_round": 1594000,
+            "max_damage": 246700,
+            "min_damage": 201900,
+            "shield_pierce": 68351
+          },
+          "weapon_type": "energy"
+        }
+      ]
+    }
+  ],
+  "properties": {
+    "description": {
+      "$id": "#/properties/description",
+      "title": "The description schema",
+      "description": "The armada description.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "This major base is Klingon..."
+      ]
     },
-    "additionalProperties": true
+    "armada_name": {
+      "$id": "#/properties/armada_name",
+      "title": "The armada_name schema",
+      "description": "The name of the armada.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Klingon Fortress"
+      ]
+    },
+    "group": {
+      "$id": "#/properties/group",
+      "title": "The group schema",
+      "description": "(Optional) Group of the armada, faction or territorial.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "klingon"
+      ]
+    },
+    "level": {
+      "$id": "#/properties/level",
+      "title": "The level schema",
+      "description": "Level of the armada.",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        36
+      ]
+    },
+    "rarity": {
+      "$id": "#/properties/rarity",
+      "title": "The rarity schema",
+      "description": "Rarity of the armada.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "uncommon",
+        "rare",
+        "epic"
+      ],
+      "examples": [
+        "epic"
+      ]
+    },
+    "rewards": {
+      "$id": "#/properties/rewards",
+      "title": "The rewards schema",
+      "description": "List of all rewards gained by destroying the armada.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/rewards/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/rewards/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single reward instance.",
+            "required": [
+              "type",
+              "value"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "type": {
+                "$id": "#/properties/rewards/items/anyOf/0/properties/type",
+                "title": "The type schema",
+                "description": "Type of reward gained.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "federation points"
+                ]
+              },
+              "value": {
+                "$id": "#/properties/rewards/items/anyOf/0/properties/value",
+                "title": "The value schema",
+                "description": "The amount of this reward type gained.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  14400
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "stats": {
+      "$id": "#/properties/stats",
+      "title": "The stats schema",
+      "description": "Instance of the armada stats.",
+      "required": [
+        "attack",
+        "defense",
+        "health"
+      ],
+      "type": "object",
+      "additionalProperties": false,
+      "default": {},
+      "properties": {
+        "attack": {
+          "$id": "#/properties/stats/properties/attack",
+          "title": "The attack schema",
+          "description": "All armada attack stats.",
+          "required": [
+            "damage_per_round",
+            "armor_pierce",
+            "shield_pierce",
+            "accuracy",
+            "crit_change",
+            "crit_damage"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "accuracy": {
+              "$id": "#/properties/stats/properties/attack/properties/accuracy",
+              "title": "The accuracy schema",
+              "description": "The total average accuracy.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                71402
+              ]
+            },
+            "armor_pierce": {
+              "$id": "#/properties/stats/properties/attack/properties/armor_pierce",
+              "title": "The armor_pierce schema",
+              "description": "The total average armor piercing.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                82997
+              ]
+            },
+            "crit_change": {
+              "$id": "#/properties/stats/properties/attack/properties/crit_change",
+              "title": "The crit_change schema",
+              "description": "The total average critical chance in percentage.",
+              "type": "number",
+              "default": 0.0,
+              "examples": [
+                0.1
+              ]
+            },
+            "crit_damage": {
+              "$id": "#/properties/stats/properties/attack/properties/crit_damage",
+              "title": "The crit_damage schema",
+              "description": "The total average critical damage in percentage.",
+              "type": "number",
+              "default": 0.0,
+              "examples": [
+                1.5
+              ]
+            },
+            "damage_per_round": {
+              "$id": "#/properties/stats/properties/attack/properties/damage_per_round",
+              "title": "The damage_per_round schema",
+              "description": "The total average damage per round.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                1594000
+              ]
+            },
+            "shield_pierce": {
+              "$id": "#/properties/stats/properties/attack/properties/shield_pierce",
+              "title": "The shield_pierce schema",
+              "description": "The total average shield piercing.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                68351
+              ]
+            }
+          }
+        },
+        "defense": {
+          "$id": "#/properties/stats/properties/defense",
+          "title": "The defense schema",
+          "description": "All armada defense stats.",
+          "required": [
+            "armor",
+            "shield_deflect",
+            "dodge"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "armor": {
+              "$id": "#/properties/stats/properties/defense/properties/armor",
+              "title": "The armor schema",
+              "description": "The total armada armor.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                267000
+              ]
+            },
+            "dodge": {
+              "$id": "#/properties/stats/properties/defense/properties/dodge",
+              "title": "The dodge schema",
+              "description": "The total armada dodge capability.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                356000
+              ]
+            },
+            "shield_deflect": {
+              "$id": "#/properties/stats/properties/defense/properties/shield_deflect",
+              "title": "The shield_deflect schema",
+              "description": "The total armada shield deflection.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                305100
+              ]
+            }
+          }
+        },
+        "health": {
+          "$id": "#/properties/stats/properties/health",
+          "title": "The health schema",
+          "description": "All armada health stats.",
+          "required": [
+            "shield_health",
+            "hull_health"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "hull_health": {
+              "$id": "#/properties/stats/properties/health/properties/hull_health",
+              "title": "The hull_health schema",
+              "description": "The total armada hull health.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                40371000
+              ]
+            },
+            "shield_health": {
+              "$id": "#/properties/stats/properties/health/properties/shield_health",
+              "title": "The shield_health schema",
+              "description": "The total armada shield health.",
+              "type": "integer",
+              "default": 0,
+              "examples": [
+                20185000
+              ]
+            }
+          }
+        }
+      }
+    },
+    "systems": {
+      "$id": "#/properties/systems",
+      "title": "The systems schema",
+      "description": "List of all systems harboring this type of armada.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/systems/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/systems/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single system instance.",
+            "required": [
+              "$ref"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "$ref": {
+                "$id": "#/properties/systems/items/anyOf/0/properties/%24ref",
+                "title": "The $ref schema",
+                "description": "Reference to the system file.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "reference to system file"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "weapons": {
+      "$id": "#/properties/weapons",
+      "title": "The weapons schema",
+      "description": "List of all grouped armada weapons. Grouped by same stats.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/weapons/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/weapons/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single armada weapon instance.",
+            "required": [
+              "weapon_id",
+              "weapon_type",
+              "quantity",
+              "firing_pattern",
+              "weapon_stats"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "firing_pattern": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern",
+                "title": "The firing_pattern schema",
+                "description": "The weapon firing pattern.",
+                "type": "array",
+                "additionalItems": true,
+                "default": [],
+                "items": {
+                  "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/weapons/items/anyOf/0/properties/firing_pattern/items/anyOf/0",
+                      "title": "The first anyOf schema",
+                      "description": "Single firing instance. Number of shots per round.",
+                      "type": "integer",
+                      "default": 0,
+                      "examples": [
+                        1
+                      ]
+                    }
+                  ]
+                },
+                "maxItems": 15,
+                "minItems": 15
+              },
+              "quantity": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/quantity",
+                "title": "The quantity schema",
+                "description": "The number of weapons with same stats.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              },
+              "weapon_id": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_id",
+                "title": "The weapon_id schema",
+                "description": "Id of the weapon, for displaying purposes.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "E1"
+                ]
+              },
+              "weapon_stats": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats",
+                "title": "The weapon_stats schema",
+                "description": "All weapon specific stats.",
+                "required": [
+                  "damage_per_round",
+                  "armor_pierce",
+                  "shield_pierce",
+                  "accuracy",
+                  "crit_change",
+                  "crit_damage",
+                  "min_damage",
+                  "max_damage"
+                ],
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {
+                  "accuracy": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/accuracy",
+                    "title": "The accuracy schema",
+                    "description": "The accuracy of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      71402
+                    ]
+                  },
+                  "armor_pierce": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/armor_pierce",
+                    "title": "The armor_pierce schema",
+                    "description": "The armor piercing of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      82997
+                    ]
+                  },
+                  "crit_change": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_change",
+                    "title": "The crit_change schema",
+                    "description": "The critical chance of this weapon in percentage.",
+                    "type": "number",
+                    "default": 0.0,
+                    "examples": [
+                      0.1
+                    ]
+                  },
+                  "crit_damage": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_damage",
+                    "title": "The crit_damage schema",
+                    "description": "The critical damage of this weapon in percentage.",
+                    "type": "number",
+                    "default": 0.0,
+                    "examples": [
+                      1.5
+                    ]
+                  },
+                  "damage_per_round": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/damage_per_round",
+                    "title": "The damage_per_round schema",
+                    "description": "The damage per round of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      1594000
+                    ]
+                  },
+                  "max_damage": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/max_damage",
+                    "title": "The max_damage schema",
+                    "description": "The maximum amount of damage the weapon caused.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      246700
+                    ]
+                  },
+                  "min_damage": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/min_damage",
+                    "title": "The min_damage schema",
+                    "description": "The minimum amount of damage the weapon caused.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      201900
+                    ]
+                  },
+                  "shield_pierce": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/shield_pierce",
+                    "title": "The shield_pierce schema",
+                    "description": "The shield piercing of this weapon.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      68351
+                    ]
+                  }
+                }
+              },
+              "weapon_type": {
+                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_type",
+                "title": "The weapon_type schema",
+                "description": "The type of weapon.",
+                "type": "string",
+                "default": "",
+                "enum": [
+                  "energy",
+                  "kinetic"
+                ],
+                "examples": [
+                  "energy"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
 }
