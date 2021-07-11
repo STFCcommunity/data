@@ -1,0 +1,54 @@
+name: Validate JSONs
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  validate_configurations:
+    name: Validate configurations
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate Alliance Contributions
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/alliance_contributions.json
+          jsons: alliance_contributions/*.json
+      - name: Validate Buildings
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/buildings.json
+          jsons: buildings/*.json
+      - name: Validate Officers
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/officers.json
+          jsons: officers/*.json
+      - name: Validate Refits
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/refits.json
+          jsons: refits/*.json
+      - name: Validate Research
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/research.json
+          jsons: research/*.json
+      - name: Validate Ships
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/ships.json
+          jsons: ships/*.json
+      - name: Validate Systems
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/systems.json
+          jsons: systems/*.json
+      - name: Validate Territories
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/territories.json
+          jsons: territories/*.json
