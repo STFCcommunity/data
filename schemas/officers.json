@@ -1,449 +1,449 @@
 {
-    "$id": "http://example.com/example.json",
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "default": {},
-    "description": "A schema for officers used in STFC.",
-    "examples": [
+  "$id": "http://example.com/example.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "The root schema",
+  "description": "A schema for officers used in STFC.",
+  "required": [
+    "officer_name",
+    "rarity",
+    "class",
+    "faction",
+    "group",
+    "img_url",
+    "ability_info",
+    "synergy",
+    "ranks"
+  ],
+  "type": "object",
+  "additionalProperties": true,
+  "default": {},
+  "examples": [
+    {
+      "ability_info": {
+        "captain_maneuver": {
+          "name": "Joy In Vengeance",
+          "percentage": true,
+          "value": 0.4
+        },
+        "officer_ability": {
+          "name": "See the Flaws",
+          "percentage": true
+        }
+      },
+      "class": "engineering",
+      "faction": "romulan",
+      "group": "nero's crew",
+      "img_url": "url",
+      "officer_name": "Nero",
+      "ranks": [
         {
-            "officer_name": "Nero",
-            "rarity": "epic",
-            "class": "engineering",
-            "faction": "romulan",
-            "group": "nero's crew",
-            "img_url": "url",
-            "ability_info": {
-                "captain_maneuver": {
-                    "name": "Joy In Vengeance",
-                    "percentage": true,
-                    "value": 0.4
-                },
-                "officer_ability": {
-                    "name": "See the Flaws",
-                    "percentage": true
-                }
-            },
-            "synergy": {
-                "command": 0.2,
-                "engineering": 0.1,
-                "science": 0.2
-            },
-            "ranks": [
-                {
-                    "rank_id": 2,
-                    "name": "Lieutenant JG II",
-                    "officer_ability_value": 0.3,
-                    "requirements": {
-                        "credits": 1100,
-                        "badges": 1,
-                        "xp": 50000,
-                        "shards": 100,
-                        "others": [
-                            {
-                                "name": "assimilated nanoprobes",
-                                "value": 1
-                            }
-                        ]
-                    }
-                }
-            ]
+          "name": "Lieutenant JG II",
+          "officer_ability_value": 0.3,
+          "rank_id": 2,
+          "requirements": {
+            "badges": 1,
+            "credits": 1100,
+            "others": [
+              {
+                "name": "assimilated nanoprobes",
+                "value": 1
+              }
+            ],
+            "shards": 100,
+            "xp": 50000
+          }
         }
-    ],
-    "required": [
-        "officer_name",
-        "rarity",
-        "class",
-        "faction",
-        "group",
-        "img_url",
-        "ability_info",
-        "synergy",
-        "ranks"
-    ],
-    "title": "The root schema",
-    "type": "object",
-    "properties": {
-        "officer_name": {
-            "$id": "#/properties/officer_name",
-            "default": "",
-            "description": "Name of the officer.",
-            "title": "The officer_name schema",
-            "type": "string",
-            "examples": [
-                "Nero"
-            ]
-        },
-        "rarity": {
-            "$id": "#/properties/rarity",
-            "default": "",
-            "description": "Rarity of the officers.",
-            "title": "The rarity schema",
-            "type": "string",
-            "enum": [
-                "common",
-                "uncommon",
-                "rare",
-                "epic"
-            ],
-            "examples": [
-                "common"
-            ]
-        },
-        "class": {
-            "$id": "#/properties/class",
-            "default": "",
-            "description": "The class to which the officers belongs.",
-            "title": "The class schema",
-            "type": "string",
-            "enum": [
-                "command",
-                "engineering",
-                "science"
-            ],
-            "examples": [
-                "command"
-            ]
-        },
-        "faction": {
-            "$id": "#/properties/faction",
-            "default": "",
-            "description": "Faction to which the officer belongs.",
-            "title": "The faction schema",
-            "type": "string",
-            "enum": [
-                "neutral",
-                "federation",
-                "romulan",
-                "klingon",
-                "augment",
-                "rogue"
-            ],
-            "examples": [
-                "romulan"
-            ]
-        },
-        "group": {
-            "$id": "#/properties/group",
-            "default": "",
-            "description": "The group to which the officer belongs.",
-            "title": "The group schema",
-            "type": "string",
-            "examples": [
-                "nero's crew"
-            ]
-        },
-        "img_url": {
-            "$id": "#/properties/img_url",
-            "default": "",
-            "description": "The URL of the officer image.",
-            "title": "The url schema",
-            "type": "string",
-            "examples": [
-                "url"
-            ]
-        },
-        "ability_info": {
-            "$id": "#/properties/ability_info",
-            "default": {},
-            "description": "Information about the officer's abilities.",
-            "required": [
-                "captain_maneuver",
-                "officer_ability"
-            ],
-            "title": "The ability_info schema",
-            "type": "object",
-            "properties": {
-                "captain_maneuver": {
-                    "$id": "#/properties/ability_info/properties/captain_maneuver",
-                    "default": {},
-                    "description": "Officer ability as captain.",
-                    "required": [
-                        "name",
-                        "percentage",
-                        "value"
-                    ],
-                    "title": "The captain_maneuver schema",
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "$id": "#/properties/ability_info/properties/captain_maneuver/properties/name",
-                            "default": "",
-                            "description": "The name of the captain maneuver ability.",
-                            "title": "The name schema",
-                            "type": "string",
-                            "examples": [
-                                "Joy In Vengeance"
-                            ]
-                        },
-                        "percentage": {
-                            "$id": "#/properties/ability_info/properties/captain_maneuver/properties/percentage",
-                            "default": true,
-                            "description": "Boolean wether the ability is a percentage or not.",
-                            "title": "The percentage schema",
-                            "type": "boolean",
-                            "examples": [
-                                true
-                            ]
-                        },
-                        "value": {
-                            "$id": "#/properties/ability_info/properties/captain_maneuver/properties/value",
-                            "default": 0.0,
-                            "description": "The value of the captain maneuver ability. Not depending on officer level.",
-                            "title": "The value schema",
-                            "type": "number",
-                            "examples": [
-                                0.4
-                            ]
-                        }
-                    },
-                    "additionalProperties": true
-                },
-                "officer_ability": {
-                    "$id": "#/properties/ability_info/properties/officer_ability",
-                    "default": {},
-                    "description": "Officer ability when assigned to the bridge. Dependant on officer level.",
-                    "required": [
-                        "name",
-                        "percentage"
-                    ],
-                    "title": "The officer_ability schema",
-                    "type": "object",
-                    "properties": {
-                        "name": {
-                            "$id": "#/properties/ability_info/properties/officer_ability/properties/name",
-                            "default": "",
-                            "description": "The name of the officer ability.",
-                            "title": "The name schema",
-                            "type": "string",
-                            "examples": [
-                                "See the Flaws"
-                            ]
-                        },
-                        "percentage": {
-                            "$id": "#/properties/ability_info/properties/officer_ability/properties/percentage",
-                            "default": false,
-                            "description": "Boolean wether the ability is a percentage or not.",
-                            "title": "The percentage schema",
-                            "type": "boolean",
-                            "examples": [
-                                true
-                            ]
-                        }
-                    },
-                    "additionalProperties": true
-                }
+      ],
+      "rarity": "epic",
+      "synergy": {
+        "command": 0.2,
+        "engineering": 0.1,
+        "science": 0.2
+      }
+    }
+  ],
+  "properties": {
+    "ability_info": {
+      "$id": "#/properties/ability_info",
+      "title": "The ability_info schema",
+      "description": "Information about the officer's abilities.",
+      "required": [
+        "captain_maneuver",
+        "officer_ability"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "captain_maneuver": {
+          "$id": "#/properties/ability_info/properties/captain_maneuver",
+          "title": "The captain_maneuver schema",
+          "description": "Officer ability as captain.",
+          "required": [
+            "name",
+            "percentage",
+            "value"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "name": {
+              "$id": "#/properties/ability_info/properties/captain_maneuver/properties/name",
+              "title": "The name schema",
+              "description": "The name of the captain maneuver ability.",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Joy In Vengeance"
+              ]
             },
-            "additionalProperties": true
-        },
-        "synergy": {
-            "$id": "#/properties/synergy",
-            "default": {},
-            "description": "Information about synergy between officers by class.",
-            "required": [
-                "command",
-                "engineering",
-                "science"
-            ],
-            "title": "The synergy schema",
-            "type": "object",
-            "properties": {
-                "command": {
-                    "$id": "#/properties/synergy/properties/command",
-                    "default": 0.0,
-                    "description": "Percentage of synergy when assigning officer of class command.",
-                    "title": "The command schema",
-                    "type": "number",
-                    "examples": [
-                        0.2
-                    ]
-                },
-                "engineering": {
-                    "$id": "#/properties/synergy/properties/engineering",
-                    "default": 0.0,
-                    "description": "Percentage of synergy when assigning officer of class engineering.",
-                    "title": "The engineering schema",
-                    "type": "number",
-                    "examples": [
-                        0.1
-                    ]
-                },
-                "science": {
-                    "$id": "#/properties/synergy/properties/science",
-                    "default": 0.0,
-                    "description": "Percentage of synergy when assigning officer of class science.",
-                    "title": "The science schema",
-                    "type": "number",
-                    "examples": [
-                        0.2
-                    ]
-                }
+            "percentage": {
+              "$id": "#/properties/ability_info/properties/captain_maneuver/properties/percentage",
+              "title": "The percentage schema",
+              "description": "Boolean wether the ability is a percentage or not.",
+              "type": "boolean",
+              "default": true,
+              "examples": [
+                true
+              ]
             },
-            "additionalProperties": true
-        },
-        "ranks": {
-            "$id": "#/properties/ranks",
-            "default": [],
-            "description": "List of all officer ranks.",
-            "title": "The ranks schema",
-            "type": "array",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/ranks/items",
-                "anyOf": [
-                    {
-                        "$id": "#/properties/ranks/items/anyOf/0",
-                        "default": {},
-                        "description": "Single officer rank instance.",
-                        "required": [
-                            "rank_id",
-                            "name",
-                            "officer_ability_value",
-                            "requirements"
-                        ],
-                        "title": "The first anyOf schema",
-                        "type": "object",
-                        "properties": {
-                            "rank_id": {
-                                "$id": "#/properties/ranks/items/anyOf/0/properties/rank_id",
-                                "default": 0,
-                                "description": "Rank number of the current rank.",
-                                "title": "The rank_id schema",
-                                "type": "integer",
-                                "examples": [
-                                    2
-                                ]
-                            },
-                            "name": {
-                                "$id": "#/properties/ranks/items/anyOf/0/properties/name",
-                                "default": "",
-                                "description": "The name of the current rank.",
-                                "title": "The name schema",
-                                "type": "string",
-                                "enum": [
-                                    "Ensign I",
-                                    "Lieutenant JG II",
-                                    "Lieutenant III",
-                                    "Lt. Cmdr IV",
-                                    "Commander V"
-                                ],
-                                "examples": [
-                                    "Lt. JG II"
-                                ]
-                            },
-                            "officer_ability_value": {
-                                "$id": "#/properties/ranks/items/anyOf/0/properties/officer_ability_value",
-                                "default": 0.0,
-                                "description": "Value of the officer ability.",
-                                "title": "The officer_ability_value schema",
-                                "type": "number",
-                                "examples": [
-                                    0.3
-                                ]
-                            },
-                            "requirements": {
-                                "$id": "#/properties/ranks/items/anyOf/0/properties/requirements",
-                                "default": {},
-                                "description": "All requirements and costs before the officer can be upgraded to this rank.",
-                                "title": "The requirements schema",
-                                "type": "object",
-                                "required": [],
-                                "properties": {
-                                    "credits": {
-                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/credits",
-                                        "default": 0,
-                                        "description": "Amount of independant or faction credits required.",
-                                        "title": "The credits schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            1100
-                                        ]
-                                    },
-                                    "badges": {
-                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/badges",
-                                        "default": 0,
-                                        "description": "Number of class badges required.",
-                                        "title": "The badges schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            2
-                                        ]
-                                    },
-                                    "xp": {
-                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/xp",
-                                        "default": 0,
-                                        "description": "Amount of officer xp required to upgrade the officer and additional levels.",
-                                        "title": "The xp schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            50000
-                                        ]
-                                    },
-                                    "shards": {
-                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/shards",
-                                        "default": 0,
-                                        "description": "Amount of officer shards required.",
-                                        "title": "The shards schema",
-                                        "type": "integer",
-                                        "examples": [
-                                            100
-                                        ]
-                                    },
-                                    "others": {
-                                        "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items",
-                                        "type": "array",
-                                        "title": "The others schema",
-                                        "description": "List of all other requirements for special officers.",
-                                        "default": [],
-                                        "required": [],
-                                        "additionalItems": true,
-                                        "items": {
-                                            "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items",
-                                            "anyOf": [
-                                                {
-                                                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0",
-                                                    "default": {},
-                                                    "description": "Single other requirement instance.",
-                                                    "required": [
-                                                        "name",
-                                                        "value"
-                                                    ],
-                                                    "title": "The first anyOf schema",
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "name": {
-                                                            "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0/properties/name",
-                                                            "type": "string",
-                                                            "title": "The name schema",
-                                                            "description": "Name of the other requirement.",
-                                                            "default": "",
-                                                            "examples": [
-                                                                "assimilated nanoprobes"
-                                                            ]
-                                                        },
-                                                        "value": {
-                                                            "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0/properties/value",
-                                                            "type": "integer",
-                                                            "title": "The value schema",
-                                                            "description": "Value of the other requirement.",
-                                                            "default": 0,
-                                                            "examples": [
-                                                                1
-                                                            ]
-                                                        }
-                                                    },
-                                                    "additionalProperties": true
-                                                }
-                                            ]
-                                        }
-                                    }
-                                },
-                                "additionalProperties": true
-                            }
-                        },
-                        "additionalProperties": true
-                    }
-                ]
+            "value": {
+              "$id": "#/properties/ability_info/properties/captain_maneuver/properties/value",
+              "title": "The value schema",
+              "description": "The value of the captain maneuver ability. Not depending on officer level.",
+              "type": "number",
+              "default": 0.0,
+              "examples": [
+                0.4
+              ]
             }
+          }
+        },
+        "officer_ability": {
+          "$id": "#/properties/ability_info/properties/officer_ability",
+          "title": "The officer_ability schema",
+          "description": "Officer ability when assigned to the bridge. Dependant on officer level.",
+          "required": [
+            "name",
+            "percentage"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "name": {
+              "$id": "#/properties/ability_info/properties/officer_ability/properties/name",
+              "title": "The name schema",
+              "description": "The name of the officer ability.",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "See the Flaws"
+              ]
+            },
+            "percentage": {
+              "$id": "#/properties/ability_info/properties/officer_ability/properties/percentage",
+              "title": "The percentage schema",
+              "description": "Boolean wether the ability is a percentage or not.",
+              "type": "boolean",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
+          }
         }
+      }
     },
-    "additionalProperties": true
+    "class": {
+      "$id": "#/properties/class",
+      "title": "The class schema",
+      "description": "The class to which the officers belongs.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "command",
+        "engineering",
+        "science"
+      ],
+      "examples": [
+        "command"
+      ]
+    },
+    "faction": {
+      "$id": "#/properties/faction",
+      "title": "The faction schema",
+      "description": "Faction to which the officer belongs.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "neutral",
+        "federation",
+        "romulan",
+        "klingon",
+        "augment",
+        "rogue"
+      ],
+      "examples": [
+        "romulan"
+      ]
+    },
+    "group": {
+      "$id": "#/properties/group",
+      "title": "The group schema",
+      "description": "The group to which the officer belongs.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "nero's crew"
+      ]
+    },
+    "img_url": {
+      "$id": "#/properties/img_url",
+      "title": "The url schema",
+      "description": "The URL of the officer image.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "url"
+      ]
+    },
+    "officer_name": {
+      "$id": "#/properties/officer_name",
+      "title": "The officer_name schema",
+      "description": "Name of the officer.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Nero"
+      ]
+    },
+    "ranks": {
+      "$id": "#/properties/ranks",
+      "title": "The ranks schema",
+      "description": "List of all officer ranks.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/ranks/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/ranks/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single officer rank instance.",
+            "required": [
+              "rank_id",
+              "name",
+              "officer_ability_value",
+              "requirements"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "name": {
+                "$id": "#/properties/ranks/items/anyOf/0/properties/name",
+                "title": "The name schema",
+                "description": "The name of the current rank.",
+                "type": "string",
+                "default": "",
+                "enum": [
+                  "Ensign I",
+                  "Lieutenant JG II",
+                  "Lieutenant III",
+                  "Lt. Cmdr IV",
+                  "Commander V"
+                ],
+                "examples": [
+                  "Lt. JG II"
+                ]
+              },
+              "officer_ability_value": {
+                "$id": "#/properties/ranks/items/anyOf/0/properties/officer_ability_value",
+                "title": "The officer_ability_value schema",
+                "description": "Value of the officer ability.",
+                "type": "number",
+                "default": 0.0,
+                "examples": [
+                  0.3
+                ]
+              },
+              "rank_id": {
+                "$id": "#/properties/ranks/items/anyOf/0/properties/rank_id",
+                "title": "The rank_id schema",
+                "description": "Rank number of the current rank.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              },
+              "requirements": {
+                "$id": "#/properties/ranks/items/anyOf/0/properties/requirements",
+                "title": "The requirements schema",
+                "description": "All requirements and costs before the officer can be upgraded to this rank.",
+                "required": [],
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {
+                  "badges": {
+                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/badges",
+                    "title": "The badges schema",
+                    "description": "Number of class badges required.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  },
+                  "credits": {
+                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/credits",
+                    "title": "The credits schema",
+                    "description": "Amount of independant or faction credits required.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      1100
+                    ]
+                  },
+                  "others": {
+                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items",
+                    "title": "The others schema",
+                    "description": "List of all other requirements for special officers.",
+                    "required": [],
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single other requirement instance.",
+                          "required": [
+                            "name",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "name": {
+                              "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0/properties/name",
+                              "title": "The name schema",
+                              "description": "Name of the other requirement.",
+                              "type": "string",
+                              "default": "",
+                              "examples": [
+                                "assimilated nanoprobes"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/others/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "Value of the other requirement.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "shards": {
+                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/shards",
+                    "title": "The shards schema",
+                    "description": "Amount of officer shards required.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      100
+                    ]
+                  },
+                  "xp": {
+                    "$id": "#/properties/ranks/items/anyOf/0/properties/requirements/properties/xp",
+                    "title": "The xp schema",
+                    "description": "Amount of officer xp required to upgrade the officer and additional levels.",
+                    "type": "integer",
+                    "default": 0,
+                    "examples": [
+                      50000
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "rarity": {
+      "$id": "#/properties/rarity",
+      "title": "The rarity schema",
+      "description": "Rarity of the officers.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic"
+      ],
+      "examples": [
+        "common"
+      ]
+    },
+    "synergy": {
+      "$id": "#/properties/synergy",
+      "title": "The synergy schema",
+      "description": "Information about synergy between officers by class.",
+      "required": [
+        "command",
+        "engineering",
+        "science"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "command": {
+          "$id": "#/properties/synergy/properties/command",
+          "title": "The command schema",
+          "description": "Percentage of synergy when assigning officer of class command.",
+          "type": "number",
+          "default": 0.0,
+          "examples": [
+            0.2
+          ]
+        },
+        "engineering": {
+          "$id": "#/properties/synergy/properties/engineering",
+          "title": "The engineering schema",
+          "description": "Percentage of synergy when assigning officer of class engineering.",
+          "type": "number",
+          "default": 0.0,
+          "examples": [
+            0.1
+          ]
+        },
+        "science": {
+          "$id": "#/properties/synergy/properties/science",
+          "title": "The science schema",
+          "description": "Percentage of synergy when assigning officer of class science.",
+          "type": "number",
+          "default": 0.0,
+          "examples": [
+            0.2
+          ]
+        }
+      }
+    }
+  }
 }
