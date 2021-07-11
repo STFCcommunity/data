@@ -1,164 +1,164 @@
 {
-    "$id": "http://example.com/example.json",
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "default": [],
-    "description": "A schema for alliance contributions in STFC.",
-    "examples": [
-        [
-            {
-                "level": 25,
-                "members": 75,
-                "help": 17,
-                "points": 640000,
-                "zone_slots": 5,
-                "resources": [
-                    {
-                        "type": "parsteel",
-                        "ap": 6,
-                        "value": 4800000
+  "$id": "http://example.com/example.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "The root schema",
+  "description": "A schema for alliance contributions in STFC.",
+  "type": "array",
+  "additionalItems": true,
+  "default": [],
+  "examples": [
+    [
+      {
+        "help": 17,
+        "level": 25,
+        "members": 75,
+        "points": 640000,
+        "resources": [
+          {
+            "type": "parsteel",
+            "ap": 6,
+            "value": 4800000
+          }
+        ],
+        "zone_slots": 5
+      }
+    ]
+  ],
+  "items": {
+    "$id": "#/items",
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "title": "The first anyOf schema",
+        "description": "Single alliance contribution level.",
+        "required": [
+          "level",
+          "members",
+          "help",
+          "points",
+          "zone_slots",
+          "resources"
+        ],
+        "type": "object",
+        "additionalProperties": true,
+        "default": {},
+        "properties": {
+          "help": {
+            "$id": "#/items/anyOf/0/properties/help",
+            "title": "The help schema",
+            "description": "The max number of alliance help available for each request.",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+              17
+            ]
+          },
+          "level": {
+            "$id": "#/items/anyOf/0/properties/level",
+            "title": "The level schema",
+            "description": "Numeric alliance level.",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+              25
+            ]
+          },
+          "members": {
+            "$id": "#/items/anyOf/0/properties/members",
+            "title": "The members schema",
+            "description": "The alliance members cap.",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+              75
+            ]
+          },
+          "points": {
+            "$id": "#/items/anyOf/0/properties/points",
+            "title": "The points schema",
+            "description": "The alliance points required.",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+              640000
+            ]
+          },
+          "resources": {
+            "$id": "#/items/anyOf/0/properties/resources",
+            "title": "The resources schema",
+            "description": "List of all usable resources to contribute for this level.",
+            "type": "array",
+            "additionalItems": true,
+            "default": [],
+            "items": {
+              "$id": "#/items/anyOf/0/properties/resources/items",
+              "anyOf": [
+                {
+                  "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0",
+                  "title": "The first anyOf schema",
+                  "description": "Single contribution resource instance.",
+                  "required": [
+                    "type",
+                    "ap",
+                    "value"
+                  ],
+                  "type": "object",
+                  "additionalProperties": true,
+                  "default": {},
+                  "properties": {
+                    "type": {
+                      "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0/properties/type",
+                      "title": "The type schema",
+                      "description": "The type of resource.",
+                      "type": "string",
+                      "default": "",
+                      "enum": [
+                        "parsteel",
+                        "tritanium",
+                        "dilithium",
+                        "latinum"
+                      ],
+                      "examples": [
+                        "parsteel"
+                      ]
+                    },
+                    "ap": {
+                      "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0/properties/ap",
+                      "title": "The ap schema",
+                      "description": "The number of alliance points given by using this resource.",
+                      "type": "integer",
+                      "default": 0,
+                      "examples": [
+                        6
+                      ]
+                    },
+                    "value": {
+                      "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0/properties/value",
+                      "title": "The value schema",
+                      "description": "The amount required of this resource to contribute.",
+                      "type": "integer",
+                      "default": 0,
+                      "examples": [
+                        4800000
+                      ]
                     }
-                ]
+                  }
+                }
+              ]
             }
-        ]
-    ],
-    "title": "The root schema",
-    "type": "array",
-    "additionalItems": true,
-    "items": {
-        "$id": "#/items",
-        "anyOf": [
-            {
-                "$id": "#/items/anyOf/0",
-                "default": {},
-                "description": "Single alliance contribution level.",
-                "required": [
-                    "level",
-                    "members",
-                    "help",
-                    "points",
-                    "zone_slots",
-                    "resources"
-                ],
-                "title": "The first anyOf schema",
-                "type": "object",
-                "properties": {
-                    "level": {
-                        "$id": "#/items/anyOf/0/properties/level",
-                        "default": 0,
-                        "description": "Numeric alliance level.",
-                        "examples": [
-                            25
-                        ],
-                        "title": "The level schema",
-                        "type": "integer"
-                    },
-                    "members": {
-                        "$id": "#/items/anyOf/0/properties/members",
-                        "default": 0,
-                        "description": "The alliance members cap.",
-                        "examples": [
-                            75
-                        ],
-                        "title": "The members schema",
-                        "type": "integer"
-                    },
-                    "help": {
-                        "$id": "#/items/anyOf/0/properties/help",
-                        "default": 0,
-                        "description": "The max number of alliance help available for each request.",
-                        "examples": [
-                            17
-                        ],
-                        "title": "The help schema",
-                        "type": "integer"
-                    },
-                    "points": {
-                        "$id": "#/items/anyOf/0/properties/points",
-                        "default": 0,
-                        "description": "The alliance points required.",
-                        "examples": [
-                            640000
-                        ],
-                        "title": "The points schema",
-                        "type": "integer"
-                    },
-                    "zone_slots": {
-                        "$id": "#/items/anyOf/0/properties/zone_slots",
-                        "default": 0,
-                        "description": "The number of territory zones the alliance can hold.",
-                        "examples": [
-                            5
-                        ],
-                        "title": "The zone_slots schema",
-                        "type": "integer"
-                    },
-                    "resources": {
-                        "$id": "#/items/anyOf/0/properties/resources",
-                        "default": [],
-                        "description": "List of all usable resources to contribute for this level.",
-                        "title": "The resources schema",
-                        "type": "array",
-                        "additionalItems": true,
-                        "items": {
-                            "$id": "#/items/anyOf/0/properties/resources/items",
-                            "anyOf": [
-                                {
-                                    "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0",
-                                    "default": {},
-                                    "description": "Single contribution resource instance.",
-                                    "required": [
-                                        "type",
-                                        "ap",
-                                        "value"
-                                    ],
-                                    "title": "The first anyOf schema",
-                                    "type": "object",
-                                    "properties": {
-                                        "type": {
-                                            "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0/properties/type",
-                                            "default": "",
-                                            "description": "The type of resource.",
-                                            "examples": [
-                                                "parsteel"
-                                            ],
-                                            "title": "The type schema",
-                                            "enum": [
-                                                "parsteel",
-                                                "tritanium",
-                                                "dilithium",
-                                                "latinum"
-                                            ],
-                                            "type": "string"
-                                        },
-                                        "ap": {
-                                            "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0/properties/ap",
-                                            "default": 0,
-                                            "description": "The number of alliance points given by using this resource.",
-                                            "examples": [
-                                                6
-                                            ],
-                                            "title": "The ap schema",
-                                            "type": "integer"
-                                        },
-                                        "value": {
-                                            "$id": "#/items/anyOf/0/properties/resources/items/anyOf/0/properties/value",
-                                            "default": 0,
-                                            "description": "The amount required of this resource to contribute.",
-                                            "examples": [
-                                                4800000
-                                            ],
-                                            "title": "The value schema",
-                                            "type": "integer"
-                                        }
-                                    },
-                                    "additionalProperties": true
-                                }
-                            ]
-                        }
-                    }
-                },
-                "additionalProperties": true
-            }
-        ]
-    }
+          },
+          "zone_slots": {
+            "$id": "#/items/anyOf/0/properties/zone_slots",
+            "title": "The zone_slots schema",
+            "description": "The number of territory zones the alliance can hold.",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+              5
+            ]
+          }
+        }
+      }
+    ]
+  }
 }
