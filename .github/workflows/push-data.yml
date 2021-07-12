@@ -1,15 +1,15 @@
 name: Push data to Elasticsearch
 
 on:
-  pull_request:
-  push:
-    branches:
-      - "elastic-search"
+  workflow_run:
+    workflows: ["Validate JSONs"]
+    branches: ["main"]
+    types: [completed]
 
 jobs:
   push_to_elasticsearch:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
