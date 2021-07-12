@@ -1,17 +1,16 @@
 {
-  "img_url": "./assets/away_team_shuttlecraft.png",
-  "research_name": "Away Team Shuttlecraft",
   "description": "Permanently grants the ability to get one extra away team assignment",
-  "location": {
-    "column": 1,
-    "row": 2,
-    "tree": "away teams"
-  },
+  "img_url": "./assets/away_team_shuttlecraft.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 210,
-      "research_time": 1200,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Away Team Landing Gear",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Operations",
@@ -22,21 +21,22 @@
           "level": 4
         }
       ],
-      "required_by": [
-        {
-          "name": "Away Team Landing Gear",
-          "level": 1
-        }
-      ],
       "research_costs": {
-        "resources": [],
         "materials": [
           {
-            "type": "Service Award",
+            "type": "Service\u00a0Award",
             "value": 7
           }
-        ]
-      }
+        ],
+        "resources": []
+      },
+      "research_time": 1200
     }
-  ]
+  ],
+  "location": {
+    "column": 1,
+    "row": 2,
+    "tree": "away teams"
+  },
+  "research_name": "Away Team Shuttlecraft"
 }

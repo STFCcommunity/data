@@ -1,35 +1,14 @@
 {
-  "img_url": "./assets/adaptive_weaponry.png",
-  "research_name": "Adaptive Weaponry",
   "description": "Increases Weapon Damage against ASSIMILATED.",
-  "location": {
-    "column": 53,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/adaptive_weaponry.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 110000,
       "bonus": {
         "percentage": true,
         "value": 0.08
       },
-      "research_time": 147802,
-      "requirements": [
-        {
-          "name": "4★ Energy Blast",
-          "level": 1
-        },
-        {
-          "name": "4★ Kinetic Shockwave",
-          "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 48
-        }
-      ],
+      "increased_power": 110000,
+      "level": 1,
       "required_by": [
         {
           "name": "Multi-Adaptive Shielding",
@@ -44,34 +23,55 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "4\u2605 Energy Blast",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Kinetic Shockwave",
+          "level": 1
+        },
+        {
+          "name": "R&D Department",
+          "level": 48
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 3065
           }
-        ],
-        "materials": [
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "gas"
-          },
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 147802
     }
-  ]
+  ],
+  "location": {
+    "column": 53,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Adaptive Weaponry"
 }

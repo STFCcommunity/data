@@ -1,21 +1,24 @@
 {
-  "img_url": "./assets/offensive_strategies.png",
-  "research_name": "Offensive Strategies",
   "description": "Increases Weapon Damage of all ships against player ships.",
-  "location": {
-    "column": 46,
-    "row": 1,
-    "tree": "combat"
-  },
+  "img_url": "./assets/offensive_strategies.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 89000,
       "bonus": {
         "percentage": true,
         "value": 0.06
       },
-      "research_time": 61308,
+      "increased_power": 89000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "4\u2605 Explorer Regeneration",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Interceptor Regeneration",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Station Sabotage",
@@ -26,17 +29,21 @@
           "level": 45
         }
       ],
-      "required_by": [
-        {
-          "name": "4★ Explorer Regeneration",
-          "level": 1
-        },
-        {
-          "name": "4★ Interceptor Regeneration",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 1000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 13000
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -46,22 +53,15 @@
             "type": "dilithium",
             "value": 708000
           }
-        ],
-        "materials": [
-          {
-            "value": 1000,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "crystal"
-          },
-          {
-            "value": 13000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 61308
     }
-  ]
+  ],
+  "location": {
+    "column": 46,
+    "row": 1,
+    "tree": "combat"
+  },
+  "research_name": "Offensive Strategies"
 }

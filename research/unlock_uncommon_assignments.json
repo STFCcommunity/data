@@ -1,17 +1,16 @@
 {
-  "img_url": "./assets/unlock_uncommon_assignments.png",
-  "research_name": "Unlock Uncommon Assignments",
   "description": "Unlocks the chance to get uncommon away team assignments",
-  "location": {
-    "column": 3,
-    "row": 2,
-    "tree": "away teams"
-  },
+  "img_url": "./assets/unlock_uncommon_assignments.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 575,
-      "research_time": 4380,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Special Assignments: Officers",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Away Team Landing Gear",
@@ -26,25 +25,26 @@
           "level": 11
         }
       ],
-      "required_by": [
-        {
-          "name": "Special Assignments: Officers",
-          "level": 1
-        }
-      ],
       "research_costs": {
-        "resources": [],
         "materials": [
           {
-            "type": "Service Award",
+            "type": "Service\u00a0Award",
             "value": 109
           }
-        ]
+        ],
+        "resources": []
       },
+      "research_time": 4380,
       "reward": {
-        "type": "Mission Token ",
+        "type": "Mission\u00a0Token\u00a0",
         "value": 1
       }
     }
-  ]
+  ],
+  "location": {
+    "column": 3,
+    "row": 2,
+    "tree": "away teams"
+  },
+  "research_name": "Unlock Uncommon Assignments"
 }

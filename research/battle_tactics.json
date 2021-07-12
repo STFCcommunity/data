@@ -1,20 +1,19 @@
 {
   "img_url": "./assets/battle_tactics.png",
-  "research_name": "Battle Tactics",
-  "location": {
-    "column": 2,
-    "row": 1,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 300,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 780,
+      "increased_power": 300,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Prime Damage",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Hull Density",
@@ -25,30 +24,24 @@
           "level": 1
         }
       ],
-      "required_by": [
-        {
-          "name": "Prime Damage",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 15
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 780
     },
     {
-      "level": 2,
-      "increased_power": 100,
       "bonus": {
         "percentage": true,
         "value": 0.07
       },
-      "research_time": 1560,
+      "increased_power": 100,
+      "level": 2,
       "requirements": [
         {
           "name": "R&D Department",
@@ -56,23 +49,23 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 50
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1560
     },
     {
-      "level": 3,
-      "increased_power": 275,
       "bonus": {
         "percentage": true,
         "value": 0.1
       },
-      "research_time": 5880,
+      "increased_power": 275,
+      "level": 3,
       "requirements": [
         {
           "name": "Shield Modulation",
@@ -84,23 +77,23 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 105
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 5880
     },
     {
-      "level": 4,
-      "increased_power": 175,
       "bonus": {
         "percentage": true,
         "value": 0.14
       },
-      "research_time": 9360,
+      "increased_power": 175,
+      "level": 4,
       "requirements": [
         {
           "name": "R&D Department",
@@ -108,23 +101,29 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 195
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9360
     },
     {
-      "level": 5,
-      "increased_power": 475,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 16140,
+      "increased_power": 475,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Exploit Weakpoints",
+          "level": 2
+        }
+      ],
       "requirements": [
         {
           "name": "Hull Density",
@@ -135,21 +134,22 @@
           "level": 11
         }
       ],
-      "required_by": [
-        {
-          "name": "Exploit Weakpoints",
-          "level": 2
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 550
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 16140
     }
-  ]
+  ],
+  "location": {
+    "column": 2,
+    "row": 1,
+    "tree": "combat"
+  },
+  "research_name": "Battle Tactics"
 }

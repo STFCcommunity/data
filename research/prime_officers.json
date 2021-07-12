@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_officers.png",
-  "research_name": "Prime Officers",
   "description": "+100% to Attack, Defense, and Health for all Officers.",
-  "location": {
-    "column": 2,
-    "row": 2,
-    "tree": "galaxy"
-  },
+  "img_url": "./assets/prime_officers.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 23500,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 317880,
+      "increased_power": 23500,
+      "level": 1,
       "requirements": [
         {
           "name": "Warp Technology",
@@ -31,21 +24,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 100
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1660
           }
-        ],
-        "materials": [
-          {
-            "value": 100,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 317880
     }
-  ]
+  ],
+  "location": {
+    "column": 2,
+    "row": 2,
+    "tree": "galaxy"
+  },
+  "research_name": "Prime Officers"
 }

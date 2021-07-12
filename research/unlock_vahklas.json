@@ -1,27 +1,10 @@
 {
-  "img_url": "./assets/unlock_vahklas.png",
-  "research_name": "Unlock Vahklas",
   "description": "Unlocks the Vahklas, a Grade 3 Explorer.",
-  "location": {
-    "column": 19,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/unlock_vahklas.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 19750,
-      "research_time": 307320,
-      "requirements": [
-        {
-          "name": "Interceptor Armor Piercing",
-          "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 22
-        }
-      ],
+      "level": 1,
       "required_by": [
         {
           "name": "Explorer Hull Boost",
@@ -36,7 +19,25 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "Interceptor Armor Piercing",
+          "level": 1
+        },
+        {
+          "name": "R&D Department",
+          "level": 22
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 100
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -46,16 +47,15 @@
             "type": "dilithium",
             "value": 104500
           }
-        ],
-        "materials": [
-          {
-            "value": 100,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 307320
     }
-  ]
+  ],
+  "location": {
+    "column": 19,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Unlock Vahklas"
 }

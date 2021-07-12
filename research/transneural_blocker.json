@@ -1,21 +1,28 @@
 {
-  "img_url": "./assets/transneural_blocker.png",
-  "research_name": "Transneural Blocker",
   "description": "Reduces all Defense stats of ASSIMILATED.",
-  "location": {
-    "column": 54,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/transneural_blocker.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 110000,
       "bonus": {
         "percentage": true,
         "value": 0.02
       },
-      "research_time": 147802,
+      "increased_power": 110000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "4\u2605 Evasive Maneuvers",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Reinforced Bulkheads",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Shield Efficiency",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Adaptive Weaponry",
@@ -26,48 +33,41 @@
           "level": 48
         }
       ],
-      "required_by": [
-        {
-          "name": "4★ Evasive Maneuvers",
-          "level": 1
-        },
-        {
-          "name": "4★ Reinforced Bulkheads",
-          "level": 1
-        },
-        {
-          "name": "4★ Shield Efficiency",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 3065
           }
-        ],
-        "materials": [
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "gas"
-          },
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 147802
     }
-  ]
+  ],
+  "location": {
+    "column": 54,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Transneural Blocker"
 }

@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_protection.png",
-  "research_name": "Prime Protection",
   "description": "+100% to base Station Resource Protection.",
-  "location": {
-    "column": 10,
-    "row": 3,
-    "tree": "station"
-  },
+  "img_url": "./assets/prime_protection.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 8750,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 110100,
+      "increased_power": 8750,
+      "level": 1,
       "requirements": [
         {
           "name": "Research Optimization",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 40
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 140000
           }
-        ],
-        "materials": [
-          {
-            "value": 40,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 110100
     }
-  ]
+  ],
+  "location": {
+    "column": 10,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Prime Protection"
 }

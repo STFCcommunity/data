@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_build_speed.png",
-  "research_name": "Prime Build Speed",
   "description": "+100% to base Construction Speed for all buildings.",
-  "location": {
-    "column": 6,
-    "row": 1,
-    "tree": "station"
-  },
+  "img_url": "./assets/prime_build_speed.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 3200,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 30660,
+      "increased_power": 3200,
+      "level": 1,
       "requirements": [
         {
           "name": "Defense Platforms",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 80
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 65000
           }
-        ],
-        "materials": [
-          {
-            "value": 80,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 30660
     }
-  ]
+  ],
+  "location": {
+    "column": 6,
+    "row": 1,
+    "tree": "station"
+  },
+  "research_name": "Prime Build Speed"
 }

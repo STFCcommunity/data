@@ -1,21 +1,20 @@
 {
-  "img_url": "./assets/stella_research.png",
-  "research_name": "Stella Research",
   "description": "Unlocks the ability to build the Stella and grants it bonus shots vs all Eclipse enemies",
-  "location": {
-    "column": 9,
-    "row": 2,
-    "tree": "outlaws"
-  },
+  "img_url": "./assets/stella_research.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 37500,
       "bonus": {
         "percentage": true,
         "value": 3
       },
-      "research_time": 727560,
+      "increased_power": 37500,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Anarchist Weaponry",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Augmented Impulse",
@@ -34,13 +33,15 @@
           "level": 27
         }
       ],
-      "required_by": [
-        {
-          "name": "Anarchist Weaponry",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 590
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -50,20 +51,19 @@
             "type": "dilithium",
             "value": 1100
           }
-        ],
-        "materials": [
-          {
-            "value": 590,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
       },
+      "research_time": 727560,
       "reward": {
-        "type": "Rogue Reputation ",
+        "type": "Rogue\u00a0Reputation\u00a0",
         "value": 50
       }
     }
-  ]
+  ],
+  "location": {
+    "column": 9,
+    "row": 2,
+    "tree": "outlaws"
+  },
+  "research_name": "Stella Research"
 }

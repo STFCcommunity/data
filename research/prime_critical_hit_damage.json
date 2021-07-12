@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_critical_hit_damage.png",
-  "research_name": "Prime Critical Hit Damage",
   "description": "+50% to Critical Hit damage for all ships.",
-  "location": {
-    "column": 39,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/prime_critical_hit_damage.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 210000,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 52543,
+      "increased_power": 210000,
+      "level": 1,
       "requirements": [
         {
           "name": "Survey Shield Array II",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 5,
+            "rarity": "uncommon",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1124
           }
-        ],
-        "materials": [
-          {
-            "value": 1000,
-            "grade": 5,
-            "rarity": "uncommon",
-            "type": "crystal"
-          }
         ]
-      }
+      },
+      "research_time": 52543
     }
-  ]
+  ],
+  "location": {
+    "column": 39,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Prime Critical Hit Damage"
 }

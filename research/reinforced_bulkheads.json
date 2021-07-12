@@ -1,20 +1,19 @@
 {
   "img_url": "./assets/reinforced_bulkheads.png",
-  "research_name": "Reinforced Bulkheads",
-  "location": {
-    "column": 4,
-    "row": 2,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 420,
       "bonus": {
         "percentage": true,
         "value": 0.25
       },
-      "research_time": 1920,
+      "increased_power": 420,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Grade 2 Ship Research",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Shield Modulation",
@@ -25,13 +24,8 @@
           "level": 6
         }
       ],
-      "required_by": [
-        {
-          "name": "Grade 2 Ship Research",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -41,18 +35,17 @@
             "type": "dilithium",
             "value": 35
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1920
     },
     {
-      "level": 2,
-      "increased_power": 105,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 3600,
+      "increased_power": 105,
+      "level": 2,
       "requirements": [
         {
           "name": "Hull Density",
@@ -64,6 +57,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -73,18 +67,17 @@
             "type": "dilithium",
             "value": 65
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 3600
     },
     {
-      "level": 3,
-      "increased_power": 325,
       "bonus": {
         "percentage": true,
         "value": 0.8
       },
-      "research_time": 9780,
+      "increased_power": 325,
+      "level": 3,
       "requirements": [
         {
           "name": "Shield Modulation",
@@ -96,6 +89,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -105,18 +99,17 @@
             "type": "dilithium",
             "value": 200
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9780
     },
     {
-      "level": 4,
-      "increased_power": 200,
       "bonus": {
         "percentage": true,
         "value": 1.3
       },
-      "research_time": 9960,
+      "increased_power": 200,
+      "level": 4,
       "requirements": [
         {
           "name": "Hull Density",
@@ -128,6 +121,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -137,18 +131,23 @@
             "type": "dilithium",
             "value": 335
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9960
     },
     {
-      "level": 5,
-      "increased_power": 850,
       "bonus": {
         "percentage": true,
         "value": 2
       },
-      "research_time": 28800,
+      "increased_power": 850,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Fortified Battleships",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Piercing Shots",
@@ -163,13 +162,8 @@
           "level": 13
         }
       ],
-      "required_by": [
-        {
-          "name": "Fortified Battleships",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -179,9 +173,15 @@
             "type": "dilithium",
             "value": 1090
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 28800
     }
-  ]
+  ],
+  "location": {
+    "column": 4,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Reinforced Bulkheads"
 }

@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_repair_speed.png",
-  "research_name": "Prime Repair Speed",
   "description": "+100% to base Repair Speed for all ships.",
-  "location": {
-    "column": 16,
-    "row": 1,
-    "tree": "station"
-  },
+  "img_url": "./assets/prime_repair_speed.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 20000,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 356160,
+      "increased_power": 20000,
+      "level": 1,
       "requirements": [
         {
           "name": "Building Efficiency",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 150
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1250
           }
-        ],
-        "materials": [
-          {
-            "value": 150,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 356160
     }
-  ]
+  ],
+  "location": {
+    "column": 16,
+    "row": 1,
+    "tree": "station"
+  },
+  "research_name": "Prime Repair Speed"
 }

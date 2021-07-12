@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/battleship_barrage.png",
-  "research_name": "Battleship Barrage",
   "description": "Consumes an Ion Particle to increase the damage of Battleships.",
-  "location": {
-    "column": 32,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/battleship_barrage.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 141000,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 42034,
+      "increased_power": 141000,
+      "level": 1,
       "requirements": [
         {
           "name": "Foundry",
@@ -23,19 +16,26 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "Ion\u00a0Particle",
+            "value": 1
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 674100
           }
-        ],
-        "materials": [
-          {
-            "type": "Ion Particle",
-            "value": 1
-          }
         ]
-      }
+      },
+      "research_time": 42034
     }
-  ]
+  ],
+  "location": {
+    "column": 32,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Battleship Barrage"
 }

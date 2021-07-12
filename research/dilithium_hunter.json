@@ -1,20 +1,13 @@
 {
   "img_url": "./assets/dilithium_hunter.png",
-  "research_name": "Dilithium Hunter",
-  "location": {
-    "column": 6,
-    "row": 3,
-    "tree": "galaxy"
-  },
   "levels": [
     {
-      "level": 2,
-      "increased_power": 3000,
       "bonus": {
         "percentage": true,
         "value": 0.16
       },
-      "research_time": 255000,
+      "increased_power": 3000,
+      "level": 2,
       "requirements": [
         {
           "name": "Dilithium Miner",
@@ -26,23 +19,29 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 74500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 255000
     },
     {
-      "level": 3,
-      "increased_power": 1000,
       "bonus": {
         "percentage": true,
         "value": 0.24
       },
-      "research_time": 233040,
+      "increased_power": 1000,
+      "level": 3,
+      "required_by": [
+        {
+          "name": "Dilithium Miner",
+          "level": 4
+        }
+      ],
       "requirements": [
         {
           "name": "Tritanium Hunter",
@@ -53,43 +52,37 @@
           "level": 25
         }
       ],
-      "required_by": [
-        {
-          "name": "Dilithium Miner",
-          "level": 4
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1200
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 3
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 121500
           }
-        ],
-        "materials": [
-          {
-            "value": 1200,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          },
-          {
-            "value": 3,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 233040
     },
     {
-      "level": 4,
-      "increased_power": 1000,
       "bonus": {
         "percentage": true,
         "value": 0.33
       },
-      "research_time": 334380,
+      "increased_power": 1000,
+      "level": 4,
       "requirements": [
         {
           "name": "Dilithium Miner",
@@ -101,67 +94,73 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1200
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 193000
           }
-        ],
-        "materials": [
-          {
-            "value": 1200,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 334380
     },
     {
-      "level": 5,
-      "increased_power": 1250,
       "bonus": {
         "percentage": true,
         "value": 0.42
       },
-      "research_time": 388020,
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 27
-        }
-      ],
+      "increased_power": 1250,
+      "level": 5,
       "required_by": [
         {
           "name": "Dilithium Miner",
           "level": 6
         }
       ],
+      "requirements": [
+        {
+          "name": "R&D Department",
+          "level": 27
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1600
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 294000
           }
-        ],
-        "materials": [
-          {
-            "value": 1600,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 388020
     },
     {
-      "level": 6,
-      "increased_power": 1250,
       "bonus": {
         "percentage": true,
         "value": 0.53
       },
-      "research_time": 462240,
+      "increased_power": 1250,
+      "level": 6,
+      "required_by": [
+        {
+          "name": "Tritanium Hunter",
+          "level": 6
+        }
+      ],
       "requirements": [
         {
           "name": "Dilithium Miner",
@@ -172,37 +171,37 @@
           "level": 28
         }
       ],
-      "required_by": [
-        {
-          "name": "Tritanium Hunter",
-          "level": 6
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 2000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 448000
           }
-        ],
-        "materials": [
-          {
-            "value": 2000,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 462240
     },
     {
-      "level": 7,
-      "increased_power": 1250,
       "bonus": {
         "percentage": true,
         "value": 0.65
       },
-      "research_time": 519720,
+      "increased_power": 1250,
+      "level": 7,
+      "required_by": [
+        {
+          "name": "Dilithium Miner",
+          "level": 8
+        }
+      ],
       "requirements": [
         {
           "name": "Parsteel Hunter",
@@ -213,37 +212,31 @@
           "level": 29
         }
       ],
-      "required_by": [
-        {
-          "name": "Dilithium Miner",
-          "level": 8
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 2500
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 690000
           }
-        ],
-        "materials": [
-          {
-            "value": 2500,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 519720
     },
     {
-      "level": 8,
-      "increased_power": 1500,
       "bonus": {
         "percentage": true,
         "value": 0.81
       },
-      "research_time": 592800,
+      "increased_power": 1500,
+      "level": 8,
       "requirements": [
         {
           "name": "Dilithium Miner",
@@ -255,30 +248,36 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 2500
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1070
           }
-        ],
-        "materials": [
-          {
-            "value": 2500,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 592800
     },
     {
-      "level": 9,
-      "increased_power": 1500,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 760440,
+      "increased_power": 1500,
+      "level": 9,
+      "required_by": [
+        {
+          "name": "Dilithium Miner",
+          "level": 10
+        }
+      ],
       "requirements": [
         {
           "name": "Tritanium Hunter",
@@ -289,37 +288,37 @@
           "level": 31
         }
       ],
-      "required_by": [
-        {
-          "name": "Dilithium Miner",
-          "level": 10
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 3000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1630
           }
-        ],
-        "materials": [
-          {
-            "value": 3000,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 760440
     },
     {
-      "level": 10,
-      "increased_power": 1750,
       "bonus": {
         "percentage": true,
         "value": 1.25
       },
-      "research_time": 782820,
+      "increased_power": 1750,
+      "level": 10,
+      "required_by": [
+        {
+          "name": "Tritanium Hunter",
+          "level": 10
+        }
+      ],
       "requirements": [
         {
           "name": "Parsteel Hunter",
@@ -330,49 +329,49 @@
           "level": 32
         }
       ],
-      "required_by": [
-        {
-          "name": "Tritanium Hunter",
-          "level": 10
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 2500
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 150
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 15
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 2400
           }
-        ],
-        "materials": [
-          {
-            "value": 2500,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          },
-          {
-            "value": 150,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "gas"
-          },
-          {
-            "value": 15,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 782820
     },
     {
-      "level": 1,
-      "increased_power": 4000,
       "bonus": {
         "percentage": true,
         "value": 0.08
       },
-      "research_time": 114000,
+      "increased_power": 4000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Survey Security",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Emergency Defenses",
@@ -383,28 +382,29 @@
           "level": 20
         }
       ],
-      "required_by": [
-        {
-          "name": "Survey Security",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 200
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 10500
           }
-        ],
-        "materials": [
-          {
-            "value": 200,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 114000
     }
-  ]
+  ],
+  "location": {
+    "column": 6,
+    "row": 3,
+    "tree": "galaxy"
+  },
+  "research_name": "Dilithium Hunter"
 }

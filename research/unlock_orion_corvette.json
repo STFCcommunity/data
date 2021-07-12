@@ -1,17 +1,16 @@
 {
-  "img_url": "./assets/unlock_orion_corvette.png",
-  "research_name": "Unlock Orion Corvette",
   "description": "Unlocks the Orion Corvette, a Grade 1 Battleship.",
-  "location": {
-    "column": 2,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/unlock_orion_corvette.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 675,
-      "research_time": 900,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Shield Modulation",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Hull Density",
@@ -22,13 +21,8 @@
           "level": 1
         }
       ],
-      "required_by": [
-        {
-          "name": "Shield Modulation",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -38,13 +32,19 @@
             "type": "dilithium",
             "value": 25
           }
-        ],
-        "materials": []
+        ]
       },
+      "research_time": 900,
       "reward": {
-        "type": "Tricorder ",
+        "type": "Tricorder\u00a0",
         "value": 1
       }
     }
-  ]
+  ],
+  "location": {
+    "column": 2,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Unlock Orion Corvette"
 }

@@ -1,17 +1,16 @@
 {
-  "img_url": "./assets/unlock_astronautics.png",
-  "research_name": "Unlock Astronautics",
   "description": "Unlocks the Astronautics Studio, a building used for Research.",
-  "location": {
-    "column": 5,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/unlock_astronautics.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 1500,
-      "research_time": 12600,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Unlock Refinery",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Assembly Line",
@@ -30,13 +29,8 @@
           "level": 7
         }
       ],
-      "required_by": [
-        {
-          "name": "Unlock Refinery",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -46,9 +40,15 @@
             "type": "dilithium",
             "value": 300
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 12600
     }
-  ]
+  ],
+  "location": {
+    "column": 5,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "Unlock Astronautics"
 }

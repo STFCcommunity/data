@@ -1,20 +1,20 @@
 {
+  "description": "Your ships take less Critical Damage from non-Armada Targets.",
   "img_url": "./assets/space_critical_resistance.png",
-  "research_name": "Space Critical Resistance",
-  "location": {
-    "column": 21,
-    "row": 3,
-    "tree": "galaxy"
-  },
   "levels": [
     {
-      "level": 2,
-      "increased_power": 16000,
       "bonus": {
         "percentage": true,
         "value": 0.14
       },
-      "research_time": 4199,
+      "increased_power": 16000,
+      "level": 2,
+      "required_by": [
+        {
+          "name": "Hull Durability",
+          "level": 6
+        }
+      ],
       "requirements": [
         {
           "name": "Exploit Weakpoints II",
@@ -25,13 +25,21 @@
           "level": 36
         }
       ],
-      "required_by": [
-        {
-          "name": "Hull Durability",
-          "level": 6
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 500
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -41,31 +49,17 @@
             "type": "dilithium",
             "value": 16600
           }
-        ],
-        "materials": [
-          {
-            "value": 500,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "gas"
-          },
-          {
-            "value": 50,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 4199
     },
     {
-      "level": 3,
-      "increased_power": 4000,
       "bonus": {
         "percentage": true,
         "value": 0.16
       },
-      "research_time": 4180,
+      "increased_power": 4000,
+      "level": 3,
       "requirements": [
         {
           "name": "Hull Durability",
@@ -77,6 +71,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -86,24 +81,17 @@
             "type": "dilithium",
             "value": 24450
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 4180
     },
     {
-      "level": 4,
-      "increased_power": 4500,
       "bonus": {
         "percentage": true,
         "value": 0.18
       },
-      "research_time": 7159,
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 38
-        }
-      ],
+      "increased_power": 4500,
+      "level": 4,
       "required_by": [
         {
           "name": "Exploit Weakpoints II",
@@ -114,7 +102,33 @@
           "level": 8
         }
       ],
+      "requirements": [
+        {
+          "name": "R&D Department",
+          "level": 38
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -124,37 +138,23 @@
             "type": "dilithium",
             "value": 38650
           }
-        ],
-        "materials": [
-          {
-            "value": 50,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "crystal"
-          },
-          {
-            "value": 50,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "gas"
-          },
-          {
-            "value": 50,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 7159
     },
     {
-      "level": 5,
-      "increased_power": 4500,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 9670,
+      "increased_power": 4500,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Weapon Refactor",
+          "level": 3
+        }
+      ],
       "requirements": [
         {
           "name": "Weapon Refactor",
@@ -165,13 +165,8 @@
           "level": 39
         }
       ],
-      "required_by": [
-        {
-          "name": "Weapon Refactor",
-          "level": 3
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -181,18 +176,17 @@
             "type": "dilithium",
             "value": 65800
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9670
     },
     {
-      "level": 6,
-      "increased_power": 4500,
       "bonus": {
         "percentage": true,
         "value": 0.22
       },
-      "research_time": 16950,
+      "increased_power": 4500,
+      "level": 6,
       "requirements": [
         {
           "name": "Exploit Weakpoints II",
@@ -204,6 +198,14 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 3500
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -213,25 +215,17 @@
             "type": "dilithium",
             "value": 104000
           }
-        ],
-        "materials": [
-          {
-            "value": 3500,
-            "grade": 4,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 16950
     },
     {
-      "level": 7,
-      "increased_power": 5000,
       "bonus": {
         "percentage": true,
         "value": 0.24
       },
-      "research_time": 16147,
+      "increased_power": 5000,
+      "level": 7,
       "requirements": [
         {
           "name": "R&D Department",
@@ -239,6 +233,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -248,18 +243,23 @@
             "type": "dilithium",
             "value": 150800
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 16147
     },
     {
-      "level": 8,
-      "increased_power": 6000,
       "bonus": {
         "percentage": true,
         "value": 0.26
       },
-      "research_time": 25221,
+      "increased_power": 6000,
+      "level": 8,
+      "required_by": [
+        {
+          "name": "Weapon Refactor",
+          "level": 7
+        }
+      ],
       "requirements": [
         {
           "name": "Exploit Weakpoints II",
@@ -270,13 +270,21 @@
           "level": 42
         }
       ],
-      "required_by": [
-        {
-          "name": "Weapon Refactor",
-          "level": 7
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 3600
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 220
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -286,44 +294,31 @@
             "type": "dilithium",
             "value": 224700
           }
-        ],
-        "materials": [
-          {
-            "value": 3600,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "gas"
-          },
-          {
-            "value": 220,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 25221
     },
     {
-      "level": 9,
-      "increased_power": 5000,
       "bonus": {
         "percentage": true,
         "value": 0.28
       },
-      "research_time": 35206,
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 43
-        }
-      ],
+      "increased_power": 5000,
+      "level": 9,
       "required_by": [
         {
           "name": "Weapon Refactor",
           "level": 8
         }
       ],
+      "requirements": [
+        {
+          "name": "R&D Department",
+          "level": 43
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -333,18 +328,17 @@
             "type": "dilithium",
             "value": 326000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 35206
     },
     {
-      "level": 10,
-      "increased_power": 6000,
       "bonus": {
         "percentage": true,
         "value": 0.3
       },
-      "research_time": 46720,
+      "increased_power": 6000,
+      "level": 10,
       "requirements": [
         {
           "name": "Weapon Refactor",
@@ -356,6 +350,26 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 900
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 900
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 900
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -365,37 +379,27 @@
             "type": "dilithium",
             "value": 496500
           }
-        ],
-        "materials": [
-          {
-            "value": 900,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "crystal"
-          },
-          {
-            "value": 900,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "gas"
-          },
-          {
-            "value": 900,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 46720
     },
     {
-      "level": 1,
-      "increased_power": 26500,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 1140,
+      "increased_power": 26500,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Battleship Warp",
+          "level": 1
+        },
+        {
+          "name": "Explorer Warp",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Pure Gas",
@@ -410,17 +414,8 @@
           "level": 31
         }
       ],
-      "required_by": [
-        {
-          "name": "Battleship Warp",
-          "level": 1
-        },
-        {
-          "name": "Explorer Warp",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -430,10 +425,15 @@
             "type": "dilithium",
             "value": 2040
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1140
     }
   ],
-  "description": "Your ships take less Critical Damage from non-Armada Targets."
+  "location": {
+    "column": 21,
+    "row": 3,
+    "tree": "galaxy"
+  },
+  "research_name": "Space Critical Resistance"
 }

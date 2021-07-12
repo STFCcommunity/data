@@ -1,34 +1,17 @@
 {
-  "img_url": "./assets/4_shield_penetration.png",
-  "research_name": "4★ Shield Penetration",
   "description": "Increases Shield Penetration for all Grade 4+ ships.",
-  "location": {
-    "column": 50,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/4_shield_penetration.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 76000,
       "bonus": {
         "percentage": true,
         "value": 0.4
       },
-      "research_time": 55120,
-      "requirements": [
-        {
-          "name": "4★ Battleship Weaponry",
-          "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 46
-        }
-      ],
+      "increased_power": 76000,
+      "level": 1,
       "required_by": [
         {
-          "name": "4★ Battleship Regeneration",
+          "name": "4\u2605 Battleship Regeneration",
           "level": 2
         },
         {
@@ -40,7 +23,31 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "4\u2605 Battleship Weaponry",
+          "level": 1
+        },
+        {
+          "name": "R&D Department",
+          "level": 46
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 15000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 5800
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -50,22 +57,15 @@
             "type": "dilithium",
             "value": 888500
           }
-        ],
-        "materials": [
-          {
-            "value": 15000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 5800,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 55120
     }
-  ]
+  ],
+  "location": {
+    "column": 50,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "4\u2605 Shield Penetration"
 }

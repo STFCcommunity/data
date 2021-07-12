@@ -1,20 +1,19 @@
 {
   "img_url": "./assets/tritanium_storage.png",
-  "research_name": "Tritanium Storage",
-  "location": {
-    "column": 3,
-    "row": 3,
-    "tree": "station"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 525,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 3360,
+      "increased_power": 525,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Repair Diagnostics",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Parsteel Storage",
@@ -29,13 +28,8 @@
           "level": 7
         }
       ],
-      "required_by": [
-        {
-          "name": "Repair Diagnostics",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -45,18 +39,17 @@
             "type": "dilithium",
             "value": 60
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 3360
     },
     {
-      "level": 2,
-      "increased_power": 150,
       "bonus": {
         "percentage": true,
         "value": 0.12
       },
-      "research_time": 5400,
+      "increased_power": 150,
+      "level": 2,
       "requirements": [
         {
           "name": "Tritanium Warehouse",
@@ -64,6 +57,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -73,18 +67,17 @@
             "type": "dilithium",
             "value": 115
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 5400
     },
     {
-      "level": 3,
-      "increased_power": 175,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 9180,
+      "increased_power": 175,
+      "level": 3,
       "requirements": [
         {
           "name": "Tritanium Fusion",
@@ -100,6 +93,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -109,18 +103,17 @@
             "type": "dilithium",
             "value": 190
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9180
     },
     {
-      "level": 4,
-      "increased_power": 450,
       "bonus": {
         "percentage": true,
         "value": 0.32
       },
-      "research_time": 15540,
+      "increased_power": 450,
+      "level": 4,
       "requirements": [
         {
           "name": "Tritanium Warehouse",
@@ -128,6 +121,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -137,18 +131,27 @@
             "type": "dilithium",
             "value": 455
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 15540
     },
     {
-      "level": 5,
-      "increased_power": 300,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 21180,
+      "increased_power": 300,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Tritanium Safeguard",
+          "level": 1
+        },
+        {
+          "name": "Tritanium Stockpile",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Tritanium Fusion",
@@ -163,17 +166,8 @@
           "level": 13
         }
       ],
-      "required_by": [
-        {
-          "name": "Tritanium Safeguard",
-          "level": 1
-        },
-        {
-          "name": "Tritanium Stockpile",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -183,9 +177,15 @@
             "type": "dilithium",
             "value": 690
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 21180
     }
-  ]
+  ],
+  "location": {
+    "column": 3,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Tritanium Storage"
 }

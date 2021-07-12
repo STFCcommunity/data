@@ -1,20 +1,13 @@
 {
   "img_url": "./assets/battleship_firepower.png",
-  "research_name": "Battleship Firepower",
-  "location": {
-    "column": 24,
-    "row": 3,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 9,
-      "increased_power": 8500,
       "bonus": {
         "percentage": true,
         "value": 0.09
       },
-      "research_time": 7159,
+      "increased_power": 8500,
+      "level": 9,
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -30,6 +23,26 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 3160
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 670
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 60
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -39,37 +52,17 @@
             "type": "dilithium",
             "value": 38650
           }
-        ],
-        "materials": [
-          {
-            "value": 3160,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 670,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          },
-          {
-            "value": 60,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 7159
     },
     {
-      "level": 10,
-      "increased_power": 4500,
       "bonus": {
         "percentage": true,
         "value": 0.1
       },
-      "research_time": 9670,
+      "increased_power": 4500,
+      "level": 10,
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -89,6 +82,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -98,18 +92,17 @@
             "type": "dilithium",
             "value": 65800
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9670
     },
     {
-      "level": 6,
-      "increased_power": 3000,
       "bonus": {
         "percentage": true,
         "value": 0.06
       },
-      "research_time": 1739,
+      "increased_power": 3000,
+      "level": 6,
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -125,6 +118,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -134,18 +128,23 @@
             "type": "dilithium",
             "value": 4650
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1739
     },
     {
-      "level": 3,
-      "increased_power": 4000,
       "bonus": {
         "percentage": true,
         "value": 0.03
       },
-      "research_time": 693300,
+      "increased_power": 4000,
+      "level": 3,
+      "required_by": [
+        {
+          "name": "Explorer Firepower",
+          "level": 6
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -160,13 +159,21 @@
           "level": 24
         }
       ],
-      "required_by": [
-        {
-          "name": "Explorer Firepower",
-          "level": 6
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 180
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 25
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -176,31 +183,27 @@
             "type": "dilithium",
             "value": 560000
           }
-        ],
-        "materials": [
-          {
-            "value": 180,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 25,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 693300
     },
     {
-      "level": 5,
-      "increased_power": 7500,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 1174,
+      "increased_power": 7500,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Critical Interceptor Hit",
+          "level": 8
+        },
+        {
+          "name": "Explorer Firepower",
+          "level": 8
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -215,17 +218,15 @@
           "level": 1
         }
       ],
-      "required_by": [
-        {
-          "name": "Critical Interceptor Hit",
-          "level": 8
-        },
-        {
-          "name": "Explorer Firepower",
-          "level": 8
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 30
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -235,25 +236,17 @@
             "type": "dilithium",
             "value": 3000
           }
-        ],
-        "materials": [
-          {
-            "value": 30,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 1174
     },
     {
-      "level": 7,
-      "increased_power": 7000,
       "bonus": {
         "percentage": true,
         "value": 0.07
       },
-      "research_time": 3120,
+      "increased_power": 7000,
+      "level": 7,
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -269,6 +262,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -278,18 +272,27 @@
             "type": "dilithium",
             "value": 11100
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 3120
     },
     {
-      "level": 8,
-      "increased_power": 3500,
       "bonus": {
         "percentage": true,
         "value": 0.08
       },
-      "research_time": 4199,
+      "increased_power": 3500,
+      "level": 8,
+      "required_by": [
+        {
+          "name": "Critical Interceptor Hit",
+          "level": 10
+        },
+        {
+          "name": "Explorer Firepower",
+          "level": 10
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -304,17 +307,8 @@
           "level": 24
         }
       ],
-      "required_by": [
-        {
-          "name": "Critical Interceptor Hit",
-          "level": 10
-        },
-        {
-          "name": "Explorer Firepower",
-          "level": 10
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -324,28 +318,17 @@
             "type": "dilithium",
             "value": 16600
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 4199
     },
     {
-      "level": 1,
-      "increased_power": 13250,
       "bonus": {
         "percentage": true,
         "value": 0.01
       },
-      "research_time": 349500,
-      "requirements": [
-        {
-          "name": "Battleship Shields",
-          "level": 1
-        },
-        {
-          "name": "Foundry",
-          "level": 24
-        }
-      ],
+      "increased_power": 13250,
+      "level": 1,
       "required_by": [
         {
           "name": "Critical Interceptor Hit",
@@ -360,7 +343,31 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "Battleship Shields",
+          "level": 1
+        },
+        {
+          "name": "Foundry",
+          "level": 24
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 120
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 20
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -370,31 +377,17 @@
             "type": "dilithium",
             "value": 152000
           }
-        ],
-        "materials": [
-          {
-            "value": 120,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 20,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 349500
     },
     {
-      "level": 2,
-      "increased_power": 1750,
       "bonus": {
         "percentage": true,
         "value": 0.02
       },
-      "research_time": 501600,
+      "increased_power": 1750,
+      "level": 2,
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -402,6 +395,20 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 150
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 23
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -411,31 +418,17 @@
             "type": "dilithium",
             "value": 241000
           }
-        ],
-        "materials": [
-          {
-            "value": 150,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 23,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 501600
     },
     {
-      "level": 4,
-      "increased_power": 2500,
       "bonus": {
         "percentage": true,
         "value": 0.04
       },
-      "research_time": 779580,
+      "increased_power": 2500,
+      "level": 4,
       "requirements": [
         {
           "name": "Battleship Penetration",
@@ -451,6 +444,20 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 210
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 28
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -460,22 +467,15 @@
             "type": "dilithium",
             "value": 865000
           }
-        ],
-        "materials": [
-          {
-            "value": 210,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 28,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 779580
     }
-  ]
+  ],
+  "location": {
+    "column": 24,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Battleship Firepower"
 }

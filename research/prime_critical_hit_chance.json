@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_critical_hit_chance.png",
-  "research_name": "Prime Critical Hit Chance",
   "description": "+10% to Critical Hit Chance of all ships.",
-  "location": {
-    "column": 46,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/prime_critical_hit_chance.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 265000,
       "bonus": {
         "percentage": true,
         "value": 0.1
       },
-      "research_time": 127726,
+      "increased_power": 265000,
+      "level": 1,
       "requirements": [
         {
           "name": "Station Sabotage",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 5,
+            "rarity": "uncommon",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 2124
           }
-        ],
-        "materials": [
-          {
-            "value": 1000,
-            "grade": 5,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 127726
     }
-  ]
+  ],
+  "location": {
+    "column": 46,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Prime Critical Hit Chance"
 }

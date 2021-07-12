@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_damage_vs_players.png",
-  "research_name": "Prime Damage Vs Players",
   "description": "+150% to damage versus player ships.",
-  "location": {
-    "column": 4,
-    "row": 2,
-    "tree": "territory"
-  },
+  "img_url": "./assets/prime_damage_vs_players.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 40000,
       "bonus": {
         "percentage": true,
         "value": 1.5
       },
-      "research_time": 728160,
+      "increased_power": 40000,
+      "level": 1,
       "requirements": [
         {
           "name": "R&D Department",
@@ -23,19 +16,26 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "Prime\u00a0Particle",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 7600
           }
-        ],
-        "materials": [
-          {
-            "type": "Prime Particle",
-            "value": 1000
-          }
         ]
-      }
+      },
+      "research_time": 728160
     }
-  ]
+  ],
+  "location": {
+    "column": 4,
+    "row": 2,
+    "tree": "territory"
+  },
+  "research_name": "Prime Damage Vs Players"
 }

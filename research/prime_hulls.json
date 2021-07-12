@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_hulls.png",
-  "research_name": "Prime Hulls",
   "description": "+100% to base Hull Health for all ships.",
-  "location": {
-    "column": 6,
-    "row": 1,
-    "tree": "combat"
-  },
+  "img_url": "./assets/prime_hulls.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 3200,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 30660,
+      "increased_power": 3200,
+      "level": 1,
       "requirements": [
         {
           "name": "Grade 2 Ship Research",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 125
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 90000
           }
-        ],
-        "materials": [
-          {
-            "value": 125,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 30660
     }
-  ]
+  ],
+  "location": {
+    "column": 6,
+    "row": 1,
+    "tree": "combat"
+  },
+  "research_name": "Prime Hulls"
 }

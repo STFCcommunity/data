@@ -1,20 +1,14 @@
 {
+  "description": "Armor is increased for all Battleships.",
   "img_url": "./assets/fortified_battleships.png",
-  "research_name": "Fortified Battleships",
-  "location": {
-    "column": 13,
-    "row": 3,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 2800,
       "bonus": {
         "percentage": true,
         "value": 0.1
       },
-      "research_time": 39780,
+      "increased_power": 2800,
+      "level": 1,
       "requirements": [
         {
           "name": "Energy Blast",
@@ -30,6 +24,14 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "common",
+            "value": 50
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -39,25 +41,23 @@
             "type": "dilithium",
             "value": 2125
           }
-        ],
-        "materials": [
-          {
-            "value": 50,
-            "grade": 2,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 39780
     },
     {
-      "level": 2,
-      "increased_power": 500,
       "bonus": {
         "percentage": true,
         "value": 0.15
       },
-      "research_time": 39780,
+      "increased_power": 500,
+      "level": 2,
+      "required_by": [
+        {
+          "name": "Battleship Weaponry",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Shield Modulation",
@@ -68,13 +68,8 @@
           "level": 16
         }
       ],
-      "required_by": [
-        {
-          "name": "Battleship Weaponry",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -84,18 +79,17 @@
             "type": "dilithium",
             "value": 3150
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 39780
     },
     {
-      "level": 3,
-      "increased_power": 1300,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 80340,
+      "increased_power": 1300,
+      "level": 3,
       "requirements": [
         {
           "name": "Hull Density",
@@ -107,6 +101,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -116,18 +111,17 @@
             "type": "dilithium",
             "value": 7300
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 80340
     },
     {
-      "level": 4,
-      "increased_power": 650,
       "bonus": {
         "percentage": true,
         "value": 0.3
       },
-      "research_time": 114000,
+      "increased_power": 650,
+      "level": 4,
       "requirements": [
         {
           "name": "Shield Modulation",
@@ -139,6 +133,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -148,18 +143,17 @@
             "type": "dilithium",
             "value": 10500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 114000
     },
     {
-      "level": 5,
-      "increased_power": 2000,
       "bonus": {
         "percentage": true,
         "value": 0.4
       },
-      "research_time": 163920,
+      "increased_power": 2000,
+      "level": 5,
       "requirements": [
         {
           "name": "Shield Modulation",
@@ -171,6 +165,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -180,18 +175,17 @@
             "type": "dilithium",
             "value": 28000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 163920
     },
     {
-      "level": 6,
-      "increased_power": 1000,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 196980,
+      "increased_power": 1000,
+      "level": 6,
       "requirements": [
         {
           "name": "Foundry",
@@ -199,6 +193,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -208,18 +203,17 @@
             "type": "dilithium",
             "value": 46500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 196980
     },
     {
-      "level": 7,
-      "increased_power": 2500,
       "bonus": {
         "percentage": true,
         "value": 0.65
       },
-      "research_time": 233040,
+      "increased_power": 2500,
+      "level": 7,
       "requirements": [
         {
           "name": "Foundry",
@@ -227,6 +221,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -236,18 +231,17 @@
             "type": "dilithium",
             "value": 121500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 233040
     },
     {
-      "level": 8,
-      "increased_power": 1250,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 334380,
+      "increased_power": 1250,
+      "level": 8,
       "requirements": [
         {
           "name": "Foundry",
@@ -255,6 +249,20 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 330
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 70
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -264,23 +272,15 @@
             "type": "dilithium",
             "value": 193000
           }
-        ],
-        "materials": [
-          {
-            "value": 330,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 70,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 334380
     }
   ],
-  "description": "Armor is increased for all Battleships."
+  "location": {
+    "column": 13,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Fortified Battleships"
 }

@@ -1,17 +1,16 @@
 {
-  "img_url": "./assets/unlock_science_labs.png",
-  "research_name": "Unlock Science Labs",
   "description": "Unlocks the Science Labs building.",
-  "location": {
-    "column": 18,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/unlock_science_labs.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 18500,
-      "research_time": 430860,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Tier-Up Boost",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Pure Dilithium",
@@ -30,13 +29,15 @@
           "level": 20
         }
       ],
-      "required_by": [
-        {
-          "name": "Tier-Up Boost",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 50
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
@@ -46,16 +47,15 @@
             "type": "dilithium",
             "value": 116000
           }
-        ],
-        "materials": [
-          {
-            "value": 50,
-            "grade": 3,
-            "rarity": "common",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 430860
     }
-  ]
+  ],
+  "location": {
+    "column": 18,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "Unlock Science Labs"
 }

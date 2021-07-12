@@ -1,31 +1,14 @@
 {
-  "img_url": "./assets/romulan_armada_defects.png",
-  "research_name": "Romulan Armada Defects",
   "description": "Increases Damage against Romulan Armada Hostiles.",
-  "location": {
-    "column": 56,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/romulan_armada_defects.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 94000,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 150563,
-      "requirements": [
-        {
-          "name": "4★ Reinforced Bulkheads",
-          "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 49
-        }
-      ],
+      "increased_power": 94000,
+      "level": 1,
       "required_by": [
         {
           "name": "Armada Defenses",
@@ -36,28 +19,45 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "4\u2605 Reinforced Bulkheads",
+          "level": 1
+        },
+        {
+          "name": "R&D Department",
+          "level": 49
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 40500
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 5600
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 3990
           }
-        ],
-        "materials": [
-          {
-            "value": 40500,
-            "grade": 4,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 5600,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "crystal"
-          }
         ]
-      }
+      },
+      "research_time": 150563
     }
-  ]
+  ],
+  "location": {
+    "column": 56,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Romulan Armada Defects"
 }

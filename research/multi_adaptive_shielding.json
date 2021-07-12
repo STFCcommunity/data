@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/multi_adaptive_shielding.png",
-  "research_name": "Multi-Adaptive Shielding",
   "description": "Increases all Defense stats against ASSIMILATED.",
-  "location": {
-    "column": 54,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/multi_adaptive_shielding.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 110000,
       "bonus": {
         "percentage": true,
         "value": 0.09
       },
-      "research_time": 147802,
+      "increased_power": 110000,
+      "level": 1,
       "requirements": [
         {
           "name": "Adaptive Weaponry",
@@ -27,33 +20,40 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 3065
           }
-        ],
-        "materials": [
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "gas"
-          },
-          {
-            "value": 20000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 147802
     }
-  ]
+  ],
+  "location": {
+    "column": 54,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Multi-Adaptive Shielding"
 }

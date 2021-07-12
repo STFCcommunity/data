@@ -1,24 +1,17 @@
 {
-  "img_url": "./assets/prime_armada_damage.png",
-  "research_name": "Prime Armada Damage",
   "description": "+100% to Weapon Damage against Armada Hostiles.",
-  "location": {
-    "column": 36,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/prime_armada_damage.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 196000,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 33640,
+      "increased_power": 196000,
+      "level": 1,
       "requirements": [
         {
-          "name": "4★ Shield Modulation",
+          "name": "4\u2605 Shield Modulation",
           "level": 1
         },
         {
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 5,
+            "rarity": "uncommon",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 753800
           }
-        ],
-        "materials": [
-          {
-            "value": 1000,
-            "grade": 5,
-            "rarity": "uncommon",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 33640
     }
-  ]
+  ],
+  "location": {
+    "column": 36,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Prime Armada Damage"
 }

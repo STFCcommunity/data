@@ -1,17 +1,10 @@
 {
-  "img_url": "./assets/unlock_armada_control_center.png",
-  "research_name": "Unlock Armada Control Center",
   "description": "Unlocks the Armada Control Center building.",
-  "location": {
-    "column": 17,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/unlock_armada_control_center.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 20500,
-      "research_time": 492360,
+      "level": 1,
       "requirements": [
         {
           "name": "Research Expert",
@@ -27,6 +20,12 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "Armada\u00a0Tactical\u00a0Core",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -36,14 +35,15 @@
             "type": "dilithium",
             "value": 100000
           }
-        ],
-        "materials": [
-          {
-            "type": "Armada Tactical Core",
-            "value": 1000
-          }
         ]
-      }
+      },
+      "research_time": 492360
     }
-  ]
+  ],
+  "location": {
+    "column": 17,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "Unlock Armada Control Center"
 }

@@ -1,20 +1,13 @@
 {
   "img_url": "./assets/defense_platform_shields.png",
-  "research_name": "Defense Platform Shields",
-  "location": {
-    "column": 55,
-    "row": 3,
-    "tree": "station"
-  },
   "levels": [
     {
-      "level": 8,
-      "increased_power": 10000,
       "bonus": {
         "percentage": true,
         "value": 1.8
       },
-      "research_time": 354000,
+      "increased_power": 10000,
+      "level": 8,
       "requirements": [
         {
           "name": "Defense Platform Armor",
@@ -26,6 +19,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -35,39 +29,39 @@
             "type": "dilithium",
             "value": 152000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 354000
     },
     {
-      "level": 2,
-      "increased_power": 7000,
       "bonus": {
         "percentage": true,
         "value": 0.4
       },
-      "research_time": 150563,
+      "increased_power": 7000,
+      "level": 2,
+      "required_by": [
+        {
+          "name": "4\u2605 Battleship Pillager",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Explorer Pillager",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Interceptor Pillager",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Defense Platform Armor",
           "level": 2
         }
       ],
-      "required_by": [
-        {
-          "name": "4★ Battleship Pillager",
-          "level": 1
-        },
-        {
-          "name": "4★ Explorer Pillager",
-          "level": 1
-        },
-        {
-          "name": "4★ Interceptor Pillager",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -77,9 +71,15 @@
             "type": "dilithium",
             "value": 2650
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 150563
     }
-  ]
+  ],
+  "location": {
+    "column": 55,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Defense Platform Shields"
 }

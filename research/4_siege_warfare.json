@@ -1,21 +1,32 @@
 {
-  "img_url": "./assets/4_siege_warfare.png",
-  "research_name": "4★ Siege Warfare",
   "description": "Increases Weapon Damage of all Grade 4+ ships against Stations.",
-  "location": {
-    "column": 58,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/4_siege_warfare.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 150000,
       "bonus": {
         "percentage": true,
         "value": 0.06
       },
-      "research_time": 265332,
+      "increased_power": 150000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "4\u2605 Evasive Maneuvers",
+          "level": 2
+        },
+        {
+          "name": "4\u2605 Offensive Strategies",
+          "level": 5
+        },
+        {
+          "name": "4\u2605 Reinforced Bulkheads",
+          "level": 2
+        },
+        {
+          "name": "4\u2605 Shield Efficiency",
+          "level": 2
+        }
+      ],
       "requirements": [
         {
           "name": "Federation Vulnerability",
@@ -34,52 +45,41 @@
           "level": 50
         }
       ],
-      "required_by": [
-        {
-          "name": "4★ Evasive Maneuvers",
-          "level": 2
-        },
-        {
-          "name": "4★ Offensive Strategies",
-          "level": 5
-        },
-        {
-          "name": "4★ Reinforced Bulkheads",
-          "level": 2
-        },
-        {
-          "name": "4★ Shield Efficiency",
-          "level": 2
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 6600
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 11000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 6600
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 9923
           }
-        ],
-        "materials": [
-          {
-            "value": 6600,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "crystal"
-          },
-          {
-            "value": 11000,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "gas"
-          },
-          {
-            "value": 6600,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 265332
     }
-  ]
+  ],
+  "location": {
+    "column": 58,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "4\u2605 Siege Warfare"
 }

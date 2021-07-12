@@ -1,27 +1,10 @@
 {
-  "img_url": "./assets/unlock_kumari.png",
-  "research_name": "Unlock Kumari",
   "description": "Unlocks the Kumari, a Grade 3 Battleship.",
-  "location": {
-    "column": 22,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/unlock_kumari.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 26000,
-      "research_time": 478080,
-      "requirements": [
-        {
-          "name": "Explorer Targeting Array",
-          "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 24
-        }
-      ],
+      "level": 1,
       "required_by": [
         {
           "name": "Battleship Hull Boost",
@@ -36,7 +19,31 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "Explorer Targeting Array",
+          "level": 1
+        },
+        {
+          "name": "R&D Department",
+          "level": 24
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 375
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 80
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -46,22 +53,15 @@
             "type": "dilithium",
             "value": 279000
           }
-        ],
-        "materials": [
-          {
-            "value": 375,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 80,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 478080
     }
-  ]
+  ],
+  "location": {
+    "column": 22,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Unlock Kumari"
 }

@@ -1,17 +1,20 @@
 {
-  "img_url": "./assets/unlock_rare_assignments.png",
-  "research_name": "Unlock Rare Assignments",
   "description": "Unlocks the chance to get rare away team assignments",
-  "location": {
-    "column": 7,
-    "row": 2,
-    "tree": "away teams"
-  },
+  "img_url": "./assets/unlock_rare_assignments.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 2700,
-      "research_time": 29100,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Special Assignments: Nanoprobes",
+          "level": 1
+        },
+        {
+          "name": "Unlock Epic Assignments",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Faction Consul",
@@ -26,29 +29,26 @@
           "level": 21
         }
       ],
-      "required_by": [
-        {
-          "name": "Special Assignments: Nanoprobes",
-          "level": 1
-        },
-        {
-          "name": "Unlock Epic Assignments",
-          "level": 1
-        }
-      ],
       "research_costs": {
-        "resources": [],
         "materials": [
           {
-            "type": "Service Award",
+            "type": "Service\u00a0Award",
             "value": 1050
           }
-        ]
+        ],
+        "resources": []
       },
+      "research_time": 29100,
       "reward": {
-        "type": "Mission Token ",
+        "type": "Mission\u00a0Token\u00a0",
         "value": 1
       }
     }
-  ]
+  ],
+  "location": {
+    "column": 7,
+    "row": 2,
+    "tree": "away teams"
+  },
+  "research_name": "Unlock Rare Assignments"
 }

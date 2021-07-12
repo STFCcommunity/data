@@ -1,17 +1,20 @@
 {
-  "img_url": "./assets/unlock_talla.png",
-  "research_name": "Unlock Talla",
   "description": "Unlocks the Talla, a Grade 2 Battleship.",
-  "location": {
-    "column": 11,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/unlock_talla.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 5250,
-      "research_time": 54000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Energy Blast",
+          "level": 1
+        },
+        {
+          "name": "Kinetic Shockwave",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Survey Firepower",
@@ -30,17 +33,8 @@
           "level": 14
         }
       ],
-      "required_by": [
-        {
-          "name": "Energy Blast",
-          "level": 1
-        },
-        {
-          "name": "Kinetic Shockwave",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -50,9 +44,15 @@
             "type": "dilithium",
             "value": 4000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 54000
     }
-  ]
+  ],
+  "location": {
+    "column": 11,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Unlock Talla"
 }

@@ -1,21 +1,24 @@
 {
-  "img_url": "./assets/defensive_strategies.png",
-  "research_name": "Defensive Strategies",
   "description": "All ships receive reduced Weapon Damage from player ships.",
-  "location": {
-    "column": 46,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/defensive_strategies.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 89000,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 61308,
+      "increased_power": 89000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "4\u2605 Battleship Regeneration",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Explorer Regeneration",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Station Sabotage",
@@ -26,17 +29,27 @@
           "level": 45
         }
       ],
-      "required_by": [
-        {
-          "name": "4★ Battleship Regeneration",
-          "level": 1
-        },
-        {
-          "name": "4★ Explorer Regeneration",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 1000
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 1000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -46,28 +59,15 @@
             "type": "dilithium",
             "value": 708000
           }
-        ],
-        "materials": [
-          {
-            "value": 1000,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "crystal"
-          },
-          {
-            "value": 1000,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "gas"
-          },
-          {
-            "value": 1000,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 61308
     }
-  ]
+  ],
+  "location": {
+    "column": 46,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Defensive Strategies"
 }

@@ -1,20 +1,13 @@
 {
   "img_url": "./assets/battleship_hull_boost.png",
-  "research_name": "Battleship Hull Boost",
-  "location": {
-    "column": 23,
-    "row": 1,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 9,
-      "increased_power": 6500,
       "bonus": {
         "percentage": true,
         "value": 1.2
       },
-      "research_time": 5965,
+      "increased_power": 6500,
+      "level": 9,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -30,6 +23,26 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 3290
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 700
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 63
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -39,37 +52,17 @@
             "type": "dilithium",
             "value": 23200
           }
-        ],
-        "materials": [
-          {
-            "value": 3290,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 700,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          },
-          {
-            "value": 63,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 5965
     },
     {
-      "level": 10,
-      "increased_power": 4000,
       "bonus": {
         "percentage": true,
         "value": 1.4
       },
-      "research_time": 8058,
+      "increased_power": 4000,
+      "level": 10,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -89,6 +82,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -98,18 +92,17 @@
             "type": "dilithium",
             "value": 39500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 8058
     },
     {
-      "level": 6,
-      "increased_power": 2500,
       "bonus": {
         "percentage": true,
         "value": 0.7
       },
-      "research_time": 1449,
+      "increased_power": 2500,
+      "level": 6,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -125,6 +118,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -134,18 +128,23 @@
             "type": "dilithium",
             "value": 2790
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1449
     },
     {
-      "level": 3,
-      "increased_power": 4500,
       "bonus": {
         "percentage": true,
         "value": 0.4
       },
-      "research_time": 577800,
+      "increased_power": 4500,
+      "level": 3,
+      "required_by": [
+        {
+          "name": "Explorer Hull Boost",
+          "level": 6
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -160,13 +159,21 @@
           "level": 23
         }
       ],
-      "required_by": [
-        {
-          "name": "Explorer Hull Boost",
-          "level": 6
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 125
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 20
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -176,31 +183,17 @@
             "type": "dilithium",
             "value": 336000
           }
-        ],
-        "materials": [
-          {
-            "value": 125,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 20,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 577800
     },
     {
-      "level": 4,
-      "increased_power": 1750,
       "bonus": {
         "percentage": true,
         "value": 0.48
       },
-      "research_time": 649620,
+      "increased_power": 1750,
+      "level": 4,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -216,6 +209,20 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 135
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 24
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -225,31 +232,27 @@
             "type": "dilithium",
             "value": 519000
           }
-        ],
-        "materials": [
-          {
-            "value": 135,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 24,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 649620
     },
     {
-      "level": 5,
-      "increased_power": 6500,
       "bonus": {
         "percentage": true,
         "value": 0.6
       },
-      "research_time": 978540,
+      "increased_power": 6500,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Explorer Hull Boost",
+          "level": 8
+        },
+        {
+          "name": "Interceptor Hull Boost",
+          "level": 8
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -264,17 +267,21 @@
           "level": 22
         }
       ],
-      "required_by": [
-        {
-          "name": "Explorer Hull Boost",
-          "level": 8
-        },
-        {
-          "name": "Interceptor Hull Boost",
-          "level": 8
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 150
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 26
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -284,31 +291,17 @@
             "type": "dilithium",
             "value": 1800
           }
-        ],
-        "materials": [
-          {
-            "value": 150,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 26,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 978540
     },
     {
-      "level": 7,
-      "increased_power": 5000,
       "bonus": {
         "percentage": true,
         "value": 0.8
       },
-      "research_time": 2600,
+      "increased_power": 5000,
+      "level": 7,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -324,6 +317,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -333,18 +327,27 @@
             "type": "dilithium",
             "value": 6670
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 2600
     },
     {
-      "level": 8,
-      "increased_power": 3000,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 3499,
+      "increased_power": 3000,
+      "level": 8,
+      "required_by": [
+        {
+          "name": "Explorer Hull Boost",
+          "level": 10
+        },
+        {
+          "name": "Interceptor Hull Boost",
+          "level": 10
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -359,17 +362,8 @@
           "level": 23
         }
       ],
-      "required_by": [
-        {
-          "name": "Explorer Hull Boost",
-          "level": 10
-        },
-        {
-          "name": "Interceptor Hull Boost",
-          "level": 10
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -379,28 +373,17 @@
             "type": "dilithium",
             "value": 9950
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 3499
     },
     {
-      "level": 1,
-      "increased_power": 9250,
       "bonus": {
         "percentage": true,
         "value": 0.1
       },
-      "research_time": 318720,
-      "requirements": [
-        {
-          "name": "Unlock Kumari",
-          "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 24
-        }
-      ],
+      "increased_power": 9250,
+      "level": 1,
       "required_by": [
         {
           "name": "Battleship Penetration",
@@ -415,7 +398,31 @@
           "level": 6
         }
       ],
+      "requirements": [
+        {
+          "name": "Unlock Kumari",
+          "level": 1
+        },
+        {
+          "name": "R&D Department",
+          "level": 24
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 100
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 15
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -425,31 +432,17 @@
             "type": "dilithium",
             "value": 55750
           }
-        ],
-        "materials": [
-          {
-            "value": 100,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 15,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 318720
     },
     {
-      "level": 2,
-      "increased_power": 1500,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 291240,
+      "increased_power": 1500,
+      "level": 2,
       "requirements": [
         {
           "name": "Battleship Shields",
@@ -457,6 +450,20 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 115
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 18
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -466,22 +473,15 @@
             "type": "dilithium",
             "value": 91000
           }
-        ],
-        "materials": [
-          {
-            "value": 115,
-            "grade": 3,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 18,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 291240
     }
-  ]
+  ],
+  "location": {
+    "column": 23,
+    "row": 1,
+    "tree": "combat"
+  },
+  "research_name": "Battleship Hull Boost"
 }

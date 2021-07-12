@@ -1,20 +1,23 @@
 {
   "img_url": "./assets/pinpoint_targeting.png",
-  "research_name": "Pinpoint Targeting",
-  "location": {
-    "column": 7,
-    "row": 3,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 1600,
       "bonus": {
         "percentage": true,
         "value": 0.01
       },
-      "research_time": 18600,
+      "increased_power": 1600,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Shield Penetration",
+          "level": 1
+        },
+        {
+          "name": "Targeting Array",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Unlock Phindra",
@@ -29,34 +32,24 @@
           "level": 10
         }
       ],
-      "required_by": [
-        {
-          "name": "Shield Penetration",
-          "level": 1
-        },
-        {
-          "name": "Targeting Array",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 630
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 18600
     },
     {
-      "level": 2,
-      "increased_power": 6400,
       "bonus": {
         "percentage": true,
         "value": 0.02
       },
-      "research_time": 213720,
+      "increased_power": 6400,
+      "level": 2,
       "requirements": [
         {
           "name": "Energy Blast",
@@ -76,14 +69,21 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 19800
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 213720
     }
-  ]
+  ],
+  "location": {
+    "column": 7,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Pinpoint Targeting"
 }

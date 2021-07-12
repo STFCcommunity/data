@@ -1,17 +1,24 @@
 {
-  "img_url": "./assets/unlock_turas.png",
-  "research_name": "Unlock Turas",
   "description": "Unlocks the Turas, a Grade 2 Explorer.",
-  "location": {
-    "column": 9,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/unlock_turas.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 3600,
-      "research_time": 31020,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Survey Firepower",
+          "level": 1
+        },
+        {
+          "name": "Survey Hull Integrity",
+          "level": 1
+        },
+        {
+          "name": "Survey Shield Array",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Piercing Shots",
@@ -30,21 +37,8 @@
           "level": 12
         }
       ],
-      "required_by": [
-        {
-          "name": "Survey Firepower",
-          "level": 1
-        },
-        {
-          "name": "Survey Hull Integrity",
-          "level": 1
-        },
-        {
-          "name": "Survey Shield Array",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -54,9 +48,15 @@
             "type": "dilithium",
             "value": 1825
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 31020
     }
-  ]
+  ],
+  "location": {
+    "column": 9,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Unlock Turas"
 }

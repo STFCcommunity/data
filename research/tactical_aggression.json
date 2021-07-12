@@ -1,20 +1,20 @@
 {
+  "description": "Increases the attack stat of all officers",
   "img_url": "./assets/tactical_aggression.png",
-  "research_name": "Tactical Aggression",
-  "location": {
-    "column": 20,
-    "row": 1,
-    "tree": "away teams"
-  },
   "levels": [
     {
-      "level": 3,
-      "increased_power": 1500,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 2099,
+      "increased_power": 1500,
+      "level": 3,
+      "required_by": [
+        {
+          "name": "Rerouting to Shields",
+          "level": 3
+        }
+      ],
       "requirements": [
         {
           "name": "Hypospray Technology",
@@ -25,30 +25,30 @@
           "level": 36
         }
       ],
-      "required_by": [
-        {
-          "name": "Rerouting to Shields",
-          "level": 3
-        }
-      ],
       "research_costs": {
-        "resources": [],
         "materials": [
           {
-            "type": "Service Award",
+            "type": "Service\u00a0Award",
             "value": 38536
           }
-        ]
-      }
+        ],
+        "resources": []
+      },
+      "research_time": 2099
     },
     {
-      "level": 1,
-      "increased_power": 4700,
       "bonus": {
         "percentage": true,
         "value": 0.08
       },
-      "research_time": 444600,
+      "increased_power": 4700,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Hypospray Technology",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Rerouting to Shields",
@@ -59,22 +59,22 @@
           "level": 30
         }
       ],
-      "required_by": [
-        {
-          "name": "Hypospray Technology",
-          "level": 1
-        }
-      ],
       "research_costs": {
-        "resources": [],
         "materials": [
           {
-            "type": "Service Award",
+            "type": "Service\u00a0Award",
             "value": 3535
           }
-        ]
-      }
+        ],
+        "resources": []
+      },
+      "research_time": 444600
     }
   ],
-  "description": "Increases the attack stat of all officers"
+  "location": {
+    "column": 20,
+    "row": 1,
+    "tree": "away teams"
+  },
+  "research_name": "Tactical Aggression"
 }

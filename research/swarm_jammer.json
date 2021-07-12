@@ -1,20 +1,20 @@
 {
+  "description": "Dodge of Swarm hostiles is reduced when using the USS Franklin or the Franklin-A",
   "img_url": "./assets/swarm_jammer.png",
-  "research_name": "Swarm Jammer",
-  "location": {
-    "column": 11,
-    "row": 3,
-    "tree": "galaxy"
-  },
   "levels": [
     {
-      "level": 8,
-      "increased_power": 2500,
       "bonus": {
         "percentage": true,
         "value": 0.42
       },
-      "research_time": 2600,
+      "increased_power": 2500,
+      "level": 8,
+      "required_by": [
+        {
+          "name": "Swarm Targeting",
+          "level": 7
+        }
+      ],
       "requirements": [
         {
           "name": "Swarm Fortification",
@@ -25,30 +25,24 @@
           "level": 35
         }
       ],
-      "required_by": [
-        {
-          "name": "Swarm Targeting",
-          "level": 7
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 11100
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 2600
     },
     {
-      "level": 9,
-      "increased_power": 3000,
       "bonus": {
         "percentage": true,
         "value": 0.46
       },
-      "research_time": 3499,
+      "increased_power": 3000,
+      "level": 9,
       "requirements": [
         {
           "name": "R&D Department",
@@ -56,23 +50,23 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 16600
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 3499
     },
     {
-      "level": 10,
-      "increased_power": 3500,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 3483,
+      "increased_power": 3500,
+      "level": 10,
       "requirements": [
         {
           "name": "Swarm Fortification",
@@ -84,23 +78,23 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 24450
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 3483
     },
     {
-      "level": 2,
-      "increased_power": 6250,
       "bonus": {
         "percentage": true,
         "value": 0.24
       },
-      "research_time": 649620,
+      "increased_power": 6250,
+      "level": 2,
       "requirements": [
         {
           "name": "Swarm Weakpoints",
@@ -112,53 +106,59 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 865000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 649620
     },
     {
-      "level": 6,
-      "increased_power": 2500,
       "bonus": {
         "percentage": true,
         "value": 0.37
       },
-      "research_time": 1449,
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 33
-        }
-      ],
+      "increased_power": 2500,
+      "level": 6,
       "required_by": [
         {
           "name": "Swarm Fortification",
           "level": 5
         }
       ],
+      "requirements": [
+        {
+          "name": "R&D Department",
+          "level": 33
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 4650
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1449
     },
     {
-      "level": 1,
-      "increased_power": 10750,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 291240,
+      "increased_power": 10750,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Swarm Fortification",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Regeneration",
@@ -169,29 +169,29 @@
           "level": 25
         }
       ],
-      "required_by": [
-        {
-          "name": "Swarm Fortification",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 152000
           }
-        ],
-        "materials": [
-          {
-            "value": 1000,
-            "grade": 3,
-            "rarity": "common",
-            "type": "crystal"
-          }
         ]
-      }
+      },
+      "research_time": 291240
     }
   ],
-  "description": "Dodge of Swarm hostiles is reduced when using the USS Franklin or the Franklin-A"
+  "location": {
+    "column": 11,
+    "row": 3,
+    "tree": "galaxy"
+  },
+  "research_name": "Swarm Jammer"
 }

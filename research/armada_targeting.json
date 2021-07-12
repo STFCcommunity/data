@@ -1,20 +1,24 @@
 {
+  "description": "Increases Critical Hit Chance against Armada Hostiles.",
   "img_url": "./assets/armada_targeting.png",
-  "research_name": "Armada Targeting",
-  "location": {
-    "column": 37,
-    "row": 2,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 85000,
       "bonus": {
         "percentage": true,
         "value": 0.01
       },
-      "research_time": 31526,
+      "increased_power": 85000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Survey Defenses",
+          "level": 1
+        },
+        {
+          "name": "Survey Shield Array II",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Reactive Damage",
@@ -29,47 +33,37 @@
           "level": 42
         }
       ],
-      "required_by": [
-        {
-          "name": "Survey Defenses",
-          "level": 1
-        },
-        {
-          "name": "Survey Shield Array II",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 14000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 8400
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 337100
           }
-        ],
-        "materials": [
-          {
-            "value": 14000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 8400,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 31526
     },
     {
-      "level": 2,
-      "increased_power": 14000,
       "bonus": {
         "percentage": true,
         "value": 0.02
       },
-      "research_time": 58401,
+      "increased_power": 14000,
+      "level": 2,
       "requirements": [
         {
           "name": "Armada Defenses",
@@ -85,36 +79,36 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 4800
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 11000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 744800
           }
-        ],
-        "materials": [
-          {
-            "value": 4800,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "crystal"
-          },
-          {
-            "value": 11000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 58401
     },
     {
-      "level": 3,
-      "increased_power": 15000,
       "bonus": {
         "percentage": true,
         "value": 0.03
       },
-      "research_time": 103350,
+      "increased_power": 15000,
+      "level": 3,
       "requirements": [
         {
           "name": "Armada Piercing",
@@ -126,36 +120,36 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 5800
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 3500
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1481
           }
-        ],
-        "materials": [
-          {
-            "value": 5800,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "crystal"
-          },
-          {
-            "value": 3500,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 103350
     },
     {
-      "level": 4,
-      "increased_power": 17000,
       "bonus": {
         "percentage": true,
         "value": 0.04
       },
-      "research_time": 170541,
+      "increased_power": 17000,
+      "level": 4,
       "requirements": [
         {
           "name": "Armada Piercing",
@@ -167,71 +161,77 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 7200
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 4300
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 3537
           }
-        ],
-        "materials": [
-          {
-            "value": 7200,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "crystal"
-          },
-          {
-            "value": 4300,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 170541
     },
     {
-      "level": 5,
-      "increased_power": 19000,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 284285,
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 50
-        }
-      ],
+      "increased_power": 19000,
+      "level": 5,
       "required_by": [
         {
           "name": "Klingon Armada Defects",
           "level": 2
         }
       ],
+      "requirements": [
+        {
+          "name": "R&D Department",
+          "level": 50
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 11000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 6600
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 10631
           }
-        ],
-        "materials": [
-          {
-            "value": 11000,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "crystal"
-          },
-          {
-            "value": 6600,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 284285
     }
   ],
-  "description": "Increases Critical Hit Chance against Armada Hostiles."
+  "location": {
+    "column": 37,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Armada Targeting"
 }

@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_repair_costs.png",
-  "research_name": "Prime Repair Costs",
   "description": "+100% to base Cost Efficiency for repairing ships.",
-  "location": {
-    "column": 16,
-    "row": 3,
-    "tree": "station"
-  },
+  "img_url": "./assets/prime_repair_costs.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 20000,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 356160,
+      "increased_power": 20000,
+      "level": 1,
       "requirements": [
         {
           "name": "Building Efficiency",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 100
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 1000
           }
-        ],
-        "materials": [
-          {
-            "value": 100,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "crystal"
-          }
         ]
-      }
+      },
+      "research_time": 356160
     }
-  ]
+  ],
+  "location": {
+    "column": 16,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Prime Repair Costs"
 }

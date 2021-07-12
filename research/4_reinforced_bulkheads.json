@@ -1,21 +1,24 @@
 {
-  "img_url": "./assets/4_reinforced_bulkheads.png",
-  "research_name": "4★ Reinforced Bulkheads",
   "description": "Increases Armor for all Grade 4+ ships.",
-  "location": {
-    "column": 55,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/4_reinforced_bulkheads.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 94000,
       "bonus": {
         "percentage": true,
         "value": 0.3
       },
-      "research_time": 120450,
+      "increased_power": 94000,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "4\u2605 Shield Penetration",
+          "level": 4
+        },
+        {
+          "name": "Romulan Armada Defects",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Transneural Blocker",
@@ -26,17 +29,15 @@
           "level": 49
         }
       ],
-      "required_by": [
-        {
-          "name": "4★ Shield Penetration",
-          "level": 4
-        },
-        {
-          "name": "Romulan Armada Defects",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 18000
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -46,16 +47,15 @@
             "type": "dilithium",
             "value": 397200
           }
-        ],
-        "materials": [
-          {
-            "value": 18000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 120450
     }
-  ]
+  ],
+  "location": {
+    "column": 55,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "4\u2605 Reinforced Bulkheads"
 }

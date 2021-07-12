@@ -1,17 +1,20 @@
 {
-  "img_url": "./assets/unlock_phindra.png",
-  "research_name": "Unlock Phindra",
   "description": "Unlocks the Phindra, a Grade 2 Interceptor.",
-  "location": {
-    "column": 6,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/unlock_phindra.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 2300,
-      "research_time": 18360,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Exploit Weakpoints",
+          "level": 1
+        },
+        {
+          "name": "Pinpoint Targeting",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Grade 2 Ship Research",
@@ -26,17 +29,8 @@
           "level": 9
         }
       ],
-      "required_by": [
-        {
-          "name": "Exploit Weakpoints",
-          "level": 1
-        },
-        {
-          "name": "Pinpoint Targeting",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -46,9 +40,15 @@
             "type": "dilithium",
             "value": 750
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 18360
     }
-  ]
+  ],
+  "location": {
+    "column": 6,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Unlock Phindra"
 }

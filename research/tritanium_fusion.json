@@ -1,20 +1,23 @@
 {
   "img_url": "./assets/tritanium_fusion.png",
-  "research_name": "Tritanium Fusion",
-  "location": {
-    "column": 3,
-    "row": 1,
-    "tree": "station"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 400,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 2700,
+      "increased_power": 400,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Assembly Line",
+          "level": 1
+        },
+        {
+          "name": "Unlock Fortunate",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Parsteel Fusion",
@@ -29,17 +32,8 @@
           "level": 7
         }
       ],
-      "required_by": [
-        {
-          "name": "Assembly Line",
-          "level": 1
-        },
-        {
-          "name": "Unlock Fortunate",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -49,18 +43,17 @@
             "type": "dilithium",
             "value": 48
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 2700
     },
     {
-      "level": 2,
-      "increased_power": 100,
       "bonus": {
         "percentage": true,
         "value": 0.12
       },
-      "research_time": 4320,
+      "increased_power": 100,
+      "level": 2,
       "requirements": [
         {
           "name": "Tritanium Generator A",
@@ -68,6 +61,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -77,24 +71,17 @@
             "type": "dilithium",
             "value": 90
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 4320
     },
     {
-      "level": 3,
-      "increased_power": 125,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 7380,
-      "requirements": [
-        {
-          "name": "Tritanium Generator A",
-          "level": 10
-        }
-      ],
+      "increased_power": 125,
+      "level": 3,
       "required_by": [
         {
           "name": "Assembly Line",
@@ -105,7 +92,14 @@
           "level": 3
         }
       ],
+      "requirements": [
+        {
+          "name": "Tritanium Generator A",
+          "level": 10
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -115,18 +109,17 @@
             "type": "dilithium",
             "value": 150
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 7380
     },
     {
-      "level": 4,
-      "increased_power": 350,
       "bonus": {
         "percentage": true,
         "value": 0.32
       },
-      "research_time": 12420,
+      "increased_power": 350,
+      "level": 4,
       "requirements": [
         {
           "name": "Tritanium Generator A",
@@ -134,6 +127,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -143,24 +137,17 @@
             "type": "dilithium",
             "value": 365
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 12420
     },
     {
-      "level": 5,
-      "increased_power": 225,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 16920,
-      "requirements": [
-        {
-          "name": "Tritanium Generator A",
-          "level": 13
-        }
-      ],
+      "increased_power": 225,
+      "level": 5,
       "required_by": [
         {
           "name": "Assembly Line",
@@ -175,7 +162,14 @@
           "level": 5
         }
       ],
+      "requirements": [
+        {
+          "name": "Tritanium Generator A",
+          "level": 13
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "parsteel",
@@ -185,9 +179,15 @@
             "type": "dilithium",
             "value": 550
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 16920
     }
-  ]
+  ],
+  "location": {
+    "column": 3,
+    "row": 1,
+    "tree": "station"
+  },
+  "research_name": "Tritanium Fusion"
 }

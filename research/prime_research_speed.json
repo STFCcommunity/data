@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_research_speed.png",
-  "research_name": "Prime Research Speed",
   "description": "+100% to base Research Speed.",
-  "location": {
-    "column": 6,
-    "row": 3,
-    "tree": "station"
-  },
+  "img_url": "./assets/prime_research_speed.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 3200,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 30660,
+      "increased_power": 3200,
+      "level": 1,
       "requirements": [
         {
           "name": "Defense Platforms",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 150
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 100000
           }
-        ],
-        "materials": [
-          {
-            "value": 150,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "crystal"
-          }
         ]
-      }
+      },
+      "research_time": 30660
     }
-  ]
+  ],
+  "location": {
+    "column": 6,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Prime Research Speed"
 }

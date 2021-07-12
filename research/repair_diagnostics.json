@@ -1,20 +1,19 @@
 {
   "img_url": "./assets/repair_diagnostics.png",
-  "research_name": "Repair Diagnostics",
-  "location": {
-    "column": 4,
-    "row": 3,
-    "tree": "station"
-  },
   "levels": [
     {
-      "level": 1,
-      "increased_power": 1175,
       "bonus": {
         "percentage": true,
         "value": 0.05
       },
-      "research_time": 9000,
+      "increased_power": 1175,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Unlock Astronautics",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Tritanium Storage",
@@ -25,30 +24,24 @@
           "level": 7
         }
       ],
-      "required_by": [
-        {
-          "name": "Unlock Astronautics",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 300
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 9000
     },
     {
-      "level": 2,
-      "increased_power": 325,
       "bonus": {
         "percentage": true,
         "value": 0.12
       },
-      "research_time": 15300,
+      "increased_power": 325,
+      "level": 2,
       "requirements": [
         {
           "name": "Dilithium Fusion",
@@ -60,23 +53,29 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 15300
     },
     {
-      "level": 3,
-      "increased_power": 800,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 25860,
+      "increased_power": 800,
+      "level": 3,
+      "required_by": [
+        {
+          "name": "Interceptor Repairs",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Dilithium Fusion",
@@ -87,40 +86,24 @@
           "level": 11
         }
       ],
-      "required_by": [
-        {
-          "name": "Interceptor Repairs",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 1210
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 25860
     },
     {
-      "level": 4,
-      "increased_power": 500,
       "bonus": {
         "percentage": true,
         "value": 0.32
       },
-      "research_time": 35280,
-      "requirements": [
-        {
-          "name": "Dilithium Fusion",
-          "level": 3
-        },
-        {
-          "name": "Dilithium Generator A",
-          "level": 13
-        }
-      ],
+      "increased_power": 500,
+      "level": 4,
       "required_by": [
         {
           "name": "Explorer Repairs",
@@ -131,34 +114,34 @@
           "level": 2
         }
       ],
+      "requirements": [
+        {
+          "name": "Dilithium Fusion",
+          "level": 3
+        },
+        {
+          "name": "Dilithium Generator A",
+          "level": 13
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 1850
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 35280
     },
     {
-      "level": 5,
-      "increased_power": 1300,
       "bonus": {
         "percentage": true,
         "value": 0.5
       },
-      "research_time": 55020,
-      "requirements": [
-        {
-          "name": "Dilithium Fusion",
-          "level": 4
-        },
-        {
-          "name": "Dilithium Generator A",
-          "level": 14
-        }
-      ],
+      "increased_power": 1300,
+      "level": 5,
       "required_by": [
         {
           "name": "Battleship Repairs",
@@ -173,15 +156,32 @@
           "level": 3
         }
       ],
+      "requirements": [
+        {
+          "name": "Dilithium Fusion",
+          "level": 4
+        },
+        {
+          "name": "Dilithium Generator A",
+          "level": 14
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 3925
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 55020
     }
-  ]
+  ],
+  "location": {
+    "column": 4,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Repair Diagnostics"
 }

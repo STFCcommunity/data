@@ -1,20 +1,13 @@
 {
   "img_url": "./assets/interceptor_hull_boost.png",
-  "research_name": "Interceptor Hull Boost",
-  "location": {
-    "column": 17,
-    "row": 1,
-    "tree": "combat"
-  },
   "levels": [
     {
-      "level": 10,
-      "increased_power": 4000,
       "bonus": {
         "percentage": true,
         "value": 1.4
       },
-      "research_time": 8058,
+      "increased_power": 4000,
+      "level": 10,
       "requirements": [
         {
           "name": "Battleship Hull Boost",
@@ -30,6 +23,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -39,18 +33,17 @@
             "type": "dilithium",
             "value": 39500
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 8058
     },
     {
-      "level": 9,
-      "increased_power": 12000,
       "bonus": {
         "percentage": true,
         "value": 1.2
       },
-      "research_time": 5965,
+      "increased_power": 12000,
+      "level": 9,
       "requirements": [
         {
           "name": "Explorer Hull Boost",
@@ -66,6 +59,26 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "common",
+            "value": 2320
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 490
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 44
+          }
+        ],
         "resources": [
           {
             "type": "tritanium",
@@ -75,47 +88,17 @@
             "type": "dilithium",
             "value": 23200
           }
-        ],
-        "materials": [
-          {
-            "value": 2320,
-            "grade": 3,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 490,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "crystal"
-          },
-          {
-            "value": 44,
-            "grade": 3,
-            "rarity": "rare",
-            "type": "crystal"
-          }
         ]
-      }
+      },
+      "research_time": 5965
     },
     {
-      "level": 6,
-      "increased_power": 1750,
       "bonus": {
         "percentage": true,
         "value": 0.7
       },
-      "research_time": 649620,
-      "requirements": [
-        {
-          "name": "Battleship Hull Boost",
-          "level": 1
-        },
-        {
-          "name": "Interceptor Shields",
-          "level": 6
-        }
-      ],
+      "increased_power": 1750,
+      "level": 6,
       "required_by": [
         {
           "name": "Battleship Hull Boost",
@@ -126,7 +109,18 @@
           "level": 7
         }
       ],
+      "requirements": [
+        {
+          "name": "Battleship Hull Boost",
+          "level": 1
+        },
+        {
+          "name": "Interceptor Shields",
+          "level": 6
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -136,18 +130,17 @@
             "type": "dilithium",
             "value": 519000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 649620
     },
     {
-      "level": 7,
-      "increased_power": 9000,
       "bonus": {
         "percentage": true,
         "value": 0.8
       },
-      "research_time": 1449,
+      "increased_power": 9000,
+      "level": 7,
       "requirements": [
         {
           "name": "Explorer Hull Boost",
@@ -167,6 +160,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -176,18 +170,27 @@
             "type": "dilithium",
             "value": 2790
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1449
     },
     {
-      "level": 8,
-      "increased_power": 2500,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 1937,
+      "increased_power": 2500,
+      "level": 8,
+      "required_by": [
+        {
+          "name": "Battleship Hull Boost",
+          "level": 9
+        },
+        {
+          "name": "Explorer Hull Boost",
+          "level": 9
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Hull Boost",
@@ -202,17 +205,8 @@
           "level": 22
         }
       ],
-      "required_by": [
-        {
-          "name": "Battleship Hull Boost",
-          "level": 9
-        },
-        {
-          "name": "Explorer Hull Boost",
-          "level": 9
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -222,18 +216,23 @@
             "type": "dilithium",
             "value": 4470
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 1937
     },
     {
-      "level": 1,
-      "increased_power": 5250,
       "bonus": {
         "percentage": true,
         "value": 0.1
       },
-      "research_time": 142440,
+      "increased_power": 5250,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Interceptor Armor Piercing",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Unlock Kehra",
@@ -244,13 +243,8 @@
           "level": 20
         }
       ],
-      "required_by": [
-        {
-          "name": "Interceptor Armor Piercing",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -260,31 +254,31 @@
             "type": "dilithium",
             "value": 7900
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 142440
     },
     {
-      "level": 2,
-      "increased_power": 1000,
       "bonus": {
         "percentage": true,
         "value": 0.2
       },
-      "research_time": 127140,
-      "requirements": [
-        {
-          "name": "Interceptor Shields",
-          "level": 2
-        }
-      ],
+      "increased_power": 1000,
+      "level": 2,
       "required_by": [
         {
           "name": "Explorer Hull Boost",
           "level": 3
         }
       ],
+      "requirements": [
+        {
+          "name": "Interceptor Shields",
+          "level": 2
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -294,18 +288,17 @@
             "type": "dilithium",
             "value": 13200
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 127140
     },
     {
-      "level": 3,
-      "increased_power": 3000,
       "bonus": {
         "percentage": true,
         "value": 0.4
       },
-      "research_time": 318720,
+      "increased_power": 3000,
+      "level": 3,
       "requirements": [
         {
           "name": "Interceptor Shields",
@@ -321,6 +314,7 @@
         }
       ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -330,24 +324,17 @@
             "type": "dilithium",
             "value": 55750
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 318720
     },
     {
-      "level": 4,
-      "increased_power": 1500,
       "bonus": {
         "percentage": true,
         "value": 0.48
       },
-      "research_time": 291240,
-      "requirements": [
-        {
-          "name": "Interceptor Shields",
-          "level": 4
-        }
-      ],
+      "increased_power": 1500,
+      "level": 4,
       "required_by": [
         {
           "name": "Battleship Hull Boost",
@@ -358,7 +345,14 @@
           "level": 5
         }
       ],
+      "requirements": [
+        {
+          "name": "Interceptor Shields",
+          "level": 4
+        }
+      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -368,18 +362,23 @@
             "type": "dilithium",
             "value": 91000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 291240
     },
     {
-      "level": 5,
-      "increased_power": 4500,
       "bonus": {
         "percentage": true,
         "value": 0.6
       },
-      "research_time": 577800,
+      "increased_power": 4500,
+      "level": 5,
+      "required_by": [
+        {
+          "name": "Battleship Hull Boost",
+          "level": 5
+        }
+      ],
       "requirements": [
         {
           "name": "Explorer Hull Boost",
@@ -398,13 +397,8 @@
           "level": 22
         }
       ],
-      "required_by": [
-        {
-          "name": "Battleship Hull Boost",
-          "level": 5
-        }
-      ],
       "research_costs": {
+        "materials": [],
         "resources": [
           {
             "type": "tritanium",
@@ -414,9 +408,15 @@
             "type": "dilithium",
             "value": 336000
           }
-        ],
-        "materials": []
-      }
+        ]
+      },
+      "research_time": 577800
     }
-  ]
+  ],
+  "location": {
+    "column": 17,
+    "row": 1,
+    "tree": "combat"
+  },
+  "research_name": "Interceptor Hull Boost"
 }

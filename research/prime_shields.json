@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_shields.png",
-  "research_name": "Prime Shields",
   "description": "+100% to base Shield Health for all ships.",
-  "location": {
-    "column": 6,
-    "row": 3,
-    "tree": "combat"
-  },
+  "img_url": "./assets/prime_shields.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 3200,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 30660,
+      "increased_power": 3200,
+      "level": 1,
       "requirements": [
         {
           "name": "Grade 2 Ship Research",
@@ -27,21 +20,28 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 100
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 70000
           }
-        ],
-        "materials": [
-          {
-            "value": 100,
-            "grade": 3,
-            "rarity": "uncommon",
-            "type": "gas"
-          }
         ]
-      }
+      },
+      "research_time": 30660
     }
-  ]
+  ],
+  "location": {
+    "column": 6,
+    "row": 3,
+    "tree": "combat"
+  },
+  "research_name": "Prime Shields"
 }

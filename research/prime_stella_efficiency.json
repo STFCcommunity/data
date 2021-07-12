@@ -1,21 +1,14 @@
 {
-  "img_url": "./assets/prime_stella_efficiency.png",
-  "research_name": "Prime Stella Efficiency",
   "description": "Cost efficiency for unique materials for the Stella",
-  "location": {
-    "column": 16,
-    "row": 1,
-    "tree": "outlaws"
-  },
+  "img_url": "./assets/prime_stella_efficiency.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 79000,
       "bonus": {
         "percentage": true,
         "value": 1
       },
-      "research_time": 2376,
+      "increased_power": 79000,
+      "level": 1,
       "requirements": [
         {
           "name": "R&D Department",
@@ -23,25 +16,32 @@
         }
       ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "Outlaw\u00a0Research\u00a0Credits",
+            "value": 60000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 1000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 102200
           }
-        ],
-        "materials": [
-          {
-            "type": "Outlaw Research Credits",
-            "value": 60000
-          },
-          {
-            "value": 1000,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 2376
     }
-  ]
+  ],
+  "location": {
+    "column": 16,
+    "row": 1,
+    "tree": "outlaws"
+  },
+  "research_name": "Prime Stella Efficiency"
 }

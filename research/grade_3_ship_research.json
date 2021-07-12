@@ -1,17 +1,24 @@
 {
-  "img_url": "./assets/grade_3_ship_research.png",
-  "research_name": "Grade 3 Ship Research",
   "description": "Grants 10 Blueprints each for Kehra, Vahklas and Kumari",
-  "location": {
-    "column": 15,
-    "row": 2,
-    "tree": "combat"
-  },
+  "img_url": "./assets/grade_3_ship_research.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 8000,
-      "research_time": 200760,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Prime Defenses",
+          "level": 1
+        },
+        {
+          "name": "Prime Piercing",
+          "level": 1
+        },
+        {
+          "name": "Unlock Kehra",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Battleship Weaponry",
@@ -34,42 +41,35 @@
           "level": 19
         }
       ],
-      "required_by": [
-        {
-          "name": "Prime Defenses",
-          "level": 1
-        },
-        {
-          "name": "Prime Piercing",
-          "level": 1
-        },
-        {
-          "name": "Unlock Kehra",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "common",
+            "value": 3000
+          },
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 125
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
             "value": 13700
           }
-        ],
-        "materials": [
-          {
-            "value": 3000,
-            "grade": 2,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 125,
-            "grade": 2,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
         ]
-      }
+      },
+      "research_time": 200760
     }
-  ]
+  ],
+  "location": {
+    "column": 15,
+    "row": 2,
+    "tree": "combat"
+  },
+  "research_name": "Grade 3 Ship Research"
 }
