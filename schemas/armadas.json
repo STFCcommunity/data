@@ -33,7 +33,7 @@
         "attack": {
           "accuracy": 71402,
           "armor_pierce": 82997,
-          "crit_change": 0.1,
+          "crit_chance": 0.1,
           "crit_damage": 1.5,
           "damage_per_round": 1594000,
           "shield_pierce": 68351
@@ -77,7 +77,7 @@
           "weapon_stats": {
             "accuracy": 71402,
             "armor_pierce": 82997,
-            "crit_change": 0.1,
+            "crit_chance": 0.1,
             "crit_damage": 1.5,
             "damage_per_round": 1594000,
             "max_damage": 246700,
@@ -214,7 +214,7 @@
             "armor_pierce",
             "shield_pierce",
             "accuracy",
-            "crit_change",
+            "crit_chance",
             "crit_damage"
           ],
           "type": "object",
@@ -241,9 +241,9 @@
                 82997
               ]
             },
-            "crit_change": {
-              "$id": "#/properties/stats/properties/attack/properties/crit_change",
-              "title": "The crit_change schema",
+            "crit_chance": {
+              "$id": "#/properties/stats/properties/attack/properties/crit_chance",
+              "title": "The crit_chance schema",
               "description": "The total average critical chance in percentage.",
               "type": "number",
               "default": 0.0,
@@ -479,7 +479,7 @@
                   "armor_pierce",
                   "shield_pierce",
                   "accuracy",
-                  "crit_change",
+                  "crit_chance",
                   "crit_damage",
                   "min_damage",
                   "max_damage"
@@ -508,9 +508,9 @@
                       82997
                     ]
                   },
-                  "crit_change": {
-                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_change",
-                    "title": "The crit_change schema",
+                  "crit_chance": {
+                    "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/crit_chance",
+                    "title": "The crit_chance schema",
                     "description": "The critical chance of this weapon in percentage.",
                     "type": "number",
                     "default": 0.0,
