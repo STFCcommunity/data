@@ -67,3 +67,8 @@ jobs:
         with:
           schema: schemas/faction_reputation.json
           jsons: faction_reputation/*.json
+      - name: Validate Armadas
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/armadas.json
+          jsons: armadas/*.json
