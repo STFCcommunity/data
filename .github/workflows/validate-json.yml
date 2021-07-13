@@ -52,3 +52,18 @@ jobs:
         with:
           schema: schemas/territories.json
           jsons: territories/*.json
+      - name: Validate Hostiles
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/hostiles.json
+          jsons: hostiles/*.json
+      - name: Validate Dailies
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/dailies.json
+          jsons: dailies/*.json
+      - name: Validate Faction Reputation
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/faction_reputation.json
+          jsons: faction_reputation/*.json
