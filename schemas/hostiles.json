@@ -2,15 +2,17 @@
   "$id": "http://example.com/example.json",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "The root schema",
-  "description": "A schema for armadas in STFC.",
+  "description": "A schema for hostiles in STFC.",
   "required": [
-    "armada_name",
+    "hostile_name",
     "level",
     "rarity",
+    "ship_class",
     "description",
     "systems",
     "rewards",
     "stats",
+    "utility",
     "weapons"
   ],
   "type": "object",
@@ -18,17 +20,18 @@
   "default": {},
   "examples": [
     {
-      "description": "This major base is Klingon...",
-      "armada_name": "Klingon Fortress",
-      "group": "klingon",
-      "level": 36,
-      "rarity": "epic",
+      "description": "This hostile patrols...",
+      "group": "borg",
+      "hostile_name": "Borg Tactical Probe",
+      "level": 30,
+      "rarity": "common",
       "rewards": [
         {
-          "type": "federation points",
-          "value": 14400
+          "type": "inert nanoprobe",
+          "value": 1148
         }
       ],
+      "ship_class": "battleship",
       "stats": {
         "attack": {
           "accuracy": 71402,
@@ -51,6 +54,11 @@
       "systems": [
         {
           "$ref": "reference to system file"
+        }
+      ],
+      "utility": [
+        {
+          "impulse_speed": 90
         }
       ],
       "weapons": [
@@ -93,62 +101,63 @@
     "description": {
       "$id": "#/properties/description",
       "title": "The description schema",
-      "description": "The armada description.",
+      "description": "The description of the hostile type.",
       "type": "string",
       "default": "",
       "examples": [
-        "This major base is Klingon..."
-      ]
-    },
-    "armada_name": {
-      "$id": "#/properties/armada_name",
-      "title": "The armada_name schema",
-      "description": "The name of the armada.",
-      "type": "string",
-      "default": "",
-      "examples": [
-        "Klingon Fortress"
+        "This hostile patrols..."
       ]
     },
     "group": {
       "$id": "#/properties/group",
       "title": "The group schema",
-      "description": "(Optional) Group of the armada, faction or territorial.",
+      "description": "(Optional) To which group the hostile belongs.",
       "type": "string",
       "default": "",
       "examples": [
-        "klingon"
+        "borg"
+      ]
+    },
+    "hostile_name": {
+      "$id": "#/properties/hostile_name",
+      "title": "The hostile_name schema",
+      "description": "Name of the hostile type.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Borg Tactical Probe"
       ]
     },
     "level": {
       "$id": "#/properties/level",
       "title": "The level schema",
-      "description": "Level of the armada.",
+      "description": "The level of the hostile.",
       "type": "integer",
       "default": 0,
       "examples": [
-        36
+        30
       ]
     },
     "rarity": {
       "$id": "#/properties/rarity",
       "title": "The rarity schema",
-      "description": "Rarity of the armada.",
+      "description": "The rarity of the hostile.",
       "type": "string",
       "default": "",
       "enum": [
+        "common",
         "uncommon",
         "rare",
         "epic"
       ],
       "examples": [
-        "epic"
+        "common"
       ]
     },
     "rewards": {
       "$id": "#/properties/rewards",
       "title": "The rewards schema",
-      "description": "List of all rewards gained by destroying the armada.",
+      "description": "List of all rewards gained by destroying the hostile.",
       "type": "array",
       "additionalItems": true,
       "default": [],
@@ -158,7 +167,7 @@
           {
             "$id": "#/properties/rewards/items/anyOf/0",
             "title": "The first anyOf schema",
-            "description": "Single reward instance.",
+            "description": "Single hostile reward instance.",
             "required": [
               "type",
               "value"
@@ -170,21 +179,21 @@
               "type": {
                 "$id": "#/properties/rewards/items/anyOf/0/properties/type",
                 "title": "The type schema",
-                "description": "Type of reward gained.",
+                "description": "Type of reward gained by destroying the hostile.",
                 "type": "string",
                 "default": "",
                 "examples": [
-                  "federation points"
+                  "inert nanoprobe"
                 ]
               },
               "value": {
                 "$id": "#/properties/rewards/items/anyOf/0/properties/value",
                 "title": "The value schema",
-                "description": "The amount of this reward type gained.",
+                "description": "The amount of this reward gained.",
                 "type": "integer",
                 "default": 0,
                 "examples": [
-                  14400
+                  1148
                 ]
               }
             }
@@ -192,10 +201,26 @@
         ]
       }
     },
+    "ship_class": {
+      "$id": "#/properties/ship_class",
+      "title": "The ship_class schema",
+      "description": "The ship class of the hostile.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "explorer",
+        "interceptor",
+        "battleship",
+        "survey"
+      ],
+      "examples": [
+        "battleship"
+      ]
+    },
     "stats": {
       "$id": "#/properties/stats",
       "title": "The stats schema",
-      "description": "Instance of the armada stats.",
+      "description": "Total ship stats of the hostile.",
       "required": [
         "attack",
         "defense",
@@ -208,7 +233,7 @@
         "attack": {
           "$id": "#/properties/stats/properties/attack",
           "title": "The attack schema",
-          "description": "All armada attack stats.",
+          "description": "All average attack stats of this hostile.",
           "required": [
             "damage_per_round",
             "armor_pierce",
@@ -224,7 +249,7 @@
             "accuracy": {
               "$id": "#/properties/stats/properties/attack/properties/accuracy",
               "title": "The accuracy schema",
-              "description": "The total average accuracy.",
+              "description": "Average accuracy stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -234,17 +259,17 @@
             "armor_pierce": {
               "$id": "#/properties/stats/properties/attack/properties/armor_pierce",
               "title": "The armor_pierce schema",
-              "description": "The total average armor piercing.",
+              "description": "Average armor piercing stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
                 82997
               ]
             },
-            "crit_chance": {
+            "crit_change": {
               "$id": "#/properties/stats/properties/attack/properties/crit_chance",
               "title": "The crit_chance schema",
-              "description": "The total average critical chance in percentage.",
+              "description": "Average critical chance stats for this hostile in percentage.",
               "type": "number",
               "default": 0.0,
               "examples": [
@@ -254,7 +279,7 @@
             "crit_damage": {
               "$id": "#/properties/stats/properties/attack/properties/crit_damage",
               "title": "The crit_damage schema",
-              "description": "The total average critical damage in percentage.",
+              "description": "Average critical damage stats for this hostile in percentage.",
               "type": "number",
               "default": 0.0,
               "examples": [
@@ -264,7 +289,7 @@
             "damage_per_round": {
               "$id": "#/properties/stats/properties/attack/properties/damage_per_round",
               "title": "The damage_per_round schema",
-              "description": "The total average damage per round.",
+              "description": "Average damage per round stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -274,7 +299,7 @@
             "shield_pierce": {
               "$id": "#/properties/stats/properties/attack/properties/shield_pierce",
               "title": "The shield_pierce schema",
-              "description": "The total average shield piercing.",
+              "description": "Average shield piercing stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -286,7 +311,7 @@
         "defense": {
           "$id": "#/properties/stats/properties/defense",
           "title": "The defense schema",
-          "description": "All armada defense stats.",
+          "description": "All average defense stats of this hostile.",
           "required": [
             "armor",
             "shield_deflect",
@@ -299,7 +324,7 @@
             "armor": {
               "$id": "#/properties/stats/properties/defense/properties/armor",
               "title": "The armor schema",
-              "description": "The total armada armor.",
+              "description": "Average armor stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -309,7 +334,7 @@
             "dodge": {
               "$id": "#/properties/stats/properties/defense/properties/dodge",
               "title": "The dodge schema",
-              "description": "The total armada dodge capability.",
+              "description": "Average dodging stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -319,7 +344,7 @@
             "shield_deflect": {
               "$id": "#/properties/stats/properties/defense/properties/shield_deflect",
               "title": "The shield_deflect schema",
-              "description": "The total armada shield deflection.",
+              "description": "Average shield deflection stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -331,7 +356,7 @@
         "health": {
           "$id": "#/properties/stats/properties/health",
           "title": "The health schema",
-          "description": "All armada health stats.",
+          "description": "All average health stats of this hostile.",
           "required": [
             "shield_health",
             "hull_health"
@@ -343,7 +368,7 @@
             "hull_health": {
               "$id": "#/properties/stats/properties/health/properties/hull_health",
               "title": "The hull_health schema",
-              "description": "The total armada hull health.",
+              "description": "Average hull health stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -353,7 +378,7 @@
             "shield_health": {
               "$id": "#/properties/stats/properties/health/properties/shield_health",
               "title": "The shield_health schema",
-              "description": "The total armada shield health.",
+              "description": "Average shield health stats for this hostile.",
               "type": "integer",
               "default": 0,
               "examples": [
@@ -367,7 +392,7 @@
     "systems": {
       "$id": "#/properties/systems",
       "title": "The systems schema",
-      "description": "List of all systems harboring this type of armada.",
+      "description": "List of all systems harboring these hostiles.",
       "type": "array",
       "additionalItems": true,
       "default": [],
@@ -400,10 +425,46 @@
         ]
       }
     },
+    "utility": {
+      "$id": "#/properties/utility",
+      "title": "The utility schema",
+      "description": "All important utilities of this hostile.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/utility/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/utility/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single utilities instance.",
+            "required": [
+              "impulse_speed"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "impulse_speed": {
+                "$id": "#/properties/utility/items/anyOf/0/properties/impulse_speed",
+                "title": "The impulse_speed schema",
+                "description": "The impulse speed of the hostile.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  90
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
     "weapons": {
       "$id": "#/properties/weapons",
       "title": "The weapons schema",
-      "description": "List of all grouped armada weapons. Grouped by same stats.",
+      "description": "List of all grouped hostile weapons. Grouped by same stats.",
       "type": "array",
       "additionalItems": true,
       "default": [],
@@ -413,7 +474,7 @@
           {
             "$id": "#/properties/weapons/items/anyOf/0",
             "title": "The first anyOf schema",
-            "description": "Single armada weapon instance.",
+            "description": "Single hostile weapon instance.",
             "required": [
               "weapon_id",
               "weapon_type",
@@ -446,9 +507,7 @@
                       ]
                     }
                   ]
-                },
-                "maxItems": 15,
-                "minItems": 15
+                }
               },
               "quantity": {
                 "$id": "#/properties/weapons/items/anyOf/0/properties/quantity",
@@ -541,7 +600,7 @@
                   "max_damage": {
                     "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/max_damage",
                     "title": "The max_damage schema",
-                    "description": "The maximum amount of damage the weapon caused.",
+                    "description": "The maximum amount of damage the weapon causes.",
                     "type": "integer",
                     "default": 0,
                     "examples": [
@@ -551,7 +610,7 @@
                   "min_damage": {
                     "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/min_damage",
                     "title": "The min_damage schema",
-                    "description": "The minimum amount of damage the weapon caused.",
+                    "description": "The minimum amount of damage the weapon causes.",
                     "type": "integer",
                     "default": 0,
                     "examples": [

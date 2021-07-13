@@ -1,0 +1,458 @@
+{
+  "$id": "http://example.com/example.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "The root schema",
+  "description": "A schema for dailies in STFC.",
+  "required": [
+    "faction_dailies",
+    "dailies"
+  ],
+  "type": "object",
+  "additionalProperties": true,
+  "default": {},
+  "examples": [
+    {
+      "dailies": [
+        {
+          "goals": [
+            {
+              "description": "Defeat 5 hostile ships of Level 34 or Higher.",
+              "goal_name": "hostile hunter",
+              "milestone_points": 10,
+              "quantity": 5,
+              "rewards": [
+                {
+                  "type": "3\u2605 interceptor parts",
+                  "value": 30
+                }
+              ]
+            }
+          ],
+          "max_ops": 35,
+          "milestones": [
+            {
+              "points_required": 50,
+              "rewards": [
+                {
+                  "type": "parsteel",
+                  "value": 675000
+                }
+              ]
+            }
+          ],
+          "min_ops": 34
+        }
+      ],
+      "faction_dailies": [
+        {
+          "description": "Defeat Klingon or Romulan Faction ships of Level 38 or higher.",
+          "goal_name": "Federation Warrior",
+          "milestone_points": 20,
+          "quantity": 10,
+          "reputation_tier": {
+            "$ref": "reference."
+          },
+          "rewards": [
+            {
+              "type": "30min repair speed up",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "properties": {
+    "dailies": {
+      "$id": "#/properties/dailies",
+      "title": "The dailies schema",
+      "description": "List of all daily milestones and goals based on operations level.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/dailies/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/dailies/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single daily instance.",
+            "required": [
+              "min_ops",
+              "max_ops",
+              "milestones",
+              "goals"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "goals": {
+                "$id": "#/properties/dailies/items/anyOf/0/properties/goals",
+                "title": "The goals schema",
+                "description": "All goals based on Operations level.",
+                "type": "array",
+                "additionalItems": true,
+                "default": [],
+                "items": {
+                  "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0",
+                      "title": "The first anyOf schema",
+                      "description": "Single goal instance.",
+                      "required": [
+                        "goal_name",
+                        "description",
+                        "quantity",
+                        "milestone_points",
+                        "rewards"
+                      ],
+                      "type": "object",
+                      "additionalProperties": true,
+                      "default": {},
+                      "properties": {
+                        "description": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/description",
+                          "title": "The description schema",
+                          "description": "Description of the daily goal.",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "Defeat 5 hostile ships of Level 34 or Higher."
+                          ]
+                        },
+                        "goal_name": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/goal_name",
+                          "title": "The goal_name schema",
+                          "description": "Name of the daily goal.",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "hostile hunter"
+                          ]
+                        },
+                        "milestone_points": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/milestone_points",
+                          "title": "The milestone_points schema",
+                          "description": "The number of milestone points gained by completing the daily goal.",
+                          "type": "integer",
+                          "default": 0,
+                          "examples": [
+                            10
+                          ]
+                        },
+                        "quantity": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/quantity",
+                          "title": "The quantity schema",
+                          "description": "Quantity required for the descripted daily goal.",
+                          "type": "integer",
+                          "default": 0,
+                          "examples": [
+                            5
+                          ]
+                        },
+                        "rewards": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/rewards",
+                          "title": "The rewards schema",
+                          "description": "List of all rewards gained by completing the goal.",
+                          "type": "array",
+                          "additionalItems": true,
+                          "default": [],
+                          "items": {
+                            "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/rewards/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/rewards/items/anyOf/0",
+                                "title": "The first anyOf schema",
+                                "description": "Single daily goal reward instance.",
+                                "required": [
+                                  "type",
+                                  "value"
+                                ],
+                                "type": "object",
+                                "additionalProperties": true,
+                                "default": {},
+                                "properties": {
+                                  "type": {
+                                    "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/rewards/items/anyOf/0/properties/type",
+                                    "title": "The type schema",
+                                    "description": "The type of reward gained.",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                      "3\u2605 interceptor parts"
+                                    ]
+                                  },
+                                  "value": {
+                                    "$id": "#/properties/dailies/items/anyOf/0/properties/goals/items/anyOf/0/properties/rewards/items/anyOf/0/properties/value",
+                                    "title": "The value schema",
+                                    "description": "The amount gained of this reward by completing the goal.",
+                                    "type": "integer",
+                                    "default": 0,
+                                    "examples": [
+                                      30
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "max_ops": {
+                "$id": "#/properties/dailies/items/anyOf/0/properties/max_ops",
+                "title": "The max_ops schema",
+                "description": "The maximum Operations level required to have these milestones and goals.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  35
+                ]
+              },
+              "milestones": {
+                "$id": "#/properties/dailies/items/anyOf/0/properties/milestones",
+                "title": "The milestones schema",
+                "description": "List of all milestones en rewards based on Operations level.",
+                "type": "array",
+                "additionalItems": true,
+                "default": [],
+                "items": {
+                  "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0",
+                      "title": "The first anyOf schema",
+                      "description": "Single daily milestone instance.",
+                      "required": [
+                        "points_required",
+                        "rewards"
+                      ],
+                      "type": "object",
+                      "additionalProperties": true,
+                      "default": {},
+                      "properties": {
+                        "points_required": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0/properties/points_required",
+                          "title": "The points_required schema",
+                          "description": "Points required to reach the milestone.",
+                          "type": "integer",
+                          "default": 0,
+                          "examples": [
+                            50
+                          ]
+                        },
+                        "rewards": {
+                          "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0/properties/rewards",
+                          "title": "The rewards schema",
+                          "description": "List of all rewards gained by reaching the milestone.",
+                          "type": "array",
+                          "additionalItems": true,
+                          "default": [],
+                          "items": {
+                            "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0/properties/rewards/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0/properties/rewards/items/anyOf/0",
+                                "title": "The first anyOf schema",
+                                "description": "Single daily milestone reward instance.",
+                                "required": [
+                                  "type",
+                                  "value"
+                                ],
+                                "type": "object",
+                                "additionalProperties": true,
+                                "default": {},
+                                "properties": {
+                                  "type": {
+                                    "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0/properties/rewards/items/anyOf/0/properties/type",
+                                    "title": "The type schema",
+                                    "description": "The type of reward gained.",
+                                    "type": "string",
+                                    "default": "",
+                                    "examples": [
+                                      "parsteel"
+                                    ]
+                                  },
+                                  "value": {
+                                    "$id": "#/properties/dailies/items/anyOf/0/properties/milestones/items/anyOf/0/properties/rewards/items/anyOf/0/properties/value",
+                                    "title": "The value schema",
+                                    "description": "The amount of the reward gained by reaching the milestone.",
+                                    "type": "integer",
+                                    "default": 0,
+                                    "examples": [
+                                      675000
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "min_ops": {
+                "$id": "#/properties/dailies/items/anyOf/0/properties/min_ops",
+                "title": "The min_ops schema",
+                "description": "The minimum Operations level required to have these milestones and goals.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  34
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "faction_dailies": {
+      "$id": "#/properties/faction_dailies",
+      "title": "The faction_dailies schema",
+      "description": "List of all dailies bound to factions.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/faction_dailies/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/faction_dailies/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "Single faction daily instance.",
+            "required": [
+              "reputation_tier",
+              "goal_name",
+              "description",
+              "quantity",
+              "milestone_points",
+              "rewards"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "description": {
+                "$id": "#/properties/faction_dailies/items/anyOf/0/properties/description",
+                "title": "The description schema",
+                "description": "Description of the daily goal.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "Defeat Klingon or Romulan Faction ships of Level 38 or higher."
+                ]
+              },
+              "goal_name": {
+                "$id": "#/properties/faction_dailies/items/anyOf/0/properties/goal_name",
+                "title": "The goal_name schema",
+                "description": "Name of the daily goal.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "Federation Warrior"
+                ]
+              },
+              "milestone_points": {
+                "$id": "#/properties/faction_dailies/items/anyOf/0/properties/milestone_points",
+                "title": "The milestone_points schema",
+                "description": "The number of milestone points gained by completing the goal.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  20
+                ]
+              },
+              "quantity": {
+                "$id": "#/properties/faction_dailies/items/anyOf/0/properties/quantity",
+                "title": "The quantity schema",
+                "description": "Quantity required for the descripted goal.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  10
+                ]
+              },
+              "reputation_tier": {
+                "$id": "#/properties/faction_dailies/items/anyOf/0/properties/reputation_tier",
+                "title": "The reputation_tier schema",
+                "description": "The faction reputation tier.",
+                "required": [
+                  "$ref"
+                ],
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {
+                  "$ref": {
+                    "$id": "#/properties/faction_dailies/items/anyOf/0/properties/reputation_tier/properties/%24ref",
+                    "title": "The $ref schema",
+                    "description": "Reference to the equivalent faction reputation file.",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                      "reference"
+                    ]
+                  }
+                }
+              },
+              "rewards": {
+                "$id": "#/properties/faction_dailies/items/anyOf/0/properties/rewards",
+                "title": "The rewards schema",
+                "description": "List of all rewards gained by completing the goal.",
+                "type": "array",
+                "additionalItems": true,
+                "default": [],
+                "items": {
+                  "$id": "#/properties/faction_dailies/items/anyOf/0/properties/rewards/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/faction_dailies/items/anyOf/0/properties/rewards/items/anyOf/0",
+                      "title": "The first anyOf schema",
+                      "description": "Single goal reward instance.",
+                      "required": [
+                        "type",
+                        "value"
+                      ],
+                      "type": "object",
+                      "additionalProperties": true,
+                      "default": {},
+                      "properties": {
+                        "type": {
+                          "$id": "#/properties/faction_dailies/items/anyOf/0/properties/rewards/items/anyOf/0/properties/type",
+                          "title": "The type schema",
+                          "description": "The type of reward gained.",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "30min repair speed up"
+                          ]
+                        },
+                        "value": {
+                          "$id": "#/properties/faction_dailies/items/anyOf/0/properties/rewards/items/anyOf/0/properties/value",
+                          "title": "The value schema",
+                          "description": "The amount gained of this reward.",
+                          "type": "integer",
+                          "default": 0,
+                          "examples": [
+                            20
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
