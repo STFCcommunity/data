@@ -1,76 +1,91 @@
-[{
-    "mission_title": "Beneath the Ice",
-    "storyline": "The emerging Aenar on Andoria...",
+[
+  {
     "faction": "federation",
-    "recommended_ops": 27,
-    "mission_type": "start",
     "location": {
-        "$ref": "reference to system json",
-        "planet": "Andoria prime"
+      "$ref": "reference to system json",
+      "planet": "Andoria prime"
     },
-    "objectives": [{
-        "obj_id": 1,
+    "mission_title": "Beneath the Ice",
+    "mission_type": "start",
+    "next_mission": {
+      "$ref": "reference to mission."
+    },
+    "objectives": [
+      {
         "title": "Meet the Romulan Informant on Moya.",
         "main_objective": {
-            "$ref": "#objectives/items"
+          "$ref": "#objectives/items"
         },
-        "task": [{
-                "task_type": "travel",
-                "$ref": "reference to system json",
-                "planet": "Moya"
-            },
-            {
-                "task_type": "destroy",
-                "$ref": "reference to system json",
-                "task_title": "Destroy Suliban Interceptor"
-            },
-            {
-                "task_type": "kill",
-                "$ref": "reference to system json",
-                "task_title": "Destroy Suliban Interceptor"
-            },
-            {
-                "task_type": "deliver",
-                "resource": "dilithium",
-                "value": 300
-            },
-            {
-                "task_type": "choose",
-                "options": [{
-                    "option_id": 1,
-                    "option_title": "smuggle Garan across...",
-                    "rewards": {
-                        "$ref": "reference"
-                    }
-                }]
-            },
-            {
-                "task_type": "return",
-                "task_title": "Return to your station"
-            }
+        "obj_id": 1,
+        "task": [
+          {
+            "$ref": "reference to system json",
+            "planet": "Moya",
+            "task_type": "travel"
+          },
+          {
+            "$ref": "reference to system json",
+            "task_title": "Destroy Suliban Interceptor",
+            "task_type": "destroy"
+          },
+          {
+            "$ref": "reference to system json",
+            "task_title": "Destroy Suliban Interceptor",
+            "task_type": "kill"
+          },
+          {
+            "resource": "dilithium",
+            "task_type": "deliver",
+            "value": 300
+          },
+          {
+            "options": [
+              {
+                "option_id": 1,
+                "option_title": "smuggle Garan across...",
+                "rewards": {
+                  "$ref": "reference"
+                }
+              }
+            ],
+            "task_type": "choose"
+          },
+          {
+            "task_title": "Return to your station",
+            "task_type": "return"
+          }
         ]
-    }],
-    "rewards": [{
-        "reward_id": 1,
-        "resources": [{
-            "type": "parsteel",
-            "value": 1
-        }],
-        "materials": [{
+      }
+    ],
+    "previous_mission": {
+      "$ref": "reference to mission."
+    },
+    "recommended_ops": 27,
+    "rewards": [
+      {
+        "materials": [
+          {
             "type": "gas",
-            "rarity": "uncommon",
             "grade": 3,
+            "rarity": "uncommon",
             "value": 50
-        }],
-        "others": [{
+          }
+        ],
+        "others": [
+          {
             "type": "federation credits",
             "value": 330
-        }]
-    }],
-    "previous_mission": {
-        "$ref": "reference to mission."
-    },
-    "next_mission": {
-        "$ref": "reference to mission."
-    }
-}]
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1
+          }
+        ],
+        "reward_id": 1
+      }
+    ],
+    "storyline": "The emerging Aenar on Andoria..."
+  }
+]
