@@ -1,0 +1,76 @@
+[{
+    "mission_title": "Beneath the Ice",
+    "storyline": "The emerging Aenar on Andoria...",
+    "faction": "federation",
+    "recommended_ops": 27,
+    "mission_type": "start",
+    "location": {
+        "$ref": "reference to system json",
+        "planet": "Andoria prime"
+    },
+    "objectives": [{
+        "obj_id": 1,
+        "title": "Meet the Romulan Informant on Moya.",
+        "main_objective": {
+            "$ref": "#objectives/items"
+        },
+        "task": [{
+                "task_type": "travel",
+                "$ref": "reference to system json",
+                "planet": "Moya"
+            },
+            {
+                "task_type": "destroy",
+                "$ref": "reference to system json",
+                "task_title": "Destroy Suliban Interceptor"
+            },
+            {
+                "task_type": "kill",
+                "$ref": "reference to system json",
+                "task_title": "Destroy Suliban Interceptor"
+            },
+            {
+                "task_type": "deliver",
+                "resource": "dilithium",
+                "value": 300
+            },
+            {
+                "task_type": "choose",
+                "options": [{
+                    "option_id": 1,
+                    "option_title": "smuggle Garan across...",
+                    "rewards": {
+                        "$ref": "reference"
+                    }
+                }]
+            },
+            {
+                "task_type": "return",
+                "task_title": "Return to your station"
+            }
+        ]
+    }],
+    "rewards": [{
+        "reward_id": 1,
+        "resources": [{
+            "type": "parsteel",
+            "value": 1
+        }],
+        "materials": [{
+            "type": "gas",
+            "rarity": "uncommon",
+            "grade": 3,
+            "value": 50
+        }],
+        "others": [{
+            "type": "federation credits",
+            "value": 330
+        }]
+    }],
+    "previous_mission": {
+        "$ref": "reference to mission."
+    },
+    "next_mission": {
+        "$ref": "reference to mission."
+    }
+}]
