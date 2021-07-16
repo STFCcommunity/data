@@ -72,3 +72,8 @@ jobs:
         with:
           schema: schemas/armadas.json
           jsons: armadas/*.json
+      - name: Validate Missions
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: schemas/missions.json
+          jsons: missions/*.json
