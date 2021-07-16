@@ -1,17 +1,11 @@
 {
-  "img_url": "./assets/unlock_ship_hangar.png",
-  "research_name": "Unlock Ship Hangar",
   "description": "Unlocks the Ship Hangar building for construction.",
-  "location": {
-    "column": 14,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/unlock_ship_hangar.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 8750,
-      "research_time": 124560,
+      "level": 1,
+      "required_by": [],
       "requirements": [
         {
           "name": "Unlock Envoy",
@@ -22,8 +16,22 @@
           "level": 18
         }
       ],
-      "required_by": [],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "common",
+            "value": 3000
+          },
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 75
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -33,23 +41,15 @@
             "type": "dilithium",
             "value": 11400
           }
-        ],
-        "materials": [
-          {
-            "value": 3000,
-            "grade": 2,
-            "rarity": "common",
-            "type": "crystal"
-          },
-          {
-            "value": 75,
-            "grade": 2,
-            "rarity": "uncommon",
-            "type": "crystal"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 124560
     }
-  ]
+  ],
+  "location": {
+    "column": 14,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "Unlock Ship Hangar"
 }

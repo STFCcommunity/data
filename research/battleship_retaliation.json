@@ -1,21 +1,15 @@
 {
-  "img_url": "./assets/battleship_retaliation.png",
-  "research_name": "Battleship Retaliation",
   "description": "Increases Defense Platform damage against Battleships",
-  "location": {
-    "column": 44,
-    "row": 3,
-    "tree": "station"
-  },
+  "img_url": "./assets/battleship_retaliation.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 82000,
       "bonus": {
         "percentage": true,
         "value": 20
       },
-      "research_time": 38934,
+      "increased_power": 82000,
+      "level": 1,
+      "required_by": [],
       "requirements": [
         {
           "name": "Research Pure Resources",
@@ -26,8 +20,16 @@
           "level": 44
         }
       ],
-      "required_by": [],
       "research_costs": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 18000
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -37,17 +39,15 @@
             "type": "dilithium",
             "value": 496500
           }
-        ],
-        "materials": [
-          {
-            "value": 18000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "crystal"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 38934
     }
-  ]
+  ],
+  "location": {
+    "column": 44,
+    "row": 3,
+    "tree": "station"
+  },
+  "research_name": "Battleship Retaliation"
 }

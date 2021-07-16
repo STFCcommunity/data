@@ -1,27 +1,10 @@
 {
-  "img_url": "./assets/defense_technology.png",
-  "research_name": "Defense Technology",
   "description": "Unlocks the Defense Technology building.",
-  "location": {
-    "column": 12,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/defense_technology.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 5250,
-      "research_time": 77053,
-      "requirements": [
-        {
-          "name": "Unlock Vaults",
-          "level": 1
-        },
-        {
-          "name": "Operations",
-          "level": 15
-        }
-      ],
+      "level": 1,
       "required_by": [
         {
           "name": "Defense Platform Shields",
@@ -32,7 +15,26 @@
           "level": 1
         }
       ],
+      "requirements": [
+        {
+          "name": "Unlock Vaults",
+          "level": 1
+        },
+        {
+          "name": "Operations",
+          "level": 15
+        }
+      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 2,
+            "rarity": "common",
+            "value": 25
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -42,17 +44,15 @@
             "type": "dilithium",
             "value": 3925
           }
-        ],
-        "materials": [
-          {
-            "value": 25,
-            "grade": 2,
-            "rarity": "common",
-            "type": "gas"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 77053
     }
-  ]
+  ],
+  "location": {
+    "column": 12,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "Defense Technology"
 }

@@ -1,17 +1,16 @@
 {
-  "img_url": "./assets/unlock_vaults.png",
-  "research_name": "Unlock Vaults",
   "description": "Unlocks the Vault buildings to protect your resources.",
-  "location": {
-    "column": 11,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/unlock_vaults.png",
   "levels": [
     {
-      "level": 1,
       "increased_power": 6250,
-      "research_time": 86996,
+      "level": 1,
+      "required_by": [
+        {
+          "name": "Defense Technology",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Parsteel Safeguarding",
@@ -22,13 +21,9 @@
           "level": 14
         }
       ],
-      "required_by": [
-        {
-          "name": "Defense Technology",
-          "level": 1
-        }
-      ],
       "research_costs": {
+        "materials": [],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -38,10 +33,15 @@
             "type": "dilithium",
             "value": 2725
           }
-        ],
-        "materials": [],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 86996
     }
-  ]
+  ],
+  "location": {
+    "column": 11,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "Unlock Vaults"
 }

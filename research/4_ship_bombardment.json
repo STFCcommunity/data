@@ -1,24 +1,18 @@
 {
-  "img_url": "./assets/4_ship_bombardment.png",
-  "research_name": "4★ Ship Bombardment",
   "description": "Increases Damage of Grade 4 ships when attacking Stations",
-  "location": {
-    "column": 58,
-    "row": 2,
-    "tree": "station"
-  },
+  "img_url": "./assets/4_ship_bombardment.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 150000,
       "bonus": {
         "percentage": true,
         "value": 25
       },
-      "research_time": 265332,
+      "increased_power": 150000,
+      "level": 1,
+      "required_by": [],
       "requirements": [
         {
-          "name": "4★ Pillager Critical",
+          "name": "4\u2605 Pillager Critical",
           "level": 1
         },
         {
@@ -26,30 +20,36 @@
           "level": 50
         }
       ],
-      "required_by": [],
       "research_costs": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 42000
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 11000
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "dilithium",
             "value": 9923
           }
-        ],
-        "materials": [
-          {
-            "value": 42000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "ore"
-          },
-          {
-            "value": 11000,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "ore"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 265332
     }
-  ]
+  ],
+  "location": {
+    "column": 58,
+    "row": 2,
+    "tree": "station"
+  },
+  "research_name": "4\u2605 Ship Bombardment"
 }

@@ -1,21 +1,15 @@
 {
-  "img_url": "./assets/interceptor_retaliation.png",
-  "research_name": "Interceptor Retaliation",
   "description": "Increases Defense Platform damage against Interceptors",
-  "location": {
-    "column": 44,
-    "row": 1,
-    "tree": "station"
-  },
+  "img_url": "./assets/interceptor_retaliation.png",
   "levels": [
     {
-      "level": 1,
-      "increased_power": 82000,
       "bonus": {
         "percentage": true,
         "value": 20
       },
-      "research_time": 38934,
+      "increased_power": 82000,
+      "level": 1,
+      "required_by": [],
       "requirements": [
         {
           "name": "Research Pure Resources",
@@ -26,8 +20,16 @@
           "level": 44
         }
       ],
-      "required_by": [],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 18000
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -37,26 +39,23 @@
             "type": "dilithium",
             "value": 496500
           }
-        ],
-        "materials": [
-          {
-            "value": 18000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "gas"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 38934
     },
     {
-      "level": 2,
-      "increased_power": 7000,
       "bonus": {
         "percentage": true,
         "value": 30
       },
-      "research_time": 51090,
+      "increased_power": 7000,
+      "level": 2,
+      "required_by": [
+        {
+          "name": "Defense Platform Accuracy",
+          "level": 2
+        }
+      ],
       "requirements": [
         {
           "name": "Research Pure Resources",
@@ -71,13 +70,16 @@
           "level": 45
         }
       ],
-      "required_by": [
-        {
-          "name": "Defense Platform Accuracy",
-          "level": 2
-        }
-      ],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 22000
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -87,29 +89,21 @@
             "type": "dilithium",
             "value": 708000
           }
-        ],
-        "materials": [
-          {
-            "value": 22000,
-            "grade": 4,
-            "rarity": "common",
-            "type": "gas"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 51090
     },
     {
-      "level": 10,
-      "increased_power": 9000,
       "bonus": {
         "percentage": true,
         "value": 200
       },
-      "research_time": 279000,
+      "increased_power": 9000,
+      "level": 10,
+      "required_by": [],
       "requirements": [
         {
-          "name": "4★  Interceptor Station Piercing",
+          "name": "4\u2605  Interceptor Station Piercing",
           "level": 8
         },
         {
@@ -117,8 +111,22 @@
           "level": 53
         }
       ],
-      "required_by": [],
       "research_costs": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 25000
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 5800
+          }
+        ],
+        "others": [],
         "resources": [
           {
             "type": "parsteel",
@@ -128,23 +136,15 @@
             "type": "dilithium",
             "value": 14766
           }
-        ],
-        "materials": [
-          {
-            "value": 25000,
-            "grade": 4,
-            "rarity": "uncommon",
-            "type": "gas"
-          },
-          {
-            "value": 5800,
-            "grade": 4,
-            "rarity": "rare",
-            "type": "gas"
-          }
-        ],
-        "others": []
-      }
+        ]
+      },
+      "research_time": 279000
     }
-  ]
+  ],
+  "location": {
+    "column": 44,
+    "row": 1,
+    "tree": "station"
+  },
+  "research_name": "Interceptor Retaliation"
 }
