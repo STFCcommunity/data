@@ -22,11 +22,13 @@
       "ability_info": {
         "captain_maneuver": {
           "name": "Joy In Vengeance",
+          "bonus": "{value} to Damage when the enemy ship is Burning",
           "percentage": true,
           "value": 0.4
         },
         "officer_ability": {
           "name": "See the Flaws",
+          "bonus": "{value} chance to cause Burning to the enemy when hitting it",
           "percentage": true
         }
       },
@@ -81,6 +83,7 @@
           "description": "Officer ability as captain.",
           "required": [
             "name",
+            "bonus",
             "percentage",
             "value"
           ],
@@ -96,6 +99,16 @@
               "default": "",
               "examples": [
                 "Joy In Vengeance"
+              ]
+            },
+            "bonus": {
+              "$id": "#/properties/ability_info/properties/captain_maneuver/properties/bonus",
+              "title": "The bonus schema",
+              "description": "The bonus of the captain maneuver ability.",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "{value} to Damage when the enemy ship is Burning"
               ]
             },
             "percentage": {
@@ -126,6 +139,7 @@
           "description": "Officer ability when assigned to the bridge. Dependant on officer level.",
           "required": [
             "name",
+            "bonus",
             "percentage"
           ],
           "type": "object",
@@ -140,6 +154,16 @@
               "default": "",
               "examples": [
                 "See the Flaws"
+              ]
+            },
+            "bonus": {
+              "$id": "#/properties/ability_info/properties/captain_maneuver/properties/bonus",
+              "title": "The bonus schema",
+              "description": "The bonus of the captain maneuver ability.",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "{value} chance to cause Burning to the enemy when hitting it"
               ]
             },
             "percentage": {
@@ -253,11 +277,11 @@
                   "Ensign I",
                   "Lieutenant JG II",
                   "Lieutenant III",
-                  "Lt. Cmdr IV",
+                  "Lt. Commander IV",
                   "Commander V"
                 ],
                 "examples": [
-                  "Lt. JG II"
+                  "Lieutenant JG II"
                 ]
               },
               "officer_ability_value": {
