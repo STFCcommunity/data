@@ -142,7 +142,8 @@
             }
           ],
           "repair_time": 30000,
-          "tier": 1
+          "tier": 1,
+          "tier_locked_by_ops": 30
         }
       ]
     }
@@ -1155,6 +1156,16 @@
                 "default": 1,
                 "examples": [
                   1
+                ]
+              },
+              "tier_locked_by_ops": {
+                "$id": "#/properties/tiers/items/anyOf/0/properties/tier_locked_by_ops",
+                "title": "The tier locked by ops schema",
+                "description": "(Optional) Operations level required to upgrade to this tier.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  30
                 ]
               }
             }
