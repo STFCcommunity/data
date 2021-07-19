@@ -5,6 +5,7 @@
   "description": "A schema for officers used in STFC.",
   "required": [
     "officer_name",
+    "description",
     "rarity",
     "class",
     "faction",
@@ -65,6 +66,16 @@
     }
   ],
   "properties": {
+    "description": {
+      "$id": "#/properties/description",
+      "title": "The description schema",
+      "description": "The officer description",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Increases the Armor Piercing..."
+      ]
+    },
     "ability_info": {
       "$id": "#/properties/ability_info",
       "title": "The ability_info schema",
