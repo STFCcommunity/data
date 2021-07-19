@@ -50,9 +50,10 @@
           }
         ],
         "datetime": {
-          "time": "3PM UTC",
+          "time": "3pm UTC",
           "weekday": "wednesday"
-        }
+        },
+        "duration": 2700
       },
       "zone_name": "thaylen",
       "zone_tier": 1
@@ -291,7 +292,8 @@
       "description": "All info about the takeover of the territory zone.",
       "required": [
         "datetime",
-        "costs"
+        "costs",
+        "duration"
       ],
       "type": "object",
       "additionalProperties": true,
@@ -421,6 +423,16 @@
               ]
             }
           }
+        },
+        "duration": {
+          "$id": "#/properties/takeover_info/properties/duration",
+          "title": "The duration schema",
+          "description": "The length of the takeover (in seconds).",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            2700
+          ]
         }
       }
     },
