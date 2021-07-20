@@ -315,7 +315,8 @@
       "description": "Instance for the ability of the ship.",
       "required": [
         "title",
-        "description"
+        "description",
+        "percentage"
       ],
       "type": "object",
       "additionalProperties": true,
@@ -339,6 +340,16 @@
           "default": "",
           "examples": [
             "When the Station..."
+          ]
+        },
+        "percentage": {
+          "$id": "#/properties/ship_ability/properties/percentage",
+          "title": "The percentage schema",
+          "description": "Boolean wether the ability is a percentage or not.",
+          "type": "boolean",
+          "default": true,
+          "examples": [
+            true
           ]
         }
       }
