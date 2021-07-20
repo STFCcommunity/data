@@ -50,7 +50,7 @@
           }
         ],
         "datetime": {
-          "time": "3pm UTC",
+          "time": "12:00+01:00",
           "weekday": "wednesday"
         },
         "duration": 2700
@@ -373,35 +373,10 @@
               "description": "At which time the takeover of the territory zone begins. (UTC)",
               "type": "string",
               "default": "",
-              "enum": [
-                "12am UTC",
-                "1am UTC",
-                "2am UTC",
-                "3am UTC",
-                "4am UTC",
-                "5am UTC",
-                "6am UTC",
-                "7am UTC",
-                "8am UTC",
-                "9am UTC",
-                "10am UTC",
-                "11am UTC",
-                "12pm UTC",
-                "1pm UTC",
-                "2pm UTC",
-                "3pm UTC",
-                "4pm UTC",
-                "5pm UTC",
-                "6pm UTC",
-                "7pm UTC",
-                "8pm UTC",
-                "9pm UTC",
-                "10pm UTC",
-                "11pm UTC"
-              ],
               "examples": [
-                "3PM UTC"
-              ]
+                "13:00+01:00"
+              ],
+              "pattern": "(([01][0-9]|2[0-3]):[0-5][0-9])([+-]([01]?[0-9]|2[0-3]):[0-5][0-9])"
             },
             "weekday": {
               "$id": "#/properties/takeover_info/properties/datetime/properties/weekday",
