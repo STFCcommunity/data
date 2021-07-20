@@ -98,7 +98,6 @@
                   }
                 ]
               },
-              "id": 1,
               "img_url": "url",
               "repair_cost": [
                 {
@@ -420,12 +419,12 @@
                       "title": "The first anyOf schema",
                       "description": "Single component schema",
                       "required": [
-                        "id",
                         "name",
                         "img_url",
                         "build_cost",
                         "repair_cost",
-                        "additional_info"
+                        "additional_info",
+                        "quantity"
                       ],
                       "type": "object",
                       "additionalProperties": true,
@@ -761,16 +760,6 @@
                             }
                           }
                         },
-                        "id": {
-                          "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/id",
-                          "title": "The id schema",
-                          "description": "Numeric id of the component.",
-                          "type": "integer",
-                          "default": 0,
-                          "examples": [
-                            1
-                          ]
-                        },
                         "img_url": {
                           "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/img_url",
                           "title": "The img_url schema",
@@ -779,6 +768,17 @@
                           "default": "",
                           "examples": [
                             "url"
+                          ]
+                        },
+                        "quantity": {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/quantity",
+                          "title": "The quantity schema",
+                          "description": "Quantity of the component.",
+                          "type": "integer",
+                          "default": 1,
+                          "examples": [
+                            1,
+                            2
                           ]
                         },
                         "repair_cost": {
