@@ -63,27 +63,111 @@
   "ship_name": "turas",
   "tiers": [
     {
-      "build_time": 46800,
+      "build_time": 100000,
       "components": [
+        {
+          "name": "Phaser Turret",
+          "additional_info": {
+            "armor_pierce": 105,
+            "crit_chance": 0.1,
+            "crit_modifier": 1.5,
+            "damage_max": 771,
+            "damage_min": 630,
+            "firing_pattern": {
+              "pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "weapon_type": "energy"
+            },
+            "shield_pierce": 105
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 250
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 325
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 36000
+              },
+              {
+                "type": "dilithium",
+                "value": 9500
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1134
+            },
+            {
+              "type": "dilithium",
+              "value": 217
+            }
+          ]
+        },
         {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 3000,
-              "increased_cargo": 3800,
-              "increased_protected_cargo": 80,
-              "protected_cargo": 80
+              "cargo": 20500,
+              "increased_cargo": 0,
+              "increased_protected_cargo": 0,
+              "protected_cargo": 450
             }
           },
           "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "common",
+                "value": 600
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 54
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 24000
+              }
+            ]
           },
-          "id": 0,
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 756
+            }
+          ]
         },
         {
           "name": "Warp Engines",
@@ -91,37 +175,429 @@
             "warp_info": {
               "impulse_speed": 0,
               "warp_distance": 0,
-              "warp_speed": 2.5
+              "warp_speed": 3.1
             }
           },
           "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 100
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 110
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 4800
+              }
+            ]
           },
-          "id": 0,
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 130
+            }
+          ]
         },
         {
           "name": "Shield",
           "additional_info": {
             "shield": {
-              "deflection": 116,
-              "health": 800
+              "deflection": 350,
+              "health": 2420
             }
           },
           "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 190
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 160
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 60000
+              }
+            ]
           },
-          "id": 0,
           "img_url": "./assets/component_shield.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 756
+            },
+            {
+              "type": "dilithium",
+              "value": 217
+            }
+          ]
+        }
+      ],
+      "levels": [
+        {
+          "ability_bonus": 0.5,
+          "additional_officer_slot": true,
+          "level": 35,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 82689
+              },
+              {
+                "type": "dilithium",
+                "value": 10977
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 105
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 30
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 57
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 16
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "3\u2605\u00a0Explorer\u00a0Parts",
+                "value": 57
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 7767
+              }
+            ],
+            "scrap_time": 170760
+          },
+          "ship_xp": 10000
         },
+        {
+          "ability_bonus": 0.42,
+          "additional_officer_slot": false,
+          "level": 31,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 82689
+              },
+              {
+                "type": "dilithium",
+                "value": 10977
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 56
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 16
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 30
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 9
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "3\u2605\u00a0Explorer\u00a0Parts",
+                "value": 30
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 5180
+              }
+            ],
+            "scrap_time": 170760
+          },
+          "ship_xp": 6500
+        },
+        {
+          "ability_bonus": 0.44,
+          "additional_officer_slot": false,
+          "level": 32,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 82689
+              },
+              {
+                "type": "dilithium",
+                "value": 10977
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 61
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 18
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 33
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 10
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "3\u2605\u00a0Explorer\u00a0Parts",
+                "value": 33
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 5780
+              }
+            ],
+            "scrap_time": 170760
+          },
+          "ship_xp": 8000
+        },
+        {
+          "ability_bonus": 0.46,
+          "additional_officer_slot": false,
+          "level": 33,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 82689
+              },
+              {
+                "type": "dilithium",
+                "value": 10977
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 72
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 21
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 39
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 11
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "3\u2605\u00a0Explorer\u00a0Parts",
+                "value": 39
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 6380
+              }
+            ],
+            "scrap_time": 170760
+          },
+          "ship_xp": 8000
+        },
+        {
+          "ability_bonus": 0.48,
+          "additional_officer_slot": false,
+          "level": 34,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 82689
+              },
+              {
+                "type": "dilithium",
+                "value": 10977
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 86
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 25
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 47
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 13
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 1
+              },
+              {
+                "type": "3\u2605\u00a0Explorer\u00a0Parts",
+                "value": 47
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 7017
+              }
+            ],
+            "scrap_time": 170760
+          },
+          "ship_xp": 8500
+        },
+        {
+          "additional_officer_slot": false,
+          "level": 1,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 82689
+              },
+              {
+                "type": "dilithium",
+                "value": 10977
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 0
+              }
+            ],
+            "scrap_time": 56940
+          },
+          "ship_xp": 0
+        }
+      ],
+      "repair_time": 4860,
+      "tier": 7
+    },
+    {
+      "build_time": 46800,
+      "components": [
         {
           "name": "Phaser Turret",
           "additional_info": {
@@ -151,32 +627,66 @@
             "others": [],
             "resources": []
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
+          "repair_cost": []
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 2.5
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "cargo": 3000,
+              "increased_cargo": 3800,
+              "increased_protected_cargo": 80,
+              "protected_cargo": 80
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 116,
+              "health": 800
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
           "repair_cost": []
         }
       ],
       "levels": [
-        {
-          "ability_bonus": 0.1,
-          "additional_officer_slot": false,
-          "level": 1,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 5000
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
-              }
-            ],
-            "scrap_time": 56940
-          },
-          "ship_xp": 0
-        },
         {
           "ability_bonus": 0.11,
           "additional_officer_slot": false,
@@ -252,6 +762,25 @@
             "scrap_time": 56940
           },
           "ship_xp": 250
+        },
+        {
+          "ability_bonus": 0.1,
+          "additional_officer_slot": false,
+          "level": 1,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 5000
+              },
+              {
+                "type": "Ship\u00a0XP",
+                "value": 0
+              }
+            ],
+            "scrap_time": 56940
+          },
+          "ship_xp": 0
         }
       ],
       "repair_time": 1638,
@@ -260,112 +789,6 @@
     {
       "build_time": 12000,
       "components": [
-        {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "cargo": 4800,
-              "increased_cargo": 5870,
-              "increased_protected_cargo": 140,
-              "protected_cargo": 130
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 2
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1200
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 12
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 2.6
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 4
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 130
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 4
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 133,
-              "health": 920
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 6
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 12
-            },
-            {
-              "type": "dilithium",
-              "value": 7
-            }
-          ]
-        },
         {
           "name": "Phaser Turret",
           "additional_info": {
@@ -409,13 +832,115 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 18
+            },
+            {
+              "type": "dilithium",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "cargo": 4800,
+              "increased_cargo": 5870,
+              "increased_protected_cargo": 140,
+              "protected_cargo": 130
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 2
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1200
+              }
+            ]
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 2.6
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 4
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 130
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 133,
+              "health": 920
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 6
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 12
             },
             {
               "type": "dilithium",
@@ -628,112 +1153,6 @@
       "build_time": 24000,
       "components": [
         {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "cargo": 6870,
-              "increased_cargo": 8320,
-              "increased_protected_cargo": 200,
-              "protected_cargo": 190
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 4
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2200
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 26
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 2.7
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 8
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 275
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 8
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 147,
-              "health": 1020
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 12
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5500
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 26
-            },
-            {
-              "type": "dilithium",
-              "value": 14
-            }
-          ]
-        },
-        {
           "name": "Phaser Turret",
           "additional_info": {
             "armor_pierce": 44,
@@ -783,13 +1202,115 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 39
+            },
+            {
+              "type": "dilithium",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "cargo": 6870,
+              "increased_cargo": 8320,
+              "increased_protected_cargo": 200,
+              "protected_cargo": 190
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 4
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2200
+              }
+            ]
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 26
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 2.7
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 8
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 275
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 147,
+              "health": 1020
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 12
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5500
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 26
             },
             {
               "type": "dilithium",
@@ -1002,119 +1523,6 @@
       "build_time": 40000,
       "components": [
         {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "cargo": 9320,
-              "increased_cargo": 11280,
-              "increased_protected_cargo": 260,
-              "protected_cargo": 250
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 7
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3600
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 65
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 2.8
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 14
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 575
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 16
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 156,
-              "health": 1080
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "common",
-                "value": 275
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 21
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 65
-            },
-            {
-              "type": "dilithium",
-              "value": 27
-            }
-          ]
-        },
-        {
           "name": "Phaser Turret",
           "additional_info": {
             "armor_pierce": 47,
@@ -1164,13 +1572,122 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 98
+            },
+            {
+              "type": "dilithium",
+              "value": 27
+            }
+          ]
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "cargo": 9320,
+              "increased_cargo": 11280,
+              "increased_protected_cargo": 260,
+              "protected_cargo": 250
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 7
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3600
+              }
+            ]
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 65
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 2.8
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 14
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 575
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 156,
+              "health": 1080
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "common",
+                "value": 275
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 21
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 65
             },
             {
               "type": "dilithium",
@@ -1443,126 +1960,6 @@
       "build_time": 60000,
       "components": [
         {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "cargo": 12280,
-              "increased_cargo": 14930,
-              "increased_protected_cargo": 330,
-              "protected_cargo": 310
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 12
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 140
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 2.9
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "common",
-                "value": 250
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 24
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1025
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 28
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 192,
-              "health": 1330
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "common",
-                "value": 525
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 36
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 15000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 140
-            },
-            {
-              "type": "dilithium",
-              "value": 46
-            }
-          ]
-        },
-        {
           "name": "Phaser Turret",
           "additional_info": {
             "armor_pierce": 58,
@@ -1612,13 +2009,129 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 209
+            },
+            {
+              "type": "dilithium",
+              "value": 46
+            }
+          ]
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "cargo": 12280,
+              "increased_cargo": 14930,
+              "increased_protected_cargo": 330,
+              "protected_cargo": 310
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 12
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6000
+              }
+            ]
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 140
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 2.9
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "common",
+                "value": 250
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 24
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 1025
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 28
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 192,
+              "health": 1330
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "common",
+                "value": 525
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 36
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 15000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 140
             },
             {
               "type": "dilithium",
@@ -1891,133 +2404,6 @@
       "build_time": 80000,
       "components": [
         {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "cargo": 15930,
-              "increased_cargo": 19500,
-              "increased_protected_cargo": 400,
-              "protected_cargo": 380
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "common",
-                "value": 250
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 24
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10750
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 320
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 3
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "common",
-                "value": 525
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 48
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 2000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 54
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 259,
-              "health": 1790
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 80
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 70
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 27000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 320
-            },
-            {
-              "type": "dilithium",
-              "value": 90
-            }
-          ]
-        },
-        {
           "name": "Phaser Turret",
           "additional_info": {
             "armor_pierce": 78,
@@ -2067,13 +2453,136 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "tritanium",
               "value": 480
+            },
+            {
+              "type": "dilithium",
+              "value": 90
+            }
+          ]
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "cargo": 15930,
+              "increased_cargo": 19500,
+              "increased_protected_cargo": 400,
+              "protected_cargo": 380
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "common",
+                "value": 250
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 24
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10750
+              }
+            ]
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 320
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 3
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "common",
+                "value": 525
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 48
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 2000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 54
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 259,
+              "health": 1790
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 80
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605\u00a0Explorer\u00a0Parts",
+                "value": 70
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 27000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 320
             },
             {
               "type": "dilithium",
@@ -2473,543 +2982,6 @@
       ],
       "repair_time": 4176,
       "tier": 6
-    },
-    {
-      "build_time": 100000,
-      "components": [
-        {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "cargo": 20500,
-              "increased_cargo": 0,
-              "increased_protected_cargo": 0,
-              "protected_cargo": 450
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "common",
-                "value": 600
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 54
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 24000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 756
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 3.1
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 100
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 110
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 4800
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 130
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 350,
-              "health": 2420
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 190
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 160
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 60000
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 756
-            },
-            {
-              "type": "dilithium",
-              "value": 217
-            }
-          ]
-        },
-        {
-          "name": "Phaser Turret",
-          "additional_info": {
-            "armor_pierce": 105,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 771,
-            "damage_min": 630,
-            "firing_pattern": {
-              "pattern": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "weapon_type": "energy"
-            },
-            "shield_pierce": 105
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 250
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Explorer\u00a0Parts",
-                "value": 325
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 36000
-              },
-              {
-                "type": "dilithium",
-                "value": 9500
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1134
-            },
-            {
-              "type": "dilithium",
-              "value": 217
-            }
-          ]
-        }
-      ],
-      "levels": [
-        {
-          "ability_bonus": 0.42,
-          "additional_officer_slot": false,
-          "level": 31,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 82689
-              },
-              {
-                "type": "dilithium",
-                "value": 10977
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 56
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 16
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 30
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 9
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "3\u2605\u00a0Explorer\u00a0Parts",
-                "value": 30
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 5180
-              }
-            ],
-            "scrap_time": 170760
-          },
-          "ship_xp": 6500
-        },
-        {
-          "ability_bonus": 0.44,
-          "additional_officer_slot": false,
-          "level": 32,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 82689
-              },
-              {
-                "type": "dilithium",
-                "value": 10977
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 61
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 18
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 33
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 10
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "3\u2605\u00a0Explorer\u00a0Parts",
-                "value": 33
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 5780
-              }
-            ],
-            "scrap_time": 170760
-          },
-          "ship_xp": 8000
-        },
-        {
-          "ability_bonus": 0.46,
-          "additional_officer_slot": false,
-          "level": 33,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 82689
-              },
-              {
-                "type": "dilithium",
-                "value": 10977
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 72
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 21
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 39
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 11
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "3\u2605\u00a0Explorer\u00a0Parts",
-                "value": 39
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 6380
-              }
-            ],
-            "scrap_time": 170760
-          },
-          "ship_xp": 8000
-        },
-        {
-          "ability_bonus": 0.48,
-          "additional_officer_slot": false,
-          "level": 34,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 82689
-              },
-              {
-                "type": "dilithium",
-                "value": 10977
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 86
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 25
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 47
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 13
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "3\u2605\u00a0Explorer\u00a0Parts",
-                "value": 47
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 7017
-              }
-            ],
-            "scrap_time": 170760
-          },
-          "ship_xp": 8500
-        },
-        {
-          "ability_bonus": 0.5,
-          "additional_officer_slot": true,
-          "level": 35,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 82689
-              },
-              {
-                "type": "dilithium",
-                "value": 10977
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 105
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 57
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 16
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 1
-              },
-              {
-                "type": "3\u2605\u00a0Explorer\u00a0Parts",
-                "value": 57
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 7767
-              }
-            ],
-            "scrap_time": 170760
-          },
-          "ship_xp": 10000
-        },
-        {
-          "additional_officer_slot": false,
-          "level": 1,
-          "scrap_details": {
-            "rewards": [
-              {
-                "type": "tritanium",
-                "value": 82689
-              },
-              {
-                "type": "dilithium",
-                "value": 10977
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
-              }
-            ],
-            "scrap_time": 56940
-          },
-          "ship_xp": 0
-        }
-      ],
-      "repair_time": 4860,
-      "tier": 7
     }
   ]
 }

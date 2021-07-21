@@ -39,43 +39,6 @@
       "build_time": 2400,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 1.5
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 8,
-              "health": 50
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
           "name": "Pulsed Phaser",
           "additional_info": {
             "armor_pierce": 1,
@@ -104,18 +67,52 @@
             "others": [],
             "resources": []
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
+          "repair_cost": []
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 1.5
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 8,
+              "health": 50
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
           "repair_cost": []
         }
       ],
       "levels": [
         {
-          "ability_bonus": 30,
-          "additional_officer_slot": true,
-          "level": 5,
-          "ship_xp": 12
+          "ability_bonus": 10,
+          "additional_officer_slot": false,
+          "level": 1,
+          "ship_xp": 0
         },
         {
           "ability_bonus": 15,
@@ -136,10 +133,10 @@
           "ship_xp": 8
         },
         {
-          "ability_bonus": 10,
-          "additional_officer_slot": false,
-          "level": 1,
-          "ship_xp": 0
+          "ability_bonus": 30,
+          "additional_officer_slot": true,
+          "level": 5,
+          "ship_xp": 12
         }
       ],
       "repair_time": 240,
@@ -148,63 +145,6 @@
     {
       "build_time": 300,
       "components": [
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 1.7
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "1\u2605\u00a0Explorer\u00a0Parts",
-                "value": 1
-              }
-            ],
-            "resources": []
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 11,
-              "health": 70
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "1\u2605\u00a0Explorer\u00a0Parts",
-                "value": 2
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 30
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "parsteel",
-              "value": 7
-            }
-          ]
-        },
         {
           "name": "Pulsed Phaser",
           "additional_info": {
@@ -244,13 +184,67 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "parsteel",
               "value": 8
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 1.7
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "1\u2605\u00a0Explorer\u00a0Parts",
+                "value": 1
+              }
+            ],
+            "resources": []
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 11,
+              "health": 70
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "1\u2605\u00a0Explorer\u00a0Parts",
+                "value": 2
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 30
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "parsteel",
+              "value": 7
             }
           ]
         }
@@ -294,63 +288,6 @@
       "build_time": 600,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 1.9
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "1\u2605\u00a0Explorer\u00a0Parts",
-                "value": 3
-              }
-            ],
-            "resources": []
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 16,
-              "health": 100
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "1\u2605\u00a0Explorer\u00a0Parts",
-                "value": 5
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 90
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "parsteel",
-              "value": 20
-            }
-          ]
-        },
-        {
           "name": "Pulsed Phaser",
           "additional_info": {
             "armor_pierce": 2,
@@ -389,9 +326,63 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "parsteel",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 1.9
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "1\u2605\u00a0Explorer\u00a0Parts",
+                "value": 3
+              }
+            ],
+            "resources": []
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 16,
+              "health": 100
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "1\u2605\u00a0Explorer\u00a0Parts",
+                "value": 5
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 90
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
           "repair_cost": [
             {
               "type": "parsteel",
@@ -401,12 +392,6 @@
         }
       ],
       "levels": [
-        {
-          "ability_bonus": 85,
-          "additional_officer_slot": true,
-          "level": 15,
-          "ship_xp": 250
-        },
         {
           "ability_bonus": 60,
           "additional_officer_slot": false,
@@ -430,6 +415,12 @@
           "additional_officer_slot": false,
           "level": 14,
           "ship_xp": 230
+        },
+        {
+          "ability_bonus": 85,
+          "additional_officer_slot": true,
+          "level": 15,
+          "ship_xp": 250
         }
       ],
       "repair_time": 378,
@@ -438,63 +429,6 @@
     {
       "build_time": 1000,
       "components": [
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 0,
-              "warp_speed": 2
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "1\u2605\u00a0Explorer\u00a0Parts",
-                "value": 7
-              }
-            ],
-            "resources": []
-          },
-          "id": 0,
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield": {
-              "deflection": 22,
-              "health": 140
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "1\u2605\u00a0Explorer\u00a0Parts",
-                "value": 14
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 150
-              }
-            ]
-          },
-          "id": 0,
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "parsteel",
-              "value": 35
-            }
-          ]
-        },
         {
           "name": "Pulsed Phaser",
           "additional_info": {
@@ -534,13 +468,67 @@
               }
             ]
           },
-          "id": 0,
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
           "repair_cost": [
             {
               "type": "parsteel",
               "value": 40
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 0,
+              "warp_distance": 0,
+              "warp_speed": 2
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "1\u2605\u00a0Explorer\u00a0Parts",
+                "value": 7
+              }
+            ],
+            "resources": []
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield": {
+              "deflection": 22,
+              "health": 140
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "1\u2605\u00a0Explorer\u00a0Parts",
+                "value": 14
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 150
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "parsteel",
+              "value": 35
             }
           ]
         }
