@@ -39,7 +39,7 @@
       ],
       "scrap_info": {
         "required_scrapyard_level": 42,
-        "scrapable": true
+        "scrappable": true
       },
       "ship_ability": {
         "title": "Protector",
@@ -280,14 +280,14 @@
       "title": "The scrap_info schema",
       "description": "Information about scrapping the ship.",
       "required": [
-        "scrapable"
+        "scrappable"
       ],
       "type": "object",
       "additionalProperties": true,
       "default": {},
       "if": {
         "properties": {
-          "scrapable": {
+          "scrappable": {
             "const": true
           }
         }
@@ -303,9 +303,9 @@
             42
           ]
         },
-        "scrapable": {
-          "$id": "#/properties/scrap_info/properties/scrapable",
-          "title": "The scrapable schema",
+        "scrappable": {
+          "$id": "#/properties/scrap_info/properties/scrappable",
+          "title": "The scrappable schema",
           "description": "Boolean wether the ship can be scrapped or not.",
           "type": "boolean",
           "default": true,
