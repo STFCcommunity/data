@@ -1121,6 +1121,203 @@
                   ]
                 }
               },
+              "initial_build_cost": {
+                "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost",
+                "title": "The initial_build_cost schema",
+                "description": "All cost needed to build the ship to tier 1. Field only used for tier 1.",
+                "required": [],
+                "type": "object",
+                "additionalProperties": false,
+                "default": {},
+                "properties": {
+                  "materials": {
+                    "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials",
+                    "title": "The materials schema",
+                    "description": "All materials needed to build the ship.",
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single material instance.",
+                          "required": [
+                            "type",
+                            "rarity",
+                            "grade",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "type": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/type",
+                              "title": "The type schema",
+                              "description": "The type of material needed.",
+                              "type": "string",
+                              "default": "",
+                              "enum": [
+                                "gas",
+                                "ore",
+                                "crystal"
+                              ],
+                              "examples": [
+                                "gas"
+                              ]
+                            },
+                            "grade": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/grade",
+                              "title": "The grade schema",
+                              "description": "The grade in stars of the material.",
+                              "type": "integer",
+                              "default": 1,
+                              "enum": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5
+                              ],
+                              "examples": [
+                                1
+                              ]
+                            },
+                            "rarity": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/rarity",
+                              "title": "The rarity schema",
+                              "description": "The rarity of the material.",
+                              "type": "string",
+                              "default": "",
+                              "enum": [
+                                "common",
+                                "uncommon",
+                                "rare",
+                                "epic"
+                              ],
+                              "examples": [
+                                "common"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "The value needed of the material.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                275
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "others": {
+                    "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others",
+                    "title": "The others schema",
+                    "description": "All other costs required to build the ship.",
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single other cost instance.",
+                          "required": [
+                            "type",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "type": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items/anyOf/0/properties/type",
+                              "title": "The type schema",
+                              "description": "The type of cost required.",
+                              "type": "string",
+                              "default": "",
+                              "examples": [
+                                "charged nanoprobes"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "The amount required of this cost.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                500
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "resources": {
+                    "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources",
+                    "title": "The resources schema",
+                    "description": "All resources needed to build the ship.",
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single resource instance.",
+                          "required": [
+                            "type",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "type": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items/anyOf/0/properties/type",
+                              "title": "The type schema",
+                              "description": "Type of resource needed.",
+                              "type": "string",
+                              "default": "",
+                              "enum": [
+                                "parsteel",
+                                "tritanium",
+                                "dilithium"
+                              ],
+                              "examples": [
+                                "tritanium"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "The amount needed of the current resource.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                1300000
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
               "levels": {
                 "$id": "#/properties/tiers/items/anyOf/0/properties/levels",
                 "title": "The levels schema",
