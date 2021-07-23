@@ -3,90 +3,125 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "The root schema",
   "description": "A schema for faction reputation in STFC.",
-  "type": "array",
+  "required": [
+    "faction",
+    "reputation"
+  ],
+  "type": "object",
   "additionalItems": true,
   "default": [],
   "examples": [
-    [
-      {
-        "dailies_barrier": false,
-        "locked": true,
-        "points_min": 10000000,
-        "reputation_id": 1,
-        "reputation_name": "respected"
-      }
-    ]
-  ],
-  "items": {
-    "$id": "#/items",
-    "anyOf": [
-      {
-        "$id": "#/items/anyOf/0",
-        "title": "The first anyOf schema",
-        "description": "A single faction reputation instance.",
-        "required": [
-          "reputation_id",
-          "reputation_name",
-          "points_min",
-          "locked",
-          "dailies_barrier"
-        ],
-        "type": "object",
-        "additionalProperties": true,
-        "default": {},
-        "properties": {
-          "dailies_barrier": {
-            "$id": "#/items/anyOf/0/properties/dailies_barrier",
-            "title": "The dailies_barrier schema",
-            "description": "Boolean wether or not the faction dailies change by reaching this amount of points.",
-            "type": "boolean",
-            "default": false,
-            "examples": [
-              false
-            ]
-          },
-          "locked": {
-            "$id": "#/items/anyOf/0/properties/locked",
-            "title": "The locked schema",
-            "description": "Boolean wether or not the faction gets minimum locked by the gained points.",
-            "type": "boolean",
-            "default": false,
-            "examples": [
-              true
-            ]
-          },
-          "points_min": {
-            "$id": "#/items/anyOf/0/properties/points_min",
-            "title": "The points_min schema",
-            "description": "The minimum points required to reach this reputation.",
-            "type": "integer",
-            "default": 0,
-            "examples": [
-              10000000
-            ]
-          },
-          "reputation_id": {
-            "$id": "#/items/anyOf/0/properties/reputation_id",
-            "title": "The reputation_id schema",
-            "description": "An id provided for the faction reputation.",
-            "type": "integer",
-            "default": 0,
-            "examples": [
-              1
-            ]
-          },
-          "reputation_name": {
-            "$id": "#/items/anyOf/0/properties/reputation_name",
-            "title": "The reputation_name schema",
-            "description": "The name of the faction reputation.",
-            "type": "string",
-            "default": "",
-            "examples": [
-              "respected"
-            ]
-          }
+    {
+      "faction": "federation",
+      "reputation": [
+        {
+          "dailies_barrier": false,
+          "locked": true,
+          "points_min": 10000000,
+          "reputation_id": 1,
+          "reputation_name": "respected"
         }
+      ]
+    }
+  ],
+  "properties": {
+    "faction": {
+      "$id": "#/properties/faction",
+      "title": "The faction schema",
+      "description": "The faction where the ship belongs to.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "neutral",
+        "federation",
+        "romulan",
+        "klingon",
+        "augment",
+        "rogue"
+      ],
+      "examples": [
+        "federation"
+      ]
+    },
+    "reputation": {
+      "$id": "#/properties/reputation",
+      "title": "The reputation schema",
+      "description": "List of all reputation steps for that faction.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/reputation/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/reputation/items/anyOf/0",
+            "title": "The first anyOf schema",
+            "description": "A single faction reputation instance.",
+            "required": [
+              "reputation_id",
+              "reputation_name",
+              "points_min",
+              "locked",
+              "dailies_barrier"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "dailies_barrier": {
+                "$id": "#/properties/reputation/items/anyOf/0/properties/dailies_barrier",
+                "title": "The dailies_barrier schema",
+                "description": "Boolean wether or not the faction dailies change by reaching this amount of points.",
+                "type": "boolean",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "locked": {
+                "$id": "#/properties/reputation/items/anyOf/0/properties/locked",
+                "title": "The locked schema",
+                "description": "Boolean wether or not the faction gets minimum locked by the gained points.",
+                "type": "boolean",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "points_min": {
+                "$id": "#/properties/reputation/items/anyOf/0/properties/points_min",
+                "title": "The points_min schema",
+                "description": "The minimum points required to reach this reputation.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  10000000
+                ]
+              },
+              "reputation_id": {
+                "$id": "#/properties/reputation/items/anyOf/0/properties/reputation_id",
+                "title": "The reputation_id schema",
+                "description": "An id provided for the faction reputation.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "reputation_name": {
+                "$id": "#/properties/reputation/items/anyOf/0/properties/reputation_name",
+                "title": "The reputation_name schema",
+                "description": "The name of the faction reputation.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "respected"
+                ]
+              }
+            }
+          }
+        ]
       }
-    ]
+    }
   }
 }
