@@ -36,14 +36,16 @@
         {
           "name": "Weapon",
           "additional_info": {
-            "accuracy": 16,
-            "armor_pierce": 16,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 84,
-            "damage_min": 69,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16,
+              "armor_pierce": 16,
+              "shield_pierce": 16,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "max_damage": 84,
+              "min_damage": 69,
+              "weapon_type": "energy",
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -53,10 +55,8 @@
                 1,
                 1,
                 1
-              ],
-              "weapon_type": "energy"
-            },
-            "shield_pierce": 16
+              ]
+            }
           },
           "build_cost": {
             "materials": [],
@@ -71,10 +71,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 2000,
               "increased_cargo": 5720,
               "increased_protected_cargo": 240,
-              "protected_cargo": 200
+              "ship_increased_cargo": 2000,
+              "ship_increased_protected_cargo": 200
             }
           },
           "build_cost": {
@@ -90,9 +90,8 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 6,
-              "warp_speed": 1.5
+              "warp_speed": 1.5,
+              "warp_distance": 6
             }
           },
           "build_cost": {
@@ -107,9 +106,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 20,
-              "health": 110
+            "shield_info": {
+              "shield_health": 110,
+              "shield_deflection": 20
             }
           },
           "build_cost": {
@@ -124,7 +123,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 100
+            "mining_laser_info": {
+              "mining_bonus": 100
+            }
           },
           "build_cost": {
             "materials": [],
@@ -258,10 +259,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 7820,
               "increased_cargo": 12070,
               "increased_protected_cargo": 990,
-              "protected_cargo": 940
+              "ship_increased_cargo": 7820,
+              "ship_increased_protected_cargo": 940
             }
           },
           "build_cost": {
@@ -292,9 +293,8 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 8,
-              "warp_speed": 1.7
+              "warp_speed": 1.7,
+              "warp_distance": 8
             }
           },
           "build_cost": {
@@ -319,9 +319,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 28,
-              "health": 250
+            "shield_info": {
+              "shield_health": 250,
+              "shield_deflection": 28
             }
           },
           "build_cost": {
@@ -351,7 +351,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 115
+            "mining_laser_info": {
+              "mining_bonus": 115
+            }
           },
           "build_cost": {
             "materials": [],
@@ -565,10 +567,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 14170,
               "increased_cargo": 18900,
               "increased_protected_cargo": 1750,
-              "protected_cargo": 1690
+              "ship_increased_cargo": 14170,
+              "ship_increased_protected_cargo": 1690
             }
           },
           "build_cost": {
@@ -599,9 +601,8 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 10,
-              "warp_speed": 1.9
+              "warp_speed": 1.9,
+              "warp_distance": 10
             }
           },
           "build_cost": {
@@ -626,9 +627,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 39,
-              "health": 520
+            "shield_info": {
+              "shield_health": 520,
+              "shield_deflection": 39
             }
           },
           "build_cost": {
@@ -658,7 +659,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 155
+            "mining_laser_info": {
+              "mining_bonus": 155
+            }
           },
           "build_cost": {
             "materials": [],
@@ -932,10 +935,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 21000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 2450
+              "ship_increased_cargo": 21000,
+              "ship_increased_protected_cargo": 2450
             }
           },
           "build_cost": {
@@ -966,9 +969,8 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
-              "warp_distance": 13,
-              "warp_speed": 2
+              "warp_speed": 2,
+              "warp_distance": 13
             }
           },
           "build_cost": {
@@ -993,9 +995,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 55,
-              "health": 910
+            "shield_info": {
+              "shield_health": 910,
+              "shield_deflection": 55
             }
           },
           "build_cost": {
@@ -1025,7 +1027,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 200
+            "mining_laser_info": {
+              "mining_bonus": 200
+            }
           },
           "build_cost": {
             "materials": [],
