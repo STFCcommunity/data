@@ -1,24 +1,47 @@
 {
+  "description": "This ship is Klingon. Attacking it will result in a loss of reputation towards the Klingons and a gain of reputation towards the Federation and Romulan factions.",
+  "attack": 956529,
+  "defense": 1036425,
+  "group": "klingon",
+  "health": 377215,
   "hostile_name": "Veteran Klingon Patrol",
   "level": 40,
   "rarity": "common",
-  "group": "klingon",
-  "ship_class": "explorer",
-  "description": "This ship is Klingon. Attacking it will result in a loss of reputation towards the Klingons and a gain of reputation towards the Federation and Romulan factions.",
   "rewards": [
     {
-      "type": "Federation Points",
+      "type": "Federation\u00a0Points",
       "value": 1109
     },
     {
-      "type": "Romulan Points",
+      "type": "Romulan\u00a0Points",
       "value": 554
     },
     {
-      "type": "Klingon Points",
+      "type": "Klingon\u00a0Points",
       "value": 2079
     }
   ],
+  "ship_class": "explorer",
+  "stats": {
+    "attack": {
+      "accuracy": 205,
+      "armor_pierce": 40027,
+      "crit_chance": 0.1,
+      "crit_damage": 1.5,
+      "damage_per_round": 542,
+      "shield_pierce": 30021
+    },
+    "defense": {
+      "armor": 30021,
+      "dodge": 40027,
+      "shield_deflect": 137
+    },
+    "health": {
+      "hull_health": 367,
+      "shield_health": 387
+    }
+  },
+  "strength": 2370169,
   "systems": [
     {
       "$ref": "systems/b_moth_39"
@@ -42,21 +65,13 @@
       "$ref": "systems/pheben_39"
     }
   ],
+  "utility": [
+    {
+      "impulse_speed": 85
+    }
+  ],
   "weapons": [
     {
-      "quantity": 3,
-      "weapon_id": "E1",
-      "weapon_stats": {
-        "accuracy": 205855,
-        "armor_pierce": 40027,
-        "crit_chance": 0.1,
-        "crit_damage": 1.5,
-        "damage_per_round": 180891,
-        "max_damage": 173027,
-        "min_damage": 141567,
-        "shield_pierce": 30021
-      },
-      "weapon_type": "energy",
       "firing_pattern": [
         1,
         1,
@@ -73,35 +88,20 @@
         1,
         1,
         1
-      ]
+      ],
+      "quantity": 3,
+      "weapon_id": "E1",
+      "weapon_stats": {
+        "accuracy": 205855,
+        "armor_pierce": 40027,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 180891,
+        "max_damage": 173027,
+        "min_damage": 141567,
+        "shield_pierce": 30021
+      },
+      "weapon_type": "energy"
     }
-  ],
-  "utility": [
-    {
-      "impulse_speed": 85
-    }
-  ],
-  "stats": {
-    "attack": {
-      "accuracy": 205,
-      "armor_pierce": 40027,
-      "crit_chance": 0.1,
-      "crit_damage": 1.5,
-      "damage_per_round": 542,
-      "shield_pierce": 30021
-    },
-    "defense": {
-      "armor": 30021,
-      "dodge": 40027,
-      "shield_deflect": 137
-    },
-    "health": {
-      "hull_health": 367,
-      "shield_health": 387
-    }
-  },
-  "strength": 2370169,
-  "attack": 956529,
-  "defense": 1036425,
-  "health": 377215
+  ]
 }
