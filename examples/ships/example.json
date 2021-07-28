@@ -1,4 +1,5 @@
 {
+  "description": "The ship was built...",
   "blueprints": {
     "cost": 200,
     "quantity": 100
@@ -15,11 +16,16 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 42,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Protector",
-    "description": "When the Station..."
+    "description": "When the Station...",
+    "buff": {
+      "name": "burning",
+      "type": "use"
+    },
+    "percentage": true
   },
   "ship_class": "interceptor",
   "ship_name": "USS Saladin",
@@ -30,28 +36,9 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 1960,
-              "increased_protected_cargo": 10
-            },
-            "firing_pattern": {
-              "pattern": [
-                0,
-                0,
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-                1
-              ],
-              "weapon_type": "kinetic"
-            },
-            "warp_info": {
-              "impulse_speed": 120,
-              "warp_distance": 27,
-              "warp_speed": 2.4
+            "armor_info": {
+              "armor": 40,
+              "hull_health": 100
             }
           },
           "build_cost": {
@@ -76,8 +63,8 @@
               }
             ]
           },
-          "id": 1,
           "img_url": "url",
+          "quantity": 1,
           "repair_cost": [
             {
               "type": "tritanium",
@@ -88,7 +75,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 16.0,
+          "ability_bonus": 0.16,
           "additional_officer_slot": true,
           "level": 2,
           "scrap_details": {

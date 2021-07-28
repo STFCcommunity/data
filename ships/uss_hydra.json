@@ -4,38 +4,6 @@
     "cost": 1200,
     "quantity": 150
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "gas",
-        "grade": 4,
-        "rarity": "common",
-        "value": 9770
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "common",
-        "value": 5720
-      }
-    ],
-    "others": [
-      {
-        "type": "4\u2605\u00a0Common\u00a0Survey\u00a0Parts",
-        "value": 22685
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 480000000
-      },
-      {
-        "type": "dilithium",
-        "value": 19300000
-      }
-    ]
-  },
   "faction": "federation",
   "grade": 4,
   "img_url": "./assets/uss_hydra.png",
@@ -51,7 +19,7 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Gas Mining Laser",
@@ -67,14 +35,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 3234,
-            "armor_pierce": 2426,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 3465,
-            "damage_min": 2835,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3234,
+              "armor_pierce": 2426,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -85,9 +51,11 @@
                 1,
                 1
               ],
+              "max_damage": 3465,
+              "min_damage": 2835,
+              "shield_pierce": 2772,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2772
+            }
           },
           "build_cost": {
             "materials": [],
@@ -102,10 +70,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 800000,
               "increased_cargo": 850000,
               "increased_protected_cargo": 9200,
-              "protected_cargo": 8200
+              "ship_increased_cargo": 800000,
+              "ship_increased_protected_cargo": 8200
             }
           },
           "build_cost": {
@@ -121,7 +89,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 75,
               "warp_speed": 3
             }
@@ -138,9 +105,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3638,
-              "health": 12970
+            "shield_info": {
+              "shield_deflection": 3638,
+              "shield_health": 12970
             }
           },
           "build_cost": {
@@ -155,8 +122,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 3119,
-            "hull_health": 23700
+            "armor_info": {
+              "armor": 3119,
+              "hull_health": 23700
+            }
           },
           "build_cost": {
             "materials": [],
@@ -170,11 +139,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2729,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2729,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -189,7 +156,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 1200
+            "mining_laser_info": {
+              "mining_bonus": 1200
+            }
           },
           "build_cost": {
             "materials": [],
@@ -201,6 +170,38 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 9770
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 5720
+          }
+        ],
+        "others": [
+          {
+            "type": "4\u2605\u00a0Common\u00a0Survey\u00a0Parts",
+            "value": 22685
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 480000000
+          },
+          {
+            "type": "dilithium",
+            "value": 19300000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 1.2,
@@ -242,14 +243,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 4043,
-            "armor_pierce": 3032,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 4331,
-            "damage_min": 3544,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 4043,
+              "armor_pierce": 3032,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -260,9 +259,11 @@
                 1,
                 1
               ],
+              "max_damage": 4331,
+              "min_damage": 3544,
+              "shield_pierce": 3465,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3465
+            }
           },
           "build_cost": {
             "materials": [
@@ -313,10 +314,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 1100000,
               "increased_cargo": 1160000,
               "increased_protected_cargo": 15500,
-              "protected_cargo": 14200
+              "ship_increased_cargo": 1100000,
+              "ship_increased_protected_cargo": 14200
             }
           },
           "build_cost": {
@@ -368,7 +369,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 80,
               "warp_speed": 3.2
             }
@@ -421,9 +421,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4548,
-              "health": 16210
+            "shield_info": {
+              "shield_deflection": 4548,
+              "shield_health": 16210
             }
           },
           "build_cost": {
@@ -474,8 +474,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 3898,
-            "hull_health": 29630
+            "armor_info": {
+              "armor": 3898,
+              "hull_health": 29630
+            }
           },
           "build_cost": {
             "materials": [
@@ -525,11 +527,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3411,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3411,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -580,7 +580,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 1350
+            "mining_laser_info": {
+              "mining_bonus": 1350
+            }
           },
           "build_cost": {
             "materials": [
@@ -669,14 +671,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 5053,
-            "armor_pierce": 3790,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 5414,
-            "damage_min": 4430,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 5053,
+              "armor_pierce": 3790,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -687,9 +687,11 @@
                 1,
                 1
               ],
+              "max_damage": 5414,
+              "min_damage": 4430,
+              "shield_pierce": 4331,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 4331
+            }
           },
           "build_cost": {
             "materials": [
@@ -744,10 +746,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 1410000,
               "increased_cargo": 1490000,
               "increased_protected_cargo": 22000,
-              "protected_cargo": 20500
+              "ship_increased_cargo": 1410000,
+              "ship_increased_protected_cargo": 20500
             }
           },
           "build_cost": {
@@ -805,7 +807,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 85,
               "warp_speed": 3.3
             }
@@ -864,9 +865,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5685,
-              "health": 20270
+            "shield_info": {
+              "shield_deflection": 5685,
+              "shield_health": 20270
             }
           },
           "build_cost": {
@@ -921,8 +922,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 4873,
-            "hull_health": 37030
+            "armor_info": {
+              "armor": 4873,
+              "hull_health": 37030
+            }
           },
           "build_cost": {
             "materials": [
@@ -976,11 +979,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 4264,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 4264,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -1035,7 +1036,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 1450
+            "mining_laser_info": {
+              "mining_bonus": 1450
+            }
           },
           "build_cost": {
             "materials": [
@@ -1130,14 +1133,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 6316,
-            "armor_pierce": 4737,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 6768,
-            "damage_min": 5537,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 6316,
+              "armor_pierce": 4737,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1148,9 +1149,11 @@
                 1,
                 1
               ],
+              "max_damage": 6768,
+              "min_damage": 5537,
+              "shield_pierce": 5414,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 5414
+            }
           },
           "build_cost": {
             "materials": [
@@ -1205,10 +1208,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 1740000,
               "increased_cargo": 1810000,
               "increased_protected_cargo": 29000,
-              "protected_cargo": 27000
+              "ship_increased_cargo": 1740000,
+              "ship_increased_protected_cargo": 27000
             }
           },
           "build_cost": {
@@ -1266,7 +1269,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 90,
               "warp_speed": 3.5
             }
@@ -1325,9 +1327,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 7106,
-              "health": 25330
+            "shield_info": {
+              "shield_deflection": 7106,
+              "shield_health": 25330
             }
           },
           "build_cost": {
@@ -1382,8 +1384,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 6091,
-            "hull_health": 46290
+            "armor_info": {
+              "armor": 6091,
+              "hull_health": 46290
+            }
           },
           "build_cost": {
             "materials": [
@@ -1437,11 +1441,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 5329,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 5329,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -1496,7 +1498,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 1600
+            "mining_laser_info": {
+              "mining_bonus": 1600
+            }
           },
           "build_cost": {
             "materials": [
@@ -1591,14 +1595,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 7896,
-            "armor_pierce": 5922,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 8459,
-            "damage_min": 6921,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 7896,
+              "armor_pierce": 5922,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1609,9 +1611,11 @@
                 1,
                 1
               ],
+              "max_damage": 8459,
+              "min_damage": 6921,
+              "shield_pierce": 6768,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 6768
+            }
           },
           "build_cost": {
             "materials": [
@@ -1666,10 +1670,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 2060000,
               "increased_cargo": 2140000,
               "increased_protected_cargo": 36500,
-              "protected_cargo": 34000
+              "ship_increased_cargo": 2060000,
+              "ship_increased_protected_cargo": 34000
             }
           },
           "build_cost": {
@@ -1726,8 +1730,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 7614,
-            "hull_health": 57860
+            "armor_info": {
+              "armor": 7614,
+              "hull_health": 57860
+            }
           },
           "build_cost": {
             "materials": [
@@ -1782,7 +1788,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 100,
               "warp_speed": 3.7
             }
@@ -1841,11 +1846,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 6662,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 6662,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -1900,9 +1903,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 8882,
-              "health": 31670
+            "shield_info": {
+              "shield_deflection": 8882,
+              "shield_health": 31670
             }
           },
           "build_cost": {
@@ -1957,7 +1960,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 1750
+            "mining_laser_info": {
+              "mining_bonus": 1750
+            }
           },
           "build_cost": {
             "materials": [
@@ -2052,14 +2057,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 9869,
-            "armor_pierce": 7402,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 10574,
-            "damage_min": 8652,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9869,
+              "armor_pierce": 7402,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2070,9 +2073,11 @@
                 1,
                 1
               ],
+              "max_damage": 10574,
+              "min_damage": 8652,
+              "shield_pierce": 8459,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 8459
+            }
           },
           "build_cost": {
             "materials": [
@@ -2127,10 +2132,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 2390000,
               "increased_cargo": 2470000,
               "increased_protected_cargo": 44500,
-              "protected_cargo": 41500
+              "ship_increased_cargo": 2390000,
+              "ship_increased_protected_cargo": 41500
             }
           },
           "build_cost": {
@@ -2188,7 +2193,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 105,
               "warp_speed": 3.8
             }
@@ -2247,9 +2251,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 11103,
-              "health": 39580
+            "shield_info": {
+              "shield_deflection": 11103,
+              "shield_health": 39580
             }
           },
           "build_cost": {
@@ -2304,8 +2308,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 9517,
-            "hull_health": 72330
+            "armor_info": {
+              "armor": 9517,
+              "hull_health": 72330
+            }
           },
           "build_cost": {
             "materials": [
@@ -2359,11 +2365,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 8327,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 8327,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -2418,7 +2422,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 1950
+            "mining_laser_info": {
+              "mining_bonus": 1950
+            }
           },
           "build_cost": {
             "materials": [
@@ -2513,14 +2519,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 12337,
-            "armor_pierce": 9253,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13218,
-            "damage_min": 10815,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12337,
+              "armor_pierce": 9253,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2531,9 +2535,11 @@
                 1,
                 1
               ],
+              "max_damage": 13218,
+              "min_damage": 10815,
+              "shield_pierce": 10574,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 10574
+            }
           },
           "build_cost": {
             "materials": [
@@ -2588,10 +2594,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 2720000,
               "increased_cargo": 2800000,
               "increased_protected_cargo": 53500,
-              "protected_cargo": 49500
+              "ship_increased_cargo": 2720000,
+              "ship_increased_protected_cargo": 49500
             }
           },
           "build_cost": {
@@ -2649,7 +2655,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 110,
               "warp_speed": 4
             }
@@ -2708,9 +2713,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 13879,
-              "health": 49480
+            "shield_info": {
+              "shield_deflection": 13879,
+              "shield_health": 49480
             }
           },
           "build_cost": {
@@ -2765,8 +2770,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 11896,
-            "hull_health": 90410
+            "armor_info": {
+              "armor": 11896,
+              "hull_health": 90410
+            }
           },
           "build_cost": {
             "materials": [
@@ -2820,11 +2827,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 10409,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 10409,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -2879,7 +2884,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 2100
+            "mining_laser_info": {
+              "mining_bonus": 2100
+            }
           },
           "build_cost": {
             "materials": [
@@ -2974,14 +2981,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 15421,
-            "armor_pierce": 11566,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 16522,
-            "damage_min": 13518,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15421,
+              "armor_pierce": 11566,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2992,9 +2997,11 @@
                 1,
                 1
               ],
+              "max_damage": 16522,
+              "min_damage": 13518,
+              "shield_pierce": 13218,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 13218
+            }
           },
           "build_cost": {
             "materials": [
@@ -3049,10 +3056,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 3050000,
               "increased_cargo": 3150000,
               "increased_protected_cargo": 63000,
-              "protected_cargo": 58500
+              "ship_increased_cargo": 3050000,
+              "ship_increased_protected_cargo": 58500
             }
           },
           "build_cost": {
@@ -3110,7 +3117,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 120,
               "warp_speed": 4.1
             }
@@ -3169,9 +3175,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 17349,
-              "health": 61850
+            "shield_info": {
+              "shield_deflection": 17349,
+              "shield_health": 61850
             }
           },
           "build_cost": {
@@ -3226,8 +3232,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 14870,
-            "hull_health": 113010
+            "armor_info": {
+              "armor": 14870,
+              "hull_health": 113010
+            }
           },
           "build_cost": {
             "materials": [
@@ -3281,11 +3289,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 13011,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 13011,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -3340,7 +3346,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 2300
+            "mining_laser_info": {
+              "mining_bonus": 2300
+            }
           },
           "build_cost": {
             "materials": [
@@ -3435,14 +3443,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 19276,
-            "armor_pierce": 14457,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 20653,
-            "damage_min": 16898,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19276,
+              "armor_pierce": 14457,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3453,9 +3459,11 @@
                 1,
                 1
               ],
+              "max_damage": 20653,
+              "min_damage": 16898,
+              "shield_pierce": 16522,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 16522
+            }
           },
           "build_cost": {
             "materials": [
@@ -3510,10 +3518,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 3400000,
               "increased_cargo": 3500000,
               "increased_protected_cargo": 73000,
-              "protected_cargo": 68000
+              "ship_increased_cargo": 3400000,
+              "ship_increased_protected_cargo": 68000
             }
           },
           "build_cost": {
@@ -3571,7 +3579,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 130,
               "warp_speed": 4.3
             }
@@ -3630,9 +3637,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 21686,
-              "health": 77310
+            "shield_info": {
+              "shield_deflection": 21686,
+              "shield_health": 77310
             }
           },
           "build_cost": {
@@ -3687,8 +3694,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 18588,
-            "hull_health": 141260
+            "armor_info": {
+              "armor": 18588,
+              "hull_health": 141260
+            }
           },
           "build_cost": {
             "materials": [
@@ -3742,11 +3751,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 16264,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 16264,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -3801,7 +3808,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 2550
+            "mining_laser_info": {
+              "mining_bonus": 2550
+            }
           },
           "build_cost": {
             "materials": [
@@ -3896,14 +3905,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 24095,
-            "armor_pierce": 18071,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 25816,
-            "damage_min": 21122,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 24095,
+              "armor_pierce": 18071,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3914,9 +3921,11 @@
                 1,
                 1
               ],
+              "max_damage": 25816,
+              "min_damage": 21122,
+              "shield_pierce": 20653,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 20653
+            }
           },
           "build_cost": {
             "materials": [
@@ -3971,10 +3980,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 3750000,
               "increased_cargo": 3870000,
               "increased_protected_cargo": 83000,
-              "protected_cargo": 78000
+              "ship_increased_cargo": 3750000,
+              "ship_increased_protected_cargo": 78000
             }
           },
           "build_cost": {
@@ -4032,7 +4041,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 140,
               "warp_speed": 4.5
             }
@@ -4091,9 +4099,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 27107,
-              "health": 96630
+            "shield_info": {
+              "shield_deflection": 27107,
+              "shield_health": 96630
             }
           },
           "build_cost": {
@@ -4148,8 +4156,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 23235,
-            "hull_health": 176580
+            "armor_info": {
+              "armor": 23235,
+              "hull_health": 176580
+            }
           },
           "build_cost": {
             "materials": [
@@ -4203,11 +4213,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 20330,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 20330,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -4262,7 +4270,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 2800
+            "mining_laser_info": {
+              "mining_bonus": 2800
+            }
           },
           "build_cost": {
             "materials": [
@@ -4357,14 +4367,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 30119,
-            "armor_pierce": 22589,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 32270,
-            "damage_min": 26403,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 30119,
+              "armor_pierce": 22589,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -4375,9 +4383,11 @@
                 1,
                 1
               ],
+              "max_damage": 32270,
+              "min_damage": 26403,
+              "shield_pierce": 25816,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 25816
+            }
           },
           "build_cost": {
             "materials": [
@@ -4432,10 +4442,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 4120000,
               "increased_cargo": 4250000,
               "increased_protected_cargo": 95000,
-              "protected_cargo": 88000
+              "ship_increased_cargo": 4120000,
+              "ship_increased_protected_cargo": 88000
             }
           },
           "build_cost": {
@@ -4493,7 +4503,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 150,
               "warp_speed": 4.6
             }
@@ -4552,9 +4561,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 33884,
-              "health": 120790
+            "shield_info": {
+              "shield_deflection": 33884,
+              "shield_health": 120790
             }
           },
           "build_cost": {
@@ -4609,8 +4618,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 29043,
-            "hull_health": 220720
+            "armor_info": {
+              "armor": 29043,
+              "hull_health": 220720
+            }
           },
           "build_cost": {
             "materials": [
@@ -4664,11 +4675,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 25413,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 25413,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -4723,7 +4732,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 3050
+            "mining_laser_info": {
+              "mining_bonus": 3050
+            }
           },
           "build_cost": {
             "materials": [
@@ -4818,14 +4829,12 @@
         {
           "name": "Phaser Strip",
           "additional_info": {
-            "accuracy": 37649,
-            "armor_pierce": 28237,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 40338,
-            "damage_min": 33004,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 37649,
+              "armor_pierce": 28237,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -4836,9 +4845,11 @@
                 1,
                 1
               ],
+              "max_damage": 40338,
+              "min_damage": 33004,
+              "shield_pierce": 32270,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 32270
+            }
           },
           "build_cost": {
             "materials": [
@@ -4893,10 +4904,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 4500000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 100000
+              "ship_increased_cargo": 4500000,
+              "ship_increased_protected_cargo": 100000
             }
           },
           "build_cost": {
@@ -4954,7 +4965,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 165,
               "warp_speed": 4.8
             }
@@ -5013,9 +5023,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 42355,
-              "health": 150990
+            "shield_info": {
+              "shield_deflection": 42355,
+              "shield_health": 150990
             }
           },
           "build_cost": {
@@ -5070,8 +5080,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 36304,
-            "hull_health": 275900
+            "armor_info": {
+              "armor": 36304,
+              "hull_health": 275900
+            }
           },
           "build_cost": {
             "materials": [
@@ -5125,11 +5137,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 31766,
-            "warp_info": {
-              "impulse_speed": 68,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 31766,
+              "impulse_speed": 68
             }
           },
           "build_cost": {
@@ -5184,7 +5194,9 @@
         {
           "name": "Mining Tool",
           "additional_info": {
-            "miningBonus": 3300
+            "mining_laser_info": {
+              "mining_bonus": 3300
+            }
           },
           "build_cost": {
             "materials": [

@@ -4,32 +4,6 @@
     "cost": 0,
     "quantity": 75
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "gas",
-        "grade": 2,
-        "rarity": "common",
-        "value": 2175
-      }
-    ],
-    "others": [
-      {
-        "type": "2\u2605\u00a0Explorer\u00a0Parts",
-        "value": 358
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 88500
-      },
-      {
-        "type": "dilithium",
-        "value": 7200
-      }
-    ]
-  },
   "faction": "federation",
   "grade": 2,
   "img_url": "./assets/jellyfish.png",
@@ -41,7 +15,7 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Pilot Recognition",
@@ -57,14 +31,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 370,
-            "armor_pierce": 46,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 389,
-            "damage_min": 318,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 370,
+              "armor_pierce": 46,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -75,9 +47,11 @@
                 1,
                 1
               ],
+              "max_damage": 389,
+              "min_damage": 318,
+              "shield_pierce": 53,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 53
+            }
           },
           "build_cost": {
             "materials": [],
@@ -92,10 +66,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 4500,
               "increased_cargo": 5610,
               "increased_protected_cargo": 110,
-              "protected_cargo": 100
+              "ship_increased_cargo": 4500,
+              "ship_increased_protected_cargo": 100
             }
           },
           "build_cost": {
@@ -111,7 +85,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 14,
               "warp_speed": 2.5
             }
@@ -128,9 +101,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 206,
-              "health": 1310
+            "shield_info": {
+              "shield_deflection": 206,
+              "shield_health": 1310
             }
           },
           "build_cost": {
@@ -143,6 +116,32 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 2,
+            "rarity": "common",
+            "value": 2175
+          }
+        ],
+        "others": [
+          {
+            "type": "2\u2605\u00a0Explorer\u00a0Parts",
+            "value": 358
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 88500
+          },
+          {
+            "type": "dilithium",
+            "value": 7200
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.15,
@@ -184,14 +183,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 438,
-            "armor_pierce": 55,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 459,
-            "damage_min": 376,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 438,
+              "armor_pierce": 55,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -202,9 +199,11 @@
                 1,
                 1
               ],
+              "max_damage": 459,
+              "min_damage": 376,
+              "shield_pierce": 63,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 63
+            }
           },
           "build_cost": {
             "materials": [],
@@ -242,10 +241,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 7110,
               "increased_cargo": 8600,
               "increased_protected_cargo": 178,
-              "protected_cargo": 168
+              "ship_increased_cargo": 7110,
+              "ship_increased_protected_cargo": 168
             }
           },
           "build_cost": {
@@ -276,7 +275,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 15,
               "warp_speed": 2.6
             }
@@ -308,9 +306,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 243,
-              "health": 1550
+            "shield_info": {
+              "shield_deflection": 243,
+              "shield_health": 1550
             }
           },
           "build_cost": {
@@ -384,7 +382,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 16,
               "warp_speed": 2.7
             }
@@ -416,14 +413,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 506,
-            "armor_pierce": 63,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 531,
-            "damage_min": 435,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 506,
+              "armor_pierce": 63,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -434,9 +429,11 @@
                 1,
                 1
               ],
+              "max_damage": 531,
+              "min_damage": 435,
+              "shield_pierce": 72,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 72
+            }
           },
           "build_cost": {
             "materials": [
@@ -481,10 +478,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 10100,
               "increased_cargo": 12120,
               "increased_protected_cargo": 245,
-              "protected_cargo": 235
+              "ship_increased_cargo": 10100,
+              "ship_increased_protected_cargo": 235
             }
           },
           "build_cost": {
@@ -514,9 +511,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 281,
-              "health": 1790
+            "shield_info": {
+              "shield_deflection": 281,
+              "shield_health": 1790
             }
           },
           "build_cost": {
@@ -589,14 +586,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 570,
-            "armor_pierce": 71,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 598,
-            "damage_min": 489,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 570,
+              "armor_pierce": 71,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -607,9 +602,11 @@
                 1,
                 1
               ],
+              "max_damage": 598,
+              "min_damage": 489,
+              "shield_pierce": 81,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 81
+            }
           },
           "build_cost": {
             "materials": [
@@ -654,10 +651,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 13620,
               "increased_cargo": 16350,
               "increased_protected_cargo": 322,
-              "protected_cargo": 302
+              "ship_increased_cargo": 13620,
+              "ship_increased_protected_cargo": 302
             }
           },
           "build_cost": {
@@ -688,7 +685,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 17,
               "warp_speed": 2.8
             }
@@ -720,9 +716,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 316,
-              "health": 2020
+            "shield_info": {
+              "shield_deflection": 316,
+              "shield_health": 2020
             }
           },
           "build_cost": {
@@ -802,14 +798,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 769,
-            "armor_pierce": 96,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 807,
-            "damage_min": 660,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 769,
+              "armor_pierce": 96,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -820,9 +814,11 @@
                 1,
                 1
               ],
+              "max_damage": 807,
+              "min_damage": 660,
+              "shield_pierce": 110,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 110
+            }
           },
           "build_cost": {
             "materials": [
@@ -867,10 +863,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 17850,
               "increased_cargo": 21530,
               "increased_protected_cargo": 400,
-              "protected_cargo": 380
+              "ship_increased_cargo": 17850,
+              "ship_increased_protected_cargo": 380
             }
           },
           "build_cost": {
@@ -901,7 +897,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 2.9
             }
@@ -940,9 +935,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 427,
-              "health": 2720
+            "shield_info": {
+              "shield_deflection": 427,
+              "shield_health": 2720
             }
           },
           "build_cost": {
@@ -1023,10 +1018,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 23030,
               "increased_cargo": 28000,
               "increased_protected_cargo": 488,
-              "protected_cargo": 458
+              "ship_increased_cargo": 23030,
+              "ship_increased_protected_cargo": 458
             }
           },
           "build_cost": {
@@ -1063,14 +1058,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 1038,
-            "armor_pierce": 130,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1090,
-            "damage_min": 892,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1038,
+              "armor_pierce": 130,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1081,9 +1074,11 @@
                 1,
                 1
               ],
+              "max_damage": 1090,
+              "min_damage": 892,
+              "shield_pierce": 148,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 148
+            }
           },
           "build_cost": {
             "materials": [
@@ -1128,7 +1123,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 19,
               "warp_speed": 3
             }
@@ -1167,9 +1161,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 577,
-              "health": 3680
+            "shield_info": {
+              "shield_deflection": 577,
+              "shield_health": 3680
             }
           },
           "build_cost": {
@@ -1249,14 +1243,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 1402,
-            "armor_pierce": 175,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1471,
-            "damage_min": 1204,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1402,
+              "armor_pierce": 175,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1267,9 +1259,11 @@
                 1,
                 1
               ],
+              "max_damage": 1471,
+              "min_damage": 1204,
+              "shield_pierce": 200,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 200
+            }
           },
           "build_cost": {
             "materials": [
@@ -1314,10 +1308,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 29500,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 545
+              "ship_increased_cargo": 29500,
+              "ship_increased_protected_cargo": 545
             }
           },
           "build_cost": {
@@ -1355,7 +1349,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 21,
               "warp_speed": 3.1
             }
@@ -1394,9 +1387,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 779,
-              "health": 4960
+            "shield_info": {
+              "shield_deflection": 779,
+              "shield_health": 4960
             }
           },
           "build_cost": {

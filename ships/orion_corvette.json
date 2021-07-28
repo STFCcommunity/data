@@ -4,21 +4,6 @@
     "cost": 0,
     "quantity": 15
   },
-  "build_costs": {
-    "materials": [],
-    "others": [
-      {
-        "type": "1\u2605\u00a0Battleship\u00a0Parts",
-        "value": 42
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 7100
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 1,
   "img_url": "./assets/orion_corvette.png",
@@ -35,7 +20,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 5,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Enhanced Hull",
@@ -51,14 +36,12 @@
         {
           "name": "Plasma Cannon",
           "additional_info": {
-            "accuracy": 3,
-            "armor_pierce": 2,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 48,
-            "damage_min": 39,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3,
+              "armor_pierce": 2,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -69,9 +52,11 @@
                 1,
                 1
               ],
+              "max_damage": 48,
+              "min_damage": 39,
+              "shield_pierce": 30,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 30
+            }
           },
           "build_cost": {
             "materials": [],
@@ -86,7 +71,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 5,
               "warp_speed": 1.5
             }
@@ -103,8 +87,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 15,
-            "hull_health": 100
+            "armor_info": {
+              "armor": 15,
+              "hull_health": 100
+            }
           },
           "build_cost": {
             "materials": [],
@@ -116,6 +102,21 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605\u00a0Battleship\u00a0Parts",
+            "value": 42
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 7100
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 10,
@@ -126,10 +127,6 @@
               {
                 "type": "tritanium",
                 "value": 360
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 8100
@@ -222,14 +219,12 @@
         {
           "name": "Plasma Cannon",
           "additional_info": {
-            "accuracy": 4,
-            "armor_pierce": 3,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 67,
-            "damage_min": 54,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 4,
+              "armor_pierce": 3,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -240,9 +235,11 @@
                 1,
                 1
               ],
+              "max_damage": 67,
+              "min_damage": 54,
+              "shield_pierce": 42,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 42
+            }
           },
           "build_cost": {
             "materials": [],
@@ -271,8 +268,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 21,
-            "hull_health": 140
+            "armor_info": {
+              "armor": 21,
+              "hull_health": 140
+            }
           },
           "build_cost": {
             "materials": [],
@@ -302,7 +301,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 6,
               "warp_speed": 1.7
             }
@@ -513,14 +511,12 @@
         {
           "name": "Plasma Cannon",
           "additional_info": {
-            "accuracy": 6,
-            "armor_pierce": 4,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 93,
-            "damage_min": 76,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 6,
+              "armor_pierce": 4,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -531,9 +527,11 @@
                 1,
                 1
               ],
+              "max_damage": 93,
+              "min_damage": 76,
+              "shield_pierce": 59,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 59
+            }
           },
           "build_cost": {
             "materials": [],
@@ -562,8 +560,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 29,
-            "hull_health": 200
+            "armor_info": {
+              "armor": 29,
+              "hull_health": 200
+            }
           },
           "build_cost": {
             "materials": [],
@@ -593,7 +593,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 7,
               "warp_speed": 1.9
             }
@@ -864,14 +863,12 @@
         {
           "name": "Plasma Cannon",
           "additional_info": {
-            "accuracy": 8,
-            "armor_pierce": 5,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 130,
-            "damage_min": 107,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8,
+              "armor_pierce": 5,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -882,9 +879,11 @@
                 1,
                 1
               ],
+              "max_damage": 130,
+              "min_damage": 107,
+              "shield_pierce": 82,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 82
+            }
           },
           "build_cost": {
             "materials": [],
@@ -913,8 +912,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 41,
-            "hull_health": 270
+            "armor_info": {
+              "armor": 41,
+              "hull_health": 270
+            }
           },
           "build_cost": {
             "materials": [],
@@ -944,7 +945,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 8,
               "warp_speed": 2
             }
