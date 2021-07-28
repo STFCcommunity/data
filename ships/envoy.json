@@ -4,38 +4,6 @@
     "cost": 0,
     "quantity": 30
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 2,
-        "rarity": "common",
-        "value": 2025
-      },
-      {
-        "type": "crystal",
-        "grade": 2,
-        "rarity": "uncommon",
-        "value": 655
-      }
-    ],
-    "others": [
-      {
-        "type": "2\u2605\u00a0Survey\u00a0Parts",
-        "value": 1290
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 991000
-      },
-      {
-        "type": "dilithium",
-        "value": 77500
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 2,
   "img_url": "./assets/envoy.png",
@@ -52,7 +20,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 16,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Tritanium Mining Laser",
@@ -68,14 +36,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 50,
-            "armor_pierce": 50,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 189,
-            "damage_min": 155,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 50,
+              "armor_pierce": 50,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -86,9 +52,11 @@
                 1,
                 1
               ],
+              "max_damage": 189,
+              "min_damage": 155,
+              "shield_pierce": 50,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 50
+            }
           },
           "build_cost": {
             "materials": [],
@@ -103,10 +71,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 21000,
               "increased_cargo": 28580,
               "increased_protected_cargo": 940,
-              "protected_cargo": 900
+              "ship_increased_cargo": 21000,
+              "ship_increased_protected_cargo": 900
             }
           },
           "build_cost": {
@@ -122,7 +90,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 15,
               "warp_speed": 1.5
             }
@@ -139,9 +106,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 26,
-              "health": 640
+            "shield_info": {
+              "shield_deflection": 26,
+              "shield_health": 640
             }
           },
           "build_cost": {
@@ -156,7 +123,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 225
+            "mining_laser_info": {
+              "mining_bonus": 225
+            }
           },
           "build_cost": {
             "materials": [],
@@ -168,6 +137,38 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "common",
+            "value": 2025
+          },
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 655
+          }
+        ],
+        "others": [
+          {
+            "type": "2\u2605\u00a0Survey\u00a0Parts",
+            "value": 1290
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 991000
+          },
+          {
+            "type": "dilithium",
+            "value": 77500
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.15,
@@ -178,10 +179,6 @@
               {
                 "type": "tritanium",
                 "value": 8400
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 70860
@@ -274,14 +271,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 68,
-            "armor_pierce": 68,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 255,
-            "damage_min": 209,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 68,
+              "armor_pierce": 68,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -292,9 +287,11 @@
                 1,
                 1
               ],
+              "max_damage": 255,
+              "min_damage": 209,
+              "shield_pierce": 68,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 68
+            }
           },
           "build_cost": {
             "materials": [],
@@ -332,10 +329,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 38580,
               "increased_cargo": 47440,
               "increased_protected_cargo": 2480,
-              "protected_cargo": 2440
+              "ship_increased_cargo": 38580,
+              "ship_increased_protected_cargo": 2440
             }
           },
           "build_cost": {
@@ -370,7 +367,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 16,
               "warp_speed": 1.6
             }
@@ -402,9 +398,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 35,
-              "health": 860
+            "shield_info": {
+              "shield_deflection": 35,
+              "shield_health": 860
             }
           },
           "build_cost": {
@@ -438,7 +434,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 280
+            "mining_laser_info": {
+              "mining_bonus": 280
+            }
           },
           "build_cost": {
             "materials": [],
@@ -679,14 +677,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 92,
-            "armor_pierce": 92,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 344,
-            "damage_min": 282,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 92,
+              "armor_pierce": 92,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -697,9 +693,11 @@
                 1,
                 1
               ],
+              "max_damage": 344,
+              "min_damage": 282,
+              "shield_pierce": 92,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 92
+            }
           },
           "build_cost": {
             "materials": [],
@@ -737,10 +735,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 57440,
               "increased_cargo": 67610,
               "increased_protected_cargo": 4030,
-              "protected_cargo": 3980
+              "ship_increased_cargo": 57440,
+              "ship_increased_protected_cargo": 3980
             }
           },
           "build_cost": {
@@ -775,7 +773,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 17,
               "warp_speed": 1.7
             }
@@ -807,9 +804,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 48,
-              "health": 1170
+            "shield_info": {
+              "shield_deflection": 48,
+              "shield_health": 1170
             }
           },
           "build_cost": {
@@ -843,7 +840,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 315
+            "mining_laser_info": {
+              "mining_bonus": 315
+            }
           },
           "build_cost": {
             "materials": [
@@ -1091,14 +1090,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 124,
-            "armor_pierce": 124,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 465,
-            "damage_min": 380,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 124,
+              "armor_pierce": 124,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1109,9 +1106,11 @@
                 1,
                 1
               ],
+              "max_damage": 465,
+              "min_damage": 380,
+              "shield_pierce": 124,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 124
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1149,10 +1148,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 77610,
               "increased_cargo": 89020,
               "increased_protected_cargo": 5580,
-              "protected_cargo": 5530
+              "ship_increased_cargo": 77610,
+              "ship_increased_protected_cargo": 5530
             }
           },
           "build_cost": {
@@ -1194,7 +1193,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 1.8
             }
@@ -1226,7 +1224,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 350
+            "mining_laser_info": {
+              "mining_bonus": 350
+            }
           },
           "build_cost": {
             "materials": [
@@ -1270,9 +1270,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 65,
-              "health": 1570
+            "shield_info": {
+              "shield_deflection": 65,
+              "shield_health": 1570
             }
           },
           "build_cost": {
@@ -1570,14 +1570,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 167,
-            "armor_pierce": 167,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 627,
-            "damage_min": 513,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 167,
+              "armor_pierce": 167,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1588,9 +1586,11 @@
                 1,
                 1
               ],
+              "max_damage": 627,
+              "min_damage": 513,
+              "shield_pierce": 167,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 167
+            }
           },
           "build_cost": {
             "materials": [
@@ -1635,10 +1635,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 99020,
               "increased_cargo": 111370,
               "increased_protected_cargo": 7140,
-              "protected_cargo": 7080
+              "ship_increased_cargo": 99020,
+              "ship_increased_protected_cargo": 7080
             }
           },
           "build_cost": {
@@ -1680,7 +1680,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 19,
               "warp_speed": 1.9
             }
@@ -1712,9 +1711,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 87,
-              "health": 2130
+            "shield_info": {
+              "shield_deflection": 87,
+              "shield_health": 2130
             }
           },
           "build_cost": {
@@ -1748,7 +1747,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 415
+            "mining_laser_info": {
+              "mining_bonus": 415
+            }
           },
           "build_cost": {
             "materials": [
@@ -2056,14 +2057,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 226,
-            "armor_pierce": 226,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 847,
-            "damage_min": 693,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 226,
+              "armor_pierce": 226,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2074,9 +2073,11 @@
                 1,
                 1
               ],
+              "max_damage": 847,
+              "min_damage": 693,
+              "shield_pierce": 226,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 226
+            }
           },
           "build_cost": {
             "materials": [
@@ -2121,10 +2122,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 121370,
               "increased_cargo": 134000,
               "increased_protected_cargo": 8700,
-              "protected_cargo": 8640
+              "ship_increased_cargo": 121370,
+              "ship_increased_protected_cargo": 8640
             }
           },
           "build_cost": {
@@ -2166,7 +2167,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 20,
               "warp_speed": 2
             }
@@ -2198,9 +2198,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 118,
-              "health": 2870
+            "shield_info": {
+              "shield_deflection": 118,
+              "shield_health": 2870
             }
           },
           "build_cost": {
@@ -2241,7 +2241,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 515
+            "mining_laser_info": {
+              "mining_bonus": 515
+            }
           },
           "build_cost": {
             "materials": [
@@ -2609,14 +2611,12 @@
         {
           "name": "Phaser Emitter",
           "additional_info": {
-            "accuracy": 305,
-            "armor_pierce": 305,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1143,
-            "damage_min": 935,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 305,
+              "armor_pierce": 305,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2627,9 +2627,11 @@
                 1,
                 1
               ],
+              "max_damage": 1143,
+              "min_damage": 935,
+              "shield_pierce": 305,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 305
+            }
           },
           "build_cost": {
             "materials": [
@@ -2674,10 +2676,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 144000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 10200
+              "ship_increased_cargo": 144000,
+              "ship_increased_protected_cargo": 10200
             }
           },
           "build_cost": {
@@ -2719,7 +2721,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 22,
               "warp_speed": 2.5
             }
@@ -2758,9 +2759,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 159,
-              "health": 3870
+            "shield_info": {
+              "shield_deflection": 159,
+              "shield_health": 3870
             }
           },
           "build_cost": {
@@ -2801,7 +2802,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 645
+            "mining_laser_info": {
+              "mining_bonus": 645
+            }
           },
           "build_cost": {
             "materials": [

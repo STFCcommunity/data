@@ -4,38 +4,6 @@
     "cost": 0,
     "quantity": 30
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 2,
-        "rarity": "common",
-        "value": 450
-      },
-      {
-        "type": "crystal",
-        "grade": 2,
-        "rarity": "uncommon",
-        "value": 570
-      }
-    ],
-    "others": [
-      {
-        "type": "2\u2605\u00a0Interceptor\u00a0Parts",
-        "value": 688
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 178500
-      },
-      {
-        "type": "dilithium",
-        "value": 7700
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 2,
   "img_url": "./assets/phindra.png",
@@ -52,7 +20,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 10,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Battleship Hunter",
@@ -68,14 +36,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 17,
-            "armor_pierce": 104,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 306,
-            "damage_min": 250,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17,
+              "armor_pierce": 104,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -86,9 +52,11 @@
                 0,
                 1
               ],
+              "max_damage": 306,
+              "min_damage": 250,
+              "shield_pierce": 17,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 17
+            }
           },
           "build_cost": {
             "materials": [],
@@ -103,10 +71,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 3000,
               "increased_cargo": 3800,
               "increased_protected_cargo": 80,
-              "protected_cargo": 80
+              "ship_increased_cargo": 3000,
+              "ship_increased_protected_cargo": 80
             }
           },
           "build_cost": {
@@ -122,7 +90,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 8,
               "warp_speed": 1.5
             }
@@ -139,11 +106,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 58,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 58,
+              "impulse_speed": 127
             }
           },
           "build_cost": {
@@ -156,6 +121,38 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "common",
+            "value": 450
+          },
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 570
+          }
+        ],
+        "others": [
+          {
+            "type": "2\u2605\u00a0Interceptor\u00a0Parts",
+            "value": 688
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 178500
+          },
+          {
+            "type": "dilithium",
+            "value": 7700
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.1,
@@ -166,10 +163,6 @@
               {
                 "type": "tritanium",
                 "value": 2600
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 38580
@@ -262,14 +255,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 26,
-            "armor_pierce": 154,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 454,
-            "damage_min": 371,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 26,
+              "armor_pierce": 154,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -280,9 +271,11 @@
                 0,
                 1
               ],
+              "max_damage": 454,
+              "min_damage": 371,
+              "shield_pierce": 26,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 26
+            }
           },
           "build_cost": {
             "materials": [],
@@ -320,10 +313,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 4800,
               "increased_cargo": 5870,
               "increased_protected_cargo": 140,
-              "protected_cargo": 130
+              "ship_increased_cargo": 4800,
+              "ship_increased_protected_cargo": 130
             }
           },
           "build_cost": {
@@ -354,7 +347,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 10,
               "warp_speed": 1.6
             }
@@ -386,11 +378,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 86,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 86,
+              "impulse_speed": 127
             }
           },
           "build_cost": {
@@ -628,14 +618,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 38,
-            "armor_pierce": 227,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 668,
-            "damage_min": 547,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 38,
+              "armor_pierce": 227,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -646,9 +634,11 @@
                 0,
                 1
               ],
+              "max_damage": 668,
+              "min_damage": 547,
+              "shield_pierce": 38,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 38
+            }
           },
           "build_cost": {
             "materials": [
@@ -693,10 +683,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 6870,
               "increased_cargo": 8320,
               "increased_protected_cargo": 200,
-              "protected_cargo": 190
+              "ship_increased_cargo": 6870,
+              "ship_increased_protected_cargo": 190
             }
           },
           "build_cost": {
@@ -727,7 +717,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 12,
               "warp_speed": 1.7
             }
@@ -759,11 +748,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 126,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 126,
+              "impulse_speed": 127
             }
           },
           "build_cost": {
@@ -1001,14 +988,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 43,
-            "armor_pierce": 256,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 752,
-            "damage_min": 615,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 43,
+              "armor_pierce": 256,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1019,9 +1004,11 @@
                 0,
                 1
               ],
+              "max_damage": 752,
+              "min_damage": 615,
+              "shield_pierce": 43,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 43
+            }
           },
           "build_cost": {
             "materials": [
@@ -1066,10 +1053,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 9320,
               "increased_cargo": 11280,
               "increased_protected_cargo": 260,
-              "protected_cargo": 250
+              "ship_increased_cargo": 9320,
+              "ship_increased_protected_cargo": 250
             }
           },
           "build_cost": {
@@ -1100,7 +1087,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 13,
               "warp_speed": 1.8
             }
@@ -1132,11 +1118,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 142,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 142,
+              "impulse_speed": 127
             }
           },
           "build_cost": {
@@ -1441,14 +1425,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 49,
-            "armor_pierce": 293,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 863,
-            "damage_min": 706,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 49,
+              "armor_pierce": 293,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1459,9 +1441,11 @@
                 0,
                 1
               ],
+              "max_damage": 863,
+              "min_damage": 706,
+              "shield_pierce": 49,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 49
+            }
           },
           "build_cost": {
             "materials": [
@@ -1506,10 +1490,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 12280,
               "increased_cargo": 14930,
               "increased_protected_cargo": 330,
-              "protected_cargo": 310
+              "ship_increased_cargo": 12280,
+              "ship_increased_protected_cargo": 310
             }
           },
           "build_cost": {
@@ -1540,7 +1524,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 14,
               "warp_speed": 1.9
             }
@@ -1579,11 +1562,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 163,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 163,
+              "impulse_speed": 127
             }
           },
           "build_cost": {
@@ -1888,14 +1869,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 74,
-            "armor_pierce": 443,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1301,
-            "damage_min": 1065,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 74,
+              "armor_pierce": 443,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1906,9 +1885,11 @@
                 0,
                 1
               ],
+              "max_damage": 1301,
+              "min_damage": 1065,
+              "shield_pierce": 74,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 74
+            }
           },
           "build_cost": {
             "materials": [
@@ -1953,10 +1934,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 15930,
               "increased_cargo": 19500,
               "increased_protected_cargo": 400,
-              "protected_cargo": 380
+              "ship_increased_cargo": 15930,
+              "ship_increased_protected_cargo": 380
             }
           },
           "build_cost": {
@@ -1994,7 +1975,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 15,
               "warp_speed": 2
             }
@@ -2033,11 +2013,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 259,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 259,
+              "impulse_speed": 127
             }
           },
           "build_cost": {
@@ -2402,14 +2380,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 105,
-            "armor_pierce": 629,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1849,
-            "damage_min": 1513,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 105,
+              "armor_pierce": 629,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -2420,9 +2396,11 @@
                 0,
                 1
               ],
+              "max_damage": 1849,
+              "min_damage": 1513,
+              "shield_pierce": 105,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 105
+            }
           },
           "build_cost": {
             "materials": [
@@ -2467,10 +2445,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 20500,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 450
+              "ship_increased_cargo": 20500,
+              "ship_increased_protected_cargo": 450
             }
           },
           "build_cost": {
@@ -2508,7 +2486,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 16,
               "warp_speed": 2.5
             }
@@ -2547,11 +2524,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 350,
-            "warp_info": {
-              "impulse_speed": 127,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 350,
+              "impulse_speed": 127
             }
           },
           "build_cost": {

@@ -4,44 +4,6 @@
     "cost": 500,
     "quantity": 120
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "uncommon",
-        "value": 4100
-      },
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "rare",
-        "value": 2050
-      },
-      {
-        "type": "gas",
-        "grade": 3,
-        "rarity": "rare",
-        "value": 550
-      }
-    ],
-    "others": [
-      {
-        "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-        "value": 60150
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 1462000000
-      },
-      {
-        "type": "dilithium",
-        "value": 24300000
-      }
-    ]
-  },
   "faction": "romulan",
   "grade": 3,
   "img_url": "./assets/gladius.png",
@@ -54,7 +16,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 46,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Secret Weapon",
@@ -70,14 +32,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 1724,
-            "armor_pierce": 14400,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11537,
-            "damage_min": 9440,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1724,
+              "armor_pierce": 14400,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -88,9 +48,11 @@
                 1,
                 1
               ],
+              "max_damage": 11537,
+              "min_damage": 9440,
+              "shield_pierce": 2298,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2298
+            }
           },
           "build_cost": {
             "materials": [],
@@ -104,14 +66,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 1724,
-            "armor_pierce": 14400,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 27000,
-            "damage_min": 22500,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1724,
+              "armor_pierce": 14400,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -122,9 +82,11 @@
                 0,
                 1
               ],
+              "max_damage": 27000,
+              "min_damage": 22500,
+              "shield_pierce": 2298,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2298
+            }
           },
           "build_cost": {
             "materials": [],
@@ -139,10 +101,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 12000,
               "increased_cargo": 13510,
               "increased_protected_cargo": 260,
-              "protected_cargo": 250
+              "ship_increased_cargo": 12000,
+              "ship_increased_protected_cargo": 250
             }
           },
           "build_cost": {
@@ -158,7 +120,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 33,
               "warp_speed": 2.8
             }
@@ -175,11 +136,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 6682,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 6682,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -192,6 +151,44 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 4100
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 2050
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 550
+          }
+        ],
+        "others": [
+          {
+            "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+            "value": 60150
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1462000000
+          },
+          {
+            "type": "dilithium",
+            "value": 24300000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.35,
@@ -206,10 +203,6 @@
               {
                 "type": "dilithium",
                 "value": 18000
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 1249080
@@ -318,14 +311,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 1740,
-            "armor_pierce": 14544,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11652,
-            "damage_min": 9534,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1740,
+              "armor_pierce": 14544,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -336,9 +327,11 @@
                 1,
                 1
               ],
+              "max_damage": 11652,
+              "min_damage": 9534,
+              "shield_pierce": 2320,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2320
+            }
           },
           "build_cost": {
             "materials": [
@@ -388,14 +381,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 1740,
-            "armor_pierce": 14544,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 27270,
-            "damage_min": 22725,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1740,
+              "armor_pierce": 14544,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -406,9 +397,11 @@
                 0,
                 1
               ],
+              "max_damage": 27270,
+              "min_damage": 22725,
+              "shield_pierce": 2320,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2320
+            }
           },
           "build_cost": {
             "materials": [
@@ -459,10 +452,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 16510,
               "increased_cargo": 18470,
               "increased_protected_cargo": 370,
-              "protected_cargo": 360
+              "ship_increased_cargo": 16510,
+              "ship_increased_protected_cargo": 360
             }
           },
           "build_cost": {
@@ -500,7 +493,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 36,
               "warp_speed": 2.9
             }
@@ -539,11 +531,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 6815,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 6815,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -794,14 +784,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 1767,
-            "armor_pierce": 14835,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11885,
-            "damage_min": 9725,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1767,
+              "armor_pierce": 14835,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -812,9 +800,11 @@
                 1,
                 1
               ],
+              "max_damage": 11885,
+              "min_damage": 9725,
+              "shield_pierce": 2356,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2356
+            }
           },
           "build_cost": {
             "materials": [
@@ -864,14 +854,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 1767,
-            "armor_pierce": 14835,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 27815,
-            "damage_min": 23180,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1767,
+              "armor_pierce": 14835,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -882,9 +870,11 @@
                 0,
                 1
               ],
+              "max_damage": 27815,
+              "min_damage": 23180,
+              "shield_pierce": 2356,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2356
+            }
           },
           "build_cost": {
             "materials": [
@@ -935,10 +925,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 21470,
               "increased_cargo": 24020,
               "increased_protected_cargo": 490,
-              "protected_cargo": 470
+              "ship_increased_cargo": 21470,
+              "ship_increased_protected_cargo": 470
             }
           },
           "build_cost": {
@@ -976,7 +966,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 39,
               "warp_speed": 3
             }
@@ -1015,11 +1004,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 7088,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 7088,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -1270,14 +1257,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 1836,
-            "armor_pierce": 16022,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 29762,
-            "damage_min": 24802,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1836,
+              "armor_pierce": 16022,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1288,9 +1273,11 @@
                 0,
                 1
               ],
+              "max_damage": 29762,
+              "min_damage": 24802,
+              "shield_pierce": 2447,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2447
+            }
           },
           "build_cost": {
             "materials": [
@@ -1340,14 +1327,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 1836,
-            "armor_pierce": 16022,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 12717,
-            "damage_min": 10406,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1836,
+              "armor_pierce": 16022,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1358,9 +1343,11 @@
                 1,
                 1
               ],
+              "max_damage": 12717,
+              "min_damage": 10406,
+              "shield_pierce": 2447,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2447
+            }
           },
           "build_cost": {
             "materials": [
@@ -1411,10 +1398,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 27020,
               "increased_cargo": 30340,
               "increased_protected_cargo": 610,
-              "protected_cargo": 590
+              "ship_increased_cargo": 27020,
+              "ship_increased_protected_cargo": 590
             }
           },
           "build_cost": {
@@ -1452,7 +1439,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 42,
               "warp_speed": 3.1
             }
@@ -1491,11 +1477,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 7655,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 7655,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -1826,14 +1810,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 1992,
-            "armor_pierce": 18265,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13804,
-            "damage_min": 11295,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1992,
+              "armor_pierce": 18265,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1844,9 +1826,11 @@
                 1,
                 1
               ],
+              "max_damage": 13804,
+              "min_damage": 11295,
+              "shield_pierce": 2656,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2656
+            }
           },
           "build_cost": {
             "materials": [
@@ -1896,14 +1880,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 1992,
-            "armor_pierce": 18265,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 32306,
-            "damage_min": 26922,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1992,
+              "armor_pierce": 18265,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1914,9 +1896,11 @@
                 0,
                 1
               ],
+              "max_damage": 32306,
+              "min_damage": 26922,
+              "shield_pierce": 2656,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2656
+            }
           },
           "build_cost": {
             "materials": [
@@ -1967,10 +1951,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 33340,
               "increased_cargo": 37650,
               "increased_protected_cargo": 740,
-              "protected_cargo": 710
+              "ship_increased_cargo": 33340,
+              "ship_increased_protected_cargo": 710
             }
           },
           "build_cost": {
@@ -2008,7 +1992,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 46,
               "warp_speed": 3.2
             }
@@ -2047,11 +2030,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 8726,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 8726,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -2382,14 +2363,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 2279,
-            "armor_pierce": 21187,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 15794,
-            "damage_min": 12924,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2279,
+              "armor_pierce": 21187,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2400,9 +2379,11 @@
                 1,
                 1
               ],
+              "max_damage": 15794,
+              "min_damage": 12924,
+              "shield_pierce": 3039,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3039
+            }
           },
           "build_cost": {
             "materials": [
@@ -2452,14 +2433,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 2279,
-            "armor_pierce": 21187,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 36963,
-            "damage_min": 30803,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2279,
+              "armor_pierce": 21187,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -2470,9 +2449,11 @@
                 0,
                 1
               ],
+              "max_damage": 36963,
+              "min_damage": 30803,
+              "shield_pierce": 3039,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3039
+            }
           },
           "build_cost": {
             "materials": [
@@ -2523,10 +2504,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 40650,
               "increased_cargo": 46250,
               "increased_protected_cargo": 880,
-              "protected_cargo": 840
+              "ship_increased_cargo": 40650,
+              "ship_increased_protected_cargo": 840
             }
           },
           "build_cost": {
@@ -2564,7 +2545,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 50,
               "warp_speed": 3.3
             }
@@ -2603,11 +2583,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 10123,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 10123,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -2938,14 +2916,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 2640,
-            "armor_pierce": 24153,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 18006,
-            "damage_min": 14733,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2640,
+              "armor_pierce": 24153,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2956,9 +2932,11 @@
                 1,
                 1
               ],
+              "max_damage": 18006,
+              "min_damage": 14733,
+              "shield_pierce": 3519,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3519
+            }
           },
           "build_cost": {
             "materials": [
@@ -3008,14 +2986,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 2640,
-            "armor_pierce": 24153,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 42138,
-            "damage_min": 35115,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2640,
+              "armor_pierce": 24153,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -3026,9 +3002,11 @@
                 0,
                 1
               ],
+              "max_damage": 42138,
+              "min_damage": 35115,
+              "shield_pierce": 3519,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3519
+            }
           },
           "build_cost": {
             "materials": [
@@ -3079,10 +3057,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 49250,
               "increased_cargo": 56530,
               "increased_protected_cargo": 1030,
-              "protected_cargo": 980
+              "ship_increased_cargo": 49250,
+              "ship_increased_protected_cargo": 980
             }
           },
           "build_cost": {
@@ -3120,7 +3098,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 54,
               "warp_speed": 3.4
             }
@@ -3159,11 +3136,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 11439,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 11439,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -3554,14 +3529,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 2927,
-            "armor_pierce": 26569,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 19446,
-            "damage_min": 15911,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2927,
+              "armor_pierce": 26569,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3572,9 +3545,11 @@
                 1,
                 1
               ],
+              "max_damage": 19446,
+              "min_damage": 15911,
+              "shield_pierce": 3902,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3902
+            }
           },
           "build_cost": {
             "materials": [
@@ -3624,14 +3599,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 2927,
-            "armor_pierce": 26569,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 45509,
-            "damage_min": 37925,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2927,
+              "armor_pierce": 26569,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -3642,9 +3615,11 @@
                 0,
                 1
               ],
+              "max_damage": 45509,
+              "min_damage": 37925,
+              "shield_pierce": 3902,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3902
+            }
           },
           "build_cost": {
             "materials": [
@@ -3695,10 +3670,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 59530,
               "increased_cargo": 69000,
               "increased_protected_cargo": 1200,
-              "protected_cargo": 1130
+              "ship_increased_cargo": 59530,
+              "ship_increased_protected_cargo": 1130
             }
           },
           "build_cost": {
@@ -3736,7 +3711,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 58,
               "warp_speed": 3.5
             }
@@ -3775,11 +3749,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 12468,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 12468,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -4170,14 +4142,12 @@
         {
           "name": "Phaser Laser",
           "additional_info": {
-            "accuracy": 3195,
-            "armor_pierce": 28163,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 20224,
-            "damage_min": 16548,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3195,
+              "armor_pierce": 28163,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -4188,9 +4158,11 @@
                 1,
                 1
               ],
+              "max_damage": 20224,
+              "min_damage": 16548,
+              "shield_pierce": 4260,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 4260
+            }
           },
           "build_cost": {
             "materials": [
@@ -4240,14 +4212,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 3195,
-            "armor_pierce": 28163,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 47330,
-            "damage_min": 39442,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3195,
+              "armor_pierce": 28163,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -4258,9 +4228,11 @@
                 0,
                 1
               ],
+              "max_damage": 47330,
+              "min_damage": 39442,
+              "shield_pierce": 4260,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 4260
+            }
           },
           "build_cost": {
             "materials": [
@@ -4311,10 +4283,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 72000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 1300
+              "ship_increased_cargo": 72000,
+              "ship_increased_protected_cargo": 1300
             }
           },
           "build_cost": {
@@ -4352,7 +4324,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 65,
               "warp_speed": 3.6
             }
@@ -4391,11 +4362,9 @@
         {
           "name": "Impulse",
           "additional_info": {
-            "dodge": 12967,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 12967,
+              "impulse_speed": 115
             }
           },
           "build_cost": {

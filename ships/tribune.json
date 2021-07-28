@@ -4,48 +4,6 @@
     "cost": 1600,
     "quantity": 650
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 4,
-        "rarity": "uncommon",
-        "value": 48850
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "common",
-        "value": 402515
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "uncommon",
-        "value": 115530
-      }
-    ],
-    "others": [
-      {
-        "type": "4\u2605\u00a0Common\u00a0Battleship\u00a0Parts",
-        "value": 999840
-      },
-      {
-        "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-        "value": 271870
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 169286200000
-      },
-      {
-        "type": "dilithium",
-        "value": 7066500000
-      }
-    ]
-  },
   "faction": "romulan",
   "grade": 4,
   "img_url": "./assets/tribune.png",
@@ -61,7 +19,7 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Fire Barrage",
@@ -81,14 +39,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 8142,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 28757,
-            "damage_min": 23964,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 8142,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -99,9 +55,11 @@
                 6,
                 0
               ],
+              "max_damage": 28757,
+              "min_damage": 23964,
+              "shield_pierce": 81424,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 81424
+            }
           },
           "build_cost": {
             "materials": [],
@@ -115,14 +73,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 8142,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 28757,
-            "damage_min": 23964,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 8142,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -133,9 +89,11 @@
                 2,
                 2
               ],
+              "max_damage": 28757,
+              "min_damage": 23964,
+              "shield_pierce": 81424,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 81424
+            }
           },
           "build_cost": {
             "materials": [],
@@ -149,14 +107,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 8142,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 70294,
-            "damage_min": 63904,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 8142,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -167,9 +123,11 @@
                 2,
                 0
               ],
+              "max_damage": 70294,
+              "min_damage": 63904,
+              "shield_pierce": 81424,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 81424
+            }
           },
           "build_cost": {
             "materials": [],
@@ -184,7 +142,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 180,
               "warp_speed": 3.5
             }
@@ -201,9 +158,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3374,
-              "health": 336398
+            "shield_info": {
+              "shield_deflection": 3374,
+              "shield_health": 336398
             }
           },
           "build_cost": {
@@ -218,8 +175,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 33736,
-            "hull_health": 606450
+            "armor_info": {
+              "armor": 33736,
+              "hull_health": 606450
+            }
           },
           "build_cost": {
             "materials": [],
@@ -233,11 +192,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3374,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3374,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -250,6 +207,48 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 48850
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 402515
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 115530
+          }
+        ],
+        "others": [
+          {
+            "type": "4\u2605\u00a0Common\u00a0Battleship\u00a0Parts",
+            "value": 999840
+          },
+          {
+            "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
+            "value": 271870
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 169286200000
+          },
+          {
+            "type": "dilithium",
+            "value": 7066500000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 1,
@@ -291,14 +290,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 8671,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 30626,
-            "damage_min": 25522,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 8671,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -309,9 +306,11 @@
                 2,
                 2
               ],
+              "max_damage": 30626,
+              "min_damage": 25522,
+              "shield_pierce": 86717,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 86717
+            }
           },
           "build_cost": {
             "materials": [
@@ -361,14 +360,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 8671,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 30626,
-            "damage_min": 25522,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 8671,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -379,9 +376,11 @@
                 6,
                 0
               ],
+              "max_damage": 30626,
+              "min_damage": 25522,
+              "shield_pierce": 86717,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 86717
+            }
           },
           "build_cost": {
             "materials": [
@@ -431,14 +430,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 8671,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 74863,
-            "damage_min": 68058,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 8671,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -449,9 +446,11 @@
                 2,
                 0
               ],
+              "max_damage": 74863,
+              "min_damage": 68058,
+              "shield_pierce": 86717,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 86717
+            }
           },
           "build_cost": {
             "materials": [
@@ -502,7 +501,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 185,
               "warp_speed": 3.6
             }
@@ -555,9 +553,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3593,
-              "health": 358263
+            "shield_info": {
+              "shield_deflection": 3593,
+              "shield_health": 358263
             }
           },
           "build_cost": {
@@ -608,8 +606,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 35929,
-            "hull_health": 645869
+            "armor_info": {
+              "armor": 35929,
+              "hull_health": 645869
+            }
           },
           "build_cost": {
             "materials": [
@@ -659,11 +659,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3593,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3593,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -753,14 +751,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 9321,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 32923,
-            "damage_min": 27436,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 9321,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -771,9 +767,11 @@
                 6,
                 0
               ],
+              "max_damage": 32923,
+              "min_damage": 27436,
+              "shield_pierce": 93221,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 93221
+            }
           },
           "build_cost": {
             "materials": [
@@ -829,14 +827,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 9321,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 32923,
-            "damage_min": 27436,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 9321,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -847,9 +843,11 @@
                 2,
                 2
               ],
+              "max_damage": 32923,
+              "min_damage": 27436,
+              "shield_pierce": 93221,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 93221
+            }
           },
           "build_cost": {
             "materials": [
@@ -905,14 +903,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 9321,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 80478,
-            "damage_min": 73162,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 9321,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -923,9 +919,11 @@
                 2,
                 0
               ],
+              "max_damage": 80478,
+              "min_damage": 73162,
+              "shield_pierce": 93221,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 93221
+            }
           },
           "build_cost": {
             "materials": [
@@ -982,7 +980,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 190,
               "warp_speed": 3.7
             }
@@ -1039,9 +1036,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3862,
-              "health": 385133
+            "shield_info": {
+              "shield_deflection": 3862,
+              "shield_health": 385133
             }
           },
           "build_cost": {
@@ -1096,8 +1093,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 38624,
-            "hull_health": 694309
+            "armor_info": {
+              "armor": 38624,
+              "hull_health": 694309
+            }
           },
           "build_cost": {
             "materials": [
@@ -1151,11 +1150,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3862,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3862,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -1249,14 +1246,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 10113,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 35721,
-            "damage_min": 29768,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 10113,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -1267,9 +1262,11 @@
                 6,
                 0
               ],
+              "max_damage": 35721,
+              "min_damage": 29768,
+              "shield_pierce": 101145,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 101145
+            }
           },
           "build_cost": {
             "materials": [
@@ -1325,14 +1322,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 10113,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 35721,
-            "damage_min": 29768,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 10113,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -1343,9 +1338,11 @@
                 2,
                 2
               ],
+              "max_damage": 35721,
+              "min_damage": 29768,
+              "shield_pierce": 101145,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 101145
+            }
           },
           "build_cost": {
             "materials": [
@@ -1401,14 +1398,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 10113,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 87319,
-            "damage_min": 79381,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 10113,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -1419,9 +1414,11 @@
                 2,
                 0
               ],
+              "max_damage": 87319,
+              "min_damage": 79381,
+              "shield_pierce": 101145,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 101145
+            }
           },
           "build_cost": {
             "materials": [
@@ -1478,7 +1475,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 195,
               "warp_speed": 3.8
             }
@@ -1535,9 +1531,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4190,
-              "health": 417869
+            "shield_info": {
+              "shield_deflection": 4190,
+              "shield_health": 417869
             }
           },
           "build_cost": {
@@ -1592,8 +1588,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 41907,
-            "hull_health": 751937
+            "armor_info": {
+              "armor": 41907,
+              "hull_health": 751937
+            }
           },
           "build_cost": {
             "materials": [
@@ -1647,11 +1645,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 4190,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 4190,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -1745,14 +1741,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 11074,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 39114,
-            "damage_min": 32596,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 11074,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -1763,9 +1757,11 @@
                 2,
                 2
               ],
+              "max_damage": 39114,
+              "min_damage": 32596,
+              "shield_pierce": 110754,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 110754
+            }
           },
           "build_cost": {
             "materials": [
@@ -1821,14 +1817,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 11074,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 39115,
-            "damage_min": 32596,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 11074,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -1839,9 +1833,11 @@
                 6,
                 0
               ],
+              "max_damage": 39115,
+              "min_damage": 32596,
+              "shield_pierce": 110754,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 110754
+            }
           },
           "build_cost": {
             "materials": [
@@ -1897,14 +1893,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 11074,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 95614,
-            "damage_min": 86922,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 11074,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -1915,9 +1909,11 @@
                 2,
                 0
               ],
+              "max_damage": 95614,
+              "min_damage": 86922,
+              "shield_pierce": 110754,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 110754
+            }
           },
           "build_cost": {
             "materials": [
@@ -1974,7 +1970,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 200,
               "warp_speed": 3.9
             }
@@ -2031,9 +2026,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4588,
-              "health": 457567
+            "shield_info": {
+              "shield_deflection": 4588,
+              "shield_health": 457567
             }
           },
           "build_cost": {
@@ -2088,8 +2083,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 45888,
-            "hull_health": 824891
+            "armor_info": {
+              "armor": 45888,
+              "hull_health": 824891
+            }
           },
           "build_cost": {
             "materials": [
@@ -2143,11 +2140,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 4588,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 4588,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -2241,14 +2236,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 12237,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 43221,
-            "damage_min": 36019,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 12237,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -2259,9 +2252,11 @@
                 2,
                 2
               ],
+              "max_damage": 43221,
+              "min_damage": 36019,
+              "shield_pierce": 122383,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 122383
+            }
           },
           "build_cost": {
             "materials": [
@@ -2317,14 +2312,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 12237,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 43222,
-            "damage_min": 36018,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 12237,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -2335,9 +2328,11 @@
                 6,
                 0
               ],
+              "max_damage": 43222,
+              "min_damage": 36018,
+              "shield_pierce": 122383,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 122383
+            }
           },
           "build_cost": {
             "materials": [
@@ -2393,14 +2388,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 12237,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 105653,
-            "damage_min": 96049,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 12237,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -2411,9 +2404,11 @@
                 2,
                 0
               ],
+              "max_damage": 105653,
+              "min_damage": 96049,
+              "shield_pierce": 122383,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 122383
+            }
           },
           "build_cost": {
             "materials": [
@@ -2470,7 +2465,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 205,
               "warp_speed": 4
             }
@@ -2527,9 +2521,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5070,
-              "health": 505612
+            "shield_info": {
+              "shield_deflection": 5070,
+              "shield_health": 505612
             }
           },
           "build_cost": {
@@ -2584,8 +2578,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 50706,
-            "hull_health": 911505
+            "armor_info": {
+              "armor": 50706,
+              "hull_health": 911505
+            }
           },
           "build_cost": {
             "materials": [
@@ -2639,11 +2635,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 5070,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 5070,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -2737,14 +2731,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 13583,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 47976,
-            "damage_min": 39980,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 13583,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -2755,9 +2747,11 @@
                 6,
                 0
               ],
+              "max_damage": 47976,
+              "min_damage": 39980,
+              "shield_pierce": 135845,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 135845
+            }
           },
           "build_cost": {
             "materials": [
@@ -2813,14 +2807,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 13583,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 47975,
-            "damage_min": 39981,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 13583,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -2831,9 +2823,11 @@
                 2,
                 2
               ],
+              "max_damage": 47975,
+              "min_damage": 39981,
+              "shield_pierce": 135845,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 135845
+            }
           },
           "build_cost": {
             "materials": [
@@ -2889,14 +2883,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 13583,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 117275,
-            "damage_min": 106614,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 13583,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -2907,9 +2899,11 @@
                 2,
                 0
               ],
+              "max_damage": 117275,
+              "min_damage": 106614,
+              "shield_pierce": 135845,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 135845
+            }
           },
           "build_cost": {
             "materials": [
@@ -2966,7 +2960,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 210,
               "warp_speed": 4.1
             }
@@ -3023,9 +3016,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5628,
-              "health": 561229
+            "shield_info": {
+              "shield_deflection": 5628,
+              "shield_health": 561229
             }
           },
           "build_cost": {
@@ -3080,8 +3073,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 56284,
-            "hull_health": 1011771
+            "armor_info": {
+              "armor": 56284,
+              "hull_health": 1011771
+            }
           },
           "build_cost": {
             "materials": [
@@ -3135,11 +3130,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 5628,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 5628,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -3233,14 +3226,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 15009,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 53014,
-            "damage_min": 44178,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 15009,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -3251,9 +3242,11 @@
                 6,
                 0
               ],
+              "max_damage": 53014,
+              "min_damage": 44178,
+              "shield_pierce": 150109,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 150109
+            }
           },
           "build_cost": {
             "materials": [
@@ -3309,14 +3302,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 15009,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 53012,
-            "damage_min": 44179,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 15009,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -3327,9 +3318,11 @@
                 2,
                 2
               ],
+              "max_damage": 53012,
+              "min_damage": 44179,
+              "shield_pierce": 150109,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 150109
+            }
           },
           "build_cost": {
             "materials": [
@@ -3385,14 +3378,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 15009,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 129589,
-            "damage_min": 117808,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 15009,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -3403,9 +3394,11 @@
                 2,
                 0
               ],
+              "max_damage": 129589,
+              "min_damage": 117808,
+              "shield_pierce": 150109,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 150109
+            }
           },
           "build_cost": {
             "materials": [
@@ -3462,7 +3455,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 215,
               "warp_speed": 4.2
             }
@@ -3519,9 +3511,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 6219,
-              "health": 620158
+            "shield_info": {
+              "shield_deflection": 6219,
+              "shield_health": 620158
             }
           },
           "build_cost": {
@@ -3576,8 +3568,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 62194,
-            "hull_health": 1118007
+            "armor_info": {
+              "armor": 62194,
+              "hull_health": 1118007
+            }
           },
           "build_cost": {
             "materials": [
@@ -3631,11 +3625,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 6219,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 6219,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -3729,14 +3721,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 16360,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 57785,
-            "damage_min": 48154,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 16360,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -3747,9 +3737,11 @@
                 6,
                 0
               ],
+              "max_damage": 57785,
+              "min_damage": 48154,
+              "shield_pierce": 163619,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 163619
+            }
           },
           "build_cost": {
             "materials": [
@@ -3805,14 +3797,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 16360,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 57783,
-            "damage_min": 48155,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 16360,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -3823,9 +3813,11 @@
                 2,
                 2
               ],
+              "max_damage": 57783,
+              "min_damage": 48155,
+              "shield_pierce": 163619,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 163619
+            }
           },
           "build_cost": {
             "materials": [
@@ -3881,14 +3873,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 16360,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 141252,
-            "damage_min": 128411,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 16360,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -3899,9 +3889,11 @@
                 2,
                 0
               ],
+              "max_damage": 141252,
+              "min_damage": 128411,
+              "shield_pierce": 163619,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 163619
+            }
           },
           "build_cost": {
             "materials": [
@@ -3958,7 +3950,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 220,
               "warp_speed": 4.3
             }
@@ -4015,9 +4006,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 6779,
-              "health": 675972
+            "shield_info": {
+              "shield_deflection": 6779,
+              "shield_health": 675972
             }
           },
           "build_cost": {
@@ -4072,8 +4063,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 67791,
-            "hull_health": 1218627
+            "armor_info": {
+              "armor": 67791,
+              "hull_health": 1218627
+            }
           },
           "build_cost": {
             "materials": [
@@ -4127,11 +4120,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 6779,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 6779,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -4225,14 +4216,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 17587,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 62120,
-            "damage_min": 51765,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 17587,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -4243,9 +4232,11 @@
                 6,
                 0
               ],
+              "max_damage": 62120,
+              "min_damage": 51765,
+              "shield_pierce": 175890,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 175890
+            }
           },
           "build_cost": {
             "materials": [
@@ -4301,14 +4292,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 17587,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 62117,
-            "damage_min": 51767,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 17587,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -4319,9 +4308,11 @@
                 2,
                 2
               ],
+              "max_damage": 62117,
+              "min_damage": 51767,
+              "shield_pierce": 175890,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 175890
+            }
           },
           "build_cost": {
             "materials": [
@@ -4377,14 +4368,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 17587,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 151846,
-            "damage_min": 138042,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 17587,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -4395,9 +4384,11 @@
                 2,
                 0
               ],
+              "max_damage": 151846,
+              "min_damage": 138042,
+              "shield_pierce": 175890,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 175890
+            }
           },
           "build_cost": {
             "materials": [
@@ -4454,7 +4445,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 225,
               "warp_speed": 4.4
             }
@@ -4511,9 +4501,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 7287,
-              "health": 726670
+            "shield_info": {
+              "shield_deflection": 7287,
+              "shield_health": 726670
             }
           },
           "build_cost": {
@@ -4568,8 +4558,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 72875,
-            "hull_health": 1310024
+            "armor_info": {
+              "armor": 72875,
+              "hull_health": 1310024
+            }
           },
           "build_cost": {
             "materials": [
@@ -4623,11 +4615,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 7287,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 7287,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -4721,14 +4711,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 18642,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 65844,
-            "damage_min": 54873,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 18642,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -4739,9 +4727,11 @@
                 2,
                 2
               ],
+              "max_damage": 65844,
+              "min_damage": 54873,
+              "shield_pierce": 186443,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 186443
+            }
           },
           "build_cost": {
             "materials": [
@@ -4797,14 +4787,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 18642,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 65847,
-            "damage_min": 54871,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 18642,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -4815,9 +4803,11 @@
                 6,
                 0
               ],
+              "max_damage": 65847,
+              "min_damage": 54871,
+              "shield_pierce": 186443,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 186443
+            }
           },
           "build_cost": {
             "materials": [
@@ -4873,14 +4863,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 18642,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 160957,
-            "damage_min": 146325,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 18642,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -4891,9 +4879,11 @@
                 2,
                 0
               ],
+              "max_damage": 160957,
+              "min_damage": 146325,
+              "shield_pierce": 186443,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 186443
+            }
           },
           "build_cost": {
             "materials": [
@@ -4950,7 +4940,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 230,
               "warp_speed": 4.5
             }
@@ -5007,9 +4996,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 7724,
-              "health": 770270
+            "shield_info": {
+              "shield_deflection": 7724,
+              "shield_health": 770270
             }
           },
           "build_cost": {
@@ -5064,8 +5053,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 77248,
-            "hull_health": 1388626
+            "armor_info": {
+              "armor": 77248,
+              "hull_health": 1388626
+            }
           },
           "build_cost": {
             "materials": [
@@ -5119,11 +5110,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 7724,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 7724,
+              "impulse_speed": 72
             }
           },
           "build_cost": {
@@ -5217,14 +5206,12 @@
         {
           "name": "Type-5 Disruptor Cannon",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 19667,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 69469,
-            "damage_min": 57889,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 19667,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 6,
                 0,
@@ -5235,9 +5222,11 @@
                 6,
                 0
               ],
+              "max_damage": 69469,
+              "min_damage": 57889,
+              "shield_pierce": 196697,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 196697
+            }
           },
           "build_cost": {
             "materials": [
@@ -5293,14 +5282,12 @@
         {
           "name": "Heavy Phaser Cannon",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 19667,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 69465,
-            "damage_min": 57891,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 19667,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -5311,9 +5298,11 @@
                 2,
                 2
               ],
+              "max_damage": 69465,
+              "min_damage": 57891,
+              "shield_pierce": 196697,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 196697
+            }
           },
           "build_cost": {
             "materials": [
@@ -5369,14 +5358,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 19667,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 169810,
-            "damage_min": 154373,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 19667,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 2,
                 0,
@@ -5387,9 +5374,11 @@
                 2,
                 0
               ],
+              "max_damage": 169810,
+              "min_damage": 154373,
+              "shield_pierce": 196697,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 196697
+            }
           },
           "build_cost": {
             "materials": [
@@ -5446,7 +5435,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 235,
               "warp_speed": 4.6
             }
@@ -5503,9 +5491,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 8149,
-              "health": 812635
+            "shield_info": {
+              "shield_deflection": 8149,
+              "shield_health": 812635
             }
           },
           "build_cost": {
@@ -5560,8 +5548,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 81497,
-            "hull_health": 1465000
+            "armor_info": {
+              "armor": 81497,
+              "hull_health": 1465000
+            }
           },
           "build_cost": {
             "materials": [
@@ -5615,11 +5605,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 8149,
-            "warp_info": {
-              "impulse_speed": 72,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 8149,
+              "impulse_speed": 72
             }
           },
           "build_cost": {

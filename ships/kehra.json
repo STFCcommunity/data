@@ -4,56 +4,6 @@
     "cost": 0,
     "quantity": 40
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "common",
-        "value": 1000
-      },
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "uncommon",
-        "value": 300
-      },
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "rare",
-        "value": 17
-      },
-      {
-        "type": "gas",
-        "grade": 3,
-        "rarity": "uncommon",
-        "value": 115
-      },
-      {
-        "type": "gas",
-        "grade": 3,
-        "rarity": "rare",
-        "value": 3
-      }
-    ],
-    "others": [
-      {
-        "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-        "value": 1885
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 14400000
-      },
-      {
-        "type": "dilithium",
-        "value": 516000
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 3,
   "img_url": "./assets/kehra.png",
@@ -70,7 +20,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 26,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Armor Breaker",
@@ -86,14 +36,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 98,
-            "armor_pierce": 589,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 570,
-            "damage_min": 467,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 98,
+              "armor_pierce": 589,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -104,9 +52,11 @@
                 1,
                 1
               ],
+              "max_damage": 570,
+              "min_damage": 467,
+              "shield_pierce": 98,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 98
+            }
           },
           "build_cost": {
             "materials": [],
@@ -120,14 +70,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 98,
-            "armor_pierce": 589,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1369,
-            "damage_min": 1120,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 98,
+              "armor_pierce": 589,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -138,9 +86,11 @@
                 0,
                 1
               ],
+              "max_damage": 1369,
+              "min_damage": 1120,
+              "shield_pierce": 98,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 98
+            }
           },
           "build_cost": {
             "materials": [],
@@ -155,10 +105,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 8000,
               "increased_cargo": 9430,
               "increased_protected_cargo": 210,
-              "protected_cargo": 200
+              "ship_increased_cargo": 8000,
+              "ship_increased_protected_cargo": 200
             }
           },
           "build_cost": {
@@ -174,7 +124,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 17,
               "warp_speed": 2
             }
@@ -191,11 +140,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 364,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 364,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -208,6 +155,56 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1000
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 300
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 17
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 115
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 3
+          }
+        ],
+        "others": [
+          {
+            "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+            "value": 1885
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 14400000
+          },
+          {
+            "type": "dilithium",
+            "value": 516000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.1,
@@ -222,10 +219,6 @@
               {
                 "type": "dilithium",
                 "value": 2000
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 183240
@@ -334,14 +327,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 128,
-            "armor_pierce": 766,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 741,
-            "damage_min": 607,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 128,
+              "armor_pierce": 766,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -352,9 +343,11 @@
                 1,
                 1
               ],
+              "max_damage": 741,
+              "min_damage": 607,
+              "shield_pierce": 128,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 128
+            }
           },
           "build_cost": {
             "materials": [
@@ -404,14 +397,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 128,
-            "armor_pierce": 766,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1779,
-            "damage_min": 1456,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 128,
+              "armor_pierce": 766,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -422,9 +413,11 @@
                 0,
                 1
               ],
+              "max_damage": 1779,
+              "min_damage": 1456,
+              "shield_pierce": 128,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 128
+            }
           },
           "build_cost": {
             "materials": [
@@ -475,10 +468,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 11430,
               "increased_cargo": 13280,
               "increased_protected_cargo": 295,
-              "protected_cargo": 285
+              "ship_increased_cargo": 11430,
+              "ship_increased_protected_cargo": 285
             }
           },
           "build_cost": {
@@ -516,7 +509,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 2.1
             }
@@ -555,11 +547,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 473,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 473,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -810,14 +800,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 166,
-            "armor_pierce": 995,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 964,
-            "damage_min": 789,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 166,
+              "armor_pierce": 995,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -828,9 +816,11 @@
                 1,
                 1
               ],
+              "max_damage": 964,
+              "min_damage": 789,
+              "shield_pierce": 166,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 166
+            }
           },
           "build_cost": {
             "materials": [
@@ -880,14 +870,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 166,
-            "armor_pierce": 995,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 2313,
-            "damage_min": 1892,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 166,
+              "armor_pierce": 995,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -898,9 +886,11 @@
                 0,
                 1
               ],
+              "max_damage": 2313,
+              "min_damage": 1892,
+              "shield_pierce": 166,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 166
+            }
           },
           "build_cost": {
             "materials": [
@@ -951,10 +941,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 15280,
               "increased_cargo": 17690,
               "increased_protected_cargo": 380,
-              "protected_cargo": 370
+              "ship_increased_cargo": 15280,
+              "ship_increased_protected_cargo": 370
             }
           },
           "build_cost": {
@@ -992,7 +982,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 19,
               "warp_speed": 2.2
             }
@@ -1031,11 +1020,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 615,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 615,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -1346,14 +1333,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 216,
-            "armor_pierce": 1294,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1253,
-            "damage_min": 1025,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 216,
+              "armor_pierce": 1294,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1364,9 +1349,11 @@
                 1,
                 1
               ],
+              "max_damage": 1253,
+              "min_damage": 1025,
+              "shield_pierce": 216,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 216
+            }
           },
           "build_cost": {
             "materials": [
@@ -1416,14 +1403,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 216,
-            "armor_pierce": 1294,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 3007,
-            "damage_min": 2460,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 216,
+              "armor_pierce": 1294,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1434,9 +1419,11 @@
                 0,
                 1
               ],
+              "max_damage": 3007,
+              "min_damage": 2460,
+              "shield_pierce": 216,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 216
+            }
           },
           "build_cost": {
             "materials": [
@@ -1487,10 +1474,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 19690,
               "increased_cargo": 22820,
               "increased_protected_cargo": 475,
-              "protected_cargo": 455
+              "ship_increased_cargo": 19690,
+              "ship_increased_protected_cargo": 455
             }
           },
           "build_cost": {
@@ -1528,7 +1515,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 20,
               "warp_speed": 2.3
             }
@@ -1567,11 +1553,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 799,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 799,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -1882,14 +1866,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 284,
-            "armor_pierce": 1708,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1653,
-            "damage_min": 1353,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 284,
+              "armor_pierce": 1708,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1900,9 +1882,11 @@
                 1,
                 1
               ],
+              "max_damage": 1653,
+              "min_damage": 1353,
+              "shield_pierce": 284,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 284
+            }
           },
           "build_cost": {
             "materials": [
@@ -1952,14 +1936,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 284,
-            "armor_pierce": 1708,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 3968,
-            "damage_min": 3246,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 284,
+              "armor_pierce": 1708,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1970,9 +1952,11 @@
                 0,
                 1
               ],
+              "max_damage": 3968,
+              "min_damage": 3246,
+              "shield_pierce": 284,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 284
+            }
           },
           "build_cost": {
             "materials": [
@@ -2023,10 +2007,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 24820,
               "increased_cargo": 28890,
               "increased_protected_cargo": 580,
-              "protected_cargo": 550
+              "ship_increased_cargo": 24820,
+              "ship_increased_protected_cargo": 550
             }
           },
           "build_cost": {
@@ -2064,7 +2048,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 21,
               "warp_speed": 2.4
             }
@@ -2103,11 +2086,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1055,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1055,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -2418,14 +2399,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 414,
-            "armor_pierce": 2483,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 2404,
-            "damage_min": 1967,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 414,
+              "armor_pierce": 2483,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2436,9 +2415,11 @@
                 1,
                 1
               ],
+              "max_damage": 2404,
+              "min_damage": 1967,
+              "shield_pierce": 414,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 414
+            }
           },
           "build_cost": {
             "materials": [
@@ -2488,14 +2469,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 414,
-            "armor_pierce": 2483,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 5770,
-            "damage_min": 4721,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 414,
+              "armor_pierce": 2483,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -2506,9 +2485,11 @@
                 0,
                 1
               ],
+              "max_damage": 5770,
+              "min_damage": 4721,
+              "shield_pierce": 414,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 414
+            }
           },
           "build_cost": {
             "materials": [
@@ -2559,10 +2540,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 30890,
               "increased_cargo": 36180,
               "increased_protected_cargo": 685,
-              "protected_cargo": 655
+              "ship_increased_cargo": 30890,
+              "ship_increased_protected_cargo": 655
             }
           },
           "build_cost": {
@@ -2600,7 +2581,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 22,
               "warp_speed": 2.5
             }
@@ -2639,11 +2619,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1534,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1534,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -3014,14 +2992,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 645,
-            "armor_pierce": 3872,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 3749,
-            "damage_min": 3067,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 645,
+              "armor_pierce": 3872,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3032,9 +3008,11 @@
                 1,
                 1
               ],
+              "max_damage": 3749,
+              "min_damage": 3067,
+              "shield_pierce": 645,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 645
+            }
           },
           "build_cost": {
             "materials": [
@@ -3084,14 +3062,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 645,
-            "armor_pierce": 3872,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 8996,
-            "damage_min": 7361,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 645,
+              "armor_pierce": 3872,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -3102,9 +3078,11 @@
                 0,
                 1
               ],
+              "max_damage": 8996,
+              "min_damage": 7361,
+              "shield_pierce": 645,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 645
+            }
           },
           "build_cost": {
             "materials": [
@@ -3155,10 +3133,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 38180,
               "increased_cargo": 45060,
               "increased_protected_cargo": 800,
-              "protected_cargo": 760
+              "ship_increased_cargo": 38180,
+              "ship_increased_protected_cargo": 760
             }
           },
           "build_cost": {
@@ -3196,7 +3174,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 23,
               "warp_speed": 2.6
             }
@@ -3235,11 +3212,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2391,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2391,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -3610,14 +3585,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 822,
-            "armor_pierce": 4932,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 4775,
-            "damage_min": 3907,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 822,
+              "armor_pierce": 4932,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3628,9 +3601,11 @@
                 1,
                 1
               ],
+              "max_damage": 4775,
+              "min_damage": 3907,
+              "shield_pierce": 822,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 822
+            }
           },
           "build_cost": {
             "materials": [
@@ -3680,14 +3655,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 822,
-            "armor_pierce": 4932,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11459,
-            "damage_min": 9376,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 822,
+              "armor_pierce": 4932,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -3698,9 +3671,11 @@
                 0,
                 1
               ],
+              "max_damage": 11459,
+              "min_damage": 9376,
+              "shield_pierce": 822,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 822
+            }
           },
           "build_cost": {
             "materials": [
@@ -3751,10 +3726,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 47060,
               "increased_cargo": 56000,
               "increased_protected_cargo": 925,
-              "protected_cargo": 875
+              "ship_increased_cargo": 47060,
+              "ship_increased_protected_cargo": 875
             }
           },
           "build_cost": {
@@ -3792,7 +3767,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 24,
               "warp_speed": 2.7
             }
@@ -3831,11 +3805,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3046,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3046,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -4207,7 +4179,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 26,
               "warp_speed": 2.8
             }
@@ -4246,14 +4217,12 @@
         {
           "name": "Phaser Bank",
           "additional_info": {
-            "accuracy": 961,
-            "armor_pierce": 5766,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 5582,
-            "damage_min": 4567,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 961,
+              "armor_pierce": 5766,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -4264,9 +4233,11 @@
                 1,
                 1
               ],
+              "max_damage": 5582,
+              "min_damage": 4567,
+              "shield_pierce": 961,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 961
+            }
           },
           "build_cost": {
             "materials": [
@@ -4316,14 +4287,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 961,
-            "armor_pierce": 5766,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13397,
-            "damage_min": 10961,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 961,
+              "armor_pierce": 5766,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -4334,9 +4303,11 @@
                 0,
                 1
               ],
+              "max_damage": 13397,
+              "min_damage": 10961,
+              "shield_pierce": 961,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 961
+            }
           },
           "build_cost": {
             "materials": [
@@ -4387,10 +4358,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 58000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 1000
+              "ship_increased_cargo": 58000,
+              "ship_increased_protected_cargo": 1000
             }
           },
           "build_cost": {
@@ -4427,11 +4398,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3561,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3561,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
