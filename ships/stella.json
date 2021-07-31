@@ -4,20 +4,6 @@
     "cost": 100,
     "quantity": 100
   },
-  "build_costs": {
-    "materials": [],
-    "others": [
-      {
-        "type": "Rare\u00a0Uranium",
-        "value": 14992
-      },
-      {
-        "type": "Uncommon\u00a0Uranium",
-        "value": 74000
-      }
-    ],
-    "resources": []
-  },
   "faction": "rogue",
   "grade": 3,
   "img_url": "./assets/stella.png",
@@ -34,7 +20,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 27,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Master Thief",
@@ -50,14 +36,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 378,
-            "armor_pierce": 378,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 6618,
-            "damage_min": 4412,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 378,
+              "armor_pierce": 378,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -68,9 +52,11 @@
                 1,
                 1
               ],
+              "max_damage": 6618,
+              "min_damage": 4412,
+              "shield_pierce": 2645,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2645
+            }
           },
           "build_cost": {
             "materials": [],
@@ -84,14 +70,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 378,
-            "armor_pierce": 378,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7434,
-            "damage_min": 4956,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 378,
+              "armor_pierce": 378,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -102,9 +86,11 @@
                 0,
                 2
               ],
+              "max_damage": 7434,
+              "min_damage": 4956,
+              "shield_pierce": 2645,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2645
+            }
           },
           "build_cost": {
             "materials": [],
@@ -118,8 +104,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 1423,
-            "hull_health": 9867
+            "armor_info": {
+              "armor": 1423,
+              "hull_health": 9867
+            }
           },
           "build_cost": {
             "materials": [],
@@ -133,11 +121,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 279,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 279,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -152,9 +138,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 279,
-              "health": 6487
+            "shield_info": {
+              "shield_deflection": 279,
+              "shield_health": 6487
             }
           },
           "build_cost": {
@@ -167,6 +153,20 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [],
+        "others": [
+          {
+            "type": "Rare\u00a0Uranium",
+            "value": 14992
+          },
+          {
+            "type": "Uncommon\u00a0Uranium",
+            "value": 74000
+          }
+        ],
+        "resources": []
+      },
       "levels": [
         {
           "ability_bonus": 2,
@@ -181,6 +181,14 @@
               {
                 "type": "dilithium",
                 "value": 1400
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 5
               }
             ],
             "scrap_time": 86400
@@ -200,6 +208,14 @@
               {
                 "type": "dilithium",
                 "value": 1500
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 130
               }
             ],
             "scrap_time": 88200
@@ -219,6 +235,14 @@
               {
                 "type": "dilithium",
                 "value": 1605
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 135
               }
             ],
             "scrap_time": 90000
@@ -238,6 +262,14 @@
               {
                 "type": "dilithium",
                 "value": 1715
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 155
               }
             ],
             "scrap_time": 91860
@@ -257,6 +289,14 @@
               {
                 "type": "dilithium",
                 "value": 1840
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 180
               }
             ],
             "scrap_time": 93720
@@ -273,14 +313,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 441,
-            "armor_pierce": 441,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 6850,
-            "damage_min": 4566,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 441,
+              "armor_pierce": 441,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -291,9 +329,11 @@
                 1,
                 1
               ],
+              "max_damage": 6850,
+              "min_damage": 4566,
+              "shield_pierce": 2770,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2770
+            }
           },
           "build_cost": {
             "materials": [],
@@ -321,14 +361,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 441,
-            "armor_pierce": 441,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7654,
-            "damage_min": 5102,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 441,
+              "armor_pierce": 441,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -339,9 +377,11 @@
                 0,
                 2
               ],
+              "max_damage": 7654,
+              "min_damage": 5102,
+              "shield_pierce": 2770,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2770
+            }
           },
           "build_cost": {
             "materials": [],
@@ -369,8 +409,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 1548,
-            "hull_health": 10603
+            "armor_info": {
+              "armor": 1548,
+              "hull_health": 10603
+            }
           },
           "build_cost": {
             "materials": [],
@@ -394,11 +436,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 317,
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 317,
+              "impulse_speed": 90
             }
           },
           "build_cost": {
@@ -423,9 +463,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 317,
-              "health": 6987
+            "shield_info": {
+              "shield_deflection": 317,
+              "shield_health": 6987
             }
           },
           "build_cost": {
@@ -462,6 +502,14 @@
               {
                 "type": "dilithium",
                 "value": 1970
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 225
               }
             ],
             "scrap_time": 95700
@@ -481,6 +529,14 @@
               {
                 "type": "dilithium",
                 "value": 2105
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 235
               }
             ],
             "scrap_time": 97620
@@ -500,6 +556,14 @@
               {
                 "type": "dilithium",
                 "value": 2255
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 250
               }
             ],
             "scrap_time": 99660
@@ -519,6 +583,14 @@
               {
                 "type": "dilithium",
                 "value": 2415
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 275
               }
             ],
             "scrap_time": 101700
@@ -538,6 +610,14 @@
               {
                 "type": "dilithium",
                 "value": 2585
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 310
               }
             ],
             "scrap_time": 103800
@@ -554,14 +634,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 504,
-            "armor_pierce": 504,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7082,
-            "damage_min": 4720,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 504,
+              "armor_pierce": 504,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -572,9 +650,11 @@
                 1,
                 1
               ],
+              "max_damage": 7082,
+              "min_damage": 4720,
+              "shield_pierce": 2895,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2895
+            }
           },
           "build_cost": {
             "materials": [],
@@ -602,14 +682,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 504,
-            "armor_pierce": 504,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7874,
-            "damage_min": 5248,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 504,
+              "armor_pierce": 504,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -620,9 +698,11 @@
                 0,
                 2
               ],
+              "max_damage": 7874,
+              "min_damage": 5248,
+              "shield_pierce": 2895,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 2895
+            }
           },
           "build_cost": {
             "materials": [],
@@ -650,8 +730,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 1673,
-            "hull_health": 11339
+            "armor_info": {
+              "armor": 1673,
+              "hull_health": 11339
+            }
           },
           "build_cost": {
             "materials": [],
@@ -675,11 +757,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 355,
-            "warp_info": {
-              "impulse_speed": 95,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 355,
+              "impulse_speed": 95
             }
           },
           "build_cost": {
@@ -704,9 +784,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 355,
-              "health": 7487
+            "shield_info": {
+              "shield_deflection": 355,
+              "shield_health": 7487
             }
           },
           "build_cost": {
@@ -743,6 +823,14 @@
               {
                 "type": "dilithium",
                 "value": 2765
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 535
               }
             ],
             "scrap_time": 105960
@@ -762,6 +850,14 @@
               {
                 "type": "dilithium",
                 "value": 2960
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 560
               }
             ],
             "scrap_time": 108120
@@ -781,6 +877,14 @@
               {
                 "type": "dilithium",
                 "value": 3170
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 600
               }
             ],
             "scrap_time": 110340
@@ -800,6 +904,14 @@
               {
                 "type": "dilithium",
                 "value": 3395
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 650
               }
             ],
             "scrap_time": 112620
@@ -819,6 +931,14 @@
               {
                 "type": "dilithium",
                 "value": 3630
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 780
               }
             ],
             "scrap_time": 114960
@@ -835,14 +955,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 567,
-            "armor_pierce": 567,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7314,
-            "damage_min": 4874,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 567,
+              "armor_pierce": 567,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -853,9 +971,11 @@
                 1,
                 1
               ],
+              "max_damage": 7314,
+              "min_damage": 4874,
+              "shield_pierce": 3020,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3020
+            }
           },
           "build_cost": {
             "materials": [],
@@ -883,14 +1003,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 567,
-            "armor_pierce": 567,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8094,
-            "damage_min": 5394,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 567,
+              "armor_pierce": 567,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -901,9 +1019,11 @@
                 0,
                 2
               ],
+              "max_damage": 8094,
+              "min_damage": 5394,
+              "shield_pierce": 3020,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3020
+            }
           },
           "build_cost": {
             "materials": [],
@@ -931,8 +1051,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 1798,
-            "hull_health": 12075
+            "armor_info": {
+              "armor": 1798,
+              "hull_health": 12075
+            }
           },
           "build_cost": {
             "materials": [],
@@ -956,11 +1078,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 393,
-            "warp_info": {
-              "impulse_speed": 100,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 393,
+              "impulse_speed": 100
             }
           },
           "build_cost": {
@@ -985,9 +1105,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 393,
-              "health": 7987
+            "shield_info": {
+              "shield_deflection": 393,
+              "shield_health": 7987
             }
           },
           "build_cost": {
@@ -1024,6 +1144,14 @@
               {
                 "type": "dilithium",
                 "value": 3885
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 1050
               }
             ],
             "scrap_time": 117300
@@ -1043,6 +1171,14 @@
               {
                 "type": "dilithium",
                 "value": 4160
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 1100
               }
             ],
             "scrap_time": 119700
@@ -1062,6 +1198,14 @@
               {
                 "type": "dilithium",
                 "value": 4455
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 1185
               }
             ],
             "scrap_time": 122160
@@ -1081,6 +1225,14 @@
               {
                 "type": "dilithium",
                 "value": 4770
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 1285
               }
             ],
             "scrap_time": 124680
@@ -1100,6 +1252,14 @@
               {
                 "type": "dilithium",
                 "value": 5105
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 1520
               }
             ],
             "scrap_time": 127260
@@ -1116,14 +1276,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 630,
-            "armor_pierce": 630,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7546,
-            "damage_min": 5028,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 630,
+              "armor_pierce": 630,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1134,9 +1292,11 @@
                 1,
                 1
               ],
+              "max_damage": 7546,
+              "min_damage": 5028,
+              "shield_pierce": 3145,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3145
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1168,14 +1328,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 630,
-            "armor_pierce": 630,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8314,
-            "damage_min": 5540,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 630,
+              "armor_pierce": 630,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -1186,9 +1344,11 @@
                 0,
                 2
               ],
+              "max_damage": 8314,
+              "min_damage": 5540,
+              "shield_pierce": 3145,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3145
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1220,8 +1380,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 1923,
-            "hull_health": 12811
+            "armor_info": {
+              "armor": 1923,
+              "hull_health": 12811
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1249,11 +1411,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 431,
-            "warp_info": {
-              "impulse_speed": 105,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 431,
+              "impulse_speed": 105
             }
           },
           "build_cost": {
@@ -1278,9 +1438,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 431,
-              "health": 8487
+            "shield_info": {
+              "shield_deflection": 431,
+              "shield_health": 8487
             }
           },
           "build_cost": {
@@ -1317,6 +1477,14 @@
               {
                 "type": "dilithium",
                 "value": 5465
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 3120
               }
             ],
             "scrap_time": 129900
@@ -1336,6 +1504,14 @@
               {
                 "type": "dilithium",
                 "value": 5850
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 4295
               }
             ],
             "scrap_time": 132540
@@ -1355,6 +1531,14 @@
               {
                 "type": "dilithium",
                 "value": 6260
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 5905
               }
             ],
             "scrap_time": 135300
@@ -1374,6 +1558,14 @@
               {
                 "type": "dilithium",
                 "value": 6700
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 8125
               }
             ],
             "scrap_time": 138060
@@ -1393,6 +1585,14 @@
               {
                 "type": "dilithium",
                 "value": 7175
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 11180
               }
             ],
             "scrap_time": 140940
@@ -1409,14 +1609,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 693,
-            "armor_pierce": 693,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 7778,
-            "damage_min": 5182,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 693,
+              "armor_pierce": 693,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1427,9 +1625,11 @@
                 1,
                 1
               ],
+              "max_damage": 7778,
+              "min_damage": 5182,
+              "shield_pierce": 3270,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3270
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1461,14 +1661,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 693,
-            "armor_pierce": 693,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8534,
-            "damage_min": 5686,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 693,
+              "armor_pierce": 693,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -1479,9 +1677,11 @@
                 0,
                 2
               ],
+              "max_damage": 8534,
+              "min_damage": 5686,
+              "shield_pierce": 3270,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3270
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1513,8 +1713,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 2048,
-            "hull_health": 13547
+            "armor_info": {
+              "armor": 2048,
+              "hull_health": 13547
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1542,11 +1744,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 469,
-            "warp_info": {
-              "impulse_speed": 110,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 469,
+              "impulse_speed": 110
             }
           },
           "build_cost": {
@@ -1571,9 +1771,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 469,
-              "health": 8987
+            "shield_info": {
+              "shield_deflection": 469,
+              "shield_health": 8987
             }
           },
           "build_cost": {
@@ -1610,6 +1810,14 @@
               {
                 "type": "dilithium",
                 "value": 7680
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 24700
               }
             ],
             "scrap_time": 143820
@@ -1629,6 +1837,14 @@
               {
                 "type": "dilithium",
                 "value": 8220
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 27380
               }
             ],
             "scrap_time": 146820
@@ -1648,6 +1864,14 @@
               {
                 "type": "dilithium",
                 "value": 8800
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 33150
               }
             ],
             "scrap_time": 149820
@@ -1667,6 +1891,14 @@
               {
                 "type": "dilithium",
                 "value": 9420
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 40145
               }
             ],
             "scrap_time": 152880
@@ -1686,6 +1918,14 @@
               {
                 "type": "dilithium",
                 "value": 10085
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 48620
               }
             ],
             "scrap_time": 156060
@@ -1702,14 +1942,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 756,
-            "armor_pierce": 756,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8010,
-            "damage_min": 5336,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 756,
+              "armor_pierce": 756,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1720,9 +1958,11 @@
                 1,
                 1
               ],
+              "max_damage": 8010,
+              "min_damage": 5336,
+              "shield_pierce": 3395,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3395
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1754,14 +1994,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 756,
-            "armor_pierce": 756,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8754,
-            "damage_min": 5832,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 756,
+              "armor_pierce": 756,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -1772,9 +2010,11 @@
                 0,
                 2
               ],
+              "max_damage": 8754,
+              "min_damage": 5832,
+              "shield_pierce": 3395,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3395
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1806,8 +2046,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 2173,
-            "hull_health": 14283
+            "armor_info": {
+              "armor": 2173,
+              "hull_health": 14283
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1835,11 +2077,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 507,
-            "warp_info": {
-              "impulse_speed": 115,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 507,
+              "impulse_speed": 115
             }
           },
           "build_cost": {
@@ -1864,9 +2104,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 507,
-              "health": 9487
+            "shield_info": {
+              "shield_deflection": 507,
+              "shield_health": 9487
             }
           },
           "build_cost": {
@@ -1903,6 +2143,14 @@
               {
                 "type": "dilithium",
                 "value": 10795
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 83655
               }
             ],
             "scrap_time": 159240
@@ -1922,6 +2170,14 @@
               {
                 "type": "dilithium",
                 "value": 11555
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 89695
               }
             ],
             "scrap_time": 162540
@@ -1941,6 +2197,14 @@
               {
                 "type": "dilithium",
                 "value": 12370
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 101315
               }
             ],
             "scrap_time": 165900
@@ -1960,6 +2224,14 @@
               {
                 "type": "dilithium",
                 "value": 13240
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 114455
               }
             ],
             "scrap_time": 169320
@@ -1979,6 +2251,14 @@
               {
                 "type": "dilithium",
                 "value": 14175
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 131400
               }
             ],
             "scrap_time": 172800
@@ -1995,14 +2275,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 819,
-            "armor_pierce": 819,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8242,
-            "damage_min": 5490,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 819,
+              "armor_pierce": 819,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2013,9 +2291,11 @@
                 1,
                 1
               ],
+              "max_damage": 8242,
+              "min_damage": 5490,
+              "shield_pierce": 3520,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3520
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2043,14 +2323,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 819,
-            "armor_pierce": 819,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8974,
-            "damage_min": 5978,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 819,
+              "armor_pierce": 819,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -2061,9 +2339,11 @@
                 0,
                 2
               ],
+              "max_damage": 8974,
+              "min_damage": 5978,
+              "shield_pierce": 3520,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3520
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2091,8 +2371,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 2298,
-            "hull_health": 15019
+            "armor_info": {
+              "armor": 2298,
+              "hull_health": 15019
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2116,11 +2398,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 545,
-            "warp_info": {
-              "impulse_speed": 120,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 545,
+              "impulse_speed": 120
             }
           },
           "build_cost": {
@@ -2145,9 +2425,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 545,
-              "health": 9987
+            "shield_info": {
+              "shield_deflection": 545,
+              "shield_health": 9987
             }
           },
           "build_cost": {
@@ -2184,6 +2464,14 @@
               {
                 "type": "dilithium",
                 "value": 15170
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 137500
               }
             ],
             "scrap_time": 161220
@@ -2203,6 +2491,14 @@
               {
                 "type": "dilithium",
                 "value": 16240
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 143910
               }
             ],
             "scrap_time": 150420
@@ -2222,6 +2518,14 @@
               {
                 "type": "dilithium",
                 "value": 17385
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 150625
               }
             ],
             "scrap_time": 140340
@@ -2241,6 +2545,14 @@
               {
                 "type": "dilithium",
                 "value": 18610
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 157650
               }
             ],
             "scrap_time": 130980
@@ -2260,6 +2572,14 @@
               {
                 "type": "dilithium",
                 "value": 19920
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 165000
               }
             ],
             "scrap_time": 122160
@@ -2276,14 +2596,12 @@
         {
           "name": "Pulsed Phaser",
           "additional_info": {
-            "accuracy": 878,
-            "armor_pierce": 878,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 8460,
-            "damage_min": 5640,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 878,
+              "armor_pierce": 878,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2294,9 +2612,11 @@
                 1,
                 1
               ],
+              "max_damage": 8460,
+              "min_damage": 5640,
+              "shield_pierce": 3645,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3645
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2324,14 +2644,12 @@
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
-            "accuracy": 878,
-            "armor_pierce": 878,
-            "crit_chance": 0.05,
-            "crit_modifier": 1.15,
-            "damage_max": 9180,
-            "damage_min": 6120,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 878,
+              "armor_pierce": 878,
+              "crit_chance": 0.05,
+              "crit_damage": 1.15,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -2342,9 +2660,11 @@
                 0,
                 2
               ],
+              "max_damage": 9180,
+              "min_damage": 6120,
+              "shield_pierce": 3645,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3645
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2372,8 +2692,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 2423,
-            "hull_health": 15750
+            "armor_info": {
+              "armor": 2423,
+              "hull_health": 15750
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2397,11 +2719,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 579,
-            "warp_info": {
-              "impulse_speed": 125,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 579,
+              "impulse_speed": 125
             }
           },
           "build_cost": {
@@ -2426,9 +2746,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 579,
-              "health": 10487
+            "shield_info": {
+              "shield_deflection": 579,
+              "shield_health": 10487
             }
           },
           "build_cost": {
@@ -2465,6 +2785,14 @@
               {
                 "type": "dilithium",
                 "value": 21325
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 195195
               }
             ],
             "scrap_time": 114000
@@ -2484,6 +2812,14 @@
               {
                 "type": "dilithium",
                 "value": 22825
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 242790
               }
             ],
             "scrap_time": 106380
@@ -2503,6 +2839,14 @@
               {
                 "type": "dilithium",
                 "value": 24435
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 301990
               }
             ],
             "scrap_time": 99240
@@ -2522,6 +2866,14 @@
               {
                 "type": "dilithium",
                 "value": 26155
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 375630
               }
             ],
             "scrap_time": 92580
@@ -2541,6 +2893,14 @@
               {
                 "type": "dilithium",
                 "value": 28000
+              },
+              {
+                "type": "Stella\u00a0Hull\u00a0Scan",
+                "value": 1
+              },
+              {
+                "type": "Stella\u00a0Particle",
+                "value": 467220
               }
             ],
             "scrap_time": 86400

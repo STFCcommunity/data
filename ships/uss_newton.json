@@ -4,48 +4,6 @@
     "cost": 1450,
     "quantity": 350
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 4,
-        "rarity": "rare",
-        "value": 47420
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "uncommon",
-        "value": 221520
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "rare",
-        "value": 74845
-      }
-    ],
-    "others": [
-      {
-        "type": "4\u2605\u00a0Common\u00a0Battleship\u00a0Parts",
-        "value": 1910810
-      },
-      {
-        "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-        "value": 513650
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 405848200000
-      },
-      {
-        "type": "dilithium",
-        "value": 17656500000
-      }
-    ]
-  },
   "faction": "federation",
   "grade": 4,
   "img_url": "./assets/uss_newton.png",
@@ -61,7 +19,7 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Confiscate Evidence",
@@ -77,14 +35,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 7782,
-            "armor_pierce": 5986,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 31712,
-            "damage_min": 26427,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 7782,
+              "armor_pierce": 5986,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -95,9 +51,11 @@
                 0,
                 2
               ],
+              "max_damage": 31712,
+              "min_damage": 26427,
+              "shield_pierce": 59862,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 59862
+            }
           },
           "build_cost": {
             "materials": [],
@@ -111,14 +69,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 7782,
-            "armor_pierce": 5986,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 35529,
-            "damage_min": 29364,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 7782,
+              "armor_pierce": 5986,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -129,9 +85,11 @@
                 3,
                 0
               ],
+              "max_damage": 35529,
+              "min_damage": 29364,
+              "shield_pierce": 59862,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 59862
+            }
           },
           "build_cost": {
             "materials": [],
@@ -146,10 +104,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 60000,
               "increased_cargo": 64000,
               "increased_protected_cargo": 1100,
-              "protected_cargo": 1000
+              "ship_increased_cargo": 60000,
+              "ship_increased_protected_cargo": 1000
             }
           },
           "build_cost": {
@@ -165,7 +123,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 140,
               "warp_speed": 3.5
             }
@@ -182,9 +139,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3470,
-              "health": 355936
+            "shield_info": {
+              "shield_deflection": 3470,
+              "shield_health": 355936
             }
           },
           "build_cost": {
@@ -199,8 +156,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 26690,
-            "hull_health": 413959
+            "armor_info": {
+              "armor": 26690,
+              "hull_health": 413959
+            }
           },
           "build_cost": {
             "materials": [],
@@ -212,6 +171,48 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 47420
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 221520
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 74845
+          }
+        ],
+        "others": [
+          {
+            "type": "4\u2605\u00a0Common\u00a0Battleship\u00a0Parts",
+            "value": 1910810
+          },
+          {
+            "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
+            "value": 513650
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 405848200000
+          },
+          {
+            "type": "dilithium",
+            "value": 17656500000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.1,
@@ -253,14 +254,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 8288,
-            "armor_pierce": 6375,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 33773,
-            "damage_min": 28145,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8288,
+              "armor_pierce": 6375,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -271,9 +270,11 @@
                 0,
                 2
               ],
+              "max_damage": 33773,
+              "min_damage": 28145,
+              "shield_pierce": 63753,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 63753
+            }
           },
           "build_cost": {
             "materials": [
@@ -323,14 +324,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 8288,
-            "armor_pierce": 6375,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 37839,
-            "damage_min": 31271,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8288,
+              "armor_pierce": 6375,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -341,9 +340,11 @@
                 3,
                 0
               ],
+              "max_damage": 37839,
+              "min_damage": 31271,
+              "shield_pierce": 63753,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 63753
+            }
           },
           "build_cost": {
             "materials": [
@@ -394,10 +395,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 69000,
               "increased_cargo": 73000,
               "increased_protected_cargo": 1800,
-              "protected_cargo": 1600
+              "ship_increased_cargo": 69000,
+              "ship_increased_protected_cargo": 1600
             }
           },
           "build_cost": {
@@ -449,7 +450,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 150,
               "warp_speed": 3.6
             }
@@ -502,9 +502,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3696,
-              "health": 372116
+            "shield_info": {
+              "shield_deflection": 3696,
+              "shield_health": 372116
             }
           },
           "build_cost": {
@@ -555,8 +555,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 28425,
-            "hull_health": 440866
+            "armor_info": {
+              "armor": 28425,
+              "hull_health": 440866
+            }
           },
           "build_cost": {
             "materials": [
@@ -645,14 +647,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 8910,
-            "armor_pierce": 6853,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 36306,
-            "damage_min": 30256,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8910,
+              "armor_pierce": 6853,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -663,9 +663,11 @@
                 0,
                 2
               ],
+              "max_damage": 36306,
+              "min_damage": 30256,
+              "shield_pierce": 68534,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 68534
+            }
           },
           "build_cost": {
             "materials": [
@@ -721,14 +723,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 8910,
-            "armor_pierce": 6853,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 40676,
-            "damage_min": 33616,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8910,
+              "armor_pierce": 6853,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -739,9 +739,11 @@
                 3,
                 0
               ],
+              "max_damage": 40676,
+              "min_damage": 33616,
+              "shield_pierce": 68534,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 68534
+            }
           },
           "build_cost": {
             "materials": [
@@ -798,10 +800,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 78000,
               "increased_cargo": 83000,
               "increased_protected_cargo": 2500,
-              "protected_cargo": 2300
+              "ship_increased_cargo": 78000,
+              "ship_increased_protected_cargo": 2300
             }
           },
           "build_cost": {
@@ -857,7 +859,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 160,
               "warp_speed": 3.7
             }
@@ -914,9 +915,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3973,
-              "health": 392054
+            "shield_info": {
+              "shield_deflection": 3973,
+              "shield_health": 392054
             }
           },
           "build_cost": {
@@ -971,8 +972,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 30557,
-            "hull_health": 473931
+            "armor_info": {
+              "armor": 30557,
+              "hull_health": 473931
+            }
           },
           "build_cost": {
             "materials": [
@@ -1065,14 +1068,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 9667,
-            "armor_pierce": 7436,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 39392,
-            "damage_min": 32828,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9667,
+              "armor_pierce": 7436,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -1083,9 +1084,11 @@
                 0,
                 2
               ],
+              "max_damage": 39392,
+              "min_damage": 32828,
+              "shield_pierce": 74359,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 74359
+            }
           },
           "build_cost": {
             "materials": [
@@ -1141,14 +1144,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 9667,
-            "armor_pierce": 7436,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 44134,
-            "damage_min": 36474,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9667,
+              "armor_pierce": 7436,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -1159,9 +1160,11 @@
                 3,
                 0
               ],
+              "max_damage": 44134,
+              "min_damage": 36474,
+              "shield_pierce": 74359,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 74359
+            }
           },
           "build_cost": {
             "materials": [
@@ -1218,10 +1221,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 88000,
               "increased_cargo": 93000,
               "increased_protected_cargo": 3300,
-              "protected_cargo": 3000
+              "ship_increased_cargo": 88000,
+              "ship_increased_protected_cargo": 3000
             }
           },
           "build_cost": {
@@ -1277,7 +1280,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 170,
               "warp_speed": 3.8
             }
@@ -1334,9 +1336,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4311,
-              "health": 416620
+            "shield_info": {
+              "shield_deflection": 4311,
+              "shield_health": 416620
             }
           },
           "build_cost": {
@@ -1391,8 +1393,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 33154,
-            "hull_health": 514215
+            "armor_info": {
+              "armor": 33154,
+              "hull_health": 514215
+            }
           },
           "build_cost": {
             "materials": [
@@ -1485,14 +1489,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 10585,
-            "armor_pierce": 8142,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 43134,
-            "damage_min": 35947,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10585,
+              "armor_pierce": 8142,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -1503,9 +1505,11 @@
                 0,
                 2
               ],
+              "max_damage": 43134,
+              "min_damage": 35947,
+              "shield_pierce": 81423,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 81423
+            }
           },
           "build_cost": {
             "materials": [
@@ -1561,14 +1565,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 10585,
-            "armor_pierce": 8142,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 48326,
-            "damage_min": 39939,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10585,
+              "armor_pierce": 8142,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -1579,9 +1581,11 @@
                 3,
                 0
               ],
+              "max_damage": 48326,
+              "min_damage": 39939,
+              "shield_pierce": 81423,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 81423
+            }
           },
           "build_cost": {
             "materials": [
@@ -1638,10 +1642,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 98000,
               "increased_cargo": 104000,
               "increased_protected_cargo": 4100,
-              "protected_cargo": 3800
+              "ship_increased_cargo": 98000,
+              "ship_increased_protected_cargo": 3800
             }
           },
           "build_cost": {
@@ -1697,7 +1701,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 180,
               "warp_speed": 3.9
             }
@@ -1754,9 +1757,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4721,
-              "health": 447091
+            "shield_info": {
+              "shield_deflection": 4721,
+              "shield_health": 447091
             }
           },
           "build_cost": {
@@ -1811,8 +1814,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 36304,
-            "hull_health": 563066
+            "armor_info": {
+              "armor": 36304,
+              "hull_health": 563066
+            }
           },
           "build_cost": {
             "materials": [
@@ -1905,14 +1910,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 11696,
-            "armor_pierce": 8997,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 47663,
-            "damage_min": 39721,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11696,
+              "armor_pierce": 8997,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -1923,9 +1926,11 @@
                 0,
                 2
               ],
+              "max_damage": 47663,
+              "min_damage": 39721,
+              "shield_pierce": 89972,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 89972
+            }
           },
           "build_cost": {
             "materials": [
@@ -1981,14 +1986,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 11696,
-            "armor_pierce": 8997,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 53400,
-            "damage_min": 44133,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11696,
+              "armor_pierce": 8997,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -1999,9 +2002,11 @@
                 3,
                 0
               ],
+              "max_damage": 53400,
+              "min_damage": 44133,
+              "shield_pierce": 89972,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 89972
+            }
           },
           "build_cost": {
             "materials": [
@@ -2058,10 +2063,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 109000,
               "increased_cargo": 117000,
               "increased_protected_cargo": 5000,
-              "protected_cargo": 4600
+              "ship_increased_cargo": 109000,
+              "ship_increased_protected_cargo": 4600
             }
           },
           "build_cost": {
@@ -2117,7 +2122,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 190,
               "warp_speed": 4
             }
@@ -2174,9 +2178,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5217,
-              "health": 485252
+            "shield_info": {
+              "shield_deflection": 5217,
+              "shield_health": 485252
             }
           },
           "build_cost": {
@@ -2231,8 +2235,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 40116,
-            "hull_health": 622188
+            "armor_info": {
+              "armor": 40116,
+              "hull_health": 622188
+            }
           },
           "build_cost": {
             "materials": [
@@ -2325,14 +2331,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 12983,
-            "armor_pierce": 9987,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 52906,
-            "damage_min": 44090,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12983,
+              "armor_pierce": 9987,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -2343,9 +2347,11 @@
                 0,
                 2
               ],
+              "max_damage": 52906,
+              "min_damage": 44090,
+              "shield_pierce": 99869,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 99869
+            }
           },
           "build_cost": {
             "materials": [
@@ -2401,14 +2407,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 12983,
-            "armor_pierce": 9987,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 59274,
-            "damage_min": 48986,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12983,
+              "armor_pierce": 9987,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -2419,9 +2423,11 @@
                 3,
                 0
               ],
+              "max_damage": 59274,
+              "min_damage": 48986,
+              "shield_pierce": 99869,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 99869
+            }
           },
           "build_cost": {
             "materials": [
@@ -2478,10 +2484,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 122000,
               "increased_cargo": 130000,
               "increased_protected_cargo": 5900,
-              "protected_cargo": 5500
+              "ship_increased_cargo": 122000,
+              "ship_increased_protected_cargo": 5500
             }
           },
           "build_cost": {
@@ -2537,7 +2543,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 200,
               "warp_speed": 4.1
             }
@@ -2594,9 +2599,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5791,
-              "health": 530739
+            "shield_info": {
+              "shield_deflection": 5791,
+              "shield_health": 530739
             }
           },
           "build_cost": {
@@ -2651,8 +2656,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 44529,
-            "hull_health": 690628
+            "armor_info": {
+              "armor": 44529,
+              "hull_health": 690628
+            }
           },
           "build_cost": {
             "materials": [
@@ -2745,14 +2752,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 14346,
-            "armor_pierce": 11036,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 58461,
-            "damage_min": 48719,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 14346,
+              "armor_pierce": 11036,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -2763,9 +2768,11 @@
                 0,
                 2
               ],
+              "max_damage": 58461,
+              "min_damage": 48719,
+              "shield_pierce": 110355,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 110355
+            }
           },
           "build_cost": {
             "materials": [
@@ -2821,14 +2828,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 14346,
-            "armor_pierce": 11036,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 65499,
-            "damage_min": 54130,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 14346,
+              "armor_pierce": 11036,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -2839,9 +2844,11 @@
                 3,
                 0
               ],
+              "max_damage": 65499,
+              "min_damage": 54130,
+              "shield_pierce": 110355,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 110355
+            }
           },
           "build_cost": {
             "materials": [
@@ -2898,10 +2905,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 135000,
               "increased_cargo": 145000,
               "increased_protected_cargo": 7000,
-              "protected_cargo": 6400
+              "ship_increased_cargo": 135000,
+              "ship_increased_protected_cargo": 6400
             }
           },
           "build_cost": {
@@ -2957,7 +2964,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 205,
               "warp_speed": 4.2
             }
@@ -3014,9 +3020,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 6399,
-              "health": 579551
+            "shield_info": {
+              "shield_deflection": 6399,
+              "shield_health": 579551
             }
           },
           "build_cost": {
@@ -3071,8 +3077,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 49205,
-            "hull_health": 763144
+            "armor_info": {
+              "armor": 49205,
+              "hull_health": 763144
+            }
           },
           "build_cost": {
             "materials": [
@@ -3165,14 +3173,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 15637,
-            "armor_pierce": 12029,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 63722,
-            "damage_min": 53104,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15637,
+              "armor_pierce": 12029,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -3183,9 +3189,11 @@
                 0,
                 2
               ],
+              "max_damage": 63722,
+              "min_damage": 53104,
+              "shield_pierce": 120287,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 120287
+            }
           },
           "build_cost": {
             "materials": [
@@ -3241,14 +3249,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 15637,
-            "armor_pierce": 12029,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 71394,
-            "damage_min": 59001,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15637,
+              "armor_pierce": 12029,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -3259,9 +3265,11 @@
                 3,
                 0
               ],
+              "max_damage": 71394,
+              "min_damage": 59001,
+              "shield_pierce": 120287,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 120287
+            }
           },
           "build_cost": {
             "materials": [
@@ -3318,10 +3326,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 150000,
               "increased_cargo": 160000,
               "increased_protected_cargo": 8200,
-              "protected_cargo": 7500
+              "ship_increased_cargo": 150000,
+              "ship_increased_protected_cargo": 7500
             }
           },
           "build_cost": {
@@ -3377,7 +3385,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 210,
               "warp_speed": 4.3
             }
@@ -3434,9 +3441,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 6975,
-              "health": 625383
+            "shield_info": {
+              "shield_deflection": 6975,
+              "shield_health": 625383
             }
           },
           "build_cost": {
@@ -3491,8 +3498,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 53633,
-            "hull_health": 831827
+            "armor_info": {
+              "armor": 53633,
+              "hull_health": 831827
+            }
           },
           "build_cost": {
             "materials": [
@@ -3585,14 +3594,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 16810,
-            "armor_pierce": 12931,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 68501,
-            "damage_min": 57087,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16810,
+              "armor_pierce": 12931,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -3603,9 +3610,11 @@
                 0,
                 2
               ],
+              "max_damage": 68501,
+              "min_damage": 57087,
+              "shield_pierce": 129309,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 129309
+            }
           },
           "build_cost": {
             "materials": [
@@ -3661,14 +3670,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 16810,
-            "armor_pierce": 12931,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 76748,
-            "damage_min": 63426,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16810,
+              "armor_pierce": 12931,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -3679,9 +3686,11 @@
                 3,
                 0
               ],
+              "max_damage": 76748,
+              "min_damage": 63426,
+              "shield_pierce": 129309,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 129309
+            }
           },
           "build_cost": {
             "materials": [
@@ -3738,10 +3747,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 165000,
               "increased_cargo": 176000,
               "increased_protected_cargo": 9800,
-              "protected_cargo": 8700
+              "ship_increased_cargo": 165000,
+              "ship_increased_protected_cargo": 8700
             }
           },
           "build_cost": {
@@ -3797,7 +3806,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 215,
               "warp_speed": 4.4
             }
@@ -3854,9 +3862,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 7498,
-              "health": 666662
+            "shield_info": {
+              "shield_deflection": 7498,
+              "shield_health": 666662
             }
           },
           "build_cost": {
@@ -3911,8 +3919,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 57655,
-            "hull_health": 894214
+            "armor_info": {
+              "armor": 57655,
+              "hull_health": 894214
+            }
           },
           "build_cost": {
             "materials": [
@@ -4005,14 +4015,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 17819,
-            "armor_pierce": 13707,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 72611,
-            "damage_min": 60512,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17819,
+              "armor_pierce": 13707,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -4023,9 +4031,11 @@
                 0,
                 2
               ],
+              "max_damage": 72611,
+              "min_damage": 60512,
+              "shield_pierce": 137068,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 137068
+            }
           },
           "build_cost": {
             "materials": [
@@ -4081,14 +4091,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 17819,
-            "armor_pierce": 13707,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 81353,
-            "damage_min": 67233,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17819,
+              "armor_pierce": 13707,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -4099,9 +4107,11 @@
                 3,
                 0
               ],
+              "max_damage": 81353,
+              "min_damage": 67233,
+              "shield_pierce": 137068,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 137068
+            }
           },
           "build_cost": {
             "materials": [
@@ -4158,10 +4168,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 181000,
               "increased_cargo": 195000,
               "increased_protected_cargo": 11500,
-              "protected_cargo": 10300
+              "ship_increased_cargo": 181000,
+              "ship_increased_protected_cargo": 10300
             }
           },
           "build_cost": {
@@ -4217,7 +4227,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 220,
               "warp_speed": 4.5
             }
@@ -4274,9 +4283,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 7948,
-              "health": 701679
+            "shield_info": {
+              "shield_deflection": 7948,
+              "shield_health": 701679
             }
           },
           "build_cost": {
@@ -4331,8 +4340,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 61114,
-            "hull_health": 947867
+            "armor_info": {
+              "armor": 61114,
+              "hull_health": 947867
+            }
           },
           "build_cost": {
             "materials": [
@@ -4425,14 +4436,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 18799,
-            "armor_pierce": 14461,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 76605,
-            "damage_min": 63840,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18799,
+              "armor_pierce": 14461,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 0,
                 2,
@@ -4443,9 +4452,11 @@
                 0,
                 2
               ],
+              "max_damage": 76605,
+              "min_damage": 63840,
+              "shield_pierce": 144607,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 144607
+            }
           },
           "build_cost": {
             "materials": [
@@ -4501,14 +4512,12 @@
         {
           "name": "Concussive Charge",
           "additional_info": {
-            "accuracy": 18799,
-            "armor_pierce": 14461,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 85826,
-            "damage_min": 70930,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18799,
+              "armor_pierce": 14461,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -4519,9 +4528,11 @@
                 3,
                 0
               ],
+              "max_damage": 85826,
+              "min_damage": 70930,
+              "shield_pierce": 144607,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 144607
+            }
           },
           "build_cost": {
             "materials": [
@@ -4578,10 +4589,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 200000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 12000
+              "ship_increased_cargo": 200000,
+              "ship_increased_protected_cargo": 12000
             }
           },
           "build_cost": {
@@ -4637,7 +4648,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 225,
               "warp_speed": 4.6
             }
@@ -4694,9 +4704,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 8385,
-              "health": 737034
+            "shield_info": {
+              "shield_deflection": 8385,
+              "shield_health": 737034
             }
           },
           "build_cost": {
@@ -4751,8 +4761,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 64475,
-            "hull_health": 1000000
+            "armor_info": {
+              "armor": 64475,
+              "hull_health": 1000000
+            }
           },
           "build_cost": {
             "materials": [

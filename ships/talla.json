@@ -4,38 +4,6 @@
     "cost": 0,
     "quantity": 40
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "ore",
-        "grade": 2,
-        "rarity": "common",
-        "value": 875
-      },
-      {
-        "type": "ore",
-        "grade": 2,
-        "rarity": "uncommon",
-        "value": 1115
-      }
-    ],
-    "others": [
-      {
-        "type": "2\u2605\u00a0Battleship\u00a0Parts",
-        "value": 1440
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 218500
-      },
-      {
-        "type": "dilithium",
-        "value": 33750
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 2,
   "img_url": "./assets/talla.png",
@@ -52,7 +20,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 14,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Explorer Hunter",
@@ -68,14 +36,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 45,
-            "armor_pierce": 45,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 333,
-            "damage_min": 272,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 45,
+              "armor_pierce": 45,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -86,9 +52,11 @@
                 1,
                 1
               ],
+              "max_damage": 333,
+              "min_damage": 272,
+              "shield_pierce": 272,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 272
+            }
           },
           "build_cost": {
             "materials": [],
@@ -103,10 +71,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 3000,
               "increased_cargo": 3800,
               "increased_protected_cargo": 80,
-              "protected_cargo": 80
+              "ship_increased_cargo": 3000,
+              "ship_increased_protected_cargo": 80
             }
           },
           "build_cost": {
@@ -121,8 +89,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 151,
-            "hull_health": 1080
+            "armor_info": {
+              "armor": 151,
+              "hull_health": 1080
+            }
           },
           "build_cost": {
             "materials": [],
@@ -137,7 +107,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 13,
               "warp_speed": 1.5
             }
@@ -152,6 +121,38 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "common",
+            "value": 875
+          },
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 1115
+          }
+        ],
+        "others": [
+          {
+            "type": "2\u2605\u00a0Battleship\u00a0Parts",
+            "value": 1440
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 218500
+          },
+          {
+            "type": "dilithium",
+            "value": 33750
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.1,
@@ -162,10 +163,6 @@
               {
                 "type": "tritanium",
                 "value": 8800
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 74940
@@ -258,14 +255,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 50,
-            "armor_pierce": 50,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 371,
-            "damage_min": 304,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 50,
+              "armor_pierce": 50,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -276,9 +271,11 @@
                 1,
                 1
               ],
+              "max_damage": 371,
+              "min_damage": 304,
+              "shield_pierce": 303,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 303
+            }
           },
           "build_cost": {
             "materials": [],
@@ -316,10 +313,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 4800,
               "increased_cargo": 5870,
               "increased_protected_cargo": 140,
-              "protected_cargo": 130
+              "ship_increased_cargo": 4800,
+              "ship_increased_protected_cargo": 130
             }
           },
           "build_cost": {
@@ -349,8 +346,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 168,
-            "hull_health": 1210
+            "armor_info": {
+              "armor": 168,
+              "hull_health": 1210
+            }
           },
           "build_cost": {
             "materials": [],
@@ -380,7 +379,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 14,
               "warp_speed": 1.6
             }
@@ -617,10 +615,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 6870,
               "increased_cargo": 8320,
               "increased_protected_cargo": 200,
-              "protected_cargo": 190
+              "ship_increased_cargo": 6870,
+              "ship_increased_protected_cargo": 190
             }
           },
           "build_cost": {
@@ -650,14 +648,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 57,
-            "armor_pierce": 57,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 422,
-            "damage_min": 345,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 57,
+              "armor_pierce": 57,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -668,9 +664,11 @@
                 1,
                 1
               ],
+              "max_damage": 422,
+              "min_damage": 345,
+              "shield_pierce": 344,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 344
+            }
           },
           "build_cost": {
             "materials": [
@@ -714,8 +712,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 191,
-            "hull_health": 1370
+            "armor_info": {
+              "armor": 191,
+              "hull_health": 1370
+            }
           },
           "build_cost": {
             "materials": [],
@@ -745,7 +745,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 15,
               "warp_speed": 1.7
             }
@@ -981,14 +980,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 63,
-            "armor_pierce": 63,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 463,
-            "damage_min": 379,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 63,
+              "armor_pierce": 63,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -999,9 +996,11 @@
                 1,
                 1
               ],
+              "max_damage": 463,
+              "min_damage": 379,
+              "shield_pierce": 378,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 378
+            }
           },
           "build_cost": {
             "materials": [
@@ -1046,10 +1045,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 9320,
               "increased_cargo": 11280,
               "increased_protected_cargo": 260,
-              "protected_cargo": 250
+              "ship_increased_cargo": 9320,
+              "ship_increased_protected_cargo": 250
             }
           },
           "build_cost": {
@@ -1079,8 +1078,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 210,
-            "hull_health": 1500
+            "armor_info": {
+              "armor": 210,
+              "hull_health": 1500
+            }
           },
           "build_cost": {
             "materials": [
@@ -1117,7 +1118,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 16,
               "warp_speed": 1.8
             }
@@ -1414,10 +1414,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 12280,
               "increased_cargo": 14930,
               "increased_protected_cargo": 330,
-              "protected_cargo": 310
+              "ship_increased_cargo": 12280,
+              "ship_increased_protected_cargo": 310
             }
           },
           "build_cost": {
@@ -1447,14 +1447,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 72,
-            "armor_pierce": 72,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 529,
-            "damage_min": 432,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 72,
+              "armor_pierce": 72,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1465,9 +1463,11 @@
                 1,
                 1
               ],
+              "max_damage": 529,
+              "min_damage": 432,
+              "shield_pierce": 432,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 432
+            }
           },
           "build_cost": {
             "materials": [
@@ -1511,8 +1511,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 240,
-            "hull_health": 1720
+            "armor_info": {
+              "armor": 240,
+              "hull_health": 1720
+            }
           },
           "build_cost": {
             "materials": [
@@ -1549,7 +1551,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 17,
               "warp_speed": 1.9
             }
@@ -1852,14 +1853,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 88,
-            "armor_pierce": 88,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 649,
-            "damage_min": 531,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 88,
+              "armor_pierce": 88,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1870,9 +1869,11 @@
                 1,
                 1
               ],
+              "max_damage": 649,
+              "min_damage": 531,
+              "shield_pierce": 530,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 530
+            }
           },
           "build_cost": {
             "materials": [
@@ -1917,10 +1918,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 15930,
               "increased_cargo": 19500,
               "increased_protected_cargo": 400,
-              "protected_cargo": 380
+              "ship_increased_cargo": 15930,
+              "ship_increased_protected_cargo": 380
             }
           },
           "build_cost": {
@@ -1957,8 +1958,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 294,
-            "hull_health": 2110
+            "armor_info": {
+              "armor": 294,
+              "hull_health": 2110
+            }
           },
           "build_cost": {
             "materials": [
@@ -1995,7 +1998,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 2
             }
@@ -2358,14 +2360,12 @@
         {
           "name": "Phase Cannon",
           "additional_info": {
-            "accuracy": 119,
-            "armor_pierce": 119,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 876,
-            "damage_min": 716,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 119,
+              "armor_pierce": 119,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2376,9 +2376,11 @@
                 1,
                 1
               ],
+              "max_damage": 876,
+              "min_damage": 716,
+              "shield_pierce": 715,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 715
+            }
           },
           "build_cost": {
             "materials": [
@@ -2423,10 +2425,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 20500,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 450
+              "ship_increased_cargo": 20500,
+              "ship_increased_protected_cargo": 450
             }
           },
           "build_cost": {
@@ -2463,8 +2465,10 @@
         {
           "name": "Black Fleet Armor",
           "additional_info": {
-            "armor": 397,
-            "hull_health": 2850
+            "armor_info": {
+              "armor": 397,
+              "hull_health": 2850
+            }
           },
           "build_cost": {
             "materials": [
@@ -2501,7 +2505,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 19,
               "warp_speed": 2.5
             }

@@ -4,54 +4,6 @@
     "cost": 0,
     "quantity": 120
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "gas",
-        "grade": 4,
-        "rarity": "common",
-        "value": 160205
-      },
-      {
-        "type": "gas",
-        "grade": 4,
-        "rarity": "uncommon",
-        "value": 101365
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "common",
-        "value": 56230
-      },
-      {
-        "type": "ore",
-        "grade": 4,
-        "rarity": "uncommon",
-        "value": 48020
-      }
-    ],
-    "others": [
-      {
-        "type": "4\u2605\u00a0Common\u00a0Explorer\u00a0Parts",
-        "value": 841080
-      },
-      {
-        "type": "4\u2605\u00a0Uncommon\u00a0Explorer\u00a0Parts",
-        "value": 225525
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 18249000000
-      },
-      {
-        "type": "dilithium",
-        "value": 634585000
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 4,
   "img_url": "./assets/iss_jellyfish.png",
@@ -63,11 +15,11 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Imperial Might",
-    "description": "",
+    "description": "The ISS Jellyfish gains an additional 15% damage bonus at the start of every combat round. This bonus stacks with no limit.",
     "percentage": true
   },
   "ship_class": "explorer",
@@ -79,14 +31,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 14641,
-            "armor_pierce": 3807,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 7380,
-            "damage_min": 6151,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 14641,
+              "armor_pierce": 3807,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -97,9 +47,11 @@
                 2,
                 2
               ],
+              "max_damage": 7380,
+              "min_damage": 6151,
+              "shield_pierce": 3807,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3807
+            }
           },
           "build_cost": {
             "materials": [],
@@ -113,14 +65,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 14641,
-            "armor_pierce": 3807,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 36083,
-            "damage_min": 32802,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 14641,
+              "armor_pierce": 3807,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -131,9 +81,11 @@
                 1,
                 0
               ],
+              "max_damage": 36083,
+              "min_damage": 32802,
+              "shield_pierce": 3807,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 3807
+            }
           },
           "build_cost": {
             "materials": [],
@@ -148,10 +100,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 36000,
               "increased_cargo": 43000,
               "increased_protected_cargo": 725,
-              "protected_cargo": 625
+              "ship_increased_cargo": 36000,
+              "ship_increased_protected_cargo": 625
             }
           },
           "build_cost": {
@@ -166,8 +118,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 327,
-            "hull_health": 157194
+            "armor_info": {
+              "armor": 327,
+              "hull_health": 157194
+            }
           },
           "build_cost": {
             "materials": [],
@@ -182,7 +136,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 60,
               "warp_speed": 4.4
             }
@@ -199,11 +152,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1306,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1306,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -218,9 +169,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 23499,
-              "health": 186164
+            "shield_info": {
+              "shield_deflection": 23499,
+              "shield_health": 186164
             }
           },
           "build_cost": {
@@ -233,6 +184,54 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 160205
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 101365
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 56230
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 48020
+          }
+        ],
+        "others": [
+          {
+            "type": "4\u2605\u00a0Common\u00a0Explorer\u00a0Parts",
+            "value": 841080
+          },
+          {
+            "type": "4\u2605\u00a0Uncommon\u00a0Explorer\u00a0Parts",
+            "value": 225525
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 18249000000
+          },
+          {
+            "type": "dilithium",
+            "value": 634585000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.15,
@@ -274,14 +273,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 15592,
-            "armor_pierce": 4054,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 7860,
-            "damage_min": 6550,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15592,
+              "armor_pierce": 4054,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -292,9 +289,11 @@
                 2,
                 2
               ],
+              "max_damage": 7860,
+              "min_damage": 6550,
+              "shield_pierce": 4054,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 4054
+            }
           },
           "build_cost": {
             "materials": [
@@ -344,14 +343,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 15592,
-            "armor_pierce": 4054,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 38428,
-            "damage_min": 34935,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15592,
+              "armor_pierce": 4054,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -362,9 +359,11 @@
                 1,
                 0
               ],
+              "max_damage": 38428,
+              "min_damage": 34935,
+              "shield_pierce": 4054,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 4054
+            }
           },
           "build_cost": {
             "materials": [
@@ -414,8 +413,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 348,
-            "hull_health": 164399
+            "armor_info": {
+              "armor": 348,
+              "hull_health": 164399
+            }
           },
           "build_cost": {
             "materials": [
@@ -462,10 +463,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 44000,
               "increased_cargo": 51000,
               "increased_protected_cargo": 850,
-              "protected_cargo": 750
+              "ship_increased_cargo": 44000,
+              "ship_increased_protected_cargo": 750
             }
           },
           "build_cost": {
@@ -513,7 +514,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 65,
               "warp_speed": 4.5
             }
@@ -562,11 +562,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1391,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1391,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -617,9 +615,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 25027,
-              "health": 194697
+            "shield_info": {
+              "shield_deflection": 25027,
+              "shield_health": 194697
             }
           },
           "build_cost": {
@@ -710,7 +708,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 70,
               "warp_speed": 4.6
             }
@@ -763,14 +760,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 16762,
-            "armor_pierce": 4358,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 8450,
-            "damage_min": 7042,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16762,
+              "armor_pierce": 4358,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -781,9 +776,11 @@
                 2,
                 2
               ],
+              "max_damage": 8450,
+              "min_damage": 7042,
+              "shield_pierce": 4358,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 4358
+            }
           },
           "build_cost": {
             "materials": [
@@ -837,14 +834,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 16762,
-            "armor_pierce": 4358,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 41311,
-            "damage_min": 37555,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16762,
+              "armor_pierce": 4358,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -855,9 +850,11 @@
                 1,
                 0
               ],
+              "max_damage": 41311,
+              "min_damage": 37555,
+              "shield_pierce": 4358,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 4358
+            }
           },
           "build_cost": {
             "materials": [
@@ -912,10 +909,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 52000,
               "increased_cargo": 59000,
               "increased_protected_cargo": 975,
-              "protected_cargo": 875
+              "ship_increased_cargo": 52000,
+              "ship_increased_protected_cargo": 875
             }
           },
           "build_cost": {
@@ -966,8 +963,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 374,
-            "hull_health": 173278
+            "armor_info": {
+              "armor": 374,
+              "hull_health": 173278
+            }
           },
           "build_cost": {
             "materials": [
@@ -1017,11 +1016,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1495,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1495,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -1076,9 +1073,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 26905,
-              "health": 205210
+            "shield_info": {
+              "shield_deflection": 26905,
+              "shield_health": 205210
             }
           },
           "build_cost": {
@@ -1172,14 +1169,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 18186,
-            "armor_pierce": 4728,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 9168,
-            "damage_min": 7640,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18186,
+              "armor_pierce": 4728,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -1190,9 +1185,11 @@
                 2,
                 2
               ],
+              "max_damage": 9168,
+              "min_damage": 7640,
+              "shield_pierce": 4728,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 4728
+            }
           },
           "build_cost": {
             "materials": [
@@ -1246,14 +1243,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 18186,
-            "armor_pierce": 4728,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 44822,
-            "damage_min": 40747,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18186,
+              "armor_pierce": 4728,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -1264,9 +1259,11 @@
                 1,
                 0
               ],
+              "max_damage": 44822,
+              "min_damage": 40747,
+              "shield_pierce": 4728,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 4728
+            }
           },
           "build_cost": {
             "materials": [
@@ -1321,10 +1318,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 60000,
               "increased_cargo": 67000,
               "increased_protected_cargo": 1100,
-              "protected_cargo": 1000
+              "ship_increased_cargo": 60000,
+              "ship_increased_protected_cargo": 1000
             }
           },
           "build_cost": {
@@ -1375,8 +1372,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 406,
-            "hull_health": 184218
+            "armor_info": {
+              "armor": 406,
+              "hull_health": 184218
+            }
           },
           "build_cost": {
             "materials": [
@@ -1427,7 +1426,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 75,
               "warp_speed": 4.7
             }
@@ -1480,11 +1478,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1622,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1622,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -1539,9 +1535,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 29191,
-              "health": 218164
+            "shield_info": {
+              "shield_deflection": 29191,
+              "shield_health": 218164
             }
           },
           "build_cost": {
@@ -1635,14 +1631,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 19914,
-            "armor_pierce": 5177,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 10039,
-            "damage_min": 8366,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19914,
+              "armor_pierce": 5177,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -1653,9 +1647,11 @@
                 2,
                 2
               ],
+              "max_damage": 10039,
+              "min_damage": 8366,
+              "shield_pierce": 5177,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 5177
+            }
           },
           "build_cost": {
             "materials": [
@@ -1709,14 +1705,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 19914,
-            "armor_pierce": 5177,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 49080,
-            "damage_min": 44618,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19914,
+              "armor_pierce": 5177,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -1727,9 +1721,11 @@
                 1,
                 0
               ],
+              "max_damage": 49080,
+              "min_damage": 44618,
+              "shield_pierce": 5177,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 5177
+            }
           },
           "build_cost": {
             "materials": [
@@ -1784,10 +1780,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 68000,
               "increased_cargo": 75000,
               "increased_protected_cargo": 1225,
-              "protected_cargo": 1125
+              "ship_increased_cargo": 68000,
+              "ship_increased_protected_cargo": 1125
             }
           },
           "build_cost": {
@@ -1838,8 +1834,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 444,
-            "hull_health": 197785
+            "armor_info": {
+              "armor": 444,
+              "hull_health": 197785
+            }
           },
           "build_cost": {
             "materials": [
@@ -1890,7 +1888,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 80,
               "warp_speed": 4.8
             }
@@ -1943,11 +1940,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1776,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1776,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -2002,9 +1997,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 31964,
-              "health": 234230
+            "shield_info": {
+              "shield_deflection": 31964,
+              "shield_health": 234230
             }
           },
           "build_cost": {
@@ -2098,14 +2093,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 22005,
-            "armor_pierce": 5721,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11093,
-            "damage_min": 9244,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 22005,
+              "armor_pierce": 5721,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -2116,9 +2109,11 @@
                 2,
                 2
               ],
+              "max_damage": 11093,
+              "min_damage": 9244,
+              "shield_pierce": 5721,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 5721
+            }
           },
           "build_cost": {
             "materials": [
@@ -2172,14 +2167,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 22005,
-            "armor_pierce": 5721,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 54234,
-            "damage_min": 49303,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 22005,
+              "armor_pierce": 5721,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -2190,9 +2183,11 @@
                 1,
                 0
               ],
+              "max_damage": 54234,
+              "min_damage": 49303,
+              "shield_pierce": 5721,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 5721
+            }
           },
           "build_cost": {
             "materials": [
@@ -2247,10 +2242,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 76000,
               "increased_cargo": 83000,
               "increased_protected_cargo": 1350,
-              "protected_cargo": 1250
+              "ship_increased_cargo": 76000,
+              "ship_increased_protected_cargo": 1250
             }
           },
           "build_cost": {
@@ -2301,8 +2296,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 491,
-            "hull_health": 214775
+            "armor_info": {
+              "armor": 491,
+              "hull_health": 214775
+            }
           },
           "build_cost": {
             "materials": [
@@ -2353,7 +2350,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 85,
               "warp_speed": 4.9
             }
@@ -2406,11 +2402,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1962,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1962,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -2465,9 +2459,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 35321,
-              "health": 254347
+            "shield_info": {
+              "shield_deflection": 35321,
+              "shield_health": 254347
             }
           },
           "build_cost": {
@@ -2561,14 +2555,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 24425,
-            "armor_pierce": 6350,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 12313,
-            "damage_min": 10261,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 24425,
+              "armor_pierce": 6350,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -2579,9 +2571,11 @@
                 2,
                 2
               ],
+              "max_damage": 12313,
+              "min_damage": 10261,
+              "shield_pierce": 6350,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 6350
+            }
           },
           "build_cost": {
             "materials": [
@@ -2635,14 +2629,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 24425,
-            "armor_pierce": 6350,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 60199,
-            "damage_min": 54727,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 24425,
+              "armor_pierce": 6350,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -2653,9 +2645,11 @@
                 1,
                 0
               ],
+              "max_damage": 60199,
+              "min_damage": 54727,
+              "shield_pierce": 6350,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 6350
+            }
           },
           "build_cost": {
             "materials": [
@@ -2710,10 +2704,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 84000,
               "increased_cargo": 91000,
               "increased_protected_cargo": 1475,
-              "protected_cargo": 1375
+              "ship_increased_cargo": 84000,
+              "ship_increased_protected_cargo": 1375
             }
           },
           "build_cost": {
@@ -2764,8 +2758,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 545,
-            "hull_health": 235022
+            "armor_info": {
+              "armor": 545,
+              "hull_health": 235022
+            }
           },
           "build_cost": {
             "materials": [
@@ -2816,7 +2812,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 95,
               "warp_speed": 5
             }
@@ -2869,11 +2864,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2178,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2178,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -2928,9 +2921,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 39208,
-              "health": 278325
+            "shield_info": {
+              "shield_deflection": 39208,
+              "shield_health": 278325
             }
           },
           "build_cost": {
@@ -3024,14 +3017,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 26990,
-            "armor_pierce": 7017,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13606,
-            "damage_min": 11338,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 26990,
+              "armor_pierce": 7017,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -3042,9 +3033,11 @@
                 2,
                 2
               ],
+              "max_damage": 13606,
+              "min_damage": 11338,
+              "shield_pierce": 7017,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 7017
+            }
           },
           "build_cost": {
             "materials": [
@@ -3098,14 +3091,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 26990,
-            "armor_pierce": 7017,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 66520,
-            "damage_min": 60473,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 26990,
+              "armor_pierce": 7017,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -3116,9 +3107,11 @@
                 1,
                 0
               ],
+              "max_damage": 66520,
+              "min_damage": 60473,
+              "shield_pierce": 7017,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 7017
+            }
           },
           "build_cost": {
             "materials": [
@@ -3173,10 +3166,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 92000,
               "increased_cargo": 99000,
               "increased_protected_cargo": 1600,
-              "protected_cargo": 1500
+              "ship_increased_cargo": 92000,
+              "ship_increased_protected_cargo": 1500
             }
           },
           "build_cost": {
@@ -3227,8 +3220,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 602,
-            "hull_health": 256751
+            "armor_info": {
+              "armor": 602,
+              "hull_health": 256751
+            }
           },
           "build_cost": {
             "materials": [
@@ -3279,7 +3274,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 100,
               "warp_speed": 5.1
             }
@@ -3332,11 +3326,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2407,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2407,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -3391,9 +3383,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 43324,
-              "health": 304054
+            "shield_info": {
+              "shield_deflection": 43324,
+              "shield_health": 304054
             }
           },
           "build_cost": {
@@ -3487,14 +3479,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 29419,
-            "armor_pierce": 7649,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 14830,
-            "damage_min": 12359,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 29419,
+              "armor_pierce": 7649,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -3505,9 +3495,11 @@
                 2,
                 2
               ],
+              "max_damage": 14830,
+              "min_damage": 12359,
+              "shield_pierce": 7649,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 7649
+            }
           },
           "build_cost": {
             "materials": [
@@ -3561,14 +3553,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 29419,
-            "armor_pierce": 7649,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 72506,
-            "damage_min": 65916,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 29419,
+              "armor_pierce": 7649,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -3579,9 +3569,11 @@
                 1,
                 0
               ],
+              "max_damage": 72506,
+              "min_damage": 65916,
+              "shield_pierce": 7649,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 7649
+            }
           },
           "build_cost": {
             "materials": [
@@ -3636,10 +3628,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 100000,
               "increased_cargo": 107000,
               "increased_protected_cargo": 1725,
-              "protected_cargo": 1625
+              "ship_increased_cargo": 100000,
+              "ship_increased_protected_cargo": 1625
             }
           },
           "build_cost": {
@@ -3690,8 +3682,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 656,
-            "hull_health": 277153
+            "armor_info": {
+              "armor": 656,
+              "hull_health": 277153
+            }
           },
           "build_cost": {
             "materials": [
@@ -3742,7 +3736,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 105,
               "warp_speed": 5.2
             }
@@ -3795,11 +3788,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2624,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2624,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -3854,9 +3845,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 47223,
-              "health": 328212
+            "shield_info": {
+              "shield_deflection": 47223,
+              "shield_health": 328212
             }
           },
           "build_cost": {
@@ -3950,14 +3941,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 31625,
-            "armor_pierce": 8223,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 15943,
-            "damage_min": 13285,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 31625,
+              "armor_pierce": 8223,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -3968,9 +3957,11 @@
                 2,
                 2
               ],
+              "max_damage": 15943,
+              "min_damage": 13285,
+              "shield_pierce": 8223,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 8223
+            }
           },
           "build_cost": {
             "materials": [
@@ -4024,14 +4015,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 31625,
-            "armor_pierce": 8223,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 77944,
-            "damage_min": 70859,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 31625,
+              "armor_pierce": 8223,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -4042,9 +4031,11 @@
                 1,
                 0
               ],
+              "max_damage": 77944,
+              "min_damage": 70859,
+              "shield_pierce": 8223,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8223
+            }
           },
           "build_cost": {
             "materials": [
@@ -4099,10 +4090,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 108000,
               "increased_cargo": 115000,
               "increased_protected_cargo": 1850,
-              "protected_cargo": 1750
+              "ship_increased_cargo": 108000,
+              "ship_increased_protected_cargo": 1750
             }
           },
           "build_cost": {
@@ -4153,8 +4144,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 705,
-            "hull_health": 295528
+            "armor_info": {
+              "armor": 705,
+              "hull_health": 295528
+            }
           },
           "build_cost": {
             "materials": [
@@ -4205,7 +4198,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 110,
               "warp_speed": 5.3
             }
@@ -4258,11 +4250,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2821,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2821,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -4317,9 +4307,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 50765,
-              "health": 349971
+            "shield_info": {
+              "shield_deflection": 50765,
+              "shield_health": 349971
             }
           },
           "build_cost": {
@@ -4413,14 +4403,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 33523,
-            "armor_pierce": 8716,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 16899,
-            "damage_min": 14083,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 33523,
+              "armor_pierce": 8716,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -4431,9 +4419,11 @@
                 2,
                 2
               ],
+              "max_damage": 16899,
+              "min_damage": 14083,
+              "shield_pierce": 8716,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 8716
+            }
           },
           "build_cost": {
             "materials": [
@@ -4487,14 +4477,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 33523,
-            "armor_pierce": 8716,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 82621,
-            "damage_min": 75111,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 33523,
+              "armor_pierce": 8716,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -4505,9 +4493,11 @@
                 1,
                 0
               ],
+              "max_damage": 82621,
+              "min_damage": 75111,
+              "shield_pierce": 8716,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8716
+            }
           },
           "build_cost": {
             "materials": [
@@ -4562,10 +4552,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 116000,
               "increased_cargo": 123000,
               "increased_protected_cargo": 1975,
-              "protected_cargo": 1875
+              "ship_increased_cargo": 116000,
+              "ship_increased_protected_cargo": 1875
             }
           },
           "build_cost": {
@@ -4616,8 +4606,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 748,
-            "hull_health": 311117
+            "armor_info": {
+              "armor": 748,
+              "hull_health": 311117
+            }
           },
           "build_cost": {
             "materials": [
@@ -4668,7 +4660,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 120,
               "warp_speed": 5.4
             }
@@ -4721,11 +4712,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2990,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2990,
+              "impulse_speed": 85
             }
           },
           "build_cost": {
@@ -4780,9 +4769,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 53811,
-              "health": 368431
+            "shield_info": {
+              "shield_deflection": 53811,
+              "shield_health": 368431
             }
           },
           "build_cost": {
@@ -4876,14 +4865,12 @@
         {
           "name": "Phaser Cannon",
           "additional_info": {
-            "accuracy": 35366,
-            "armor_pierce": 9195,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 17829,
-            "damage_min": 14857,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 35366,
+              "armor_pierce": 9195,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 2,
                 2,
                 2,
@@ -4894,9 +4881,11 @@
                 2,
                 2
               ],
+              "max_damage": 17829,
+              "min_damage": 14857,
+              "shield_pierce": 9195,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 9195
+            }
           },
           "build_cost": {
             "materials": [
@@ -4950,14 +4939,12 @@
         {
           "name": "Red Matter Torpedo",
           "additional_info": {
-            "accuracy": 35366,
-            "armor_pierce": 9195,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 87165,
-            "damage_min": 79242,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 35366,
+              "armor_pierce": 9195,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 0,
@@ -4968,9 +4955,11 @@
                 1,
                 0
               ],
+              "max_damage": 87165,
+              "min_damage": 79242,
+              "shield_pierce": 9195,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 9195
+            }
           },
           "build_cost": {
             "materials": [
@@ -5025,10 +5014,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 124000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 2000
+              "ship_increased_cargo": 124000,
+              "ship_increased_protected_cargo": 2000
             }
           },
           "build_cost": {
@@ -5079,8 +5068,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 789,
-            "hull_health": 326855
+            "armor_info": {
+              "armor": 789,
+              "hull_health": 326855
+            }
           },
           "build_cost": {
             "materials": [
@@ -5131,7 +5122,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 130,
               "warp_speed": 5.5
             }
@@ -5184,9 +5174,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 56770,
-              "health": 387066
+            "shield_info": {
+              "shield_deflection": 56770,
+              "shield_health": 387066
             }
           },
           "build_cost": {
@@ -5241,11 +5231,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3154,
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3154,
+              "impulse_speed": 85
             }
           },
           "build_cost": {

@@ -4,50 +4,6 @@
     "cost": 150,
     "quantity": 100
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "common",
-        "value": 12000
-      },
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "uncommon",
-        "value": 2200
-      },
-      {
-        "type": "gas",
-        "grade": 3,
-        "rarity": "common",
-        "value": 2700
-      },
-      {
-        "type": "gas",
-        "grade": 3,
-        "rarity": "uncommon",
-        "value": 480
-      }
-    ],
-    "others": [
-      {
-        "type": "3\u2605\u00a0Survey\u00a0Parts",
-        "value": 3430
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 81900000
-      },
-      {
-        "type": "dilithium",
-        "value": 4670000
-      }
-    ]
-  },
   "faction": "romulan",
   "grade": 3,
   "img_url": "./assets/valkis.png",
@@ -60,7 +16,7 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 41,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Ore Mining Laser",
@@ -76,14 +32,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 317,
-            "armor_pierce": 362,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1355,
-            "damage_min": 1109,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 317,
+              "armor_pierce": 362,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -94,9 +48,11 @@
                 1,
                 1
               ],
+              "max_damage": 1355,
+              "min_damage": 1109,
+              "shield_pierce": 422,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 422
+            }
           },
           "build_cost": {
             "materials": [],
@@ -111,10 +67,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 262500,
               "increased_cargo": 289000,
               "increased_protected_cargo": 3085,
-              "protected_cargo": 3000
+              "ship_increased_cargo": 262500,
+              "ship_increased_protected_cargo": 3000
             }
           },
           "build_cost": {
@@ -130,7 +86,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 30,
               "warp_speed": 2.1
             }
@@ -147,11 +102,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 489,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 489,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -166,9 +119,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 428,
-              "health": 6190
+            "shield_info": {
+              "shield_deflection": 428,
+              "shield_health": 6190
             }
           },
           "build_cost": {
@@ -183,7 +136,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 765
+            "mining_laser_info": {
+              "mining_bonus": 765
+            }
           },
           "build_cost": {
             "materials": [],
@@ -195,6 +150,50 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "common",
+            "value": 12000
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 2200
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 2700
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 480
+          }
+        ],
+        "others": [
+          {
+            "type": "3\u2605\u00a0Survey\u00a0Parts",
+            "value": 3430
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 81900000
+          },
+          {
+            "type": "dilithium",
+            "value": 4670000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.7,
@@ -209,10 +208,6 @@
               {
                 "type": "dilithium",
                 "value": 17550
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 1010880
@@ -220,7 +215,7 @@
           "ship_xp": 0
         },
         {
-          "ability_bonus": 0.73,
+          "ability_bonus": 0.739,
           "additional_officer_slot": false,
           "level": 2,
           "scrap_details": {
@@ -243,7 +238,7 @@
           "ship_xp": 800
         },
         {
-          "ability_bonus": 0.77,
+          "ability_bonus": 0.778,
           "additional_officer_slot": false,
           "level": 3,
           "scrap_details": {
@@ -266,7 +261,7 @@
           "ship_xp": 1000
         },
         {
-          "ability_bonus": 0.81,
+          "ability_bonus": 0.817,
           "additional_officer_slot": false,
           "level": 4,
           "scrap_details": {
@@ -289,7 +284,7 @@
           "ship_xp": 1400
         },
         {
-          "ability_bonus": 0.85,
+          "ability_bonus": 0.856,
           "additional_officer_slot": false,
           "level": 5,
           "scrap_details": {
@@ -321,14 +316,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 412,
-            "armor_pierce": 470,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1761,
-            "damage_min": 1441,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 412,
+              "armor_pierce": 470,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -339,9 +332,11 @@
                 1,
                 1
               ],
+              "max_damage": 1761,
+              "min_damage": 1441,
+              "shield_pierce": 549,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 549
+            }
           },
           "build_cost": {
             "materials": [
@@ -392,10 +387,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 489000,
               "increased_cargo": 522160,
               "increased_protected_cargo": 6200,
-              "protected_cargo": 6085
+              "ship_increased_cargo": 489000,
+              "ship_increased_protected_cargo": 6085
             }
           },
           "build_cost": {
@@ -443,7 +438,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 32,
               "warp_speed": 2.3
             }
@@ -482,11 +476,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 636,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 636,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -531,9 +523,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 556,
-              "health": 8050
+            "shield_info": {
+              "shield_deflection": 556,
+              "shield_health": 8050
             }
           },
           "build_cost": {
@@ -580,7 +572,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 785
+            "mining_laser_info": {
+              "mining_bonus": 785
+            }
           },
           "build_cost": {
             "materials": [
@@ -630,7 +624,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 0.89,
+          "ability_bonus": 0.895,
           "additional_officer_slot": false,
           "level": 6,
           "scrap_details": {
@@ -669,7 +663,7 @@
           "ship_xp": 2400
         },
         {
-          "ability_bonus": 0.93,
+          "ability_bonus": 0.934,
           "additional_officer_slot": false,
           "level": 7,
           "scrap_details": {
@@ -708,7 +702,7 @@
           "ship_xp": 2900
         },
         {
-          "ability_bonus": 0.97,
+          "ability_bonus": 0.973,
           "additional_officer_slot": false,
           "level": 8,
           "scrap_details": {
@@ -747,7 +741,7 @@
           "ship_xp": 3900
         },
         {
-          "ability_bonus": 1.01,
+          "ability_bonus": 1.012,
           "additional_officer_slot": false,
           "level": 9,
           "scrap_details": {
@@ -786,7 +780,7 @@
           "ship_xp": 4600
         },
         {
-          "ability_bonus": 1.05,
+          "ability_bonus": 1.051,
           "additional_officer_slot": false,
           "level": 10,
           "scrap_details": {
@@ -834,14 +828,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 535,
-            "armor_pierce": 612,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 2290,
-            "damage_min": 1874,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 535,
+              "armor_pierce": 612,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -852,9 +844,11 @@
                 1,
                 1
               ],
+              "max_damage": 2290,
+              "min_damage": 1874,
+              "shield_pierce": 714,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 714
+            }
           },
           "build_cost": {
             "materials": [
@@ -905,10 +899,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 722160,
               "increased_cargo": 763000,
               "increased_protected_cargo": 9335,
-              "protected_cargo": 9200
+              "ship_increased_cargo": 722160,
+              "ship_increased_protected_cargo": 9200
             }
           },
           "build_cost": {
@@ -956,7 +950,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 34,
               "warp_speed": 2.6
             }
@@ -995,11 +988,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 826,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 826,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -1044,9 +1035,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 723,
-              "health": 10460
+            "shield_info": {
+              "shield_deflection": 723,
+              "shield_health": 10460
             }
           },
           "build_cost": {
@@ -1093,7 +1084,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 840
+            "mining_laser_info": {
+              "mining_bonus": 840
+            }
           },
           "build_cost": {
             "materials": [
@@ -1182,7 +1175,7 @@
           "ship_xp": 7000
         },
         {
-          "ability_bonus": 1.12,
+          "ability_bonus": 1.129,
           "additional_officer_slot": false,
           "level": 12,
           "scrap_details": {
@@ -1221,7 +1214,7 @@
           "ship_xp": 8500
         },
         {
-          "ability_bonus": 1.16,
+          "ability_bonus": 1.168,
           "additional_officer_slot": false,
           "level": 13,
           "scrap_details": {
@@ -1260,7 +1253,7 @@
           "ship_xp": 9500
         },
         {
-          "ability_bonus": 1.2,
+          "ability_bonus": 1.207,
           "additional_officer_slot": false,
           "level": 14,
           "scrap_details": {
@@ -1299,7 +1292,7 @@
           "ship_xp": 11000
         },
         {
-          "ability_bonus": 1.24,
+          "ability_bonus": 1.246,
           "additional_officer_slot": false,
           "level": 15,
           "scrap_details": {
@@ -1347,14 +1340,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 696,
-            "armor_pierce": 795,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 2977,
-            "damage_min": 2436,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 696,
+              "armor_pierce": 795,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1365,9 +1356,11 @@
                 1,
                 1
               ],
+              "max_damage": 2977,
+              "min_damage": 2436,
+              "shield_pierce": 928,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 928
+            }
           },
           "build_cost": {
             "materials": [
@@ -1418,10 +1411,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 963000,
               "increased_cargo": 1012560,
               "increased_protected_cargo": 12520,
-              "protected_cargo": 12335
+              "ship_increased_cargo": 963000,
+              "ship_increased_protected_cargo": 12335
             }
           },
           "build_cost": {
@@ -1469,7 +1462,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 36,
               "warp_speed": 2.9
             }
@@ -1508,11 +1500,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1074,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1074,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -1557,9 +1547,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 940,
-              "health": 13600
+            "shield_info": {
+              "shield_deflection": 940,
+              "shield_health": 13600
             }
           },
           "build_cost": {
@@ -1606,7 +1596,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 900
+            "mining_laser_info": {
+              "mining_bonus": 900
+            }
           },
           "build_cost": {
             "materials": [
@@ -1656,7 +1648,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 1.28,
+          "ability_bonus": 1.285,
           "additional_officer_slot": false,
           "level": 16,
           "scrap_details": {
@@ -1711,7 +1703,7 @@
           "ship_xp": 15000
         },
         {
-          "ability_bonus": 1.32,
+          "ability_bonus": 1.324,
           "additional_officer_slot": false,
           "level": 17,
           "scrap_details": {
@@ -1766,7 +1758,7 @@
           "ship_xp": 17500
         },
         {
-          "ability_bonus": 1.36,
+          "ability_bonus": 1.363,
           "additional_officer_slot": false,
           "level": 18,
           "scrap_details": {
@@ -1821,7 +1813,7 @@
           "ship_xp": 19500
         },
         {
-          "ability_bonus": 1.4,
+          "ability_bonus": 1.402,
           "additional_officer_slot": false,
           "level": 19,
           "scrap_details": {
@@ -1876,7 +1868,7 @@
           "ship_xp": 23000
         },
         {
-          "ability_bonus": 1.44,
+          "ability_bonus": 1.441,
           "additional_officer_slot": false,
           "level": 20,
           "scrap_details": {
@@ -1940,14 +1932,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 904,
-            "armor_pierce": 1034,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 3870,
-            "damage_min": 3166,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 904,
+              "armor_pierce": 1034,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1958,9 +1948,11 @@
                 1,
                 1
               ],
+              "max_damage": 3870,
+              "min_damage": 3166,
+              "shield_pierce": 1206,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 1206
+            }
           },
           "build_cost": {
             "materials": [
@@ -2011,10 +2003,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 1212560,
               "increased_cargo": 1271780,
               "increased_protected_cargo": 15750,
-              "protected_cargo": 15520
+              "ship_increased_cargo": 1212560,
+              "ship_increased_protected_cargo": 15520
             }
           },
           "build_cost": {
@@ -2062,7 +2054,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 40,
               "warp_speed": 3.2
             }
@@ -2101,11 +2092,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1397,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1397,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -2150,9 +2139,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 1222,
-              "health": 17680
+            "shield_info": {
+              "shield_deflection": 1222,
+              "shield_health": 17680
             }
           },
           "build_cost": {
@@ -2199,7 +2188,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 1050
+            "mining_laser_info": {
+              "mining_bonus": 1050
+            }
           },
           "build_cost": {
             "materials": [
@@ -2304,7 +2295,7 @@
           "ship_xp": 29000
         },
         {
-          "ability_bonus": 1.51,
+          "ability_bonus": 1.519,
           "additional_officer_slot": false,
           "level": 22,
           "scrap_details": {
@@ -2359,7 +2350,7 @@
           "ship_xp": 31500
         },
         {
-          "ability_bonus": 1.55,
+          "ability_bonus": 1.558,
           "additional_officer_slot": false,
           "level": 23,
           "scrap_details": {
@@ -2414,7 +2405,7 @@
           "ship_xp": 36000
         },
         {
-          "ability_bonus": 1.59,
+          "ability_bonus": 1.597,
           "additional_officer_slot": false,
           "level": 24,
           "scrap_details": {
@@ -2469,7 +2460,7 @@
           "ship_xp": 39000
         },
         {
-          "ability_bonus": 1.63,
+          "ability_bonus": 1.636,
           "additional_officer_slot": false,
           "level": 25,
           "scrap_details": {
@@ -2533,14 +2524,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 1176,
-            "armor_pierce": 1344,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 5031,
-            "damage_min": 4116,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1176,
+              "armor_pierce": 1344,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2551,9 +2540,11 @@
                 1,
                 1
               ],
+              "max_damage": 5031,
+              "min_damage": 4116,
+              "shield_pierce": 1568,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 1568
+            }
           },
           "build_cost": {
             "materials": [
@@ -2604,10 +2595,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 1471780,
               "increased_cargo": 1541420,
               "increased_protected_cargo": 19070,
-              "protected_cargo": 18750
+              "ship_increased_cargo": 1471780,
+              "ship_increased_protected_cargo": 18750
             }
           },
           "build_cost": {
@@ -2655,7 +2646,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 44,
               "warp_speed": 3.5
             }
@@ -2694,11 +2684,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 1816,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 1816,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -2743,9 +2731,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 1589,
-              "health": 22980
+            "shield_info": {
+              "shield_deflection": 1589,
+              "shield_health": 22980
             }
           },
           "build_cost": {
@@ -2792,7 +2780,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 1200
+            "mining_laser_info": {
+              "mining_bonus": 1200
+            }
           },
           "build_cost": {
             "materials": [
@@ -2842,7 +2832,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 1.67,
+          "ability_bonus": 1.675,
           "additional_officer_slot": false,
           "level": 26,
           "scrap_details": {
@@ -2897,7 +2887,7 @@
           "ship_xp": 47000
         },
         {
-          "ability_bonus": 1.71,
+          "ability_bonus": 1.714,
           "additional_officer_slot": false,
           "level": 27,
           "scrap_details": {
@@ -2952,7 +2942,7 @@
           "ship_xp": 51000
         },
         {
-          "ability_bonus": 1.75,
+          "ability_bonus": 1.753,
           "additional_officer_slot": false,
           "level": 28,
           "scrap_details": {
@@ -3007,7 +2997,7 @@
           "ship_xp": 57000
         },
         {
-          "ability_bonus": 1.79,
+          "ability_bonus": 1.792,
           "additional_officer_slot": false,
           "level": 29,
           "scrap_details": {
@@ -3062,7 +3052,7 @@
           "ship_xp": 61000
         },
         {
-          "ability_bonus": 1.83,
+          "ability_bonus": 1.831,
           "additional_officer_slot": false,
           "level": 30,
           "scrap_details": {
@@ -3126,14 +3116,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 1529,
-            "armor_pierce": 1747,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 6540,
-            "damage_min": 5351,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1529,
+              "armor_pierce": 1747,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3144,9 +3132,11 @@
                 1,
                 1
               ],
+              "max_damage": 6540,
+              "min_damage": 5351,
+              "shield_pierce": 2038,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2038
+            }
           },
           "build_cost": {
             "materials": [
@@ -3197,10 +3187,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 1741420,
               "increased_cargo": 1821800,
               "increased_protected_cargo": 22475,
-              "protected_cargo": 22070
+              "ship_increased_cargo": 1741420,
+              "ship_increased_protected_cargo": 22070
             }
           },
           "build_cost": {
@@ -3248,7 +3238,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 50,
               "warp_speed": 3.8
             }
@@ -3287,11 +3276,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 2360,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 2360,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -3403,7 +3390,7 @@
           "ship_xp": 72000
         },
         {
-          "ability_bonus": 1.9,
+          "ability_bonus": 1.909,
           "additional_officer_slot": false,
           "level": 32,
           "scrap_details": {
@@ -3470,7 +3457,7 @@
           "ship_xp": 81000
         },
         {
-          "ability_bonus": 1.94,
+          "ability_bonus": 1.948,
           "additional_officer_slot": false,
           "level": 33,
           "scrap_details": {
@@ -3537,7 +3524,7 @@
           "ship_xp": 86000
         },
         {
-          "ability_bonus": 1.98,
+          "ability_bonus": 1.986,
           "additional_officer_slot": false,
           "level": 34,
           "scrap_details": {
@@ -3604,7 +3591,7 @@
           "ship_xp": 95000
         },
         {
-          "ability_bonus": 2.02,
+          "ability_bonus": 2.025,
           "additional_officer_slot": false,
           "level": 35,
           "scrap_details": {
@@ -3680,14 +3667,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 1987,
-            "armor_pierce": 2271,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 8502,
-            "damage_min": 6956,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 1987,
+              "armor_pierce": 2271,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3698,9 +3683,11 @@
                 1,
                 1
               ],
+              "max_damage": 8502,
+              "min_damage": 6956,
+              "shield_pierce": 2649,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 2649
+            }
           },
           "build_cost": {
             "materials": [
@@ -3751,10 +3738,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 2021800,
               "increased_cargo": 2150000,
               "increased_protected_cargo": 26000,
-              "protected_cargo": 25475
+              "ship_increased_cargo": 2021800,
+              "ship_increased_protected_cargo": 25475
             }
           },
           "build_cost": {
@@ -3802,7 +3789,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 60,
               "warp_speed": 4.2
             }
@@ -3841,11 +3827,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3068,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3068,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -3890,9 +3874,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 2685,
-              "health": 38840
+            "shield_info": {
+              "shield_deflection": 2685,
+              "shield_health": 38840
             }
           },
           "build_cost": {
@@ -3939,7 +3923,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 1600
+            "mining_laser_info": {
+              "mining_bonus": 1600
+            }
           },
           "build_cost": {
             "materials": [
@@ -3989,7 +3975,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 2.06,
+          "ability_bonus": 2.064,
           "additional_officer_slot": false,
           "level": 36,
           "scrap_details": {
@@ -4056,7 +4042,7 @@
           "ship_xp": 105000
         },
         {
-          "ability_bonus": 2.1,
+          "ability_bonus": 2.103,
           "additional_officer_slot": false,
           "level": 37,
           "scrap_details": {
@@ -4123,7 +4109,7 @@
           "ship_xp": 116000
         },
         {
-          "ability_bonus": 2.14,
+          "ability_bonus": 2.142,
           "additional_officer_slot": false,
           "level": 38,
           "scrap_details": {
@@ -4190,7 +4176,7 @@
           "ship_xp": 122000
         },
         {
-          "ability_bonus": 2.18,
+          "ability_bonus": 2.181,
           "additional_officer_slot": false,
           "level": 39,
           "scrap_details": {
@@ -4333,14 +4319,12 @@
         {
           "name": "Phaser Turrets",
           "additional_info": {
-            "accuracy": 2583,
-            "armor_pierce": 2952,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11053,
-            "damage_min": 9043,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2583,
+              "armor_pierce": 2952,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -4351,9 +4335,11 @@
                 1,
                 1
               ],
+              "max_damage": 11053,
+              "min_damage": 9043,
+              "shield_pierce": 3444,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 3444
+            }
           },
           "build_cost": {
             "materials": [
@@ -4404,10 +4390,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 2350000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 29000
+              "ship_increased_cargo": 2350000,
+              "ship_increased_protected_cargo": 29000
             }
           },
           "build_cost": {
@@ -4454,11 +4440,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 3989,
-            "warp_info": {
-              "impulse_speed": 75,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 3989,
+              "impulse_speed": 75
             }
           },
           "build_cost": {
@@ -4504,7 +4488,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 70,
               "warp_speed": 4.5
             }
@@ -4543,9 +4526,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3490,
-              "health": 50490
+            "shield_info": {
+              "shield_deflection": 3490,
+              "shield_health": 50490
             }
           },
           "build_cost": {
@@ -4592,7 +4575,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 1820
+            "mining_laser_info": {
+              "mining_bonus": 1820
+            }
           },
           "build_cost": {
             "materials": [
@@ -4642,7 +4627,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 2.25,
+          "ability_bonus": 2.259,
           "additional_officer_slot": false,
           "level": 41,
           "scrap_details": {
@@ -4709,7 +4694,7 @@
           "ship_xp": 154000
         },
         {
-          "ability_bonus": 2.29,
+          "ability_bonus": 2.298,
           "additional_officer_slot": false,
           "level": 42,
           "scrap_details": {
@@ -4776,7 +4761,7 @@
           "ship_xp": 161000
         },
         {
-          "ability_bonus": 2.33,
+          "ability_bonus": 2.337,
           "additional_officer_slot": false,
           "level": 43,
           "scrap_details": {
@@ -4843,7 +4828,7 @@
           "ship_xp": 176000
         },
         {
-          "ability_bonus": 2.37,
+          "ability_bonus": 2.376,
           "additional_officer_slot": false,
           "level": 44,
           "scrap_details": {

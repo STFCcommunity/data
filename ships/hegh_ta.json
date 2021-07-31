@@ -4,48 +4,6 @@
     "cost": 1600,
     "quantity": 650
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 4,
-        "rarity": "uncommon",
-        "value": 340850
-      },
-      {
-        "type": "crystal",
-        "grade": 4,
-        "rarity": "rare",
-        "value": 115900
-      },
-      {
-        "type": "gas",
-        "grade": 4,
-        "rarity": "rare",
-        "value": 74320
-      }
-    ],
-    "others": [
-      {
-        "type": "4\u2605\u00a0Common\u00a0Interceptor\u00a0Parts",
-        "value": 2939710
-      },
-      {
-        "type": "4\u2605\u00a0Uncommon\u00a0Interceptor\u00a0Parts",
-        "value": 790320
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 624382000000
-      },
-      {
-        "type": "dilithium",
-        "value": 27164000000
-      }
-    ]
-  },
   "faction": "klingon",
   "grade": 4,
   "img_url": "./assets/hegh_ta.png",
@@ -61,11 +19,11 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Open the Wound",
-    "description": "As long as the opponent has a {buff}, every time the Hegh'ta hits it with a weapon attack, it increases the  Critical Hit Chances by 13%.",
+    "description": "As long as the opponent has a {buff}, every time the Hegh'ta hits it with a weapon attack, it increases the Critical Hit Chances by 13%.",
     "buff": {
       "name": "Hull Breach",
       "type": "use"
@@ -81,14 +39,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 81424,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 31632,
-            "damage_min": 28757,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 81424,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -99,9 +55,11 @@
                 0,
                 5
               ],
+              "max_damage": 31632,
+              "min_damage": 28757,
+              "shield_pierce": 8142,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8142
+            }
           },
           "build_cost": {
             "materials": [],
@@ -115,14 +73,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 81424,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 31632,
-            "damage_min": 28757,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 81424,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -133,9 +89,11 @@
                 5,
                 0
               ],
+              "max_damage": 31632,
+              "min_damage": 28757,
+              "shield_pierce": 8142,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8142
+            }
           },
           "build_cost": {
             "materials": [],
@@ -149,14 +107,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 81424,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 25561,
-            "damage_min": 21301,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 81424,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -167,9 +123,11 @@
                 3,
                 0
               ],
+              "max_damage": 25561,
+              "min_damage": 21301,
+              "shield_pierce": 8142,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8142
+            }
           },
           "build_cost": {
             "materials": [],
@@ -183,14 +141,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8142,
-            "armor_pierce": 81424,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 25561,
-            "damage_min": 21301,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8142,
+              "armor_pierce": 81424,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -201,9 +157,11 @@
                 0,
                 3
               ],
+              "max_damage": 25561,
+              "min_damage": 21301,
+              "shield_pierce": 8142,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8142
+            }
           },
           "build_cost": {
             "materials": [],
@@ -217,8 +175,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 3711,
-            "hull_health": 560093
+            "armor_info": {
+              "armor": 3711,
+              "hull_health": 560093
+            }
           },
           "build_cost": {
             "materials": [],
@@ -233,7 +193,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 180,
               "warp_speed": 3.9
             }
@@ -250,11 +209,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 37256,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 37256,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -269,9 +226,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3711,
-              "health": 457960
+            "shield_info": {
+              "shield_deflection": 3711,
+              "shield_health": 457960
             }
           },
           "build_cost": {
@@ -284,6 +241,48 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 340850
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 115900
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 74320
+          }
+        ],
+        "others": [
+          {
+            "type": "4\u2605\u00a0Common\u00a0Interceptor\u00a0Parts",
+            "value": 2939710
+          },
+          {
+            "type": "4\u2605\u00a0Uncommon\u00a0Interceptor\u00a0Parts",
+            "value": 790320
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 624382000000
+          },
+          {
+            "type": "dilithium",
+            "value": 27164000000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.02,
@@ -325,14 +324,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 86717,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 27222,
-            "damage_min": 22686,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 86717,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -343,9 +340,11 @@
                 0,
                 3
               ],
+              "max_damage": 27222,
+              "min_damage": 22686,
+              "shield_pierce": 8671,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8671
+            }
           },
           "build_cost": {
             "materials": [
@@ -395,14 +394,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 86717,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 27222,
-            "damage_min": 22686,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 86717,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -413,9 +410,11 @@
                 3,
                 0
               ],
+              "max_damage": 27222,
+              "min_damage": 22686,
+              "shield_pierce": 8671,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8671
+            }
           },
           "build_cost": {
             "materials": [
@@ -465,14 +464,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 86717,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 33688,
-            "damage_min": 30626,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 86717,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -483,9 +480,11 @@
                 5,
                 0
               ],
+              "max_damage": 33688,
+              "min_damage": 30626,
+              "shield_pierce": 8671,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8671
+            }
           },
           "build_cost": {
             "materials": [
@@ -535,14 +534,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 8671,
-            "armor_pierce": 86717,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 33688,
-            "damage_min": 30626,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 8671,
+              "armor_pierce": 86717,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -553,9 +550,11 @@
                 0,
                 5
               ],
+              "max_damage": 33688,
+              "min_damage": 30626,
+              "shield_pierce": 8671,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 8671
+            }
           },
           "build_cost": {
             "materials": [
@@ -605,8 +604,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 3952,
-            "hull_health": 585399
+            "armor_info": {
+              "armor": 3952,
+              "hull_health": 585399
+            }
           },
           "build_cost": {
             "materials": [
@@ -657,7 +658,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 185,
               "warp_speed": 4
             }
@@ -710,11 +710,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 39678,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 39678,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -765,9 +763,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 3952,
-              "health": 478716
+            "shield_info": {
+              "shield_deflection": 3952,
+              "shield_health": 478716
             }
           },
           "build_cost": {
@@ -857,14 +855,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 93221,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 29264,
-            "damage_min": 24387,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 93221,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -875,9 +871,11 @@
                 0,
                 3
               ],
+              "max_damage": 29264,
+              "min_damage": 24387,
+              "shield_pierce": 9321,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 9321
+            }
           },
           "build_cost": {
             "materials": [
@@ -933,14 +931,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 93221,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 29264,
-            "damage_min": 24387,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 93221,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -951,9 +947,11 @@
                 3,
                 0
               ],
+              "max_damage": 29264,
+              "min_damage": 24387,
+              "shield_pierce": 9321,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 9321
+            }
           },
           "build_cost": {
             "materials": [
@@ -1009,14 +1007,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 93221,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 36215,
-            "damage_min": 32923,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 93221,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -1027,9 +1023,11 @@
                 5,
                 0
               ],
+              "max_damage": 36215,
+              "min_damage": 32923,
+              "shield_pierce": 9321,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 9321
+            }
           },
           "build_cost": {
             "materials": [
@@ -1085,14 +1083,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 9321,
-            "armor_pierce": 93221,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 36215,
-            "damage_min": 32923,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 9321,
+              "armor_pierce": 93221,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -1103,9 +1099,11 @@
                 0,
                 5
               ],
+              "max_damage": 36215,
+              "min_damage": 32923,
+              "shield_pierce": 9321,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 9321
+            }
           },
           "build_cost": {
             "materials": [
@@ -1161,8 +1159,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 4248,
-            "hull_health": 616584
+            "armor_info": {
+              "armor": 4248,
+              "hull_health": 616584
+            }
           },
           "build_cost": {
             "materials": [
@@ -1217,7 +1217,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 190,
               "warp_speed": 4.1
             }
@@ -1274,11 +1273,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 42654,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 42654,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -1333,9 +1330,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4248,
-              "health": 504294
+            "shield_info": {
+              "shield_deflection": 4248,
+              "shield_health": 504294
             }
           },
           "build_cost": {
@@ -1429,14 +1426,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 101145,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 31751,
-            "damage_min": 26460,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 101145,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -1447,9 +1442,11 @@
                 0,
                 3
               ],
+              "max_damage": 31751,
+              "min_damage": 26460,
+              "shield_pierce": 10113,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 10113
+            }
           },
           "build_cost": {
             "materials": [
@@ -1505,14 +1502,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 101145,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 31751,
-            "damage_min": 26460,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 101145,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -1523,9 +1518,11 @@
                 3,
                 0
               ],
+              "max_damage": 31751,
+              "min_damage": 26460,
+              "shield_pierce": 10113,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 10113
+            }
           },
           "build_cost": {
             "materials": [
@@ -1581,14 +1578,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 101145,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 39293,
-            "damage_min": 35721,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 101145,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -1599,9 +1594,11 @@
                 5,
                 0
               ],
+              "max_damage": 39293,
+              "min_damage": 35721,
+              "shield_pierce": 10113,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 10113
+            }
           },
           "build_cost": {
             "materials": [
@@ -1657,14 +1654,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 10113,
-            "armor_pierce": 101145,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 39293,
-            "damage_min": 35721,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 10113,
+              "armor_pierce": 101145,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -1675,9 +1670,11 @@
                 0,
                 5
               ],
+              "max_damage": 39293,
+              "min_damage": 35721,
+              "shield_pierce": 10113,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 10113
+            }
           },
           "build_cost": {
             "materials": [
@@ -1733,8 +1730,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 4609,
-            "hull_health": 655010
+            "armor_info": {
+              "armor": 4609,
+              "hull_health": 655010
+            }
           },
           "build_cost": {
             "materials": [
@@ -1789,7 +1788,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 195,
               "warp_speed": 4.2
             }
@@ -1846,11 +1844,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 46279,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 46279,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -1905,9 +1901,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 4609,
-              "health": 535811
+            "shield_info": {
+              "shield_deflection": 4609,
+              "shield_health": 535811
             }
           },
           "build_cost": {
@@ -2001,14 +1997,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 110754,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 34767,
-            "damage_min": 28974,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 110754,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -2019,9 +2013,11 @@
                 0,
                 3
               ],
+              "max_damage": 34767,
+              "min_damage": 28974,
+              "shield_pierce": 11074,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 11074
+            }
           },
           "build_cost": {
             "materials": [
@@ -2077,14 +2073,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 110754,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 34767,
-            "damage_min": 28974,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 110754,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -2095,9 +2089,11 @@
                 3,
                 0
               ],
+              "max_damage": 34767,
+              "min_damage": 28974,
+              "shield_pierce": 11074,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 11074
+            }
           },
           "build_cost": {
             "materials": [
@@ -2153,14 +2149,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 110754,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 43026,
-            "damage_min": 39114,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 110754,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -2171,9 +2165,11 @@
                 5,
                 0
               ],
+              "max_damage": 43026,
+              "min_damage": 39114,
+              "shield_pierce": 11074,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 11074
+            }
           },
           "build_cost": {
             "materials": [
@@ -2229,14 +2225,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 11074,
-            "armor_pierce": 110754,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 43026,
-            "damage_min": 39114,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 11074,
+              "armor_pierce": 110754,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -2247,9 +2241,11 @@
                 0,
                 5
               ],
+              "max_damage": 43026,
+              "min_damage": 39114,
+              "shield_pierce": 11074,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 11074
+            }
           },
           "build_cost": {
             "materials": [
@@ -2305,8 +2301,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 5047,
-            "hull_health": 702673
+            "armor_info": {
+              "armor": 5047,
+              "hull_health": 702673
+            }
           },
           "build_cost": {
             "materials": [
@@ -2361,7 +2359,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 200,
               "warp_speed": 4.3
             }
@@ -2418,11 +2415,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 50676,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 50676,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -2477,9 +2472,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5047,
-              "health": 574903
+            "shield_info": {
+              "shield_deflection": 5047,
+              "shield_health": 574903
             }
           },
           "build_cost": {
@@ -2573,14 +2568,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 122383,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 47544,
-            "damage_min": 43221,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 122383,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -2591,9 +2584,11 @@
                 5,
                 0
               ],
+              "max_damage": 47544,
+              "min_damage": 43221,
+              "shield_pierce": 12237,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 12237
+            }
           },
           "build_cost": {
             "materials": [
@@ -2649,14 +2644,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 122383,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 47544,
-            "damage_min": 43221,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 122383,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -2667,9 +2660,11 @@
                 0,
                 5
               ],
+              "max_damage": 47544,
+              "min_damage": 43221,
+              "shield_pierce": 12237,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 12237
+            }
           },
           "build_cost": {
             "materials": [
@@ -2725,14 +2720,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 122383,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 38418,
-            "damage_min": 32016,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 122383,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -2743,9 +2736,11 @@
                 3,
                 0
               ],
+              "max_damage": 38418,
+              "min_damage": 32016,
+              "shield_pierce": 12237,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 12237
+            }
           },
           "build_cost": {
             "materials": [
@@ -2801,14 +2796,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 12237,
-            "armor_pierce": 122383,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 38418,
-            "damage_min": 32016,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 12237,
+              "armor_pierce": 122383,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -2819,9 +2812,11 @@
                 0,
                 3
               ],
+              "max_damage": 38418,
+              "min_damage": 32016,
+              "shield_pierce": 12237,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 12237
+            }
           },
           "build_cost": {
             "materials": [
@@ -2877,8 +2872,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 5577,
-            "hull_health": 762371
+            "armor_info": {
+              "armor": 5577,
+              "hull_health": 762371
+            }
           },
           "build_cost": {
             "materials": [
@@ -2933,7 +2930,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 205,
               "warp_speed": 4.4
             }
@@ -2990,11 +2986,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 55997,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 55997,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -3049,9 +3043,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 5577,
-              "health": 623863
+            "shield_info": {
+              "shield_deflection": 5577,
+              "shield_health": 623863
             }
           },
           "build_cost": {
@@ -3145,14 +3139,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 135845,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 52774,
-            "damage_min": 47975,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 135845,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -3163,9 +3155,11 @@
                 5,
                 0
               ],
+              "max_damage": 52774,
+              "min_damage": 47975,
+              "shield_pierce": 13583,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 13583
+            }
           },
           "build_cost": {
             "materials": [
@@ -3221,14 +3215,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 135845,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 42644,
-            "damage_min": 35538,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 135845,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -3239,9 +3231,11 @@
                 0,
                 3
               ],
+              "max_damage": 42644,
+              "min_damage": 35538,
+              "shield_pierce": 13583,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 13583
+            }
           },
           "build_cost": {
             "materials": [
@@ -3297,14 +3291,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 135845,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 42644,
-            "damage_min": 35538,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 135845,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -3315,9 +3307,11 @@
                 3,
                 0
               ],
+              "max_damage": 42644,
+              "min_damage": 35538,
+              "shield_pierce": 13583,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 13583
+            }
           },
           "build_cost": {
             "materials": [
@@ -3373,14 +3367,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 13583,
-            "armor_pierce": 135845,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 52774,
-            "damage_min": 47975,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 13583,
+              "armor_pierce": 135845,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -3391,9 +3383,11 @@
                 0,
                 5
               ],
+              "max_damage": 52774,
+              "min_damage": 47975,
+              "shield_pierce": 13583,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 13583
+            }
           },
           "build_cost": {
             "materials": [
@@ -3449,8 +3443,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 6191,
-            "hull_health": 833536
+            "armor_info": {
+              "armor": 6191,
+              "hull_health": 833536
+            }
           },
           "build_cost": {
             "materials": [
@@ -3505,7 +3501,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 210,
               "warp_speed": 4.5
             }
@@ -3562,11 +3557,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 62157,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 62157,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -3621,9 +3614,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 6191,
-              "health": 682225
+            "shield_info": {
+              "shield_deflection": 6191,
+              "shield_health": 682225
             }
           },
           "build_cost": {
@@ -3717,14 +3710,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 150109,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 47122,
-            "damage_min": 39269,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 150109,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -3735,9 +3726,11 @@
                 0,
                 3
               ],
+              "max_damage": 47122,
+              "min_damage": 39269,
+              "shield_pierce": 15009,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 15009
+            }
           },
           "build_cost": {
             "materials": [
@@ -3793,14 +3786,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 150109,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 47122,
-            "damage_min": 39269,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 150109,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -3811,9 +3802,11 @@
                 3,
                 0
               ],
+              "max_damage": 47122,
+              "min_damage": 39269,
+              "shield_pierce": 15009,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 15009
+            }
           },
           "build_cost": {
             "materials": [
@@ -3869,14 +3862,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 150109,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 58315,
-            "damage_min": 53012,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 150109,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -3887,9 +3878,11 @@
                 5,
                 0
               ],
+              "max_damage": 58315,
+              "min_damage": 53012,
+              "shield_pierce": 15009,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 15009
+            }
           },
           "build_cost": {
             "materials": [
@@ -3945,14 +3938,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 15009,
-            "armor_pierce": 150109,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 58315,
-            "damage_min": 53012,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 15009,
+              "armor_pierce": 150109,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -3963,9 +3954,11 @@
                 0,
                 5
               ],
+              "max_damage": 58315,
+              "min_damage": 53012,
+              "shield_pierce": 15009,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 15009
+            }
           },
           "build_cost": {
             "materials": [
@@ -4021,8 +4014,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 6841,
-            "hull_health": 909906
+            "armor_info": {
+              "armor": 6841,
+              "hull_health": 909906
+            }
           },
           "build_cost": {
             "materials": [
@@ -4077,7 +4072,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 215,
               "warp_speed": 4.6
             }
@@ -4134,11 +4128,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 68683,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 68683,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -4193,9 +4185,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 6841,
-              "health": 744854
+            "shield_info": {
+              "shield_deflection": 6841,
+              "shield_health": 744854
             }
           },
           "build_cost": {
@@ -4289,14 +4281,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 163619,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 51363,
-            "damage_min": 42803,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 163619,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -4307,9 +4297,11 @@
                 0,
                 3
               ],
+              "max_damage": 51363,
+              "min_damage": 42803,
+              "shield_pierce": 16360,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 16360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4365,14 +4357,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 163619,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 63563,
-            "damage_min": 57783,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 163619,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -4383,9 +4373,11 @@
                 5,
                 0
               ],
+              "max_damage": 63563,
+              "min_damage": 57783,
+              "shield_pierce": 16360,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 16360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4441,14 +4433,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 163619,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 51363,
-            "damage_min": 42803,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 163619,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -4459,9 +4449,11 @@
                 3,
                 0
               ],
+              "max_damage": 51363,
+              "min_damage": 42803,
+              "shield_pierce": 16360,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 16360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4517,14 +4509,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 16360,
-            "armor_pierce": 163619,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 63563,
-            "damage_min": 57783,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 16360,
+              "armor_pierce": 163619,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -4535,9 +4525,11 @@
                 0,
                 5
               ],
+              "max_damage": 63563,
+              "min_damage": 57783,
+              "shield_pierce": 16360,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 16360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4593,8 +4585,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 7457,
-            "hull_health": 981612
+            "armor_info": {
+              "armor": 7457,
+              "hull_health": 981612
+            }
           },
           "build_cost": {
             "materials": [
@@ -4649,7 +4643,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 220,
               "warp_speed": 4.7
             }
@@ -4706,11 +4699,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 74864,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 74864,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -4765,9 +4756,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 7457,
-              "health": 803659
+            "shield_info": {
+              "shield_deflection": 7457,
+              "shield_health": 803659
             }
           },
           "build_cost": {
@@ -4861,14 +4852,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 175890,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 55215,
-            "damage_min": 46013,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 175890,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -4879,9 +4868,11 @@
                 0,
                 3
               ],
+              "max_damage": 55215,
+              "min_damage": 46013,
+              "shield_pierce": 17587,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 17587
+            }
           },
           "build_cost": {
             "materials": [
@@ -4937,14 +4928,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 175890,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 55215,
-            "damage_min": 46013,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 175890,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -4955,9 +4944,11 @@
                 3,
                 0
               ],
+              "max_damage": 55215,
+              "min_damage": 46013,
+              "shield_pierce": 17587,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 17587
+            }
           },
           "build_cost": {
             "materials": [
@@ -5013,14 +5004,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 175890,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 68330,
-            "damage_min": 62117,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 175890,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -5031,9 +5020,11 @@
                 5,
                 0
               ],
+              "max_damage": 68330,
+              "min_damage": 62117,
+              "shield_pierce": 17587,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 17587
+            }
           },
           "build_cost": {
             "materials": [
@@ -5089,14 +5080,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 17587,
-            "armor_pierce": 175890,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 68330,
-            "damage_min": 62117,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 17587,
+              "armor_pierce": 175890,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -5107,9 +5096,11 @@
                 0,
                 5
               ],
+              "max_damage": 68330,
+              "min_damage": 62117,
+              "shield_pierce": 17587,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 17587
+            }
           },
           "build_cost": {
             "materials": [
@@ -5165,8 +5156,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 8016,
-            "hull_health": 1046193
+            "armor_info": {
+              "armor": 8016,
+              "hull_health": 1046193
+            }
           },
           "build_cost": {
             "materials": [
@@ -5221,7 +5214,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 225,
               "warp_speed": 4.8
             }
@@ -5278,11 +5270,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 80479,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 80479,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -5337,9 +5327,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 8016,
-              "health": 856621
+            "shield_info": {
+              "shield_deflection": 8016,
+              "shield_health": 856621
             }
           },
           "build_cost": {
@@ -5433,14 +5423,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 186443,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 58528,
-            "damage_min": 48774,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 186443,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -5451,9 +5439,11 @@
                 3,
                 0
               ],
+              "max_damage": 58528,
+              "min_damage": 48774,
+              "shield_pierce": 18642,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 18642
+            }
           },
           "build_cost": {
             "materials": [
@@ -5509,14 +5499,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 186443,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 72430,
-            "damage_min": 65844,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 186443,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -5527,9 +5515,11 @@
                 5,
                 0
               ],
+              "max_damage": 72430,
+              "min_damage": 65844,
+              "shield_pierce": 18642,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 18642
+            }
           },
           "build_cost": {
             "materials": [
@@ -5585,14 +5575,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 186443,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 72430,
-            "damage_min": 65844,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 186443,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -5603,9 +5591,11 @@
                 0,
                 5
               ],
+              "max_damage": 72430,
+              "min_damage": 65844,
+              "shield_pierce": 18642,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 18642
+            }
           },
           "build_cost": {
             "materials": [
@@ -5661,14 +5651,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 18642,
-            "armor_pierce": 186443,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 58528,
-            "damage_min": 48774,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 18642,
+              "armor_pierce": 186443,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -5679,9 +5667,11 @@
                 0,
                 3
               ],
+              "max_damage": 58528,
+              "min_damage": 48774,
+              "shield_pierce": 18642,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 18642
+            }
           },
           "build_cost": {
             "materials": [
@@ -5737,8 +5727,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 8497,
-            "hull_health": 1100975
+            "armor_info": {
+              "armor": 8497,
+              "hull_health": 1100975
+            }
           },
           "build_cost": {
             "materials": [
@@ -5793,7 +5785,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 230,
               "warp_speed": 4.9
             }
@@ -5850,11 +5841,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 85308,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 85308,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -5909,9 +5898,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 8497,
-              "health": 901549
+            "shield_info": {
+              "shield_deflection": 8497,
+              "shield_health": 901549
             }
           },
           "build_cost": {
@@ -6005,14 +5994,12 @@
         {
           "name": "Left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 196697,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 61747,
-            "damage_min": 51457,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 196697,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 3,
                 0,
                 3,
@@ -6023,9 +6010,11 @@
                 0,
                 3
               ],
+              "max_damage": 61747,
+              "min_damage": 51457,
+              "shield_pierce": 19667,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 19667
+            }
           },
           "build_cost": {
             "materials": [
@@ -6081,14 +6070,12 @@
         {
           "name": "Right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 196697,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.75,
-            "damage_max": 61747,
-            "damage_min": 51457,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 196697,
+              "crit_chance": 0.1,
+              "crit_damage": 1.75,
+              "firing_pattern": [
                 0,
                 3,
                 0,
@@ -6099,9 +6086,11 @@
                 3,
                 0
               ],
+              "max_damage": 61747,
+              "min_damage": 51457,
+              "shield_pierce": 19667,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 19667
+            }
           },
           "build_cost": {
             "materials": [
@@ -6157,14 +6146,12 @@
         {
           "name": "Upper-left Kinetic Cannon",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 196697,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 76414,
-            "damage_min": 69465,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 196697,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 5,
                 0,
@@ -6175,9 +6162,11 @@
                 5,
                 0
               ],
+              "max_damage": 76414,
+              "min_damage": 69465,
+              "shield_pierce": 19667,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 19667
+            }
           },
           "build_cost": {
             "materials": [
@@ -6233,14 +6222,12 @@
         {
           "name": "Upper-right Kinetic Cannon",
           "additional_info": {
-            "accuracy": 19667,
-            "armor_pierce": 196697,
-            "crit_chance": 0.1,
-            "crit_modifier": 2,
-            "damage_max": 76414,
-            "damage_min": 69465,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 19667,
+              "armor_pierce": 196697,
+              "crit_chance": 0.1,
+              "crit_damage": 2,
+              "firing_pattern": [
                 0,
                 0,
                 5,
@@ -6251,9 +6238,11 @@
                 0,
                 5
               ],
+              "max_damage": 76414,
+              "min_damage": 69465,
+              "shield_pierce": 19667,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 19667
+            }
           },
           "build_cost": {
             "materials": [
@@ -6309,8 +6298,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 8964,
-            "hull_health": 1156293
+            "armor_info": {
+              "armor": 8964,
+              "hull_health": 1156293
+            }
           },
           "build_cost": {
             "materials": [
@@ -6365,7 +6356,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 235,
               "warp_speed": 5
             }
@@ -6422,11 +6412,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 90000,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 90000,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -6481,9 +6469,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 8964,
-              "health": 946913
+            "shield_info": {
+              "shield_deflection": 8964,
+              "shield_health": 946913
             }
           },
           "build_cost": {

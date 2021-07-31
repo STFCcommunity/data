@@ -4,44 +4,6 @@
     "cost": 500,
     "quantity": 120
   },
-  "build_costs": {
-    "materials": [
-      {
-        "type": "crystal",
-        "grade": 3,
-        "rarity": "rare",
-        "value": 590
-      },
-      {
-        "type": "ore",
-        "grade": 3,
-        "rarity": "uncommon",
-        "value": 4100
-      },
-      {
-        "type": "ore",
-        "grade": 3,
-        "rarity": "rare",
-        "value": 2175
-      }
-    ],
-    "others": [
-      {
-        "type": "3\u2605\u00a0Battleship\u00a0Parts",
-        "value": 62650
-      }
-    ],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 822000000
-      },
-      {
-        "type": "dilithium",
-        "value": 53200000
-      }
-    ]
-  },
   "faction": "federation",
   "grade": 3,
   "img_url": "./assets/uss_intrepid.png",
@@ -54,11 +16,11 @@
   ],
   "scrap_info": {
     "required_scrapyard_level": 46,
-    "scrapable": true
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Frontline Defender",
-    "description": "When fighting Hostiles, The USS INTREPID increases its  Armor, Shield Deflection and Dodge by 120%.",
+    "description": "When fighting Hostiles, The USS INTREPID increases its Armor, Shield Deflection and Dodge by 120%.",
     "percentage": true
   },
   "ship_class": "battleship",
@@ -70,14 +32,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 2220,
-            "armor_pierce": 1665,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11052,
-            "damage_min": 9042,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2220,
+              "armor_pierce": 1665,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -88,9 +48,11 @@
                 1,
                 1
               ],
+              "max_damage": 11052,
+              "min_damage": 9042,
+              "shield_pierce": 13990,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 13990
+            }
           },
           "build_cost": {
             "materials": [],
@@ -104,14 +66,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 2220,
-            "armor_pierce": 1665,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13262,
-            "damage_min": 10851,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2220,
+              "armor_pierce": 1665,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -122,9 +82,11 @@
                 1,
                 1
               ],
+              "max_damage": 13262,
+              "min_damage": 10851,
+              "shield_pierce": 13990,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 13990
+            }
           },
           "build_cost": {
             "materials": [],
@@ -138,14 +100,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 2220,
-            "armor_pierce": 1665,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13262,
-            "damage_min": 10851,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2220,
+              "armor_pierce": 1665,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -156,9 +116,11 @@
                 1,
                 1
               ],
+              "max_damage": 13262,
+              "min_damage": 10851,
+              "shield_pierce": 13990,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 13990
+            }
           },
           "build_cost": {
             "materials": [],
@@ -173,10 +135,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 12000,
               "increased_cargo": 13510,
               "increased_protected_cargo": 260,
-              "protected_cargo": 250
+              "ship_increased_cargo": 12000,
+              "ship_increased_protected_cargo": 250
             }
           },
           "build_cost": {
@@ -192,7 +154,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 33,
               "warp_speed": 2.8
             }
@@ -209,8 +170,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 6682,
-            "hull_health": 73740
+            "armor_info": {
+              "armor": 6682,
+              "hull_health": 73740
+            }
           },
           "build_cost": {
             "materials": [],
@@ -222,6 +185,44 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 590
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 4100
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 2175
+          }
+        ],
+        "others": [
+          {
+            "type": "3\u2605\u00a0Battleship\u00a0Parts",
+            "value": 62650
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 822000000
+          },
+          {
+            "type": "dilithium",
+            "value": 53200000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 0.4,
@@ -236,10 +237,6 @@
               {
                 "type": "tritanium",
                 "value": 675000
-              },
-              {
-                "type": "Ship\u00a0XP",
-                "value": 0
               }
             ],
             "scrap_time": 1249080
@@ -348,14 +345,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 2242,
-            "armor_pierce": 1682,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11163,
-            "damage_min": 9132,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2242,
+              "armor_pierce": 1682,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -366,9 +361,11 @@
                 1,
                 1
               ],
+              "max_damage": 11163,
+              "min_damage": 9132,
+              "shield_pierce": 14129,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 14129
+            }
           },
           "build_cost": {
             "materials": [
@@ -418,14 +415,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 2242,
-            "armor_pierce": 1682,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13395,
-            "damage_min": 10960,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2242,
+              "armor_pierce": 1682,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -436,9 +431,11 @@
                 1,
                 1
               ],
+              "max_damage": 13395,
+              "min_damage": 10960,
+              "shield_pierce": 14129,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 14129
+            }
           },
           "build_cost": {
             "materials": [
@@ -488,14 +485,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 2242,
-            "armor_pierce": 1682,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13395,
-            "damage_min": 10960,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2242,
+              "armor_pierce": 1682,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -506,9 +501,11 @@
                 1,
                 1
               ],
+              "max_damage": 13395,
+              "min_damage": 10960,
+              "shield_pierce": 14129,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 14129
+            }
           },
           "build_cost": {
             "materials": [
@@ -559,10 +556,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 16510,
               "increased_cargo": 18470,
               "increased_protected_cargo": 370,
-              "protected_cargo": 360
+              "ship_increased_cargo": 16510,
+              "ship_increased_protected_cargo": 360
             }
           },
           "build_cost": {
@@ -600,7 +597,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 36,
               "warp_speed": 2.9
             }
@@ -639,8 +635,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 6815,
-            "hull_health": 74485
+            "armor_info": {
+              "armor": 6815,
+              "hull_health": 74485
+            }
           },
           "build_cost": {
             "materials": [
@@ -886,14 +884,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 2280,
-            "armor_pierce": 1710,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 11386,
-            "damage_min": 9315,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2280,
+              "armor_pierce": 1710,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -904,9 +900,11 @@
                 1,
                 1
               ],
+              "max_damage": 11386,
+              "min_damage": 9315,
+              "shield_pierce": 14412,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 14412
+            }
           },
           "build_cost": {
             "materials": [
@@ -956,14 +954,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 2280,
-            "armor_pierce": 1710,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13663,
-            "damage_min": 11179,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2280,
+              "armor_pierce": 1710,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -974,9 +970,11 @@
                 1,
                 1
               ],
+              "max_damage": 13663,
+              "min_damage": 11179,
+              "shield_pierce": 14412,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 14412
+            }
           },
           "build_cost": {
             "materials": [
@@ -1026,14 +1024,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 2280,
-            "armor_pierce": 1710,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13663,
-            "damage_min": 11179,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2280,
+              "armor_pierce": 1710,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -1044,9 +1040,11 @@
                 1,
                 1
               ],
+              "max_damage": 13663,
+              "min_damage": 11179,
+              "shield_pierce": 14412,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 14412
+            }
           },
           "build_cost": {
             "materials": [
@@ -1097,10 +1095,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 21470,
               "increased_cargo": 24020,
               "increased_protected_cargo": 490,
-              "protected_cargo": 470
+              "ship_increased_cargo": 21470,
+              "ship_increased_protected_cargo": 470
             }
           },
           "build_cost": {
@@ -1138,7 +1136,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 39,
               "warp_speed": 3
             }
@@ -1177,8 +1174,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 7088,
-            "hull_health": 75727
+            "armor_info": {
+              "armor": 7088,
+              "hull_health": 75727
+            }
           },
           "build_cost": {
             "materials": [
@@ -1424,14 +1423,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 2375,
-            "armor_pierce": 1781,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 14619,
-            "damage_min": 11961,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2375,
+              "armor_pierce": 1781,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -1442,9 +1439,11 @@
                 1,
                 1
               ],
+              "max_damage": 14619,
+              "min_damage": 11961,
+              "shield_pierce": 15565,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 15565
+            }
           },
           "build_cost": {
             "materials": [
@@ -1494,14 +1493,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 2375,
-            "armor_pierce": 1781,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 12183,
-            "damage_min": 9967,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2375,
+              "armor_pierce": 1781,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -1512,9 +1509,11 @@
                 1,
                 1
               ],
+              "max_damage": 12183,
+              "min_damage": 9967,
+              "shield_pierce": 15565,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 15565
+            }
           },
           "build_cost": {
             "materials": [
@@ -1564,14 +1563,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 2375,
-            "armor_pierce": 1781,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 14619,
-            "damage_min": 11961,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2375,
+              "armor_pierce": 1781,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -1582,9 +1579,11 @@
                 1,
                 1
               ],
+              "max_damage": 14619,
+              "min_damage": 11961,
+              "shield_pierce": 15565,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 15565
+            }
           },
           "build_cost": {
             "materials": [
@@ -1635,10 +1634,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 27020,
               "increased_cargo": 30340,
               "increased_protected_cargo": 610,
-              "protected_cargo": 590
+              "ship_increased_cargo": 27020,
+              "ship_increased_protected_cargo": 590
             }
           },
           "build_cost": {
@@ -1676,7 +1675,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 42,
               "warp_speed": 3.1
             }
@@ -1715,8 +1713,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 7655,
-            "hull_health": 78882
+            "armor_info": {
+              "armor": 7655,
+              "hull_health": 78882
+            }
           },
           "build_cost": {
             "materials": [
@@ -2042,14 +2042,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 2592,
-            "armor_pierce": 1944,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 13224,
-            "damage_min": 10819,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2592,
+              "armor_pierce": 1944,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2060,9 +2058,11 @@
                 1,
                 1
               ],
+              "max_damage": 13224,
+              "min_damage": 10819,
+              "shield_pierce": 17744,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 17744
+            }
           },
           "build_cost": {
             "materials": [
@@ -2112,14 +2112,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 2592,
-            "armor_pierce": 1944,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 15868,
-            "damage_min": 12983,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2592,
+              "armor_pierce": 1944,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -2130,9 +2128,11 @@
                 1,
                 1
               ],
+              "max_damage": 15868,
+              "min_damage": 12983,
+              "shield_pierce": 17744,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 17744
+            }
           },
           "build_cost": {
             "materials": [
@@ -2182,14 +2182,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 2592,
-            "armor_pierce": 1944,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 15868,
-            "damage_min": 12983,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2592,
+              "armor_pierce": 1944,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -2200,9 +2198,11 @@
                 1,
                 1
               ],
+              "max_damage": 15868,
+              "min_damage": 12983,
+              "shield_pierce": 17744,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 17744
+            }
           },
           "build_cost": {
             "materials": [
@@ -2253,10 +2253,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 33340,
               "increased_cargo": 37650,
               "increased_protected_cargo": 740,
-              "protected_cargo": 710
+              "ship_increased_cargo": 33340,
+              "ship_increased_protected_cargo": 710
             }
           },
           "build_cost": {
@@ -2294,7 +2294,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 46,
               "warp_speed": 3.2
             }
@@ -2333,8 +2332,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 8726,
-            "hull_health": 86107
+            "armor_info": {
+              "armor": 8726,
+              "hull_health": 86107
+            }
           },
           "build_cost": {
             "materials": [
@@ -2660,14 +2661,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 2990,
-            "armor_pierce": 2243,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 15130,
-            "damage_min": 12379,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2990,
+              "armor_pierce": 2243,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -2678,9 +2677,11 @@
                 1,
                 1
               ],
+              "max_damage": 15130,
+              "min_damage": 12379,
+              "shield_pierce": 20583,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 20583
+            }
           },
           "build_cost": {
             "materials": [
@@ -2730,14 +2731,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 2990,
-            "armor_pierce": 2243,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 18156,
-            "damage_min": 14855,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2990,
+              "armor_pierce": 2243,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -2748,9 +2747,11 @@
                 1,
                 1
               ],
+              "max_damage": 18156,
+              "min_damage": 14855,
+              "shield_pierce": 20583,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 20583
+            }
           },
           "build_cost": {
             "materials": [
@@ -2800,14 +2801,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 2990,
-            "armor_pierce": 2243,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 18156,
-            "damage_min": 14855,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 2990,
+              "armor_pierce": 2243,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -2818,9 +2817,11 @@
                 1,
                 1
               ],
+              "max_damage": 18156,
+              "min_damage": 14855,
+              "shield_pierce": 20583,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 20583
+            }
           },
           "build_cost": {
             "materials": [
@@ -2871,10 +2872,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 40650,
               "increased_cargo": 46250,
               "increased_protected_cargo": 880,
-              "protected_cargo": 840
+              "ship_increased_cargo": 40650,
+              "ship_increased_protected_cargo": 840
             }
           },
           "build_cost": {
@@ -2912,7 +2913,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 50,
               "warp_speed": 3.3
             }
@@ -2951,8 +2951,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 10123,
-            "hull_health": 99333
+            "armor_info": {
+              "armor": 10123,
+              "hull_health": 99333
+            }
           },
           "build_cost": {
             "materials": [
@@ -3278,14 +3280,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 3490,
-            "armor_pierce": 2617,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 20698,
-            "damage_min": 16935,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3490,
+              "armor_pierce": 2617,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -3296,9 +3296,11 @@
                 1,
                 1
               ],
+              "max_damage": 20698,
+              "min_damage": 16935,
+              "shield_pierce": 23465,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 23465
+            }
           },
           "build_cost": {
             "materials": [
@@ -3348,14 +3350,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 3490,
-            "armor_pierce": 2617,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 17249,
-            "damage_min": 14112,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3490,
+              "armor_pierce": 2617,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3366,9 +3366,11 @@
                 1,
                 1
               ],
+              "max_damage": 17249,
+              "min_damage": 14112,
+              "shield_pierce": 23465,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 23465
+            }
           },
           "build_cost": {
             "materials": [
@@ -3418,14 +3420,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 3490,
-            "armor_pierce": 2617,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 20698,
-            "damage_min": 16935,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3490,
+              "armor_pierce": 2617,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -3436,9 +3436,11 @@
                 1,
                 1
               ],
+              "max_damage": 20698,
+              "min_damage": 16935,
+              "shield_pierce": 23465,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 23465
+            }
           },
           "build_cost": {
             "materials": [
@@ -3489,10 +3491,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 49250,
               "increased_cargo": 56530,
               "increased_protected_cargo": 1030,
-              "protected_cargo": 980
+              "ship_increased_cargo": 49250,
+              "ship_increased_protected_cargo": 980
             }
           },
           "build_cost": {
@@ -3530,7 +3532,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 54,
               "warp_speed": 3.4
             }
@@ -3569,8 +3570,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 11439,
-            "hull_health": 115937
+            "armor_info": {
+              "armor": 11439,
+              "hull_health": 115937
+            }
           },
           "build_cost": {
             "materials": [
@@ -3956,14 +3959,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 3888,
-            "armor_pierce": 2916,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 18629,
-            "damage_min": 15241,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3888,
+              "armor_pierce": 2916,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -3974,9 +3975,11 @@
                 1,
                 1
               ],
+              "max_damage": 18629,
+              "min_damage": 15241,
+              "shield_pierce": 25811,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 25811
+            }
           },
           "build_cost": {
             "materials": [
@@ -4026,14 +4029,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 3888,
-            "armor_pierce": 2916,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 22354,
-            "damage_min": 18290,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3888,
+              "armor_pierce": 2916,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -4044,9 +4045,11 @@
                 1,
                 1
               ],
+              "max_damage": 22354,
+              "min_damage": 18290,
+              "shield_pierce": 25811,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 25811
+            }
           },
           "build_cost": {
             "materials": [
@@ -4096,14 +4099,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 3888,
-            "armor_pierce": 2916,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 22354,
-            "damage_min": 18290,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 3888,
+              "armor_pierce": 2916,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -4114,9 +4115,11 @@
                 1,
                 1
               ],
+              "max_damage": 22354,
+              "min_damage": 18290,
+              "shield_pierce": 25811,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 25811
+            }
           },
           "build_cost": {
             "materials": [
@@ -4167,10 +4170,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 59530,
               "increased_cargo": 69000,
               "increased_protected_cargo": 1200,
-              "protected_cargo": 1130
+              "ship_increased_cargo": 59530,
+              "ship_increased_protected_cargo": 1130
             }
           },
           "build_cost": {
@@ -4208,7 +4211,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 58,
               "warp_speed": 3.5
             }
@@ -4247,8 +4249,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 12468,
-            "hull_health": 129163
+            "armor_info": {
+              "armor": 12468,
+              "hull_health": 129163
+            }
           },
           "build_cost": {
             "materials": [
@@ -4634,14 +4638,12 @@
         {
           "name": "Disruptor Cannon",
           "additional_info": {
-            "accuracy": 4260,
-            "armor_pierce": 3195,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 19374,
-            "damage_min": 15850,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 4260,
+              "armor_pierce": 3195,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 1,
                 1,
@@ -4652,9 +4654,11 @@
                 1,
                 1
               ],
+              "max_damage": 19374,
+              "min_damage": 15850,
+              "shield_pierce": 27360,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 27360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4704,14 +4708,12 @@
         {
           "name": "Double Cannon",
           "additional_info": {
-            "accuracy": 4260,
-            "armor_pierce": 3195,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 23248,
-            "damage_min": 19021,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 4260,
+              "armor_pierce": 3195,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 1,
                 1,
@@ -4722,9 +4724,11 @@
                 1,
                 1
               ],
+              "max_damage": 23248,
+              "min_damage": 19021,
+              "shield_pierce": 27360,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 27360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4774,14 +4778,12 @@
         {
           "name": "High Charge Cannon",
           "additional_info": {
-            "accuracy": 4260,
-            "armor_pierce": 3195,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 23248,
-            "damage_min": 19021,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 4260,
+              "armor_pierce": 3195,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 0,
                 0,
                 1,
@@ -4792,9 +4794,11 @@
                 1,
                 1
               ],
+              "max_damage": 23248,
+              "min_damage": 19021,
+              "shield_pierce": 27360,
               "weapon_type": "energy"
-            },
-            "shield_pierce": 27360
+            }
           },
           "build_cost": {
             "materials": [
@@ -4845,10 +4849,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 72000,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 1300
+              "ship_increased_cargo": 72000,
+              "ship_increased_protected_cargo": 1300
             }
           },
           "build_cost": {
@@ -4886,7 +4890,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 65,
               "warp_speed": 3.6
             }
@@ -4925,8 +4928,10 @@
         {
           "name": "Tritanium Armor",
           "additional_info": {
-            "armor": 12967,
-            "hull_health": 141530
+            "armor_info": {
+              "armor": 12967,
+              "hull_health": 141530
+            }
           },
           "build_cost": {
             "materials": [

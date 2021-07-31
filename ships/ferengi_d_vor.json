@@ -4,20 +4,6 @@
     "cost": 0,
     "quantity": 120
   },
-  "build_costs": {
-    "materials": [],
-    "others": [],
-    "resources": [
-      {
-        "type": "tritanium",
-        "value": 28900000
-      },
-      {
-        "type": "dilithium",
-        "value": 1238000
-      }
-    ]
-  },
   "faction": "neutral",
   "grade": 3,
   "img_url": "./assets/ferengi_d_vor.png",
@@ -29,11 +15,11 @@
     }
   ],
   "scrap_info": {
-    "scrapable": false
+    "scrappable": false
   },
   "ship_ability": {
     "title": "Latinum Mining",
-    "description": "",
+    "description": "The D'Vor's Mining Bonus from the Mining Laser is increased by 12000% when mining Raw Latinum.",
     "percentage": true
   },
   "ship_class": "survey",
@@ -45,14 +31,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 79,
-            "armor_pierce": 79,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 296,
-            "damage_min": 242,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 79,
+              "armor_pierce": 79,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -63,9 +47,11 @@
                 0,
                 1
               ],
+              "max_damage": 296,
+              "min_damage": 242,
+              "shield_pierce": 79,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 79
+            }
           },
           "build_cost": {
             "materials": [],
@@ -80,10 +66,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 32625,
               "increased_cargo": 33719,
               "increased_protected_cargo": 4300,
-              "protected_cargo": 3955
+              "ship_increased_cargo": 32625,
+              "ship_increased_protected_cargo": 3955
             }
           },
           "build_cost": {
@@ -99,7 +85,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 1.9
             }
@@ -116,11 +101,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 45,
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 45,
+              "impulse_speed": 90
             }
           },
           "build_cost": {
@@ -135,9 +118,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 45,
-              "health": 770
+            "shield_info": {
+              "shield_deflection": 45,
+              "shield_health": 770
             }
           },
           "build_cost": {
@@ -152,7 +135,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 60
+            "mining_laser_info": {
+              "mining_bonus": 60
+            }
           },
           "build_cost": {
             "materials": [],
@@ -164,6 +149,20 @@
           "repair_cost": []
         }
       ],
+      "initial_build_cost": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 28900000
+          },
+          {
+            "type": "dilithium",
+            "value": 1238000
+          }
+        ]
+      },
       "levels": [
         {
           "ability_bonus": 120,
@@ -205,14 +204,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 83,
-            "armor_pierce": 83,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 313,
-            "damage_min": 256,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 83,
+              "armor_pierce": 83,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -223,9 +220,11 @@
                 0,
                 1
               ],
+              "max_damage": 313,
+              "min_damage": 256,
+              "shield_pierce": 83,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 83
+            }
           },
           "build_cost": {
             "materials": [],
@@ -263,10 +262,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 40219,
               "increased_cargo": 41625,
               "increased_protected_cargo": 4800,
-              "protected_cargo": 4500
+              "ship_increased_cargo": 40219,
+              "ship_increased_protected_cargo": 4500
             }
           },
           "build_cost": {
@@ -301,7 +300,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 2.1
             }
@@ -333,11 +331,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 48,
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 48,
+              "impulse_speed": 90
             }
           },
           "build_cost": {
@@ -375,9 +371,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 48,
-              "health": 814
+            "shield_info": {
+              "shield_deflection": 48,
+              "shield_health": 814
             }
           },
           "build_cost": {
@@ -411,7 +407,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 70
+            "mining_laser_info": {
+              "mining_bonus": 70
+            }
           },
           "build_cost": {
             "materials": [],
@@ -487,14 +485,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 91,
-            "armor_pierce": 91,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 341,
-            "damage_min": 279,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 91,
+              "armor_pierce": 91,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -505,9 +501,11 @@
                 0,
                 1
               ],
+              "max_damage": 341,
+              "min_damage": 279,
+              "shield_pierce": 91,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 91
+            }
           },
           "build_cost": {
             "materials": [],
@@ -545,10 +543,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 48125,
               "increased_cargo": 48746,
               "increased_protected_cargo": 5157,
-              "protected_cargo": 5000
+              "ship_increased_cargo": 48125,
+              "ship_increased_protected_cargo": 5000
             }
           },
           "build_cost": {
@@ -583,7 +581,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 2.3
             }
@@ -615,11 +612,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 52,
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 52,
+              "impulse_speed": 90
             }
           },
           "build_cost": {
@@ -657,9 +652,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 52,
-              "health": 888
+            "shield_info": {
+              "shield_deflection": 52,
+              "shield_health": 888
             }
           },
           "build_cost": {
@@ -693,7 +688,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 80
+            "mining_laser_info": {
+              "mining_bonus": 80
+            }
           },
           "build_cost": {
             "materials": [],
@@ -769,14 +766,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 111,
-            "armor_pierce": 111,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 416,
-            "damage_min": 341,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 111,
+              "armor_pierce": 111,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -787,9 +782,11 @@
                 0,
                 1
               ],
+              "max_damage": 416,
+              "min_damage": 341,
+              "shield_pierce": 111,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 111
+            }
           },
           "build_cost": {
             "materials": [],
@@ -827,10 +824,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 55246,
               "increased_cargo": 66357,
               "increased_protected_cargo": 5404,
-              "protected_cargo": 5357
+              "ship_increased_cargo": 55246,
+              "ship_increased_protected_cargo": 5357
             }
           },
           "build_cost": {
@@ -865,7 +862,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 18,
               "warp_speed": 2.5
             }
@@ -897,11 +893,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 64,
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 64,
+              "impulse_speed": 90
             }
           },
           "build_cost": {
@@ -939,9 +933,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 64,
-              "health": 1082
+            "shield_info": {
+              "shield_deflection": 64,
+              "shield_health": 1082
             }
           },
           "build_cost": {
@@ -975,7 +969,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 90
+            "mining_laser_info": {
+              "mining_bonus": 90
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1051,14 +1047,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 161,
-            "armor_pierce": 161,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 603,
-            "damage_min": 493,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 161,
+              "armor_pierce": 161,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1069,9 +1063,11 @@
                 0,
                 1
               ],
+              "max_damage": 603,
+              "min_damage": 493,
+              "shield_pierce": 161,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 161
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1109,10 +1105,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 72857,
               "increased_cargo": 74184,
               "increased_protected_cargo": 5641,
-              "protected_cargo": 5604
+              "ship_increased_cargo": 72857,
+              "ship_increased_protected_cargo": 5604
             }
           },
           "build_cost": {
@@ -1147,7 +1143,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 19,
               "warp_speed": 2.7
             }
@@ -1179,11 +1174,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 92,
-            "warp_info": {
-              "impulse_speed": 90,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 92,
+              "impulse_speed": 90
             }
           },
           "build_cost": {
@@ -1221,9 +1214,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 92,
-              "health": 1565
+            "shield_info": {
+              "shield_deflection": 92,
+              "shield_health": 1565
             }
           },
           "build_cost": {
@@ -1257,7 +1250,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 100
+            "mining_laser_info": {
+              "mining_bonus": 100
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1334,10 +1329,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 80684,
               "increased_cargo": 93695,
               "increased_protected_cargo": 6651,
-              "protected_cargo": 5841
+              "ship_increased_cargo": 80684,
+              "ship_increased_protected_cargo": 5841
             }
           },
           "build_cost": {
@@ -1371,14 +1366,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 268,
-            "armor_pierce": 268,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1009,
-            "damage_min": 825,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 268,
+              "armor_pierce": 268,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1389,9 +1382,11 @@
                 0,
                 1
               ],
+              "max_damage": 1009,
+              "min_damage": 825,
+              "shield_pierce": 268,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 268
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1429,7 +1424,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 24,
               "warp_speed": 2.9
             }
@@ -1461,11 +1455,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 155,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 155,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -1503,9 +1495,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 155,
-              "health": 2615
+            "shield_info": {
+              "shield_deflection": 155,
+              "shield_health": 2615
             }
           },
           "build_cost": {
@@ -1539,7 +1531,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 110
+            "mining_laser_info": {
+              "mining_bonus": 110
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1615,14 +1609,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 447,
-            "armor_pierce": 447,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 1682,
-            "damage_min": 1376,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 447,
+              "armor_pierce": 447,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1633,9 +1625,11 @@
                 0,
                 1
               ],
+              "max_damage": 1682,
+              "min_damage": 1376,
+              "shield_pierce": 447,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 447
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1673,10 +1667,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 100195,
               "increased_cargo": 132042,
               "increased_protected_cargo": 7578,
-              "protected_cargo": 6851
+              "ship_increased_cargo": 100195,
+              "ship_increased_protected_cargo": 6851
             }
           },
           "build_cost": {
@@ -1711,7 +1705,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 26,
               "warp_speed": 3.1
             }
@@ -1743,11 +1736,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 258,
-            "warp_info": {
-              "impulse_speed": 98,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 258,
+              "impulse_speed": 98
             }
           },
           "build_cost": {
@@ -1785,9 +1776,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 258,
-              "health": 4358
+            "shield_info": {
+              "shield_deflection": 258,
+              "shield_health": 4358
             }
           },
           "build_cost": {
@@ -1821,7 +1812,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 120
+            "mining_laser_info": {
+              "mining_bonus": 120
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1897,14 +1890,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 643,
-            "armor_pierce": 643,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 2421,
-            "damage_min": 1981,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 643,
+              "armor_pierce": 643,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -1915,9 +1906,11 @@
                 0,
                 1
               ],
+              "max_damage": 2421,
+              "min_damage": 1981,
+              "shield_pierce": 643,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 643
+            }
           },
           "build_cost": {
             "materials": [],
@@ -1955,10 +1948,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 138542,
               "increased_cargo": 181000,
               "increased_protected_cargo": 9800,
-              "protected_cargo": 7778
+              "ship_increased_cargo": 138542,
+              "ship_increased_protected_cargo": 7778
             }
           },
           "build_cost": {
@@ -1993,7 +1986,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 33,
               "warp_speed": 3.3
             }
@@ -2025,11 +2017,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 372,
-            "warp_info": {
-              "impulse_speed": 105,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 372,
+              "impulse_speed": 105
             }
           },
           "build_cost": {
@@ -2067,9 +2057,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 372,
-              "health": 6269
+            "shield_info": {
+              "shield_deflection": 372,
+              "shield_health": 6269
             }
           },
           "build_cost": {
@@ -2103,7 +2093,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 130
+            "mining_laser_info": {
+              "mining_bonus": 130
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2179,14 +2171,12 @@
         {
           "name": "Photon Torpedo",
           "additional_info": {
-            "accuracy": 897,
-            "armor_pierce": 897,
-            "crit_chance": 0.1,
-            "crit_modifier": 1.5,
-            "damage_max": 3376,
-            "damage_min": 2762,
-            "firing_pattern": {
-              "pattern": [
+            "weapons_info": {
+              "accuracy": 897,
+              "armor_pierce": 897,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
                 1,
                 0,
                 1,
@@ -2197,9 +2187,11 @@
                 0,
                 1
               ],
+              "max_damage": 3376,
+              "min_damage": 2762,
+              "shield_pierce": 897,
               "weapon_type": "kinetic"
-            },
-            "shield_pierce": 897
+            }
           },
           "build_cost": {
             "materials": [],
@@ -2237,10 +2229,10 @@
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
-              "cargo": 187500,
               "increased_cargo": 0,
               "increased_protected_cargo": 0,
-              "protected_cargo": 10000
+              "ship_increased_cargo": 187500,
+              "ship_increased_protected_cargo": 10000
             }
           },
           "build_cost": {
@@ -2275,7 +2267,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 0,
               "warp_distance": 40,
               "warp_speed": 3.5
             }
@@ -2307,11 +2298,9 @@
         {
           "name": "Impulse Engines",
           "additional_info": {
-            "dodge": 519,
-            "warp_info": {
-              "impulse_speed": 105,
-              "warp_distance": 0,
-              "warp_speed": 0
+            "impulse_info": {
+              "dodge": 519,
+              "impulse_speed": 105
             }
           },
           "build_cost": {
@@ -2349,9 +2338,9 @@
         {
           "name": "Shield",
           "additional_info": {
-            "shield": {
-              "deflection": 519,
-              "health": 8740
+            "shield_info": {
+              "shield_deflection": 519,
+              "shield_health": 8740
             }
           },
           "build_cost": {
@@ -2385,7 +2374,9 @@
         {
           "name": "Mining Laser",
           "additional_info": {
-            "miningBonus": 140
+            "mining_laser_info": {
+              "mining_bonus": 140
+            }
           },
           "build_cost": {
             "materials": [],
