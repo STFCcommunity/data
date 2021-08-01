@@ -1,13 +1,14 @@
 import json
 import os
 import requests
+from jinja2 import Template
 
 
 class WikiApi:
     def __init__(self):
         self.url = os.getenv("WIKI_API_URL")
-        self.username = os.getenv("WIKI_USERNAME")
-        self.password = os.getenv("WIKI_PASSWORD")
+        self.username = os.getenv("WIKI_API_USERNAME")
+        self.password = os.getenv("WIKI_API_PASSWORD")
         self.session = requests.Session()
         self.auth = (os.getenv("WIKI_API_USERNAME"), os.getenv("WIKI_API_PASSWORD"))
 
@@ -42,6 +43,7 @@ class WikiApi:
 
     def update_wiki(self, page, content, summary):
         # Step 3: GET request to fetch CSRF token
+        self.login()
         params = {"action": "query", "meta": "tokens", "format": "json"}
 
         request = self.session.get(url=self.url, params=params, auth=self.auth)
@@ -53,29 +55,44 @@ class WikiApi:
         params = {
             "action": "edit",
             "title": page,
-            "token": token,
             "format": "json",
             "bot": True,
             "summary": summary,
             "text": content,
+            "token": token,
         }
 
         request = self.session.post(self.url, data=params, auth=self.auth)
         data = request.json()
         return data
 
-    def load_files(self, schema_name):
-        files = sorted(os.listdir(schema_name))
+    def _get_template(self, schema_name):
+        with open(os.path.join("templates", f"{schema_name}.j2")) as f:
+            template = Template(f.read())
+        return template
 
+    def load_files(self, schema_name):
+        data_path = os.path.join("..", schema_name)
+        files = sorted(os.listdir(data_path))
+        menu_template = self._get_template(f"{schema_name}_menu")
+        template = self._get_template(schema_name)
+
+        menu_entries = []
         for filename in files:
             if filename.endswith(".json"):
-                filepath = os.path.join(schema_name, filename)
+                filepath = os.path.join(data_path, filename)
                 f = open(filepath)
 
-                # Load and dump to validate that we have a json file
                 data = json.loads(f.read())
 
+                page_url = f"{schema_name}_{filename.split('.')[0]}"
+                content = template.render(data)
+                self.update_wiki(page_url, content, "Automatic update")
                 print(f"Pushed {filename}")
+                menu_entries.append({"url": page_url, "data": data})
+
+        menu_content = menu_template.render(items=menu_entries)
+        self.update_wiki(schema_name, menu_content, "Automatic menu update")
 
 
 wiki = WikiApi()
