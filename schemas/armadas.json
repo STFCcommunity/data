@@ -5,6 +5,7 @@
   "description": "A schema for armadas in STFC.",
   "required": [
     "armada_name",
+    "group",
     "level",
     "rarity",
     "description",
@@ -29,6 +30,11 @@
           "value": 14400
         }
       ],
+      "head_stats": {
+        "attack": 300000,
+        "defense": 298000,
+        "health": 600000
+      },
       "stats": {
         "attack": {
           "accuracy": 71402,
@@ -73,7 +79,6 @@
             1
           ],
           "quantity": 2,
-          "weapon_id": "E1",
           "weapon_stats": {
             "accuracy": 71402,
             "armor_pierce": 82997,
@@ -160,8 +165,7 @@
             "title": "The first anyOf schema",
             "description": "Single reward instance.",
             "required": [
-              "type",
-              "value"
+              "type"
             ],
             "type": "object",
             "additionalProperties": true,
@@ -190,6 +194,51 @@
             }
           }
         ]
+      }
+    },
+    "head_stats": {
+      "$id": "#/properties/head_stats",
+      "title": "The head stats schema",
+      "description": "All armada main stats.",
+      "required": [
+        "attack",
+        "defense",
+        "health"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "attack": {
+          "$id": "#/properties/head_stats/attack",
+          "title": "The main attack schema",
+          "description": "The total main attack stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            300000
+          ]
+        },
+        "defense": {
+          "$id": "#/properties/head_stats/defense",
+          "title": "The main defense schema",
+          "description": "The total main defense stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            298000
+          ]
+        },
+        "health": {
+          "$id": "#/properties/head_stats/health",
+          "title": "The main health schema",
+          "description": "The total main health stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            600000
+          ]
+        }
       }
     },
     "stats": {
@@ -415,7 +464,6 @@
             "title": "The first anyOf schema",
             "description": "Single armada weapon instance.",
             "required": [
-              "weapon_id",
               "weapon_type",
               "quantity",
               "firing_pattern",
@@ -458,16 +506,6 @@
                 "default": 0,
                 "examples": [
                   2
-                ]
-              },
-              "weapon_id": {
-                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_id",
-                "title": "The weapon_id schema",
-                "description": "Id of the weapon, for displaying purposes.",
-                "type": "string",
-                "default": "",
-                "examples": [
-                  "E1"
                 ]
               },
               "weapon_stats": {
