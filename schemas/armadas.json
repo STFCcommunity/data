@@ -22,6 +22,11 @@
       "description": "This major base is Klingon...",
       "armada_name": "Klingon Fortress",
       "group": "klingon",
+      "head_stats": {
+        "attack": 300000,
+        "defense": 298000,
+        "health": 600000
+      },
       "level": 36,
       "rarity": "epic",
       "rewards": [
@@ -30,11 +35,6 @@
           "value": 14400
         }
       ],
-      "head_stats": {
-        "attack": 300000,
-        "defense": 298000,
-        "health": 600000
-      },
       "stats": {
         "attack": {
           "accuracy": 71402,
@@ -125,6 +125,51 @@
         "klingon"
       ]
     },
+    "head_stats": {
+      "$id": "#/properties/head_stats",
+      "title": "The head stats schema",
+      "description": "All armada main stats.",
+      "required": [
+        "attack",
+        "defense",
+        "health"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "attack": {
+          "$id": "#/properties/head_stats/attack",
+          "title": "The main attack schema",
+          "description": "The total main attack stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            300000
+          ]
+        },
+        "defense": {
+          "$id": "#/properties/head_stats/defense",
+          "title": "The main defense schema",
+          "description": "The total main defense stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            298000
+          ]
+        },
+        "health": {
+          "$id": "#/properties/head_stats/health",
+          "title": "The main health schema",
+          "description": "The total main health stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            600000
+          ]
+        }
+      }
+    },
     "level": {
       "$id": "#/properties/level",
       "title": "The level schema",
@@ -194,51 +239,6 @@
             }
           }
         ]
-      }
-    },
-    "head_stats": {
-      "$id": "#/properties/head_stats",
-      "title": "The head stats schema",
-      "description": "All armada main stats.",
-      "required": [
-        "attack",
-        "defense",
-        "health"
-      ],
-      "type": "object",
-      "additionalProperties": true,
-      "default": {},
-      "properties": {
-        "attack": {
-          "$id": "#/properties/head_stats/attack",
-          "title": "The main attack schema",
-          "description": "The total main attack stats.",
-          "type": "integer",
-          "default": 0,
-          "examples": [
-            300000
-          ]
-        },
-        "defense": {
-          "$id": "#/properties/head_stats/defense",
-          "title": "The main defense schema",
-          "description": "The total main defense stats.",
-          "type": "integer",
-          "default": 0,
-          "examples": [
-            298000
-          ]
-        },
-        "health": {
-          "$id": "#/properties/head_stats/health",
-          "title": "The main health schema",
-          "description": "The total main health stats.",
-          "type": "integer",
-          "default": 0,
-          "examples": [
-            600000
-          ]
-        }
       }
     },
     "stats": {
