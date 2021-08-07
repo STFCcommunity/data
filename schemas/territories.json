@@ -7,7 +7,7 @@
     "zone_name",
     "zone_tier",
     "clan",
-    "particle",
+    "particles",
     "takeover_info",
     "services",
     "systems"
@@ -18,7 +18,9 @@
   "examples": [
     {
       "clan": "corvallen",
-      "particle": "quantum",
+      "particles": [
+        "quantum"
+      ],
       "services": [
         {
           "description": "+50% base Shield Health...",
@@ -34,12 +36,7 @@
       ],
       "systems": [
         {
-          "$ref": "ref",
-          "warp_paths": [
-            {
-              "$ref": "ref"
-            }
-          ]
+          "$ref": "ref"
         }
       ],
       "takeover_info": {
@@ -78,20 +75,25 @@
         "corvallen"
       ]
     },
-    "particle": {
-      "$id": "#/properties/particle",
-      "title": "The particle schema",
-      "description": "The particle which the territory holds.",
-      "type": "string",
-      "default": "",
-      "enum": [
-        "quantum",
-        "phantom",
-        "surax"
-      ],
-      "examples": [
-        "quantum"
-      ]
+    "particles": {
+      "$id": "#/properties/particles",
+      "title": "The particles schema",
+      "description": "The particles which the territory holds.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "type": "string",
+        "enum": [
+          "quantum",
+          "phantom",
+          "surax",
+          "metreon"
+        ],
+        "examples": [
+          "quantum"
+        ]
+      }
     },
     "services": {
       "$id": "#/properties/services",
@@ -228,8 +230,7 @@
             "title": "The first anyOf schema",
             "description": "Single territory system instance.",
             "required": [
-              "$ref",
-              "warp_paths"
+              "$ref"
             ],
             "type": "object",
             "additionalProperties": true,
@@ -244,42 +245,6 @@
                 "examples": [
                   "ref"
                 ]
-              },
-              "warp_paths": {
-                "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths",
-                "title": "The warp_paths schema",
-                "description": "List of all warp paths going out the system.",
-                "type": "array",
-                "additionalItems": true,
-                "default": [],
-                "items": {
-                  "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items",
-                  "anyOf": [
-                    {
-                      "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items/anyOf/0",
-                      "title": "The first anyOf schema",
-                      "description": "Single warp path instance.",
-                      "required": [
-                        "$ref"
-                      ],
-                      "type": "object",
-                      "additionalProperties": true,
-                      "default": {},
-                      "properties": {
-                        "$ref": {
-                          "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items/anyOf/0/properties/%24ref",
-                          "title": "The $ref schema",
-                          "description": "Reference to the json system file.",
-                          "type": "string",
-                          "default": "",
-                          "examples": [
-                            "ref"
-                          ]
-                        }
-                      }
-                    }
-                  ]
-                }
               }
             }
           }
