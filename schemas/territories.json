@@ -7,7 +7,7 @@
     "zone_name",
     "zone_tier",
     "clan",
-    "particle",
+    "particles",
     "takeover_info",
     "services",
     "systems"
@@ -18,14 +18,16 @@
   "examples": [
     {
       "clan": "corvallen",
-      "particle": "quantum",
+      "particles": [
+        "quantum"
+      ],
       "services": [
         {
           "description": "+50% base Shield Health...",
           "costs": [
             {
-              "material": "1\u21f4 Refined Isogen",
-              "quantity": 200000
+              "type": "1\u21f4 Refined Isogen",
+              "value": 200000
             }
           ],
           "rarity": "rare",
@@ -34,19 +36,14 @@
       ],
       "systems": [
         {
-          "$ref": "ref",
-          "warp_paths": [
-            {
-              "$ref": "ref"
-            }
-          ]
+          "$ref": "ref"
         }
       ],
       "takeover_info": {
         "costs": [
           {
-            "material": "1\u21f4 Refined Isogen",
-            "quantity": 450000
+            "type": "1\u21f4 Refined Isogen",
+            "value": 450000
           }
         ],
         "datetime": {
@@ -78,20 +75,25 @@
         "corvallen"
       ]
     },
-    "particle": {
-      "$id": "#/properties/particle",
-      "title": "The particle schema",
-      "description": "The particle which the territory holds.",
-      "type": "string",
-      "default": "",
-      "enum": [
-        "quantum",
-        "phantom",
-        "surax"
-      ],
-      "examples": [
-        "quantum"
-      ]
+    "particles": {
+      "$id": "#/properties/particles",
+      "title": "The particles schema",
+      "description": "The particles which the territory holds.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "type": "string",
+        "enum": [
+          "quantum",
+          "phantom",
+          "surax",
+          "metreon"
+        ],
+        "examples": [
+          "quantum"
+        ]
+      }
     },
     "services": {
       "$id": "#/properties/services",
@@ -142,17 +144,17 @@
                       "title": "The first anyOf schema",
                       "description": "Single territory service cost instance.",
                       "required": [
-                        "material",
-                        "quantity"
+                        "type",
+                        "value"
                       ],
                       "type": "object",
                       "additionalProperties": true,
                       "default": {},
                       "properties": {
-                        "material": {
-                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/material",
-                          "title": "The material schema",
-                          "description": "The material required to activate the service.",
+                        "type": {
+                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/type",
+                          "title": "The type schema",
+                          "description": "The material type required to activate the service.",
                           "type": "string",
                           "default": "",
                           "enum": [
@@ -168,9 +170,9 @@
                             "1\u21f4 Refined Isogen"
                           ]
                         },
-                        "quantity": {
-                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/quantity",
-                          "title": "The quantity schema",
+                        "value": {
+                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/value",
+                          "title": "The value schema",
                           "description": "The amount required of the material.",
                           "type": "integer",
                           "default": 0,
@@ -228,8 +230,7 @@
             "title": "The first anyOf schema",
             "description": "Single territory system instance.",
             "required": [
-              "$ref",
-              "warp_paths"
+              "$ref"
             ],
             "type": "object",
             "additionalProperties": true,
@@ -244,42 +245,6 @@
                 "examples": [
                   "ref"
                 ]
-              },
-              "warp_paths": {
-                "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths",
-                "title": "The warp_paths schema",
-                "description": "List of all warp paths going out the system.",
-                "type": "array",
-                "additionalItems": true,
-                "default": [],
-                "items": {
-                  "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items",
-                  "anyOf": [
-                    {
-                      "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items/anyOf/0",
-                      "title": "The first anyOf schema",
-                      "description": "Single warp path instance.",
-                      "required": [
-                        "$ref"
-                      ],
-                      "type": "object",
-                      "additionalProperties": true,
-                      "default": {},
-                      "properties": {
-                        "$ref": {
-                          "$id": "#/properties/systems/items/anyOf/0/properties/warp_paths/items/anyOf/0/properties/%24ref",
-                          "title": "The $ref schema",
-                          "description": "Reference to the json system file.",
-                          "type": "string",
-                          "default": "",
-                          "examples": [
-                            "ref"
-                          ]
-                        }
-                      }
-                    }
-                  ]
-                }
               }
             }
           }
@@ -314,17 +279,17 @@
                 "title": "The first anyOf schema",
                 "description": "Single cost instance.",
                 "required": [
-                  "material",
-                  "quantity"
+                  "type",
+                  "value"
                 ],
                 "type": "object",
                 "additionalProperties": true,
                 "default": {},
                 "properties": {
-                  "material": {
-                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/material",
-                    "title": "The material schema",
-                    "description": "The material required to start the takeover.",
+                  "type": {
+                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/type",
+                    "title": "The type schema",
+                    "description": "The material type required to start the takeover.",
                     "type": "string",
                     "default": "",
                     "enum": [
@@ -340,9 +305,9 @@
                       "1\u21f4 Refined Isogen"
                     ]
                   },
-                  "quantity": {
-                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/quantity",
-                    "title": "The quantity schema",
+                  "value": {
+                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/value",
+                    "title": "The value schema",
                     "description": "The amount required of the material.",
                     "type": "integer",
                     "default": 0,
