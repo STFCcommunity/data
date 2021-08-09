@@ -26,8 +26,8 @@
           "description": "+50% base Shield Health...",
           "costs": [
             {
-              "material": "1\u21f4 Refined Isogen",
-              "quantity": 200000
+              "type": "1\u21f4 Refined Isogen",
+              "value": 200000
             }
           ],
           "rarity": "rare",
@@ -42,8 +42,8 @@
       "takeover_info": {
         "costs": [
           {
-            "material": "1\u21f4 Refined Isogen",
-            "quantity": 450000
+            "type": "1\u21f4 Refined Isogen",
+            "value": 450000
           }
         ],
         "datetime": {
@@ -144,17 +144,17 @@
                       "title": "The first anyOf schema",
                       "description": "Single territory service cost instance.",
                       "required": [
-                        "material",
-                        "quantity"
+                        "type",
+                        "value"
                       ],
                       "type": "object",
                       "additionalProperties": true,
                       "default": {},
                       "properties": {
-                        "material": {
-                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/material",
-                          "title": "The material schema",
-                          "description": "The material required to activate the service.",
+                        "type": {
+                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/type",
+                          "title": "The type schema",
+                          "description": "The material type required to activate the service.",
                           "type": "string",
                           "default": "",
                           "enum": [
@@ -170,9 +170,9 @@
                             "1\u21f4 Refined Isogen"
                           ]
                         },
-                        "quantity": {
-                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/quantity",
-                          "title": "The quantity schema",
+                        "value": {
+                          "$id": "#/properties/services/items/anyOf/0/properties/costs/items/anyOf/0/properties/value",
+                          "title": "The value schema",
                           "description": "The amount required of the material.",
                           "type": "integer",
                           "default": 0,
@@ -279,17 +279,17 @@
                 "title": "The first anyOf schema",
                 "description": "Single cost instance.",
                 "required": [
-                  "material",
-                  "quantity"
+                  "type",
+                  "value"
                 ],
                 "type": "object",
                 "additionalProperties": true,
                 "default": {},
                 "properties": {
-                  "material": {
-                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/material",
-                    "title": "The material schema",
-                    "description": "The material required to start the takeover.",
+                  "type": {
+                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/type",
+                    "title": "The type schema",
+                    "description": "The material type required to start the takeover.",
                     "type": "string",
                     "default": "",
                     "enum": [
@@ -305,9 +305,9 @@
                       "1\u21f4 Refined Isogen"
                     ]
                   },
-                  "quantity": {
-                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/quantity",
-                    "title": "The quantity schema",
+                  "value": {
+                    "$id": "#/properties/takeover_info/properties/costs/items/anyOf/0/properties/value",
+                    "title": "The value schema",
                     "description": "The amount required of the material.",
                     "type": "integer",
                     "default": 0,
