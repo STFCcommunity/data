@@ -3,144 +3,366 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "The root schema",
   "description": "A schema for missions in STFC.",
-  "type": "array",
-  "additionalItems": true,
-  "default": [],
-  "examples": [
-    [
-      {
-        "faction": "federation",
-        "location": {
-          "$ref": "reference to system json",
-          "planet": "Andoria prime"
-        },
-        "mission_title": "Beneath the Ice",
-        "mission_type": "start",
-        "next_mission": {
-          "$ref": "reference to mission."
-        },
-        "objectives": [
-          {
-            "title": "Meet the Romulan Informant on Moya.",
-            "main_objective": {
-              "$ref": "#objectives/items"
-            },
-            "obj_id": 1,
-            "task": [
+  "required": [
+    "mission_name",
+    "faction",
+    "storyline",
+    "mission_type",
+    "objectives"
+  ],
+  "type": "object",
+  "additionalProperties": true,
+  "definitions": {
+    "mission": {
+      "$id": "#/definitions/mission",
+      "title": "The $ref schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "missions/honor_for_three"
+      ],
+      "pattern": "^missions/\\w+$"
+    },
+    "no_system_info": {
+      "$id": "#/definitions/no_system_info",
+      "title": "The no_system_info schema",
+      "description": "(Optional) Additional information to present when system attribute cannot be used.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "destination assigned at time of mission."
+      ]
+    },
+    "planet": {
+      "$id": "#/definitions/planet",
+      "title": "The planet schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "strinax"
+      ]
+    },
+    "resource_value": {
+      "$id": "#/definitions/resource_value",
+      "title": "The value schema",
+      "description": "The amount of this resource.",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        300
+      ]
+    },
+    "rewards": {
+      "$id": "#/definitions/rewards",
+      "title": "The rewards schema",
+      "description": "(Optional) Contains all rewards gained by completing this mission.",
+      "required": [
+        "resources",
+        "materials",
+        "others"
+      ],
+      "type": "object",
+      "additionalProperties": false,
+      "default": {},
+      "properties": {
+        "materials": {
+          "$id": "#/definitions/rewards/properties/materials",
+          "title": "The materials schema",
+          "description": "List of all materials gained by completing the mission.",
+          "type": "array",
+          "additionalItems": true,
+          "items": {
+            "$id": "#/definitions/rewards/properties/materials/items",
+            "oneOf": [
               {
-                "$ref": "reference to system json",
-                "planet": "Moya",
-                "task_type": "travel"
-              },
-              {
-                "$ref": "reference to system json",
-                "task_title": "Destroy Suliban Interceptor",
-                "task_type": "destroy"
-              },
-              {
-                "$ref": "reference to system json",
-                "task_title": "Kill Suliban Interceptor",
-                "task_type": "kill"
-              },
-              {
-                "resource": "dilithium",
-                "task_type": "deliver",
-                "value": 300
-              },
-              {
-                "options": [
-                  {
-                    "option_id": 1,
-                    "option_title": "smuggle Garan across...",
-                    "rewards": {
-                      "$ref": "reference"
-                    }
-                  }
+                "$id": "#/definitions/rewards/properties/materials/items/oneOf/0",
+                "title": "The first oneOf schema",
+                "description": "Single material reward instance.",
+                "required": [
+                  "type",
+                  "grade",
+                  "rarity",
+                  "value"
                 ],
-                "task_type": "choose"
-              },
-              {
-                "task_title": "Return to your station",
-                "task_type": "return"
+                "type": "object",
+                "additionalProperties": false,
+                "default": {},
+                "properties": {
+                  "type": {
+                    "$id": "#/definitions/rewards/properties/materials/items/oneOf/0/properties/type",
+                    "title": "The type schema",
+                    "description": "Type of material gained.",
+                    "type": "string",
+                    "default": "",
+                    "enum": [
+                      "gas",
+                      "ore",
+                      "crystal"
+                    ],
+                    "examples": [
+                      "gas"
+                    ]
+                  },
+                  "grade": {
+                    "$id": "#/definitions/rewards/properties/materials/items/oneOf/0/properties/grade",
+                    "title": "The grade schema",
+                    "description": "The grade in starts of the material.",
+                    "type": "integer",
+                    "default": 0,
+                    "enum": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "examples": [
+                      3
+                    ]
+                  },
+                  "rarity": {
+                    "$id": "#/definitions/rewards/properties/materials/items/oneOf/0/properties/rarity",
+                    "title": "The rarity schema",
+                    "description": "Rarity of the material, or raw.",
+                    "type": "string",
+                    "default": "",
+                    "enum": [
+                      "raw",
+                      "common",
+                      "uncommon",
+                      "rare",
+                      "epic"
+                    ],
+                    "examples": [
+                      "uncommon"
+                    ]
+                  },
+                  "value": {
+                    "$ref": "#/definitions/resource_value"
+                  }
+                }
               }
             ]
           }
-        ],
-        "previous_mission": {
-          "$ref": "reference to mission."
         },
-        "recommended_ops": 27,
-        "rewards": [
-          {
+        "others": {
+          "$id": "#/definitions/rewards/properties/others",
+          "title": "The others schema",
+          "description": "List of all other things gained/lost by completing the mission.",
+          "type": "array",
+          "additionalItems": true,
+          "items": {
+            "$id": "#/definitions/rewards/properties/others/items",
+            "oneOf": [
+              {
+                "$id": "#/definitions/rewards/properties/others/items/oneOf/0",
+                "title": "The first oneOf schema",
+                "description": "Single other reward instance.",
+                "required": [
+                  "type",
+                  "value"
+                ],
+                "type": "object",
+                "additionalProperties": false,
+                "default": {},
+                "properties": {
+                  "type": {
+                    "$id": "#/definitions/rewards/properties/others/items/oneOf/0/properties/type",
+                    "title": "The type schema",
+                    "description": "The type of other gained/lost.",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                      "romulan points"
+                    ]
+                  },
+                  "value": {
+                    "$ref": "#/definitions/resource_value"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "resources": {
+          "$id": "#/definitions/rewards/properties/resources",
+          "title": "The resources schema",
+          "description": "List of all resources gained by completing the mission.",
+          "type": "array",
+          "additionalItems": true,
+          "items": {
+            "$id": "#/definitions/rewards/properties/resources/items",
+            "oneOf": [
+              {
+                "$id": "#/definitions/rewards/properties/resources/items/oneOf/0",
+                "title": "The first oneOf schema",
+                "description": "Single resource reward instance.",
+                "required": [
+                  "type",
+                  "value"
+                ],
+                "type": "object",
+                "additionalProperties": false,
+                "default": {},
+                "properties": {
+                  "type": {
+                    "$id": "#/definitions/rewards/properties/resources/items/oneOf/0/properties/type",
+                    "title": "The type schema",
+                    "description": "Type of resource gained.",
+                    "type": "string",
+                    "default": "",
+                    "enum": [
+                      "parsteel",
+                      "tritanium",
+                      "dilithium"
+                    ],
+                    "examples": [
+                      "parsteel"
+                    ]
+                  },
+                  "value": {
+                    "$ref": "#/definitions/resource_value"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "system": {
+      "$id": "#/definitions/system",
+      "title": "The $ref schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "systems/elvros_47"
+      ],
+      "pattern": "^systems/\\w+_\\d+$"
+    },
+    "task_title": {
+      "$id": "#/definitions/task_title",
+      "title": "The task_title schema",
+      "description": "The title of the task.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Return your ship to your station."
+      ]
+    },
+    "task_type": {
+      "$id": "#/definitions/task_type",
+      "title": "The task_type schema",
+      "description": "The type of task.",
+      "type": "string"
+    }
+  },
+  "examples": [
+    {
+      "arc": "borg arc 4",
+      "faction": "romulan",
+      "locations": [
+        {
+          "$ref": "systems/elvros_47",
+          "planet": "strinax"
+        }
+      ],
+      "mission_name": "A Force of Nature",
+      "mission_type": "start",
+      "next_missions": [
+        {
+          "$ref": "missions/honor_for_three",
+          "option": 1
+        }
+      ],
+      "objectives": [
+        {
+          "title": "Bring Spock to Renon.",
+          "id": 1,
+          "rewards": {
             "materials": [
               {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
-                "value": 50
+                "value": 18
               }
             ],
             "others": [
               {
-                "type": "federation credits",
-                "value": 330
+                "type": "romulan points",
+                "value": -485000
               }
             ],
             "resources": [
               {
                 "type": "parsteel",
-                "value": 1
+                "value": 300
               }
-            ],
-            "reward_id": 1
-          }
-        ],
-        "storyline": "The emerging Aenar on Andoria..."
-      }
-    ]
-  ],
-  "items": {
-    "$id": "#/items",
-    "anyOf": [
-      {
-        "$id": "#/items/anyOf/0",
-        "title": "The first anyOf schema",
-        "description": "Single mission instance.",
-        "required": [
-          "mission_title",
-          "storyline",
-          "faction",
-          "mission_type",
-          "location",
-          "objectives",
-          "rewards"
-        ],
-        "type": "object",
-        "additionalProperties": true,
-        "default": {},
-        "properties": {
-          "faction": {
-            "$id": "#/items/anyOf/0/properties/faction",
-            "title": "The faction schema",
-            "description": "To which faction the missions belongs to.",
-            "type": "string",
-            "default": "",
-            "enum": [
-              "neutral",
-              "federation",
-              "romulan",
-              "klingon",
-              "augment",
-              "rogue"
-            ],
-            "examples": [
-              "federation"
             ]
           },
-          "location": {
-            "$id": "#/items/anyOf/0/properties/location",
-            "title": "The location schema",
-            "description": "Location of the mission.",
+          "sub_id": 1,
+          "task": {
+            "options": [
+              {
+                "option_id": 1,
+                "option_title": "Follow the Federation"
+              }
+            ],
+            "task_type": "choose"
+          }
+        }
+      ],
+      "previous_mission": {
+        "$ref": "missions/still_standing"
+      },
+      "recommended_level": 28,
+      "storyline": "Attack the Romulan armory."
+    }
+  ],
+  "properties": {
+    "arc": {
+      "$id": "#/properties/arc",
+      "title": "The arc schema",
+      "description": "(Optional) During which Arc the mission was launched.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "borg arc 4"
+      ]
+    },
+    "faction": {
+      "$id": "#/properties/faction",
+      "title": "The faction schema",
+      "description": "To which faction the mission belongs to.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "neutral",
+        "federation",
+        "klingon",
+        "romulan",
+        "augment",
+        "rogue"
+      ],
+      "examples": [
+        "romulan"
+      ]
+    },
+    "locations": {
+      "$id": "#/properties/locations",
+      "title": "The locations schema",
+      "description": "(Optional) List of one or more start points where the mission can be found.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/locations/items",
+        "oneOf": [
+          {
+            "$id": "#/properties/locations/items/oneOf/0",
+            "title": "The first oneOf schema",
+            "description": "Holds a reference to a single location / start point.",
             "required": [
               "$ref"
             ],
@@ -149,55 +371,66 @@
             "default": {},
             "properties": {
               "$ref": {
-                "$id": "#/items/anyOf/0/properties/location/properties/%24ref",
-                "title": "The $ref schema",
-                "description": "Reference to the system file.",
-                "type": "string",
-                "default": "",
-                "examples": [
-                  "reference to system json"
+                "description": "Reference to a system where the mission can be found.",
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/system"
+                  }
                 ]
               },
               "planet": {
-                "$id": "#/items/anyOf/0/properties/location/properties/planet",
-                "title": "The planet schema",
-                "description": "(Optional) Planet where the mission is.",
-                "type": "string",
-                "default": "",
-                "examples": [
-                  "Andoria prime"
+                "description": "(Optional) The planet where the mission can be found.",
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/planet"
+                  }
                 ]
               }
             }
-          },
-          "mission_title": {
-            "$id": "#/items/anyOf/0/properties/mission_title",
-            "title": "The mission_title schema",
-            "description": "Title of the missions.",
-            "type": "string",
-            "default": "",
-            "examples": [
-              "Beneath the Ice"
-            ]
-          },
-          "mission_type": {
-            "$id": "#/items/anyOf/0/properties/mission_type",
-            "title": "The mission_type schema",
-            "description": "The type of mission.",
-            "type": "string",
-            "default": "",
-            "enum": [
-              "start",
-              "auto link / continuation"
-            ],
-            "examples": [
-              "start"
-            ]
-          },
-          "next_mission": {
-            "$id": "#/items/anyOf/0/properties/next_mission",
-            "title": "The next_mission schema",
-            "description": "(Optional) Reference to the next mission in this chain, if any.",
+          }
+        ]
+      }
+    },
+    "mission_name": {
+      "$id": "#/properties/mission_name",
+      "title": "The mission_name schema",
+      "description": "The name of the mission.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "A Force of Nature"
+      ]
+    },
+    "mission_type": {
+      "$id": "#/properties/mission_type",
+      "title": "The mission_type schema",
+      "description": "The type of mission.",
+      "type": "string",
+      "default": "",
+      "enum": [
+        "start",
+        "auto start",
+        "auto link / continuation"
+      ],
+      "examples": [
+        "start"
+      ]
+    },
+    "next_missions": {
+      "$id": "#/properties/next_missions",
+      "title": "The next_missions schema",
+      "description": "(Optional) List of references to next missions in this chain.",
+      "type": "array",
+      "$comment": "If the mission has a choose task, multiple missions are possible depending on the chosen path. Otherwise this list can only contain a single reference.",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/next_missions/items",
+        "oneOf": [
+          {
+            "$id": "#/properties/next_missions/items/oneOf/0",
+            "title": "The first oneOf schema",
+            "description": "Holds a reference to the next mission in this chain.",
             "required": [
               "$ref"
             ],
@@ -206,663 +439,488 @@
             "default": {},
             "properties": {
               "$ref": {
-                "$id": "#/items/anyOf/0/properties/next_mission/properties/%24ref",
-                "title": "The $ref schema",
-                "description": "Reference to the next mission file.",
-                "type": "string",
-                "default": "",
+                "description": "Reference to the next mission in this chain.",
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/mission"
+                  }
+                ]
+              },
+              "option": {
+                "$id": "#/properties/next_missions/items/oneOf/0/properties/option",
+                "title": "The option schema",
+                "description": "(Optional) Id of the reference which corresponds to the Id of the option in a choose task. This points to the next mission following the chosen path.",
+                "type": "integer",
+                "$comment": "Only use this field if the objectives contain a choose task.",
                 "examples": [
-                  "reference to mission."
+                  1
                 ]
               }
             }
-          },
-          "objectives": {
-            "$id": "#/items/anyOf/0/properties/objectives",
-            "title": "The objectives schema",
-            "description": "List of all objectives in this mission.",
-            "type": "array",
-            "additionalItems": true,
-            "default": [],
-            "items": {
-              "$id": "#/items/anyOf/0/properties/objectives/items",
-              "anyOf": [
-                {
-                  "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0",
-                  "title": "The first anyOf schema",
-                  "description": "Single mission objective instance.",
-                  "required": [
-                    "obj_id",
-                    "title",
-                    "task"
-                  ],
-                  "type": "object",
-                  "additionalProperties": true,
-                  "default": {},
-                  "properties": {
-                    "title": {
-                      "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/title",
-                      "title": "The title schema",
-                      "description": "Title of the objective.",
-                      "type": "string",
-                      "default": "",
-                      "examples": [
-                        "Meet the Romulan Informant on Moya."
-                      ]
-                    },
-                    "main_objective": {
-                      "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/main_objective",
-                      "title": "The main_objective schema",
-                      "description": "(Optional) Holds a reference to the main objective when this is a child objective based on a 'choose' type objective.",
-                      "required": [
-                        "$ref"
-                      ],
-                      "type": "object",
-                      "additionalProperties": true,
-                      "default": {},
-                      "properties": {
-                        "$ref": {
-                          "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/main_objective/properties/%24ref",
-                          "title": "The $ref schema",
-                          "description": "Reference to the main objective.",
-                          "type": "string",
-                          "default": "",
-                          "examples": [
-                            "reference"
+          }
+        ]
+      }
+    },
+    "objectives": {
+      "$id": "#/properties/objectives",
+      "title": "The objectives schema",
+      "description": "List of all mission objectives.",
+      "type": "array",
+      "additionalItems": true,
+      "default": [],
+      "items": {
+        "$id": "#/properties/objectives/items",
+        "oneOf": [
+          {
+            "$id": "#/properties/objectives/items/oneOf/0",
+            "title": "The first oneOf schema",
+            "description": "Single objective instance.",
+            "required": [
+              "id",
+              "title",
+              "task"
+            ],
+            "type": "object",
+            "additionalProperties": true,
+            "default": {},
+            "properties": {
+              "title": {
+                "$id": "#/properties/objectives/items/oneOf/0/properties/title",
+                "title": "The title schema",
+                "description": "The title of the objective.",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "Bring Spock to Renon."
+                ]
+              },
+              "id": {
+                "$id": "#/properties/objectives/items/oneOf/0/properties/id",
+                "title": "The id schema",
+                "description": "The ID of the objective, used to identify the order of objectives.",
+                "type": "integer",
+                "$comment": "If this is a sub objective of a choose task, this id is the next number, considering this is the next task after choosing a path.",
+                "examples": [
+                  1
+                ],
+                "minimum": 1
+              },
+              "rewards": {
+                "$comment": "Only used when this objective has a choose task with different rewards based on the chosen path.",
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/rewards"
+                  }
+                ]
+              },
+              "sub_id": {
+                "$id": "#/properties/objectives/items/oneOf/0/properties/sub_id",
+                "title": "The sub_id schema",
+                "description": "(Optional) The sub ID of the objective. This is used to identify the order of options for the head objective.",
+                "type": "integer",
+                "$comment": "Only required when the head objective is a choose task.",
+                "examples": [
+                  1
+                ],
+                "minimum": 1
+              },
+              "task": {
+                "$id": "#/properties/objectives/items/oneOf/0/properties/task",
+                "title": "The task schema",
+                "description": "Holds information about the task to complete the objective.",
+                "type": "object",
+                "default": {},
+                "oneOf": [
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/0",
+                    "title": "The first oneOf schema",
+                    "description": "Task for the 'travel to' mission type.",
+                    "required": [
+                      "task_type"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "oneOf": [
+                      {
+                        "required": [
+                          "$ref"
+                        ],
+                        "not": {
+                          "required": [
+                            "no_system_info"
+                          ]
+                        }
+                      },
+                      {
+                        "required": [
+                          "no_system_info"
+                        ],
+                        "not": {
+                          "required": [
+                            "$ref"
                           ]
                         }
                       }
-                    },
-                    "obj_id": {
-                      "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/obj_id",
-                      "title": "The obj_id schema",
-                      "description": "Numeric id of the objective to identify the objectives flow.",
-                      "type": "integer",
-                      "default": 0,
-                      "examples": [
-                        1
-                      ]
-                    },
-                    "task": {
-                      "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task",
-                      "title": "The task schema",
-                      "description": "List of all types of tasks. The objective can have one of these, based on task type.",
-                      "type": "array",
-                      "additionalItems": true,
-                      "default": [],
-                      "items": {
-                        "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items",
-                        "anyOf": [
+                    ],
+                    "properties": {
+                      "$ref": {
+                        "description": "(Optional) Reference to the destination system.",
+                        "allOf": [
                           {
-                            "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/0",
-                            "title": "The first anyOf schema",
-                            "description": "Task for the 'travel' mission type.",
-                            "required": [
-                              "task_type"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "$ref": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/0/properties/%24ref",
-                                "title": "The $ref schema",
-                                "description": "(Optional) A destination reference to the systems file. When not implemented, the destination is the player' home system.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "reference to system json"
-                                ]
-                              },
-                              "planet": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/0/properties/planet",
-                                "title": "The planet schema",
-                                "description": "(Optional) Planet where the destination is.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "Moya"
-                                ]
-                              },
-                              "task_type": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/0/properties/task_type",
-                                "title": "The task_type schema",
-                                "description": "The type of task.",
-                                "type": "string",
-                                "const": "travel",
-                                "default": "travel"
-                              }
-                            }
-                          },
-                          {
-                            "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/1",
-                            "title": "The second anyOf schema",
-                            "description": "Task for the 'destroy' mission type.",
-                            "required": [
-                              "task_type",
-                              "task_title"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "$ref": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/1/properties/%24ref",
-                                "title": "The $ref schema",
-                                "description": "(Optional) A reference to the systems file where the target is. When not implemented, the destination is the player' home system.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "reference to system json"
-                                ]
-                              },
-                              "task_title": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/1/properties/task_title",
-                                "title": "The task_title schema",
-                                "description": "The title of the task.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "Destroy Suliban Interceptor"
-                                ]
-                              },
-                              "task_type": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/1/properties/task_type",
-                                "title": "The task_type schema",
-                                "description": "The type of task.",
-                                "type": "string",
-                                "const": "destroy",
-                                "default": "destroy"
-                              }
-                            }
-                          },
-                          {
-                            "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/2",
-                            "title": "The third anyOf schema",
-                            "description": "Task for the 'kill' mission type.",
-                            "required": [
-                              "task_type",
-                              "task_title"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "$ref": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/2/properties/%24ref",
-                                "title": "The $ref schema",
-                                "description": "(Optional) A reference to the systems file where the target is. When not implemented, the destination is the player' home system.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "reference to system json"
-                                ]
-                              },
-                              "task_title": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/2/properties/task_title",
-                                "title": "The task_title schema",
-                                "description": "The title of the task.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "Kill Suliban Interceptor"
-                                ]
-                              },
-                              "task_type": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/2/properties/task_type",
-                                "title": "The task_type schema",
-                                "description": "The type of task.",
-                                "type": "string",
-                                "const": "kill",
-                                "default": "kill"
-                              }
-                            }
-                          },
-                          {
-                            "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/3",
-                            "title": "The fourth anyOf schema",
-                            "description": "Task for the 'deliver' mission type.",
-                            "required": [
-                              "task_type",
-                              "resource",
-                              "value"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "resource": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/3/properties/resource",
-                                "title": "The resource schema",
-                                "description": "The type of resource used.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "dilithium"
-                                ]
-                              },
-                              "task_type": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/3/properties/task_type",
-                                "title": "The task_type schema",
-                                "description": "The type of task.",
-                                "type": "string",
-                                "const": "deliver",
-                                "default": "deliver"
-                              },
-                              "value": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/3/properties/value",
-                                "title": "The value schema",
-                                "description": "The amount of this resource required.",
-                                "type": "integer",
-                                "default": 0,
-                                "examples": [
-                                  300
-                                ]
-                              }
-                            }
-                          },
-                          {
-                            "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4",
-                            "title": "The fifth anyOf schema",
-                            "description": "Task for the 'choose' mission type.",
-                            "required": [
-                              "task_type",
-                              "options"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "options": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options",
-                                "title": "The options schema",
-                                "description": "List of all options to choose from.",
-                                "type": "array",
-                                "additionalItems": true,
-                                "default": [],
-                                "items": {
-                                  "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options/items",
-                                  "anyOf": [
-                                    {
-                                      "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options/items/anyOf/0",
-                                      "title": "The first anyOf schema",
-                                      "description": "Single option instance.",
-                                      "required": [
-                                        "option_id",
-                                        "option_title",
-                                        "rewards"
-                                      ],
-                                      "type": "object",
-                                      "additionalProperties": true,
-                                      "default": {},
-                                      "properties": {
-                                        "option_id": {
-                                          "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options/items/anyOf/0/properties/option_id",
-                                          "title": "The option_id schema",
-                                          "description": "The id of the option, used to sort the options.",
-                                          "type": "integer",
-                                          "default": 0,
-                                          "examples": [
-                                            1
-                                          ]
-                                        },
-                                        "option_title": {
-                                          "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options/items/anyOf/0/properties/option_title",
-                                          "title": "The option_title schema",
-                                          "description": "Title of the option.",
-                                          "type": "string",
-                                          "default": "",
-                                          "examples": [
-                                            "smuggle Garan across..."
-                                          ]
-                                        },
-                                        "rewards": {
-                                          "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options/items/anyOf/0/properties/rewards",
-                                          "title": "The rewards schema",
-                                          "description": "Reference to the rewards able to gain by choosing this option.",
-                                          "required": [
-                                            "$ref"
-                                          ],
-                                          "type": "object",
-                                          "additionalProperties": true,
-                                          "default": {},
-                                          "properties": {
-                                            "$ref": {
-                                              "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/options/items/anyOf/0/properties/rewards/properties/%24ref",
-                                              "title": "The $ref schema",
-                                              "description": "Reference to the rewards property by reward_id.",
-                                              "type": "string",
-                                              "default": "",
-                                              "examples": [
-                                                "reference"
-                                              ]
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  ]
-                                },
-                                "minItems": 2
-                              },
-                              "task_type": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/4/properties/task_type",
-                                "title": "The task_type schema",
-                                "description": "The type of task.",
-                                "type": "string",
-                                "const": "choose",
-                                "default": "choose"
-                              }
-                            }
-                          },
-                          {
-                            "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/5",
-                            "title": "The sixth anyOf schema",
-                            "description": "Task for the 'return' mission type.",
-                            "required": [
-                              "task_type",
-                              "task_title"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "task_title": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/5/properties/task_title",
-                                "title": "The task_title schema",
-                                "description": "Title of the task.",
-                                "type": "string",
-                                "const": "Return to your station",
-                                "default": "Return to your station"
-                              },
-                              "task_type": {
-                                "$id": "#/items/anyOf/0/properties/objectives/items/anyOf/0/properties/task/items/anyOf/5/properties/task_type",
-                                "title": "The task_type schema",
-                                "description": "The type of task.",
-                                "type": "string",
-                                "const": "return",
-                                "default": "return"
-                              }
-                            }
+                            "$ref": "#/definitions/system"
                           }
                         ]
                       },
-                      "maxItems": 1
+                      "no_system_info": {
+                        "$ref": "#/definitions/no_system_info"
+                      },
+                      "planet": {
+                        "description": "(Optional) The planet where the destination target hovers above.",
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/planet"
+                          }
+                        ]
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "travel to"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/1",
+                    "title": "The second oneOf schema",
+                    "description": "Task for the 'destroy' mission type.",
+                    "required": [
+                      "task_type",
+                      "task_title"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "oneOf": [
+                      {
+                        "required": [
+                          "$ref"
+                        ],
+                        "not": {
+                          "required": [
+                            "no_system_info"
+                          ]
+                        }
+                      },
+                      {
+                        "required": [
+                          "no_system_info"
+                        ],
+                        "not": {
+                          "required": [
+                            "$ref"
+                          ]
+                        }
+                      }
+                    ],
+                    "properties": {
+                      "$ref": {
+                        "description": "(Optional) Reference to the system where the target is.",
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/system"
+                          }
+                        ]
+                      },
+                      "no_system_info": {
+                        "$ref": "#/definitions/no_system_info"
+                      },
+                      "task_title": {
+                        "$ref": "#/definitions/task_title"
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "destroy"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/2",
+                    "title": "The third oneOf schema",
+                    "description": "Task for the 'kill' mission type.",
+                    "required": [
+                      "task_type",
+                      "task_title"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "properties": {
+                      "task_title": {
+                        "$ref": "#/definitions/task_title"
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "kill"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/3",
+                    "title": "The fourth oneOf schema",
+                    "description": "Task for the 'resource' mission type.",
+                    "required": [
+                      "task_type",
+                      "task_info",
+                      "resource",
+                      "value"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "properties": {
+                      "resource": {
+                        "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/3/properties/resource",
+                        "title": "The resource schema",
+                        "description": "The type of resource.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "tritanium"
+                        ]
+                      },
+                      "task_info": {
+                        "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/3/properties/task_info",
+                        "title": "The task_info schema",
+                        "description": "The detailed task type.",
+                        "type": "string",
+                        "default": "",
+                        "enum": [
+                          "deliver",
+                          "collect"
+                        ],
+                        "examples": [
+                          "deliver"
+                        ]
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "resource"
+                      },
+                      "value": {
+                        "$ref": "#/definitions/resource_value"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/4",
+                    "title": "The fifth oneOf schema",
+                    "description": "Task for the 'choose' mission type.",
+                    "required": [
+                      "task_type",
+                      "options"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "properties": {
+                      "options": {
+                        "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/4/properties/options",
+                        "title": "The options schema",
+                        "description": "List of all options to choose from.",
+                        "type": "array",
+                        "additionalItems": true,
+                        "default": [],
+                        "items": {
+                          "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/4/properties/options/items",
+                          "oneOf": [
+                            {
+                              "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/4/properties/options/items/oneOf/0",
+                              "title": "The first oneOf schema",
+                              "description": "Single option instance.",
+                              "required": [
+                                "option_id",
+                                "option_title"
+                              ],
+                              "type": "object",
+                              "additionalProperties": true,
+                              "default": {},
+                              "properties": {
+                                "option_id": {
+                                  "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/4/properties/options/items/oneOf/0/properties/option_id",
+                                  "title": "The option_id schema",
+                                  "description": "The ID of the option, used to order the options.",
+                                  "type": "integer",
+                                  "examples": [
+                                    1
+                                  ],
+                                  "minimum": 1
+                                },
+                                "option_title": {
+                                  "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/4/properties/options/items/oneOf/0/properties/option_title",
+                                  "title": "The option_title schema",
+                                  "description": "Title of the option.",
+                                  "type": "string",
+                                  "default": "",
+                                  "examples": [
+                                    "Follow the Federation"
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "minItems": 2
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "choose"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/5",
+                    "title": "The sixth oneOf schema",
+                    "description": "Task for the 'return' mission type.",
+                    "required": [
+                      "task_type",
+                      "task_title"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "properties": {
+                      "task_title": {
+                        "$ref": "#/definitions/task_title"
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "return"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/6",
+                    "title": "The seventh oneOf schema",
+                    "description": "Task for the 'other' mission type. Used for all other types that only require a title.",
+                    "required": [
+                      "task_type",
+                      "task_info",
+                      "task_title"
+                    ],
+                    "type": "object",
+                    "additionalProperties": true,
+                    "default": {},
+                    "properties": {
+                      "task_info": {
+                        "$id": "#/properties/objectives/items/oneOf/0/properties/task/oneOf/6/properties/task_info",
+                        "title": "The task_info schema",
+                        "description": "The detailed task type.",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "build",
+                          "join alliance",
+                          "ship",
+                          "ship upgrade",
+                          "starbase",
+                          "assign crew",
+                          "officer",
+                          "recruitment"
+                        ]
+                      },
+                      "task_title": {
+                        "$ref": "#/definitions/task_title"
+                      },
+                      "task_type": {
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/task_type"
+                          }
+                        ],
+                        "const": "other"
+                      }
                     }
                   }
-                }
-              ]
-            }
-          },
-          "previous_mission": {
-            "$id": "#/items/anyOf/0/properties/previous_mission",
-            "title": "The previous_mission schema",
-            "description": "(Optional) Reference to the previous mission in this chain, if any.",
-            "required": [
-              "$ref"
-            ],
-            "type": "object",
-            "additionalProperties": true,
-            "default": {},
-            "properties": {
-              "$ref": {
-                "$id": "#/items/anyOf/0/properties/previous_mission/properties/%24ref",
-                "title": "The $ref schema",
-                "description": "Reference to the previous mission file.",
-                "type": "string",
-                "default": "",
-                "examples": [
-                  "reference to mission."
                 ]
               }
             }
-          },
-          "recommended_ops": {
-            "$id": "#/items/anyOf/0/properties/recommended_ops",
-            "title": "The recommended_ops schema",
-            "description": "(Optional) Operations level recommended to complete this mission.",
-            "type": "integer",
-            "default": 0,
-            "examples": [
-              27
-            ]
-          },
-          "rewards": {
-            "$id": "#/items/anyOf/0/properties/rewards",
-            "title": "The rewards schema",
-            "description": "List of all rewards for this mission. When the mission has no 'choose' type tasks, only one list item is used to describe all rewards. Otherwhise all tasks are split by an id.",
-            "type": "array",
-            "additionalItems": true,
-            "default": [],
-            "items": {
-              "$id": "#/items/anyOf/0/properties/rewards/items",
-              "anyOf": [
-                {
-                  "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0",
-                  "title": "The first anyOf schema",
-                  "description": "Single reward list instance.",
-                  "required": [
-                    "resources",
-                    "materials",
-                    "others"
-                  ],
-                  "type": "object",
-                  "additionalProperties": false,
-                  "default": {},
-                  "properties": {
-                    "materials": {
-                      "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials",
-                      "title": "The materials schema",
-                      "description": "List of all materials gained by completing the mission.",
-                      "type": "array",
-                      "additionalItems": true,
-                      "default": [],
-                      "items": {
-                        "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials/items",
-                        "anyOf": [
-                          {
-                            "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials/items/anyOf/0",
-                            "title": "The first anyOf schema",
-                            "description": "Single material reward instance.",
-                            "required": [
-                              "type",
-                              "rarity",
-                              "grade",
-                              "value"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "type": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials/items/anyOf/0/properties/type",
-                                "title": "The type schema",
-                                "description": "Type of material gained.",
-                                "type": "string",
-                                "default": "",
-                                "enum": [
-                                  "gas",
-                                  "ore",
-                                  "crystal"
-                                ],
-                                "examples": [
-                                  "gas"
-                                ]
-                              },
-                              "grade": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials/items/anyOf/0/properties/grade",
-                                "title": "The grade schema",
-                                "description": "The grade in stars of the material.",
-                                "type": "integer",
-                                "default": 0,
-                                "enum": [
-                                  1,
-                                  2,
-                                  3,
-                                  4,
-                                  5
-                                ],
-                                "examples": [
-                                  3
-                                ]
-                              },
-                              "rarity": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials/items/anyOf/0/properties/rarity",
-                                "title": "The rarity schema",
-                                "description": "Rarity of the material",
-                                "type": "string",
-                                "default": "",
-                                "enum": [
-                                  "common",
-                                  "uncommon",
-                                  "rare",
-                                  "epic"
-                                ],
-                                "examples": [
-                                  "uncommon"
-                                ]
-                              },
-                              "value": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/materials/items/anyOf/0/properties/value",
-                                "title": "The value schema",
-                                "description": "The amount of this material gained.",
-                                "type": "integer",
-                                "default": 0,
-                                "examples": [
-                                  50
-                                ]
-                              }
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    "others": {
-                      "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/others",
-                      "title": "The others schema",
-                      "description": "List of all other rewards gained.",
-                      "type": "array",
-                      "additionalItems": true,
-                      "default": [],
-                      "items": {
-                        "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/others/items",
-                        "anyOf": [
-                          {
-                            "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/others/items/anyOf/0",
-                            "title": "The first anyOf schema",
-                            "description": "Single other reward instance.",
-                            "required": [
-                              "type",
-                              "value"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "type": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/others/items/anyOf/0/properties/type",
-                                "title": "The type schema",
-                                "description": "The type of other gained.",
-                                "type": "string",
-                                "default": "",
-                                "examples": [
-                                  "federation credits"
-                                ]
-                              },
-                              "value": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/others/items/anyOf/0/properties/value",
-                                "title": "The value schema",
-                                "description": "The amount of this other reward gained.",
-                                "type": "integer",
-                                "default": 0,
-                                "examples": [
-                                  330
-                                ]
-                              }
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    "resources": {
-                      "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/resources",
-                      "title": "The resources schema",
-                      "description": "List of all resources gained by completing the mission.",
-                      "type": "array",
-                      "additionalItems": true,
-                      "default": [],
-                      "items": {
-                        "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/resources/items",
-                        "anyOf": [
-                          {
-                            "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/resources/items/anyOf/0",
-                            "title": "The first anyOf schema",
-                            "description": "Single resource reward instance.",
-                            "required": [
-                              "type",
-                              "value"
-                            ],
-                            "type": "object",
-                            "additionalProperties": true,
-                            "default": {},
-                            "properties": {
-                              "type": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/resources/items/anyOf/0/properties/type",
-                                "title": "The type schema",
-                                "description": "Type of resource gained.",
-                                "type": "string",
-                                "default": "",
-                                "enum": [
-                                  "parsteel",
-                                  "tritanium",
-                                  "dilithium"
-                                ],
-                                "examples": [
-                                  "parsteel"
-                                ]
-                              },
-                              "value": {
-                                "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/resources/items/anyOf/0/properties/value",
-                                "title": "The value schema",
-                                "description": "The amount of this resource gained.",
-                                "type": "integer",
-                                "default": 0,
-                                "examples": [
-                                  1
-                                ]
-                              }
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    "reward_id": {
-                      "$id": "#/items/anyOf/0/properties/rewards/items/anyOf/0/properties/reward_id",
-                      "title": "The reward_id schema",
-                      "description": "(Optional) Id of the reward. Only used when the mission has at least one 'choose' type task.",
-                      "type": "integer",
-                      "default": 0,
-                      "examples": [
-                        1
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "storyline": {
-            "$id": "#/items/anyOf/0/properties/storyline",
-            "title": "The storyline schema",
-            "description": "The storyline of the mission.",
-            "type": "string",
-            "default": "",
-            "examples": [
-              "The emerging Aenar on Andoria..."
-            ]
           }
+        ]
+      }
+    },
+    "previous_mission": {
+      "$id": "#/properties/previous_mission",
+      "title": "The previous_mission schema",
+      "description": "(Optional) Holds a reference to the previous mission in this chain.",
+      "required": [
+        "$ref"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "$ref": {
+          "description": "Reference to the previous mission in this chain.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/mission"
+            }
+          ]
         }
       }
-    ]
+    },
+    "recommended_level": {
+      "$id": "#/properties/recommended_level",
+      "title": "The recommended_level schema",
+      "description": "(Optional) Operations level recommended to complete the mission.",
+      "type": "integer",
+      "examples": [
+        28
+      ],
+      "maximum": 50,
+      "minimum": 1
+    },
+    "rewards": {
+      "$comment": "Only used when there is no choose task in the objectives which has different rewards based on the chosen path.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/rewards"
+        }
+      ]
+    },
+    "storyline": {
+      "$id": "#/properties/storyline",
+      "title": "The storyline schema",
+      "description": "The storyline of the mission.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Attack the Romulan armory."
+      ]
+    }
   }
 }
