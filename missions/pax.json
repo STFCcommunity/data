@@ -1,0 +1,68 @@
+{
+  "faction": "romulan",
+  "mission_name": "Pax",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Visit the disputed Corvallen system of Alatum.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alatum_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Eliminate the Corvallen Insurgents.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alatum_39",
+        "task_title": "Destroy Corvallen Insurgents",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort the Corvallen Primary to Romulus.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/calls_for_unity"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "damaged datapad",
+        "value": 1
+      },
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -100800
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -67200
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 4440000
+      }
+    ]
+  },
+  "storyline": "Bring peace to Corvallen society by removing key rebel leaders and replace them with Tal Shiar agents."
+}

@@ -1,0 +1,59 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "A Home That Only We Know",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/unlikely_allies"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout Francihk for a suitable planet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/francihk_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout Skyedark for a suitable planet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/skyedark_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout Rooth for a suitable planet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rooth_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unrelenting"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 33000
+      }
+    ]
+  },
+  "storyline": "Find a suitable home for the refugees on your Station."
+}

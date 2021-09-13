@@ -1,0 +1,89 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Caveat Emptor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_fate_worse_than_death"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Retrieve the Borg drone from the Orion Syndicate.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 500,000 Dilithium to the Orion Syndicate.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 500000
+      }
+    },
+    {
+      "title": "Find the Orion Syndicate\u2019s intended target in Xerxes.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Assassinate Vanosh.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "task_title": "Destroy Vanosh",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Orion Syndicate to collect the Borg Drone.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_chancellor_s_daughter"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 18
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 3377000
+      },
+      {
+        "type": "tritanium",
+        "value": 497000
+      }
+    ]
+  },
+  "storyline": "Stop the Orion Syndicate from selling a Borg Drone to an unwitting buyer."
+}

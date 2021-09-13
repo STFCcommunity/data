@@ -1,0 +1,80 @@
+{
+  "faction": "federation",
+  "mission_name": "The Phillips Incident",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/witnesses"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Starbase 87 for more information.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the last known location of the USS Phillips.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_canberra_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon assailant.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_canberra_44",
+        "task_title": "Destroy Klingon Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/work_experience"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "3 hour repair speed up",
+        "value": 5
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 374000
+      },
+      {
+        "type": "romulan points",
+        "value": -131600
+      },
+      {
+        "type": "klingon points",
+        "value": -592400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Follow the mutinied USS Phillips to its last known location."
+}

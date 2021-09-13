@@ -1,0 +1,96 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "A Family Reunion",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_little_bit_different"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Information Dealer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/d0d_g_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1.5M Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1500000
+      }
+    },
+    {
+      "title": "Meet the contact.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Ascher",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ascher_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Guard.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/ascher_30",
+        "task_title": "Destroy Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Infiltrate the holding facility.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/ascher_30",
+        "planet": "dusir",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 21
+      }
+    ],
+    "others": [
+      {
+        "type": "augment credits",
+        "value": 38
+      },
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Break out the Augments."
+}

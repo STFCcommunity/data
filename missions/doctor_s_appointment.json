@@ -1,0 +1,62 @@
+{
+  "faction": "neutral",
+  "mission_name": "Doctor's Appointment",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/an_old_friend"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the location of the stranded medical vessel in Fect.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fect_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/fect_42",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to Firenze and prepare the colonists for transport.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "planet": "firenze",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the colonists to Starbase 17 in Rua Ri.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rua_ri_42",
+        "planet": "starbase 17",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 160
+      },
+      {
+        "type": "officer xp",
+        "value": 124000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Delegate Federation medical relief to a colony stricken with a mysterious illness."
+}

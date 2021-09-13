@@ -1,0 +1,123 @@
+{
+  "faction": "klingon",
+  "mission_name": "An Enemy Once More",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/so_it_begins"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Starfleet science vessel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_title": "Destroy Starfleet Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the Science Vessel.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy them."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let them go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Kronos.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -160500
+          },
+          {
+            "type": "romulan points",
+            "value": -427900
+          },
+          {
+            "type": "klingon points",
+            "value": 311000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 4050000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Kronos.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 2000
+          },
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -160500
+          },
+          {
+            "type": "romulan points",
+            "value": -427900
+          },
+          {
+            "type": "klingon points",
+            "value": 311000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_fool_s_errand"
+  },
+  "storyline": "Track down and raid a Starfleet science vessel."
+}

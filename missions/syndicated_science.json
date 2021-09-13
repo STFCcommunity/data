@@ -1,0 +1,57 @@
+{
+  "faction": "neutral",
+  "mission_name": "Syndicated Science",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/perpetual_motion"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to Deneva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow Feyn\u2019s warp trail to Rigel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel iv",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion slaver's ship and rescue Feyn.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Orion Slaver",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/warzones"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5000000
+      },
+      {
+        "type": "tritanium",
+        "value": 750000
+      }
+    ]
+  },
+  "storyline": "Rescue an Orion scientist who has information about the ancient race."
+}

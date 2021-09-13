@@ -1,0 +1,90 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Mind's Eye",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_outsider"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Deal with the Vulcan ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ok_vak_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan Vahklas.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ok_vak_32",
+        "task_title": "Destroy Vulcan Vahklas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "How will you deal with the Vulcan?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take her prisoner."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Accept the bribe."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Transport the Vulcan prisoner to Firexii.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 237000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ok_vak_32",
+        "planet": "firexii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring word of the escape to Firexii.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 8035000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ok_vak_32",
+        "planet": "firexii",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/no_warriors_here"
+  },
+  "storyline": "Confront a Vulcan scout ship spotted in Ok'Vak."
+}

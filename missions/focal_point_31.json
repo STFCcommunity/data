@@ -1,0 +1,70 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Focal Point",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/focal_point_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Join the Enterprise crew on Vaset.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Visit the Zorivians.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide the Zorivians with 3,000 Dilithium.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3000
+      }
+    },
+    {
+      "title": "Defend Zoriv from the Arkonians.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_title": "Destroy Arkonian Cruiser",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "recommended_level": 31,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 50
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 70
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5579000
+      }
+    ]
+  },
+  "storyline": "Meet with Crusher, La Forge and Data."
+}

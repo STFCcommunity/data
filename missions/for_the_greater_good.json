@@ -1,0 +1,72 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/galorndon_core_30"
+    }
+  ],
+  "mission_name": "For the Greater Good",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/focus_attack"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the Suliban Cabal in the Vendor system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vendor_34",
+        "planet": "vendor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Remove Doasen from power.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vendor_34",
+        "task_title": "Destroy Doasen's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Kelia with news of Doasen's demise.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "galorndon core",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 250
+      },
+      {
+        "type": "federation points",
+        "value": -8600
+      },
+      {
+        "type": "romulan points",
+        "value": 12000
+      },
+      {
+        "type": "klingon points",
+        "value": -6700
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 101000
+      }
+    ]
+  },
+  "storyline": "Assist the Suliban Nomads in establishing a dialogue with the Suliban Cabal."
+}

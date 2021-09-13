@@ -1,0 +1,132 @@
+{
+  "faction": "neutral",
+  "mission_name": "Augments Exodus Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/augments_exodus_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Yridian dealer in Koltiska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with the Yridian.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay his bribe of 75,000 Dilithium."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy his bodyguard's ship."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bribe the Yridian with 75,000 Dilithium.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 75000
+      }
+    },
+    {
+      "title": "Catch the Corvallens in Nasturta.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Flagship.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 14
+          }
+        ],
+        "others": [
+          {
+            "type": "corrupted data",
+            "value": 400
+          },
+          {
+            "type": "augment credits",
+            "value": 50
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_title": "Destroy Corvallen Flagship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Damage the Yridian's defenses.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_title": "Destroy Yridian Thug",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Catch the Corvallens in Nasturta.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Flagship.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "corrupted data     33 common plutonium",
+            "value": 600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_title": "Destroy Corvallen Flagship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/augments_exodus_part_3"
+  },
+  "recommended_level": 28,
+  "storyline": "Assist Rima and Pan on their hunt for revenge."
+}

@@ -1,0 +1,67 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Origins of the End",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_strings_no_master"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Scotty.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/quvolis_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 2,500 Tritanium to assist Scotty's scans.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Investigate one of the strange structures.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/quvolis_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dangerous_appetites"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute speed up",
+        "value": 10
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 12000
+      }
+    ]
+  },
+  "storyline": "Discover VESTA\u2019s true origins."
+}

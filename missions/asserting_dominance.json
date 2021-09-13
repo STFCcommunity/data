@@ -1,0 +1,50 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/okvak_32"
+    }
+  ],
+  "mission_name": "Asserting Dominance",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Bombard Kervas from orbit.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rator_29",
+        "planet": "kervas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Defender.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Suliban Defender",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Viotkas.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ok_vak_32",
+        "planet": "viotkas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1100000
+      }
+    ]
+  },
+  "storyline": "Send a message to the Suliban by bombarding Kervas from orbit."
+}

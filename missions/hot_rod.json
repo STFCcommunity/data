@@ -1,0 +1,66 @@
+{
+  "arc": "outlaw arc 2",
+  "faction": "neutral",
+  "mission_name": "Hot Rod",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/intellectual_property"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Claim the Eurydice's Intel Bundle from the Faction Store.",
+      "id": 1,
+      "task": {
+        "resource": "mission token",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Return to the target.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/exchange_alpha_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rob the Casino with the Stella.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/exchange_alpha_29",
+        "task_title": "Destroy Exchange Casino",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/breakdown"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 39
+      },
+      {
+        "type": "3 hour speed up",
+        "value": 13
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Take the new ship for a test run."
+}

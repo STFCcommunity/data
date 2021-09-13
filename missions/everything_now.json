@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Everything, Now",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_price_we_pay"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit Ignatz.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Starfleet ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Stop the hostile ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_title": "Destroy Strange Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fragments_of_the_whole"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 110
+      },
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 110
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "See the memories extracted from Maia."
+}

@@ -1,0 +1,50 @@
+{
+  "faction": "neutral",
+  "mission_name": "Stand Your Ground",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Donate 19,800,000 Tritanium to help the colony.",
+      "id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 19800000
+      }
+    },
+    {
+      "title": "Find the bandit\u2019s base.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the bandit leader.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_title": "Destroy K'hrash's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_fresh_start"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 180
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Help Elrich respond to a bandit threat."
+}

@@ -1,0 +1,52 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "What We Become",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_fading_light"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/panak_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Approach Dalen's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/panak_27",
+        "planet": "sikgor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Dalen back to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_target"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "one of ten",
+        "value": 2
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find Dalen\u2019s signal."
+}

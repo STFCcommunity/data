@@ -1,0 +1,62 @@
+{
+  "faction": "neutral",
+  "mission_name": "Catch and Release",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_legacy_of_destruction"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Federation and Klingon ships.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go into Romulan Space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 Hostiles of Level 41 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 20 Hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/damned"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 4
+      },
+      {
+        "type": "3 hour repair speed up",
+        "value": 6
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Push the Servitors out of Romulan space."
+}

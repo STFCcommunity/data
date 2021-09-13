@@ -1,0 +1,69 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Outsider",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Collect the Romulan asylum seeker on Khitomer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the dissident Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_title": "Destroy Klingon Dissident",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Elara to a safe location on Ligotia.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/jiwu_puh_36",
+        "planet": "ligotia",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_mind_s_eye"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 400
+      },
+      {
+        "type": "federation points",
+        "value": -25900
+      },
+      {
+        "type": "romulan points",
+        "value": -69100
+      },
+      {
+        "type": "klingon points",
+        "value": 60000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 10756000
+      },
+      {
+        "type": "dilithium",
+        "value": 317000
+      }
+    ]
+  },
+  "storyline": "Assist the Empire with the transport of a Romulan refugee who claims to possess information on Romulan weapons technology."
+}

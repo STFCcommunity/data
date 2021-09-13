@@ -1,0 +1,74 @@
+{
+  "arc": "tos arc 3",
+  "faction": "neutral",
+  "mission_name": "Leviathan Part 6",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/leviathan_part_7"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with Leevoigh on P'Jem.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Leevoigh to the Breen Outpost.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "planet": "breen outpost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 750,000 Parsteel to the Breen for a temperature suit.",
+      "id": 3,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 750000
+      }
+    },
+    {
+      "title": "Bring Leevoigh to the lab on Sekay.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/s_mtharz_25",
+        "planet": "sekay",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 50
+      },
+      {
+        "type": "3\u2605 survey parts",
+        "value": 370
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Provide support to Leevoigh so she can help the Tholians."
+}

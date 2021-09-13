@@ -1,0 +1,121 @@
+{
+  "faction": "neutral",
+  "mission_name": "Trust Your Instincts",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_glimpse_behind_the_veil"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go into Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kiina_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow Maia's instructions?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes"
+          },
+          {
+            "option_id": 2,
+            "option_title": "No"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 48 or higher.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan ship.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kiina_48",
+        "task_title": "Destroy Romulan Officer Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum      1 pattern disruptor",
+            "value": 6000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to Scotty.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Romulan ship.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_title": "Destroy Romulan Officer Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 220
+          },
+          {
+            "type": "officer xp      1 pattern disruptor",
+            "value": 211000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_deep_end"
+  },
+  "storyline": "Decide how to proceed with the investigation."
+}

@@ -1,0 +1,74 @@
+{
+  "faction": "federation",
+  "mission_name": "Fire and Fury",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/knowledge_as_a_virtue"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Join the Starfleet forces.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Klingon Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Officer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Klingon Officer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Reconvene with the Starfleet forces.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_sense_of_frustration"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": 8000
+      },
+      {
+        "type": "romulan points",
+        "value": -1700
+      },
+      {
+        "type": "klingon points",
+        "value": -7800
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 60000
+      }
+    ]
+  },
+  "storyline": "Defend Federation territory."
+}

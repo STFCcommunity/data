@@ -1,0 +1,130 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Legacies",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_vision_of_discontent"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with a Romulan representative.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with a Vulcan representative.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hold a negotiation.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to resolve the conflict.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Side with the Vulcans."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Side with the Romulans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Legionary.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Romulan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 100
+          }
+        ],
+        "others": [
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 150
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Vahklas.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Vahklas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "common",
+            "value": 100
+          }
+        ],
+        "others": [
+          {
+            "type": "3\u2605 explorer parts",
+            "value": 150
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_parent_of_fear"
+  },
+  "storyline": "Prove your innocence to the Romulans."
+}

@@ -1,0 +1,120 @@
+{
+  "faction": "neutral",
+  "mission_name": "Iteration",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/spinning_plates"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Inquire about the components on Vaset.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to obtain the components.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay the vendor."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Track down the Rigellian."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 750 Dilithium to the vendor.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "5 minute speed up",
+            "value": 40
+          },
+          {
+            "type": "15 minute repair speed up",
+            "value": 4
+          },
+          {
+            "type": "2\u2605 interceptor parts",
+            "value": 20
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 750
+      }
+    },
+    {
+      "title": "Track down the Rigellian.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Rigellian.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_title": "Destroy Rigellian Thief",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the vendor with an update.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 12
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 9000
+          },
+          {
+            "type": "tritanium",
+            "value": 1400
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/ensign_of_the_times"
+  },
+  "recommended_level": 12,
+  "storyline": "Acquire necessary components for Tilly\u2019s proposed defense array configuration."
+}

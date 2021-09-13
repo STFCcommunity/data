@@ -1,0 +1,148 @@
+{
+  "faction": "neutral",
+  "mission_name": "To Protect One's Own",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Pursue Asha and Uther to Fostaa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with Asha and Uther.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Allow them to leave."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Take them into custody."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable Captain Yeatman's ship.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_title": "Destroy Captain Yeatman",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort Asha and Uther to safety in Honsao.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/honsao_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 battleship parts",
+            "value": 110
+          },
+          {
+            "type": "2\u2605 interceptor parts",
+            "value": 6
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 320
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 1 system",
+        "task_type": "other"
+      }
+    },
+    {
+      "title": "Disable Asha's ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_title": "Destroy Asha",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver Asha and Uther to Starfleet on Uuxua.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/donfo_10",
+        "planet": "uuxua",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 6
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 90
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 1 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/permanent_silence"
+  },
+  "recommended_level": 10,
+  "storyline": "Apprehend Asha and Uther."
+}

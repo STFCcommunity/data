@@ -1,0 +1,110 @@
+{
+  "arc": "absolution arc 1",
+  "faction": "neutral",
+  "mission_name": "Absolution Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/absolution_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Praetor Bervas.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rator_29",
+        "planet": "semoja",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the trader's shipyard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/jishui_16",
+        "planet": "aesugun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with the trader.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Intimidate the trader."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Pay the trader."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the bodyguard.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 130
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 335000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/jishui_16",
+        "task_title": "Destroy Trader's Bodyguard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Pay 150,000 Dilithium for the information.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ship xp",
+            "value": 250
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 3032000
+          },
+          {
+            "type": "dilithium",
+            "value": 90000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 150000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/absolution_part_2"
+  },
+  "recommended_level": 29,
+  "storyline": "Attend a meeting with Praetor Bervas."
+}

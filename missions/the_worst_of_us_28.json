@@ -1,0 +1,67 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "The Worst of Us",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/caged_animals"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Mudd to the lab.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 27 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Evacuate Mudd.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/digging_in_the_dirt"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "independent credits",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1517000
+      }
+    ]
+  },
+  "storyline": "Infiltrate the Romulan lab."
+}

@@ -1,0 +1,65 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Turning Tides",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/cognitive_dissonance"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Burnham.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Kai Sinnis.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Kai's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Kai's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/quicksand"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 42000
+      },
+      {
+        "type": "dilithium",
+        "value": 9000
+      }
+    ]
+  },
+  "storyline": "Plan your next steps with Burnham."
+}

@@ -1,0 +1,137 @@
+{
+  "faction": "federation",
+  "mission_name": "Stolen Property",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fitting_punishment",
+      "option": 1
+    },
+    {
+      "$ref": "missions/questions_and_answers",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the last known location of the USS Phillips.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to deal with Venonn and the USS Phillips.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Capture Ensign Venonn alive."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the USS Phillips."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable the USS Phillips.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_title": "Destroy USS Phillips",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Ensign Venonn into custody on Starbase 87.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Phillips.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_title": "Destroy USS Phillips",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common battleship parts",
+            "value": 1100
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/motivations"
+  },
+  "storyline": "Intercept Venonn aboard the USS Phillips."
+}

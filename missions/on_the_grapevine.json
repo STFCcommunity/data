@@ -1,0 +1,81 @@
+{
+  "faction": "augment",
+  "locations": [
+    {
+      "$ref": "systems/lydan_22"
+    }
+  ],
+  "mission_name": "On the Grapevine",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Visit the Orion Syndicate.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 15,000 Tritanium for the Orion\u2019s services.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 15000
+      }
+    },
+    {
+      "title": "Meet with the information dealer on Yridia.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the information thief from escaping.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_title": "Destroy Information Thief",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Tera Lara.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/tera_lara_24",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 33
+      },
+      {
+        "type": "dark matter",
+        "value": 1
+      },
+      {
+        "type": "augment points",
+        "value": 30
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 23000
+      }
+    ]
+  },
+  "storyline": "Use your influence in Independent space to deflect notice of Khan and the Augments."
+}

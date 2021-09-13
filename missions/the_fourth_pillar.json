@@ -1,0 +1,53 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Fourth Pillar",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/final_preparations"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to Muhg.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deploy the final Pillar in orbit over Stoklasa.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "planet": "stoklasa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_third_pillar"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 50
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Deploy the final Conduit Pillar in the Muhg system."
+}

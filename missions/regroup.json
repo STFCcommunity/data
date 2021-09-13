@@ -1,0 +1,79 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/gorath_38"
+    }
+  ],
+  "mission_name": "Regroup",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Destroy the lead Tribune.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unroth_32",
+        "task_title": "Destroy IRW Tribune",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the stranded Gorn aboard your ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/unroth_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Corvallen warship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/h_atoria_30",
+        "task_title": "Destroy Corvallen Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to the Gorn Embassy.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "ka'weh",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 9
+      },
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -45600
+      },
+      {
+        "type": "romulan points",
+        "value": -121600
+      },
+      {
+        "type": "klingon points",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 23800000
+      }
+    ]
+  },
+  "storyline": "The limited Gorn forces retreat to Unroth before the opportunistic Romulan troops can push into Klingon space."
+}

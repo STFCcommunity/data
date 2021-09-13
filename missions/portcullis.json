@@ -1,0 +1,76 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/altanea_38"
+    }
+  ],
+  "mission_name": "Portcullis",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/chemical_rain"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Destroy a Gorn Explorer ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/carraya_33",
+        "task_title": "Destroy Gorn Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy a Gorn Battleship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/carraya_33",
+        "task_title": "Destroy Gorn Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy a Gorn Interceptor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/carraya_33",
+        "task_title": "Destroy Gorn Interceptor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "romulan recruit token",
+        "value": 1000
+      },
+      {
+        "type": "federation points",
+        "value": -96000
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -64000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 25000000
+      }
+    ]
+  },
+  "storyline": "Collect the weapons systems from Gorn ships to devise a stronger defense against them."
+}

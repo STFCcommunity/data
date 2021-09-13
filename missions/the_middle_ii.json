@@ -1,0 +1,94 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Middle II",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Defeat 15 hostiles of Level 47 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 47 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Sedate the bandits?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes"
+          },
+          {
+            "option_id": 2,
+            "option_title": "No"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bring the bandits to Starfleet.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rua_ri_42",
+        "planet": "starbase 17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m tritanium token",
+            "value": 90
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Bring the bandits to Starfleet.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rua_ri_42",
+        "planet": "starbase 17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m parsteel token",
+            "value": 700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_last_stand"
+  },
+  "storyline": "Get the bandits to Starfleet."
+}

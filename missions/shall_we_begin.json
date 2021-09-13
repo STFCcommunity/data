@@ -1,0 +1,70 @@
+{
+  "faction": "neutral",
+  "mission_name": "Shall We Begin?",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/superior_ambition"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to face Khan in Petandria.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Augment Loyalist.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_title": "Destroy Augment Loyalist",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Augment Enforcer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_title": "Destroy Augment Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Khan.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_title": "Destroy Khan",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Khan to Scotty on Brannigan.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "planet": "brannigan",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/start_spreading_the_news"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "khan noonien singh",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend against Khan\u2019s reprisal."
+}

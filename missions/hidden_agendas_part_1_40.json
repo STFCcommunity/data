@@ -1,0 +1,68 @@
+{
+  "arc": "tos arc 3",
+  "faction": "neutral",
+  "mission_name": "Hidden Agendas Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/hidden_agendas_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the USS Enterprise in Benzar.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the distress signal emanating from Shino.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/shino_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend yourself against the attacker.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/shino_38",
+        "task_title": "Destroy Kriosian Attacker",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Check for survivors on the surface of Kumixo.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/shino_38",
+        "planet": "kumixo",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1699000
+      },
+      {
+        "type": "dilithium",
+        "value": 340000
+      }
+    ]
+  },
+  "storyline": "Accompany the Enterprise crew as they investigate a civilian distress signal."
+}

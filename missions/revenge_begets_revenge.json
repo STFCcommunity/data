@@ -1,0 +1,76 @@
+{
+  "faction": "romulan",
+  "mission_name": "Revenge Begets Revenge",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Warn the Romulans in the Kaikara system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Michigan.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy USS Michigan",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Kumak to the Romulan colony on Tozuu.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/v_varia_21",
+        "planet": "tozuu",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan Vahklas.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/v_varia_21",
+        "task_title": "Destroy Vulcan Vahklas",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/reprisal"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "12 hour speed up",
+        "value": 1
+      },
+      {
+        "type": "romulan credits",
+        "value": 100
+      },
+      {
+        "type": "nero",
+        "value": 3
+      },
+      {
+        "type": "federation points",
+        "value": -132
+      },
+      {
+        "type": "romulan points",
+        "value": 250
+      },
+      {
+        "type": "klingon points",
+        "value": -88
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Vulcan Extremists from destroying Voros Outpost."
+}

@@ -1,0 +1,85 @@
+{
+  "faction": "klingon",
+  "mission_name": "So It Begins",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Begin the assault on ST-9417.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/st_9417_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 25 hostiles of level 43 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 25 hostiles of level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the USS Moldova.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/st_9417_45",
+        "task_title": "Destroy USS Moldova",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the USS Gungnir.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/st_9417_45",
+        "task_title": "Destroy USS Gungnir",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to Kronos.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_enemy_once_more"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 900
+      },
+      {
+        "type": "federation points",
+        "value": -160500
+      },
+      {
+        "type": "romulan points",
+        "value": -427900
+      },
+      {
+        "type": "klingon points",
+        "value": 311000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 115200000
+      }
+    ]
+  },
+  "storyline": "Launch an assault on Federation Space."
+}

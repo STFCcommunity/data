@@ -1,0 +1,78 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/sirius_36"
+    }
+  ],
+  "mission_name": "Failing on the Main Front",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/icebreaker"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the location of the conflict hotzone.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/thama_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver news of the losses to Starfleet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "starbase 5",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide the Andorians with 45,000,000 Tritanium to rebuild their fleet.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 45000000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 15
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 400
+      },
+      {
+        "type": "energy manifold",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": 60000
+      },
+      {
+        "type": "romulan points",
+        "value": -17300
+      },
+      {
+        "type": "klingon points",
+        "value": -77800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "With the Romulans decimating the Andorian Imperial Guard, Starfleet intervenes directly to take stock of the situation."
+}

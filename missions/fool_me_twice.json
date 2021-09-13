@@ -1,0 +1,83 @@
+{
+  "faction": "romulan",
+  "mission_name": "Fool Me Twice",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_master"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Starfleet ships.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Starfleet Commander.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Starfleet Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Klingon Ships.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Klingon General.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Klingon General Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/relentless"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -891600
+      },
+      {
+        "type": "romulan points",
+        "value": 774000
+      },
+      {
+        "type": "klingon points",
+        "value": -594400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Destroy the Klingon and Starfleet ships."
+}

@@ -1,0 +1,146 @@
+{
+  "faction": "klingon",
+  "mission_name": "Wisdom In Mercy",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Track the prisoners to Federation space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 25 hostiles of level 48 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 25 hostiles of level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "task_title": "Destroy USS Evergreen",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow the prisoners.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the prisoner.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "task_title": "Destroy T'Neran",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the Romulan family.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let her family go."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Take her family prisoner"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bring the prisoner to Rura Penthe.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 1200
+          },
+          {
+            "type": "klingon credits",
+            "value": 700
+          },
+          {
+            "type": "federation points",
+            "value": -445800
+          },
+          {
+            "type": "romulan points",
+            "value": -1188000
+          },
+          {
+            "type": "klingon points",
+            "value": 774000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "rura penthe",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the prisoner to Rura Penthe.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 700
+          },
+          {
+            "type": "100k dilithium token",
+            "value": 180
+          },
+          {
+            "type": "latinum",
+            "value": 3300
+          },
+          {
+            "type": "federation points",
+            "value": -445800
+          },
+          {
+            "type": "romulan points",
+            "value": -1188000
+          },
+          {
+            "type": "klingon points",
+            "value": 774000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "rura penthe",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/pursuit"
+  },
+  "storyline": "Find the prisoner and bring them back to Kronos to face justice."
+}

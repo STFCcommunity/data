@@ -1,0 +1,92 @@
+{
+  "faction": "neutral",
+  "mission_name": "Due Process",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_familiar_face"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 9,500,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 9500000
+      }
+    },
+    {
+      "title": "Track the fleet to Tolain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tolain_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the warp trail.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of Level 41 or higher.",
+      "id": 5,
+      "task": {
+        "task_title": "Defeat 12 hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Narok.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "task_title": "Destroy Narok",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the civilians to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/angel_in_disguise"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 140
+      }
+    ],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 1000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find and release innocent Romulan prisoners."
+}

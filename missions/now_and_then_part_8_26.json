@@ -1,0 +1,144 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Now and Then Part 8",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/now_and_then_part_9"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Approach the borders of Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/v_varia_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Whose plan should we follow?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Kirk\u2019s plan."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Spock\u2019s plan."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Enter Sufiday.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of Level 24 or higher.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 12 hostiles of Level 24 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Approach the site of the anomaly.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 6
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 6
+          }
+        ],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Enter Sufiday.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Subcommander.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_title": "Destroy Romulan Subcommander",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Get closer to the anomaly.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 5
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 5
+          }
+        ],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/now_and_then_part_7"
+  },
+  "recommended_level": 26,
+  "storyline": "Investigate Romulan involvement in the spatial anomalies."
+}

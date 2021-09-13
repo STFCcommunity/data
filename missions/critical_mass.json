@@ -1,0 +1,186 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/quv_qeb_36"
+    }
+  ],
+  "mission_name": "Critical Mass",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Take Nalrex to the meeting on No'Mat.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/no_mat_38",
+        "planet": "no'mat",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to support the Klingon war effort.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Provide 50,000,000 Tritanium to the Klingon war effort"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Volunteer to assassinate the Tal Shiar operative"
+          },
+          {
+            "option_id": 3,
+            "option_title": "Promise to trim the Romulan mercenary numbers"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Give 50M Tritanium to the Klingons",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 18
+          }
+        ],
+        "others": [
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "klingon credits",
+            "value": 400
+          },
+          {
+            "type": "federation points",
+            "value": -25900
+          },
+          {
+            "type": "romulan points",
+            "value": -69100
+          },
+          {
+            "type": "klingon points",
+            "value": 60000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50000000
+      }
+    },
+    {
+      "title": "Force the Tal Shiar operative to surface on Doq'mln.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "planet": "doq'mln",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Eliminate operative Vurelsa.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 400
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 800
+          },
+          {
+            "type": "encryption key",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -25900
+          },
+          {
+            "type": "romulan points",
+            "value": -69100
+          },
+          {
+            "type": "klingon points",
+            "value": 60000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "task_title": "Destroy Operative Vurelsa",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Travel to the Unroth system.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/unroth_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 10 Kriosian Rebels in the Unroth system.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "encryption key",
+            "value": 1
+          },
+          {
+            "type": "klingon credits",
+            "value": 400
+          },
+          {
+            "type": "federation points",
+            "value": -25900
+          },
+          {
+            "type": "romulan points",
+            "value": -69100
+          },
+          {
+            "type": "klingon points",
+            "value": 60000
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 4746000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Destroy 10 Kriosian Rebels in the Unroth system.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "storyline": "Escort Leader Nalrex to an emergency meeting of the Klingon High Council."
+}

@@ -1,0 +1,69 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/beta_assembly_25"
+    }
+  ],
+  "mission_name": "Momentum and Inertia",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/into_thin_air"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Reach the embassy.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the rebel ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_title": "Destroy Rebel Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Beam the Ambassador on board.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Ambassador to a medical facility.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "hynes",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 11000
+      }
+    ]
+  },
+  "storyline": "Defend the Trill embassy."
+}

@@ -1,0 +1,70 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "A Moral Compass",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/and_the_skies_will_darken"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station and collect Vella.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to the test site in Vindemiatrix.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the D3.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_title": "Destroy D3",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track the ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/flashbacks"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "common",
+        "value": 250
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Work with the Enterprise to find the Vi\u2019dar."
+}

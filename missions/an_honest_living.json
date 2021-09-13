@@ -1,0 +1,77 @@
+{
+  "faction": "neutral",
+  "mission_name": "An Honest Living",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/shellshocked"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Search for the scavenger base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 90,000,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 90000000
+      }
+    },
+    {
+      "title": "Follow the informant's directions.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/maumo_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 48 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Gather the evidence from the scavenger base.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/maumo_47",
+        "planet": "zalak",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/burden_of_proof"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 120
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 31
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Infiltrate the scavenger base."
+}

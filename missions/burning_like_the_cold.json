@@ -1,0 +1,112 @@
+{
+  "faction": "neutral",
+  "mission_name": "Burning Like the Cold",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/commendation_for_valor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Operative Menra on Diseh.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/oppidum_frumenti_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide to help the Tal Shiar sabotage the Klingons or refuse.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Disable the Klingon Defense Grid."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Alert the Klingons to their weakness."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Travel to Khitomer and disable the Klingon Defense Grid.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles of Level 29 or higher.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 50
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 250000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 8 Hostiles of Level 29 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Travel to Rura Penthe and warn the Klingons.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Command Ship.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 50
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 250000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_title": "Destroy Romulan Command Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/ghosts_of_lies_and_space"
+  },
+  "storyline": "The Romulans have found a way to disable the Klingon Defense Grid."
+}

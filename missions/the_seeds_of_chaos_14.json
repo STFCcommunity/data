@@ -1,0 +1,58 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nelve_12"
+    }
+  ],
+  "mission_name": "The Seeds of Chaos",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Plant a fake message on Azaxa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "azaxa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Plant a fake message on Nausicaa Prime.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 Hostiles in Nausicaa.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 6 Hostiles in Nausicaa.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 14,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 8000
+      }
+    ]
+  },
+  "storyline": "Turn the Nausicaans and Takret against each other."
+}

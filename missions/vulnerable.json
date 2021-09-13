@@ -1,0 +1,64 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Vulnerable",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/to_err_is_human"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Help the colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 26 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Respond to the Starfleet distress call.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mapic_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/mapic_25",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_shadow_descends"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 75
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Try to stop another attack."
+}

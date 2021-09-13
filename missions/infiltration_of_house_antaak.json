@@ -1,0 +1,93 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/maranga_25"
+    }
+  ],
+  "mission_name": "Infiltration of House Antaak",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/perimeter_grid"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track down the Separatists in Sorenle.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 90,000 Dilithium to a survivor for information.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 90000
+      }
+    },
+    {
+      "title": "Plant a listening device on Ajilon Prime.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "planet": "ajilon prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the USS Halloway in the Angosia system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Halloway.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_title": "Destroy USS Halloway",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 190
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 3
+      },
+      {
+        "type": "federation points",
+        "value": -600
+      },
+      {
+        "type": "romulan points",
+        "value": -1600
+      },
+      {
+        "type": "klingon points",
+        "value": 2000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 800000
+      }
+    ]
+  },
+  "storyline": "Help the Klingon Empire by infiltrating the remnants of the Separatists."
+}

@@ -1,0 +1,93 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/vindemiatrix_15"
+    }
+  ],
+  "mission_name": "Wise Investment",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Meet the Entrepreneur in the Labac system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 10,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Decide what to do with the Entrepreneur.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Invest in the Entrepreneur."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Stand up to the entrepreneur."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 10000 Tritanium to the Entrepreneur.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "jellyfish blueprint part",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 22000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 43000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "storyline": "Help an entrepreneur fund his latest venture by mining some Tritanium."
+}

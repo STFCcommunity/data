@@ -1,0 +1,52 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Smokescreen",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/ignorance"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate Dalen's disappearance.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the colonist ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_title": "Destroy Colonist Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Ask Starfleet about Dalen.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/pareleon_26",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_cost_of_obsession"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 150
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Search for Dalen."
+}

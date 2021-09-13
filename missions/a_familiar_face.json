@@ -1,0 +1,90 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Familiar Face",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/change_of_heart"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Ranelia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/esto_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with Ranelia's informant.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ami_bera_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,000,000 Dilithium for information.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Investigate the Vulcan base.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vita_nova_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan guard.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/vita_nova_43",
+        "task_title": "Destroy Vulcan Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the data to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/due_process"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 30
+      }
+    ],
+    "others": [
+      {
+        "type": "ion particle",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Destroy a Vulcan base responsible for several raids on Romulan colonies."
+}

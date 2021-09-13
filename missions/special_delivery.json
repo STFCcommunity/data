@@ -1,0 +1,159 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/ora_leraa_16"
+    },
+    {
+      "$ref": "systems/pune_16"
+    },
+    {
+      "$ref": "systems/freyda_17"
+    },
+    {
+      "$ref": "systems/oltomon_17"
+    },
+    {
+      "$ref": "systems/dalukerinborva_18"
+    },
+    {
+      "$ref": "systems/skyedark_18"
+    },
+    {
+      "$ref": "systems/gelvin_19"
+    },
+    {
+      "$ref": "systems/kosz_19"
+    }
+  ],
+  "mission_name": "Special Delivery",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Meet with Keenser on Lorillia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the ship components to Tueunuk, in Sorenle.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "planet": "tueunuk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan ambush.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Tharg",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Choose what to do with the Nausicaans.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Give supplies."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Arrest them."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Starbase 82 with Keenser.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 30
+          },
+          {
+            "type": "keenser",
+            "value": 2
+          },
+          {
+            "type": "federation points",
+            "value": 60
+          },
+          {
+            "type": "romulan points",
+            "value": -9
+          },
+          {
+            "type": "klingon points",
+            "value": -39
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 25000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Nausicaans to Starbase 82.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 20
+          },
+          {
+            "type": "keenser",
+            "value": 2
+          },
+          {
+            "type": "federation points",
+            "value": 60
+          },
+          {
+            "type": "romulan points",
+            "value": -9
+          },
+          {
+            "type": "klingon points",
+            "value": -39
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 5000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Meet with Keenser and ensure the safe transport of important materials."
+}

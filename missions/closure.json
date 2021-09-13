@@ -1,0 +1,79 @@
+{
+  "faction": "federation",
+  "mission_name": "Closure",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Go to Romashki and track down the thieves.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles in Romashki of Level 45 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles in Romashki of Level 45 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Track down the thief to LSP-539.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Nurzak.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_title": "Destroy Nurzak",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the personal effects of the fallen officer to his family on Earth.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/for_the_fallen"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 900
+      },
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 448000
+      },
+      {
+        "type": "romulan points",
+        "value": -161300
+      },
+      {
+        "type": "klingon points",
+        "value": -725800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Return the fallen Starfleet Officer\u2019s personal effects to his family on Earth."
+}

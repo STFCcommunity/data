@@ -1,0 +1,77 @@
+{
+  "faction": "neutral",
+  "mission_name": "Uncommon Tongue",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/sitting_ducks"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Arlen.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yreva_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Meet with the trader.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "planet": "daloksi",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 2,500,000 Dilithium.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500000
+      }
+    },
+    {
+      "title": "Return to Your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_center_of_the_universe"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 900
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Find a way to communicate with the Crucibles."
+}

@@ -1,0 +1,102 @@
+{
+  "faction": "romulan",
+  "mission_name": "Encore",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/one_stone"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the data forger.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hannlaw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 8,000,000 Dilithium to the data forger.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8000000
+      }
+    },
+    {
+      "title": "Find the syndicate member.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/asronal_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the syndicate member.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/asronal_44",
+        "task_title": "Destroy Orion Syndicate Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Collect the forged data.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/hannlaw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the data to Rihala.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/and_the_galaxy_shook"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 29
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -321000
+      },
+      {
+        "type": "romulan points",
+        "value": 311000
+      },
+      {
+        "type": "klingon points",
+        "value": -214000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Forge evidence to frame the Chairman."
+}

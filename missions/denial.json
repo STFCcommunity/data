@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Denial",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/last_resort"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Starfleet Commander.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/miers_49",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Commander to colonist.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_title": "Destroy Starfleet Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the colonist to safety.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/diagnosis"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 8
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 210000000
+      }
+    ]
+  },
+  "storyline": "Get medical help from Starfleet."
+}

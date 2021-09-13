@@ -1,0 +1,84 @@
+{
+  "faction": "neutral",
+  "mission_name": "Hindsight",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/homelands"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track down another artifact.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nuva_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the artifact to Captain Markona.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 300 Raw G4 Crystal.",
+      "id": 3,
+      "task": {
+        "resource": "4\u2605 raw crystal",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 300
+      }
+    },
+    {
+      "title": "Donate 300 Raw G4 Crystal.",
+      "id": 4,
+      "task": {
+        "resource": "4\u2605 raw crystal",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 300
+      }
+    },
+    {
+      "title": "Return the unlocked artifact to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/involuntary_inspection"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 27
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "epic",
+        "value": 8
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Locate another Progenitor signal."
+}

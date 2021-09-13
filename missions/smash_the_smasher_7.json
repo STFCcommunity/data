@@ -1,0 +1,78 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/risa_7"
+    }
+  ],
+  "mission_name": "Smash the Smasher",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Donate 1000 Parsteel.",
+      "id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000
+      }
+    },
+    {
+      "title": "Defeat 7 Hostiles of Level 6 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 7 Hostiles of Level 6 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Kraag the Smasher.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_title": "Destroy Kraag the Smasher",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Risa.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the evacuees to Cemew.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/boru_7",
+        "planet": "cemew",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 7,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "encryption key",
+        "value": 1
+      },
+      {
+        "type": "officer xp",
+        "value": 340
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 6000
+      }
+    ]
+  },
+  "storyline": "Help an exasperated Risian by dealing with a group of raiders."
+}

@@ -1,0 +1,83 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/pjem_29"
+    }
+  ],
+  "mission_name": "Attack Formation",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_wall_of_heroes"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Enter the Noakyn system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian scout",
+      "id": 2,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_title": "Destroy Arkonian Scout",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Arkonian warship",
+      "id": 3,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_title": "Destroy Arkonian Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Andoria Prime",
+      "id": 4,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "encryption key",
+        "value": 1
+      },
+      {
+        "type": "federation credits",
+        "value": 230
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 8
+      },
+      {
+        "type": "federation points",
+        "value": 10000
+      },
+      {
+        "type": "romulan points",
+        "value": -2300
+      },
+      {
+        "type": "klingon points",
+        "value": -10400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "The Andorian Imperial Guard are preparing for an incoming assault by Arkonians in the Noakyn system."
+}

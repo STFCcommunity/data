@@ -1,0 +1,111 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Second Pillar",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_third_pillar"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to Dok\u2019Vos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with the Arkonian.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bribe the Arkonian."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the Arkonian."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 18,400,000 Dilithium to the Arkonian.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 18400000
+      }
+    },
+    {
+      "title": "Deploy the second Conduit Pillar in orbit over Dok\u2019Vos.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "4\u2605 uncommon explorer parts",
+            "value": 180
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 59085000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "planet": "dok'vos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Soldier.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "task_title": "Destroy Arkonian Soldier",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deploy the second Conduit Pillar in orbit over Dok\u2019Vos.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m tritanium token",
+            "value": 26
+          },
+          {
+            "type": "latinum",
+            "value": 1500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "planet": "dok'vos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_first_pillar"
+  },
+  "storyline": "Deploy the second Conduit Pillar in the Dok\u2019Vos system."
+}

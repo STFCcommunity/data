@@ -1,0 +1,98 @@
+{
+  "faction": "klingon",
+  "mission_name": "Out of Sight",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/loyalties_tested"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to K'amia to ambush the Federation vessel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Federation vessel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_title": "Destroy Federation Repair Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the hidden base in Huebr.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 18 hostiles of Level 22 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 18 hostiles of Level 22 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy the Federation Agent Battleship.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_title": "Destroy Federation Agent Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the captured data to Vos'Keth station.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "planet": "vos'keth station",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/seek_and_destroy"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 60
+      },
+      {
+        "type": "officer xp",
+        "value": 90000
+      },
+      {
+        "type": "federation points",
+        "value": -158
+      },
+      {
+        "type": "romulan points",
+        "value": -422
+      },
+      {
+        "type": "klingon points",
+        "value": 600
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 257000
+      }
+    ]
+  },
+  "storyline": "Ambush the repair vessel."
+}

@@ -1,0 +1,57 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "Many Moons",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/one_of_our_own"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find another anomaly to examine.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nalomas_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find one more anomaly to examine.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/esteria_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station to compile the data.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/odd_shapes_on_the_horizon"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 68000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1638000
+      }
+    ]
+  },
+  "storyline": "Find and examine more anomalies."
+}

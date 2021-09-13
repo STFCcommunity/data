@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "Last Resort",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/beneath_the_surface"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track down the survivor's ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat  20 hostiles of Level 47 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat  20 hostiles of Level 47 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_title": "Destroy Klingon Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Scan the ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the safehouse.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/denial"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 12090000
+      }
+    ]
+  },
+  "storyline": "Investigate the colonist\u2019s ship."
+}

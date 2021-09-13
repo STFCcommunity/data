@@ -1,0 +1,121 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "A Way Out",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Respond to the red alert.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bazamex_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 hostiles of Level 24 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 hostiles of Level 24 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow Tilly or help Kai.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pursue Tilly."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help Kai."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Track Tilly's movement.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 22
+          },
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 250
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 402000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Help Kai.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/bazamex_24",
+        "task_title": "Destroy Stolen Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 27
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 502000
+          },
+          {
+            "type": "tritanium",
+            "value": 74000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/just_that_easy"
+  },
+  "recommended_level": 25,
+  "storyline": "Stop the prison break."
+}

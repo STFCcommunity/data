@@ -1,0 +1,96 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Clinging to Innocence",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_secret_weapon"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the merchant.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 8M Parsteel.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8000000
+      }
+    },
+    {
+      "title": "Find the hideout.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the guard ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_title": "Destroy Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rescue Eurydice's daughter.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "planet": "xueebux",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return Eurydice home.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "planet": "verna",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/won_t_get_fooled_again"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 14
+      }
+    ],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 13
+      },
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 36
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Rescue Eurydice\u2019s daughter."
+}

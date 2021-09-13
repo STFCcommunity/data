@@ -1,0 +1,78 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Pay Your Debts 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/pay_your_debts_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Klingon Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/izth_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 26 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Get out of sight.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/izth_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/izth_26",
+        "task_title": "Destroy Klingon Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/pay_your_debts_2"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 500
+      },
+      {
+        "type": "latinum",
+        "value": 11
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1397000
+      }
+    ]
+  },
+  "storyline": "Lure the collectors into Klingon space."
+}

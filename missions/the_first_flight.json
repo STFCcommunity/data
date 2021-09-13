@@ -1,0 +1,96 @@
+{
+  "faction": "klingon",
+  "mission_name": "The First Flight",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_sign_of_things_to_come"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the modified D3 in Morska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the D3 to Lorillia.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Warp to Rator.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Suliban Marauder.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Suliban Marauder",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Make a final run to Lorillia.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the D3 to Morska.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/malice"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "d3 class blueprint part",
+        "value": 4
+      },
+      {
+        "type": "klingon credits",
+        "value": 50
+      },
+      {
+        "type": "federation points",
+        "value": -126
+      },
+      {
+        "type": "romulan points",
+        "value": -336
+      },
+      {
+        "type": "klingon points",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 2700
+      }
+    ]
+  },
+  "storyline": "Test the subspace technology."
+}

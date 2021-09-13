@@ -1,0 +1,132 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/baw_4"
+    },
+    {
+      "$ref": "systems/ruli_4"
+    },
+    {
+      "$ref": "systems/benzi_4"
+    },
+    {
+      "$ref": "systems/landi_4"
+    },
+    {
+      "$ref": "systems/takik_4"
+    },
+    {
+      "$ref": "systems/estrada_4"
+    },
+    {
+      "$ref": "systems/vinland_4"
+    },
+    {
+      "$ref": "systems/zukerat_4"
+    },
+    {
+      "$ref": "systems/bridford_4"
+    },
+    {
+      "$ref": "systems/laurgatt_4"
+    },
+    {
+      "$ref": "systems/bohvanderro_4"
+    }
+  ],
+  "mission_name": "Man Out Of Time",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_fair_trial"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the outlaw, Javaid.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vaolas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Javaid\u2019s ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "task_title": "Destroy Javaid's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Choose what to do with Javaid.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let Javaid go."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Capture Javaid."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Klingon bounty hunter.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "recruit token",
+            "value": 20
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1900
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "task_title": "Destroy T'Kamra's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Javaid to your station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "grace chen",
+            "value": 1
+          },
+          {
+            "type": "recruit token",
+            "value": 20
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 4,
+  "storyline": "Find and capture the notorious Romulan outlaw, Javaid."
+}

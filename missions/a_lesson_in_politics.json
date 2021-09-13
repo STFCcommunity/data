@@ -1,0 +1,126 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Lesson in Politics",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_belly_of_the_beast"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Lieutenant Xeloc in Gowok.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gowok_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 22 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 22 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Choose to kill Lieutenant Xeloc or let him go.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Kill Lieutenant Xeloc."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Give him the chance to escape."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Kill Lieutenant Xeloc.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 100
+          },
+          {
+            "type": "federation points",
+            "value": -576
+          },
+          {
+            "type": "romulan points",
+            "value": 1000
+          },
+          {
+            "type": "klingon points",
+            "value": -384
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1129000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/gowok_23",
+        "task_title": "Destroy Lieutenant Xeloc's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Kill Lieutenant Xeloc.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 100
+          },
+          {
+            "type": "premium recruit token",
+            "value": 150
+          },
+          {
+            "type": "recruit token",
+            "value": 60
+          },
+          {
+            "type": "federation points",
+            "value": -576
+          },
+          {
+            "type": "romulan points",
+            "value": 1000
+          },
+          {
+            "type": "klingon points",
+            "value": -384
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/gowok_23",
+        "task_title": "Destroy Lieutenant Xeloc's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/repeat_business"
+  },
+  "storyline": "Assess a Corvallen Lieutenant."
+}

@@ -1,0 +1,103 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/beta_assembly_25"
+    }
+  ],
+  "mission_name": "Self-Inflicted",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/daggers_out"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the missing Trill ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/jizo_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Trill ship?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes"
+          },
+          {
+            "option_id": 2,
+            "option_title": "No"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Attack the Trill ship.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/jizo_23",
+        "task_title": "Destroy Trill Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Trill ambassador.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 90
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 400000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "planet": "trill outpost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Trill ambassador.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 176000
+          },
+          {
+            "type": "dilithium",
+            "value": 8000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "storyline": "Investigate the mission Trill ship."
+}

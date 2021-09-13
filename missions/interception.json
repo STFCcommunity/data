@@ -1,0 +1,80 @@
+{
+  "faction": "klingon",
+  "mission_name": "Interception",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mass_destruction"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Khol in Vindemiatrix.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Search for evidence of the escape pod in Vindemiatrix.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "planet": "prask",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the rogue Starfleet agent.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_title": "Destroy Rogue Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to Khitomer.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/generational_crimes"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "d3 class blueprint part",
+        "value": 4
+      },
+      {
+        "type": "klingon recruit token",
+        "value": 250
+      },
+      {
+        "type": "klingon credits",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": -288
+      },
+      {
+        "type": "romulan points",
+        "value": -768
+      },
+      {
+        "type": "klingon points",
+        "value": 1000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the escape pod on Vindemiatrix."
+}

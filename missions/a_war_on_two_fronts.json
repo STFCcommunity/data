@@ -1,0 +1,139 @@
+{
+  "faction": "federation",
+  "mission_name": "A War on Two Fronts",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_enemy_of_my_enemy"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Make haste to the P'Jem system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Klingon assault ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "task_title": "Destroy Klingon Assault Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the lead Klingon ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "task_title": "Destroy Lead Klingon Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Capture the Klingon or let him go?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take a Klingon hostage."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let the Klingon escape pod go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to the Admiral with Klingon hostage.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "federation recruit token",
+            "value": 1500
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -33600
+          },
+          {
+            "type": "klingon points",
+            "value": -151200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "planet": "benzar prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take some wounded to a safer system.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "klingon recruit token",
+            "value": 1500
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -33600
+          },
+          {
+            "type": "klingon points",
+            "value": -151200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/riposte"
+  },
+  "storyline": "Defend the P'Jem system from an opportunistic Klingon assault."
+}

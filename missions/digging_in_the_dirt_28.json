@@ -1,0 +1,77 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Digging in the Dirt",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_worst_of_us"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the rumors.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 5,000,000 Parsteel.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000000
+      }
+    },
+    {
+      "title": "Defeat the Romulan ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_title": "Destroy Romulan Assassin",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bottom_of_the_barrel"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 15
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 15
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 15
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Investigate the Romulan experiments."
+}

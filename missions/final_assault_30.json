@@ -1,0 +1,71 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Final Assault",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/going_out_with_a_bang"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to The Principium.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/the_principium_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 27 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Attack the Eclipse's Exchange building.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/the_principium_27",
+        "planet": "mercentia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse guard.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/the_principium_27",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fade_to_black"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "independent credits",
+        "value": 11
+      },
+      {
+        "type": "1 day speed up",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 67000
+      }
+    ]
+  },
+  "storyline": "Go to the Exchange for the final assault."
+}

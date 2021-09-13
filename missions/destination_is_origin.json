@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "Destination is Origin",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/learn_from_past_mistakes"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to the Nikola system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Contact the Orion Hauler.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_title": "Destroy Orion Hauler",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Approach the perimeter of the Nikola system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take your readings to the Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_cycle"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common survey parts",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 26220000
+      }
+    ]
+  },
+  "storyline": "Get closer to the barrier of energy in unknown space."
+}

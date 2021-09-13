@@ -1,0 +1,129 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/gemet_25"
+    }
+  ],
+  "mission_name": "Live Cargo",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Go to the outpost on the edge of the Klingon neutral zone.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How do you get past the border patrol?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Show your forged transport papers."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Disable the border control."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Smuggle the spy aboard and take her safely to P'Jem.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "cargo container",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 150
+          },
+          {
+            "type": "premium recruit token",
+            "value": 225
+          },
+          {
+            "type": "federation points",
+            "value": 3100
+          },
+          {
+            "type": "romulan points",
+            "value": -645
+          },
+          {
+            "type": "klingon points",
+            "value": -2900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Klingon guard patrol.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_title": "Destroy Klingon Guard Patrol",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take the spy to P'Jem.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "cargo container",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 150
+          },
+          {
+            "type": "3 hour speed up",
+            "value": 10
+          },
+          {
+            "type": "federation points",
+            "value": 3100
+          },
+          {
+            "type": "romulan points",
+            "value": -645
+          },
+          {
+            "type": "klingon points",
+            "value": -2900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Disguise your ship as a supply vessel in order to retrieve a Starfleet spy from Klingon space."
+}

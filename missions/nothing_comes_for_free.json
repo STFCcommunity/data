@@ -1,0 +1,89 @@
+{
+  "faction": "federation",
+  "mission_name": "Nothing Comes for Free",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/handover"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to Starbase 87 and check in on the Klingon captive.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Ballion and look for the Romulan Centurion.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ballion_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 hostiles of Level 46 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 6 hostiles of Level 46 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Tavahk.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ballion_46",
+        "task_title": "Destroy Tavahk",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Starbase 87.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/pieces_of_the_puzzle"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "1m tritanium token",
+        "value": 17
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 800
+      },
+      {
+        "type": "federation points",
+        "value": 448000
+      },
+      {
+        "type": "romulan points",
+        "value": -161300
+      },
+      {
+        "type": "klingon points",
+        "value": -725800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Perform a task for the Klingon captive in return for information on Venonn."
+}

@@ -1,0 +1,76 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Pantheon",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Travel to the Dessica system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dessica_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 7 hostile ships in Dessica.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 7 hostile ships in Dessica.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Call out and destroy the Dessican Capital Ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/dessica_39",
+        "task_title": "Destroy Dessican Capital Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to Director Eilansa.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unworthy"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 12
+      },
+      {
+        "type": "federation points",
+        "value": -98400
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -65600
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 888000
+      }
+    ]
+  },
+  "storyline": "Instill fear to the colony of Dessica by eradicating its primary defense fleet."
+}

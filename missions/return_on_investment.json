@@ -1,0 +1,70 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/nelvana_32"
+    }
+  ],
+  "mission_name": "Return on Investment",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/ashen_skies"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Fly to Tenebra to contribute to the Suliban war effort.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/cheron_39",
+        "planet": "tenebra",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide 1,000,000 Dilithium to the Tal Shiar for their support.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 50
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 300
+      },
+      {
+        "type": "energy manifold",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": -17700
+      },
+      {
+        "type": "romulan points",
+        "value": 23000
+      },
+      {
+        "type": "klingon points",
+        "value": -11800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Reinforce the value of Suliban membership in the Romulan Empire by pays tithes to the Tal Shiar."
+}

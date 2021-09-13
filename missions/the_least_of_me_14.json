@@ -1,0 +1,76 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "The Least of Me",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Stop VESTA once and for all.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 hostiles in Elona.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 6 hostiles in Elona.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Approach VESTA.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat VESTA.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_title": "Destroy VESTA",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/out_of_reach"
+  },
+  "recommended_level": 14,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 2,
+        "rarity": "common",
+        "value": 7
+      }
+    ],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1600
+      }
+    ]
+  },
+  "storyline": "End the chase. Destroy VESTA."
+}

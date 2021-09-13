@@ -1,0 +1,164 @@
+{
+  "faction": "klingon",
+  "mission_name": "No Retreat, No Mercy",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/eternal_empire"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Chang.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Assault the Starfleet base.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of level 48 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 20 hostiles of level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the USS Merryford.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_title": "Destroy USS Merryford",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the USS Glasgow.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_title": "Destroy USS Glasgow",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide how to finish the battle.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bombard the planet."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Leave the colony alone."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bombard the planet.",
+      "id": 7,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "planet": "cradle-6",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 8,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 100
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 27
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 700
+          },
+          {
+            "type": "federation points",
+            "value": -363800
+          },
+          {
+            "type": "romulan points",
+            "value": -970100
+          },
+          {
+            "type": "klingon points",
+            "value": 645000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 700
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 1300
+          },
+          {
+            "type": "federation points",
+            "value": -363800
+          },
+          {
+            "type": "romulan points",
+            "value": -970100
+          },
+          {
+            "type": "klingon points",
+            "value": 645000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/we_will_not_be_silenced"
+  },
+  "storyline": "Help Chang push back against Starfleet."
+}

@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Sightings",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/covering_our_tracks"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attend the Starfleet briefing on Bolarus.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bolarus_39",
+        "planet": "bolarus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the USS Discovery in Livi.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 750,000 Dilithium to fuel the warp drive of the USS Discovery.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 750000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 7
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 48267000
+      }
+    ]
+  },
+  "storyline": "Attend a Starfleet security briefing on Bolarus."
+}

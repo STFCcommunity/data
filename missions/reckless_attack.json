@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nomat_38"
+    }
+  ],
+  "mission_name": "Reckless Attack",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Defeat the Romulan Battleship guarding the outpost.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_title": "Destroy Romulan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Raid the outpost\u2019s supply cache.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the supplies to Kerla.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/no_mat_38",
+        "planet": "no'mat",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 128000
+      }
+    ]
+  },
+  "storyline": "Send a message to the Romulans by raiding a forward outpost."
+}

@@ -1,0 +1,67 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Now and Then Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/now_and_then_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the potential anomaly in Sufiday.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Move closer to the Romulan fleet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report the incident to Starfleet on Starbase 74.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "starbase 74",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 235000
+      },
+      {
+        "type": "tritanium",
+        "value": 35000
+      },
+      {
+        "type": "dilithium",
+        "value": 7000
+      }
+    ]
+  },
+  "storyline": "Investigate another potential spatial anomaly."
+}

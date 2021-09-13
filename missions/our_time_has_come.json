@@ -1,0 +1,154 @@
+{
+  "faction": "klingon",
+  "mission_name": "Our Time Has Come",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_turn_of_the_tide"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the rebel fleet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/t_ong_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide what to do with the fleet.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the rebels."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help the rebels."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the rebel guard.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/t_ong_43",
+        "task_title": "Destroy Ta'kora",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track down the rebel captain.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report back to the Oligarchy.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m parsteel token",
+            "value": 29
+          },
+          {
+            "type": "1m tritanium token",
+            "value": 5
+          },
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -106300
+          },
+          {
+            "type": "romulan points",
+            "value": -283400
+          },
+          {
+            "type": "klingon points",
+            "value": 216000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "planet": "new arkon",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 16,200,000 Tritanium to the rebel fleet.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 16200000
+      }
+    },
+    {
+      "title": "Return the wounded to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 90
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -106300
+          },
+          {
+            "type": "romulan points",
+            "value": -283400
+          },
+          {
+            "type": "klingon points",
+            "value": 216000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 3009000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/friends_in_low_places"
+  },
+  "storyline": "Meet with a rebel leader to discuss an armistice."
+}

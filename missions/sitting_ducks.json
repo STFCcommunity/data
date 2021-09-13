@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Sitting Ducks",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_lion_s_den"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find more Crucibles.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fect_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 39 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 39 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Attach the Crucible to your ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fect_42",
+        "planet": "duopant",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/uncommon_tongue"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour repair speed up",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 4725000
+      }
+    ]
+  },
+  "storyline": "Gather more Crucibles."
+}

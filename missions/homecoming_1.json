@@ -1,0 +1,39 @@
+{
+  "faction": "klingon",
+  "mission_name": "Homecoming",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Transport the Romulans to Draken III.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken iii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Ursva.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ursva_40",
+        "planet": "ursva",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sheltered"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1100000
+      }
+    ]
+  },
+  "storyline": "Take the Romulan outsiders to meet with their own people."
+}

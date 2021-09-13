@@ -1,0 +1,100 @@
+{
+  "faction": "neutral",
+  "mission_name": "Takret Incursion",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/all_the_devils_are_here"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the Takret.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 6 Hostiles of Level 6 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 6 Hostiles of Level 6 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Decide where to take the Takret Captain",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take the Takret Captain to justice on Malur."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Sell the Takret Captain to Yridian information dealers."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Transport Captain Torra to Malur.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 battleship parts",
+            "value": 12
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1250
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "malur",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Transport Captain Torra to Yridia.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 battleship parts",
+            "value": 8
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1750
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shipyard_enhancements"
+  },
+  "recommended_level": 6,
+  "storyline": "Stop the Takret Hostiles from controlling the landmark system."
+}

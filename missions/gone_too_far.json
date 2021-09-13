@@ -1,0 +1,85 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/voss_20"
+    }
+  ],
+  "mission_name": "Gone Too Far",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/no_good_deed_goes_unpunished"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate an attack on Denna.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "planet": "denna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn Marauder.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_title": "Destroy Gorn Marauder",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 7 hostiles in Kepler-018.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 7 hostiles in Kepler-018.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Give the colony 25000 Tritanium for repairs.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 25000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "keenser",
+        "value": 3
+      },
+      {
+        "type": "federation credits",
+        "value": 80
+      },
+      {
+        "type": "federation points",
+        "value": 160
+      },
+      {
+        "type": "romulan points",
+        "value": -27
+      },
+      {
+        "type": "klingon points",
+        "value": -121
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 300000
+      }
+    ]
+  },
+  "storyline": "Help a struggling colony by driving away Gorn raiders."
+}

@@ -1,0 +1,80 @@
+{
+  "faction": "federation",
+  "mission_name": "Dangerous Excursions",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/telepresence"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Escort the survey party to Hyland.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hyland_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Pirate.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hyland_42",
+        "task_title": "Destroy Corvallen Pirate",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to Holles to search for more resources.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/holles_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Captain.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/holles_43",
+        "task_title": "Destroy Corvallen Captain",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/kick_them_while_they_re_down"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 10
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 216000
+      },
+      {
+        "type": "romulan points",
+        "value": -70800
+      },
+      {
+        "type": "klingon points",
+        "value": -318800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Savash, an Andorian surveyor, requires a military escort for a mining expedition."
+}

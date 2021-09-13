@@ -1,0 +1,72 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Home Stretch",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/displaced"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the first checkpoint.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Respond to the distress call.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg attacker.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Assimilated K'tinga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Regroup with the refugees.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escape!",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_art_of_misdirection"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 143000
+      },
+      {
+        "type": "dilithium",
+        "value": 29000
+      }
+    ]
+  },
+  "storyline": "Relocate the refugees to the Torana system."
+}

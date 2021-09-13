@@ -1,0 +1,70 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Strike While the Iron is Hot",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/diverging_paths"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Approach Tilly's base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of level 23 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 12 hostiles of level 23 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Confront Tilly.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Tilly.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_title": "Destroy Tilly's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/guns_blazing"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1\u2605 battleship parts",
+        "value": 250
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 402000
+      },
+      {
+        "type": "tritanium",
+        "value": 60000
+      }
+    ]
+  },
+  "storyline": "Launch the assault on Tilly\u2019s base."
+}

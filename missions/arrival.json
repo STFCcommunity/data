@@ -1,0 +1,52 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Arrival",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_shadow_descends"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alta_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the colony.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alta_25",
+        "planet": "salti",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the hideout.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/panak_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/trailing_off"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 100
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the distress signal."
+}

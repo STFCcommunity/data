@@ -1,0 +1,127 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Last Stand",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_middle_i",
+      "option": 1
+    },
+    {
+      "$ref": "missions/the_middle_ii",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the sighting.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 13,200,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 13200000
+      }
+    },
+    {
+      "title": "Catch the bandits.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the bandit ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_title": "Destroy Bandit Leader Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Who will you side with?",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bennett"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Clove"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to the Starfleet Investigator.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 110
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 31
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Starfleet Investigator.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 110
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 31
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/rampant"
+  },
+  "storyline": "Capture the bandits."
+}

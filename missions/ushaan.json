@@ -1,0 +1,74 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
+  "mission_name": "Ushaan",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/desperate_measures"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Take Ontella to the Azati system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Sovren's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_title": "Destroy Sovren's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Ontella's body to the Wall of Heroes.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 1200
+      },
+      {
+        "type": "federation credits",
+        "value": 500
+      },
+      {
+        "type": "energy manifold",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -30400
+      },
+      {
+        "type": "klingon points",
+        "value": -136800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "General Ontella intends to engage in Ushaan, a ritual fight to the death, with Suliban leader Sovren to bring an end to open warfare between the two races."
+}

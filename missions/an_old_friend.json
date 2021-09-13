@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "An Old Friend",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/genealogy"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect Bones and Sulen from Starbase 17.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rua_ri_42",
+        "planet": "starbase 17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the Enterprise in Luoman.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/luoman_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Accompany the Enterprise to Vita Nova.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vita_nova_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 43 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 43 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doctor_s_appointment"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "common",
+        "value": 340
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 64800000
+      }
+    ]
+  },
+  "storyline": "Deliver Bones and one of his patients to the Enterprise."
+}

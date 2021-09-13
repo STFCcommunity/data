@@ -1,0 +1,149 @@
+{
+  "arc": "outlaw arc 2",
+  "faction": "neutral",
+  "mission_name": "A Long Way From Home Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_long_way_from_home_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the ship trader.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the trader's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_title": "Destroy Hostile Trader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to the Auction.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Place a high bid?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes"
+          },
+          {
+            "option_id": 2,
+            "option_title": "No"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bid 180,000 Dilithium.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 180000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat Misix.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 14
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 14
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Misix",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Place the tracker.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the buyer.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/the_principium_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 2
+          },
+          {
+            "type": "klingon recruit token",
+            "value": 1000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_long_way_from_home_part_3"
+  },
+  "recommended_level": 28,
+  "storyline": "Get into the Exchange auction."
+}

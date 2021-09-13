@@ -1,0 +1,97 @@
+{
+  "faction": "klingon",
+  "mission_name": "Seek and Destroy",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/out_of_sight"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the Maclyyn system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maclyyn_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 21 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 21 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy Toran Lar'at.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/maclyyn_22",
+        "task_title": "Destroy Toran Lar'at's Ship.",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the second informant in K'amia.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Ayak Viss' ship.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_title": "Destroy Ayak Viss' Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the informant to Vos'Keth station.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "planet": "vos'keth station",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_sign_of_things_to_come"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 60
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 16
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 110
+      },
+      {
+        "type": "federation points",
+        "value": -158
+      },
+      {
+        "type": "romulan points",
+        "value": -422
+      },
+      {
+        "type": "klingon points",
+        "value": 600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Kill the Starfleet informant."
+}

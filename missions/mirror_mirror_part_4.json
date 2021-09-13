@@ -1,0 +1,122 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mirror, Mirror Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mirror_mirror_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Comms tracer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/doraboro_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 2,000 Parsteel for a tracer.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2000
+      }
+    },
+    {
+      "title": "Follow the tracer signal to Utoqa.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend the Starfleet Science vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_title": "Destroy Marauder Destroyer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow the Terran Enterprise to Bellas.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose Mirror Kirk's path.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Allow Mirror Kirk to return to his crew."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Hold Kirk prisoner until the Ion Storm is reopened."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Find the location of the ion storm.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute speed up",
+            "value": 12
+          },
+          {
+            "type": "5 minute speed up",
+            "value": 35
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the location of the ion storm.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "5 minute repair speed up",
+            "value": 12
+          },
+          {
+            "type": "1 minute repair speed up",
+            "value": 60
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mirror_mirror_part_3"
+  },
+  "storyline": "Create a comms tracer and find the denizens of the Mirror Universe."
+}

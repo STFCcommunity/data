@@ -1,0 +1,93 @@
+{
+  "faction": "federation",
+  "mission_name": "Recreations",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/silver_coins"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Retrieve samples of the gas from Starbase 82.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the samples to Vulcan.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 5,000 Dilithium to stabilize the warp core.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000
+      }
+    },
+    {
+      "title": "Collect wounded crew from the test site.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the wounded to Starbase 82.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_brighter_future"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 12
+      }
+    ],
+    "others": [
+      {
+        "type": "uss mayflower blueprint part",
+        "value": 4
+      },
+      {
+        "type": "federation credits",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": 1000
+      },
+      {
+        "type": "romulan points",
+        "value": -192
+      },
+      {
+        "type": "klingon points",
+        "value": -864
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assist with an experiment on the Mayflower\u2019s systems."
+}

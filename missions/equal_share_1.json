@@ -1,0 +1,63 @@
+{
+  "faction": "augment",
+  "mission_name": "Equal Share",
+  "mission_type": "auto start",
+  "objectives": [
+    {
+      "title": "Meet the information dealer in Rigel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hack the Klingon listening post in Labac.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_title": "Destroy Klingon Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the data to the dealer in Rigel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 12
+      }
+    ],
+    "others": [
+      {
+        "type": "botany bay blueprint part",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 700
+      }
+    ]
+  },
+  "storyline": "Steal data from a Klingon listening post for an ambitious information dealer."
+}

@@ -1,0 +1,91 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "Made You Look",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Follow the weapon's signature.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Continue to follow the trail.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/midnight_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Corner Mudd.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ragnarr_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Mudd's drone.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ragnarr_17",
+        "task_title": "Destroy Mudd's Drone",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Capture Mudd.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/ragnarr_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Repair the hull breach with 13,500 Tritanium.",
+      "id": 6,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 13500
+      }
+    },
+    {
+      "title": "Catch Mudd!",
+      "id": 7,
+      "task": {
+        "$ref": "systems/leone_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/strongarm_tactics"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 500
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 37
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 48000
+      }
+    ]
+  },
+  "storyline": "Catch Mudd."
+}

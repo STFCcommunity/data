@@ -1,0 +1,74 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/whinnul_9"
+    }
+  ],
+  "mission_name": "Arbitration",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/extraction"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Pick up the Nausicaan diplomat.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect Primary Dellig from Rigel VII.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel vii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Yer'Ka and Dellig to Varudensa.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "planet": "varudensa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the Orions from sabotaging the peace talks.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_title": "Destroy Orion Spy",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "recommended_level": 9,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 500
+      },
+      {
+        "type": "lucia gonzales",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 8000
+      }
+    ]
+  },
+  "storyline": "The Varudeans have offered to host a peace negotiation between dignitaries from Rigel and Nausicaa."
+}

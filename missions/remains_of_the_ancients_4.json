@@ -1,0 +1,91 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/baw_4"
+    },
+    {
+      "$ref": "systems/ruli_4"
+    },
+    {
+      "$ref": "systems/benzi_4"
+    },
+    {
+      "$ref": "systems/landi_4"
+    },
+    {
+      "$ref": "systems/takik_4"
+    },
+    {
+      "$ref": "systems/estrada_4"
+    },
+    {
+      "$ref": "systems/vinland_4"
+    },
+    {
+      "$ref": "systems/zukerat_4"
+    },
+    {
+      "$ref": "systems/bridford_4"
+    },
+    {
+      "$ref": "systems/laurgatt_4"
+    },
+    {
+      "$ref": "systems/bohvanderro_4"
+    }
+  ],
+  "mission_name": "Remains of the Ancients",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/observation_of_history"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the anomaly.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/forhingre_5",
+        "planet": "leviathan",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the coordinates from the log.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vinland_4",
+        "planet": "polyphemus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vinland_4",
+        "task_title": "Destroy Corvallen Interceptor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "recommended_level": 4,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "grace chen",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 160
+      }
+    ]
+  },
+  "storyline": "Investigate an anomaly that has been detected in the Tellun system."
+}

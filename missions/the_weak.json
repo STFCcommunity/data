@@ -1,0 +1,80 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Weak",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_cowardly"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Starfleet Ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Starfleet Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Blackmail the Senator.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/alycen_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/double_edged_sword"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "officer xp",
+        "value": 157000
+      },
+      {
+        "type": "federation points",
+        "value": -394900
+      },
+      {
+        "type": "romulan points",
+        "value": 374000
+      },
+      {
+        "type": "klingon points",
+        "value": -263300
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 3315000
+      }
+    ]
+  },
+  "storyline": "\u201cRecruit\u201d a Senator."
+}

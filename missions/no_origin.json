@@ -1,0 +1,145 @@
+{
+  "faction": "klingon",
+  "mission_name": "No Origin",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Take the star map findings to the Gorn Embassy",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "ka'weh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Trust the info about the Gorn homeworld?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Investigate the system believed to contain the Gorn homeworld"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Contact Scotty to verify the data further"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to Katovug.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/katovug_39",
+        "planet": "aoxos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Ambush.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 500
+          },
+          {
+            "type": "3 hour speed up",
+            "value": 18
+          },
+          {
+            "type": "klingon credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": -48000
+          },
+          {
+            "type": "romulan points",
+            "value": -128000
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/katovug_39",
+        "task_title": "Destroy IRW Praeda Avis",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Station to contact Scotty.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Reach the Mempa system in time to warn the Gorn fleet.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Exact revenge on the IRW Praeda Avis",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 500
+          },
+          {
+            "type": "klingon credits",
+            "value": 500
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 320
+          },
+          {
+            "type": "federation points",
+            "value": -48000
+          },
+          {
+            "type": "romulan points",
+            "value": -128000
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "task_title": "Destroy IRW Praeda Avis",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/instinct"
+  },
+  "storyline": "Decode the data believed to contain the location of the Gorn's original, lost homeworld."
+}

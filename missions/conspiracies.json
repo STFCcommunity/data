@@ -1,0 +1,95 @@
+{
+  "faction": "federation",
+  "mission_name": "Conspiracies",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Track the signal to Amador.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/amador_19",
+        "planet": "xezuk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the source of the signal on Xezuk.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/amador_19",
+        "planet": "xezuk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the Signal Hijacker with 6,000 Dilithium.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 6000
+      }
+    },
+    {
+      "title": "Find the assassins\u2019s leader in Kaikara.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Arrest the Suliban Captain.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy Suliban Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the Suliban Captain to Starbase 82.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/delegation"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "zahra",
+        "value": 10
+      },
+      {
+        "type": "federation credits",
+        "value": 40
+      },
+      {
+        "type": "3\u2605 survey parts",
+        "value": 60
+      },
+      {
+        "type": "federation points",
+        "value": 70
+      },
+      {
+        "type": "romulan points",
+        "value": -11
+      },
+      {
+        "type": "klingon points",
+        "value": -48
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Zahra track down the leader of the Suliban Assassins."
+}

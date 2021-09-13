@@ -1,0 +1,86 @@
+{
+  "faction": "neutral",
+  "mission_name": "Target Practice",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/versions"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 4 Hostiles of Level 4 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 4 Hostiles of Level 4 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Choose your next target.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Target the Orion Slaver"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Defeat a wave of Hostiles"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Orion Slaver.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 explorer parts",
+            "value": 5
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 500
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Orion Slaver",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 3 Hostiles of Level 4 or higher.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 700
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Defeat 3 Hostiles of Level 4 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/negotiations"
+  },
+  "recommended_level": 4,
+  "storyline": "Improve Maia's core program by running her through combat maneuvers."
+}

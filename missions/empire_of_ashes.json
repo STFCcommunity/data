@@ -1,0 +1,66 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Empire of Ashes",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/proving_grounds"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Meruth back to the Romulans on Kervas.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rator_29",
+        "planet": "kervas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Romulan Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated Valdore.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Assimilated Valdore",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/house_rules"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1661000
+      },
+      {
+        "type": "tritanium",
+        "value": 245000
+      }
+    ]
+  },
+  "storyline": "Bring Meruth back to the Romulans and appeal for their help."
+}

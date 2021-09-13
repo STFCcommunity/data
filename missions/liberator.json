@@ -1,0 +1,75 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/sufiday_25"
+    }
+  ],
+  "mission_name": "Liberator",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/i_watch_you_from_afar"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the activist in the Draken system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Reman Liberator.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_title": "Destroy Independent Activist",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring news of the quashed uprising to Sufiday.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "planet": "sufiday prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 7
+      },
+      {
+        "type": "romulan credits",
+        "value": 180
+      },
+      {
+        "type": "federation points",
+        "value": -5200
+      },
+      {
+        "type": "romulan points",
+        "value": 8000
+      },
+      {
+        "type": "klingon points",
+        "value": -3500
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 611000
+      }
+    ]
+  },
+  "storyline": "Silence the activist working to free Reman Miners in Draken."
+}

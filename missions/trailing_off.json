@@ -1,0 +1,69 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Trailing Off",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/arrival"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 10 Hostiles of Level 26 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escape before reinforcements arrive.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Officer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "task_title": "Destroy Starfleet Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Shake off the chasing ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/panak_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find a planet to hide out on.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/panak_27",
+        "planet": "sikgor",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/futile_endeavor"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 370
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend Dalen from Starfleet."
+}

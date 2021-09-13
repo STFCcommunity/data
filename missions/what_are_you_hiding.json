@@ -1,0 +1,136 @@
+{
+  "faction": "neutral",
+  "mission_name": "What Are You Hiding?",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/twists_and_turns"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the mercenaries.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fect_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the mercenaries to their second target.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide what to do about the mercenaries.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack them."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Follow them to their base."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Mercenary Guard.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_title": "Destroy Mercenary Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Mercenary Captain.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_title": "Destroy Mercenary Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the data to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 5
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 35880000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Follow the mercenaries to their base.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/tovla_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Mercenary Captain.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/tovla_40",
+        "task_title": "Destroy Mercenary Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the data to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 4
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 1330000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/friend_of_a_friend"
+  },
+  "storyline": "Follow the mercenaries and find out what they\u2019re up to."
+}

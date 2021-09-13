@@ -1,0 +1,78 @@
+{
+  "faction": "klingon",
+  "mission_name": "An Ancient Foe",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_great_tribble_hunt"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate Tribble Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fafniri_39",
+        "planet": "tribble prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the warp trail to Stradania.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 3,000,700 Dilithium for information on the ship.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3000700
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of level 40 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 20 hostiles of level 40 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 1300
+      },
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 200
+      },
+      {
+        "type": "federation points",
+        "value": -131000
+      },
+      {
+        "type": "romulan points",
+        "value": -349400
+      },
+      {
+        "type": "klingon points",
+        "value": 260000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the resurgence of an ancient and deadly enemy."
+}

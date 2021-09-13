@@ -1,0 +1,78 @@
+{
+  "faction": "federation",
+  "mission_name": "Burning Wings",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/firefighting"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Romulan lab in Davidul.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Romulan Augur.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_title": "Destroy Romulan Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Dilithium expert on Veyil.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "planet": "veyil",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Transport the experts to Starbase 82.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/silver_coins"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 130
+      },
+      {
+        "type": "federation points",
+        "value": 2000
+      },
+      {
+        "type": "romulan points",
+        "value": -400
+      },
+      {
+        "type": "klingon points",
+        "value": -1800
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 21000
+      }
+    ]
+  },
+  "storyline": "Gather engineering experts from around Federation space to work on the Mayflower."
+}

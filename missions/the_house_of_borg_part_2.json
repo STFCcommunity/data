@@ -1,0 +1,74 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "The House of Borg Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_house_of_borg_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Dakra in Khitomer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort Dakra home to Nuhozol.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "planet": "nuhozol",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the assimilated K't-inga.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the assimilated K't-inga.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_title": "Destroy Assimilated K't-inga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take the Orhza's logs to Nuhozol.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "planet": "nuhozol",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_house_of_borg_part_1"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 88000
+      },
+      {
+        "type": "dilithium",
+        "value": 18000
+      }
+    ]
+  },
+  "storyline": "Discuss House Mo'kesh with Dakra."
+}

@@ -1,0 +1,94 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Performance for the Ages",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/extreme_measures"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the information dealer in Rigel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 4,000 Dilithium for the coordinates.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000
+      }
+    },
+    {
+      "title": "Find the data forger on Starbase 82.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Officer.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Starfleet Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the forger to Valdore Station.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "valdore outpost",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_show_of_force"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 15
+      }
+    ],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 95000
+      },
+      {
+        "type": "romulan credits",
+        "value": 25
+      },
+      {
+        "type": "federation points",
+        "value": -114
+      },
+      {
+        "type": "romulan points",
+        "value": 250
+      },
+      {
+        "type": "klingon points",
+        "value": -76
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Obtain falsified evidence to frame the Klingons."
+}

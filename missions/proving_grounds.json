@@ -1,0 +1,96 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Proving Grounds",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/echoes_of_torana"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the distress call on Starbase 80.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "planet": "starbase 80",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated K't'inga.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "task_title": "Destroy Assimilated K't'inga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated Valdore.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "task_title": "Destroy Assimilated Valdore",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated Kelvin.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "task_title": "Destroy Assimilated Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 800,000 Tritanium to repair the Starbase\u2019s defenses.",
+      "id": 5,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 800000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/empire_of_ashes"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 16
+      }
+    ],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 800
+      },
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 280
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 280
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Respond to a distress call from a Federation starbase and test the proficiency of the task force."
+}

@@ -1,0 +1,81 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mirror, Mirror Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mirror_mirror_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the Vulcan distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront the Terran Enterprise.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Battle with Mirror Kirk.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_title": "Destroy ISS Enterprise",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Break away from the battle.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disrupt the anti-Warp array with 500 Tritanium.",
+      "id": 5,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 500
+      }
+    },
+    {
+      "title": "Attempt to catch up to the Terrans.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mirror_mirror_part_1"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 8000
+      },
+      {
+        "type": "tritanium",
+        "value": 1200
+      }
+    ]
+  },
+  "storyline": "Investigate the possibility of a Mirror Universe Enterprise."
+}

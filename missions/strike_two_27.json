@@ -1,0 +1,94 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Strike Two...",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/strike_three"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Klingon colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Invader.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_title": "Destroy Klingon Invader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Repair the colony's defenses with 125,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 125000
+      }
+    },
+    {
+      "title": "Find the second Herald.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Herald's guard.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Herald's Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the second Herald.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Klingon Herald",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/strike_one"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 5
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 240
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 218000
+      },
+      {
+        "type": "dilithium",
+        "value": 44000
+      }
+    ]
+  },
+  "storyline": "Defeat the second Herald."
+}

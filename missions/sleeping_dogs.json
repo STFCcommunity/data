@@ -1,0 +1,80 @@
+{
+  "faction": "romulan",
+  "mission_name": "Sleeping Dogs",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/still_standing"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Suliban Leader.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ballion_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Romulan Commander.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/urhaasi_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/urhaasi_47",
+        "task_title": "Destroy Romulan Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Suliban Leader.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ril_korvas_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_same_page"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 700
+      },
+      {
+        "type": "100k dilithium token",
+        "value": 60
+      },
+      {
+        "type": "federation points",
+        "value": -727600
+      },
+      {
+        "type": "romulan points",
+        "value": 645000
+      },
+      {
+        "type": "klingon points",
+        "value": -485000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 5460000
+      }
+    ]
+  },
+  "storyline": "Reach out to the Suliban."
+}

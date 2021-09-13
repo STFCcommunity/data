@@ -1,0 +1,68 @@
+{
+  "faction": "federation",
+  "mission_name": "Banishment",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/forced_into_hiding"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Jera and await further instructions.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/jera_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Anthen and attend the Federation inquisition.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/jera_44",
+        "planet": "anthen",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/severed_ties"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 260000
+      },
+      {
+        "type": "romulan points",
+        "value": -87400
+      },
+      {
+        "type": "klingon points",
+        "value": -393100
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 5670000
+      }
+    ]
+  },
+  "storyline": "Attend the Federation inquisition as a representative of the Andorian people."
+}

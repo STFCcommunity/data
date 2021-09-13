@@ -1,0 +1,147 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Broken Promises and Empty Threats",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find the Vulcan extremist base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How should we deal with the Vulcan extremists?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Try to talk them down."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack them."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat T'Laa.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy T'Laa",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat V'Lev.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy V'Lev",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Repair V'Lev's life support with 525,000 Tritanium.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 10
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 2
+          },
+          {
+            "type": "1 day peace shield",
+            "value": 1
+          },
+          {
+            "type": "ship xp",
+            "value": 4000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 525000
+      }
+    },
+    {
+      "title": "Defeat T'Laa.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy T'Laa",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat V'Lev.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy V'Lev",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Repair V'Lev's life support with 525,000 Tritanium.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 500
+          },
+          {
+            "type": "independent credits",
+            "value": 18
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 858000
+          },
+          {
+            "type": "tritanium",
+            "value": 127000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 525000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_world_of_grey"
+  },
+  "storyline": "Stop the logic extremists once and for all."
+}

@@ -1,0 +1,72 @@
+{
+  "faction": "federation",
+  "mission_name": "Turned to Ash",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Search the Teneebia system for survivors of the Romulan attack.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/teneebia_39",
+        "planet": "qalazun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide 125,000,000 Parsteel to the emergency services.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 125000000
+      }
+    },
+    {
+      "title": "Evacuate some critically injured people to a medical station nearby.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/too_little_too_late"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 13
+      }
+    ],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 1500
+      },
+      {
+        "type": "federation credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -32000
+      },
+      {
+        "type": "klingon points",
+        "value": -144000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Recover any survivors from the Romulan assault on the Teneebia system."
+}

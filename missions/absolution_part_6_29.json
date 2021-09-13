@@ -1,0 +1,146 @@
+{
+  "arc": "absolution arc 1",
+  "faction": "neutral",
+  "mission_name": "Absolution Part 6",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/absolution_part_7"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to the trader\u2019s shipyard.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/jishui_16",
+        "planet": "aesugun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the Romulan signature.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/jishui_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Who will you pursue?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pursue Nochtun."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Pursue Sutrun."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pursue Nochtun.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 28 or higher.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Sutrun.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 14
+          }
+        ],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 100000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2481000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_title": "Destroy Sutrun",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Pursue Sutrun.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 28 or higher.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Nochtun.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 500
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2481000
+          },
+          {
+            "type": "dilithium",
+            "value": 73000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_title": "Destroy Nochtun",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "recommended_level": 29,
+  "storyline": "Rush to answer the ship trader\u2019s distress call."
+}

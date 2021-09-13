@@ -1,0 +1,64 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Origin Sector - Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/origin_sector_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find a Raw Isogen mine.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/marzer_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 20 Raw Isogen.",
+      "id": 2,
+      "task": {
+        "resource": "1\u21f4 raw isogen",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 20
+      }
+    },
+    {
+      "title": "Use the Refinery to refine some Raw Isogen.",
+      "id": 3,
+      "task": {
+        "resource": "iso-emulsion",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Meet with the Trill Ambassador.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/tola_alpha_17",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/origin_sector_part_2"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "iso-emulsion",
+        "value": 200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Learn about the various uses of Isogen."
+}

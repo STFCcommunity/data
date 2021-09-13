@@ -1,0 +1,89 @@
+{
+  "faction": "augment",
+  "mission_name": "Receding Light",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/eye_of_the_storm"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Khan to the anomaly in Ifrea-3.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ifrea_3_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Vaaran Research Vessel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ifrea_3_32",
+        "task_title": "Destroy Vaaran Research Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Discover the Vaaran Assembly.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/olassa_33",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles of Level 27 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 8 Hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "End the assault against Khan's outpost.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/olassa_33",
+        "planet": "zalux",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/recuperation"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "yarda to ilmatar",
+        "value": 1
+      },
+      {
+        "type": "orda-877 to ilmatar",
+        "value": 1
+      },
+      {
+        "type": "ifrea-3 to orda-877",
+        "value": 1
+      },
+      {
+        "type": "augment points",
+        "value": 750
+      },
+      {
+        "type": "3 hour speed up",
+        "value": 7
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 752000
+      }
+    ]
+  },
+  "storyline": "Join Khan as he begins a devastating experiment that involves a volatile anomaly."
+}

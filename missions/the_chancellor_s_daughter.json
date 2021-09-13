@@ -1,0 +1,75 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "The Chancellor's Daughter",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/caveat_emptor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Speak with Gorkon on Byand\u2019on.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/morska_29",
+        "planet": "byand'on",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Azetbur in Roda Gamma.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/roda_gamma_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Borg hostiles in Roda Gamma.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 Borg hostiles in Roda Gamma.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return Azetbur to Gorkon on Byand\u2019on.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/morska_29",
+        "planet": "byand'on",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Traitor.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_title": "Destroy Klingon Traitor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/academy_dropout"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 260
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 396000
+      }
+    ]
+  },
+  "storyline": "Retrieve Azetbur from the clutches of the Borg and return her to Gorkon."
+}

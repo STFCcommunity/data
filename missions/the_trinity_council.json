@@ -1,0 +1,78 @@
+{
+  "faction": "federation",
+  "mission_name": "The Trinity Council",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/acquisitions"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the coordinates provided in the anonymous transmission.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/x5_tkv_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 45 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 45 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Prove your might to the Council by destroying their Drone ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/x5_tkv_46",
+        "task_title": "Destroy Council Drone",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 15,300,000 Dilithium to the Trinity Council.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 15300000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 240
+      },
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 240
+      },
+      {
+        "type": "federation points",
+        "value": 448000
+      },
+      {
+        "type": "romulan points",
+        "value": -161300
+      },
+      {
+        "type": "klingon points",
+        "value": -725800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Establish contact with the Trinity Council and prove your worth to join their ranks."
+}

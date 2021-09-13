@@ -1,0 +1,104 @@
+{
+  "faction": "neutral",
+  "mission_name": "With Friends Like These",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_more_words"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the Vulcans.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 41 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_title": "Destroy Vulcan Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Choose whether or not to help Toryn.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help him."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Stop him."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 500
+          },
+          {
+            "type": "premium recruit token",
+            "value": 330
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Find Toryn.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "100k dilithium token",
+            "value": 37
+          },
+          {
+            "type": "1 day speed up",
+            "value": 5
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/wololo_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/questionable_motives"
+  },
+  "storyline": "Track down the Vulcans who are hunting Toryn."
+}

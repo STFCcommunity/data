@@ -1,0 +1,71 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Now and Then Part 9",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/now_and_then_part_10"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of Level 26 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 12 hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Donate 200,000 Tritanium to repair the shuttle\u2019s hull.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 200000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/now_and_then_part_8"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 33
+      },
+      {
+        "type": "ambit to talmir-86",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 36000
+      }
+    ]
+  },
+  "storyline": "Investigate a distress signal emanating from Independent Space."
+}

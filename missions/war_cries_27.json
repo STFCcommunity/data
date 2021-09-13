@@ -1,0 +1,72 @@
+{
+  "faction": "klingon",
+  "mission_name": "War Cries",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_next_move"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Klingon forces.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hoeven_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Infiltrate Federation Space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 26 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/what_comes_next"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": -2600
+      },
+      {
+        "type": "romulan points",
+        "value": -6900
+      },
+      {
+        "type": "klingon points",
+        "value": 8000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2139000
+      }
+    ]
+  },
+  "storyline": "Attack Starfleet."
+}
