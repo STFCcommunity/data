@@ -1,0 +1,156 @@
+{
+  "faction": "federation",
+  "mission_name": "The Fall of Weytahn",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/kick_them_while_they_re_down"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Assume a defensive position.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/axanar_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fight the Suliban or help evacuate the colonists?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Fight the Suliban attackers."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Evacuate the colonists."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles in Axanar.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 15 hostiles in Axanar.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escort the evacuation fleet to Andoria.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Hunter.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "4\u2605 common battleship parts",
+            "value": 700
+          },
+          {
+            "type": "federation points",
+            "value": 180000
+          },
+          {
+            "type": "romulan points",
+            "value": -57600
+          },
+          {
+            "type": "klingon points",
+            "value": -259200
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 37260000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_title": "Destroy Suliban Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Privateer.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/axanar_36",
+        "task_title": "Destroy Suliban Privateer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate the Weytahn colonists to Andoria Prime.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Hunter.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 500
+          },
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": 180000
+          },
+          {
+            "type": "romulan points",
+            "value": -57600
+          },
+          {
+            "type": "klingon points",
+            "value": -259200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_title": "Destroy Suliban Hunter",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/butterfly_effect"
+  },
+  "storyline": "Help the Andorian colonists on Weytahn defend against a Suliban assault."
+}

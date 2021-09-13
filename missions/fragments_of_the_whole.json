@@ -1,0 +1,68 @@
+{
+  "faction": "neutral",
+  "mission_name": "Fragments of the Whole",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/everything_now"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Engineer's base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 40,000,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 40000000
+      }
+    },
+    {
+      "title": "Try to reach the colony.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vehla_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/remembrance"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 26
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Extract the memories from Maia."
+}

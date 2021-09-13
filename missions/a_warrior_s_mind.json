@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Warrior's Mind",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/start_spreading_the_news"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Yarda and attract the attention of Augment hostiles.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yarda_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles in Yarda.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles in Yarda.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Disable the Augment\u2019s ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yarda_36",
+        "task_title": "Destroy Brecht",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the captive Augment to Scotty on Brannigan.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "planet": "brannigan",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/smokescreen"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "joaquin",
+        "value": 4
+      },
+      {
+        "type": "officer xp",
+        "value": 245000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Capture one of Khan\u2019s Augment loyalists."
+}

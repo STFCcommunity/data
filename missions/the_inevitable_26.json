@@ -1,0 +1,57 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Inevitable",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/i_once_was_blind"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Find the Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Officer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_title": "Destroy Klingon Battleship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/from_the_brink"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 20
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 17000
+      }
+    ]
+  },
+  "storyline": "Deal with the Klingon backlash."
+}

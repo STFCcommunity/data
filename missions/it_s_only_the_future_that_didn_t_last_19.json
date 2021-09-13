@@ -1,0 +1,45 @@
+{
+  "faction": "neutral",
+  "mission_name": "It's Only the Future That Didn't Last",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/glocon"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Patrol the nearby trading system of Opla.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 8 Hostiles in the Opla system.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 8 Hostiles in the Opla system.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/trifecta"
+  },
+  "recommended_level": 19,
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 2,
+        "rarity": "common",
+        "value": 300
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Eradicate the hostiles causing havoc in the Opla system."
+}

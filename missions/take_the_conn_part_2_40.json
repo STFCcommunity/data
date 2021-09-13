@@ -1,0 +1,72 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Take the Conn Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/take_the_conn_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Take Sulu to the rescue site.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/eayou_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Send 10,000 Dilithium to Daloski.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Destroy the Corvallen ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/eayou_38",
+        "task_title": "Destroy Corvallen Cruiser",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rendezvous with Sulu in the mining zone.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/eayou_38",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/take_the_conn"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 300
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 5096000
+      }
+    ]
+  },
+  "storyline": "Rescue the Trill excavation team."
+}

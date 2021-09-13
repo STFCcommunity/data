@@ -1,0 +1,113 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Blood Shall Flow",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fall_of_pride"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Klingons.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to respond to the Klingons.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Refuse them."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help them."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Klingon D3.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_title": "Destroy Klingon D3",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Captain.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3 hour repair speed up",
+            "value": 7
+          },
+          {
+            "type": "4\u2605 common interceptor parts",
+            "value": 700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_title": "Destroy Tar'ok",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find data on the aliens.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the fanatic.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_title": "Destroy Fanatic",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the data to the Klingons.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 380
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/curiosity"
+  },
+  "storyline": "Meet with a Klingon representative."
+}

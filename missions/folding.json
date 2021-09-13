@@ -1,0 +1,50 @@
+{
+  "faction": "neutral",
+  "mission_name": "Folding",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/decipher"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the coordinates in the Carraya system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/carraya_33",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Locate the origin of the signal in the Carraya system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/carraya_33",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the station with your findings.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/distant_memories"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 350000
+      }
+    ]
+  },
+  "storyline": "Use the Progenitor Device to locate the landing zone."
+}

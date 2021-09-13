@@ -1,0 +1,78 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Homecoming",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_world_of_grey"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hail the Vulcan ships.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan Destroyer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_title": "Destroy Vulcan Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan Battleship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_title": "Destroy Vulcan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tell_me_why"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 17
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 622000
+      },
+      {
+        "type": "dilithium",
+        "value": 19000
+      }
+    ]
+  },
+  "storyline": "Confront the Vulcan logic extremists."
+}

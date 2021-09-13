@@ -1,0 +1,61 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Futile Endeavor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/trailing_off"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Commander Rische.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Commander Ritsche.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Commander Ritshe's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Hide out at the Shiio's base.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "planet": "sufiday prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_fading_light"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 187000
+      }
+    ]
+  },
+  "storyline": "Throw Starfleet off Dalen\u2019s trail."
+}

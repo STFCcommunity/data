@@ -1,0 +1,142 @@
+{
+  "faction": "klingon",
+  "mission_name": "An Illusive Man",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/under_cover_of_night"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Make your way to Orion.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 3 Orion ships.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 3 Orion ships.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Disable Orion Boss Arvent's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Arvent's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Intimidate Arvent.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy Arvent's security ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Decimate the Orion Syndicate's local fleet"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy Arvent's Personal Escort vessel.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 22
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 380
+          },
+          {
+            "type": "federation points",
+            "value": -21000
+          },
+          {
+            "type": "romulan points",
+            "value": -56000
+          },
+          {
+            "type": "klingon points",
+            "value": 50000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 22518000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Arvent's Escort",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 15 Orion ships.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 1000
+          },
+          {
+            "type": "klingon credits",
+            "value": 380
+          },
+          {
+            "type": "federation points",
+            "value": -21000
+          },
+          {
+            "type": "romulan points",
+            "value": -56000
+          },
+          {
+            "type": "klingon points",
+            "value": 50000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 870000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Defeat 15 Orion ships.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/starscape"
+  },
+  "storyline": "Interrogate the Orion Syndicate to find Fitzsimons."
+}

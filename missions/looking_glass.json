@@ -1,0 +1,68 @@
+{
+  "faction": "neutral",
+  "mission_name": "Looking Glass",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/broken_mirror"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow Uhura's directions to Imgra.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Trace the ship to Dejugei.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "planet": "dejugei",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay the miner 2,500 Parsteel.",
+      "id": 3,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Find the transporter signal in Honsao.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/honsao_10",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/reflection"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 12
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 180
+      }
+    ]
+  },
+  "storyline": "Search for Commander Spock."
+}

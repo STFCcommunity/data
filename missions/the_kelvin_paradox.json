@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Kelvin Paradox",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_supernova_of_romulus"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Jellyfish.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rescue Spock from the Jellyfish.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Jellyfish",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Spock to the Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/broken_mirror"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "2\u2605 explorer parts",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 360
+      }
+    ]
+  },
+  "storyline": "Confront Spock."
+}

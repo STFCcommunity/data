@@ -1,0 +1,63 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Seeing Double",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/grand_larceny"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/zamam_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the security breach.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Trace the signal.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tova_8",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 12,000 Parsteel to repair the Station's defenses.",
+      "id": 4,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 12000
+      }
+    }
+  ],
+  "recommended_level": 11,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 8000
+      },
+      {
+        "type": "tritanium",
+        "value": 350
+      }
+    ]
+  },
+  "storyline": "Follow VESTA\u2019s path of chaos."
+}

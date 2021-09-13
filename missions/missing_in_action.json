@@ -1,0 +1,90 @@
+{
+  "faction": "federation",
+  "mission_name": "Missing in Action",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_enterprise_incident"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Enterprise in Astrida.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Ask about the USS Enterprise on Vecemaq.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "planet": "vecemaq",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the dockmaster 40,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 40000
+      }
+    },
+    {
+      "title": "Search for the Enterprise in Fastolf.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban ambush.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_title": "Destroy Suliban Explorer",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/divided_attention"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "zahra",
+        "value": 10
+      },
+      {
+        "type": "officer xp",
+        "value": 2900
+      },
+      {
+        "type": "federation credits",
+        "value": 50
+      },
+      {
+        "type": "federation points",
+        "value": 70
+      },
+      {
+        "type": "romulan points",
+        "value": -11
+      },
+      {
+        "type": "klingon points",
+        "value": -48
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Rendezvous with the USS Enterprise."
+}

@@ -1,0 +1,54 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Flatter to Deceive",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/breakout"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 27 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Kirr.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 70
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1156000
+      }
+    ]
+  },
+  "storyline": "Respond to the distress signal from the traders\u2019 ship."
+}

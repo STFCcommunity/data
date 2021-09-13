@@ -1,0 +1,109 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Debt Repaid",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/age_of_exploration"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Vance\u2019s location and prepare to intercept him.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to deal with the trader.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Assassinate the trader."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Allow the trader to live."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Assassinate the trader.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_title": "Destroy Vance",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Syndicate with proof of the assassination.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "4\u2605 common survey parts",
+            "value": 900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,750,000 Dilithium to Vance.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1750000
+      }
+    },
+    {
+      "title": "Return to the Syndicate with proof of the assassination.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 80
+          }
+        ],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/initial_errands"
+  },
+  "storyline": "Take on an assassination contract assigned by the Orion Syndicate."
+}

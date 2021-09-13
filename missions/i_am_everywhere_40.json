@@ -1,0 +1,152 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "I Am Everywhere",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Return to Admiral Boer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How should we deal with the ship?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy it."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attempt to purge its systems."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the Starfleet vessel.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_title": "Destroy USS Albatross",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 4,000,000 Parsteel to repair the Station's defenses.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 60
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day peace shield",
+            "value": 3
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 29703000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Get close to the Starfleet vessel.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Starfleet vessel.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_title": "Destroy Starfleet Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 4,000,000 Parsteel to repair the Station's defenses.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          },
+          {
+            "type": "1 day peace shield",
+            "value": 3
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 4550000
+          },
+          {
+            "type": "dilithium",
+            "value": 910000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mixed_messages"
+  },
+  "recommended_level": 40,
+  "storyline": "Stop VESTA from destroying a Starbase."
+}

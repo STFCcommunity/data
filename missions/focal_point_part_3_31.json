@@ -1,0 +1,67 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Focal Point Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/focal_point_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Reconvene with the crew at your station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Confront the Orion Underboss.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Orion Corvette.",
+      "id": 3,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Orion Corvette",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the Astrometrics data to Vaset.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/focal_point_part_2"
+  },
+  "recommended_level": 31,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 300
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 499000
+      }
+    ]
+  },
+  "storyline": "Analyze the astrometrics information to locate more members of the Enterprise crew."
+}

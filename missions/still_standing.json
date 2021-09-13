@@ -1,0 +1,159 @@
+{
+  "faction": "romulan",
+  "mission_name": "Still Standing",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_force_of_nature"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Corvallen Colonist.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the scavenger enclave.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/maumo_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles Level 47 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 hostiles Level 47 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to the Corvallen colony.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,000,000,000 Parsteel to the colonists?",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes"
+          },
+          {
+            "option_id": 2,
+            "option_title": "No."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 1,000,000,000 Parsteel.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 130
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 36
+          }
+        ],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "1 day speed up",
+            "value": 5
+          },
+          {
+            "type": "1m parsteel token",
+            "value": 300
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sleeping_dogs"
+  },
+  "storyline": "Reconnect with the Corvallen Colonists."
+}

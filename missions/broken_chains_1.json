@@ -1,0 +1,116 @@
+{
+  "faction": "augment",
+  "mission_name": "Broken Chains",
+  "mission_type": "auto start",
+  "objectives": [
+    {
+      "title": "Go to the slavers\u2019 last known location in Vindemiatrix.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the slavers to Lycia.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of level 15 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 hostiles of level 15 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Orion Slaver.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_title": "Destroy Orion Slaver",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deal with the Slaver.",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the Slaver."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let the Slaver go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the slaver base of operations on Elmirana.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "botany bay blueprint part",
+            "value": 6
+          },
+          {
+            "type": "1 hour speed up",
+            "value": 9
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 48000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "planet": "elmirana",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the slaver base of operations on Elmirana.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "5 minute repair speed up",
+            "value": 23
+          },
+          {
+            "type": "botany bay blueprint part",
+            "value": 6
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 7000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "planet": "elmirana",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Track down and destroy a group of Orion Slavers."
+}

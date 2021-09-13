@@ -1,0 +1,68 @@
+{
+  "faction": "neutral",
+  "mission_name": "Reunions and Remedies",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Escort T\u2019Rell back to the Enterprise.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/luoman_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Leader.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/luoman_41",
+        "task_title": "Destroy Corvallen Leader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring T\u2019Rell and Sulen to the mining colony on Delore.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_canberra_44",
+        "planet": "delore",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bothersome_flies"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "raw",
+        "value": 250000
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "raw",
+        "value": 250000
+      }
+    ],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 2500
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Bones investigate a cure for the colony\u2019s illness."
+}

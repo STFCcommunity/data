@@ -1,0 +1,78 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Cut-Off Point",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/home_away_from_home"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Ambush the cargo ships.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles of Level 29 or Higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 Hostiles of Level 29 or Higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Stop the cargo ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Cargo Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Steal the shipment.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_little_bit_different"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 2
+      },
+      {
+        "type": "3 hour speed up",
+        "value": 14
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 404000
+      }
+    ]
+  },
+  "storyline": "Ambush the weapons convoy."
+}

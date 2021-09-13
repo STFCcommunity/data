@@ -1,0 +1,57 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "A Bad Crowd",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/hot_and_cold"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the sighting.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend yourself from the mercenary ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Interrogate the mercenary.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cornered_animal"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 11
+      },
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 250
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the ship sightings."
+}

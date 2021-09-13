@@ -1,0 +1,134 @@
+{
+  "faction": "neutral",
+  "mission_name": "Fear of Failure",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet with the Klingon Commander.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hoeven_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet the Contact.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 85,000 Dilithium to contact.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 85000
+      }
+    },
+    {
+      "title": "Find Sekula.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/alhazar_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Sekula.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/alhazar_26",
+        "task_title": "Destroy Sekula's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Hand Sekula over to Starfleet?",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Give her to Starfleet."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let her go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 180
+          },
+          {
+            "type": "federation points",
+            "value": -2600
+          },
+          {
+            "type": "romulan points",
+            "value": -6900
+          },
+          {
+            "type": "klingon points",
+            "value": 8000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 200
+          },
+          {
+            "type": "federation points",
+            "value": -2600
+          },
+          {
+            "type": "romulan points",
+            "value": -6900
+          },
+          {
+            "type": "klingon points",
+            "value": 8000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/by_any_means_necessary"
+  },
+  "recommended_level": 27,
+  "storyline": "Confront Sekula."
+}

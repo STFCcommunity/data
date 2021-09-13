@@ -1,0 +1,76 @@
+{
+  "faction": "romulan",
+  "mission_name": "Where Do We Go From Here?",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/retaliation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the rebel scouts.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout more locations for a new colony.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fight off the ambush.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_title": "Destroy Corvallen Loyalist Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/eye_for_an_eye"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -212500
+      },
+      {
+        "type": "romulan points",
+        "value": 216000
+      },
+      {
+        "type": "klingon points",
+        "value": -141700
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 2558000
+      }
+    ]
+  },
+  "storyline": "Locate more habitable planets."
+}

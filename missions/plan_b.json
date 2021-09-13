@@ -1,0 +1,160 @@
+{
+  "faction": "federation",
+  "mission_name": "Plan B",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/desperate_times"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Federation Operative in Draken.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the Separatist Station in Ajilon.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Separatist Guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy Separatist Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Help the Colonists OR chase the Separatist ship.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help the Colonists."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Chase the Separatist ship."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 90,000 Dilithium to stabilize the colonist warp core.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 90000
+      }
+    },
+    {
+      "title": "Return the Operative to Draken II.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 180
+          },
+          {
+            "type": "hendorff",
+            "value": 5
+          },
+          {
+            "type": "federation points",
+            "value": 2000
+          },
+          {
+            "type": "romulan points",
+            "value": -400
+          },
+          {
+            "type": "klingon points",
+            "value": -1800
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1050000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Separatist Captain.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy Separatist Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the Separatist Captain to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "hendorff",
+            "value": 5
+          },
+          {
+            "type": "federation credits",
+            "value": 180
+          },
+          {
+            "type": "federation points",
+            "value": 2000
+          },
+          {
+            "type": "romulan points",
+            "value": -400
+          },
+          {
+            "type": "klingon points",
+            "value": -1800
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 60000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/invasion"
+  },
+  "storyline": "Join with a Starfleet Operative to destroy the Separatist base of operations by any means necessary."
+}

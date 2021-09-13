@@ -1,0 +1,64 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Captain's Log Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/captain_s_log_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Take Umvar to his broker's den on Yridia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay Umvar the 1,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000
+      }
+    },
+    {
+      "title": "Defeat the Orion Bounty Hunter.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_title": "Destroy Mivara",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/captain_s_log_part_3"
+  },
+  "recommended_level": 15,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4 hr peace shield",
+        "value": 1
+      },
+      {
+        "type": "recruit token",
+        "value": 60
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 19000
+      }
+    ]
+  },
+  "storyline": "Recover more of the message on Yridia."
+}

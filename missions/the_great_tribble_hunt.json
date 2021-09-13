@@ -1,0 +1,116 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Great Tribble Hunt",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find the doctor in Klopp.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Doctor Eustace.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_title": "Destroy Doctor Eustace",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Tribbles in Szov.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/szov_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Gather 1,000 Tribbles",
+      "id": 4,
+      "task": {
+        "resource": "wild tribble",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1000
+      }
+    },
+    {
+      "title": "Find the Tribbles in Inocula.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/inocula_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Gather 2,000 Tribbles.",
+      "id": 6,
+      "task": {
+        "resource": "wild tribble",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2000
+      }
+    },
+    {
+      "title": "Return to Tribble Prime.",
+      "id": 7,
+      "task": {
+        "$ref": "systems/fafniri_39",
+        "planet": "tribble prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return 3,000 Tribbles to Tribble Prime.",
+      "id": 8,
+      "task": {
+        "resource": "wild tribble",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_ancient_foe"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 180
+      }
+    ],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 6000
+      },
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -160500
+      },
+      {
+        "type": "romulan points",
+        "value": -427900
+      },
+      {
+        "type": "klingon points",
+        "value": 311000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Tribble expansion from threatening the galaxy."
+}

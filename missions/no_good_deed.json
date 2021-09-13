@@ -1,0 +1,91 @@
+{
+  "faction": "romulan",
+  "mission_name": "No Good Deed",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/double_edged_sword"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Leave a Tal Shiar ship as bait.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/stelama_44",
+        "planet": "stelama station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Wait for the Tal Prai'ex to appear.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talvath_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the system.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/stelama_44",
+        "planet": "stelama station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Tal Prai'ex's Sub-Commander.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/stelama_44",
+        "task_title": "Destroy Romulan Sub-Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Tal Prai'ex.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/stelama_44",
+        "task_title": "Destroy Romulan Tal Prai-ex Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_lamb_to_slaughter"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "1m tritanium token",
+        "value": 10
+      },
+      {
+        "type": "federation points",
+        "value": -394900
+      },
+      {
+        "type": "romulan points",
+        "value": 374000
+      },
+      {
+        "type": "klingon points",
+        "value": -263300
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 4290000
+      }
+    ]
+  },
+  "storyline": "Take out the Tal Prai\u2019ex."
+}

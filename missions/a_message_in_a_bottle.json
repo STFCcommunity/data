@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Message in a Bottle",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/forwards_is_backwards"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Report the time incursion to Scotty.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fibona_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide 1M Parsteel to Scotty.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Install the Temporal Resonator at the Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_vacuum"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 160
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Work with Scotty to install a temporal resonator."
+}

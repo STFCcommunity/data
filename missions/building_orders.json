@@ -1,0 +1,45 @@
+{
+  "faction": "neutral",
+  "mission_name": "Building Orders",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/lost_worlds_of_time_and_space"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the damage on Laerra.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "planet": "laerra",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 5,000,000 Parsteel to the colony.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_secret_cabal"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 10000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help an Independent colony rebuild after a devastating attack."
+}

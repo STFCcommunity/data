@@ -1,0 +1,167 @@
+{
+  "faction": "klingon",
+  "mission_name": "Common Enemy",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/up_in_flames"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal in Krah'Hor.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose where to defend.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Defend the D3 from Starfleet."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Defend the repair ships from the Romulans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Destroyer.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Starfleet Destroyer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Battleship.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Starfleet Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Khitomer.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 17
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 150
+          },
+          {
+            "type": "klingon recruit token",
+            "value": 250
+          },
+          {
+            "type": "federation points",
+            "value": -967
+          },
+          {
+            "type": "romulan points",
+            "value": -2600
+          },
+          {
+            "type": "klingon points",
+            "value": 3100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan bomber.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Romulan Bomber",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Augur.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Romulan Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Khitomer.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1200
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 150
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -967
+          },
+          {
+            "type": "romulan points",
+            "value": -2600
+          },
+          {
+            "type": "klingon points",
+            "value": 3100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/backlash"
+  },
+  "storyline": "Fight back!"
+}

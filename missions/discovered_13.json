@@ -1,0 +1,96 @@
+{
+  "faction": "neutral",
+  "mission_name": "Discovered",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Report to Jakkon.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Enforcer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Intercept the Orions in Vindemiatrix.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Dahno.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_title": "Destroy Dahno",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat Underboss Jakkon.",
+      "id": 6,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Underboss Jakkon",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Move your Station.",
+      "id": 7,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 1 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/making_amends"
+  },
+  "recommended_level": 13,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 2500
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 3
+      },
+      {
+        "type": "ship xp",
+        "value": 300
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1000
+      }
+    ]
+  },
+  "storyline": "Stop the Orion Syndicate from hijacking the USS Discovery."
+}

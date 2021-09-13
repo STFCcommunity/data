@@ -1,0 +1,76 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Target Acquired",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/bottom_of_the_barrel"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the Romulan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Approach the lab.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_title": "Destroy Romulan Guardship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Tal Shiar ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_title": "Destroy Tal Shiar Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/old_friend_new_friend"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1806000
+      }
+    ]
+  },
+  "storyline": "Investigate the Romulans\u2019 theft of Augment blood."
+}

@@ -1,0 +1,93 @@
+{
+  "faction": "klingon",
+  "mission_name": "Out of the Woods",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/friends_in_low_places"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Assist in the defense of the Loyalist station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/inocula_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 3,009,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3009000
+      }
+    },
+    {
+      "title": "Defeat the rebel assault ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/inocula_43",
+        "task_title": "Destroy Rebel Assault Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the rebel bomber.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/inocula_43",
+        "task_title": "Destroy Arkonian Bomber",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to Loyalist space.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/test_your_might"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 210
+      },
+      {
+        "type": "federation points",
+        "value": -106300
+      },
+      {
+        "type": "romulan points",
+        "value": -283400
+      },
+      {
+        "type": "klingon points",
+        "value": 216000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend a Loyalist station from a Rebel attack."
+}

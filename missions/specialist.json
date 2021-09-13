@@ -1,0 +1,115 @@
+{
+  "faction": "federation",
+  "mission_name": "Specialist",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet with Admiral Johnson at Starbase 5.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "starbase 5",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Do you want Ship parts or additional Officers?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Accept ship parts"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Accept Officer assistance"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Prepare for the upcoming maneuver.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "uss enterprise blueprint part",
+            "value": 5
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -32800
+          },
+          {
+            "type": "klingon points",
+            "value": -147600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Prepare for the upcoming maneuver.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "james t. kirk",
+            "value": 10
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -32800
+          },
+          {
+            "type": "klingon points",
+            "value": -147600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_enemy_of_my_enemy"
+  },
+  "storyline": "Report to Admiral Johnson for a debrief on recent events."
+}

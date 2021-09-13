@@ -1,0 +1,135 @@
+{
+  "faction": "klingon",
+  "mission_name": "As It Were",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/truth_is_subjective"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the assassin's ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/asronal_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the radiation spike.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/wololo_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the miner.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/wololo_44",
+        "task_title": "Destroy Miner",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the miner.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let him go."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Finish him off."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Report your findings to Kronos.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "premium recruit token",
+            "value": 370
+          },
+          {
+            "type": "federation points",
+            "value": -131000
+          },
+          {
+            "type": "romulan points",
+            "value": -349400
+          },
+          {
+            "type": "klingon points",
+            "value": 260000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report your findings to Kronos.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "100k dilithium token",
+            "value": 16
+          },
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -131000
+          },
+          {
+            "type": "romulan points",
+            "value": -349400
+          },
+          {
+            "type": "klingon points",
+            "value": 260000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 1530000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_feeble_attempt"
+  },
+  "storyline": "Track down the unidentified assassin."
+}

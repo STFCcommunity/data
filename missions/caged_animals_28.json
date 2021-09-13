@@ -1,0 +1,66 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Caged Animals",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/sanctum"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go into Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Get to the lab.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the guard ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_title": "Destroy Romulan Guardship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_worst_of_us"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 200
+      },
+      {
+        "type": "federation credits",
+        "value": 200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Extract the super soldiers."
+}

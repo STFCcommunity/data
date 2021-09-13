@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Emptiness",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_cautious_approach"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Crucibles in Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Search elsewhere for the Crucibles.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ortexa_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Officer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ortexa_41",
+        "task_title": "Destroy Romulan Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_lion_s_den"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 1028000
+      }
+    ]
+  },
+  "storyline": "Retrieve further Crucibles from Romulan space."
+}

@@ -1,0 +1,72 @@
+{
+  "faction": "romulan",
+  "mission_name": "Fighting for Our Lives",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/from_every_angle"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Starfleet ships.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alhazar_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alhazar_26",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Romulan Space.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_change_of_scenery"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 160
+      },
+      {
+        "type": "federation points",
+        "value": -5200
+      },
+      {
+        "type": "romulan points",
+        "value": 8000
+      },
+      {
+        "type": "klingon points",
+        "value": -3500
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Fight off Starfleet."
+}

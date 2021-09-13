@@ -1,0 +1,82 @@
+{
+  "faction": "romulan",
+  "mission_name": "Genetic Sequencing",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/manhunt"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the scene of the reported Elite attack.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/devrom_39",
+        "planet": "vesudeus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the Elite to Altanea.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/altanea_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Suliban Elite.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/altanea_38",
+        "task_title": "Destroy Suliban Elite",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Warn Kelia of the Elite's escape.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "galorndon core",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_cell_ship"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "romulan recruit token",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -91200
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -60800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 16660000
+      }
+    ]
+  },
+  "storyline": "Find the genetically engineered Suliban before he makes an assault on the Romulan Senate."
+}

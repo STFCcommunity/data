@@ -1,0 +1,77 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Territorial Dispute Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/territorial_dispute_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attend the Starfleet briefing on P\u2019Jem.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Observe the mining fields in Lorillia.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the stranded mining vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the damaged mining vessel back to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Donate 125,000 Tritanium to repair the mining vessel\u2019s hull.",
+      "id": 5,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 125000
+      }
+    }
+  ],
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 75
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 3883000
+      },
+      {
+        "type": "dilithium",
+        "value": 115000
+      }
+    ]
+  },
+  "storyline": "Investigate an emerging territorial dispute between two Federation members."
+}

@@ -1,0 +1,63 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Dark Words",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/tell_me_why"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Examine the destroyed fleet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Examine the colony.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the sample to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 5
+      }
+    ],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 12
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a civilian distress signal."
+}

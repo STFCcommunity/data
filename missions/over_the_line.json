@@ -1,0 +1,100 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Over the Line",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_cost_of_obsession"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Infiltrate Federation space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Help Dalen break into the Starfleet base?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help Dalen."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Return to your base."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Enter the Starfleet Base.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "planet": "pimegik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet guard.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Starfleet Guardship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 20
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_sting_of_defeat"
+  },
+  "storyline": "Steal the drone back from Starfleet."
+}

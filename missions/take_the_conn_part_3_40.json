@@ -1,0 +1,56 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Take the Conn Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/take_the_conn_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Take the wounded to Starbase 5.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Analyze the Corvallen computer core.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/take_the_conn_part_2"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 6
+      }
+    ],
+    "others": [
+      {
+        "type": "tos hikaru sulu",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 850000
+      }
+    ]
+  },
+  "storyline": "Deliver the wounded Trill to Starbase 5."
+}

@@ -1,0 +1,80 @@
+{
+  "faction": "romulan",
+  "mission_name": "Provocation",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_lamb_to_slaughter"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Infiltrate Klingon Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles Level 43 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 Hostiles Level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Plant the evidence on 'IqnaH QaD.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "planet": "'iqnah qad",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_hunted"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "officer xp",
+        "value": 186000
+      },
+      {
+        "type": "federation points",
+        "value": -321000
+      },
+      {
+        "type": "romulan points",
+        "value": 311000
+      },
+      {
+        "type": "klingon points",
+        "value": -214000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 75600000
+      }
+    ]
+  },
+  "storyline": "Convince the Klingons to hunt the deserters."
+}

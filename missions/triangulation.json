@@ -1,0 +1,169 @@
+{
+  "faction": "neutral",
+  "mission_name": "Triangulation",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_long_dark_walk_through_the_void"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the planet of Dhi'Ban.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "planet": "dhi'ban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction to ask for help in unlocking the monolith.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Seek help from the Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Seek help from the Romulan Star Empire."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Seek help from the Klingon Empire."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go To Andoria Prime.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Scotty to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [
+          {
+            "type": "ship xp",
+            "value": 5000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2500000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Vendor to seek aid from the Romulan Star Empire.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vendor_34",
+        "planet": "vendor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Commander Tova back to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [
+          {
+            "type": "ship xp",
+            "value": 5000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2500000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Rura Penthe to seek aid from the Klingon Empire.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "rura penthe",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Captain K'Thok back to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [
+          {
+            "type": "ship xp",
+            "value": 5000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2500000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/your_reputation_precedes_you"
+  },
+  "storyline": "Collect DNA samples from a laboratory belonging to one of the major Factions."
+}

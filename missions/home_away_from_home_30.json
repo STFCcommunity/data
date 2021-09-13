@@ -1,0 +1,88 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Home Away From Home",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/won_t_get_fooled_again"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Ro's base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find Goon's base.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/valance_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse guard.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/valance_28",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Get Goon's weapons.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/valance_28",
+        "planet": "confa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cut_off_point"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 28
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2557000
+      },
+      {
+        "type": "dilithium",
+        "value": 76000
+      }
+    ]
+  },
+  "storyline": "Take back the Outlaw bases."
+}

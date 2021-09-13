@@ -1,0 +1,84 @@
+{
+  "faction": "federation",
+  "mission_name": "Butterfly Effect",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_fall_of_weytahn"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Check in with the Andorians on Weytahn.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/axanar_36",
+        "planet": "weytahn",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Zosam and collect the components for the sensor antenna.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/zosam_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 9,000,000 Tritanium in exchange for the sensor antenna components.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 9000000
+      }
+    },
+    {
+      "title": "Return the antenna components to the Andorians on Weytahn.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/axanar_36",
+        "planet": "weytahn",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "common",
+        "value": 700
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 80
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 180000
+      },
+      {
+        "type": "romulan points",
+        "value": -57600
+      },
+      {
+        "type": "klingon points",
+        "value": -259200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help the Andorian colonists on Weytahn repair a fault in their defense grid."
+}

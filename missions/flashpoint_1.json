@@ -1,0 +1,87 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/bharani_16"
+    },
+    {
+      "$ref": "systems/eizeb_16"
+    },
+    {
+      "$ref": "systems/jishui_16"
+    },
+    {
+      "$ref": "systems/kaus_australis_16"
+    },
+    {
+      "$ref": "systems/ora_leraa_16"
+    },
+    {
+      "$ref": "systems/pune_16"
+    },
+    {
+      "$ref": "systems/azha_20"
+    },
+    {
+      "$ref": "systems/kepler_018_20"
+    },
+    {
+      "$ref": "systems/opla_20"
+    }
+  ],
+  "mission_name": "Flashpoint",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Travel to the new colony on Coridan II.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "planet": "coridan ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rebuild the power generator with 35,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 35000
+      }
+    },
+    {
+      "title": "Destroy 3 enemies of Level 15 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Destroy 3 enemies of Level 15 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Check in on the colony on Kitop.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kaus_australis_16",
+        "planet": "kitop",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "koth",
+        "value": 2
+      },
+      {
+        "type": "30 minute speed up",
+        "value": 8
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "A peaceful Independent colony on the edge of Federation space has been hit by a Klingon war fleet."
+}

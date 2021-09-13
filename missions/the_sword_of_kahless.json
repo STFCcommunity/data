@@ -1,0 +1,88 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Sword of Kahless",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_price_of_unity"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 7 hostiles in Kaikara.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 7 hostiles in Kaikara.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Interrogate the Mercenary Captain.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy Mercenary Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the signal in Eisenhorn.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the signal\u2019s source on V\u2019varia.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/v_varia_21",
+        "planet": "tozuu",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/theft_of_an_icon"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "gorkon",
+        "value": 3
+      },
+      {
+        "type": "klingon credits",
+        "value": 70
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": -19
+      },
+      {
+        "type": "romulan points",
+        "value": -51
+      },
+      {
+        "type": "klingon points",
+        "value": 80
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Track down the thief of the Sword of Kahless."
+}

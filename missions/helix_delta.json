@@ -1,0 +1,99 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/alpha_onias_36"
+    }
+  ],
+  "mission_name": "Helix Delta",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Bargain with the Federation scientist in Thama.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/thama_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How do you wish to acquire the power core?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay the Vulcan for it."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the Vulcan ship."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay the Vulcan 50M Tritanium.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50000000
+      }
+    },
+    {
+      "title": "Visit the site of the Helix on Lihuji.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 3199000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "planet": "lihuji",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan Science Vessel.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/thama_32",
+        "task_title": "Destroy Vulcan Science Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Visit the site of the Helix on Lihuji.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 3199000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "planet": "lihuji",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Establish a new Suliban Helix on Alpha Onias."
+}

@@ -1,0 +1,73 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "The Least of Me",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Stop VESTA once and for all.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles in Risa.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 hostiles in Risa.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Approach VESTA.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat VESTA.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_title": "Destroy VESTA",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/out_of_reach"
+  },
+  "recommended_level": 10,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 3200
+      },
+      {
+        "type": "tritanium",
+        "value": 25
+      }
+    ]
+  },
+  "storyline": "End the chase. Destroy VESTA."
+}

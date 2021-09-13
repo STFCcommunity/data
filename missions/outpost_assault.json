@@ -1,0 +1,52 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/opla_20"
+    }
+  ],
+  "mission_name": "Outpost Assault",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate the distress signal from the Federation Outpost",
+      "id": 1,
+      "task": {
+        "$ref": "systems/obilent_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track down the attacker by following their signal.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Romulan Vessel",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 33000
+      },
+      {
+        "type": "tritanium",
+        "value": 1500
+      }
+    ]
+  },
+  "storyline": "A Federation Outpost has come under attack from an unknown enemy, investigate."
+}

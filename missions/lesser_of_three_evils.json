@@ -1,0 +1,165 @@
+{
+  "faction": "neutral",
+  "mission_name": "Lesser of Three Evils",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/rosetta_stone"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the three-way stalemate in the Rator system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Federation, Klingons or Romulans.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the Federation ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the Klingon ship."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Destroy the Romulan ship."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Federation Explorer.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy USS Mozambique",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to Orion Prime.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "relocation token",
+            "value": 1
+          },
+          {
+            "type": "officer xp",
+            "value": 25000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Battleship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy IKV Vo'Naq",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to Orion Prime.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 350
+          }
+        ],
+        "others": [
+          {
+            "type": "relocation token",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Interceptor.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy PWB Valtath",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to Orion Prime.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "relocation token",
+            "value": 1
+          },
+          {
+            "type": "premium recruit token",
+            "value": 200
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/no_price_too_high"
+  },
+  "storyline": "Choose your side in a skirmish between the Federation, Klingons and Romulans."
+}

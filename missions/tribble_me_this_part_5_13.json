@@ -1,0 +1,141 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Tribble Me This Part 5",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Return to Collep.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/collep_10",
+        "planet": "nitaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How should we synthesize the compound?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Nausicaan DNA."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Antraxi DNA."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Request DNA samples from the Nausicaans.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles of level 11 or higher.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 8 hostiles of level 11 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring the compound to the Tribbles.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 2,
+            "rarity": "common",
+            "value": 380
+          }
+        ],
+        "others": [
+          {
+            "type": "4 hr peace shield",
+            "value": 1
+          },
+          {
+            "type": "1\u2605 battleship parts",
+            "value": 200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/collep_10",
+        "planet": "nitaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Request DNA samples from the Orions.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "luna orionis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 900 Dilithium for access to Antraxi DNA.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 900
+      }
+    },
+    {
+      "title": "Bring the compound to the Tribbles.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "common",
+            "value": 700
+          }
+        ],
+        "others": [
+          {
+            "type": "1\u2605 interceptor parts",
+            "value": 200
+          },
+          {
+            "type": "4 hr peace shield",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/collep_10",
+        "planet": "nitaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tribble_me_this_part_4"
+  },
+  "recommended_level": 13,
+  "storyline": "Find a way to stem the Tribble evolution."
+}

@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "mission_name": "Here and There",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/machinations"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the Romulan assassin.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Romulan Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Speak with Starfleet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/_but_now_i_see"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 6
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 560000
+      }
+    ]
+  },
+  "storyline": "Fight off the Romulan assassins."
+}

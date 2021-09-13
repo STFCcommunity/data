@@ -1,0 +1,63 @@
+{
+  "faction": "neutral",
+  "mission_name": "Shellshocked",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/diagnosis"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get to the reappeared ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_title": "Destroy Klingon Officer Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the survivors on board.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_honest_living"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour repair speed up",
+        "value": 16
+      },
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 80
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find the colonist survivor."
+}

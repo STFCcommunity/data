@@ -1,0 +1,81 @@
+{
+  "faction": "romulan",
+  "mission_name": "Sink Into Shadow",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/bait_and_switch"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Starfleet investigators in K'amia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the warp trail to Maclyyn.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/maclyyn_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the investigator's vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/maclyyn_22",
+        "task_title": "Destroy Starfleet Investigator Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the prisoner to Draken I.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken i",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/obstruction"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 80
+      },
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 60
+      },
+      {
+        "type": "federation points",
+        "value": -442
+      },
+      {
+        "type": "romulan points",
+        "value": 800
+      },
+      {
+        "type": "klingon points",
+        "value": -294
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 24000
+      }
+    ]
+  },
+  "storyline": "Stop the Starfleet investigation in its tracks."
+}

@@ -1,0 +1,59 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/new_dozaria_25"
+    }
+  ],
+  "mission_name": "The Fugitive",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/ear_to_the_ground"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Semm.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bazamex_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/bazamex_24",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 400000
+      },
+      {
+        "type": "tritanium",
+        "value": 56000
+      }
+    ]
+  },
+  "storyline": "Help the Bolian fugitive."
+}

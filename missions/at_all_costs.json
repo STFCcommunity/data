@@ -1,0 +1,144 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "At All Costs",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/divided_we_stand"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Romulan scientist.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the nanotech lab in Khitomer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 3,800 Inert Nanoprobes to the scientist.",
+      "id": 3,
+      "task": {
+        "resource": "inert nanoprobe",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3800
+      }
+    },
+    {
+      "title": "Go to Metra Gamma.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/metra_gamma_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 Borg ships in Metra Gamma.",
+      "id": 5,
+      "task": {
+        "task_title": "Defeat 6 Borg ships in Metra Gamma.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Decide where to lead the Borg.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Lead the Borg to an uninhabited system."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Lead the Borg to an inhabited system."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Lead the Borg to Sinisser.",
+      "id": 7,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sinisser_31",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Retreat to your Station before the Borg arrive.",
+      "id": 8,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2889000
+          },
+          {
+            "type": "tritanium",
+            "value": 425000
+          },
+          {
+            "type": "dilithium",
+            "value": 85000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Lead the Borg to Archer.",
+      "id": 7,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/archer_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Retreat to your Station before the Borg arrive.",
+      "id": 8,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 150
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_seeds_of_life"
+  },
+  "storyline": "The Borg are coming. Do whatever it takes to stop them from finding the Vi\u2019dar."
+}

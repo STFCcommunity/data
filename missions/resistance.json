@@ -1,0 +1,52 @@
+{
+  "faction": "neutral",
+  "mission_name": "Resistance",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/defensive_upgrades"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the colony on Luas.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "planet": "luas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Supply the local resistance with 500,000 Parsteel.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 500000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/scrap_heap"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "common",
+        "value": 350
+      }
+    ],
+    "others": [
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 60
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assist the Independent colonists with repairs to their village."
+}

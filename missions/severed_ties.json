@@ -1,0 +1,113 @@
+{
+  "faction": "federation",
+  "mission_name": "Severed Ties",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/banishment"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Kor Ar\u2019Ka and mediate the dispute between the Vulcans and Andorians.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kor_ar_ka_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to mediate in the dispute.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take the blame for the Elite Pathogen."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Reveal the truth regarding the Elite Pathogen."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to the Vulcan-Andorian Heritage site on Babel.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "15 minute speed up",
+            "value": 230
+          },
+          {
+            "type": "federation points",
+            "value": 260000
+          },
+          {
+            "type": "romulan points",
+            "value": -87400
+          },
+          {
+            "type": "klingon points",
+            "value": -393100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/babel_38",
+        "planet": "babel",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the Vulcan-Andorian Heritage site on Babel.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "5 minute repair speed up",
+            "value": 140
+          },
+          {
+            "type": "federation points",
+            "value": 260000
+          },
+          {
+            "type": "romulan points",
+            "value": -87400
+          },
+          {
+            "type": "klingon points",
+            "value": -393100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/babel_38",
+        "planet": "babel",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cut_your_teeth"
+  },
+  "storyline": "Mediate a dispute between the Vulcans and the Andorians that threatens their fragile relationship."
+}

@@ -1,0 +1,185 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Territorial Dispute Part 5",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Report back to Admiral Strode on P\u2019Jem.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Which planet should we respond to?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "The Andorians."
+          },
+          {
+            "option_id": 2,
+            "option_title": "The Bolians."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Rush to defend the Andorians on Andoria Prime.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the first Orion attacker.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_title": "Destroy Orion Attacker",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the next Orion attacker.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_title": "Destroy Orion Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the final Orion attacker.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_title": "Destroy Orion Thug",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 15
+          }
+        ],
+        "others": [
+          {
+            "type": "tos nyota uhura",
+            "value": 3
+          },
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 270
+          },
+          {
+            "type": "ship xp",
+            "value": 75000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Rush to defend the Bolians on Angosia IV.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the first Orion attacker.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_title": "Destroy Orion Attacker",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the next Orion attacker.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_title": "Destroy Orion Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the final Orion attacker.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_title": "Destroy Orion Thug",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 15
+          }
+        ],
+        "others": [
+          {
+            "type": "tos nyota uhura",
+            "value": 3
+          },
+          {
+            "type": "officer xp",
+            "value": 105000
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 270
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/territorial_dispute_part_4"
+  },
+  "recommended_level": 30,
+  "storyline": "Respond to reports of attacks from the Orion Syndicate."
+}

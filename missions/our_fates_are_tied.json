@@ -1,0 +1,205 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Our Fates Are Tied",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/unrelenting"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Talia in Sorenle.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Who will we help?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "The Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "The Klingons."
+          },
+          {
+            "option_id": 3,
+            "option_title": "The Romulans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to Federation space.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the assimilated K'tinga.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_title": "Destroy Assimilated K'tinga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Starfleet ship.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_title": "Destroy Assimilated Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort the survivors to safety.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 38000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Klingon space.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/loiat_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Valdore.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/loiat_24",
+        "task_title": "Destroy Assimilated Valdore",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated K'tinga.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/loiat_24",
+        "task_title": "Destroy Assimilated K'tinga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort the survivors to safety.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 188000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Romulan space.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/zova_rhen_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Starfleet ship.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/zova_rhen_25",
+        "task_title": "Destroy Assimilated Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Valdore.",
+      "id": 5,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/zova_rhen_25",
+        "task_title": "Destroy Assimilated Valdore",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the survivors to safety.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1273000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/against_all_odds"
+  },
+  "storyline": "Work with a mysterious agent to fend off the Borg threat."
+}

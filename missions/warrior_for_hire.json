@@ -1,0 +1,48 @@
+{
+  "faction": "neutral",
+  "mission_name": "Warrior for Hire",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/factory_line"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Klingon Warrior in Morska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy Qa'ug's Battleship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_title": "Destroy Qa'ug",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fight_back"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "relocation token",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 500000
+      }
+    ]
+  },
+  "storyline": "Stop Qu'ag from hunting the Independents of Riquzei."
+}

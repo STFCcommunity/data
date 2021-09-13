@@ -1,0 +1,100 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Price of Silence",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/all_our_tomorrows"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Rokol\u2019s last known location in Mada.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mada_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with Rokol.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bribe Rokol in exchange for his silence."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Eliminate Rokol."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 175,000,000 Parsteel.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 175000000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "tricorder",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Eliminate Rokol.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mada_21",
+        "task_title": "Destroy Rokol",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "tricorder",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shackled_and_sold"
+  },
+  "storyline": "Silence Rokol before he can reveal your intentions to the Orion Syndicate."
+}

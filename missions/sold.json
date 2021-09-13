@@ -1,0 +1,80 @@
+{
+  "faction": "romulan",
+  "mission_name": "Sold",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_sharpest_knife"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the new Corvallen colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 41 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Rebel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_title": "Destroy Corvallen Rebel Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to the Lieutenant Lotem.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_proposition"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 700
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 7560000
+      }
+    ]
+  },
+  "storyline": "Take down the Corvallen rebellion."
+}

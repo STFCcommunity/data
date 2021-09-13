@@ -1,0 +1,73 @@
+{
+  "faction": "federation",
+  "mission_name": "Knowledge as a Virtue",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomed"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go into Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 25 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Find information on the scientists' whereabouts.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "planet": "sufiday prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fire_and_fury"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": 8000
+      },
+      {
+        "type": "romulan points",
+        "value": -1700
+      },
+      {
+        "type": "klingon points",
+        "value": -7800
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 315000
+      }
+    ]
+  },
+  "storyline": "Search for the Starfleet scientists."
+}

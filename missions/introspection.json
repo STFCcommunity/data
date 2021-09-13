@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "Introspection",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/involuntary_inspection"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the signal in Romashki.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the Progenitors to Romulus.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the Progenitors to Kronos.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the aliens to Sol.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sol_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/hidden_futures_forgotten_past"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 14
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Follow the Progenitors as they investigate the homeworlds of the major Factions."
+}

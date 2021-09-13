@@ -1,0 +1,74 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mistrust",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_dangerous_heist"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout the area.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with Gorkon's representatives.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "planet": "ouhec",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 43 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escape Klingon Space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/imada_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/truth_and_rumor"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 11385000
+      }
+    ]
+  },
+  "storyline": "Negotiate for the Go\u2019dak familiy\u2019s release."
+}

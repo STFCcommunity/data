@@ -1,0 +1,88 @@
+{
+  "faction": "romulan",
+  "mission_name": "Retaliation",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_gift_from_the_shadows"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get to the rebel base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Loyalist Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_title": "Destroy Corvallen Loyalist Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Gladius.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_title": "Destroy Romulan Gladius",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate from the rebel base.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/where_do_we_go_from_here"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 700
+      },
+      {
+        "type": "federation points",
+        "value": -212500
+      },
+      {
+        "type": "romulan points",
+        "value": 216000
+      },
+      {
+        "type": "klingon points",
+        "value": -141700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend the rebel base."
+}

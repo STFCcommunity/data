@@ -1,0 +1,82 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Student",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/in_the_open"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Evacuate civilians from the war zone.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "planet": "mitski",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the civilians to a safe zone.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Gather more civilians for evacuation.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "planet": "vleh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Officer.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_title": "Destroy Romulan Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the rest of the civilians to the safe zone.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan recruit token",
+        "value": 320
+      },
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -483800
+      },
+      {
+        "type": "romulan points",
+        "value": 448000
+      },
+      {
+        "type": "klingon points",
+        "value": -322600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Evacuate as many civilians as possible."
+}

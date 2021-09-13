@@ -1,0 +1,75 @@
+{
+  "faction": "neutral",
+  "mission_name": "Wrong Foot Forward",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/bloodthirst"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the disturbance in Hilo.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hilo_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 7 hostiles of level 43 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 7 hostiles of level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Hunter.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hilo_46",
+        "task_title": "Destroy Klingon Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Hunter Leader.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/hilo_46",
+        "task_title": "Destroy Hunter Leader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sons_of_vulcan"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 700
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon recruit token",
+        "value": 350
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a distress signal."
+}

@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "mission_name": "Tritanium Miner",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/breakthrough"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Mine 50 Tritanium.",
+      "id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 50
+      }
+    },
+    {
+      "title": "Bring the Tritanium back to the station for testing.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/refactor"
+  },
+  "recommended_level": 10,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1\u2605 survey parts",
+        "value": 20
+      },
+      {
+        "type": "ship xp",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 4000
+      }
+    ]
+  },
+  "storyline": "Search for some Tritanium to mine."
+}

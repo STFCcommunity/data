@@ -1,0 +1,72 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 7",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_8"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to the engineer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the medical merchant.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/collep_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 6,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 6000
+      }
+    },
+    {
+      "title": "Return to the Enterprise.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_6"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 7000
+      },
+      {
+        "type": "dilithium",
+        "value": 200
+      }
+    ]
+  },
+  "storyline": "Find new medical equipment."
+}

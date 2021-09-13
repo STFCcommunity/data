@@ -1,0 +1,104 @@
+{
+  "faction": "neutral",
+  "mission_name": "No Price Too High",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/lesser_of_three_evils"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the mine owner at Zoseh.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "planet": "zoseh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Help or stop the mine owner.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pillage the Romulan miner's stores."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Mine Tritanium for Cladus."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the Mining Operator's Interceptor.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ship xp",
+            "value": 3000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 250000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "task_title": "Destroy Cladus",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Mine 25,000 Tritanium for Cladus.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 25000
+      }
+    },
+    {
+      "title": "Give Cladus the 25,000 Tritanium.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "recruit token",
+            "value": 100
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 250000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 25000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/academic_credit"
+  },
+  "storyline": "Help or hinder a Romulan who has embraced an Independent lifestyle."
+}

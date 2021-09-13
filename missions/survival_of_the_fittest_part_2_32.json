@@ -1,0 +1,81 @@
+{
+  "arc": "tng arc 2",
+  "faction": "neutral",
+  "mission_name": "Survival of the Fittest Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/survival_of_the_fittest_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the messenger.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/exchange_gamma_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostile of Level 31 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostile of Level 31 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Confront the Messenger.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/exchange_gamma_32",
+        "planet": "xenasa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1m Tritanium.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Return to the Enterprise.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/survival_of_the_fittest_part_1"
+  },
+  "recommended_level": 32,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 60
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 80
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 253000
+      }
+    ]
+  },
+  "storyline": "Find the messenger."
+}

@@ -1,0 +1,65 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Displaced",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/reclamation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Look for Serinn on Narendra III.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "planet": "narendra iii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 25 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen racketeer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_title": "Destroy Corvallen Racketeer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Serinn to the Borg hive in Torana.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/home_stretch"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1734000
+      },
+      {
+        "type": "dilithium",
+        "value": 51000
+      }
+    ]
+  },
+  "storyline": "Appeal to Shiio\u2019s estranged brother to join the fight against the Borg threat."
+}

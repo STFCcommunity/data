@@ -1,0 +1,80 @@
+{
+  "faction": "klingon",
+  "mission_name": "No Escape",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/pursuit"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scan for energy fluctuations in Afritalis.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the assailant.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_title": "Destroy Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the mercenary headquarters.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/imada_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the data to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/prison_break"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 700
+      },
+      {
+        "type": "1m tritanium token",
+        "value": 26
+      },
+      {
+        "type": "federation points",
+        "value": -363800
+      },
+      {
+        "type": "romulan points",
+        "value": -970100
+      },
+      {
+        "type": "klingon points",
+        "value": 645000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 25755000
+      }
+    ]
+  },
+  "storyline": "Search for clues as to the whereabouts of the escapees."
+}

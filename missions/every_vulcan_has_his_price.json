@@ -1,0 +1,52 @@
+{
+  "faction": "neutral",
+  "mission_name": "Every Vulcan Has His Price",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/jellyfish_smack"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Jellyfish's warp trail.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Battleship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_title": "Destroy Nausicaan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Explorer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_title": "Destroy Nausicaan Warlord",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_supernova_of_romulus"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 180
+      }
+    ]
+  },
+  "storyline": "Work with the Enterprise to neutralize Mirror Spock's fleet of Nausicaan mercenaries."
+}

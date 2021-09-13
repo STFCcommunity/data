@@ -1,0 +1,95 @@
+{
+  "faction": "federation",
+  "mission_name": "Hold The Line",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Warn the colony on Xedecir of the Romulan attack.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "planet": "xedecir",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Help the colonists with their defenses.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 340000
+      }
+    },
+    {
+      "title": "Defeat the Suliban Captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Suliban Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Subcommander L'Nara",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Bird of Prey.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Klingon Bird of Prey",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_enterprise_incident"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "james t. kirk",
+        "value": 3
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 1
+      },
+      {
+        "type": "3\u2605 survey parts",
+        "value": 150
+      },
+      {
+        "type": "federation points",
+        "value": 160
+      },
+      {
+        "type": "romulan points",
+        "value": -27
+      },
+      {
+        "type": "klingon points",
+        "value": -121
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend a Federation colony from an impending attack."
+}

@@ -1,0 +1,122 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Cognitive Dissonance",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_masks_we_wear"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Confront the follower.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Convince Kai to join Tilly?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes"
+          },
+          {
+            "option_id": 2,
+            "option_title": "No."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bring Kai to the follower.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 23
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 63000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Confront the follower.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the follower.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 4
+          },
+          {
+            "type": "15 minute speed up",
+            "value": 7
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 193000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Follower's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/turning_tides"
+  },
+  "recommended_level": 25,
+  "storyline": "Decide Kai\u2019s fate."
+}

@@ -1,0 +1,127 @@
+{
+  "faction": "neutral",
+  "mission_name": "Excuses, Excuses",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/shifting_priorities"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Follow Dahno to Orion Prime.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the target to Rigel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the cargo vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Cargo Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide how to deal with the target.",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let Daruul go."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy Daruul\u2019s ship."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Report back to Jakkon on Orion Prime.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 7000
+          },
+          {
+            "type": "tritanium",
+            "value": 1000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy Daruul\u2019s ship.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Cargo Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to Jakkon on Orion Prime.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "5 minute repair speed up",
+            "value": 11
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 250
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/let_my_people_go"
+  },
+  "recommended_level": 12,
+  "storyline": "Explain your actions to the Orion Syndicate."
+}

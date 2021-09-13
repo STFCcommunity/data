@@ -1,0 +1,78 @@
+{
+  "faction": "federation",
+  "mission_name": "No Recollection",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/in_another_life"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Andoria Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide 150M Parsteel to build a new defense grid in Noakyn.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 150000000
+      }
+    },
+    {
+      "title": "Scan for the expected Suliban invasion force.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/thama_32",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/there_are_no_second_chances"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 60
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 12
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -34400
+      },
+      {
+        "type": "klingon points",
+        "value": -154800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "With Andoria restored and General Ontella back in power, the temporal incursion has an unexpected side effect."
+}

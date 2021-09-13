@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "From the Brink",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_inevitable"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with T'Pora.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Separatist ships.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Separatist Ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy Separatist Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the Separatist Ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/one_more_round"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 16000
+      }
+    ]
+  },
+  "storyline": "Stop the Klingon Seperatist ship."
+}

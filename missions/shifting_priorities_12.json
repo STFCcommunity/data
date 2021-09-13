@@ -1,0 +1,74 @@
+{
+  "faction": "neutral",
+  "mission_name": "Shifting Priorities",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/making_amends"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Independent mining area in Elona.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Security Guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_title": "Destroy Security Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to the next mining area.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Private Militia.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_title": "Destroy Private Militia",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to Jakkon.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/excuses_excuses"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 20
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 3
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Take over a mining operation in the name of the Syndicate."
+}

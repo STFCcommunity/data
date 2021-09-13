@@ -1,0 +1,68 @@
+{
+  "faction": "augment",
+  "mission_name": "We Are Better",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/volatile_combinations"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Take Khan to scout the planet of Hanrex.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tera_lara_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles of Level 21 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 Hostiles of Level 21 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Transport Khan to the surface of Hanrex.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tera_lara_24",
+        "planet": "hanrex",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take the soil samples to the Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/outskirts"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "augment points",
+        "value": 90
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 53000
+      },
+      {
+        "type": "dilithium",
+        "value": 11000
+      }
+    ]
+  },
+  "storyline": "Assist Khan in the colonization of an inhabited planet in Tera Lara."
+}

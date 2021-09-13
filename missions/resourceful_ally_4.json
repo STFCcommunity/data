@@ -1,0 +1,175 @@
+{
+  "faction": "neutral",
+  "mission_name": "Resourceful Ally",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/volatile_market"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Klingon mining party.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which resource to mine.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Mine Parsteel."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Mine Tritanium."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Mine Dilithium."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Mine 500 Parsteel.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 500
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "5 minute repair speed up",
+            "value": 5
+          },
+          {
+            "type": "recruit token",
+            "value": 20
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Mine 100 Tritanium.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 100
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 70
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Mine 50 Dilithium.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 50
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 900
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/suspicious_proposals"
+  },
+  "recommended_level": 4,
+  "storyline": "Protect and contribute to one of Grotoq\u2019s mining operations."
+}

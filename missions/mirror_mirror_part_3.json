@@ -1,0 +1,92 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mirror, Mirror Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mirror_mirror_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the communications relay on Nitaa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/collep_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Liberate the relay from Rigellian Scavengers.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/collep_10",
+        "task_title": "Destroy Rigellian Scavengers",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bribe the Rigellian for information on Mirror Spock.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 750
+      }
+    },
+    {
+      "title": "Triangulate Mirror Spock's last known location.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ethjamar_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Lead Mirror Spock to the ISS Enterprise.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Mirror Spock's vessel.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_title": "Destroy Mirror Spock",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mirror_mirror_part_2"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 6
+      },
+      {
+        "type": "gas",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 6
+      },
+      {
+        "type": "ore",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 6
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Enlist the aid of a former adversary."
+}

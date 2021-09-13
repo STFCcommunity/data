@@ -1,0 +1,84 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/dderidex_38"
+    }
+  ],
+  "mission_name": "A Gift From The Dead",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/lean"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the Terix system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/terix_38",
+        "planet": "favros",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take the Bat'leth to Heghpu'ngeng.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/h_atoria_30",
+        "planet": "heghpu'ngeng",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Klur's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/h_atoria_30",
+        "task_title": "Destroy Klur's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Favros.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/terix_38",
+        "planet": "favros",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 18
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 50
+      },
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -96000
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -64000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Deliver the Bat'leth of a fallen Klingon hero to his family as a warning of conflict to come."
+}

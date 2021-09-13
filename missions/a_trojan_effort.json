@@ -1,0 +1,72 @@
+{
+  "faction": "federation",
+  "mission_name": "A Trojan Effort",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find the hacker responsible for creating the auto destruct virus.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/altair_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the hacker's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/altair_39",
+        "task_title": "Destroy Hacker's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Force the hacker to remove the virus from the Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Hand over the hacker to Starfleet security.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/auto_destruct"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 400
+      },
+      {
+        "type": "federation points",
+        "value": 60000
+      },
+      {
+        "type": "romulan points",
+        "value": -29400
+      },
+      {
+        "type": "klingon points",
+        "value": -77800
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 4482000
+      }
+    ]
+  },
+  "storyline": "Clear out the virus that has embedded within the Station's mainframe."
+}

@@ -1,0 +1,73 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "Uninvited Guests",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/spore_of_the_moment"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Repair the alien metal in the Refinery.",
+      "id": 1,
+      "task": {
+        "resource": "repaired alien metal",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Meet with a chemical analyst.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give the analyst the Refined Alien Metal.",
+      "id": 3,
+      "task": {
+        "resource": "repaired alien metal",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Meet with the USS Discovery.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/how_came_i_here"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 180000
+      },
+      {
+        "type": "dilithium",
+        "value": 36000
+      }
+    ]
+  },
+  "storyline": "Find a way to analyze the strange metal."
+}

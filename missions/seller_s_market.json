@@ -1,0 +1,50 @@
+{
+  "faction": "neutral",
+  "mission_name": "Seller's Market",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/origin"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Toryn on Deneva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay Toryn 25,000 Dilithium for the artifact.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 25000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/flashpoint"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 150
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 100000
+      }
+    ]
+  },
+  "storyline": "Acquire a rare ancient artifact from Toryn."
+}

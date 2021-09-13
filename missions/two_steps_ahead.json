@@ -1,0 +1,150 @@
+{
+  "faction": "romulan",
+  "mission_name": "Two Steps Ahead",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/keep_your_enemies_closer"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Romulan Military Training Base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Join the Diversion Team or the Infiltration Team?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Diversion Team"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Infiltration Team"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 39 or higher.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 39 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m parsteel token",
+            "value": 38
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -212500
+          },
+          {
+            "type": "romulan points",
+            "value": 216000
+          },
+          {
+            "type": "klingon points",
+            "value": -141700
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 38280000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Captain's Ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "task_title": "Destroy Romulan Captain's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the military base.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "planet": "kincasa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m tritanium token",
+            "value": 5
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -212500
+          },
+          {
+            "type": "romulan points",
+            "value": 216000
+          },
+          {
+            "type": "klingon points",
+            "value": -141700
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 5400000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_gift_from_the_shadows"
+  },
+  "storyline": "Attack the Military Training Base."
+}

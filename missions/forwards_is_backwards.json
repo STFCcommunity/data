@@ -1,0 +1,112 @@
+{
+  "faction": "neutral",
+  "mission_name": "Forwards is Backwards",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_apex"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Transmit the temporal echo in Mina.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the USS Newton.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sotavi_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Prove your case to the Newton's captain.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Travel with us to the Apex and see for yourself."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Take your chances with another time loop."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Travel to the Nikola system.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "singularity apex to nikola",
+            "value": 1
+          },
+          {
+            "type": "singularity apex to nikola",
+            "value": 1
+          },
+          {
+            "type": "federation recruit token",
+            "value": 500
+          },
+          {
+            "type": "officer xp",
+            "value": 87000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to the Nikola system.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "singularity apex to nikola",
+            "value": 1
+          },
+          {
+            "type": "singularity apex to nikola",
+            "value": 1
+          },
+          {
+            "type": "4\u2605 common interceptor parts",
+            "value": 290
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 665000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_message_in_a_bottle"
+  },
+  "storyline": "Use the Temporal Resonator to open a path to the Singularity Apex."
+}

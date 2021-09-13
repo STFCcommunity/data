@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "mission_name": "Duty-bound",
+  "mission_type": "auto start",
+  "objectives": [
+    {
+      "title": "Sabotage the Starfleet Maintenance vessel",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "task_title": "Destroy Starfleet Maintenance Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Fly to Vega III to avoid suspicion",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Scouting Vessel",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sol_60",
+        "task_title": "Destroy Starfleet Scouting Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Administrator S'Lona",
+      "id": 4,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vaolas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 30000
+      }
+    ]
+  },
+  "storyline": "Intercept a Starfleet surveyor who has evidence of the Vulcan Secret Service."
+}

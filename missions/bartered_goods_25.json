@@ -1,0 +1,115 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Bartered Goods",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/trespasser"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Draken and appeal to the Romulans for a trade.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to pay for the technology.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Purchase the technology."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Perform a service for the technology."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 750,000 Tritanium to the Romulans.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 750000
+      }
+    },
+    {
+      "title": "Return to Dalen on Qualor IX with an update.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 26
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "planet": "qualor ix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Seek out the Romulan informant in Rana Nur.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rana_nur_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan informant.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rana_nur_17",
+        "task_title": "Destroy Romulan Informant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Dalen on Qualor IX with an update.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 50
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "planet": "qualor ix",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cybernetics"
+  },
+  "recommended_level": 25,
+  "storyline": "Trade services to the Romulans in exchange for technology necessary to continue Dalen\u2019s research."
+}

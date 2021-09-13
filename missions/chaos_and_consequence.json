@@ -1,0 +1,192 @@
+{
+  "faction": "romulan",
+  "mission_name": "Chaos and Consequence",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet the Information Dealer in Willenia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront the Proconsul or erase your information from the Romulan database?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Confront the Proconsul."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Hack into the Romulan database."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to Vendus A to confront the Proconsul.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 17 hostiles of Level 27 or higher.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Destroy 17 hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Kill the Proconsul.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "task_title": "Destroy Proconsul Novix",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape back to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "legionary blueprint part",
+            "value": 6
+          },
+          {
+            "type": "romulan recruit token",
+            "value": 500
+          },
+          {
+            "type": "romulan credits",
+            "value": 150
+          },
+          {
+            "type": "federation points",
+            "value": -1900
+          },
+          {
+            "type": "romulan points",
+            "value": 3100
+          },
+          {
+            "type": "klingon points",
+            "value": -1300
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to the Data Center on Biruin.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 17 hostiles of Level 27 or higher.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Destroy 17 hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Go to Vilevau to hack the Data Center.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 17 hostiles of Level 28 or higher.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Destroy 17 hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Vilevau to finish hacking the Data Center.",
+      "id": 7,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escape back to your Station.",
+      "id": 8,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 24
+          }
+        ],
+        "others": [
+          {
+            "type": "legionary blueprint part",
+            "value": 6
+          },
+          {
+            "type": "romulan credits",
+            "value": 150
+          },
+          {
+            "type": "federation points",
+            "value": -1900
+          },
+          {
+            "type": "romulan points",
+            "value": 3100
+          },
+          {
+            "type": "klingon points",
+            "value": -1300
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cutting_ties"
+  },
+  "storyline": "Take Novix down."
+}

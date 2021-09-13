@@ -1,0 +1,108 @@
+{
+  "faction": "neutral",
+  "mission_name": "Live Long And Prosper",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/operations_44"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow Mensala to Romulus.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Vulcan Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Disable Mensala's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Captain Mensala",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do about Mensala.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bring her to Starfleet."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Return Mensala to Federation Space."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Romulan guard.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Mensala to Federation Space.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 5000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/jera_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return Mensala to Federation Space.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan recruit token",
+            "value": 500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/jera_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/beginning_of_the_end"
+  },
+  "storyline": "Stop the Ah\u2019rak Fosh from using the superweapon."
+}

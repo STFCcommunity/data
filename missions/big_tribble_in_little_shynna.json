@@ -1,0 +1,151 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Big Tribble In Little Shynna",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Give Scotty 2M Parsteel to help house the Tribbles.",
+      "id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2000000
+      }
+    },
+    {
+      "title": "The Borg are coming. What do we do?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Fight them here."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Lead them away."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Borg probe.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Starfleet ship.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Assimilated Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Klingon ship.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Assimilated Ktinga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the Tribbles to the remote Narendra system.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 21
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1480000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg probe.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Starfleet ship.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Assimilated Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the assimilated Klingon ship.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Assimilated K'tinga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the Tribbles to the remote Narendra system.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 21
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 44000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bubble_bubble_toil_and_tribble"
+  },
+  "storyline": "Find a home for the assimilated Tribbles."
+}

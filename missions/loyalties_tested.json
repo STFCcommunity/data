@@ -1,0 +1,103 @@
+{
+  "faction": "klingon",
+  "mission_name": "Loyalties Tested",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/generational_crimes"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Lieutenant Renly in Vulcan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay the dockmaster 5,000 Dilithium for information.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000
+      }
+    },
+    {
+      "title": "Search for Renly in Zova Rhen.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zova_rhen_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the scavenger.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zova_rhen_25",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track the signal to Narendra.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Renly's vessel.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_title": "Destroy Renly's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/out_of_sight"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "common",
+        "value": 500
+      },
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 13
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 80
+      },
+      {
+        "type": "federation points",
+        "value": -221
+      },
+      {
+        "type": "romulan points",
+        "value": -589
+      },
+      {
+        "type": "klingon points",
+        "value": 800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Loyalties Tested"
+}

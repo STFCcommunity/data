@@ -1,0 +1,177 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Seeds of Life",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/at_all_costs"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect 3,000 Inert Nanoprobes.",
+      "id": 1,
+      "task": {
+        "resource": "inert nanoprobe",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 3000
+      }
+    },
+    {
+      "title": "Gather 150 Active Nanoprobes.",
+      "id": 2,
+      "task": {
+        "resource": "active nanoprobe",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 150
+      }
+    },
+    {
+      "title": "Track the Vi\u2019dar to a Swarm system.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sayo_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 4,500 G3 Raw Crystal to disperse the nanoprobes.",
+      "id": 4,
+      "task": {
+        "resource": "3\u2605 raw crystal",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4500
+      }
+    },
+    {
+      "title": "Interface with the Vadir.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/sayo_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Distract the Borg ship.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/sayo_26",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide how to escape the Borg ship.",
+      "id": 7,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Disable their Tractor beam with a Dilithium catalyst."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Confuse their targeting with a cloud of ionized Gas."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Launch 18,000 Dilithium into the Borg ship.",
+      "id": 8,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 18000
+      }
+    },
+    {
+      "title": "Escape!",
+      "id": 9,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 4
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 4
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 4
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Release 4,000 G3 Raw Gas.",
+      "id": 8,
+      "sub_id": 2,
+      "task": {
+        "resource": "3\u2605 raw gas",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000
+      }
+    },
+    {
+      "title": "Escape!",
+      "id": 9,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 38
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 38
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 38
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/and_the_skies_will_darken"
+  },
+  "storyline": "Run a dangerous experiment on Borg nanoprobes."
+}

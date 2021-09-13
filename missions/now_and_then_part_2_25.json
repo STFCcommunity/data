@@ -1,0 +1,77 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Now and Then Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/now_and_then_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the USS Enterprise in Gemet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Accompany the USS Enterprise to Sufiday.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles in Sufiday.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 12 hostiles in Sufiday.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Check the last known location of the USS Enterprise.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/now_and_then_part_1"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 9
+      },
+      {
+        "type": "recruit token",
+        "value": 100
+      },
+      {
+        "type": "premium recruit token",
+        "value": 150
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Return to Sufiday with the USS Enterprise and investigate the spatial anomaly."
+}

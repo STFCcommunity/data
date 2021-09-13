@@ -1,0 +1,124 @@
+{
+  "faction": "romulan",
+  "mission_name": "Lean",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Threaten the Qlj'ej merchant in Gya'han.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gya_han_39",
+        "planet": "qlj'ej nagh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with the merchant.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the merchant's ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Pay the merchant off."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Eliminate the Qlj'ej Initiative's Interceptor.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 500
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 800
+          },
+          {
+            "type": "federation points",
+            "value": -96000
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -64000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 437000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/gya_han_39",
+        "task_title": "Destroy Initiative Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 45,000,000 Dilithium.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 50
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 13
+          }
+        ],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": -96000
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -64000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 45000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_gift_from_the_dead"
+  },
+  "storyline": "Threaten various members of the Qlj'ej Initiative in order to retain their services as reluctant spies on the Klingon border."
+}

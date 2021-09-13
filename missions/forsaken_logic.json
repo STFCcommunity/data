@@ -1,0 +1,98 @@
+{
+  "faction": "neutral",
+  "mission_name": "Forsaken Logic",
+  "mission_type": "auto start",
+  "objectives": [
+    {
+      "title": "Speak with Lieutenant Nara in the Arcturus system",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vaolas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with Lieutenant Nara",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Threaten Nara to stay silent"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Ensure Nara that she is wrong about the Vulcans"
+          },
+          {
+            "option_id": 3,
+            "option_title": "Ask Nara to join the Vulcan High Command"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy Nara's shuttle",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 30000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/yadalla_39",
+        "task_title": "Destroy Nara's Shuttle",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to New Vulcan",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 5000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Nara to New Vulcan",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 5000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vaolas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Root out a spy amongst the Starfleet ranks and deliver him to the High Command."
+}

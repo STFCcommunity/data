@@ -1,0 +1,66 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "A Little Bit Different",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/cut_off_point"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the lab.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles of Level 30 or Higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles of Level 30 or Higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bombard the lab.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "planet": "thiros",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_family_reunion"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 100
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2983000
+      }
+    ]
+  },
+  "storyline": "Find the medical facility."
+}

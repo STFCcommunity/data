@@ -1,0 +1,93 @@
+{
+  "faction": "klingon",
+  "mission_name": "Patrol Duty",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Report to Khol on Kronos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Patrol Klingon space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Brutes.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_title": "Destroy Nausicaan Brutes",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track Khol to Romulan space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Augur.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_title": "Destroy Romulan Commander",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Kronos.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/festival_of_honor"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "1m parsteel token",
+        "value": 130
+      },
+      {
+        "type": "latinum",
+        "value": 1800
+      },
+      {
+        "type": "federation points",
+        "value": -241900
+      },
+      {
+        "type": "romulan points",
+        "value": -645100
+      },
+      {
+        "type": "klingon points",
+        "value": 448000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Ensure that the Festival of Honor is not interrupted."
+}

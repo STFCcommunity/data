@@ -1,0 +1,71 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Dead Memories Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/dead_memories_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Renon.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Renon",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape!",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dead_memories_part_3"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 18977000
+      },
+      {
+        "type": "tritanium",
+        "value": 2791000
+      }
+    ]
+  },
+  "storyline": "Investigate the strange signal."
+}

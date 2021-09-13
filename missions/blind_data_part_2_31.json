@@ -1,0 +1,73 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Blind Data Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/blind_data_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the black market.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/exchange_central_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the mercenary.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/exchange_central_28",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Question the trader.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/exchange_central_28",
+        "planet": "analia technologies",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1m Tritanium.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/blind_data_part_1"
+  },
+  "recommended_level": 31,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 50
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 70
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 165000
+      }
+    ]
+  },
+  "storyline": "Find the black market trader."
+}

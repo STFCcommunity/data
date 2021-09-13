@@ -1,0 +1,108 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Bearer of Bad News",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/cold_and_hunted"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Shiio\u2019s last known location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unoma_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with the Starfleet Agent.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Admit an affiliation with Shiio."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Deny any affiliation with Shiio."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable the Starfleet Agent\u2019s vessel.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/unoma_29",
+        "task_title": "Destroy Starfleet Agent",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with Shiio.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1861000
+          },
+          {
+            "type": "tritanium",
+            "value": 274000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Disable Shiio\u2019s vessel.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/unoma_29",
+        "task_title": "Destroy Shiio",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with Shiio.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 274000
+          },
+          {
+            "type": "dilithium",
+            "value": 55000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/echoes_of_torana"
+  },
+  "storyline": "Retrieve Shiio from Unoma and help her resume Serinn\u2019s research."
+}

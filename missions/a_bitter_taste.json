@@ -1,0 +1,166 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/jishui_16"
+    },
+    {
+      "$ref": "systems/kaus_australis_16"
+    },
+    {
+      "$ref": "systems/kaus_borealis_17"
+    },
+    {
+      "$ref": "systems/kaus_media_17"
+    },
+    {
+      "$ref": "systems/helvetios_18"
+    },
+    {
+      "$ref": "systems/todem_18"
+    },
+    {
+      "$ref": "systems/wasat_19"
+    },
+    {
+      "$ref": "systems/zeta_polis_19"
+    }
+  ],
+  "mission_name": "A Bitter Taste",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Meet K\u2019Ran in Kaikara.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles in Kaikara.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles in Kaikara.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the IRW Taurian.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy IRW Taurian",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow the signal to Sorenle.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the IRW Mors.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/azha_20",
+        "task_title": "Destroy IRW Mors",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Save K'Ran OR Destroy the Romulan transport.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Save K'Ran."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the Romulan transport."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Bomber.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "koth",
+            "value": 8
+          },
+          {
+            "type": "federation points",
+            "value": -19
+          },
+          {
+            "type": "romulan points",
+            "value": -51
+          },
+          {
+            "type": "klingon points",
+            "value": 80
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 400000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Romulan Bomber",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Transport.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 80
+          },
+          {
+            "type": "koth",
+            "value": 8
+          },
+          {
+            "type": "federation points",
+            "value": -19
+          },
+          {
+            "type": "romulan points",
+            "value": -51
+          },
+          {
+            "type": "klingon points",
+            "value": 110
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/azha_20",
+        "task_title": "Destroy Romulan Transport",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "storyline": "Respond to the Romulan counter-attack on Klingon Space."
+}

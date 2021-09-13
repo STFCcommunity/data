@@ -1,0 +1,58 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "And You Will Know Us... Part 2",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_sting_of_defeat"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Dalen.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "planet": "sunodun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Search for the entry point used by the drone.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alta_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Dalen.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "planet": "sunodun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 77000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find Dalen."
+}

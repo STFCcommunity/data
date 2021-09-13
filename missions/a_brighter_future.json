@@ -1,0 +1,88 @@
+{
+  "faction": "federation",
+  "mission_name": "A Brighter Future",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/recreations"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the USS Mayflower in Lorillia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Draken.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Khitomer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Hunter.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_title": "Destroy Klingon Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station for repairs.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/undisturbed"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 14
+      },
+      {
+        "type": "federation credits",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": 1000
+      },
+      {
+        "type": "romulan points",
+        "value": -192
+      },
+      {
+        "type": "klingon points",
+        "value": -864
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 325000
+      }
+    ]
+  },
+  "storyline": "Work with the Mayflower to test its new engines."
+}

@@ -1,0 +1,70 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/azati_34"
+    }
+  ],
+  "mission_name": "Crisis on Praxis",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/prisoners_of_conscience"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Pick up the Klingon scientist from Nausicaa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,800,000 Dilithium to T\u2019Korma.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1800000
+      }
+    },
+    {
+      "title": "Bring T\u2019Korma to RIgel IV.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel iv",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 20
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 20
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 20
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "The Klingons are facing an energy crisis. Escort the scientist in charge of the operation to Rigel IV."
+}

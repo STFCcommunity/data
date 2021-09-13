@@ -1,0 +1,78 @@
+{
+  "faction": "neutral",
+  "mission_name": "Bothersome Flies",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/reunions_and_remedies"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the source of the Corvallen marauders in Perralon 472.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 44 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 44 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Mercenary.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_title": "Destroy Corvallen Mercenary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Mine 1750 4\u2605 Raw Gas.",
+      "id": 4,
+      "task": {
+        "resource": "4\u2605 raw gas",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1750
+      }
+    },
+    {
+      "title": "Deliver the Raw Gas to T\u2019Rell\u2019s mining colony on Delore.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/new_canberra_44",
+        "planet": "delore",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/genealogy"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 31
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Help T\u2019Rell reunite with Sulen."
+}

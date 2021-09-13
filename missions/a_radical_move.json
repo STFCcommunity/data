@@ -1,0 +1,175 @@
+{
+  "faction": "federation",
+  "mission_name": "A Radical Move",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/on_all_sides"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Report to Angosia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to approach the assault.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Reinforce Starbase 82."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Ambush the Nausicaan Raiders."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Ready Starbase 82 for the attack.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Repair the Starbase\u2019s defenses with 8,000 Tritanium.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8000
+      }
+    },
+    {
+      "title": "Destroy the Nausicaan Raider.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Warlord.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 19
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 130
+          },
+          {
+            "type": "federation points",
+            "value": 2000
+          },
+          {
+            "type": "romulan points",
+            "value": -400
+          },
+          {
+            "type": "klingon points",
+            "value": -1800
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1330000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Nausicaan Warlord",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Nausicaan Raiders in Niawillen.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/niawillen_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Nausicaan Raider.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/niawillen_28",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Warlord.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 130
+          },
+          {
+            "type": "officer xp",
+            "value": 75000
+          },
+          {
+            "type": "federation recruit token",
+            "value": 250
+          },
+          {
+            "type": "federation points",
+            "value": 2000
+          },
+          {
+            "type": "romulan points",
+            "value": -400
+          },
+          {
+            "type": "klingon points",
+            "value": -1800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/niawillen_28",
+        "task_title": "Destroy Nausicaan Warlord",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/firefighting"
+  },
+  "storyline": "Stop a Nausicaan raid on Starbase 82."
+}

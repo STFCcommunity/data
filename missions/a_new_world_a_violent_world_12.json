@@ -1,0 +1,84 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "A New World, A Violent World",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_trail_of_mist_and_shadows"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the Klingon signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/friefra_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow Mudd's warp path.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Capture Mudd.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "planet": "civeu",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Repair the Discovery's warp drive with 2,700 Dilithium.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2700
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of level 13 or higher.",
+      "id": 5,
+      "task": {
+        "task_title": "Defeat 10 hostiles of level 13 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escape!",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/old_acquaintances"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 3000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2300
+      }
+    ]
+  },
+  "storyline": "Investigate the site of a battle."
+}

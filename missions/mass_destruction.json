@@ -1,0 +1,91 @@
+{
+  "faction": "klingon",
+  "mission_name": "Mass Destruction",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_retribution"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Ambush the Starfleet agent in Aruna.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "task_title": "Destroy Starfleet Agent Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take the agent to a remote planet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/bharani_16",
+        "planet": "nagum",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Starbase in Koltiska.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Battleship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_title": "Destroy Starfleet Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the plans to Khitomer.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/interception"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 100
+      },
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 110
+      },
+      {
+        "type": "federation points",
+        "value": -288
+      },
+      {
+        "type": "romulan points",
+        "value": -768
+      },
+      {
+        "type": "klingon points",
+        "value": 1000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 56000
+      }
+    ]
+  },
+  "storyline": "Mass Destruction"
+}

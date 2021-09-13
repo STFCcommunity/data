@@ -1,0 +1,189 @@
+{
+  "faction": "neutral",
+  "mission_name": "All Our Tomorrows",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find a secure location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mada_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction to ask for help.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Ask the Federation for help."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Ask the Romulans for help."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Ask the Klingons for help."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to Starbase 87 and request the help of the Federation.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Beta Niobe with Starfleet.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Underboss Jaraz.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_title": "Destroy Underboss Jaraz",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 100
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Talvath and request the help of the Romulans.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/talvath_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Beta Niobe with the Romulans.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Underboss Jaraz.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_title": "Destroy Underboss Jaraz",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 100
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Dohrmas Station.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "planet": "dohrmas station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Beta Niobe with the Klingons.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Underboss Jaraz.",
+      "id": 5,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_title": "Destroy Underboss Jaraz",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 100
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_price_of_silence"
+  },
+  "storyline": "Enlist the help of one of the major powers and free the Sarpeidon natives from enslavement."
+}

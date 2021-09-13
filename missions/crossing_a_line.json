@@ -1,0 +1,139 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/paradane_27"
+    }
+  ],
+  "mission_name": "Crossing A Line",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Locate the distress beacon in Terazon-X31.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/terazon_x31_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with the Klingons.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help the Klingons."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack the Klingons."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 7,000 Dilithium to help repair the vessels.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 7000
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles in Terazon-X31 to buy time.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 13
+          }
+        ],
+        "others": [
+          {
+            "type": "dark matter",
+            "value": 1
+          },
+          {
+            "type": "augment points",
+            "value": 150
+          },
+          {
+            "type": "klingon recruit token",
+            "value": 500
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 34000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 8 Hostiles in Terazon-X31 to buy time.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Chosh.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/terazon_x31_28",
+        "task_title": "Destroy Chosh",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Bortas.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/terazon_x31_28",
+        "task_title": "Destroy Klingon Bortas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the prisoners to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 22
+          },
+          {
+            "type": "dark matter",
+            "value": 1
+          },
+          {
+            "type": "augment points",
+            "value": 150
+          },
+          {
+            "type": "khan noonien singh",
+            "value": 4
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "storyline": "A Klingon fleet was attacked by Augments and needs help."
+}

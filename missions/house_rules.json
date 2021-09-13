@@ -1,0 +1,89 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "House Rules",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/empire_of_ashes"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Kotahl back to Chang on Wesk.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/phelan_28",
+        "planet": "wesk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort Kotahl to Koltiska.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles in Koltiska.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 hostiles in Koltiska.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escort Kotahl to Losti.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles in Losti.",
+      "id": 5,
+      "task": {
+        "task_title": "Defeat 10 hostiles in Losti.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring proof of Kotahl\u2019s combat ability back to Chang on Wesk.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/phelan_28",
+        "planet": "wesk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_sterling_example"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 150
+      },
+      {
+        "type": "premium recruit token",
+        "value": 150
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Bring Kotahl back to Chang and appeal for his help in assembling a task force against the Borg."
+}

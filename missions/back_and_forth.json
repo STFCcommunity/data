@@ -1,0 +1,94 @@
+{
+  "faction": "romulan",
+  "mission_name": "Back and Forth",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/back_to_basics"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the trader.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hilo_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 15,000,000 Dilithium to the trader.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 15000000
+      }
+    },
+    {
+      "title": "Bring the shield to Rihala's Base.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/er_tama_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 45 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 45 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Commander.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/er_tama_45",
+        "task_title": "Destroy Romulan Commander Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/double_down"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 130
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 130
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -594000
+      },
+      {
+        "type": "romulan points",
+        "value": 538000
+      },
+      {
+        "type": "klingon points",
+        "value": -396000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Prepare for the next Romulan attack."
+}

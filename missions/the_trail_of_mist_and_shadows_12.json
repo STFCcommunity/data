@@ -1,0 +1,160 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "The Trail of Mist and Shadows",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_devil_you_know"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Slaver ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lodum_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Slaver.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lodum_9",
+        "task_title": "Destroy Slaver Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attend the auction.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bid on the auction?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bid on the item."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Do not bid."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 300 Dilithium for the stolen technology.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 300
+      }
+    },
+    {
+      "title": "Defeat the Orion guard.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape from the Orion ambush.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "recruit token",
+            "value": 20
+          },
+          {
+            "type": "officer xp",
+            "value": 2500
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 11000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/yesop_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion guard.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the auction master.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Auction Master",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape from the Orion assault.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "common",
+            "value": 8
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1000
+          },
+          {
+            "type": "dilithium",
+            "value": 190
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yesop_9",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_new_world_a_violent_world"
+  },
+  "recommended_level": 12,
+  "storyline": "Infiltrate an Orion tech auction."
+}

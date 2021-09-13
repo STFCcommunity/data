@@ -1,0 +1,92 @@
+{
+  "faction": "augment",
+  "mission_name": "Lessons of the Past",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/buyer_s_remorse"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Take Khan to Krah'Hor in Klingon space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track McGivers to Vos'Keth Station.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "planet": "vos'keth station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Station's Guard Patrol.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Guard Patrol",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Marla McGivers to Coridan.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "planet": "coridan i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Bounty Hunter.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "task_title": "Destroy Bounty Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Marla and Khan to Zonelif.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "planet": "zonelif",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/reunions"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "marla mcgivers",
+        "value": 7
+      },
+      {
+        "type": "15 minute speed up",
+        "value": 18
+      },
+      {
+        "type": "augment points",
+        "value": 40
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 600
+      }
+    ]
+  },
+  "storyline": "Track down the scientist responsible for Khan's eventual escape."
+}

@@ -1,0 +1,58 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Where the Faction is Fractioned",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_lesson_in_ethics"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Khan's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_title": "Destroy Khan's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Disable Mudd's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_title": "Destroy Mudd's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/how_to_disappear_completely"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "independent credits",
+        "value": 5
+      },
+      {
+        "type": "augment credits",
+        "value": 35
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop Mudd and Khan from killing each other."
+}

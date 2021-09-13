@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "Security Sweep",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_galileo_seven"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Patrol the Weh system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/weh_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles in Weh.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles in Weh.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/data_structure_overhaul"
+  },
+  "recommended_level": 9,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "barot",
+        "value": 4
+      },
+      {
+        "type": "1\u2605 battleship parts",
+        "value": 20
+      },
+      {
+        "type": "1\u2605 survey parts",
+        "value": 20
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5000
+      }
+    ]
+  },
+  "storyline": "Patrol nearby mining systems for Hostiles."
+}

@@ -1,0 +1,140 @@
+{
+  "faction": "klingon",
+  "mission_name": "Revolutions",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Begin the final assault on the Oligarchy.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of level 42 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of level 42 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_title": "Destroy Arkonian Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide how to finish the battle.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the Oligarchy's shuttle."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let the Oligarchy live."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the shuttle.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "planet": "new arkon",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report to Kang.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "1m parsteel token",
+            "value": 70
+          },
+          {
+            "type": "federation points",
+            "value": -131000
+          },
+          {
+            "type": "romulan points",
+            "value": -349400
+          },
+          {
+            "type": "klingon points",
+            "value": 260000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 60900000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report to Kang.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 900
+          },
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -131000
+          },
+          {
+            "type": "romulan points",
+            "value": -349400
+          },
+          {
+            "type": "klingon points",
+            "value": 260000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/guerilla_tactics"
+  },
+  "storyline": "Lead a final assault on the Arkonian Oligarchy."
+}

@@ -1,0 +1,84 @@
+{
+  "faction": "romulan",
+  "mission_name": "Re-Interference",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/risk_factor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Braak in Huebr.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the deep space relay in Hann.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the USS Galileo.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy USS Galileo",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the deep space relay.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/hann_26",
+        "planet": "uoqed",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escape before reinforcements arrive.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bait_and_switch"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 100
+      },
+      {
+        "type": "legionary blueprint part",
+        "value": 4
+      },
+      {
+        "type": "federation points",
+        "value": -576
+      },
+      {
+        "type": "romulan points",
+        "value": 1000
+      },
+      {
+        "type": "klingon points",
+        "value": -384
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Frame the Nausicaans."
+}

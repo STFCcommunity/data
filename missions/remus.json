@@ -1,0 +1,133 @@
+{
+  "faction": "romulan",
+  "mission_name": "Remus",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/summoner"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track down the Klingon ship with the captured Reman soldier.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pheben_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Klingons.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/pheben_39",
+        "task_title": "Destroy Klingon Captor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Secure the Reman's secrets.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attempt to transport the Reman to safety."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the ship with a direct hit"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return the Reman for debriefing.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan recruit token",
+            "value": 1500
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -100800
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -67200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "remus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report the death of the Reman soldier.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 40
+          }
+        ],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -100800
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -67200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "remus",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/incrimination"
+  },
+  "storyline": "A Reman soldier has been captured by the Klingons and must be saved or silenced before sensitive information is extracted from him."
+}

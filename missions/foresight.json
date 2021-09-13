@@ -1,0 +1,63 @@
+{
+  "faction": "federation",
+  "mission_name": "Foresight",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Scout the Romulan starbase in Rator.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Defender.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Romulan Defender",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Admiral Johnson with the intelligence.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/thama_32",
+        "planet": "mimazub",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/recompense"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 300
+      },
+      {
+        "type": "federation recruit token",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 23000
+      },
+      {
+        "type": "romulan points",
+        "value": -6900
+      },
+      {
+        "type": "klingon points",
+        "value": -26500
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Perform reconnaissance on a Romulan forward starbase in Rator."
+}
