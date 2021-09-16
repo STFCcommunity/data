@@ -1,0 +1,77 @@
+{
+  "faction": "neutral",
+  "mission_name": "In Position",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/outlaws"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout out a new home system for the Station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/skyedark_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the Eizeb system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/eizeb_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the Zeta Polis system.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zeta_polis_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move Station to a system of Level 15 or higher.",
+      "id": 5,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 15 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/vaults"
+  },
+  "recommended_level": 17,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 5000
+      },
+      {
+        "type": "2\u2605 survey parts",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 15000
+      }
+    ]
+  },
+  "storyline": "Search for a suitable system for Station relocation."
+}

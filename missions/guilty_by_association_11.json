@@ -1,0 +1,57 @@
+{
+  "faction": "neutral",
+  "mission_name": "Guilty By Association",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/inside_man"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Arvent near Orion Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 6 Orion Manifests from Orion or Nausicaa.",
+      "id": 2,
+      "task": {
+        "resource": "orion manifest",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 6
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_warp_trail_less_traveled"
+  },
+  "recommended_level": 11,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 2,
+        "rarity": "common",
+        "value": 75
+      }
+    ],
+    "others": [
+      {
+        "type": "1\u2605 survey parts",
+        "value": 40
+      },
+      {
+        "type": "2\u2605 interceptor parts",
+        "value": 7
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Collect manifests to prove yourself to the Orion Underboss Arvent."
+}

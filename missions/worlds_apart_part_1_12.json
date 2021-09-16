@@ -1,0 +1,70 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Confront the mysterious ship.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to the coordinates.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 10 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 10 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Investigate the crash site.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 7000
+      },
+      {
+        "type": "tritanium",
+        "value": 1000
+      }
+    ]
+  },
+  "storyline": "Investigate the crash site."
+}

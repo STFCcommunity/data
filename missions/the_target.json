@@ -1,0 +1,52 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Target",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/what_we_become"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alta_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alta_25",
+        "task_title": "Destroy Klingon Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/ignorance"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 210
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the rumor about Dalen\u2019s location."
+}

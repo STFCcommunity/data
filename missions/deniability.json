@@ -1,0 +1,73 @@
+{
+  "faction": "federation",
+  "mission_name": "Deniability",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/accountability"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track down the remaining Raiders.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Raider captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "task_title": "Destroy Raider Captain",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/vulnerability"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 10
+      },
+      {
+        "type": "federation credits",
+        "value": 35
+      },
+      {
+        "type": "federation points",
+        "value": 400
+      },
+      {
+        "type": "romulan points",
+        "value": -64
+      },
+      {
+        "type": "klingon points",
+        "value": -288
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 60000
+      }
+    ]
+  },
+  "storyline": "The Nausicaans try to steal the gas after hearing about its poisonous qualities."
+}

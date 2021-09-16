@@ -1,0 +1,72 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Blind Data Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/blind_data_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to Shynna.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 300,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 300000
+      }
+    },
+    {
+      "title": "Defeat the smuggler.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_title": "Destroy Smuggler Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/blind_data_part_3"
+  },
+  "recommended_level": 31,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4 hr peace shield",
+        "value": 1
+      },
+      {
+        "type": "officer xp",
+        "value": 137000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 879000
+      }
+    ]
+  },
+  "storyline": "Return to the buyer."
+}

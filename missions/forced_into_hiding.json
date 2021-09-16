@@ -1,0 +1,163 @@
+{
+  "faction": "federation",
+  "mission_name": "Forced into Hiding",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/acquiring_capital"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout the first potential system for the Andorian relocation.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_calgary_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Territorial Thug.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_calgary_43",
+        "task_title": "Destroy Territorial Thug",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Scout the second potential system for the Andorian relocation.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kri_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to deal with Letuh.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bribe Letuh."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Intimidate Letuh."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 8,100,000 Dilithium to Letuh so the Andorians can stay.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8100000
+      }
+    },
+    {
+      "title": "Return to your Station with your findings.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 100
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 28
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": 311000
+          },
+          {
+            "type": "romulan points",
+            "value": -107000
+          },
+          {
+            "type": "klingon points",
+            "value": -481400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Intimidate Letuh.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kri_44",
+        "task_title": "Destroy Letuh",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with your findings.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "100k dilithium token",
+            "value": 38
+          },
+          {
+            "type": "federation points",
+            "value": 311000
+          },
+          {
+            "type": "romulan points",
+            "value": -107000
+          },
+          {
+            "type": "klingon points",
+            "value": -481400
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 3780000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/banishment"
+  },
+  "storyline": "Scout systems deep in Federation space for a potential new home for the Andorians."
+}

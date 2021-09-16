@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Age of Exploration",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/shackled_and_sold"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the slaver fleet to Beta Niobe.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pick up the slaves from the surface of Sarpeidon.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "planet": "sarpeidon",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the slaves to Orion Prime.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station and contact Aivin.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_debt_repaid"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 12
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Discover the secrets of Beta Niobe."
+}

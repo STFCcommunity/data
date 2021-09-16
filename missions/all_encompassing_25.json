@@ -1,0 +1,76 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/beta_assembly_25"
+    }
+  ],
+  "mission_name": "All-Encompassing",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/don_t_look_down"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go into Breen territory.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack a Breen ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "task_title": "Destroy Breen Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defend yourself from the retaliation.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "task_title": "Destroy Breen Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Tholians.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 4
+      }
+    ],
+    "others": [
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 335000
+      }
+    ]
+  },
+  "storyline": "Assist in the Tholian expansion."
+}

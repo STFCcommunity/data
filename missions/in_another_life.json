@@ -1,0 +1,135 @@
+{
+  "faction": "federation",
+  "mission_name": "In Another Life",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/consequences"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit Ontella on Riktor II.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/riktor_38",
+        "planet": "riktor ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take Ontella to Azati Prime.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/azati_34",
+        "planet": "azati prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Explain yourself to General Ontella.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Admit that you altered the timeline to save Andoria."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Tell Ontella that he imagined the entire thing."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return Ontella to Andoria Prime.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 500
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 800
+          },
+          {
+            "type": "federation credits",
+            "value": 400
+          },
+          {
+            "type": "federation points",
+            "value": 60000
+          },
+          {
+            "type": "romulan points",
+            "value": -17300
+          },
+          {
+            "type": "klingon points",
+            "value": -77800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return Ontella to Andoria Prime.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 10
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 400
+          },
+          {
+            "type": "federation points",
+            "value": 60000
+          },
+          {
+            "type": "romulan points",
+            "value": -17300
+          },
+          {
+            "type": "klingon points",
+            "value": -77800
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 290000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/no_recollection"
+  },
+  "storyline": "You are accused of breaking the Temporal Prime Directive."
+}

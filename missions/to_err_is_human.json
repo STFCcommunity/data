@@ -1,0 +1,56 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "To Err is Human",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/to_forgive_is_divine"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Destroy the Borg ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mapic_25",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retrieve the data from the Starfleet ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mapic_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/vulnerable"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "one of ten",
+        "value": 1
+      },
+      {
+        "type": "officer xp",
+        "value": 53000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Retrieve the data from Ritsche\u2019s ship."
+}

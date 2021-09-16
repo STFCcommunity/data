@@ -1,0 +1,89 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Prestige",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_failure"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Try to rescue Veruul.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "planet": "fonn",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "task_title": "Destroy Klingon Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "task_title": "Destroy Starfleet Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 42 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 42 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_turn"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 160
+      },
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 160
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Rescue Veruul from the Klingons."
+}

@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "mission_name": "Said The Spider to The Fly",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/smokescreen"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Kayla and wait for the attacker to arrive.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Interrogate the unidentified vessel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_title": "Destroy Unidentified Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Intercept the arrival of the unknown vessel in Kayla.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pursue the assailant\u2019s ship to Rainsford.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rainsford_20",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/apocrypha"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 29820000
+      }
+    ]
+  },
+  "storyline": "Lure the peace summit attacker out of hiding."
+}

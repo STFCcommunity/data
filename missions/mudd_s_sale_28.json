@@ -1,0 +1,66 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Mudd's Sale",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/returning_son"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect the items.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "planet": "lydupp",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the buyer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the \"buyer\".",
+      "id": 3,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_title": "Destroy Buyer's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/breakout"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 181000
+      },
+      {
+        "type": "dilithium",
+        "value": 37000
+      }
+    ]
+  },
+  "storyline": "Find a seller for the rifles."
+}

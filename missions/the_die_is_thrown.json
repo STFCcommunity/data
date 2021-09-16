@@ -1,0 +1,132 @@
+{
+  "faction": "augment",
+  "mission_name": "The Die is Thrown",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_specter_of_terazon_x31"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with Khan in Kor Na Ron.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kor_na_ron_27",
+        "planet": "kor na ron",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give 3 Dark Matter samples to Khan.",
+      "id": 2,
+      "task": {
+        "resource": "dark matter",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3
+      }
+    },
+    {
+      "title": "Activate the reactor in Gealan.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/gealan_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with the Federation Agent.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with the Federation Agent.",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the Federation Agent."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Tell him that you will consider his proposal carefully."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the Federation Agent.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Federation Agent",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Speak with Khan on Kor Na Ron.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "8 hour speed up",
+            "value": 5
+          },
+          {
+            "type": "augment points",
+            "value": 200
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 821000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kor_na_ron_27",
+        "planet": "kor na ron",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with Khan on Kor Na Ron.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "augment points",
+            "value": 200
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 31000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kor_na_ron_27",
+        "planet": "kor na ron",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/volatile_combinations"
+  },
+  "storyline": "Work with Khan to bring his experimental reactor online and advance his research into new technologies."
+}

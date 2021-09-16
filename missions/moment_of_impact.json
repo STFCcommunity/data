@@ -1,0 +1,99 @@
+{
+  "faction": "romulan",
+  "mission_name": "Moment of Impact",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/obstruction"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the assault fleet in Azha.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azha_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the Legionary into Khitomer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles of Level 22 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 8 Hostiles of Level 22 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy the Klingon Bortas.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_title": "Destroy Klingon Bortas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Klingon D4.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_title": "Destroy Klingon D4",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to Draken.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/interference"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "common",
+        "value": 250
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 60
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 110
+      },
+      {
+        "type": "federation points",
+        "value": -317
+      },
+      {
+        "type": "romulan points",
+        "value": 600
+      },
+      {
+        "type": "klingon points",
+        "value": -211
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help the Corvallens fight the Klingons."
+}

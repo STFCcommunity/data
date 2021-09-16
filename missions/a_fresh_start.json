@@ -1,0 +1,119 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Fresh Start",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/stand_your_ground"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring the refugees to Tovla.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tovla_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles of level 43 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 hostiles of level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring the refugees to Imada.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/imada_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles of level 43 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 8 hostiles of level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the bandit leader.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/imada_44",
+        "task_title": "Destroy Bandit Leader Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Where should the refugees settle?",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Hannlaw."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Imada."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bring the refugees to their new home.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "deep space datapad",
+            "value": 1
+          },
+          {
+            "type": "1m parsteel token",
+            "value": 300
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/hannlaw_44",
+        "planet": "v'sanaz",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the refugees to their new home.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "100k dilithium token",
+            "value": 120
+          },
+          {
+            "type": "deep space datapad",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/imada_44",
+        "planet": "kaskaah",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Help a retired Starfleet officer find a new home for a group of refugees."
+}

@@ -1,0 +1,67 @@
+{
+  "faction": "neutral",
+  "mission_name": "Spinning Plates",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/ulterior_motives"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to the site of the colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/clytomenes_12",
+        "planet": "apcor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the first Klingon Bombardier.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/clytomenes_12",
+        "task_title": "Destroy Klingon Bombardier",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the next Klingon Bombardier.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/clytomenes_12",
+        "task_title": "Destroy Klingon Bombardier",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the final Klingon Bombardier.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/clytomenes_12",
+        "task_title": "Destroy Klingon Bombardier",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/iteration"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 2500
+      },
+      {
+        "type": "ship xp",
+        "value": 300
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Respond to a distress call from the colony."
+}

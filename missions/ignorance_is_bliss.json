@@ -1,0 +1,76 @@
+{
+  "faction": "neutral",
+  "mission_name": "Ignorance is Bliss",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/curiosity"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the object in New Vulcan space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 1 Deep Space Datapad by completing missions in Deep Space.",
+      "id": 2,
+      "task": {
+        "resource": "deep space datapad",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Donate 1 G4 Datapad.",
+      "id": 3,
+      "task": {
+        "resource": "deep space datapad",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Bring the object to the aliens.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/revelations"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 32
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 32
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 32
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Investigate the Progenitors."
+}

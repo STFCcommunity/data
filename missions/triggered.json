@@ -1,0 +1,74 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/rator_29"
+    }
+  ],
+  "mission_name": "Triggered",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Collect the particle rifles in Azati.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "planet": "talvash station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 1M Dilithium for the particle rifles.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Deliver the weapons to the Romulan agent.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/iapedes_36",
+        "planet": "iapedes",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 5
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 300
+      },
+      {
+        "type": "encryption key",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": -17700
+      },
+      {
+        "type": "romulan points",
+        "value": 23000
+      },
+      {
+        "type": "klingon points",
+        "value": -11800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "The Romulans have commissioned a cache of ground troop ready combat particle rifles from outsider arms dealers."
+}

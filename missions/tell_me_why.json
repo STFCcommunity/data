@@ -1,0 +1,61 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Tell Me Why",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/homecoming"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the attacker.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_title": "Destroy Unknown Attacker",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Examine the wreckage.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dark_words"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 25
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 100000
+      },
+      {
+        "type": "dilithium",
+        "value": 22000
+      }
+    ]
+  },
+  "storyline": "Investigate another attack."
+}

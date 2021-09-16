@@ -1,0 +1,81 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/gorath_38"
+    }
+  ],
+  "mission_name": "The Kriosians",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the Kriosian ship's landing zone on Vasunim.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/terminimurus_39",
+        "planet": "vasunim",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay the landing crew off with 50,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50000
+      }
+    },
+    {
+      "title": "Disable the Kriosian ship before it escapes.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/terminimurus_39",
+        "task_title": "Destroy Kriosian Rebels",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the Kriosian rebels' location to General Kurgah.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ty_gokor_39",
+        "planet": "reheb",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 1200
+      },
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -46800
+      },
+      {
+        "type": "romulan points",
+        "value": -124800
+      },
+      {
+        "type": "klingon points",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 17029000
+      }
+    ]
+  },
+  "storyline": "Interrogate a Kriosian prisoner on Rura Penthe and root out the core of his underground insurgency."
+}

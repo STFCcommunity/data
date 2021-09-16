@@ -1,0 +1,120 @@
+{
+  "faction": "federation",
+  "mission_name": "Loose Ends",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Track the drone ship's whereabouts.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Dilemma - Roms or Feds",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Warn the Romulan spies that their location is compromised."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Bombard the Romulan intelligence units from orbit."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Romulan defense ship.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 26
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -32000
+          },
+          {
+            "type": "klingon points",
+            "value": -144000
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 3822000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_title": "Destroy Romulan Defense Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the fleeing Romulan escape vessel.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 500
+          },
+          {
+            "type": "romulan recruit token",
+            "value": 500
+          },
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -32000
+          },
+          {
+            "type": "klingon points",
+            "value": -144000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sirius_36",
+        "task_title": "Destroy Romulan Escape Vessel",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/espionage"
+  },
+  "storyline": "The Vulcan Scientist has tricked the Romulan Drone ship to a location inside Federation space instead of beyond the Romulan border."
+}

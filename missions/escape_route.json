@@ -1,0 +1,79 @@
+{
+  "faction": "romulan",
+  "mission_name": "Escape Route",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/guerilla_warfare"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout locations for a new Corvallen colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sotavi_41",
+        "planet": "vindt",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find a more livable planet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tovla_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 Hostiles Level 38 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 12 Hostiles Level 38 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/preparations"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "3 hour repair speed up",
+        "value": 6
+      },
+      {
+        "type": "latinum",
+        "value": 700
+      },
+      {
+        "type": "federation points",
+        "value": -172800
+      },
+      {
+        "type": "romulan points",
+        "value": 180000
+      },
+      {
+        "type": "klingon points",
+        "value": -115200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Scout colony locations."
+}

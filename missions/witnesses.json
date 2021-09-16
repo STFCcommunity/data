@@ -1,0 +1,79 @@
+{
+  "faction": "federation",
+  "mission_name": "Witnesses",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/pieces_of_the_puzzle"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Venture into Rixos to find more information on the USS Phillips.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 45 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 45 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Venture further into Klingon territory to find more information.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 hostiles of Level 46 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 6 hostiles of Level 46 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_phillips_incident"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "1 hour repair speed up",
+        "value": 24
+      },
+      {
+        "type": "federation points",
+        "value": 448000
+      },
+      {
+        "type": "romulan points",
+        "value": -161300
+      },
+      {
+        "type": "klingon points",
+        "value": -725800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 151200000
+      }
+    ]
+  },
+  "storyline": "Interrogate Klingon hostiles until you can find more information on Venonn\u2019s mutiny."
+}

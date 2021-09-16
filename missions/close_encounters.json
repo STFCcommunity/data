@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "Close Encounters",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/an_appeal_to_reason"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Federation envoy and hear their plan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kor_ar_ka_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Intercept the Federation envoy before they reach the Progenitors.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kri_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Federation Envoy ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kri_44",
+        "task_title": "Destroy Federation Envoy",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the Federation Envoy to safety on Bonser.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/st_9417_45",
+        "planet": "bonser",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/show_of_force"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 230
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 4410000
+      }
+    ]
+  },
+  "storyline": "Make contact with a Federation envoy."
+}

@@ -1,0 +1,86 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/rakkaus_16"
+    }
+  ],
+  "mission_name": "Carrion Spoils",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate the source of the distress beacon.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Scavenger, Razehk.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/coridan_16",
+        "task_title": "Destroy Razehk",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the Stranded Miner.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Rescue the Miner and deliver the ship\u2019s cargo to Deneva."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Claim the ship\u2019s cargo for yourself."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Escort the Stranded Miner and their cargo back to Deneva.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "tricorder",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station with the stolen resources.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "tricorder",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "storyline": "Intercept a distress beacon and investigate the source."
+}

@@ -1,0 +1,87 @@
+{
+  "faction": "neutral",
+  "mission_name": "Covering Our Tracks",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/out_of_stock"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Ferraria.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ferraria_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Beam Burnham onto the Romulan Outpost.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ferraria_39",
+        "planet": "lossa'gror",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Gladius.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ferraria_39",
+        "task_title": "Destroy Romulan Gladius",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attempt to evade the Romulan pursuit in Olorun.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/olorun_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Augur.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/olorun_39",
+        "task_title": "Destroy Romulan Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sightings"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "independent credits",
+        "value": 12
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 656000
+      }
+    ]
+  },
+  "storyline": "Steal cloaking technology from a Romulan outpost."
+}

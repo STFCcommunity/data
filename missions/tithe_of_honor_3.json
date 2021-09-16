@@ -1,0 +1,92 @@
+{
+  "faction": "neutral",
+  "mission_name": "Tithe of Honor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_art_dealer"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Destroy 3 hostiles of Level 2 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Destroy 3 hostiles of Level 2 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Choose a target to appease Captain Kurbon.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the Orion Saboteur."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack the Federation Science Vessel"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the Orion Saboteur.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 explorer parts",
+            "value": 8
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 240
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Orion Saboteur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Federation Science Vessel.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 explorer parts",
+            "value": 12
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 160
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Federation Science Vessel",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/crosshairs"
+  },
+  "recommended_level": 3,
+  "storyline": "Destroy three hostile ships to appease the Klingons."
+}

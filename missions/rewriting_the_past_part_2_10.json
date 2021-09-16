@@ -1,0 +1,83 @@
+{
+  "arc": "tng arc 2",
+  "faction": "neutral",
+  "mission_name": "Rewriting the Past Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/rewriting_the_past_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Enter Rua.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rua_8",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 hostiles of Level 8 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 hostiles of Level 8 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Infiltrate the first prison.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rua_8",
+        "planet": "lixeqan",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Infiltrate the second prison.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rua_8",
+        "planet": "woqexug",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the prisoners somewhere safe.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/bulut_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/rewriting_the_past_part_1"
+  },
+  "recommended_level": 10,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5000
+      }
+    ]
+  },
+  "storyline": "Find the prison."
+}

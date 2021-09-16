@@ -1,0 +1,84 @@
+{
+  "faction": "romulan",
+  "mission_name": "A New Home",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_proposition"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the new colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the rebel base to begin evacuations.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Corvallen refugees to their new home.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Get back to the rebel base.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the Corvallen Loyalist interference.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_title": "Destroy Corvallen Loyalist Explorer",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/keep_your_enemies_closer"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 2880000
+      }
+    ]
+  },
+  "storyline": "Inspect the new colony."
+}

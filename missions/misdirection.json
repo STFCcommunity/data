@@ -1,0 +1,69 @@
+{
+  "faction": "augment",
+  "mission_name": "Misdirection",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/one_man_s_trash"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Ambush the bounty hunter.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_title": "Destroy Bounty Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of level 15 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of level 15 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow John Harrison to the Zaurak system.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_title": "Destroy Starfleet Vessel",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/uncaged"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "john harrison",
+        "value": 7
+      },
+      {
+        "type": "15 minute speed up",
+        "value": 19
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2700
+      }
+    ]
+  },
+  "storyline": "A bounty hunter is searching for Khan."
+}

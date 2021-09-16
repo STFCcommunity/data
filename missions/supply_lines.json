@@ -1,0 +1,80 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/quvat_38"
+    }
+  ],
+  "mission_name": "Supply Lines",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Locate the Independents led by Captain Hayden.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/b_moth_39",
+        "planet": "mo'mlp",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy Hayden's personal guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/b_moth_39",
+        "task_title": "Destroy Hayden's Independents",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Disable Captain Hayden's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/b_moth_39",
+        "task_title": "Destroy Captain Hayden",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the Independents back to neutral space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/tellun_7",
+        "planet": "troyius",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 60
+      },
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -45600
+      },
+      {
+        "type": "romulan points",
+        "value": -121600
+      },
+      {
+        "type": "klingon points",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 23800000
+      }
+    ]
+  },
+  "storyline": "Swat the Independent insects that buzz around the prosperous Klingon agricultural zones."
+}

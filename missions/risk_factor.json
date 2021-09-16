@@ -1,0 +1,170 @@
+{
+  "faction": "romulan",
+  "mission_name": "Risk Factor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/repeat_business"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Rihala on Rosec.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rosec_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide to help or kill the Nausicaan mercenaries.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the Nausicaan Mercenaries."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Agree to break Braak out of prison."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat 16 hostiles of level 22 of higher.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 16 hostiles of level 22 of higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Mercenary.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rosec_22",
+        "task_title": "Destroy Nausicaan Mercenary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 500
+          }
+        ],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 27
+          },
+          {
+            "type": "romulan credits",
+            "value": 100
+          },
+          {
+            "type": "federation points",
+            "value": -576
+          },
+          {
+            "type": "romulan points",
+            "value": 1000
+          },
+          {
+            "type": "klingon points",
+            "value": -384
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Find the Starfleet penal ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the escort.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_title": "Destroy Starfleet Escort Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Disable the penal vessel.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take Braak to Nausicaa Prime.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan recruit token",
+            "value": 250
+          },
+          {
+            "type": "officer xp",
+            "value": 57000
+          },
+          {
+            "type": "romulan credits",
+            "value": 100
+          },
+          {
+            "type": "federation points",
+            "value": -576
+          },
+          {
+            "type": "romulan points",
+            "value": 1000
+          },
+          {
+            "type": "klingon points",
+            "value": -384
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/re_interference"
+  },
+  "storyline": "Deal with the remaining Nausicaan mercenaries."
+}

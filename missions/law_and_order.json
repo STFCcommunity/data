@@ -1,0 +1,59 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/thama_32"
+    }
+  ],
+  "mission_name": "Law and Order",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate the scene of the attack on Azati Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "planet": "azati prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Capture the Suliban Raider.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_title": "Destroy Suliban Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Capture the Suliban Raider Captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_title": "Destroy Suliban Raider Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the prisoners to Suaneh.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/thama_32",
+        "planet": "suaneh",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1650000
+      }
+    ]
+  },
+  "storyline": "Help the Andorians maintain law and order by capturing two dangerous raiders."
+}

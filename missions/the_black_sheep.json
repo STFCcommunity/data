@@ -1,0 +1,73 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Black Sheep",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/truth_and_rumor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the source of the distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ko_stok_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 43 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ko_stok_44",
+        "task_title": "Destroy Klingon Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Get Koroth to safety.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/imada_44",
+        "planet": "kaskaah",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "deep space datapad",
+        "value": 1
+      },
+      {
+        "type": "1m parsteel token",
+        "value": 140
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Klingon ambush."
+}

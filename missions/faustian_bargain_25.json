@@ -1,0 +1,120 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Faustian Bargain",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/swift_reprisal"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Orion Syndicate on Orion Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Intercept the target in Hann.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with the target.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the target."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Allow the target to escape."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the target.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Amira",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to the Orion Syndicate on Orion Prime.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "cybernetic fragments",
+            "value": 100
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 187000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the target to a safe location on Zopal.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/durchman_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report back to the Orion Syndicate on Orion Prime.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "cybernetic fragments",
+            "value": 100
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 160
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/trespasser"
+  },
+  "recommended_level": 25,
+  "storyline": "Strike a morally dubious deal with the Orion Syndicate in exchange for Cybernetic Fragments."
+}

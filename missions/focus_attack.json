@@ -1,0 +1,82 @@
+{
+  "faction": "romulan",
+  "mission_name": "Focus Attack",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/blackout"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Pick up the planetary explosive device on Nelvana II.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelvana_32",
+        "planet": "nelvana ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Prepare the bombardment of Burud.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Andorian defender.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_title": "Destroy Andorian Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring word of the destruction of the Burud central district.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/terix_38",
+        "planet": "terixos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/for_the_greater_good"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 5
+      },
+      {
+        "type": "romulan credits",
+        "value": 280
+      },
+      {
+        "type": "federation points",
+        "value": -13400
+      },
+      {
+        "type": "romulan points",
+        "value": 18000
+      },
+      {
+        "type": "klingon points",
+        "value": -8900
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2790000
+      }
+    ]
+  },
+  "storyline": "Join the Suliban assault on the Andorian colony on Burud."
+}

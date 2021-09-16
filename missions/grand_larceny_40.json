@@ -1,0 +1,62 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Grand Larceny",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/liquidation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tombstone_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the bounty hunter.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tombstone_28",
+        "task_title": "Destroy Bounty Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the wreckage.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tombstone_28",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/seeing_double"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "independent credits",
+        "value": 20
+      },
+      {
+        "type": "latinum",
+        "value": 130
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 292000
+      }
+    ]
+  },
+  "storyline": "Use the Exchange data leak to find VESTA."
+}

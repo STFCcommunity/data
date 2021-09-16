@@ -1,0 +1,204 @@
+{
+  "faction": "romulan",
+  "mission_name": "Kill the Shadow",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet Vorun for the Interrogation.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Talk to the Rebel Scout.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "planet": "firenze",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with the former-Loyalist guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Who will you accuse of being a spy?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Evacuation Coordinator."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Location Scout."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Former Loyalist Guard."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Find the Evacuation Coordinator.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill the Evacuation Coordinator.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 1200
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common explorer parts",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -262100
+          },
+          {
+            "type": "romulan points",
+            "value": 260000
+          },
+          {
+            "type": "klingon points",
+            "value": -174700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_title": "Destroy Evacuation Coordinator Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Location Scout.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yreva_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill the Location Scout.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 1200
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common battleship parts",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -262100
+          },
+          {
+            "type": "romulan points",
+            "value": 260000
+          },
+          {
+            "type": "klingon points",
+            "value": -174700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yreva_41",
+        "task_title": "Destroy Location Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Loyalist Guard.",
+      "id": 5,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/ortexa_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill the former-Loyalist Guard.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 1200
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common interceptor parts",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -262100
+          },
+          {
+            "type": "romulan points",
+            "value": 260000
+          },
+          {
+            "type": "klingon points",
+            "value": -174700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/ortexa_41",
+        "task_title": "Destroy Former-Loyalist Guard Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_best_defense"
+  },
+  "storyline": "Figure out the identity of the spy."
+}

@@ -1,0 +1,80 @@
+{
+  "faction": "klingon",
+  "mission_name": "A Sign of Things to Come",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/seek_and_destroy"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Raider in Fastolf.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 23 hostiles of level 20 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 23 hostiles of level 20 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy the Gorn Raider.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_title": "Destroy Gorn Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the D3 to Morska.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_first_flight"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 50
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 16
+      },
+      {
+        "type": "federation points",
+        "value": -126
+      },
+      {
+        "type": "romulan points",
+        "value": -336
+      },
+      {
+        "type": "klingon points",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 18000
+      }
+    ]
+  },
+  "storyline": "Use the subspace weaponry."
+}

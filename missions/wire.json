@@ -1,0 +1,58 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/ursva_40"
+    }
+  ],
+  "mission_name": "Wire",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Deliver the equipment to Nausicaa Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the saboteur.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Saboteur",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -48000
+      },
+      {
+        "type": "romulan points",
+        "value": -128000
+      },
+      {
+        "type": "klingon points",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 24752000
+      }
+    ]
+  },
+  "storyline": "Deliver some long range scanning equipment to a Klingon-friendly Warlord on Nausicaa Prime."
+}

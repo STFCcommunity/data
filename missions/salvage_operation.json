@@ -1,0 +1,148 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/deneva_15"
+    }
+  ],
+  "mission_name": "Salvage Operation",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Recover Klingon Data Core.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction receives the salvaged data.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "<size=24>Deliver the Core to Starfleet.</size>"
+          },
+          {
+            "option_id": 2,
+            "option_title": "<size=24>Deliver the Core to the Klingons.</size>"
+          },
+          {
+            "option_id": 3,
+            "option_title": "<size=24>Deliver the Core to the Romulans.</size>"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Deliver the Core to Starfleet.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "hikaru sulu",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": 250
+          },
+          {
+            "type": "romulan points",
+            "value": -100
+          },
+          {
+            "type": "klingon points",
+            "value": -100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the Core to the Klingons.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "woteln",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -100
+          },
+          {
+            "type": "romulan points",
+            "value": -100
+          },
+          {
+            "type": "klingon points",
+            "value": 250
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the Core to the Romulans.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "vella",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -100
+          },
+          {
+            "type": "romulan points",
+            "value": 250
+          },
+          {
+            "type": "klingon points",
+            "value": -100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Recover whatever you can from the wreckage of a Klingon D4."
+}

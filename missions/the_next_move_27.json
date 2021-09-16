@@ -1,0 +1,81 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Next Move",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/to_the_surface"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Join the battle.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Starfleet Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Save the Klingon commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the Commander to Klingon space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/hoeven_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/war_cries"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": -2600
+      },
+      {
+        "type": "romulan points",
+        "value": -6900
+      },
+      {
+        "type": "klingon points",
+        "value": 8000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 57000
+      }
+    ]
+  },
+  "storyline": "Combat the Starfleet retaliation."
+}

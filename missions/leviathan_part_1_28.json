@@ -1,0 +1,89 @@
+{
+  "arc": "tos arc 3",
+  "faction": "neutral",
+  "mission_name": "Leviathan Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/leviathan_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the USS Enterprise in Gemet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attend the briefing with Admiral Strode on Starbase 74.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "starbase 74",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the evacuation fleet to Risette.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/risette_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Rigellian Assailant.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/risette_28",
+        "task_title": "Destroy Rigellian Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 275,000 Tritanium to the evacuation fleet.",
+      "id": 5,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 275000
+      }
+    },
+    {
+      "title": "Ensure the evacuation fleet reaches Anymansbak safely.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/losti_28",
+        "planet": "anymansbak",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 16
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2215000
+      },
+      {
+        "type": "dilithium",
+        "value": 66000
+      }
+    ]
+  },
+  "storyline": "Help Starfleet evacuate the inhabitants of the Sol system."
+}

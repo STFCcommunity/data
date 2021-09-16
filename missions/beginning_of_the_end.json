@@ -1,0 +1,52 @@
+{
+  "faction": "neutral",
+  "mission_name": "Beginning of the End",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/live_long_and_prosper"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the attack.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Explorer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_title": "Destroy Vulcan Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Captain Mensala.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_title": "Destroy Captain Mensala",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/knowledge_is_its_own_reward"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 194400000
+      }
+    ]
+  },
+  "storyline": "Respond to an emergency transmission."
+}

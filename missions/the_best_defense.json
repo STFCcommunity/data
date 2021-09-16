@@ -1,0 +1,81 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Best Defense",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/kill_the_shadow"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defend the Colony from the Loyalists.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "planet": "firenze",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 25 hostiles of Level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 25 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Lieutenant Lotem for good.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_title": "Destroy Lieutenant Lotem's Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_proposition"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "1m parsteel token",
+        "value": 60
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 56700000
+      }
+    ]
+  },
+  "storyline": "Stop the Loyalist onslaught."
+}

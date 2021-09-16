@@ -1,0 +1,86 @@
+{
+  "faction": "klingon",
+  "mission_name": "Believe It When I See It",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/sacrilege"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the mine company owner to Beta Niobe.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Assassin.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_title": "Destroy Assassin",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Meet with the Information Dealer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 16,200,000 Tritanium.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 16200000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/buried_secrets"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 26
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -131000
+      },
+      {
+        "type": "romulan points",
+        "value": -349400
+      },
+      {
+        "type": "klingon points",
+        "value": 260000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Dig deeper into the mining company that discovered the Tomb of Kahless."
+}

@@ -1,0 +1,70 @@
+{
+  "arc": "tos arc 3",
+  "faction": "neutral",
+  "mission_name": "Leviathan Part 7",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/leviathan_part_8"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the Progenitor Sphere's signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/arcadion_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Beam 75,000 Dilihtium to the Sphere's ionization chamber.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 75000
+      }
+    },
+    {
+      "title": "Escape the Sphere's blast radius.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/niawillen_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/leviathan_part_6"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1878000
+      },
+      {
+        "type": "tritanium",
+        "value": 277000
+      },
+      {
+        "type": "dilithium",
+        "value": 56000
+      }
+    ]
+  },
+  "storyline": "Help Scotty extract the data core of a Progenitor Sphere."
+}

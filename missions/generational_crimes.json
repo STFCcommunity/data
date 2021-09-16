@@ -1,0 +1,82 @@
+{
+  "faction": "klingon",
+  "mission_name": "Generational Crimes",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/interception"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the USS Enterprise in Nasturta.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the Enterprise to Kulug.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "planet": "kulug",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Starfleet escort.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_title": "Destroy Starfleet Escort Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the USS Erickson.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_title": "Destroy USS Erickson",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/loyalties_tested"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 80
+      },
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 80
+      },
+      {
+        "type": "federation points",
+        "value": -221
+      },
+      {
+        "type": "romulan points",
+        "value": -589
+      },
+      {
+        "type": "klingon points",
+        "value": 800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 228000
+      }
+    ]
+  },
+  "storyline": "Generational Crimes"
+}

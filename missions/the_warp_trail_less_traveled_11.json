@@ -1,0 +1,119 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Warp Trail Less Traveled",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/guilty_by_association"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Corvallen agent on Phosba.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "planet": "phosba",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide where to make the delivery.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Target Orion Prime."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Target Nausicaa."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Deploy the jammer at Orion Prime.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Orion Enforcer.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "lucia gonzales",
+            "value": 3
+          },
+          {
+            "type": "officer xp",
+            "value": 2500
+          },
+          {
+            "type": "1\u2605 survey parts",
+            "value": 25
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Make the delivery to Nausicaa.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "grace chen",
+            "value": 3
+          },
+          {
+            "type": "1\u2605 survey parts",
+            "value": 25
+          },
+          {
+            "type": "ship xp",
+            "value": 120
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/refining_plant"
+  },
+  "recommended_level": 11,
+  "storyline": "Deploy a jamming device in either Orion or Nausicaa to allow a Corvallen spy to infiltrate the Orion Syndicate."
+}

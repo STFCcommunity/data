@@ -1,0 +1,76 @@
+{
+  "arc": "swarm arc 1",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/niawillen_28"
+    }
+  ],
+  "mission_name": "Predatory",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/i_am_not_easy_to_find"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the Swarm signal in Alpha Horunia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alpha_horunia_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Contact the civilian colony on New Macau.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alpha_horunia_26",
+        "planet": "new macau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Romulan to Kaikara.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Swarm Interceptor.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy Lead Swarm Group",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the Romulan to Kaikara Prime.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "planet": "kaikara prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 1
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a strange signal from an unlikely source."
+}

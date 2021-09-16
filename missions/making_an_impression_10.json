@@ -1,0 +1,47 @@
+{
+  "faction": "neutral",
+  "mission_name": "Making an Impression",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/refining_plant"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the signal detected in the Orion system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 Hostiles in the Orion system.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 6 Hostiles in the Orion system.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/stockpiling_dilithium"
+  },
+  "recommended_level": 10,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 20
+      },
+      {
+        "type": "2\u2605 interceptor parts",
+        "value": 5
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assist Maia's investigation into strange readings emanating from the Orion system."
+}

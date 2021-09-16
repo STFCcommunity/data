@@ -1,0 +1,88 @@
+{
+  "faction": "romulan",
+  "mission_name": "Unbreakable",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/double_down"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get to Rihala's base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/er_tama_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 Hostiles of Level 44 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 Hostiles of Level 44 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Intercept the Romulan ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_title": "Destroy Romulan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Rihala's Base.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/er_tama_45",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/in_the_open"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 800
+      },
+      {
+        "type": "federation points",
+        "value": -594000
+      },
+      {
+        "type": "romulan points",
+        "value": 538000
+      },
+      {
+        "type": "klingon points",
+        "value": -396000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 175500000
+      }
+    ]
+  },
+  "storyline": "Defend Rihala\u2019s base."
+}

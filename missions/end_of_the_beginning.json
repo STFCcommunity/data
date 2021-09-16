@@ -1,0 +1,82 @@
+{
+  "faction": "neutral",
+  "mission_name": "End of the Beginning",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/operations_42"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Launch the assault on the Romulan station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Augur.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "task_title": "Destroy Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Gladius.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "task_title": "Destroy Romulan Gladius",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the station.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/yvnys_40",
+        "planet": "kincasa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Retreat to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/zero_sum_game"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 7
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 64380000
+      }
+    ]
+  },
+  "storyline": "Carry out an assault on a Romulan base."
+}

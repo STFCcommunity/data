@@ -1,0 +1,83 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Cold and Hunted",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/academy_dropout"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the first Borg attacker.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Borg Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the second Borg attacker.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Borg Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the final Borg attacker.",
+      "id": 3,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Borg Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Scout a secure system for relocation.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Recall to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move your Station to a system of Level 19 or higher.",
+      "id": 6,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 19 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bearer_of_bad_news"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 3205000
+      },
+      {
+        "type": "dilithium",
+        "value": 95000
+      }
+    ]
+  },
+  "storyline": "Defend your Station against Borg assailants."
+}

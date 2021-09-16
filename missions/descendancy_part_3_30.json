@@ -1,0 +1,128 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Descendancy Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/descendancy_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to the Voss system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with the Voss delegate.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/voss_20",
+        "planet": "rene",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Assist the Voss delegate or push her aside?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the Federation ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Disable the Voss Sentry."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet scout.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_title": "Destroy USS Colosseum",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Access the restricted database.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "30 minute speed up",
+            "value": 1
+          },
+          {
+            "type": "augment credits",
+            "value": 38
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1610000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Voss Sentry.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_title": "Destroy Voss Sentry",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Access the restricted database.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "augment credits",
+            "value": 38
+          },
+          {
+            "type": "30 minute speed up",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1610000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/descendancy_part_2"
+  },
+  "recommended_level": 30,
+  "storyline": "Learn why the Voss system was ejected from the Federation."
+}

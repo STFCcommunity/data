@@ -1,0 +1,90 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/rigel_13"
+    }
+  ],
+  "mission_name": "Life Support",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the lost Rigellian ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "planet": "lefomio",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide the best rescue plan.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy the Rigellian ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Return with help."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Rigel II",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "rigellian datapad",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 5000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Rigel II",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "rigellian datapad",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 5000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel ii",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 15,
+  "storyline": "A ship is trapped in a gravity well and requires emergency aid."
+}

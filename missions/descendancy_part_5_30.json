@@ -1,0 +1,53 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Descendancy Part 5",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Take Marla to Khan's laboratory.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rona_tan_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide Marla with 250 Corrupted Data.",
+      "id": 2,
+      "task": {
+        "resource": "corrupted data",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250
+      }
+    },
+    {
+      "title": "Take the embryo to Khan.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "30 minute speed up",
+            "value": 1
+          },
+          {
+            "type": "latinum     30 common plutonium",
+            "value": 13
+          }
+        ],
+        "resources": []
+      },
+      "task": {
+        "$ref": "systems/duriana_28",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/descendancy_part_4"
+  },
+  "recommended_level": 30,
+  "storyline": "Discover the secrets of the Voss experiment."
+}

@@ -1,91 +1,61 @@
-[
-  {
-    "faction": "federation",
-    "location": {
-      "$ref": "reference to system json",
-      "planet": "Andoria prime"
-    },
-    "mission_title": "Beneath the Ice",
-    "mission_type": "start",
-    "next_mission": {
-      "$ref": "reference to mission."
-    },
-    "objectives": [
-      {
-        "title": "Meet the Romulan Informant on Moya.",
-        "main_objective": {
-          "$ref": "#objectives/items"
-        },
-        "obj_id": 1,
-        "task": [
-          {
-            "$ref": "reference to system json",
-            "planet": "Moya",
-            "task_type": "travel"
-          },
-          {
-            "$ref": "reference to system json",
-            "task_title": "Destroy Suliban Interceptor",
-            "task_type": "destroy"
-          },
-          {
-            "$ref": "reference to system json",
-            "task_title": "Destroy Suliban Interceptor",
-            "task_type": "kill"
-          },
-          {
-            "resource": "dilithium",
-            "task_type": "deliver",
-            "value": 300
-          },
-          {
-            "options": [
-              {
-                "option_id": 1,
-                "option_title": "smuggle Garan across...",
-                "rewards": {
-                  "$ref": "reference"
-                }
-              }
-            ],
-            "task_type": "choose"
-          },
-          {
-            "task_title": "Return to your station",
-            "task_type": "return"
-          }
-        ]
-      }
-    ],
-    "previous_mission": {
-      "$ref": "reference to mission."
-    },
-    "recommended_ops": 27,
-    "rewards": [
-      {
+{
+  "arc": "borg arc 4",
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/elvros_47",
+      "planet": "strinax"
+    }
+  ],
+  "mission_name": "A Force of Nature",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/honor_for_three",
+      "option": 1
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Spock to Renon.",
+      "id": 1,
+      "rewards": {
         "materials": [
           {
             "type": "gas",
             "grade": 3,
             "rarity": "uncommon",
-            "value": 50
+            "value": 18
           }
         ],
         "others": [
           {
-            "type": "federation credits",
-            "value": 330
+            "type": "romulan points",
+            "value": -485000
           }
         ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 1
+            "value": 300
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Follow the Federation"
           }
         ],
-        "reward_id": 1
+        "task_type": "choose"
       }
-    ],
-    "storyline": "The emerging Aenar on Andoria..."
-  }
-]
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/still_standing"
+  },
+  "recommended_level": 28,
+  "storyline": "Attack the Romulan armory."
+}

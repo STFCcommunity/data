@@ -1,0 +1,74 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/new_dozaria_25"
+    }
+  ],
+  "mission_name": "Hanging by a Thread",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_secret_in_the_snow"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Trill rebels.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 30,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 30000
+      }
+    },
+    {
+      "title": "Stop the Trill attack.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_title": "Destroy Trill Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 26
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 600
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 111000
+      }
+    ]
+  },
+  "storyline": "Help rebuild the Trill rebel base."
+}

@@ -1,0 +1,72 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/deneb_38"
+    }
+  ],
+  "mission_name": "Espionage",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/loose_ends"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to the planet Fermo to pick up the Vulcan scientist.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/groombridge_34_40",
+        "planet": "fermo",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Alpha Centauri and track the Drone Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Drone Ship's defenses.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "task_title": "Destroy Drone Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 500
+      },
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 240
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -84200
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2147000
+      }
+    ]
+  },
+  "storyline": "Starfleet has found a Romulan controlled stealth drone ship gathering data in Alpha Centauri."
+}

@@ -1,0 +1,153 @@
+{
+  "faction": "klingon",
+  "mission_name": "Enlightenment",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet with Golbok on Kotavun.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/quv_lw_36",
+        "planet": "kotavun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Which Ritual will you undertake?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Fulfill the Ritual of Blood"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Fulfill the Ritual of Servitude"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy 15 Hostiles of Level 28 or higher.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Destroy 15 Hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Share your battle records with Golbok.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 1000
+          },
+          {
+            "type": "klingon credits",
+            "value": 250
+          },
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 210
+          },
+          {
+            "type": "federation points",
+            "value": -4300
+          },
+          {
+            "type": "romulan points",
+            "value": -11500
+          },
+          {
+            "type": "klingon points",
+            "value": 12000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/quv_lw_36",
+        "planet": "kotavun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 5,000,000 Parsteel.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 5000000
+      }
+    },
+    {
+      "title": "Return to Golbok.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/quv_lw_36",
+        "planet": "kotavun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give the 5,000,000 Parsteel to the Gorn.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 38
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 5
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 250
+          },
+          {
+            "type": "federation points",
+            "value": -4300
+          },
+          {
+            "type": "romulan points",
+            "value": -11500
+          },
+          {
+            "type": "klingon points",
+            "value": 12000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/passage_to_wisdom"
+  },
+  "storyline": "Please the Gorn by fulfilling a ritual to the Great Father."
+}

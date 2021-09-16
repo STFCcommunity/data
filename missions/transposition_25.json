@@ -1,0 +1,71 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Transposition",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/and_you_will_know_us_part_1"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rush to Dalen\u2019s defense on Qualor IX.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "planet": "qualor ix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 26 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Raider.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "task_title": "Destroy Corvallen Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Safely relocate Dalen\u2019s operation to Sunodun in Willenia.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "planet": "sunodun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/wiretap"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m parsteel token",
+        "value": 2
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend Dalen and help him relocate to a new safe location."
+}

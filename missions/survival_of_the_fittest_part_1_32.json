@@ -1,0 +1,98 @@
+{
+  "arc": "tng arc 2",
+  "faction": "neutral",
+  "mission_name": "Survival of the Fittest Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/survival_of_the_fittest_part_2",
+      "option": 1
+    },
+    {
+      "$ref": "missions/survival_of_the_fittest_part_2",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Enterprise.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Which lead will you pursue first?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Search for Picard."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Investigate Cardassian Space."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Reconvene with Dr. Crusher.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 5
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1875000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Reconvene with Geordi.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 5
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1875000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 32,
+  "storyline": "Meet with the Enterprise crew."
+}

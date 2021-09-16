@@ -1,0 +1,62 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Tribble Me This Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/tribble_me_this_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Save Anvati.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Kormana",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow Anvati.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tribble_me_this_part_3"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 50
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 3
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2300
+      }
+    ]
+  },
+  "storyline": "Investigate the source of the rapid Tribble evolution."
+}

@@ -1,0 +1,148 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Focal Point Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/focal_point_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Crusher in Utoqa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Which rescue mission will you undertake?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Assist Crusher with protecting the Zorivians."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Join Geordi's search for a detailed Astrometric chart."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Seek out the Arkonian mercenary.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Arkonian perimeter guards.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_title": "Destroy Arkonian Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Morgash Det.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 110
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 8634000
+          },
+          {
+            "type": "dilithium",
+            "value": 254000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_title": "Destroy Morgash Det",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Meet a Yridian Information Broker.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 50,000 Parsteel for the information.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50000
+      }
+    },
+    {
+      "title": "Travel to Qualor.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rescue the Astronomer's vessel.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 25
+          },
+          {
+            "type": "1 hour speed up",
+            "value": 110
+          },
+          {
+            "type": "3 hour speed up",
+            "value": 34
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "task_title": "Destroy Hostile Interceptor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/focal_point"
+  },
+  "recommended_level": 31,
+  "storyline": "Choose where to focus your efforts with the Enterprise crew."
+}

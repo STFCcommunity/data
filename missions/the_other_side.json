@@ -1,0 +1,141 @@
+{
+  "faction": "augment",
+  "locations": [
+    {
+      "$ref": "systems/terazon_x31_28"
+    }
+  ],
+  "mission_name": "The Other Side",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate a distress signal in Rainsford.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rainsford_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles of level 24 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 hostiles of level 24 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Collect the captives from Paradane.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/paradane_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose the fate of the colony on Thomax.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the colony."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack the Augment."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bombard the colony of Thomax from orbit.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rainsford_20",
+        "planet": "thomax",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your station and report to Khan.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "khan noonien singh",
+            "value": 4
+          },
+          {
+            "type": "augment points",
+            "value": 100
+          },
+          {
+            "type": "dark matter",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 821000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Augment ship.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/paradane_27",
+        "task_title": "Destroy Enrich",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the captives to Thomax.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 12
+          }
+        ],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 450
+          },
+          {
+            "type": "dark matter",
+            "value": 1
+          },
+          {
+            "type": "augment points",
+            "value": 100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rainsford_20",
+        "planet": "thomax",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "The Augments have started a brutal regime across several societies."
+}

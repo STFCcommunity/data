@@ -1,0 +1,81 @@
+{
+  "arc": "tos arc 3",
+  "faction": "neutral",
+  "mission_name": "Leviathan Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/leviathan_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal in Skarrl.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of Level 28 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 12 hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Beam the remaining survivors onto your bridge.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "planet": "sa'vom",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Constellation crew to Starbase 80.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "planet": "starbase 80",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/leviathan_part_2"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 8
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 163000
+      },
+      {
+        "type": "dilithium",
+        "value": 33000
+      }
+    ]
+  },
+  "storyline": "Investigate the distress signal from the USS Constellation."
+}

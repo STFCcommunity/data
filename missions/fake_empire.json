@@ -1,0 +1,81 @@
+{
+  "faction": "romulan",
+  "mission_name": "Fake Empire",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/last_of_the_giants"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the missing Candori colonist soldiers.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Eliminate the Candori Patriot.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "task_title": "Destroy Candori Patriot",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deactivate the Candori intelligence satellite on Tofunke.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/altanea_38",
+        "planet": "tofunke",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the remains of the device to Candor.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "planet": "candor",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/annexation"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 16
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 38
+      },
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -88800
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -59200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "End the ambitions of the people of Candor."
+}

@@ -1,0 +1,86 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Law Falls Silent",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Investigate the distress signal in Lycia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Repair the scout\u2019s ship with 30,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 30000
+      }
+    },
+    {
+      "title": "Defeat the USS Manhattan.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_title": "Destroy USS Manhattan",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Valdore Outpost.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "valdore outpost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Samson.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy Doctor Samson",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/in_times_of_war"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 60
+      },
+      {
+        "type": "12 hour speed up",
+        "value": 1
+      },
+      {
+        "type": "arix",
+        "value": 4
+      },
+      {
+        "type": "federation points",
+        "value": -32
+      },
+      {
+        "type": "romulan points",
+        "value": 70
+      },
+      {
+        "type": "klingon points",
+        "value": -21
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a Romulan distress signal in Lycia."
+}

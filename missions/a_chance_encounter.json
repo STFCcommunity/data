@@ -1,0 +1,82 @@
+{
+  "faction": "federation",
+  "mission_name": "A Chance Encounter",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/trojan_horses"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to ST-9417 and investigate the Suliban signature.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/st_9417_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Scout.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/st_9417_45",
+        "task_title": "Destroy Suliban Scout",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the captured Suliban to the Andorians on Valo.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kri_44",
+        "planet": "valo",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 360,000,000 Parsteel in order to build a secure holding cell.",
+      "id": 4,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 360000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/acquiring_capital"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 rare battleship parts",
+        "value": 26
+      },
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 190
+      },
+      {
+        "type": "federation points",
+        "value": 311000
+      },
+      {
+        "type": "romulan points",
+        "value": -107000
+      },
+      {
+        "type": "klingon points",
+        "value": -481400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Engage with the Suliban scouting vessel and help the Andorians secure the pilot."
+}

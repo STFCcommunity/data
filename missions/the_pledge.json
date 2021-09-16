@@ -1,0 +1,93 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Pledge",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_turn"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find a Starfleet scout ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hijack the Starfleet ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "task_title": "Destroy Federation Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find a Klingon scout ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon scout ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_title": "Destroy Klingon Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find mercenaries to hire.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 42 or higher.",
+      "id": 6,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 42 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 1000
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 1000
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Keep an eye on the Romulan."
+}

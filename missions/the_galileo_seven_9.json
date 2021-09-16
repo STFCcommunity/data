@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Galileo Seven",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/astronautics"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the stranded crew on Murasaki Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/murasaki_312_10",
+        "planet": "murasaki prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 2500 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Reunite the rescued crew with the USS Enterprise.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/security_sweep"
+  },
+  "recommended_level": 9,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2500
+      }
+    ]
+  },
+  "storyline": "Help Uhura retrieve the stranded Enterprise crew on Murasaki Prime."
+}

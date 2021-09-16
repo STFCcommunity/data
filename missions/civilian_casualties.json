@@ -1,0 +1,80 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/nequencia_38"
+    }
+  ],
+  "mission_name": "Civilian Casualties",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Return to the pattern resequencing station on Patera.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/glintara_39",
+        "planet": "patera",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Orbit the Klingon research outpost.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "planet": "doq'mln",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the local defense force vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "task_title": "Destroy Klingon Defense Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report to Director Selen.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/khazara_39",
+        "planet": "accipiter",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -91200
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -60800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 16660000
+      },
+      {
+        "type": "dilithium",
+        "value": 490000
+      }
+    ]
+  },
+  "storyline": "Increase tension between the Federation and Klingon Empire by destroying a Klingon civilian outpost."
+}

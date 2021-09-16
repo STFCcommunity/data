@@ -1,0 +1,113 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Fade to Black",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/final_assault"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the Starfleet ship.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Starfleet Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Help Eurydice?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Yes."
+          },
+          {
+            "option_id": 2,
+            "option_title": "No."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Save Eurydice.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Lian Ros.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_title": "Destroy Lian Ros' Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 16
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 544000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 25
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 335000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_secret_weapon"
+  },
+  "recommended_level": 30,
+  "storyline": "Decide Eurydice\u2019s fate."
+}

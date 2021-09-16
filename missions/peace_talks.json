@@ -1,0 +1,160 @@
+{
+  "faction": "neutral",
+  "mission_name": "Peace Talks",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/an_uncivilized_threat"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with Scotty on Thesos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/izbrig_45",
+        "planet": "thesos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction to represent at the peace talks.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Represent the Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Represent the Romulans."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Represent the Klingons."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Present yourself to the Federation representatives on Starbase 185.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/alea_45",
+        "planet": "starbase 185",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attend the peace summit on Maranth.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "planet": "maranth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the assailant\u2019s trail to Mayush-yush.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/mayush_yush_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the Romulan representatives on Nassak.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ardaji_45",
+        "planet": "nassak",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attend the peace summit on Maranth.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "planet": "maranth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the assailant\u2019s trail to Mayush-yush.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mayush_yush_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the Klingon representatives on Ouhec.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "planet": "ouhec",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attend the peace summit on Maranth.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "planet": "maranth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the assailant\u2019s trail to Mayush-yush.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/mayush_yush_45",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Oversee peace talks between representatives of the three major powers."
+}

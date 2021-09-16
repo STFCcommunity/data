@@ -1,0 +1,112 @@
+{
+  "faction": "neutral",
+  "mission_name": "An Appeal to Reason",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/misappropriation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the fanatic internment camps on Vapeb.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "planet": "vapeb",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide how to release the prisoners.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Barter for the release of the prisoners."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Liberate the prisoners by force."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 63,900,000 Tritanium.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 63900000
+      }
+    },
+    {
+      "title": "Deliver the prisoners to a safe location.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 80
+          }
+        ],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 336000
+          },
+          {
+            "type": "premium recruit token",
+            "value": 370
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn Guard.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "task_title": "Destroy Gorn Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the prisoners to a safe location.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 370
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/close_encounters"
+  },
+  "storyline": "Stop the execution of Progenitor fanatics."
+}

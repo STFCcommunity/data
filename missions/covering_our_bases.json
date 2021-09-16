@@ -1,0 +1,92 @@
+{
+  "faction": "romulan",
+  "mission_name": "Covering Our Bases",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/what_they_don_t_know_will_hurt_them"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout the Francihk system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/francihk_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 hostiles of Level 20 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 6 hostiles of Level 20 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Klingon D4.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/francihk_20",
+        "task_title": "Destroy Klingon D4",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the Klingon colony.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/francihk_20",
+        "planet": "babae",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/extreme_measures"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 2,
+        "rarity": "raw",
+        "value": 5000
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 35
+      },
+      {
+        "type": "federation points",
+        "value": -192
+      },
+      {
+        "type": "romulan points",
+        "value": 400
+      },
+      {
+        "type": "klingon points",
+        "value": -128
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 15000
+      }
+    ]
+  },
+  "storyline": "Attack the Klingons to frame the Corvallens."
+}

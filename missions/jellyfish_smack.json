@@ -1,0 +1,47 @@
+{
+  "faction": "neutral",
+  "mission_name": "Jellyfish Smack",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_future_catching_the_past"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Mirror Spock in Eojur.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/eojur_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Jellyfish.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/eojur_11",
+        "task_title": "Destroy Jellyfish",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/every_vulcan_has_his_price"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "spock",
+        "value": 2
+      },
+      {
+        "type": "2\u2605 explorer parts",
+        "value": 4
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop Mirror Spock from tearing a rift in the space-time continuum."
+}

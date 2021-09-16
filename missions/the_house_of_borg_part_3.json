@@ -1,0 +1,92 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "The House of Borg Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_house_of_borg_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Hunt the assimilated Mor'vah.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Mor'vah.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_title": "Destroy Mor'vah",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the assimilated Kosh'Tok.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Kosh'Tok.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Kosh'Tok",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the Borg crash site on Aecad.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "planet": "aecad",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the assimilated Klingon ship.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Mo'kesh Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the last assimilated Klingon vessel.",
+      "id": 7,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Mo'kesh Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_house_of_borg_part_2"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1417000
+      },
+      {
+        "type": "tritanium",
+        "value": 209000
+      }
+    ]
+  },
+  "storyline": "Recover or destroy the assimilated Mo'kesh ships."
+}

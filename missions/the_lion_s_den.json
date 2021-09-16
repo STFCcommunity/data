@@ -1,0 +1,71 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Lion's Den",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/emptiness"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Crucibles in Klingon Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/zlim_kach_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 39 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 39 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Officer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zlim_kach_40",
+        "task_title": "Destroy Klingon Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attach the Crucible to your ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zlim_kach_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sitting_ducks"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 800
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Retrieve Crucibles from Klingon territory."
+}

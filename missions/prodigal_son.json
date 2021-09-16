@@ -1,0 +1,80 @@
+{
+  "faction": "klingon",
+  "mission_name": "Prodigal Son",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/under_heel"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Retrieve a Loyalist prisoner.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/garyb_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Rebel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/garyb_40",
+        "task_title": "Destroy Arkonian Rebel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/garyb_40",
+        "task_title": "Destroy Arkonian Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the prisoner back to Loyalist space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/pledge_of_loyalty"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 320
+      },
+      {
+        "type": "1 day speed up",
+        "value": 4
+      },
+      {
+        "type": "federation points",
+        "value": -86400
+      },
+      {
+        "type": "romulan points",
+        "value": -230400
+      },
+      {
+        "type": "klingon points",
+        "value": 180000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Retrieve a Loyalist prisoner and bring him back to Arkonia."
+}

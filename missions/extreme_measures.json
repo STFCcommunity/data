@@ -1,0 +1,88 @@
+{
+  "faction": "romulan",
+  "mission_name": "Extreme Measures",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/covering_our_bases"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout the Corvallen base in Vindemiatrix.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Guard Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_title": "Destroy Corvallen Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the base.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "planet": "oltana",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report to Rihala in Qualor.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the forged log to the Corvallens.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_performance_for_the_ages"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 9
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 6
+      },
+      {
+        "type": "romulan credits",
+        "value": 35
+      },
+      {
+        "type": "federation points",
+        "value": -192
+      },
+      {
+        "type": "romulan points",
+        "value": 400
+      },
+      {
+        "type": "klingon points",
+        "value": -128
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Escalate the conflict between the Corvallens and the Klingons."
+}

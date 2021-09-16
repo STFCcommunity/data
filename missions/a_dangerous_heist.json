@@ -1,0 +1,95 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Dangerous Heist",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/final_assault"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Information Dealer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mayush_yush_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 8,000,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8000000
+      }
+    },
+    {
+      "title": "Go into Klingon Space.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Guard ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_title": "Destroy Klingon Guard Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate Koroth's family.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "planet": "rokil",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Get the family somewhere safe.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/imada_44",
+        "planet": "kaskaah",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mistrust"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 120
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 32
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Rescue Koroth\u2019s family from Klingon Space"
+}

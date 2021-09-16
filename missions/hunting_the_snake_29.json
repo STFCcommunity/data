@@ -1,0 +1,71 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Hunting the Snake",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/big_brother"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Eurydice's Base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "planet": "verna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_title": "Destroy",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to Eurydice's tradepost.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/valance_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 100,000 Dilitihum.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 100000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/into_the_open"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 24
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 128000
+      }
+    ]
+  },
+  "storyline": "Find Eurydice."
+}

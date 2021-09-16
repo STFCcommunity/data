@@ -1,0 +1,83 @@
+{
+  "faction": "neutral",
+  "mission_name": "Ulterior Motives",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/tainted_knowledge"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the Klingon warp trail to Vindemiatrix.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Warrior.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_title": "Destroy Klingon Warrior",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Continue the pursuit to Ka'Bi.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ka_bi_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 16 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 16 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow Tilly\u2019s signal to Mufozoj.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/ka_bi_17",
+        "planet": "mufozoj",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Uluth.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/ka_bi_17",
+        "task_title": "Destroy Uluth",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/spinning_plates"
+  },
+  "recommended_level": 14,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 19000
+      }
+    ]
+  },
+  "storyline": "Rescue Tilly and discover the true intentions behind the colony\u2019s research."
+}

@@ -1,0 +1,90 @@
+{
+  "faction": "federation",
+  "mission_name": "Acquiring Capital",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_chance_encounter"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Mine 2,500 4\u2605 Raw Ore.",
+      "id": 1,
+      "task": {
+        "resource": "4\u2605 raw ore",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Mine 2,500 4\u2605 Crystal.",
+      "id": 2,
+      "task": {
+        "resource": "4\u2605 raw crystal",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Mine 2500 4\u2605 Raw Gas.",
+      "id": 3,
+      "task": {
+        "resource": "4\u2605 raw gas",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Deliver the materials to the Andorians on Valo.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kri_44",
+        "planet": "valo",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/forced_into_hiding"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 35
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 35
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 311000
+      },
+      {
+        "type": "romulan points",
+        "value": -107000
+      },
+      {
+        "type": "klingon points",
+        "value": -481400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Gather materials to aid in the development of the new Andorian settlement on Valo."
+}

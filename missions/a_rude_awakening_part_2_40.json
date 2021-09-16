@@ -1,0 +1,64 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "A Rude Awakening Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_rude_awakening_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find a Klingon scout ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Fleet 10 Hostiles of Level 38 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat Fleet 10 Hostiles of Level 38 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Hack into the Klingon ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mempa_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_rude_awakening_part_1"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 300
+      },
+      {
+        "type": "tos james t. kirk",
+        "value": 2
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find the Klingon convoy."
+}

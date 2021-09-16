@@ -1,0 +1,63 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Fading Light",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/futile_endeavor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the cybernetics expert.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 750,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 750000
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 25 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring Shiio to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/what_we_become"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 40
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Find a way to help Dalen survive."
+}

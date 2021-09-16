@@ -1,0 +1,89 @@
+{
+  "faction": "federation",
+  "mission_name": "The Enterprise Incident",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/hold_the_line"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Race to save the Enterprise from a Romulan trap.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles in Huebr.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 Hostiles in Huebr.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Commander Chevath.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_title": "Destroy Commander Chevath",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Help repair the Enterprise warp core with 18,000 Dilithium.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 18000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/missing_in_action"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "james t. kirk",
+        "value": 3
+      },
+      {
+        "type": "federation credits",
+        "value": 60
+      },
+      {
+        "type": "3 hour speed up",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": 80
+      },
+      {
+        "type": "romulan points",
+        "value": -13
+      },
+      {
+        "type": "klingon points",
+        "value": -58
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Race to save the Enterprise from a Romulan trap."
+}

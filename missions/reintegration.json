@@ -1,0 +1,146 @@
+{
+  "faction": "klingon",
+  "mission_name": "Reintegration",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/collision_course"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the Orion Prime market.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How will you get the resources from the Orion Syndicate?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay for the Cortenide."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack Syndicate member."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 20,000 Tritanium for the samples.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 20000
+      }
+    },
+    {
+      "title": "Return the resources to Khol.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 15
+          },
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "common",
+            "value": 250
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 35
+          },
+          {
+            "type": "federation points",
+            "value": -96
+          },
+          {
+            "type": "romulan points",
+            "value": -256
+          },
+          {
+            "type": "klingon points",
+            "value": 400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Orion vessel.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Mobster Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the resources to Khol.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 75
+          },
+          {
+            "type": "klingon credits",
+            "value": 35
+          },
+          {
+            "type": "federation points",
+            "value": -96
+          },
+          {
+            "type": "romulan points",
+            "value": -256
+          },
+          {
+            "type": "klingon points",
+            "value": 400
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 50000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/paranoia"
+  },
+  "storyline": "Find another Verterium Cortenide core."
+}

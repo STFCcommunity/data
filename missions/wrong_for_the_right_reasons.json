@@ -1,0 +1,110 @@
+{
+  "faction": "romulan",
+  "mission_name": "Wrong for the Right Reasons",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Track down the son.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elvros_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Arrest Avris or let him die?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Arrest him."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let him die."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "premium recruit token",
+            "value": 110
+          },
+          {
+            "type": "latinum",
+            "value": 900
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "8 hour speed up",
+            "value": 30
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_investigation"
+  },
+  "storyline": "Stop the son from escaping."
+}

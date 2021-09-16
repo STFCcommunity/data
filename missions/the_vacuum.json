@@ -1,0 +1,43 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Vacuum",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_message_in_a_bottle"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defend against the USS Newton.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_title": "Destroy USS Newton",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Trace the warp engine emissions from the wreckage.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/learn_from_past_mistakes"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour repair speed up",
+        "value": 16
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Make a discovery in the Nikola system."
+}

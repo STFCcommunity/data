@@ -1,0 +1,74 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Change of Scenery",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fighting_for_our_lives"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Fly to the Starfleet Lab.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kidnap the scientists.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "planet": "pimegik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Klingon Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the scientists to Romulan space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fuel_to_the_fire"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": -5200
+      },
+      {
+        "type": "romulan points",
+        "value": 8000
+      },
+      {
+        "type": "klingon points",
+        "value": -3500
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 42000
+      }
+    ]
+  },
+  "storyline": "Kidnap the Starfleet scientists."
+}

@@ -1,0 +1,72 @@
+{
+  "faction": "klingon",
+  "mission_name": "One Reaction",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_good_day_to_die"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Confirm the destruction of the 5th Fleet in the Ophiuchi system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ophiuchi_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Eliminate 10 Corvallen ships in Ophiuchi.",
+      "id": 2,
+      "task": {
+        "task_title": "Eliminate 10 Corvallen ships in Ophiuchi.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy the Independent leader's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ophiuchi_39",
+        "task_title": "Destroy Independent Leader",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_sign_of_the_three"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "damaged datapad",
+        "value": 1
+      },
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -52800
+      },
+      {
+        "type": "romulan points",
+        "value": -140800
+      },
+      {
+        "type": "klingon points",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 8140000
+      }
+    ]
+  },
+  "storyline": "The Klingon Empire suffers a crippling loss and reacts with an act of vengeance."
+}

@@ -1,0 +1,62 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/quv_qeb_36"
+    }
+  ],
+  "mission_name": "New Icarus",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Visit the Gorn Embassy on Ka'weh.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "ka'weh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 45M Tritanium to the Gorn.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 45000000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 400
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 3200
+      },
+      {
+        "type": "energy manifold",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": -25900
+      },
+      {
+        "type": "romulan points",
+        "value": -69100
+      },
+      {
+        "type": "klingon points",
+        "value": 60000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Provide the the Gorn Embassy with enough Tritanium to rebuild and repair the Beta Penthe garrison."
+}

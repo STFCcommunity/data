@@ -1,0 +1,69 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "The Future is In the Past",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/only_in_your_mind"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate another energy pulse.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Korta.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_title": "Destroy Korta",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Darak.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_title": "Destroy Darak",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unlikely_reunions"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 2,
+        "rarity": "common",
+        "value": 7
+      }
+    ],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 2
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Klingons from finding another quantum communicator."
+}

@@ -1,0 +1,67 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Price We Pay",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_abyss"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/klos_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the hostile ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/klos_48",
+        "task_title": "Destroy Assimilated Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track the ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/teranth_50",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/everything_now"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "beta sector to weima",
+        "value": 1
+      },
+      {
+        "type": "beta sector to reksgar",
+        "value": 1
+      },
+      {
+        "type": "beta sector to weima",
+        "value": 1
+      },
+      {
+        "type": "beta sector to reksgar",
+        "value": 1
+      },
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 120
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Try to track an assimilated ship."
+}

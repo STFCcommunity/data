@@ -1,0 +1,123 @@
+{
+  "faction": "neutral",
+  "mission_name": "Fragments of the Past",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/unreserved_loyalty",
+      "option": 1
+    },
+    {
+      "$ref": "missions/unquestionable_loyalty",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Subcommander Litroka on Iapedes.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/iapedes_36",
+        "planet": "iapedes",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate Starfleet activity in Kito.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kito_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kito_9",
+        "task_title": "Destroy Starfleet Patrol",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Subcommander Litroka on Iapedes.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/iapedes_36",
+        "planet": "iapedes",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide which Romulan operation to oversee.",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Oversee the Suliban."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Oversee the Corvallen."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 70
+          },
+          {
+            "type": "latinum",
+            "value": 12
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 656000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "30 minute speed up",
+            "value": 10
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 33416000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 40,
+  "storyline": "Choose which Romulan-allied faction to aid in an operation of utmost importance."
+}

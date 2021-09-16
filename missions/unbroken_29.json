@@ -1,0 +1,79 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Unbroken",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/blood_oath"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Find the wreckage.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the scavenger.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Meet with the Crewmember.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/doska_27",
+        "planet": "eranii dor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 250,000 Dilithium.",
+      "id": 5,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/lighting_the_match"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 26
+      }
+    ],
+    "others": [
+      {
+        "type": "augment credits",
+        "value": 100
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Rescue Navi."
+}

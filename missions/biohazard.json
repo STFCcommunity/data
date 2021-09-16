@@ -1,0 +1,115 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/enthra_27"
+    }
+  ],
+  "mission_name": "Biohazard",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Take the hazardous container onboard at Doq'ej'etlh.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/qu_vat_38",
+        "planet": "doq'ej'etlh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the container, or deliver it unopened?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Open the container to see what's inside"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Leave the container sealed"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Dump the container on Yisapik.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 150
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 70
+          },
+          {
+            "type": "federation points",
+            "value": -967
+          },
+          {
+            "type": "romulan points",
+            "value": -2600
+          },
+          {
+            "type": "klingon points",
+            "value": 3100
+          },
+          {
+            "type": "ship xp",
+            "value": 4000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "planet": "yisapik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Dump the container on Yisapik.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 150
+          },
+          {
+            "type": "premium recruit token",
+            "value": 150
+          },
+          {
+            "type": "federation points",
+            "value": -874
+          },
+          {
+            "type": "romulan points",
+            "value": -2600
+          },
+          {
+            "type": "klingon points",
+            "value": 3100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "planet": "yisapik",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Remove a large container of hazardous biological material from a Klingon research colony."
+}

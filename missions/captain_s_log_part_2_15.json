@@ -1,0 +1,71 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Captain's Log Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/captain_s_log_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel with Irhaasa to Deneva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Arkonian Warship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_title": "Destroy Arkonian Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retrieve Irhaasa's transmitter.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "madia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Klingon Prison ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/captain_s_log_part_1"
+  },
+  "recommended_level": 15,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1000
+      },
+      {
+        "type": "dilithium",
+        "value": 200
+      }
+    ]
+  },
+  "storyline": "Figure out a way to recover more of the missing logs."
+}

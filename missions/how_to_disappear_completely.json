@@ -1,0 +1,144 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "How to Disappear Completely",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/where_the_faction_is_fractioned"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout new locations.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 27 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Let Mudd haggle?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let Mudd haggle."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Pay the price."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 250,000 Dilithium",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250000
+      }
+    },
+    {
+      "title": "Go to the safe house.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "planet": "desta",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 26
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day peace shield",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Donate 200,000 Dilithium.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 200000
+      }
+    },
+    {
+      "title": "Go to the safe house.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "planet": "desta",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 26
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day peace shield",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/moving_targets"
+  },
+  "storyline": "Find a safehouse."
+}

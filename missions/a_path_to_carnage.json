@@ -1,0 +1,72 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "A Path to Carnage",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/first_contact"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the audio log's directions.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rooth_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Raider.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rooth_26",
+        "task_title": "Destroy Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Save the survivor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rooth_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 85,000 Dilithium to the survivor.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 85000
+      }
+    },
+    {
+      "title": "Return the strange debris to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/those_left_behind"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 50
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Unravel the mystery behind the destroyed Romulan station."
+}

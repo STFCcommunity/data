@@ -1,0 +1,44 @@
+{
+  "faction": "neutral",
+  "mission_name": "Factory Line",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/overhaul"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Gas mining zones.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/thama_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 10,000 Raw G3 Gas.",
+      "id": 2,
+      "task": {
+        "resource": "3\u2605 raw gas",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 10000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/warrior_for_hire"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 50000
+      }
+    ]
+  },
+  "storyline": "Source Gas for crafting better ships and upgrades."
+}
