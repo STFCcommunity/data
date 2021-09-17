@@ -1,0 +1,213 @@
+{
+  "faction": "neutral",
+  "mission_name": "Burden of Proof",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/an_honest_living"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Dantak's base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Which colony will you search again?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Ezla"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Unarri"
+          },
+          {
+            "option_id": 3,
+            "option_title": "Ganzin"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to Ezla.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ezla_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 20,000,000 Dilithium.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 20000000
+      }
+    },
+    {
+      "title": "Search the colony.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ezla_48",
+        "planet": "nuven",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Dantak.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 70
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 70
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 70
+          }
+        ],
+        "others": [],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Unarri.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan scout.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "task_title": "Destroy Romulan Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Search the colony.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "planet": "satiya",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Dantak.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "100k dilithium token",
+            "value": 90
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 8190000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Ganzin.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/ganzin_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 47 of higher.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 47 of higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Search the colony.",
+      "id": 5,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/ganzin_48",
+        "planet": "ganzin i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Dantak.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m tritanium token",
+            "value": 32
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 31815000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/petandria_48",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shared_hope"
+  },
+  "storyline": "Search the colonies for clues."
+}

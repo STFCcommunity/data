@@ -1,0 +1,132 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "An Old Wound Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/an_old_wound_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the Gorn.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn Fighter.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_title": "Destroy Gorn Fighter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "What should we do?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Go after the Gorn."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help the mining station."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Follow the Gorn.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/tau_ceti_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn straggler.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 25
+          },
+          {
+            "type": "premium recruit token",
+            "value": 800
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 838000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/tau_ceti_34",
+        "task_title": "Destroy Gorn Fighter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Assist the mining base.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,000,000 Tritanium to the miners.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 36
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 5
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 37128000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_old_wound_part_1"
+  },
+  "recommended_level": 40,
+  "storyline": "Find the Gorn."
+}

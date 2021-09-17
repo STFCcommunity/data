@@ -1,0 +1,81 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the engineer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000
+      }
+    },
+    {
+      "title": "Return to Elva.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the scavenger.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the android to the ship.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_2"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 4
+      },
+      {
+        "type": "premium recruit token",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1300
+      }
+    ]
+  },
+  "storyline": "Worlds Apart Part 3"
+}

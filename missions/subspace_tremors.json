@@ -1,0 +1,92 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/hatoria_30"
+    }
+  ],
+  "mission_name": "Subspace Tremors",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/no_warriors_here"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Protector Gon'hakr in the May'Lang system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/may_lang_31",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Gon'hakr in honorable combat.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/may_lang_31",
+        "task_title": "Destroy Gon'hakr",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Chase down Protector Uk'Lrahk to Lipig.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lipig_31",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Uk'Lrahk's ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lipig_31",
+        "task_title": "Destroy Uk'Lrahk",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the prisoner to Heghpu'ngeng.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/h_atoria_30",
+        "planet": "heghpu'ngeng",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 250
+      },
+      {
+        "type": "federation points",
+        "value": -4300
+      },
+      {
+        "type": "romulan points",
+        "value": -11500
+      },
+      {
+        "type": "klingon points",
+        "value": 12000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 460000
+      },
+      {
+        "type": "dilithium",
+        "value": 92000
+      }
+    ]
+  },
+  "storyline": "Find out which Klingon Protector has betrayed the H'Atoria Seat of Governance."
+}

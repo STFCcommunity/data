@@ -1,0 +1,89 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Art Dealer",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/junior_grade"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Toryn's contact.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with the Yridian attack.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Defeat the Yridian Bandit."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Deliver Toryn's package to him on his planet."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Yridian Bandit.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "next gen troi",
+            "value": 3
+          },
+          {
+            "type": "officer xp",
+            "value": 250
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Yridian Bandit",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver Toryn's package to him on his planet.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "next gen troi",
+            "value": 3
+          },
+          {
+            "type": "officer xp",
+            "value": 250
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tithe_of_honor"
+  },
+  "recommended_level": 3,
+  "storyline": "Meet with the enthusiastic art dealer."
+}

@@ -1,0 +1,89 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/orion_12"
+    }
+  ],
+  "mission_name": "Detainment",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Collect Frutz from the detainment on Azaxa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "azaxa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide Frutz's fate",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Free Frutz"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Take Frutz to Vragga"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Free Frutz.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "lucia gonzales",
+            "value": 1
+          },
+          {
+            "type": "orion manifest",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "forix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take Frutz to Vragga.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "orion manifest",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 800
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 12,
+  "storyline": "The Orion Syndicate have taken a Nausicaan Warlord prisoner for an attack on their colony of Hoan."
+}

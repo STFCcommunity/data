@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Field Test",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/they_went_that_way"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the USS Discovery to Nibiq.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nibiq_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the USS Discovery to Tiwoqua.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tiwoqua_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 38 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 38 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the USS Fairbanks.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/tiwoqua_38",
+        "task_title": "Destroy USS Fairbanks",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/out_of_stock"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 1748000
+      }
+    ]
+  },
+  "storyline": "Accompany the crew of the USS Discovery as they conduct a field test on the cloaking device."
+}

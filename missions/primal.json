@@ -1,0 +1,60 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/unroth_32"
+    }
+  ],
+  "mission_name": "Primal",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the location of the Gorn attack.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unroth_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the Gorn before it attacks the Suliban helix.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Gorn Assault Vessel",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 300
+      },
+      {
+        "type": "energy manifold",
+        "value": 1
+      },
+      {
+        "type": "romulan recruit token",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -17700
+      },
+      {
+        "type": "romulan points",
+        "value": 23000
+      },
+      {
+        "type": "klingon points",
+        "value": -11800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend the Suliban from a resurgent Gorn presence in the neutral zone."
+}

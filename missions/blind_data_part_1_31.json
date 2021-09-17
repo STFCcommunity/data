@@ -1,0 +1,67 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Blind Data Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/blind_data_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Data.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the thief.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront the thief.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "planet": "vomal",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the thief.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy Thief Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "recommended_level": 31,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 10
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2790000
+      }
+    ]
+  },
+  "storyline": "Help Data with his request."
+}

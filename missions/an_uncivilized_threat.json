@@ -1,0 +1,192 @@
+{
+  "faction": "neutral",
+  "mission_name": "An Uncivilized Threat",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/apocrypha"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to Romashki and assist the medical response.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction to assist.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Assist the Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Assist the Romulans."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Assist the Klingons."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to Maranth and assist the Federation medical response.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "planet": "maranth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon attacker.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_title": "Destroy Klingon Soldier",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate the Federation casualties to Starbase 185.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/alea_45",
+        "planet": "starbase 185",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Maranth and assist the Romulan medical response.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "planet": "maranth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Federation attacker.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_title": "Destroy Starfleet Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate the Romulan casualties to Nassak.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ardaji_45",
+        "planet": "nassak",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan recruit token",
+            "value": 500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Maranth and assist the Klingon medical response.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "planet": "maranth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan attacker.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/romashki_45",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate the Klingon casualties to Ouhec.",
+      "id": 5,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "planet": "ouhec",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/peace_talks"
+  },
+  "storyline": "Return to the site of the peace summit and assist the medical response."
+}

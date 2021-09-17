@@ -1,0 +1,69 @@
+{
+  "faction": "neutral",
+  "mission_name": "Voice of Reason",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/futility"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Talk to the Klingons about evacuation.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Evacuate Klingon civilians.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "planet": "pov dargh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the evacuees somewhere safe.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "planet": "safro",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Klingon Officer\u2019s ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_title": "Destroy Klingon Officer Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unstoppable"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon recruit token",
+        "value": 380
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Get Klingon civilians to safety."
+}

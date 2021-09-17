@@ -1,0 +1,70 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/alpha_centauri_39"
+    }
+  ],
+  "mission_name": "Public Relations",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Scout Nelvana for General Molvak.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelvana_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Romulan Battleship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nelvana_32",
+        "task_title": "Destroy Romulan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Admiral.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "3 hour speed up",
+        "value": 15
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -32800
+      },
+      {
+        "type": "klingon points",
+        "value": -147600
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 15000000
+      }
+    ]
+  },
+  "storyline": "Starfleet requires an outside party to conduct a secret operation in the Neutral Zone."
+}

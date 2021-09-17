@@ -1,0 +1,61 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Unrelenting",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_home_that_only_we_know"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Try and save the colony in Doska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg probe.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Borg probe.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the refugees to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/our_fates_are_tied"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 345000
+      }
+    ]
+  },
+  "storyline": "Help Starfleet in a desperate defense against the Borg."
+}

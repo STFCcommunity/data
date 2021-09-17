@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "mission_name": "Valley of Death",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/unstoppable"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the mysterious signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/umxheli_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fight back against the mysterious ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/umxheli_41",
+        "task_title": "Destroy Mysterious Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Try to escape from the ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/last_stand"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 150
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find the source of the signal."
+}

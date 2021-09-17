@@ -1,0 +1,89 @@
+{
+  "faction": "federation",
+  "mission_name": "Parentage",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/pathogen"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Mayflower in Vulcan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the gas dwarf in Kepler-018.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Pirate.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rator_29",
+        "task_title": "Destroy Corvallen Pirate",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Scan the lab on Wonax.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "planet": "wonax",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the data to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/voyages"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 25
+      },
+      {
+        "type": "5 minute repair speed up",
+        "value": 18
+      },
+      {
+        "type": "federation points",
+        "value": 250
+      },
+      {
+        "type": "romulan points",
+        "value": -38
+      },
+      {
+        "type": "klingon points",
+        "value": -171
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 7000
+      }
+    ]
+  },
+  "storyline": "Go with Luis and the Mayflower to other gas giants to try and determine this gas's makeup."
+}

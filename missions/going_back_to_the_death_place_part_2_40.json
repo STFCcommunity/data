@@ -1,0 +1,80 @@
+{
+  "arc": "absolution arc 1",
+  "faction": "neutral",
+  "mission_name": "Going Back to the Death Place Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/going_back_to_the_death_place_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the Romulan Battleship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/aerimea_35",
+        "task_title": "Destroy Romulan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Assimilated Battleship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/aerimea_35",
+        "task_title": "Destroy Assimilated Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Flee the system immediately.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Borg ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "task_title": "Destroy Assimilated Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to Swarm territory.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/dalogn_35",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/going_back_to_the_death_place"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 140000
+      },
+      {
+        "type": "ship xp",
+        "value": 250
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 23102000
+      }
+    ]
+  },
+  "storyline": "Find a way to shake off the unrelenting Romulan pursuit."
+}

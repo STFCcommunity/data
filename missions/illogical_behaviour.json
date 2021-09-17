@@ -1,0 +1,77 @@
+{
+  "faction": "neutral",
+  "mission_name": "Illogical Behaviour",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/absolute_power"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the <i>Enterprise</i>.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Send Spock to meet Kirk.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,475,000 Dilithium to Scotty.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1475000
+      }
+    },
+    {
+      "title": "Defeat the rogue Starfleet vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "task_title": "Destroy USS Albatross",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Spock to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bloodthirst"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Meet with the USS Enterprise."
+}

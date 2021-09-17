@@ -1,0 +1,53 @@
+{
+  "faction": "neutral",
+  "mission_name": "Reflection",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/looking_glass"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Trace Spock's transmission.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/donfo_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the Enterprise.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Aid the Enterprise in battle.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_title": "Destroy Nausicaan Battleship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 3
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 290
+      }
+    ]
+  },
+  "storyline": "Trace the source of Spock's cryptic transmission."
+}

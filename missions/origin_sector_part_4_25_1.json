@@ -1,0 +1,57 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Origin Sector - Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/origin_sector_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the Nausicaan Pirate.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tola_beta_17",
+        "task_title": "Destroy Nausicaan Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 10 Iso-Emulsion to Captain Lee.",
+      "id": 2,
+      "task": {
+        "resource": "iso-emulsion",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10
+      }
+    },
+    {
+      "title": "Research 1\u21f4 Isogen Extraction.",
+      "id": 3,
+      "task": {
+        "resource": "mission token",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 1
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/origin_sector_part_3"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 10000
+      }
+    ]
+  },
+  "storyline": "Learn about Iso-Emulsion and Progenitor Research."
+}

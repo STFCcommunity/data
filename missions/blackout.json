@@ -1,0 +1,68 @@
+{
+  "faction": "romulan",
+  "mission_name": "Blackout",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Fly to Galorndon Core to investigate the power outage.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "galorndon core",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Andorians responsible for the attack.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Andorian Kumari.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_title": "Destroy Andorian Kumari",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/focus_attack"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 17
+      },
+      {
+        "type": "romulan credits",
+        "value": 230
+      },
+      {
+        "type": "federation points",
+        "value": -7000
+      },
+      {
+        "type": "romulan points",
+        "value": 10000
+      },
+      {
+        "type": "klingon points",
+        "value": -4600
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 183000
+      }
+    ]
+  },
+  "storyline": "Exact revenge on the Andorians for causing a catastrophic power outage on the Nomad moon of Ommos."
+}

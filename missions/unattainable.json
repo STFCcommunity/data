@@ -1,0 +1,81 @@
+{
+  "faction": "klingon",
+  "mission_name": "Unattainable",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/backlash"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the USS Mayflower in Lorillia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Andorian escort vessel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Andorian Escort Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan Peacekeeping vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Vulcan Peacekeeper Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to Khitomer.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/scraps"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 130
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 27
+      },
+      {
+        "type": "federation points",
+        "value": -600
+      },
+      {
+        "type": "romulan points",
+        "value": -1600
+      },
+      {
+        "type": "klingon points",
+        "value": 2000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 502000
+      }
+    ]
+  },
+  "storyline": "Meet with the Federation to discuss a peace treaty."
+}

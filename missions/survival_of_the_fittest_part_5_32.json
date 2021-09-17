@@ -1,0 +1,76 @@
+{
+  "arc": "tng arc 2",
+  "faction": "neutral",
+  "mission_name": "Survival of the Fittest Part 5",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/survival_of_the_fittest_part_6"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Picard's ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/resara_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/resara_30",
+        "task_title": "Destroy Delivery Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Enterprise.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the mercenary boss.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_title": "Destroy Mercenary Boss Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/survival_of_the_fittest_part_4"
+  },
+  "recommended_level": 32,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 600
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 985000
+      }
+    ]
+  },
+  "storyline": "Rescue Picard"
+}

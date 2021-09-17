@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "Occam's Razor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/our_past_is_in_their_future"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the site of the attack.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan vessel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_title": "Destroy Romulan Scout",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the data to New Vulcan.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_vulcan_42",
+        "planet": "new vulcan",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/raised_stakes"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour repair speed up",
+        "value": 10
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 320
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the site of an attack for evidence of Romulan involvement."
+}

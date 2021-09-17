@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Fog Of War",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/zero_sum_game"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect 27 Encrypted Messages.",
+      "id": 1,
+      "task": {
+        "resource": "romulan message",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 27
+      }
+    },
+    {
+      "title": "Donate 27 Romulan Messages.",
+      "id": 2,
+      "task": {
+        "resource": "romulan message",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 27
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/birds_of_a_feather"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Collect Intelligence on Romulan ship movements by hunting Scouts."
+}

@@ -1,0 +1,83 @@
+{
+  "faction": "federation",
+  "mission_name": "Pieces of the Puzzle",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/nothing_comes_for_free"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Venture further into Klingon territory to find more information.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ch_kmulk_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable a Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ch_kmulk_47",
+        "task_title": "Destroy Klingon Warrior",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the captive Klingon to Starbase 87 for questioning.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/witnesses"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 330
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 448000
+      },
+      {
+        "type": "romulan points",
+        "value": -161300
+      },
+      {
+        "type": "klingon points",
+        "value": -725800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Capture a Klingon Warrior and bring him back to Starbase 87 for questioning."
+}

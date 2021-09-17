@@ -1,0 +1,81 @@
+{
+  "faction": "federation",
+  "mission_name": "Memory Loss",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_farewell_to_arms"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Receive a briefing from Captain Beckett on Lieka.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/zosam_40",
+        "planet": "lieka",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bombard the Romulan data center from orbit.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/esto_43",
+        "planet": "sivetha",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Valdore.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/esto_43",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to nearby Federation Space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kri_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_reputation_to_uphold"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 160
+      },
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 390
+      },
+      {
+        "type": "federation points",
+        "value": 374000
+      },
+      {
+        "type": "romulan points",
+        "value": -131600
+      },
+      {
+        "type": "klingon points",
+        "value": -592400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assault a Romulan data center and deal a massive blow to Romulan military intelligence."
+}

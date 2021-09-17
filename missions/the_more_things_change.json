@@ -1,0 +1,90 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/krahhor_18"
+    }
+  ],
+  "mission_name": "The More Things Change",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/interested_parties"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Khol Delok in Enthra.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Klingon wreckage in Vulcan.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Patrol.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Starfleet Patrol",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the destroyed Klingon lab in Vindemiatrix.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the salvaged technology to Enthra.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute speed up",
+        "value": 27
+      },
+      {
+        "type": "klingon credits",
+        "value": 25
+      },
+      {
+        "type": "federation points",
+        "value": -57
+      },
+      {
+        "type": "romulan points",
+        "value": -152
+      },
+      {
+        "type": "klingon points",
+        "value": 250
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 1200
+      }
+    ]
+  },
+  "storyline": "Investigate the Klingon lab."
+}

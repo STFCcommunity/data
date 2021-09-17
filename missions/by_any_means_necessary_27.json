@@ -1,0 +1,73 @@
+{
+  "faction": "klingon",
+  "mission_name": "By Any Means Necessary",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fear_of_failure"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go into Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_title": "Destroy Romulan Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find information on the Sekula's whereabouts.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "planet": "vilevau",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/to_the_surface"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 160
+      },
+      {
+        "type": "federation points",
+        "value": -2600
+      },
+      {
+        "type": "romulan points",
+        "value": -6900
+      },
+      {
+        "type": "klingon points",
+        "value": 8000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Keep searching for Sekula."
+}

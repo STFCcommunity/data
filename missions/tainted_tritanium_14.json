@@ -1,0 +1,50 @@
+{
+  "faction": "neutral",
+  "mission_name": "Tainted Tritanium",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/deneva"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get to the mining system before the Enterprise.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 400 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 400
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/farsight"
+  },
+  "recommended_level": 14,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "2\u2605 battleship parts",
+        "value": 12
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 15000
+      }
+    ]
+  },
+  "storyline": "Mine some Tritanium to test for mineral sabotage."
+}

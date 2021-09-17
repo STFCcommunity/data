@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nausicaa_12"
+    }
+  ],
+  "mission_name": "Lend A Hand",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/one_of_a_kind"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "planet": "lefomio",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give Mayeil 10,000 Tritanium so he can repair his ship.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Return to your home station with the refugees.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 16,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "next gen crusher",
+        "value": 2
+      },
+      {
+        "type": "orion manifest",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5000
+      }
+    ]
+  },
+  "storyline": "Thornack has intercepted a Nausicaan distress call but can\u2019t spare the manpower to investigate."
+}

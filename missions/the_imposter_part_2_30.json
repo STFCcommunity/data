@@ -1,0 +1,66 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "The Imposter Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_imposter_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get to the ship trader.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Exchange Guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_title": "Destroy Exchange Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Question the ship trader.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_imposter_part_1"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 27
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2415000
+      }
+    ]
+  },
+  "storyline": "Keep tracking the imposter Mudd."
+}

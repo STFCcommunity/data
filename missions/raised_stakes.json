@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "Raised Stakes",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/occam_s_razor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Vulcan fleet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the attacker.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "task_title": "Destroy Assault Force",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the second attacker.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "task_title": "Destroy Assault Force",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort the fleet to New Vulcan.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_vulcan_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/offer_of_a_lifetime"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation recruit token",
+        "value": 200
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 34800000
+      }
+    ]
+  },
+  "storyline": "Protect a Vulcan fleet from a surprise attack."
+}

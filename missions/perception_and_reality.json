@@ -1,0 +1,71 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Perception and Reality",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Speak to Admiral Hoss.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak to the Klingon Commander.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront the Borg.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/unoma_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Borg.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/unoma_29",
+        "task_title": "Destroy Borg Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat another Borg Ship.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/unoma_29",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/two_sides_of_the_coin"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 42
+      }
+    ],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 5
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Fight back against the Borg!"
+}

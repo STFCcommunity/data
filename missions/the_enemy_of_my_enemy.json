@@ -1,0 +1,123 @@
+{
+  "faction": "federation",
+  "mission_name": "The Enemy of My Enemy",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/specialist"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Parlay with a Klingon General on behalf of Starfleet at Khitomer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Dilemma - Give up the data or negotiate?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Give the Klingon General the data freely."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Negotiate a price for the data."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Starfleet with a response.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "klingon recruit token",
+            "value": 1000
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -35200
+          },
+          {
+            "type": "klingon points",
+            "value": -158400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Starfleet with a response.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -35200
+          },
+          {
+            "type": "klingon points",
+            "value": -158400
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 750000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_war_on_two_fronts"
+  },
+  "storyline": "The Federation wishes to make a peace offering to the Klingons and requires a reliable neutral Independent to deliver it."
+}

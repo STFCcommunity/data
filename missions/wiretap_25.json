@@ -1,0 +1,71 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Wiretap",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/transposition"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Romulan party in Nasturta.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gladius.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_title": "Destroy Gladius",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Centurion.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nasturta_26",
+        "task_title": "Destroy Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Intercept Celdaine\u2019s Legionary in Huebr before it reaches Dalen on Qualor IX.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Celdaine.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_title": "Destroy Celdaine",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/swift_reprisal"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Meet with the Romulans in order to acquire the previously bartered hardware."
+}

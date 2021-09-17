@@ -1,0 +1,86 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "A Fate Worse Than Death",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/cracks_on_the_surface"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with Charvanek.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hunt down the spies.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the spy.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/losti_28",
+        "task_title": "Destroy Romulan Spy",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 24 hostiles of Level 28 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 24 hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow Charvanek to Nabok.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scan the outpost on Ximay.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "planet": "ximay",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/caveat_emptor"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 190
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 284000
+      },
+      {
+        "type": "dilithium",
+        "value": 57000
+      }
+    ]
+  },
+  "storyline": "Help Charvanek settle a matter regarding the security of the Romulan Star Empire."
+}

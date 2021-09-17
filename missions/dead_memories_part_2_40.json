@@ -1,0 +1,72 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Dead Memories Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/dead_memories_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Show Spock the black hole's location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give Spock 825,000 Dilithium for his experiment.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 825000
+      }
+    },
+    {
+      "title": "Defeat the marauder.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Marauder",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate a spatial anomaly.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dead_memories_part_1"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 10
+      },
+      {
+        "type": "latinum",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 5096000
+      }
+    ]
+  },
+  "storyline": "Assist Spock in studying the destruction of Vulcan."
+}

@@ -1,0 +1,83 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/doska_27"
+    }
+  ],
+  "mission_name": "Home Soil",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/trenches"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to Vulcan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Locate a fragment of the crystal.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Thief.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Nausicaan Thief",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the crystal fragment to Sol.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 200
+      },
+      {
+        "type": "federation points",
+        "value": 8000
+      },
+      {
+        "type": "romulan points",
+        "value": -1800
+      },
+      {
+        "type": "klingon points",
+        "value": -8100
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1012000
+      },
+      {
+        "type": "tritanium",
+        "value": 149000
+      }
+    ]
+  },
+  "storyline": "A Vulcan historian seeks help in retrieving fragments of an ancient crystal from her destroyed home planet from the Vulcan system."
+}

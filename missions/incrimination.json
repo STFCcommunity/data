@@ -1,0 +1,160 @@
+{
+  "faction": "romulan",
+  "mission_name": "Incrimination",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/remus"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Speak with the Romulan Senate.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which enemy faction to frame...",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Frame Starfleet for destroying their own forces at Wolf"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Present evidence of the Klingon attack to Starfleet"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Sell falsified evidence to the Yridians for circulation.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return home to accept a message from Scotty.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Deliver word of Federation unrest to the Romulan Senate.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan recruit token",
+            "value": 1000
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -100800
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -67200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Distribute proof of the Klingon attack to the Orions.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return home to wait out the news of the Klingon attack.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Hand over eye witness account of the Klingon assault to Kirk.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation recruit token",
+            "value": 1000
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -100800
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -67200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/babel_38",
+        "planet": "babel",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/assault_on_wolf_359"
+  },
+  "storyline": "Plant false evidence on either Starfleet or the Klingon Empire to lay blame with one of the great civilizations."
+}

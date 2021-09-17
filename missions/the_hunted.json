@@ -1,0 +1,93 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Hunted",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/provocation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track down the Tal Shiar deserters.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ash_tor_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 20,000,000 Tritanium to the informant.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 20000000
+      }
+    },
+    {
+      "title": "Find where the deserters are hiding.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ovala_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill 15 Hostiles Level 42 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Kill 15 Hostiles Level 42 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Report back to Rihala.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/one_stone"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 30
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -321000
+      },
+      {
+        "type": "romulan points",
+        "value": 311000
+      },
+      {
+        "type": "klingon points",
+        "value": -214000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Hunt down the Tal Shiar deserters."
+}

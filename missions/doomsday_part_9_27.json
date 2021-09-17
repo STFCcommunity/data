@@ -1,0 +1,101 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 9",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomsday_part_10"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Escort the crew of the Enterprise to Starbase 80.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "planet": "starbase 80",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to respond to the inquest.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Defend Captain Kirk."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Remain silent."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 7
+          }
+        ],
+        "others": [
+          {
+            "type": "recruit token",
+            "value": 200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 5
+          }
+        ],
+        "others": [
+          {
+            "type": "tos spock",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 510000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_8"
+  },
+  "recommended_level": 27,
+  "storyline": "Attend a Starfleet inquest with Captain Kirk."
+}

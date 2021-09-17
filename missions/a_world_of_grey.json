@@ -1,0 +1,78 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "A World of Grey",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/broken_promises_and_empty_threats"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Try and find the Vulcan extremists.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the signal.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/obilent_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your home system.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat T'Lora.",
+      "id": 4,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy T'Lora",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Maren.",
+      "id": 5,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Maren",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/homecoming"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 14000
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 92000
+      }
+    ]
+  },
+  "storyline": "Track down and stop the logic extremists from destroying another colony."
+}

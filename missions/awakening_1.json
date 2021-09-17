@@ -1,0 +1,61 @@
+{
+  "faction": "neutral",
+  "mission_name": "Awakening",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_center_of_the_universe"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the reactivated Crucible.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the scavenger.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track the active Crucible.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Approach the Crucible.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "planet": "firenze",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "deep space datapad",
+        "value": 1
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the Crucibles reactivating."
+}

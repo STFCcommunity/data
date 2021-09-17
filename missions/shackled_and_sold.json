@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "Shackled and Sold",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_price_of_silence"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Mine 2500 Raw Latinum.",
+      "id": 1,
+      "task": {
+        "resource": "raw latinum",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Donate 2500 Raw Latinum to Aivin.",
+      "id": 2,
+      "task": {
+        "resource": "raw latinum",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Escort Aivin to the Orion Syndicate auction.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Aivin and the Sarpeidon natives to a safe location on Osil.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/asronal_44",
+        "planet": "osil",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/age_of_exploration"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 2600
+      },
+      {
+        "type": "4\u2605 common survey parts",
+        "value": 1100
+      },
+      {
+        "type": "4\u2605 uncommon survey parts",
+        "value": 180
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Aivin achieve the winning bid at an Orion Syndicate slave auction."
+}

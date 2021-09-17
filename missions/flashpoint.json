@@ -1,0 +1,91 @@
+{
+  "faction": "neutral",
+  "mission_name": "Flashpoint",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/seller_s_market"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Check in with the colonists on Leduk.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "planet": "leduk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Side with the locals or the outlaws.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help the Osaarians destroy the Independent colony's ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Protect the colonists and attack the hostiles."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the colony's Interceptor.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 18000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Sansnom Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy 10 hostiles in Enthra.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ship xp",
+            "value": 2500
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Destroy 10 hostiles in Enthra.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/defensive_upgrades"
+  },
+  "storyline": "Intervene in the conflict between the Independent colonists and the Osaarians."
+}

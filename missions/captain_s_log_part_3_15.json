@@ -1,0 +1,70 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Captain's Log Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/captain_s_log_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 7 hostiles of Level 16 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 7 hostiles of Level 16 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Take down the Prison Ship's shields.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Klingon Prison Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Umvar to safety in Lycia.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the remnants of an anomaly.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/captain_s_log_part_2"
+  },
+  "recommended_level": 15,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 7
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 3
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1700
+      }
+    ]
+  },
+  "storyline": "Rescue the Yridian broker."
+}

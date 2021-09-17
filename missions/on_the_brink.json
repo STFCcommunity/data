@@ -1,0 +1,62 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/xerxes_29"
+    }
+  ],
+  "mission_name": "On the Brink",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Assist Doctor Mullen in the Suliban system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/suliban_35",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Recover the shuttle from Brennis",
+      "id": 2,
+      "task": {
+        "$ref": "systems/suliban_35",
+        "planet": "brennis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give 10,000,000 Parsteel to the Doctor to shield his warp core.",
+      "id": 3,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000000
+      }
+    },
+    {
+      "title": "Escape the system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 43000
+      },
+      {
+        "type": "dilithium",
+        "value": 9000
+      }
+    ]
+  },
+  "storyline": "A Federation science team are in danger of creating an anomaly."
+}

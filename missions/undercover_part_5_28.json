@@ -1,0 +1,139 @@
+{
+  "faction": "neutral",
+  "mission_name": "Undercover Part 5",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Respond to distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the mercenary.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track Leif's trail.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Boss.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_title": "Destroy Orion Boss Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take the evidence or destroy it?",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take the evidence."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the evidence."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Take the evidence from Leif's ship.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 9
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 9
+          }
+        ],
+        "others": [
+          {
+            "type": "corrupted data",
+            "value": 260
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Destroy evidence of your involvement.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 14
+          }
+        ],
+        "others": [
+          {
+            "type": "independent credits",
+            "value": 8
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/undercover_part_4"
+  },
+  "recommended_level": 28,
+  "storyline": "Find Leif."
+}

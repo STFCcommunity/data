@@ -1,0 +1,80 @@
+{
+  "faction": "federation",
+  "mission_name": "Trojan Horses",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_andorian_plague"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Ril Korvas in order to interrogate local Suliban.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ril_korvas_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 42 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 42 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Reinforcement.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ril_korvas_44",
+        "task_title": "Destroy Suliban Reinforcement",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Andorians on Valo.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kri_44",
+        "planet": "valo",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_chance_encounter"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m parsteel token",
+        "value": 110
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 13
+      },
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 374000
+      },
+      {
+        "type": "romulan points",
+        "value": -131600
+      },
+      {
+        "type": "klingon points",
+        "value": -592400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Gather information on the synthesis of an antibody to the Andorian pathogen."
+}

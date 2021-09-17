@@ -1,0 +1,154 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/romulus_60"
+    }
+  ],
+  "mission_name": "Assault on Wolf 359",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/incrimination"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the events in the Wolf system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/wolf_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Capitalize on the damaged Federation Science Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/wolf_39",
+        "task_title": "Destroy Damaged Federation Science Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the supporting supply ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/wolf_39",
+        "task_title": "Destroy Federation Support Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "How will you deal with Starfleet?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Finish off the Federation fleet in Wolf"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Spare the remaining damaged Starfleet vessels"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Eliminate the Starfleet Medical Ship.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/wolf_39",
+        "task_title": "Destroy Starfleet Medical Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the USS Mayflower.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 9
+          }
+        ],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -100800
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -67200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/wolf_39",
+        "task_title": "Destroy USS Mayflower",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report directly to Praetor Bervas on Romulus.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 1250
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -100800
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -67200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Investigate the reports of a mass Klingon attack at Wolf 359 and take the opportunity to strike against Starfleet."
+}

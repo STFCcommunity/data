@@ -1,0 +1,86 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomsday_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attend the briefing on Starbase 74.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "starbase 74",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with the USS Constellation in Doska.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Survey the Romulan fleet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles in Vendus A.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 12 hostiles in Vendus A.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Subcommander.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "task_title": "Destroy Subcommander Perot",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_1"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 14
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 14
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Escort the crew of the USS Constellation on a reconnaissance mission."
+}

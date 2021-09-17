@@ -1,0 +1,90 @@
+{
+  "faction": "augment",
+  "mission_name": "One Man's Trash",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/reunions"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to Deneva to seek out rumors of an Augment sighting.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the Denevan Trader for information on the Augment.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000
+      }
+    },
+    {
+      "title": "Track down the freighter captain in Rakkaus.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rakkaus_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Search for Joaquin on Bylal.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/opla_20",
+        "planet": "bylal",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Peacekeeper.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_title": "Destroy USS Peacekeeper",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Search the Lycia system for Joaquin's hideout.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/misdirection"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 2,
+        "rarity": "uncommon",
+        "value": 25
+      }
+    ],
+    "others": [
+      {
+        "type": "2\u2605 battleship parts",
+        "value": 160
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 38000
+      }
+    ]
+  },
+  "storyline": "Khan has learned that one of his family is out scouring ship graveyards and hopes to track him down."
+}

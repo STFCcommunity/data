@@ -1,0 +1,61 @@
+{
+  "faction": "neutral",
+  "mission_name": "Close Calls",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/buying_silence"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Source information on Yridia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the agent around Nausicaa Prime.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Corvallen Ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Corvallen Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the artifact to the Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bound_together"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2000000
+      }
+    ]
+  },
+  "storyline": "Recover a Progenitor artifact that was stolen from Toryn's clutches."
+}

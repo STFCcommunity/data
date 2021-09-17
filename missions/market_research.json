@@ -1,0 +1,68 @@
+{
+  "faction": "neutral",
+  "mission_name": "Market Research",
+  "mission_type": "auto start",
+  "objectives": [
+    {
+      "title": "Meet with Arlek in Sotavi.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sotavi_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Bak'tel in Mina.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Bak'tel's bodyguard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_title": "Destroy Bodyguard ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find Dol'Ren in Zosam.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zosam_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,200,000 Dilithium to convince Dol'Ren to leave.",
+      "id": 5,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1200000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 190
+      }
+    ],
+    "others": [
+      {
+        "type": "deep space datapad",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help an Yridian eliminate competition in the information market."
+}

@@ -1,0 +1,41 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/obilent_17"
+    }
+  ],
+  "mission_name": "Knowledge is Power",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Plant a data recorder on Rigel I.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Rigellian Captain.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Rigelian Captain",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 31000
+      }
+    ]
+  },
+  "storyline": "Gather intelligence on the Rigellians for the Romulan Star Empire."
+}

@@ -1,0 +1,169 @@
+{
+  "faction": "augment",
+  "mission_name": "The Coming Darkness",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Rendezvous with Khan's forces in Olassa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/olassa_33",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Bounty Hunter.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/olassa_33",
+        "task_title": "Destroy Bounty Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Protect Khan from the Bounty Hunter Enforcer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/olassa_33",
+        "task_title": "Destroy Bounty Hunter Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Lead the Augments to Starbase 82.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Starfleet Operative's ship.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Starfleet Operative",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Choose your role in Khan's plan.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help Khan's attack on the Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Betray Khan and side with Starfleet."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the USS Chennai.",
+      "id": 7,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy USS Chennai",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape before the USS Enterprise arrives.",
+      "id": 8,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "khan noonien singh",
+            "value": 8
+          },
+          {
+            "type": "augment points",
+            "value": 2000
+          },
+          {
+            "type": "3 hour speed up",
+            "value": 15
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 2841000
+          },
+          {
+            "type": "tritanium",
+            "value": 418000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat Khan.",
+      "id": 7,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Khan",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Chase Khan to your Station.",
+      "id": 8,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 12
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 12
+          },
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 12
+          }
+        ],
+        "others": [
+          {
+            "type": "augment points",
+            "value": 2000
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 1600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/eye_of_the_storm"
+  },
+  "storyline": "Khan prepares for an assault on the Federation."
+}

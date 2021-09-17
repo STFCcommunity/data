@@ -1,0 +1,141 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/iapedes_36"
+    }
+  ],
+  "mission_name": "Empathy",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find Eliana on Risa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Intimidate Eliana.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "The threat is the least of her problems if she does not comply"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Reveal that the Tal Shiar is behind the threat."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy a nearby Risian freighter.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_title": "Destroy Risian Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Operative Menra.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 400
+          },
+          {
+            "type": "3\u2605 explorer parts",
+            "value": 280
+          },
+          {
+            "type": "federation points",
+            "value": -51800
+          },
+          {
+            "type": "romulan points",
+            "value": 60000
+          },
+          {
+            "type": "klingon points",
+            "value": -34600
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 422000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/iapedes_36",
+        "planet": "iapedes",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Federation Vessel.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/risa_7",
+        "task_title": "Destroy Federation Vessel lv 36",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return with Eliana's assurances.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3 hour speed up",
+            "value": 17
+          },
+          {
+            "type": "romulan credits",
+            "value": 400
+          },
+          {
+            "type": "federation points",
+            "value": -51800
+          },
+          {
+            "type": "romulan points",
+            "value": 60000
+          },
+          {
+            "type": "klingon points",
+            "value": -34600
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 14341000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/iapedes_36",
+        "planet": "iapedes",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Assist an Operative with the blackmailing of a valuable Betazoid informant."
+}

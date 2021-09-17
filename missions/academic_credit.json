@@ -1,0 +1,58 @@
+{
+  "faction": "neutral",
+  "mission_name": "Academic Credit",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_price_too_high"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the stranded Starfleet cadets on Leduk.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "planet": "leduk",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn ship threatening the cadets.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_title": "Destroy Gorn Assault Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the Cadets to Rigel VII.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel vii",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/origin"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 70
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 150000
+      }
+    ]
+  },
+  "storyline": "Rescue a group of Starfleet cadets and take them to Rigel VII."
+}

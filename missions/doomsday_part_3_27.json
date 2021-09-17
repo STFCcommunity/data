@@ -1,0 +1,71 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomsday_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Search for General Thrahl in Enthra.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles in Enthra.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 12 hostiles in Enthra.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat General Thrahl.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy General Thrahl",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Decker to Starbase 74.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "starbase 74",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_2"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 19
+      },
+      {
+        "type": "ship xp",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 120000
+      }
+    ]
+  },
+  "storyline": "Help Captain Decker settle an old score."
+}

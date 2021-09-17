@@ -1,0 +1,69 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 6",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_7"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 3 Hostile of Level 11 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 3 Hostile of Level 11 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Scavenger Leader.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_title": "Destroy Scavenger Leader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Beam Geordi on board.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Enterprise-D.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_5"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 2,
+        "rarity": "common",
+        "value": 600
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1000
+      }
+    ]
+  },
+  "storyline": "Defeat the scavengers once and for all!"
+}

@@ -1,0 +1,73 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Tribble Me This Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/tribble_me_this_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Donate 850 Dilithium for Spock\u2019s experiment.",
+      "id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 850
+      }
+    },
+    {
+      "title": "Investigate the strange signal.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/collep_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/collep_10",
+        "task_title": "Destroy Korod",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find a suitable habitat for the Tribbles.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/collep_10",
+        "planet": "nitaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tribble_me_this_part_1"
+  },
+  "recommended_level": 11,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 11
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 6000
+      },
+      {
+        "type": "tritanium",
+        "value": 900
+      }
+    ]
+  },
+  "storyline": "Assist Spock in his research."
+}

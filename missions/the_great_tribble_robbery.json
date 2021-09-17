@@ -1,0 +1,86 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/barnards_star_38"
+    }
+  ],
+  "mission_name": "The Great Tribble Robbery",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the Romulan Science Facility in Nelvana.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nelvana_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nelvana_32",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the Tribbles.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Return the Tribbles to Dr. Hector."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Bring the Tribbles to Dr. Enyala."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return the Tribbles to Doctor Hector.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 5460000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/barnard_s_star_38",
+        "planet": "snrub",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the Tribbles to Doctor Enyala.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 37128000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/thama_32",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Steal a shipment of Tribbles from a Romulan Science Facility."
+}

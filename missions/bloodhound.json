@@ -1,0 +1,159 @@
+{
+  "faction": "klingon",
+  "mission_name": "Bloodhound",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/can_you_find_it_in_your_heart"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the former Starfleet agent.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hilo_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 10,200,000 Dilithium for information.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10200000
+      }
+    },
+    {
+      "title": "Find Richards.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide what to do with the agent.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Kill him."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let him go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the agent.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_title": "Destroy Richards",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Chang.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 110
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 30
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -241900
+          },
+          {
+            "type": "romulan points",
+            "value": -645100
+          },
+          {
+            "type": "klingon points",
+            "value": 448000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the data to Chang.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 90
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -241900
+          },
+          {
+            "type": "romulan points",
+            "value": -645100
+          },
+          {
+            "type": "klingon points",
+            "value": 448000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/old_wounds"
+  },
+  "storyline": "Track down and interrogate former Starfleet agents."
+}

@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Learn From Past Mistakes",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_vacuum"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attempt to repeat the time loop.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with Captain Wilson.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the USS Newton to Nikola.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_title": "Destroy Orion Hauler",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/destination_is_origin"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 370
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 3150000
+      }
+    ]
+  },
+  "storyline": "Provide a first-hand experience of the time loop to Doctor Thielen."
+}

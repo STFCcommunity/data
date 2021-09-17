@@ -1,0 +1,71 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Pay Your Debts 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/pay_your_debts_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get Mudd in position.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fulriit_29",
+        "planet": "tomida",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hide out of sight.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/fulriit_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Debt Collector.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fulriit_29",
+        "task_title": "Destroy Debt Collector Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/pay_your_debts_1"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 500
+      },
+      {
+        "type": "latinum",
+        "value": 7
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 25000
+      }
+    ]
+  },
+  "storyline": "Use Mudd as a decoy."
+}

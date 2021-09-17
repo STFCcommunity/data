@@ -1,0 +1,112 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/kaikara_18"
+    }
+  ],
+  "mission_name": "Balance of Terror",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/fallen_centurion"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Escort the fleet to Outpost 1.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/medua_17",
+        "planet": "outpost 1",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Federation Defender.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/medua_17",
+        "task_title": "Destroy Federation Defender",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Join the Centurion on an attack run on Outpost 2.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/madra_16",
+        "planet": "outpost 2",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend the Centurion while it bombs Outpost 2.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/madra_16",
+        "task_title": "Destroy USS Yenisei",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Lead the attack on Outpost 3.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/atreig_16",
+        "planet": "outpost 3",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the USS Lhotse.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/atreig_16",
+        "task_title": "Destroy USS Lhotse",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rendezvous with the Centurion at Outpost 4.",
+      "id": 7,
+      "task": {
+        "$ref": "systems/ragnarr_17",
+        "planet": "outpost 4",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 25
+      },
+      {
+        "type": "3\u2605 survey parts",
+        "value": 40
+      },
+      {
+        "type": "federation points",
+        "value": -26
+      },
+      {
+        "type": "romulan points",
+        "value": 60
+      },
+      {
+        "type": "klingon points",
+        "value": -17
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 20000
+      }
+    ]
+  },
+  "storyline": "Launch a stealth attack on Federation colonies on the border of the Neutral Zone."
+}

@@ -1,0 +1,73 @@
+{
+  "faction": "federation",
+  "mission_name": "A Sense of Frustration",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fire_and_fury"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Klingon Fleet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disrupt Klingon fleets.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_title": "Destroy Klingon Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to Commander Elix.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/what_comes_next"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": 8000
+      },
+      {
+        "type": "romulan points",
+        "value": -1700
+      },
+      {
+        "type": "klingon points",
+        "value": -7800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1731000
+      }
+    ]
+  },
+  "storyline": "Stop the Klingon assault."
+}

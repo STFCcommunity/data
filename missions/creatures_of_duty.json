@@ -1,0 +1,162 @@
+{
+  "faction": "romulan",
+  "mission_name": "Creatures of Duty",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/their_war_not_yours"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track Stiles to Vos'Keth Station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "planet": "vos'keth station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to stop Stiles's transaction with the Klingons.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack Stiles's ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack Vos'Keth Station."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the Romulan ship that Stiles has stolen.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Stiles",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Ward off the Klingon D4.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Klingon D4",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to the Kaikara system.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 50
+          },
+          {
+            "type": "domitia",
+            "value": 10
+          },
+          {
+            "type": "federation points",
+            "value": -32
+          },
+          {
+            "type": "romulan points",
+            "value": 70
+          },
+          {
+            "type": "klingon points",
+            "value": -21
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 200000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Klingon defense ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Klingon Bortas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Ward off the Klingon D4.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Klingon D4",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to the Kaikara system.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "domitia",
+            "value": 10
+          },
+          {
+            "type": "romulan credits",
+            "value": 50
+          },
+          {
+            "type": "federation points",
+            "value": -32
+          },
+          {
+            "type": "romulan points",
+            "value": 70
+          },
+          {
+            "type": "klingon points",
+            "value": -21
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 35000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fallen_centurion"
+  },
+  "storyline": "Prevent the transfer of a working cloaking device into Klingon hands."
+}

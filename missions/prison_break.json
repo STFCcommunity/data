@@ -1,0 +1,86 @@
+{
+  "faction": "klingon",
+  "mission_name": "Prison Break",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/no_escape"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Kras.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ja_corash_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the breakout at Rura Penthe.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "rura penthe",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the warp trail to Jiwu'Puh.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/jiwu_puh_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 14,600,000 DIlithium for information.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 14600000
+      }
+    },
+    {
+      "title": "Track the prisoners to Afritalis.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 rare explorer parts",
+        "value": 25
+      },
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 180
+      },
+      {
+        "type": "federation points",
+        "value": -363800
+      },
+      {
+        "type": "romulan points",
+        "value": -970100
+      },
+      {
+        "type": "klingon points",
+        "value": 645000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a prison break at Rura Penthe."
+}

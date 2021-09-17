@@ -1,0 +1,51 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/thama_32"
+    }
+  ],
+  "mission_name": "Crisis Response",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Assess the damage on Jolojuq.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/siiolux_35",
+        "planet": "jolojuq",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 7.5M Tritanium to the relief effort.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 7500000
+      }
+    },
+    {
+      "title": "Return the wounded Andorians to Andoria Prime.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1009000
+      }
+    ]
+  },
+  "storyline": "Assist the Andorians with relief efforts following a natural disaster on Siiolux."
+}

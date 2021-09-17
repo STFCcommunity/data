@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "mission_name": "Enter the Man",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/gathering_stones"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow Commander Mayall to Verin.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/verin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the fanatic.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/verin_46",
+        "task_title": "Destroy Progenitor Fanatic",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Catch up with Commander Mayall in Imada.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/imada_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Recall to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shoot_the_messenger"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 2700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Convince an overconfident Independent to stand down."
+}

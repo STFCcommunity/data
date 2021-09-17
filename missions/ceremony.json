@@ -1,0 +1,82 @@
+{
+  "faction": "federation",
+  "mission_name": "Ceremony",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/work_experience"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Starbase 87 and meet the graduating class.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the graduating class to the ceremony on Earth.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attend the post-graduation celebration on Starbase 87.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/holles_43",
+        "planet": "starbase 87",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/chaperone"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "premium recruit token",
+        "value": 120
+      },
+      {
+        "type": "federation points",
+        "value": 311000
+      },
+      {
+        "type": "romulan points",
+        "value": -107000
+      },
+      {
+        "type": "klingon points",
+        "value": -481400
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 1485000
+      }
+    ]
+  },
+  "storyline": "Attend the graduation ceremony for the class of Starfleet Academy cadets."
+}

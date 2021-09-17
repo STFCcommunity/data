@@ -1,0 +1,121 @@
+{
+  "faction": "neutral",
+  "mission_name": "Black Market Blood",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/puppeteer"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Hostile forces.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/grenfil_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 7 Hostiles of Level 8 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 7 Hostiles of Level 8 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Help the Obali with their problem.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Investigate Nausicaan interest in the Obali."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Speak with the Orions on behalf of the Obali."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Visit the Warlords on Nausicaa Prime.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Warlord Grull's champion.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 battleship parts",
+            "value": 20
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 6000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Grull's Champion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Travel to Orion Prime.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give the Orion Syndicate 2000 Tritanium.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 survey parts",
+            "value": 20
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 7000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/relocation"
+  },
+  "recommended_level": 8,
+  "storyline": "Go to a contested system and eliminate the local Takret Militia."
+}

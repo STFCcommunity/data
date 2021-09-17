@@ -1,0 +1,132 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "The Long Way Home",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/against_all_odds"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Admiral Kahotek.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the missing patrol.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Should we save the Starfleet patrol?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Save them."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Leave them."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Borg ship.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Borg ship.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort the patrol to Hann.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1681000
+          },
+          {
+            "type": "tritanium",
+            "value": 248000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg ship.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Hann.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 188000
+          },
+          {
+            "type": "dilithium",
+            "value": 38000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Investigate a Starfleet distress signal."
+}

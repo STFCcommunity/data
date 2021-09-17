@@ -1,0 +1,106 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "The House of Borg Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_house_of_borg_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_title": "Destroy Klingon Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Meet with House Mo'kesh.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "planet": "nuhozol",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How will you proceed?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Insist on seeing Mo'kesh in person."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Warn the Klingons that this may be their destruction."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Fend off the Nuhozol defense ship.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 23
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 26000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_title": "Destroy Nuhozol Defense Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find Mo'kesh's son.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 17
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 634000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Uncover the mystery of the House of Mo'kesh."
+}

@@ -1,0 +1,81 @@
+{
+  "faction": "federation",
+  "mission_name": "Antenna",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Visit Admiral Johnson at Starbase 5.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "starbase 5",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pick up the antenna on Mars.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "mars",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 2.5M Tritanium for the antenna.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500000
+      }
+    },
+    {
+      "title": "Install the antenna on Weytahn.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/axanar_36",
+        "planet": "weytahn",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/custodian"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 22
+      }
+    ],
+    "others": [
+      {
+        "type": "federation recruit token",
+        "value": 1000
+      },
+      {
+        "type": "federation credits",
+        "value": 250
+      },
+      {
+        "type": "federation points",
+        "value": 12000
+      },
+      {
+        "type": "romulan points",
+        "value": -2900
+      },
+      {
+        "type": "klingon points",
+        "value": -13000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Starfleet have commissioned a powerful new sensor antenna to be used as a defense signal for the Andorians on Weytahn."
+}

@@ -1,0 +1,139 @@
+{
+  "arc": "tng arc 2",
+  "faction": "neutral",
+  "mission_name": "Survival of the Fittest Part 8",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/survival_of_the_fittest_part_9"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the mercenary system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How will you search for Picard?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bug the mercenary boss."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Ask around at the bar."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Plant the bug.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "planet": "gufenik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Get away from the Headquarters.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the mercenary.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 13
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 867000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Visit the King of Clubs on Onyxis.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "planet": "onyxis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 30 or higher.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 30 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 14
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 946000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/survival_of_the_fittest_part_7"
+  },
+  "recommended_level": 32,
+  "storyline": "Find Picard."
+}

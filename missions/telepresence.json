@@ -1,0 +1,73 @@
+{
+  "faction": "federation",
+  "mission_name": "Telepresence",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/estranged_relations"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Captain Sotan and his associate on Safro.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "planet": "safro",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the designated test site in Stradania.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Gather combat data from the Vulcan drone prototype.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_title": "Destroy Drone Prototype",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dangerous_excursions"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour repair speed up",
+        "value": 4
+      },
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 216000
+      },
+      {
+        "type": "romulan points",
+        "value": -70800
+      },
+      {
+        "type": "klingon points",
+        "value": -318800
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 903000
+      }
+    ]
+  },
+  "storyline": "Assist the Andorians in gathering combat data from a Vulcan drone."
+}

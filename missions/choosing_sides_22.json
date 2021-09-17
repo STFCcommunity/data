@@ -1,0 +1,212 @@
+{
+  "faction": "neutral",
+  "mission_name": "Choosing Sides",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/scrap_heap"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Upgrade Operations to Level 22.",
+      "id": 1,
+      "task": {
+        "task_info": "build",
+        "task_title": "Build Operations Level 22 at the Station",
+        "task_type": "other"
+      }
+    },
+    {
+      "title": "Choose a faction and scout housing near their space.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Choose Federation space"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Choose Romulan space."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Choose Klingon space"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Choose Federation space",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/bazamex_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your station and prepare for relocation.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move Station to a system of Level 22 or higher.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 100
+          },
+          {
+            "type": "federation points",
+            "value": 100
+          },
+          {
+            "type": "romulan points",
+            "value": -100
+          },
+          {
+            "type": "klingon points",
+            "value": -100
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 150000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 22 system",
+        "task_type": "other"
+      }
+    },
+    {
+      "title": "Choose Romulan space",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/tufem_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your station and prepare for relocation.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move Station to a system of Level 22 or higher.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 100
+          },
+          {
+            "type": "federation points",
+            "value": -100
+          },
+          {
+            "type": "romulan points",
+            "value": 100
+          },
+          {
+            "type": "klingon points",
+            "value": -100
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 150000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 22 system",
+        "task_type": "other"
+      }
+    },
+    {
+      "title": "Choose Klingon space",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/uikuv_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your station and prepare for relocation.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move Station to a system of Level 22 or higher.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 100
+          },
+          {
+            "type": "federation points",
+            "value": -100
+          },
+          {
+            "type": "romulan points",
+            "value": -100
+          },
+          {
+            "type": "klingon points",
+            "value": 100
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 150000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 22 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/lost_horizons"
+  },
+  "recommended_level": 22,
+  "storyline": "Upgrade Operations to Level 22."
+}

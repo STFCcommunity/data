@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "Last Stand",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/valley_of_death"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Klingon forces.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ja_corash_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the battle.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mehg_torr_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 40 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan General.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/mehg_torr_41",
+        "task_title": "Destroy Romulan Crucible Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/rampage"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 800
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 7830000
+      }
+    ]
+  },
+  "storyline": "Unite with Klingons to stop the Romulans."
+}

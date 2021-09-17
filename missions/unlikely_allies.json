@@ -1,0 +1,95 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Unlikely Allies",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_shoulders_of_giants"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Orion station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of level 25 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Collect 3,000 Inert Nanoprobes.",
+      "id": 3,
+      "task": {
+        "resource": "inert nanoprobe",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 3000
+      }
+    },
+    {
+      "title": "Collect 300 Charged Nanoprobes.",
+      "id": 4,
+      "task": {
+        "resource": "charged nanoprobe",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 300
+      }
+    },
+    {
+      "title": "Donate 300 Charged Nanoprobes.",
+      "id": 5,
+      "task": {
+        "resource": "charged nanoprobe",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 300
+      }
+    },
+    {
+      "title": "Return the Orion survivors to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_home_that_only_we_know"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 24
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 24
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 24
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Help the Orions deal with a Borg incursion."
+}

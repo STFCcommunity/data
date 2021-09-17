@@ -1,0 +1,81 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Dust Settles",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/sidelined"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Evacuate Klingon civilians.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mehg_torr_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Evacuate Klingon wounded.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mehg_torr_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Interceptor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mehg_torr_41",
+        "task_title": "Destroy Starfleet Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the survivors to Kronos.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/this_fire_burns"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 400
+      },
+      {
+        "type": "federation points",
+        "value": -363800
+      },
+      {
+        "type": "romulan points",
+        "value": -970100
+      },
+      {
+        "type": "klingon points",
+        "value": 645000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 5460000
+      }
+    ]
+  },
+  "storyline": "Deal with the aftermath of Starfleet\u2019s counter-attack."
+}

@@ -1,0 +1,42 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/cita_laga_15"
+    }
+  ],
+  "mission_name": "Sanctuary",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the sanctuary on Nauud.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "planet": "nauud",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give 30000 Parsteel to the sanctuary.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 30000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 40
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Provide the sanctuary with some resources to build a shelter."
+}

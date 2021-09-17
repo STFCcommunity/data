@@ -1,0 +1,90 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "A Sterling Example",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/house_rules"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Yara back to Starfleet on Jihao.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lainey_27",
+        "planet": "jihao",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the last known location of the Starfleet cadets.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/roda_alpha_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles in Roda Alpha.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 8 hostiles in Roda Alpha.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Rendezvous with the cadet\u2019s vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/roda_alpha_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Sterling.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/roda_alpha_28",
+        "task_title": "Destroy USS Sterling",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the Starfleet Academy cadets to Jihao.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/lainey_27",
+        "planet": "jihao",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/reverse_engineering"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 351000
+      },
+      {
+        "type": "dilithium",
+        "value": 71000
+      }
+    ]
+  },
+  "storyline": "Bring Yara back to Starfleet and appeal for their help in assembling a task force against the Borg."
+}

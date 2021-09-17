@@ -1,0 +1,80 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Territorial Dispute Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/territorial_dispute_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Proceed to Orion.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Perform short-range scans over Orion Prime.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "luna orionis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the first Orion assailant.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the next Orion assailant.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the final Orion assailant.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Assailant",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/territorial_dispute_part_3"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 29
+      },
+      {
+        "type": "latinum",
+        "value": 25
+      },
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 210
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Travel to Orion Prime to gather more information on the mining field incident."
+}

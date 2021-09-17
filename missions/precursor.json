@@ -1,0 +1,248 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Precursor",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Join the faction forces at the rallying point.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction task force to lead.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Lead the Federation task force."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Lead the Romulan task force."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Lead the Klingon task force."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Lead the Federation task force to Torana.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated Federation Ship.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Assimilated Kelvin",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Borg Probe.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Borg Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Engage the Borg Cube.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Impaired Borg Cube",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 20
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 230
+          },
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 360
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Lead the Romulan task force to Torana.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated Romulan Ship.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Assimilated Valdore",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Borg Probe.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Borg Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Engage the Borg Cube.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Impaired Borg Cube",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 20
+          }
+        ],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 230
+          },
+          {
+            "type": "3\u2605 explorer parts",
+            "value": 360
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Lead the Klingon task force to Torana.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Assimilated Klingon Ship.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Assimilated K't'inga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Borg Probe.",
+      "id": 5,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Borg Assailant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Engage the Borg Cube.",
+      "id": 6,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/torana_27",
+        "task_title": "Destroy Impaired Borg Cube",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 20
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 230
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 360
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/no_fighting_in_the_war_room"
+  },
+  "storyline": "Lead an all-out assault against the Borg hive in Torana."
+}

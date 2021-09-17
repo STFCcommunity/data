@@ -1,0 +1,107 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nausicaa_12"
+    }
+  ],
+  "mission_name": "Silence Bought",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the Informants.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "forix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Informants' ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Nausicaan Informants",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the Informants.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Finish the Informants off"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let the Informants go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Parlok",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "orion manifest",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 3000
+          },
+          {
+            "type": "tritanium",
+            "value": 1500
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Parlok.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "lucia gonzales",
+            "value": 1
+          },
+          {
+            "type": "orion manifest",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1500
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 14,
+  "storyline": "Parlok needs help silencing some Nausicaan informants. Track them down."
+}

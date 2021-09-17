@@ -1,0 +1,48 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/labac_17"
+    }
+  ],
+  "mission_name": "Red Handed",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the Klingon captive in Kepler-018.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_title": "Destroy Suliban Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the captive to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 20000
+      }
+    ]
+  },
+  "storyline": "Rescue a Klingon that was taken prisoner while performing reconnaissance."
+}

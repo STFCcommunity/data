@@ -1,0 +1,83 @@
+{
+  "faction": "romulan",
+  "mission_name": "Bait and Switch",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/re_interference"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Nausicaan forces in Nabok.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the investigator base in Priya.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Starfleet guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_title": "Destroy Starfleet Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Ensure that the evidence is destroyed on Vayuoaf.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/priya_22",
+        "planet": "vayuoaf",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sink_into_shadow"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 9
+      },
+      {
+        "type": "romulan credits",
+        "value": 80
+      },
+      {
+        "type": "federation points",
+        "value": -442
+      },
+      {
+        "type": "romulan points",
+        "value": 800
+      },
+      {
+        "type": "klingon points",
+        "value": -294
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Seek and destroy any incriminating evidence."
+}

@@ -1,0 +1,97 @@
+{
+  "faction": "romulan",
+  "mission_name": "Sovren's Flight",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Follow Sovren to Denobula.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Denobulan defender.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_title": "Destroy Denobulan Defender",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Starfleet transport.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_title": "Destroy Starfleet Transport",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retrieve Sovren from his stricken interceptor.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the U.S.S. Saladin.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_title": "Destroy USS Saladin",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Sovren home to Galorndon Core.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "galorndon core",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/chemical_rain"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 35
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -98400
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -65600
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 25000000
+      }
+    ]
+  },
+  "storyline": "Join Sovren on his desperate assault on the Denobulan Science Initiative."
+}

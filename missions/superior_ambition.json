@@ -1,0 +1,162 @@
+{
+  "faction": "neutral",
+  "mission_name": "Superior Ambition",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/truth_uncovered"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Perform a cautionary scan of Farnham.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which faction to warn of the Augment threat.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Inform the Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Inform the Romulans."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Inform the Klingons."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Rush to Earth and respond to the Augment threat.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Augment bomber.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "task_title": "Destroy Augment Bomber",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Jettison the detonator into deep space.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/gamma_sedra_50",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rush to Romulus and respond to the Augment threat.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Augment bomber.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Augment Bomber",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Jettison the detonator into deep space.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/teranth_50",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rush to Kronos and respond to the Augment threat.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Augment bomber.",
+      "id": 4,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "task_title": "Destroy Augment Bomber",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Jettison the detonator into deep space.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/tej_lukk_50",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shall_we_begin"
+  },
+  "storyline": "Stop Khan and the Augments from executing their plans."
+}

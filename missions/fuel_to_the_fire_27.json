@@ -1,0 +1,73 @@
+{
+  "faction": "romulan",
+  "mission_name": "Fuel to the Fire",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_change_of_scenery"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Sekula back to her base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Infiltrate Klingon Space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hoeven_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Klingon ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hoeven_27",
+        "task_title": "Destroy Klingon Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat back to Neutral Space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/what_comes_next"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": -5200
+      },
+      {
+        "type": "romulan points",
+        "value": 8000
+      },
+      {
+        "type": "klingon points",
+        "value": -3500
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1426000
+      }
+    ]
+  },
+  "storyline": "Cause conflict between the Federation and the Klingons."
+}

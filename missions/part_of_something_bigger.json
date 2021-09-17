@@ -1,0 +1,82 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Part of Something Bigger",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_fighting_in_the_war_room"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with Scotty on Starbase 80.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/xerxes_29",
+        "planet": "starbase 80",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track Jaylah to Iezat.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/iezat_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Jaylah\u2019s ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/iezat_29",
+        "task_title": "Destroy Jaylah",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape from the Borg pursuers.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg pursuer.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_title": "Destroy Borg Pursuer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with Jaylah.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cracks_on_the_surface"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2791000
+      },
+      {
+        "type": "dilithium",
+        "value": 83000
+      }
+    ]
+  },
+  "storyline": "Help Scotty retrieve Jaylah from the grasp of the Borg Collective."
+}

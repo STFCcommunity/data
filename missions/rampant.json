@@ -1,0 +1,74 @@
+{
+  "faction": "neutral",
+  "mission_name": "Rampant",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_last_stand"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Starfleet Investigator.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hilo_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the last known location of the bandits.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "planet": "brannigan",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 48 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Find the new base.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rek_sgar_49",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Bandit bosses.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/rek_sgar_49",
+        "task_title": "Destroy Bandit Boss Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m parsteel token",
+        "value": 260
+      },
+      {
+        "type": "1 day speed up",
+        "value": 4
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 260000000
+      }
+    ]
+  },
+  "storyline": "Help the Investigator."
+}

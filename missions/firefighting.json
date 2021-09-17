@@ -1,0 +1,98 @@
+{
+  "faction": "federation",
+  "mission_name": "Firefighting",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_radical_move"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the signal to Koltiska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban ambush.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_title": "Destroy Suliban Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Lorillia.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban assault.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Suliban Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rendezvous on the Mayflower at Starbase 82.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return wounded scientists to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/burning_wings"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 130
+      },
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 170
+      },
+      {
+        "type": "federation points",
+        "value": 2000
+      },
+      {
+        "type": "romulan points",
+        "value": -400
+      },
+      {
+        "type": "klingon points",
+        "value": -1800
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 100000
+      }
+    ]
+  },
+  "storyline": "Investigate a distress signal for the Mayflower."
+}

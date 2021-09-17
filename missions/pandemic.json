@@ -1,0 +1,58 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/cita_laga_15"
+    }
+  ],
+  "mission_name": "Pandemic",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/quarantine"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit Minos Thano to investigate the planet's radio silence.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "planet": "minos thano",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fly to Starbase 74.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Contact the medical researchers on Minos Thano.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "planet": "minos thano",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2000
+      },
+      {
+        "type": "dilithium",
+        "value": 600
+      }
+    ]
+  },
+  "storyline": "Help Dr. McCoy with a pandemic on Minos Silma."
+}

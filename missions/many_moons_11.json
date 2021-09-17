@@ -1,0 +1,56 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "Many Moons",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/one_of_our_own"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find another anomaly to examine.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find one more anomaly to examine.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station to compile the data.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/odd_shapes_on_the_horizon"
+  },
+  "recommended_level": 11,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 280
+      },
+      {
+        "type": "dilithium",
+        "value": 60
+      }
+    ]
+  },
+  "storyline": "Find and examine more anomalies."
+}

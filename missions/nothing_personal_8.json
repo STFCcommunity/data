@@ -1,0 +1,96 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/risa_7"
+    }
+  ],
+  "mission_name": "Nothing Personal",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Question the Romulans in the Boru system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/boru_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Locate the weapons dealer the Minnea system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/minnea_8",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the weapons dealer to stop him getting away.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/minnea_8",
+        "task_title": "Destroy Romulan Mining Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Choose what to do with the weapons dealer.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Accept the Weapons Dealer's offer."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Take him to Risa for justice."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Risa.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "tricorder",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Risa.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "tricorder",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 8,
+  "storyline": "Investigate the attack on Risa."
+}

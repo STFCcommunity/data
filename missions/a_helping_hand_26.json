@@ -1,0 +1,71 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Helping Hand",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/one_more_round"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with T'Pora.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/s_mtharz_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go into Neutral Space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alhazar_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 25 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return T'Pora to Starfleet.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/business_as_usual"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 23
+      },
+      {
+        "type": "5 minute repair speed up",
+        "value": 70
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assist T'Pora with her training."
+}

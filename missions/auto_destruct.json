@@ -1,0 +1,96 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/axanar_36"
+    }
+  ],
+  "mission_name": "Auto Destruct",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_trojan_effort"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Search for survivors in the Riktor system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/riktor_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Retrieve the transponder from a second escape pod.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/riktor_38",
+        "planet": "riktor v",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Yridian that was contacted by the ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the Yridian 5M Dilithium.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000000
+      }
+    },
+    {
+      "title": "Return home for a diagnostic of the ship.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 10
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 400
+      },
+      {
+        "type": "federation points",
+        "value": 60000
+      },
+      {
+        "type": "romulan points",
+        "value": -17300
+      },
+      {
+        "type": "klingon points",
+        "value": -77800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 10756000
+      }
+    ]
+  },
+  "storyline": "Search for a series of escape pods and discover why the accident occured."
+}

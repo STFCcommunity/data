@@ -1,0 +1,70 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/orion_12"
+    }
+  ],
+  "mission_name": "Bombardment",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/show_of_force"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Pick up the explosives on Oxoss in the Fostaa system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "planet": "oxoss",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bombard Yidosa from orbit.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/elona_13",
+        "planet": "yidosa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Rigellian Defender fleet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_title": "Destroy Rigellian Defender Fleet",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Ghoshan Drell.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "orion manifest",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 6000
+      }
+    ]
+  },
+  "storyline": "The Orion Underboss has greenlit a bombardment of a Rigellian harvesting colony."
+}

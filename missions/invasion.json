@@ -1,0 +1,90 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/angosia_25"
+    }
+  ],
+  "mission_name": "Invasion",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/plan_b"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Assist in the defense of the Ajilon system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles in Ajilon.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles in Ajilon.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Separatist Vanguard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy Separatist Vanguard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate the civilians from Ajilon Prime.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "planet": "ajilon prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the civilians to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 170
+      },
+      {
+        "type": "5 minute repair speed up",
+        "value": 42
+      },
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 125
+      },
+      {
+        "type": "federation points",
+        "value": 2000
+      },
+      {
+        "type": "romulan points",
+        "value": -400
+      },
+      {
+        "type": "klingon points",
+        "value": -1800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Report to Ajilon to assist Starfleet in the defense of a research outpost."
+}

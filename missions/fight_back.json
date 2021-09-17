@@ -1,0 +1,42 @@
+{
+  "faction": "neutral",
+  "mission_name": "Fight Back",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/warrior_for_hire"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Reach the resistance fighters on Riquzei.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 10 hostile ships in Yadow.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 10 hostile ships in Yadow. Hostile ships appear in red on the system view.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/command_nest"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 500000
+      }
+    ]
+  },
+  "storyline": "Reach the resistance fighters on Riquzei."
+}

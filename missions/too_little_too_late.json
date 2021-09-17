@@ -1,0 +1,94 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/wolf_39"
+    }
+  ],
+  "mission_name": "Too Little Too Late",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/turned_to_ash"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Make your way to the evacuation zone.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/teneebia_39",
+        "planet": "qalazun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take the evacuees to the safe zone.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/arcturus_39",
+        "planet": "arcturus ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return for a second wave of evacuees.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/teneebia_39",
+        "planet": "qalazun",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fend off the Romulan warship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/teneebia_39",
+        "task_title": "Destroy Romulan Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Romulan bombers.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/teneebia_39",
+        "task_title": "Destroy Romulan Bomber",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 28
+      },
+      {
+        "type": "federation credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -32000
+      },
+      {
+        "type": "klingon points",
+        "value": -144000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 801000
+      }
+    ]
+  },
+  "storyline": "Help Starfleet with the evacuation of the Teneebia system."
+}

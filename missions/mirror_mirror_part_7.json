@@ -1,0 +1,118 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mirror, Mirror Part 7",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Orbit the planet atmosphere that contains the dimensional rift.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "What should be done with the Terran crew?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take them to a Federation detention center."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Send them home to their own reality."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Transport the Terrans to Zehorro.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/zehoro_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Rendezvous with a Starfleet Security vessel.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/zehoro_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the temporal anomaly.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "hikaru sulu",
+            "value": 12
+          },
+          {
+            "type": "mirror sigil",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/zehoro_11",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Send the ISS Enterprise home.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Discover the source of the tachyon signal.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the temporal anomaly.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "leonard mccoy",
+            "value": 5
+          },
+          {
+            "type": "mirror sigil",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mirror_mirror_part_6"
+  },
+  "storyline": "Resolve the paradox surrounding the Mirror crew."
+}

@@ -1,0 +1,71 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "No Fighting in the War Room",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/precursor"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the faction representatives on Deneva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout out a potential system for the Dissimilation Center.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the suitability of the site.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "planet": "vomal",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 850,000 Parsteel to construct the Dissimilation Center.",
+      "id": 4,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 850000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/part_of_something_bigger"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 230
+      },
+      {
+        "type": "klingon credits",
+        "value": 230
+      },
+      {
+        "type": "federation credits",
+        "value": 230
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Meet with faction representatives to strategize an assault on the Borg hive."
+}

@@ -1,0 +1,81 @@
+{
+  "faction": "federation",
+  "mission_name": "Muzzled",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/dishonorable_discharge"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Deliver the evidence to Admiral Johnson at Starfleet Headquarters.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the last known location of the USS Mason.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/gamma_sedra_50",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the USS Mason.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/gamma_sedra_50",
+        "task_title": "Destroy USS Mason",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with Captain Beckett.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/debugging"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 80
+      },
+      {
+        "type": "federation points",
+        "value": 774000
+      },
+      {
+        "type": "romulan points",
+        "value": -297200
+      },
+      {
+        "type": "klingon points",
+        "value": -1337000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 33405000
+      }
+    ]
+  },
+  "storyline": "Reign in Captain Beckett and the USS Mason before he further damages Starfleet\u2019s reputation."
+}

@@ -1,0 +1,88 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
+  "mission_name": "Watchtower",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Enter the Archer system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/archer_36",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the elite Suliban Explorer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/archer_36",
+        "task_title": "Destroy Suliban Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Eliminate the Suliban Destroyer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/archer_36",
+        "task_title": "Destroy Suliban Destroyer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the lead Suliban Battleship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/archer_36",
+        "task_title": "Destroy Suliban Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Andoria with news of the Suliban retreat.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 350
+      },
+      {
+        "type": "federation points",
+        "value": 42000
+      },
+      {
+        "type": "romulan points",
+        "value": -11400
+      },
+      {
+        "type": "klingon points",
+        "value": -51400
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2166000
+      },
+      {
+        "type": "dilithium",
+        "value": 434000
+      }
+    ]
+  },
+  "storyline": "A Suliban Nomad fleet has ransacked the Andorian colony of Weytahn and are looting nearby planets."
+}

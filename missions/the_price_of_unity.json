@@ -1,0 +1,175 @@
+{
+  "faction": "klingon",
+  "mission_name": "The Price of Unity",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet with the Informant in Antonehk.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/antonehk_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 7 hostiles in Davidul.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 7 hostiles in Davidul.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Find the mercenary on Nojusor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "planet": "nojusor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Interrogate Venik or bribe Venik.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack Venik."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Bribe Venik."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable the mercenary ship.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_title": "Destroy Venik",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Confront K\u2019Thak on Dhi\u2019Ban.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "planet": "dhi'ban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat K\u2019Thak.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 90
+          },
+          {
+            "type": "gorkon",
+            "value": 3
+          },
+          {
+            "type": "federation points",
+            "value": -40
+          },
+          {
+            "type": "romulan points",
+            "value": -108
+          },
+          {
+            "type": "klingon points",
+            "value": 160
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 300000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "task_title": "Destroy K'Thak",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 37,000 Dilithium to the mercenary.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 37000
+      }
+    },
+    {
+      "title": "Confront K\u2019Thak on Dhi\u2019Ban.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "planet": "dhi'ban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat K\u2019Thak.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 25000
+          },
+          {
+            "type": "klingon credits",
+            "value": 90
+          },
+          {
+            "type": "gorkon",
+            "value": 3
+          },
+          {
+            "type": "federation points",
+            "value": -40
+          },
+          {
+            "type": "romulan points",
+            "value": -108
+          },
+          {
+            "type": "klingon points",
+            "value": 160
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "task_title": "Destroy K'Thak",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_sword_of_kahless"
+  },
+  "storyline": "Track down the Sword of Kahless and reclaim it from Venik."
+}

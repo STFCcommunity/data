@@ -1,0 +1,72 @@
+{
+  "faction": "federation",
+  "mission_name": "Consequences",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/final_straw"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Provoke the Suliban forces in Unroth.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unroth_32",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 10 Suliban vessels in Unroth.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 10 Suliban vessels in Unroth.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Take the Suliban scan profile to Denobula.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "planet": "denobula",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/in_another_life"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation recruit token",
+        "value": 500
+      },
+      {
+        "type": "federation credits",
+        "value": 350
+      },
+      {
+        "type": "federation points",
+        "value": 42000
+      },
+      {
+        "type": "romulan points",
+        "value": -11400
+      },
+      {
+        "type": "klingon points",
+        "value": -51400
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 248000
+      }
+    ]
+  },
+  "storyline": "Assist Ontella and the Denobulan Science Initiative on the construction of a suppressant for the Suliban Elite."
+}

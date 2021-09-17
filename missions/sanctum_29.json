@@ -1,0 +1,66 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Sanctum",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/moving_targets"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Search for a hideout.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 28 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 28 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Keep scouting locations.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hide out on the planet.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "planet": "taras",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/caged_animals"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 4
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 55000
+      }
+    ]
+  },
+  "storyline": "Find somewhere to stash the super soldiers."
+}

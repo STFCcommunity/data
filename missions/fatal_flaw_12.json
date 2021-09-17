@@ -1,0 +1,49 @@
+{
+  "faction": "neutral",
+  "mission_name": "Fatal Flaw",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fortification"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Renba the Archaeologist in the Rigel System.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Jadda in the Rigel System and rescue Renba.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Jadda",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cognition"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "2\u2605 explorer parts",
+        "value": 10
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 10000
+      }
+    ]
+  },
+  "storyline": "Find and acquire the artifact on Rigel."
+}

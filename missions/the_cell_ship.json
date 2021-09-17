@@ -1,0 +1,163 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/terix_38"
+    }
+  ],
+  "mission_name": "The Cell Ship",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/genetic_sequencing"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Enter Federation space to attempt to track the fallen Cell Ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/babel_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose a search site",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Search in the Benzar system."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Search in the Alpha Centauri system."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Travel to Benzar.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Starfleet Explorer.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "task_title": "Destroy Starfleet Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return a salvaged data pad to Sovren.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 500
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 310
+          },
+          {
+            "type": "federation points",
+            "value": -91200
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -60800
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 2800000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vendor_34",
+        "planet": "vendor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Alpha Centauri.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attempt to intercept the Starfleet vessel in Benzar.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "planet": "benzar prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report the loss of the Cell Ship to Sovren.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 500
+          },
+          {
+            "type": "romulan recruit token",
+            "value": 250
+          },
+          {
+            "type": "federation points",
+            "value": -91200
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -60800
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 350000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vendor_34",
+        "planet": "vendor",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Recover data from a crashed Suliban Cell Ship before it falls into Federation hands."
+}

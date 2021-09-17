@@ -1,0 +1,87 @@
+{
+  "faction": "federation",
+  "mission_name": "Shadows & Ruminations",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/stirrings_of_life"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Gather a second sample of the gas.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "planet": "bos vehna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with the chemics expert in Priya.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Release 2,500 Dilithium to the gas.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2500
+      }
+    },
+    {
+      "title": "Return to Starbase 82.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/accountability"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "common",
+        "value": 200
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 6
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 50
+      },
+      {
+        "type": "federation points",
+        "value": 500
+      },
+      {
+        "type": "romulan points",
+        "value": -84
+      },
+      {
+        "type": "klingon points",
+        "value": -378
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a startling discovery from Luis."
+}

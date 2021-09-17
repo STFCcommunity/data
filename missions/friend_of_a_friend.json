@@ -1,0 +1,62 @@
+{
+  "faction": "neutral",
+  "mission_name": "Friend of a Friend",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/what_are_you_hiding"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Toryn's contact.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sotavi_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate Toryn's last position.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/zosam_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 2,418,000 Dilithium for information.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2418000
+      }
+    },
+    {
+      "title": "Track Toryn's movement.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/operations_41"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 160
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Search for Toryn."
+}

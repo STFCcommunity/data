@@ -1,0 +1,115 @@
+{
+  "faction": "romulan",
+  "mission_name": "Summoner",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Accept the summons from Praetor Bervas on Romulus.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "What do you require from the Praetor?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Request the assistance of a Romulan officer"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Ask for Romulan ship technology"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return home to meet your new recruit.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "nero",
+            "value": 10
+          },
+          {
+            "type": "romulan credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": -91200
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -60800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to the Station to accept a blueprint delivery.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "augur blueprint part",
+            "value": 1
+          },
+          {
+            "type": "romulan credits",
+            "value": 500
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -91200
+          },
+          {
+            "type": "romulan points",
+            "value": 100000
+          },
+          {
+            "type": "klingon points",
+            "value": -60800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/remus"
+  },
+  "storyline": "Meet with the Romulan Praetor."
+}

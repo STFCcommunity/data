@@ -1,0 +1,62 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/vulcan_23"
+    }
+  ],
+  "mission_name": "No Privateer",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Defeat the Privateer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy The Privateer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the debris to Delta Vega.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "delta vega",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "cargo container",
+        "value": 1
+      },
+      {
+        "type": "federation credits",
+        "value": 130
+      },
+      {
+        "type": "federation points",
+        "value": 2000
+      },
+      {
+        "type": "romulan points",
+        "value": -400
+      },
+      {
+        "type": "klingon points",
+        "value": -1800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 502000
+      }
+    ]
+  },
+  "storyline": "Stop a privateer artifact hunter from stealing precious Vulcan planetary debris."
+}

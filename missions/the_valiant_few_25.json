@@ -1,0 +1,68 @@
+{
+  "arc": "borg arc 4",
+  "faction": "neutral",
+  "mission_name": "The Valiant Few",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Rendezvous with Caddeck\u2019s fleet in Metra Alpha.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/metra_alpha_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles in Metra Alpha.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 12 hostiles in Metra Alpha.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defend yourself against the Borg Cube.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/metra_alpha_25",
+        "task_title": "Destroy Borg Cube",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_friend_who_bleeds"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 7
+      }
+    ],
+    "others": [
+      {
+        "type": "mission token",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 452000
+      }
+    ]
+  },
+  "storyline": "Join fellow Independents in battle against a Borg invasion fleet."
+}

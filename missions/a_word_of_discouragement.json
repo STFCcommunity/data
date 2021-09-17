@@ -1,0 +1,134 @@
+{
+  "faction": "federation",
+  "mission_name": "A Word of Discouragement",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/reciprocation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attend the tactical briefing with Captain Beckett on Thesos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/izbrig_45",
+        "planet": "thesos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which supporting faction to intimidate.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Intimidate the Gorn."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Intimidate the Corvallens."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Deliver the warning to the Gorn on Kagil.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/annalu_47",
+        "planet": "kagil",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn guard.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common explorer parts",
+            "value": 900
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ch_kmulk_47",
+        "task_title": "Destroy Gorn Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the warning to the Corvallens on Mana\u2019ri.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "planet": "mana'ri",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen guard.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common battleship parts",
+            "value": 900
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_title": "Destroy Corvallen Guard",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/kal_hyah"
+  },
+  "storyline": "Target Romulan or Klingon allies in an attempt to undermine their support once again."
+}

@@ -1,0 +1,63 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "A Voice in the Darkness",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/deal_with_a_devil"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the origins of the distress beacon in Narendra.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 25 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Raider.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "task_title": "Destroy Corvallen Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort Dalen and his cargo to a secure location on Qualor IX.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "planet": "qualor ix",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 603000
+      },
+      {
+        "type": "tritanium",
+        "value": 89000
+      }
+    ]
+  },
+  "storyline": "Respond to a distress call originating from a nearby system."
+}

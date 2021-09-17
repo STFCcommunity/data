@@ -1,0 +1,81 @@
+{
+  "faction": "klingon",
+  "mission_name": "Interested Parties",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/paranoia"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the scavengers on Delta Vega.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "delta vega",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Scavenger.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Search the wreckage of the scavenger ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the data to Enthra.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_more_things_change"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 5
+      },
+      {
+        "type": "klingon credits",
+        "value": 25
+      },
+      {
+        "type": "federation points",
+        "value": -57
+      },
+      {
+        "type": "romulan points",
+        "value": -152
+      },
+      {
+        "type": "klingon points",
+        "value": 250
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 6000
+      }
+    ]
+  },
+  "storyline": "Help Khol gather weapon components."
+}
