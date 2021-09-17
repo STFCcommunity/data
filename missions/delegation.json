@@ -1,0 +1,112 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/ora_leraa_16"
+    },
+    {
+      "$ref": "systems/pune_16"
+    },
+    {
+      "$ref": "systems/freyda_17"
+    },
+    {
+      "$ref": "systems/oltomon_17"
+    },
+    {
+      "$ref": "systems/dalukerinborva_18"
+    },
+    {
+      "$ref": "systems/skyedark_18"
+    },
+    {
+      "$ref": "systems/gelvin_19"
+    },
+    {
+      "$ref": "systems/kosz_19"
+    }
+  ],
+  "mission_name": "Delegation",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/conspiracies"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the delegation in Midnight.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/midnight_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the first location in Obilent.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/obilent_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the second location.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Assassin.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "task_title": "Destroy Suiban Assassin",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escort the delegation back to Starbase 82.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "zahra",
+        "value": 10
+      },
+      {
+        "type": "federation credits",
+        "value": 20
+      },
+      {
+        "type": "federation points",
+        "value": 60
+      },
+      {
+        "type": "romulan points",
+        "value": -9
+      },
+      {
+        "type": "klingon points",
+        "value": -39
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 120000
+      }
+    ]
+  },
+  "storyline": "Help Zahra escort a Federation delegation to an important summit."
+}

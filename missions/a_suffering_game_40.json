@@ -1,0 +1,67 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "A Suffering Game",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/strongarm_tactics"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Romulan lab.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/umxheli_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan agent.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/umxheli_41",
+        "task_title": "Destroy Romulan Agent",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Centurion.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/umxheli_41",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to a safe distance.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_devil_you_know"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 4
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 24752000
+      }
+    ]
+  },
+  "storyline": "Discover the truth behind Mudd\u2019s motivations."
+}

@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "Undercover Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/undercover_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 10 Hostiles of Level 27 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Retreat from Orion space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/undercover_part_1"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 35
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1373000
+      }
+    ]
+  },
+  "storyline": "Fight off the Syndicate ships."
+}

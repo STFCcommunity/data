@@ -1,0 +1,134 @@
+{
+  "faction": "augment",
+  "mission_name": "Buyer's Remorse",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/broken_chains"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the debris field in Amador.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/amador_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the scrap dealer to Nausicaa Prime.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Acquire the scrap from the scrap dealer.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay for the parts."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Take the parts by force."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 10,000 Tritanium.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Return the parts to your station.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 18
+          }
+        ],
+        "others": [
+          {
+            "type": "botany bay blueprint part",
+            "value": 12
+          },
+          {
+            "type": "2\u2605 survey parts",
+            "value": 160
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 43000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the scrap dealer.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Scrap Dealer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the parts to your station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "botany bay blueprint part",
+            "value": 12
+          },
+          {
+            "type": "2\u2605 survey parts",
+            "value": 100
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 4000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/lessons_of_the_past"
+  },
+  "storyline": "A scrap dealer has come upon parts for the Botany Bay. Find a way to retrieve them."
+}

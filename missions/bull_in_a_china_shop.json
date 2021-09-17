@@ -1,0 +1,71 @@
+{
+  "faction": "neutral",
+  "mission_name": "Bull in a China Shop",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/validation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kiina_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of Level 48 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of Level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kiina_48",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Jaylah to the Starfleet Academy.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_open_secret"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 2700
+      },
+      {
+        "type": "premium recruit token",
+        "value": 320
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Bring evidence of the attacks to Starfleet."
+}

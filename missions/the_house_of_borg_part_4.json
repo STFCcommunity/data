@@ -1,0 +1,92 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "The House of Borg Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_house_of_borg_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Rel'kesh in the Izth system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/izth_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the pursuing Bortas.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/izth_26",
+        "task_title": "Destroy Bortas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Settle Rel'kesh's 5,000 Dilithium tab.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000
+      }
+    },
+    {
+      "title": "Capture Captain Dovma.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vosak_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy Dovma.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/vosak_24",
+        "task_title": "Destroy Dovma's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Rel'kesh to the seat of the Mo'kesh.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/k_amia_24",
+        "planet": "nuhozol",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_house_of_borg_part_3"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 14
+      }
+    ],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 3
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1293000
+      }
+    ]
+  },
+  "storyline": "Rescue Rel'kesh from rival Klingons."
+}

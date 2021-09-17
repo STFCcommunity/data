@@ -1,0 +1,81 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/unroth_32"
+    }
+  ],
+  "mission_name": "A Culture of Relics",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Bring Sovren to the Yridian information market.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe Yursa 7,500,000 Tritanium for information.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 7500000
+      }
+    },
+    {
+      "title": "Meet the Vulcan archaeologist.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken iii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1.5M G3 Raw Ore",
+      "id": 4,
+      "task": {
+        "resource": "3\u2605 raw ore",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1500000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "livis",
+        "value": 16
+      },
+      {
+        "type": "energy manifold",
+        "value": 1
+      },
+      {
+        "type": "romulan credits",
+        "value": 300
+      },
+      {
+        "type": "federation points",
+        "value": -17700
+      },
+      {
+        "type": "romulan points",
+        "value": 23000
+      },
+      {
+        "type": "klingon points",
+        "value": -11800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Retrieve a set of ancient Suliban artifacts from a Vulcan archaeologist."
+}

@@ -1,0 +1,92 @@
+{
+  "faction": "romulan",
+  "mission_name": "Relentless",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fool_me_twice"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Romulus.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 25 Hostiles Level 48 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 25 Hostiles Level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Romulan Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to the Romulan Safehouse.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Admiral",
+      "id": 5,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "task_title": "Destroy Romulan Admiral Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/honor_for_thee"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 80
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 1000
+      },
+      {
+        "type": "federation points",
+        "value": -891600
+      },
+      {
+        "type": "romulan points",
+        "value": 774000
+      },
+      {
+        "type": "klingon points",
+        "value": -594400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Launch an attack on Romulus."
+}

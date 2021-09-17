@@ -1,0 +1,79 @@
+{
+  "faction": "klingon",
+  "mission_name": "A Warrior's Spirit",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/compensation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Korath.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/erzon_uk_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 150 Federation Messages.",
+      "id": 2,
+      "task": {
+        "resource": "federation message",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 150
+      }
+    },
+    {
+      "title": "Donate 150 Federation Messages.",
+      "id": 3,
+      "task": {
+        "resource": "federation message",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 150
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/can_you_find_it_in_your_heart"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 30
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 30
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -241900
+      },
+      {
+        "type": "romulan points",
+        "value": -645100
+      },
+      {
+        "type": "klingon points",
+        "value": 448000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Meet with Korath and earn her respect."
+}

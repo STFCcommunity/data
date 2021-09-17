@@ -1,0 +1,59 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Unflinching",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/two_sides_of_the_coin"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the Klingon distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_title": "Destroy Borg Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_fate_of_the_broken"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "common",
+        "value": 125
+      }
+    ],
+    "others": [
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 110
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help defend Klingon space from the Borg."
+}

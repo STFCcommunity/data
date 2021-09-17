@@ -1,0 +1,88 @@
+{
+  "faction": "klingon",
+  "mission_name": "Sacred Relics",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/theft_of_an_icon"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Komal at Vos\u2019Keth Station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "planet": "vos'keth station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with the Yridian information dealer on Gauovik.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/obilent_17",
+        "planet": "gauovik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 35,000 Tritanium for the information.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 35000
+      }
+    },
+    {
+      "title": "Defeat the eavesdropper.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/obilent_17",
+        "task_title": "Destroy Eavesdropper",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Komal on Vos\u2019Keth Station.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "planet": "vos'keth station",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/day_of_the_dove"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "komal",
+        "value": 10
+      },
+      {
+        "type": "3\u2605 survey parts",
+        "value": 40
+      },
+      {
+        "type": "federation points",
+        "value": -13
+      },
+      {
+        "type": "romulan points",
+        "value": -35
+      },
+      {
+        "type": "klingon points",
+        "value": 60
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Track down a Yridian information dealer that dealt with Komal\u2019s scout."
+}

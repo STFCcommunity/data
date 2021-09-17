@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Futility",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/hope"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Convince the Klingons to work with you.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ra_taj_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Distract the Servitor ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ra_taj_41",
+        "task_title": "Destroy Servitor Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rescue the evacuees.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ra_taj_41",
+        "planet": "talha",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Get the evacuees to safety.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/voice_of_reason"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m tritanium token",
+        "value": 7
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Save more civilians."
+}

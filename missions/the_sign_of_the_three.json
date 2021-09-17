@@ -1,0 +1,206 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/kronos_60"
+    }
+  ],
+  "mission_name": "The Sign of the Three",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/one_reaction"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the stand off in the Deneva system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How will you proceed?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the Federation vessel"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack the Romulan vessel"
+          },
+          {
+            "option_id": 3,
+            "option_title": "Wait for the Klingons to act first"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the USS Constellation.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_title": "Destroy USS Constellation",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the High Council with word of the separatist movement.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 35
+          }
+        ],
+        "others": [
+          {
+            "type": "cargo container",
+            "value": 1
+          },
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -51600
+          },
+          {
+            "type": "romulan points",
+            "value": -137600
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the IRW Augur.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_title": "Destroy IRW Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the High Council with word of the separatist movement.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 35
+          }
+        ],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "cargo container",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -51600
+          },
+          {
+            "type": "romulan points",
+            "value": -137600
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the IRW Augur.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_title": "Destroy IRW Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the High Council with word of the separatist movement.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 35
+          }
+        ],
+        "others": [
+          {
+            "type": "cargo container",
+            "value": 1
+          },
+          {
+            "type": "klingon credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -51600
+          },
+          {
+            "type": "romulan points",
+            "value": -137600
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Report to the Deneva system where a Klingon, Romulan and Federation ship are engaged in a stand-off."
+}

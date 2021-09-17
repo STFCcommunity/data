@@ -1,0 +1,74 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/noakyn_30"
+    }
+  ],
+  "mission_name": "Custodian",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/antenna"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Fly to the Azati system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles in Azati.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles in Azati.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy the lead Corvallen.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/azati_34",
+        "task_title": "Destroy Lead Corvallen",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 280
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 7
+      },
+      {
+        "type": "federation points",
+        "value": 18000
+      },
+      {
+        "type": "romulan points",
+        "value": -4500
+      },
+      {
+        "type": "klingon points",
+        "value": -20100
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 4384000
+      }
+    ]
+  },
+  "storyline": "Assist the Imperial Guard and Starfleet in a show of force against Corvallen Rebels."
+}

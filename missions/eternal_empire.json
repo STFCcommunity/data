@@ -1,0 +1,165 @@
+{
+  "faction": "klingon",
+  "mission_name": "Eternal Empire",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Go to the Conclave.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rai_trohk_49",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide who to side with.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Side with Gorkon."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Side with Chang."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat Chang's Guard.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rai_trohk_49",
+        "task_title": "Destroy Chang's Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Chang.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/rai_trohk_49",
+        "task_title": "Destroy Chang",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Kronos with Gorkon.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 700
+          },
+          {
+            "type": "gorkon",
+            "value": 2
+          },
+          {
+            "type": "klingon recruit token",
+            "value": 230
+          },
+          {
+            "type": "federation points",
+            "value": -445800
+          },
+          {
+            "type": "romulan points",
+            "value": -1188000
+          },
+          {
+            "type": "klingon points",
+            "value": 774000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the High Council Guard.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rai_trohk_49",
+        "task_title": "Destroy High Council Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the High Council Elite.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rai_trohk_49",
+        "task_title": "Destroy High Council Elite",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Surrender to Gorkon.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/rai_trohk_49",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Kronos with Gorkon.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 250
+          },
+          {
+            "type": "klingon credits",
+            "value": 700
+          },
+          {
+            "type": "chang",
+            "value": 7
+          },
+          {
+            "type": "federation points",
+            "value": -445800
+          },
+          {
+            "type": "romulan points",
+            "value": -1188000
+          },
+          {
+            "type": "klingon points",
+            "value": 774000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/no_retreat_no_mercy"
+  },
+  "storyline": "Make a decision that will determine the future of the Klingon Empire."
+}

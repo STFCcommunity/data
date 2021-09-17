@@ -1,0 +1,81 @@
+{
+  "faction": "augment",
+  "locations": [
+    {
+      "$ref": "systems/kor_na_ron_27"
+    }
+  ],
+  "mission_name": "Sustainability",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Meet Doctor De Santa in Rigel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 300 Corrupted Data.",
+      "id": 2,
+      "task": {
+        "resource": "corrupted data",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 300
+      }
+    },
+    {
+      "title": "Defeat the rogue Augment.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Rogue Augment",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report to Khan in Lydan.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lydan_22",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 2
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 2
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 2
+      }
+    ],
+    "others": [
+      {
+        "type": "augment points",
+        "value": 200
+      },
+      {
+        "type": "dark matter",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "A scientist believes she can minimize the damage caused by Khan's experiments."
+}

@@ -1,0 +1,160 @@
+{
+  "faction": "romulan",
+  "mission_name": "Double Down",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/back_and_forth"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Romulan docking station.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yina_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Lead the Diversion Team or the Infiltration Team?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Diversion Team"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Infiltration Team"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat 20 Hostiles of Level 44 or higher.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 20 Hostiles of Level 44 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/yina_46",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common interceptor parts",
+            "value": 900
+          },
+          {
+            "type": "federation points",
+            "value": -594000
+          },
+          {
+            "type": "romulan points",
+            "value": 538000
+          },
+          {
+            "type": "klingon points",
+            "value": -396000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 9450000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Guard Ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yina_46",
+        "task_title": "Destroy Romulan Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attack the docking station.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yina_46",
+        "planet": "amszara",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 common explorer parts",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -594000
+          },
+          {
+            "type": "romulan points",
+            "value": 538000
+          },
+          {
+            "type": "klingon points",
+            "value": -396000
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 21300000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unbreakable"
+  },
+  "storyline": "Help the lead the counter-attack."
+}

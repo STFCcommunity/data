@@ -1,0 +1,67 @@
+{
+  "faction": "neutral",
+  "mission_name": "Broken Mirror",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_kelvin_paradox"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Rigellian Informer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Nausicaan Raider.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Speak with the Rigellian Informer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fostaa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to the Nausicaa system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/looking_glass"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 20
+      },
+      {
+        "type": "officer xp",
+        "value": 11000
+      },
+      {
+        "type": "premium recruit token",
+        "value": 75
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Unravel more of the mystery of Spock's disappearance."
+}

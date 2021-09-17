@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "Hidden Futures, Forgotten Past",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/introspection"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the site.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/er_tama_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with Captain Markona.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the artifact to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Upgrade Research & Development to level 45.",
+      "id": 4,
+      "task": {
+        "task_info": "build",
+        "task_title": "Build R&D Department Level 45 at the Station",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/scientific_advancements"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 22
+      }
+    ],
+    "others": [
+      {
+        "type": "100k dilithium token",
+        "value": 90
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Track down another Progenitor artifact."
+}

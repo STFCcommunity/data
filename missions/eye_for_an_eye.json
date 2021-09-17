@@ -1,0 +1,89 @@
+{
+  "faction": "romulan",
+  "mission_name": "Eye For An Eye",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/where_do_we_go_from_here"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to Romulan Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tolain_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Legionary.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tolain_40",
+        "task_title": "Destroy Romulan Legionary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attack the Romulan military base.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tolain_40",
+        "planet": "masicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles Level 40 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 15 Hostiles Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escape to the rebel base.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/guerilla_warfare"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "1 day speed up",
+        "value": 5
+      },
+      {
+        "type": "federation points",
+        "value": -212500
+      },
+      {
+        "type": "romulan points",
+        "value": 216000
+      },
+      {
+        "type": "klingon points",
+        "value": -141700
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 45240000
+      }
+    ]
+  },
+  "storyline": "Launch a follow-up attack."
+}

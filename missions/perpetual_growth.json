@@ -1,0 +1,128 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/jiwupuh_36"
+    }
+  ],
+  "mission_name": "Perpetual Growth",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Meet the Klingon cargo hauler at Qubui in Lankal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lankal_39",
+        "planet": "qubui",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take the Tribble population to the Tejat system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How do you want to deal with the Tribbles?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Incinerate the cargo hauler"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Land the hauler on the planet"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the cargo hauler.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 500
+          },
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": -44400
+          },
+          {
+            "type": "romulan points",
+            "value": -118400
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 1095000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy Cargo Hauler",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Send the Tribble cargo to Tilit.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "klingon credits",
+            "value": 500
+          },
+          {
+            "type": "officer xp",
+            "value": 54000
+          },
+          {
+            "type": "federation points",
+            "value": -44400
+          },
+          {
+            "type": "romulan points",
+            "value": -118400
+          },
+          {
+            "type": "klingon points",
+            "value": 100000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "planet": "tilit",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Fulfill the Gorn's contract to eliminate a colony of the Klingon Empire's most hated enemy."
+}

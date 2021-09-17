@@ -1,0 +1,132 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Supernova of Romulus",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/every_vulcan_has_his_price"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Reunite Spock with the Enterprise in Bellas.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the damage on Vaset.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Where should we search for Spock?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Utoqa with Klingon outpost."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Nilkino with Romulan outpost."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Investigate the Klingon research outpost.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hurry to the Romulan outpost on Ciloi.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "planet": "ciloi",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the ambushers.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 12
+          }
+        ],
+        "others": [
+          {
+            "type": "2\u2605 interceptor parts",
+            "value": 8
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "task_title": "Destroy Nausicaan Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the Romulan research outpost.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the ambushers.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 12
+          }
+        ],
+        "others": [
+          {
+            "type": "2\u2605 battleship parts",
+            "value": 8
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "task_title": "Destroy Nausicaan Interceptor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_kelvin_paradox"
+  },
+  "storyline": "Work with Spock to uncover his mysterious counterpart's motives."
+}

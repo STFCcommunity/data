@@ -1,0 +1,77 @@
+{
+  "faction": "neutral",
+  "mission_name": "Disarmament",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/offer_of_a_lifetime"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate Klingon space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 8,500,000 Tritanium for information.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8500000
+      }
+    },
+    {
+      "title": "Investigate the Klingon fleet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zlim_kach_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the D4.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zlim_kach_40",
+        "task_title": "Destroy Klingon D4",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Vulcan space.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/new_vulcan_42",
+        "planet": "new vulcan",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/behind_the_mask"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      }
+    ],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 360000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Toryn investigate a threat to the Vulcan people."
+}

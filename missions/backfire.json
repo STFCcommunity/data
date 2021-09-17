@@ -1,0 +1,71 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/sol_60"
+    }
+  ],
+  "mission_name": "Backfire",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Talk to the Admiral to learn of the situation.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront the Corvallen in orbit of Benzar.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "planet": "benzar prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Corvallen's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/benzar_39",
+        "task_title": "Destroy Corvallen Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "damaged datapad",
+        "value": 1
+      },
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -34400
+      },
+      {
+        "type": "klingon points",
+        "value": -154800
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 25000000
+      }
+    ]
+  },
+  "storyline": "An anti-Federation Corvallen militant has taken a human captive in the Benzite system and has hostage demands. Starfleet refuses to negotiate."
+}

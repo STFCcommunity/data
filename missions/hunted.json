@@ -1,0 +1,137 @@
+{
+  "faction": "romulan",
+  "mission_name": "Hunted",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Go to the sighting location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/wololo_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of 43 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of 43 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Track the agent.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill or spare the agent?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Kill the agent."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Spare the agent."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Agent.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_title": "Destroy Rogue Agent Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to the Tal Shiar.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "latinum",
+            "value": 2200
+          },
+          {
+            "type": "federation points",
+            "value": -483800
+          },
+          {
+            "type": "romulan points",
+            "value": 448000
+          },
+          {
+            "type": "klingon points",
+            "value": -322600
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 19575000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ami_bera_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report back to the Tal Shiar.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 800
+          },
+          {
+            "type": "federation points",
+            "value": -483800
+          },
+          {
+            "type": "romulan points",
+            "value": 448000
+          },
+          {
+            "type": "klingon points",
+            "value": -322600
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ami_bera_43",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_liability"
+  },
+  "storyline": "Confront the rogue agent."
+}

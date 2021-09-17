@@ -1,0 +1,65 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Breakout",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mudd_s_sale"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the holding ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat accompanying ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_title": "Destroy Interceptor Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Extract the prisoner.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/flatter_to_deceive"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1228000
+      },
+      {
+        "type": "tritanium",
+        "value": 181000
+      }
+    ]
+  },
+  "storyline": "Try to free the captive trader."
+}

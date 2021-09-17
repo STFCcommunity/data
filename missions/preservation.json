@@ -1,0 +1,62 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/vulcan_23"
+    }
+  ],
+  "mission_name": "Preservation",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Deliver Artifacts to Deneva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Mercenaries.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_title": "Destroy Corvallen Mercenaries",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "cargo container",
+        "value": 1
+      },
+      {
+        "type": "federation credits",
+        "value": 130
+      },
+      {
+        "type": "federation points",
+        "value": 2000
+      },
+      {
+        "type": "romulan points",
+        "value": -400
+      },
+      {
+        "type": "klingon points",
+        "value": -1800
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 15000
+      }
+    ]
+  },
+  "storyline": "Take the recovered Vulcan artifacts to Deneva for their safekeeping."
+}

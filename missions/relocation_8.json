@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "Relocation",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/black_market_blood"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit a potential new home system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dignam_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout another potential system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/doraboro_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/through_the_long_range_sensors"
+  },
+  "recommended_level": 8,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "relocation token",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 4000
+      }
+    ]
+  },
+  "storyline": "Scout out a potential new home planet for the Station to orbit."
+}

@@ -1,0 +1,118 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "A Home Of Our Own",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_echoes_of_our_sins"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the edge of Romulan space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attempt to disable the ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_title": "Destroy Mysterious Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the ship or let it escape.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let it escape."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy it."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Follow the ship.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Charvanek to Kaikara.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 140
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 866000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "planet": "voros outpost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the ship.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Charvanek to Kaikara.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 140
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 26000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/behind_closed_doors"
+  },
+  "storyline": "Find a Romulan lab experimenting with Borg technology."
+}

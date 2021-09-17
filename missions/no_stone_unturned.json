@@ -1,0 +1,104 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/aruna_21"
+    }
+  ],
+  "mission_name": "No Stone Unturned",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate reports of a wanted fugitive in Vindemiatrix.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the fugitive on Oltana.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "planet": "oltana",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the dockmaster.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 20000
+      }
+    },
+    {
+      "title": "Go to Kaikara.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Ajal\u2019s mercenary.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy Corvallen Mercenary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to Krah\u2019Hor.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Ajal.",
+      "id": 7,
+      "task": {
+        "$ref": "systems/krah_hor_18",
+        "task_title": "Destroy Ajal",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "north star blueprint part",
+        "value": 2
+      },
+      {
+        "type": "alliance event trophy",
+        "value": 2
+      },
+      {
+        "type": "officer 0718",
+        "value": 8
+      },
+      {
+        "type": "federation points",
+        "value": 250
+      },
+      {
+        "type": "romulan points",
+        "value": -44
+      },
+      {
+        "type": "klingon points",
+        "value": -198
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Starfleet needs help tracking down a dangerous fugitive."
+}

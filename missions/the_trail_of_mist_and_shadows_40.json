@@ -1,0 +1,152 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "The Trail of Mist and Shadows",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_devil_you_know"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Slaver ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pneuma_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Slaver.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/pneuma_40",
+        "task_title": "Destroy Slaver Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attend the auction.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fibona_39",
+        "planet": "seruu",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bid on the auction?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Bid."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Do not bid."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 1,000,000 Dilithium for the stolen technology.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Defeat the Orion guard.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/fibona_39",
+        "task_title": "Destroy Orion Guardship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Catch Mudd!",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 70
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 2002000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion guard.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/fibona_39",
+        "task_title": "Destroy Orion Guardship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the auction master.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/fibona_39",
+        "task_title": "Destroy Auction Master",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Catch Mudd!",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 40841000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_new_world_a_violent_world"
+  },
+  "recommended_level": 40,
+  "storyline": "Infiltrate an Orion tech auction."
+}

@@ -1,0 +1,155 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/vendor_34"
+    }
+  ],
+  "mission_name": "Enemy of the Nomads",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/vocal_minority"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Kelia in the safe zone on Lameo.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unroth_32",
+        "planet": "lameo",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront Sovren on Sutidey.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vendor_34",
+        "planet": "vendor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Address Sovren",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Threaten Sovren for the attacker's warp trail."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Warn that Civil War will return to the Suliban."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Execute the traitorous Cabalist.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/calder_39",
+        "task_title": "Destroy Traitor Cabalist",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take the traitor's weapon to Kelia.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3 hour speed up",
+            "value": 16
+          },
+          {
+            "type": "romulan credits",
+            "value": 350
+          },
+          {
+            "type": "federation points",
+            "value": -34300
+          },
+          {
+            "type": "romulan points",
+            "value": 42000
+          },
+          {
+            "type": "klingon points",
+            "value": -22800
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 8414000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "galorndon core",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Execute the traitorous Cabalist.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/oppidum_frumenti_30",
+        "task_title": "Destroy Traitor Cabalist",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Reveal that Sovren has captured the assassin to Kelia.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 35
+          },
+          {
+            "type": "romulan credits",
+            "value": 350
+          },
+          {
+            "type": "federation points",
+            "value": -34300
+          },
+          {
+            "type": "romulan points",
+            "value": 42000
+          },
+          {
+            "type": "klingon points",
+            "value": -22800
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 1238000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "ommos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Find the Cabalist responsible for the assassination of the Nomad leadership."
+}

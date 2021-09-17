@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "Lost Pieces",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/rampage"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Search for the missing Crucibles.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tolain_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Keep searching for the Crucibles.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan scout.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_title": "Destroy Romulan Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bombard the station.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "planet": "helg",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_cautious_approach"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 156000
+      },
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 80
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the lost Crucibles."
+}

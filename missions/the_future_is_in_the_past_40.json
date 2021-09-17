@@ -1,0 +1,74 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "The Future is in the Past",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/only_in_your_mind"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate another energy pulse.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/salara_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Korta.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/salara_23",
+        "task_title": "Destroy Korta",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Darak.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/salara_23",
+        "task_title": "Destroy Klingon Bortas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unlikely_reunions"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 19
+      }
+    ],
+    "others": [
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2791000
+      }
+    ]
+  },
+  "storyline": "Stop the Klingons from finding another quantum communicator."
+}

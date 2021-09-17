@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "Containment",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/operations_48"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Lure the Progenitors to Naalur.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Virgil.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_title": "Destroy Virgil",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/final_preparations"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m tritanium token",
+        "value": 23
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 22725000
+      }
+    ]
+  },
+  "storyline": "Activate the Conduit Pillars and banish the Progenitors from the galaxy."
+}

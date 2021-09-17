@@ -1,0 +1,99 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/whinnul_9"
+    }
+  ],
+  "mission_name": "Crashlander",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Follow the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vaolas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide who to trust.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Trust the Rigelian Captain."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Trust Sharpe."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat Sharpe",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "task_title": "Destroy Sharpe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Sharpe to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "lucia gonzales",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat Rigellian Captain",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "task_title": "Destroy Rigellian Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Sharpe to Vost.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 survey parts",
+            "value": 25
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vost",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 11,
+  "storyline": "The only survivor of a ship explosion crashlanded his escape pod on a planet in Maluria system and requires transport home."
+}

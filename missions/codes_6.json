@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Codes",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/stockpiling_tritanium"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect 3 Encryption Keys from landmark systems.",
+      "id": 1,
+      "task": {
+        "resource": "encryption key",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 3
+      }
+    },
+    {
+      "title": "Meet with Toryn.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hand over the Encryption Keys to Toryn.",
+      "id": 3,
+      "task": {
+        "resource": "encryption key",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 3
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_isle_of_noises"
+  },
+  "recommended_level": 6,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "recruit token",
+        "value": 20
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1500
+      }
+    ]
+  },
+  "storyline": "Collect 3 Encryption Keys from landmark systems of Risa, Yridia, Tellun, and Maluria."
+}

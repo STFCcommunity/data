@@ -1,0 +1,108 @@
+{
+  "faction": "neutral",
+  "mission_name": "Initial Errands",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_debt_repaid"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the mines in Sotavi.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sotavi_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide what to do with the crew.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Deliver the crew of the Italus to the Orion Syndicate."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Escort the crew of the Italus into hiding."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable the Italus.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sotavi_41",
+        "task_title": "Destroy Italus",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the crew of the Italus to the Orion Syndicate.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 21000000
+          },
+          {
+            "type": "tritanium",
+            "value": 3150000
+          },
+          {
+            "type": "dilithium",
+            "value": 900000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the crew of the Italus into hiding in Sileo.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sileo_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return with the Italus\u2019 cargo to Orion Prime.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cover_charge"
+  },
+  "storyline": "Decide the fate of the crew of a civilian mining vessel."
+}

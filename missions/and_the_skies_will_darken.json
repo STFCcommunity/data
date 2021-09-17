@@ -1,0 +1,103 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "And the Skies Will Darken",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_seeds_of_life"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the disturbance in Romulan space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scan the planet.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "planet": "nojusor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "The Borg are coming. What do we do?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Save the stranded survivors."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Escape without the survivors."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable the Borg probe.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_title": "Destroy Borg Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "30 minute repair speed up",
+            "value": 14
+          },
+          {
+            "type": "8 hour speed up",
+            "value": 6
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_moral_compass"
+  },
+  "storyline": "Investigate a disturbance in Romulan space."
+}

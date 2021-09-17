@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Diplomacy",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/time_is_a_river"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow the Enterprise to Maumo.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maumo_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 14 hostiles of level 44 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 14 hostiles of level 44 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Follower.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/maumo_47",
+        "task_title": "Destroy Fanatic",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Federation space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_calgary_43",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/homelands"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 700
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 16200000
+      }
+    ]
+  },
+  "storyline": "Try and reason with the Progenitors."
+}

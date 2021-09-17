@@ -1,0 +1,71 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Territorial Dispute Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/territorial_dispute_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Escort Tiva back home to Andoria Prime.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 5,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 5000
+      }
+    },
+    {
+      "title": "Return the cache of Dilithium to Andoria Prime.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 5,000 Dilithium.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/territorial_dispute_part_1"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 1233000
+      }
+    ]
+  },
+  "storyline": "Return Tiva to her home on Andoria Prime."
+}

@@ -1,0 +1,70 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/enthra_27"
+    }
+  ],
+  "mission_name": "Complicity",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Accept a delivery contract from the Klingon trader on KineQ.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/morska_29",
+        "planet": "kineq",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Drop off the cargo at Starbase 74.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "starbase 74",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the pursuing Starfleet vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_title": "Destroy Starfleet Vessel",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 200
+      },
+      {
+        "type": "5 minute repair speed up",
+        "value": 46
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 110
+      },
+      {
+        "type": "federation points",
+        "value": -2700
+      },
+      {
+        "type": "romulan points",
+        "value": -7200
+      },
+      {
+        "type": "klingon points",
+        "value": 8000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Deliver a shipment from a Klingon trader to a Federation outpost in the neutral zone."
+}

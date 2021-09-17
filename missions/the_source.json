@@ -1,0 +1,81 @@
+{
+  "arc": "swarm arc 1",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/elona_13"
+    }
+  ],
+  "mission_name": "The Source",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/life_after_krall"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect the Yridian Trader on Andvaris.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/andvaris_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Orion Kehra.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/andvaris_15",
+        "task_title": "Destroy Orion Kehra",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Contact the Orion Syndicate on Orion Prime.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Underboss Vogga.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Underboss Vogga",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Treat Jaylah's injuries at your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "jaylah",
+        "value": 2
+      },
+      {
+        "type": "1 hour speed up",
+        "value": 4
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 12000
+      }
+    ]
+  },
+  "storyline": "Take a Yridian trader to find valuable salvage."
+}

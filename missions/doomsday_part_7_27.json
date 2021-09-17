@@ -1,0 +1,69 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 7",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomsday_part_8"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Leevoigh on Gawot.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "planet": "gawot",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 50,000 Dilithium to the refugee fleet.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50000
+      }
+    },
+    {
+      "title": "Accompany the refugee fleet to P'Jem.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_6"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1986000
+      }
+    ]
+  },
+  "storyline": "Help deliver the refugees on Gawot to Federation starbases."
+}

@@ -1,0 +1,95 @@
+{
+  "faction": "neutral",
+  "mission_name": "Apocrypha",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/said_the_spider_to_the_fly"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect 90 Federation Messages.",
+      "id": 1,
+      "task": {
+        "resource": "federation message",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 90
+      }
+    },
+    {
+      "title": "Collect 90 Romulan Messages.",
+      "id": 2,
+      "task": {
+        "resource": "romulan message",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 90
+      }
+    },
+    {
+      "title": "Collect 90 Klingon Messages.",
+      "id": 3,
+      "task": {
+        "resource": "klingon message",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 90
+      }
+    },
+    {
+      "title": "Rendezvous with Scotty in Odin and hand over the Encrypted Messages.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Thug.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_title": "Destroy Nausicaan Thug",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_uncivilized_threat"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 39
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 39
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 39
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Disseminate rumors throughout the Galaxy regarding a fake peace summit."
+}

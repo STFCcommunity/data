@@ -1,0 +1,96 @@
+{
+  "faction": "klingon",
+  "mission_name": "This Fire Burns",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_dust_settles"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Stop another Starfleet assault.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Spearhead.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "task_title": "Destroy USS Spearhead",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Evacuate Klingon wounded.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/dohrmas_46",
+        "planet": "dohrmas station",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 63,000,000 Tritanium to ready the planet's defenses.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 63000000
+      }
+    },
+    {
+      "title": "Bring the wounded to Kronos.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/ferocity"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 28
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -297000
+      },
+      {
+        "type": "romulan points",
+        "value": -791900
+      },
+      {
+        "type": "klingon points",
+        "value": 538000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defend Klingon Space from a Starfleet counter-attack."
+}

@@ -1,0 +1,70 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Shadow Descends",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/vulnerable"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the source of the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the assimilated ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles of Level 26 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Gather Dalen from the hideout.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/panak_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/arrival"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 24
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Find the source of the colony attacks."
+}

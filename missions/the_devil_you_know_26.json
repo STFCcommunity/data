@@ -1,0 +1,119 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "The Devil You Know",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_suffering_game"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Romulan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Should we take the offer?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Offer Maia's data on the spore drive."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Reject the offer."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Tal Shiar agent.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_title": "Destroy Tal Shiar Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with the intelligence.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "independent credits",
+            "value": 5
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 373000
+          },
+          {
+            "type": "dilithium",
+            "value": 11000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Tal Shiar agent.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "task_title": "Destroy Tal Shiar Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station with the intelligence.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 6
+          },
+          {
+            "type": "1 day peace shield",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 55000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_trail_of_mist_and_shadows"
+  },
+  "recommended_level": 26,
+  "storyline": "Make a deal with the Tal Shiar."
+}

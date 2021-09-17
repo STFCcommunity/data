@@ -1,0 +1,67 @@
+{
+  "faction": "federation",
+  "mission_name": "The Wall of Heroes",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Collect the remains of the Andorian soldiers.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "planet": "bolla",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles in Azati.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles in Azati.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring the Andorians to the Wall of Heroes.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/attack_formation"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 1200
+      },
+      {
+        "type": "federation credits",
+        "value": 230
+      },
+      {
+        "type": "encryption key",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": 10000
+      },
+      {
+        "type": "romulan points",
+        "value": -2300
+      },
+      {
+        "type": "klingon points",
+        "value": -10400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Retrieve the bodies of fallen Andorian troops and take them to their rightful place at the Wall of Heroes."
+}

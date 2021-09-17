@@ -1,0 +1,90 @@
+{
+  "faction": "neutral",
+  "mission_name": "Out of Stock",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/field_test"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Suliban on Dova.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yoruba_39",
+        "planet": "dova",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 8,200,000 Tritanium to the Suliban.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8200000
+      }
+    },
+    {
+      "title": "Meet with the next Suliban in Dessica.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/dessica_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 54,200,000 Parsteel to Lagar.",
+      "id": 4,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 54200000
+      }
+    },
+    {
+      "title": "Defeat Lagar.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/dessica_39",
+        "task_title": "Destroy Lagar",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/covering_our_tracks"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 32
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 9343000
+      }
+    ]
+  },
+  "storyline": "Appeal to a Romulan-affiliated faction in order to find a tetryon compositor for the cloaking device."
+}

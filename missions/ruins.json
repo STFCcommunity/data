@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "Ruins",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_deadly_pattern"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ezla_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Visit the colony.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ezla_48",
+        "planet": "nuven",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fight off the scavenger.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ezla_48",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/operations_48"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 10
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 191250000
+      }
+    ]
+  },
+  "storyline": "Find the source of the distress signals."
+}

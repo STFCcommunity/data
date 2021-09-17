@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Desperate Plea",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/alliance_of_shadows"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Ask Starfleet for help.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_calgary_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Try to damage the Servitor ships.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_calgary_43",
+        "task_title": "Destroy Servitor Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rescue the Starfleet Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Commander to safety.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kildare_43",
+        "planet": "curragh",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/hope"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 380
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 29400000
+      }
+    ]
+  },
+  "storyline": "Seek assistance from Starfleet."
+}

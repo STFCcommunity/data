@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "mission_name": "Trouble Follows",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/an_open_secret"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Jaylah.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 48 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 48 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Tal Shiar Assassin.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_title": "Destroy Tal Shiar Assassin Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Inform Starfleet of the attacks.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/practice_makes_imperfect"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help defend Jaylah from further attacks."
+}

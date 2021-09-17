@@ -1,0 +1,67 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the scavenger.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/elva_11",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the trailing ship.",
+      "id": 3,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_1"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 36000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 8000
+      }
+    ]
+  },
+  "storyline": "Reactivate the android."
+}

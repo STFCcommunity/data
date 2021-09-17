@@ -1,0 +1,105 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/bharani_16"
+    },
+    {
+      "$ref": "systems/eizeb_16"
+    },
+    {
+      "$ref": "systems/aciben_17"
+    },
+    {
+      "$ref": "systems/vemet_17"
+    },
+    {
+      "$ref": "systems/bubeau_18"
+    },
+    {
+      "$ref": "systems/wezen_18"
+    },
+    {
+      "$ref": "systems/eisenhorn_19"
+    },
+    {
+      "$ref": "systems/zhang_19"
+    }
+  ],
+  "mission_name": "In Times of War",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_law_falls_silent"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the human doctor in Labac.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Secure the doctor\u2019s services with 7,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 7000
+      }
+    },
+    {
+      "title": "Bring the doctor to Valdore Outpost.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "valdore outpost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Olympus.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy USS Olympus",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "arix",
+        "value": 4
+      },
+      {
+        "type": "romulan credits",
+        "value": 50
+      },
+      {
+        "type": "8 hour speed up",
+        "value": 1
+      },
+      {
+        "type": "federation points",
+        "value": -26
+      },
+      {
+        "type": "romulan points",
+        "value": 60
+      },
+      {
+        "type": "klingon points",
+        "value": -17
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help a Romulan Senator discreetly receive treatment from a human doctor."
+}

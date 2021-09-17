@@ -1,0 +1,53 @@
+{
+  "faction": "neutral",
+  "mission_name": "Hush",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/we_are_smart"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to Rigel VII.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel vii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 5 datapads.",
+      "id": 2,
+      "task": {
+        "resource": "rigellian datapad",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 5
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fortification"
+  },
+  "recommended_level": 13,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 2,
+        "rarity": "common",
+        "value": 100
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 7500
+      }
+    ]
+  },
+  "storyline": "Collect 5 datapads containing Renba\u2019s research."
+}

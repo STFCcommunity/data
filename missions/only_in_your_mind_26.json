@@ -1,0 +1,78 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Only In Your Mind",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/strike_one"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find an active Relay.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Relay.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 25,000 Dilithium for Tilly's experiment.",
+      "id": 3,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 25000
+      }
+    },
+    {
+      "title": "Find another active Relay.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/amagi_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_future_is_in_the_past"
+  },
+  "recommended_level": 26,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 6
+      },
+      {
+        "type": "officer xp",
+        "value": 96000
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Perform an experiment on the Relays."
+}

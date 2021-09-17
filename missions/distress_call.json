@@ -1,0 +1,48 @@
+{
+  "faction": "neutral",
+  "mission_name": "Distress Call",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/computer_core"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the disturbance.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Cardassian ship.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Cardassian Scout",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 100
+      }
+    ]
+  },
+  "storyline": "Save the nearby colony from a bombardment attack by Nausicaan Raiders."
+}

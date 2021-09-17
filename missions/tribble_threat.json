@@ -1,0 +1,59 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Tribble Threat",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/bubble_bubble_toil_and_tribble"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Shani.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay Shani 84,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 84000
+      }
+    },
+    {
+      "title": "Defeat the Borg probe.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mistakes_were_made"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 35
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 148000
+      }
+    ]
+  },
+  "storyline": "Find a way to slow the increased reproduction rate of the assimilated Tribbles."
+}

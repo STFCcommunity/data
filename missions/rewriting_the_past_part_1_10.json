@@ -1,0 +1,86 @@
+{
+  "arc": "tng arc 2",
+  "faction": "neutral",
+  "mission_name": "Rewriting the Past Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/rewriting_the_past_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Confront the mysterious ship.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Enter the mercenary system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/aodaan_8",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the guardship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/aodaan_8",
+        "task_title": "Destroy Arkonian Guardship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Gather information on the prisons.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/aodaan_8",
+        "planet": "yujon",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 250 Dilithium.",
+      "id": 5,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250
+      }
+    },
+    {
+      "title": "Return to your station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 10,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 3
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 6000
+      },
+      {
+        "type": "tritanium",
+        "value": 800
+      }
+    ]
+  },
+  "storyline": "Investigate the prisoners."
+}

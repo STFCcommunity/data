@@ -1,0 +1,91 @@
+{
+  "faction": "federation",
+  "mission_name": "Under Wraps",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/undisturbed"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the Klingon hunters from Ajilon.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Klingon hunter.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy Klingon Hunter Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow the Bortas to Bos Vehna.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Purge the data from the Klingon vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Klingon Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/greed_begets_greed"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 80
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": 800
+      },
+      {
+        "type": "romulan points",
+        "value": -147
+      },
+      {
+        "type": "klingon points",
+        "value": -662
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Klingons from learning the location of the gas lifeform homeworld."
+}

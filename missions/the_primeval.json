@@ -1,0 +1,43 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Primeval",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/dark_space"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Locate the source of the Progenitor signal in the Nekosa system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nekosa_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Primeval ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nekosa_38",
+        "task_title": "Destroy Primeval Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/power_up"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 50
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defeat a mysterious alien ship."
+}

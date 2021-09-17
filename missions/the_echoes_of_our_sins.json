@@ -1,0 +1,87 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Echoes Of Our Sins",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/flashbacks"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/s_mtharz_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 250,000 Tritanium to the researchers.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250000
+      }
+    },
+    {
+      "title": "Investigate the distress signal.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/s_mtharz_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of level 25 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 12 hostiles of level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow the Vi\u2019dar.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scan the planet.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the survivor to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_home_of_our_own"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 50
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Investigate distress calls from across the galaxy."
+}

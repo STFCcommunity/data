@@ -1,0 +1,72 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "First Contact",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/behind_closed_doors"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/strezhi_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Try and stop the ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/strezhi_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 18 hostiles of level 25 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 18 hostiles of level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_path_to_carnage"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 190
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 173000
+      }
+    ]
+  },
+  "storyline": "Investigate another catastrophe involving the mysterious ship."
+}

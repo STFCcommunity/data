@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "Zero Sum Game",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/end_of_the_beginning"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the informant\u2019s last known position.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/umxheli_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track down Lenala.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/asronal_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the informant.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/asronal_44",
+        "task_title": "Destroy Informant",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fog_of_war"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 38
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 3240000
+      }
+    ]
+  },
+  "storyline": "Track down a Vulcan traitor."
+}

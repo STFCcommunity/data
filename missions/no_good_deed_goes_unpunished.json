@@ -1,0 +1,85 @@
+{
+  "faction": "federation",
+  "mission_name": "No Good Deed Goes Unpunished",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Investigate the distress signal in Labac.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give the stranded miners 500,000 Parsteel.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 500000
+      }
+    },
+    {
+      "title": "Defeat the Gorn Raider.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_title": "Destroy Gorn Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Gorn Leader.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_title": "Destroy Gorn Leader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/gone_too_far"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "keenser",
+        "value": 3
+      },
+      {
+        "type": "officer xp",
+        "value": 10000
+      },
+      {
+        "type": "federation credits",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": 250
+      },
+      {
+        "type": "romulan points",
+        "value": -44
+      },
+      {
+        "type": "klingon points",
+        "value": -198
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Rescue a stranded mining ship."
+}

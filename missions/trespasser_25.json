@@ -1,0 +1,66 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Trespasser",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/faustian_bargain"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Yadow and investigate the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 25 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Utrok.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yadow_25",
+        "task_title": "Destroy Utrok",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/bartered_goods"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 5
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 678000
+      }
+    ]
+  },
+  "storyline": "Venture into Klingon territory and investigate a potential new source of Cybernetic Fragments."
+}

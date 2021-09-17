@@ -1,0 +1,66 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Airiam's Day - Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/airiam_s_day_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Pick up Tilly and Airiam at the Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Investigate the damage in Sorenle.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Independent ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Captain Ras",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track the warp trail to the Elona system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/airiam_s_day_part_1"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 63000
+      }
+    ]
+  },
+  "storyline": "Work with Tilly and Airiam on further investigations."
+}

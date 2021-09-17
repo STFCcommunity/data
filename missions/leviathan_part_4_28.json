@@ -1,0 +1,72 @@
+{
+  "arc": "tos arc 3",
+  "faction": "neutral",
+  "mission_name": "Leviathan Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/leviathan_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Scotty to Delta Vega.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "delta vega",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 500 G3 Raw Gas to power the facility.",
+      "id": 2,
+      "task": {
+        "resource": "3\u2605 raw gas",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 500
+      }
+    },
+    {
+      "title": "Defeat the attacker.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_title": "Destroy Hostile Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/leviathan_part_3"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 119000
+      },
+      {
+        "type": "premium recruit token",
+        "value": 500
+      },
+      {
+        "type": "ship xp",
+        "value": 200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Scotty acquire his counterpart\u2019s notes from Delta Vega."
+}

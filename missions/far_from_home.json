@@ -1,0 +1,48 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/obilent_17"
+    }
+  ],
+  "mission_name": "Far From Home",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the missing colonists in Vindemiatrix.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vindemiatrix_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 4 Hostiles in Vindemiatrix.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 4 Hostiles in Vindemiatrix.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return the traders to Rigel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel i",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 28000
+      }
+    ]
+  },
+  "storyline": "Find a group of traders who went missing in the Vindemiatrix system."
+}

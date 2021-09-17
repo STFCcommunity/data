@@ -1,0 +1,58 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 8",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_9"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the escape pod.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Approach the base.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "planet": "zoriv",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "task_title": "Destroy Zorivian Guard",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_7"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 2
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 3
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Find Beverly Crusher."
+}

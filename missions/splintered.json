@@ -1,0 +1,102 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/gorath_38"
+    }
+  ],
+  "mission_name": "Splintered",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/instinct"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Prepare for combat in the Nibiq system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nibiq_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Garrison Leader.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nibiq_38",
+        "task_title": "Destroy Garrison Leader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the lead Corvallen Interceptor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nibiq_38",
+        "task_title": "Destroy Corvallen Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Battleship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nibiq_38",
+        "task_title": "Destroy Corvallen Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the Gorn troops to the surface of Vasunim.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/terminimurus_39",
+        "planet": "vasunim",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take the Corvallen captives to Rura Penthe.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "rura penthe",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "klingon recruit token",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": -45600
+      },
+      {
+        "type": "romulan points",
+        "value": -121600
+      },
+      {
+        "type": "klingon points",
+        "value": 100000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 1050000
+      }
+    ]
+  },
+  "storyline": "Dispatch the Corvallen Captains left to maintain a stranglehold on the Neutral Zone in the name of the Tal Shiar."
+}

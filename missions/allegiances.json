@@ -1,0 +1,82 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/kaikara_18"
+    }
+  ],
+  "mission_name": "Allegiances",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_show_of_force"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet a Corvallen fleet in Eisenhorn.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 hostiles of level 19 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 20 hostiles of level 19 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Pirate Captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_title": "Destroy Corvallen Pirate Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Corvallens in Eisenhorn.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 25
+      },
+      {
+        "type": "2\u2605 battleship parts",
+        "value": 180
+      },
+      {
+        "type": "federation points",
+        "value": -114
+      },
+      {
+        "type": "romulan points",
+        "value": 250
+      },
+      {
+        "type": "klingon points",
+        "value": -76
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 59000
+      }
+    ]
+  },
+  "storyline": "Gain the loyalty of the Corvallens."
+}

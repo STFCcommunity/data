@@ -1,0 +1,63 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Take the Conn Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/take_the_conn_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the Xices system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pneuma_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Triangulate the Corvallen signal.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/xices_38",
+        "planet": "vatidix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Augur.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/xices_38",
+        "task_title": "Destroy Romulan Augur",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/take_the_conn_part_3"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "tos leonard mccoy",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 9901000
+      },
+      {
+        "type": "tritanium",
+        "value": 1456000
+      }
+    ]
+  },
+  "storyline": "Investigate the Corvallen and Romulan signals in the Xices system."
+}

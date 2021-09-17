@@ -1,0 +1,89 @@
+{
+  "faction": "klingon",
+  "mission_name": "Sidelined",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/we_will_not_be_silenced"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Gorkon.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/szov_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Assist with the rebuilding effort.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 65,000,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 65000000
+      }
+    },
+    {
+      "title": "Evacuate wounded civilians from Toh'Kaht.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/toh_kaht_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the civilians to Kronos.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_dust_settles"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 rare explorer parts",
+        "value": 25
+      },
+      {
+        "type": "4\u2605 uncommon explorer parts",
+        "value": 180
+      },
+      {
+        "type": "federation points",
+        "value": -363800
+      },
+      {
+        "type": "romulan points",
+        "value": -970100
+      },
+      {
+        "type": "klingon points",
+        "value": 645000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Gorkon deal with the aftermath of Starfleet\u2019s push."
+}

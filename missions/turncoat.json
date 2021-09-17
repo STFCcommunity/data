@@ -1,0 +1,51 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/okvak_32"
+    }
+  ],
+  "mission_name": "Turncoat",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the traitor on Gevuj.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lipig_31",
+        "planet": "gevuj",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the colonist for the traitor\u2019s location.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Destroy the Gorn traitor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lipig_31",
+        "task_title": "Destroy Gorn Traitor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1284000
+      }
+    ]
+  },
+  "storyline": "Track down and destroy a Gorn traitor."
+}

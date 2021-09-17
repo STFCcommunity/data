@@ -1,0 +1,73 @@
+{
+  "faction": "federation",
+  "mission_name": "Trenches",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Meet with the Admiral in the Azati System.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "planet": "azati prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Resupply Starfleet with 50,000 G3 Raw Ore.",
+      "id": 2,
+      "task": {
+        "resource": "3\u2605 raw ore",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50000
+      }
+    },
+    {
+      "title": "Top up the local fleets supply of 450,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 450000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/home_soil"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 25
+      }
+    ],
+    "others": [
+      {
+        "type": "federation recruit token",
+        "value": 1000
+      },
+      {
+        "type": "federation credits",
+        "value": 150
+      },
+      {
+        "type": "federation points",
+        "value": 3100
+      },
+      {
+        "type": "romulan points",
+        "value": -645
+      },
+      {
+        "type": "klingon points",
+        "value": -2900
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help the Federation to repair the massacred fleet at Azati."
+}

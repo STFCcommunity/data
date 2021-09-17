@@ -1,0 +1,75 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/denobula_triaxa_38"
+    }
+  ],
+  "mission_name": "Synthesis",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Deliver the medical tissue to Trill.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/trill_39",
+        "planet": "trill",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 100M Parsteel.",
+      "id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 100000000
+      }
+    },
+    {
+      "title": "Return to Commander Edi.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "planet": "denobula",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 10
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 500
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -30400
+      },
+      {
+        "type": "klingon points",
+        "value": -136800
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 2240000
+      }
+    ]
+  },
+  "storyline": "Starfleet need a transport vessel to take a delivery of synthetic tissue to the Trill homeworld."
+}

@@ -1,0 +1,173 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/terra_nova_38"
+    }
+  ],
+  "mission_name": "Gone Rogue",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the suspected rogue Section 31 agent.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/altair_39",
+        "planet": "iavatah",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with the agent.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Promise a substantial reward for the agent's aid."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Convince the agent that you are making an assault on Romulan territory."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Convince the agent that you are making an assault on Klingon territory."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Follow the agent's escape route.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/altair_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the agent's ship.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -31200
+          },
+          {
+            "type": "klingon points",
+            "value": -140400
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 17029000
+          },
+          {
+            "type": "dilithium",
+            "value": 501000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/altair_39",
+        "task_title": "Destroy Agent's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Hand over the agent to Starfleet security.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "premium recruit token",
+            "value": 450
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 200
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -31200
+          },
+          {
+            "type": "klingon points",
+            "value": -140400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hand over the agent to Starfleet security.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 200
+          },
+          {
+            "type": "premium recruit token",
+            "value": 450
+          },
+          {
+            "type": "federation credits",
+            "value": 500
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -31200
+          },
+          {
+            "type": "klingon points",
+            "value": -140400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/alpha_centauri_39",
+        "planet": "alpha centauri",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Starfleet has identified a former Section 31 agent that it believes has gone rogue. They want the woman brought in for questioning."
+}

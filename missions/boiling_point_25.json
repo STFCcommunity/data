@@ -1,0 +1,140 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Boiling Point",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Respond to the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nott_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Whose side will you choose?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Tholians"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Breen"
+          },
+          {
+            "option_id": 3,
+            "option_title": "Neither"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable the Breen ship.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nott_17",
+        "task_title": "Destroy Breen Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 7
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 127000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Disable the Tholian ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nott_17",
+        "task_title": "Destroy Tholian Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 4
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 452000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 4
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 3
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_devil_on_your_shoulder"
+  },
+  "recommended_level": 25,
+  "storyline": "Stop the conflict between the Tholians and the Breen."
+}

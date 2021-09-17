@@ -1,0 +1,145 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/sol_60"
+    }
+  ],
+  "mission_name": "Zero Tolerance",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find Captain Crowley.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "planet": "denobula",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Dilemma - Disable Crowley's Ship or Inform the Admiral he Escaped",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Disable Crowley's ship"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the Federation drone."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable Crowley's ship.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_title": "Destroy Crowley's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Crowley to the Admiral.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 3
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -33600
+          },
+          {
+            "type": "klingon points",
+            "value": -151200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Federation drone.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/denobula_triaxa_38",
+        "task_title": "Destroy Federation Drone",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Inform the Admiral that Crowley escaped.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 21
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "damaged datapad",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": 100000
+          },
+          {
+            "type": "romulan points",
+            "value": -33600
+          },
+          {
+            "type": "klingon points",
+            "value": -151200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Starfleet suspects that an Independent captain has been spying on Earth for the Romulan Tal Shiar."
+}

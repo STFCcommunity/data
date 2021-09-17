@@ -1,0 +1,138 @@
+{
+  "faction": "federation",
+  "mission_name": "Intimidation Tactics",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/missing_ingredients"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attend the tactical briefing on Thesos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/izbrig_45",
+        "planet": "thesos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose which supporting faction to intimidate.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Intimidate the Arkonians."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Intimidate the Suliban."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Deliver the warning to the Arkonians on Reilly.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "planet": "reilly",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian soldier.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": 448000
+          },
+          {
+            "type": "romulan points",
+            "value": -161300
+          },
+          {
+            "type": "klingon points",
+            "value": -725800
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 7650000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_title": "Destroy Arkonian Soldier",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the warning to the Suliban on Helg.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "planet": "helg",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban guard.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 600
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": 448000
+          },
+          {
+            "type": "romulan points",
+            "value": -161300
+          },
+          {
+            "type": "klingon points",
+            "value": -725800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_title": "Destroy Suliban Guard",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_farewell_to_arms"
+  },
+  "storyline": "Target Romulan or Klingon allies in an attempt to undermine their support."
+}

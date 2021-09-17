@@ -1,0 +1,102 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/ajilon_25"
+    }
+  ],
+  "mission_name": "In Motion",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the Separatist encampment in the P'Jem system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "What should we do with the Separatists?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Destroy Captain Gurak's ship."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Spare Gurak."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy Captain Gurak's ship.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "task_title": "Destroy Gurak's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Inform Yan'Agh about the location of Separatist cells.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3 hour speed up",
+            "value": 5
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 600000
+          },
+          {
+            "type": "tritanium",
+            "value": 80000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "planet": "narendra iii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take Gurak and his crew to Narendra III.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "3 hour speed up",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 32000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/narendra_25",
+        "planet": "narendra iii",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Infiltrate a hidden Klingon encampment beyond the Federation border."
+}

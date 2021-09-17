@@ -1,0 +1,74 @@
+{
+  "faction": "neutral",
+  "mission_name": "Collateral",
+  "mission_type": "auto start",
+  "objectives": [
+    {
+      "title": "Transport S'Lona to meet with the Dessneri President",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "vaolas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deal with the Corvallen",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the Lead Corvallen Ship"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Negotiate with the Corvallen"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Scorpion",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 200000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_title": "Destroy Corvallen Scorpion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Speak to the Corvallen agent",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 20000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vendus_a_27",
+        "planet": "bavoss rock",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "A Corvallen fleet has been positioning itself in and around the Dessner system. The Dessneri are fearful of a conflict in their system."
+}

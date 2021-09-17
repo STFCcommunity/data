@@ -1,0 +1,65 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Echoes of Torana",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/bearer_of_bad_news"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the Enterprise in Roda Beta.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/roda_beta_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles in Roda Beta.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 hostiles in Roda Beta.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defend yourself against the Borg Cube.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/roda_beta_28",
+        "task_title": "Destroy Damaged Borg Cube",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/proving_grounds"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 250
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 58000
+      }
+    ]
+  },
+  "storyline": "Thwart the Borg\u2019s attempt at establishing a second hive in the galaxy."
+}

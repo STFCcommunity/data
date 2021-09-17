@@ -1,0 +1,58 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Old Friend/New Friend",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/target_acquired"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow Mudd's directions.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the scavenger.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "task_title": "Destroy Scavenger Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the frozen Augment.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/koltiska_28",
+        "planet": "givug",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/returning_son"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 128000
+      },
+      {
+        "type": "dilithium",
+        "value": 26000
+      }
+    ]
+  },
+  "storyline": "Find the Augment pod."
+}

@@ -1,0 +1,97 @@
+{
+  "faction": "romulan",
+  "mission_name": "And the Galaxy Shook...",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/encore"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Benefactor.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Romulan civilian.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talvath_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take the Romulan hostage.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/talvath_43",
+        "task_title": "Destroy Romulan Civilian Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to the First Consul's Home.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/esto_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Assassinate the First Consul.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/esto_43",
+        "planet": "sivetha",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_first_shot"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -321000
+      },
+      {
+        "type": "romulan points",
+        "value": 311000
+      },
+      {
+        "type": "klingon points",
+        "value": -214000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 75600000
+      }
+    ]
+  },
+  "storyline": "Meet with the mysterious benefactor."
+}

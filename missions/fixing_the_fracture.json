@@ -1,0 +1,99 @@
+{
+  "faction": "romulan",
+  "mission_name": "Fixing the Fracture",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_same_page"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Federation representative.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Pirates.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 Hostiles of Level 45 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 20 Hostiles of Level 45 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Pirate Leader.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_title": "Destroy Pirate Leader Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Federation Representative.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/back_to_basics"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "common",
+        "value": 700
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -594000
+      },
+      {
+        "type": "romulan points",
+        "value": 538000
+      },
+      {
+        "type": "klingon points",
+        "value": -396000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 209250000
+      }
+    ]
+  },
+  "storyline": "Try to forge an alliance with the Federation."
+}

@@ -1,0 +1,76 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/tellun_7"
+    }
+  ],
+  "mission_name": "On The Run",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the criminal in Risa.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track Rorov\u2019s signature to Malur.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "planet": "malur",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront Rorov in Yridia.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Rorov.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_title": "Destroy Rorov",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Rorov to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 7,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 270
+      },
+      {
+        "type": "encryption key",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5000
+      }
+    ]
+  },
+  "storyline": "Hunt down a dangerous criminal and bring him to justice."
+}

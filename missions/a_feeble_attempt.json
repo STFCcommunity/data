@@ -1,0 +1,81 @@
+{
+  "faction": "klingon",
+  "mission_name": "A Feeble Attempt",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/as_it_were"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with a Starfleet representative in Laynso.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/laynso_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Sherman.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/laynso_45",
+        "task_title": "Destroy USS Sherman",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the USS Silverback.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/laynso_45",
+        "task_title": "Destroy USS Silverback",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sacrilege"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "officer xp",
+        "value": 196000
+      },
+      {
+        "type": "federation points",
+        "value": -131000
+      },
+      {
+        "type": "romulan points",
+        "value": -349400
+      },
+      {
+        "type": "klingon points",
+        "value": 260000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 7245000
+      }
+    ]
+  },
+  "storyline": "Meet with a Starfleet representative."
+}

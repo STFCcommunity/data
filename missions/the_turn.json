@@ -1,0 +1,98 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Turn",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_prestige"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Enter Federation Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hyland_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Federation outpost.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hyland_42",
+        "planet": "suntrol",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Klingon Space.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the Klingon outpost.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "planet": "po dargh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon guard.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_title": "Destroy Klingon Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_pledge"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 6615000
+      }
+    ]
+  },
+  "storyline": "Stop Veruul getting killed by everyone."
+}

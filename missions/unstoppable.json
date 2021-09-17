@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "Unstoppable",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/voice_of_reason"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the distress call from the Klingons.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Try to stop the alien ships.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/klopp_42",
+        "task_title": "Destroy Mysterious Interceptor Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape the onslaught.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/valley_of_death"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help the Klingons defend themselves."
+}

@@ -1,0 +1,81 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Pyrrhic Victory",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/sacred_ground"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Join the Suliban assault on Thiros.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Andorian Battleship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_title": "Destroy Andorian Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the USS Trinity.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/noakyn_30",
+        "task_title": "Destroy USS Trinity",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to the planet Delba.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "planet": "delba",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/silik_s_legacy"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan recruit token",
+        "value": 500
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 34
+      },
+      {
+        "type": "romulan credits",
+        "value": 230
+      },
+      {
+        "type": "federation points",
+        "value": -7000
+      },
+      {
+        "type": "romulan points",
+        "value": 10000
+      },
+      {
+        "type": "klingon points",
+        "value": -4600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Work with Sovren to strike a blow to the heart of the Andorian Imperial Guard."
+}

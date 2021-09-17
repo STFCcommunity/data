@@ -1,0 +1,89 @@
+{
+  "faction": "klingon",
+  "mission_name": "Backlash",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/common_enemy"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the sighting in Azha.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azha_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the warp trail to Kepler-018.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate Draken.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the scout's ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_title": "Destroy Romulan Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the data to Khitomer.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "planet": "khitomer",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unattainable"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 130
+      },
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": -600
+      },
+      {
+        "type": "romulan points",
+        "value": -1600
+      },
+      {
+        "type": "klingon points",
+        "value": 2000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 12000
+      }
+    ]
+  },
+  "storyline": "Find out who\u2019s spying on you."
+}

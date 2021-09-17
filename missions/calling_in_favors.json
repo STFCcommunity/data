@@ -1,0 +1,70 @@
+{
+  "faction": "neutral",
+  "mission_name": "Calling in Favors",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/cover_charge"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Rokol in Yreva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yreva_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 41 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Rendezvous with Rokol in Orion.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Orion Prime.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "deep space datapad",
+        "value": 1
+      },
+      {
+        "type": "latinum",
+        "value": 600
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 20880000
+      },
+      {
+        "type": "dilithium",
+        "value": 903000
+      }
+    ]
+  },
+  "storyline": "Prove your strength to Aivin\u2019s contact within the Orion Syndicate."
+}

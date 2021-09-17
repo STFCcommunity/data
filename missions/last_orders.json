@@ -1,0 +1,82 @@
+{
+  "faction": "federation",
+  "mission_name": "Last Orders",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/show_me_the_way_to_go_home"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Retrieve Scotty from San Francisco.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow Keenser\u2019s trail to Jera.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/jera_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaan Raider.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/jera_44",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 8,100,000 Tritanium to the delivery vessel for repairs.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8100000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 190
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "3 hour repair speed up",
+        "value": 12
+      },
+      {
+        "type": "federation points",
+        "value": 311000
+      },
+      {
+        "type": "romulan points",
+        "value": -107000
+      },
+      {
+        "type": "klingon points",
+        "value": -481400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Retrieve Scotty and Keenser from a drunken expedition to San Francisco."
+}

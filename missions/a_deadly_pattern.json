@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Deadly Pattern",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/shared_hope"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the latest colony disappearance.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with Starfleet regarding the colonies.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/ruins"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 180
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 180
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Reach the colony before it\u2019s wiped out."
+}

@@ -1,0 +1,65 @@
+{
+  "arc": "borg arc 4",
+  "faction": "neutral",
+  "mission_name": "We're Going to Need a Bigger Boat",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/penitent_man"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Attend the security briefing on Hynes.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "hynes",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Upgrade the R&D module to Level 23.",
+      "id": 2,
+      "task": {
+        "task_info": "build",
+        "task_title": "Build R&D Department Level 23 at the Station",
+        "task_type": "other"
+      }
+    },
+    {
+      "title": "Construct the Armada Control Center.",
+      "id": 3,
+      "task": {
+        "task_info": "build",
+        "task_title": "Build Armada Control Center Level 1 at the Station",
+        "task_type": "other"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 23
+      },
+      {
+        "type": "1 day speed up",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 653000
+      },
+      {
+        "type": "dilithium",
+        "value": 20000
+      }
+    ]
+  },
+  "storyline": "Upgrade your Station and prepare for the imminent Borg threat."
+}

@@ -1,0 +1,143 @@
+{
+  "faction": "neutral",
+  "mission_name": "What Comes Next...",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_sense_of_frustration",
+      "option": 1
+    },
+    {
+      "$ref": "missions/war_cries",
+      "option": 2
+    },
+    {
+      "$ref": "missions/fuel_to_the_fire",
+      "option": 3
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Meet with the Klingon Commander.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Which faction will you side with?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Side with the Federation."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Side with the Klingons."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Side with the Romulans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Meet with the Starfleet Officer.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 150
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 38000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Reconvene with the Klingon Officer.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon credits",
+            "value": 150
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1268000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ciara_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with Sekula.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 150
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 187000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/machinations"
+  },
+  "recommended_level": 26,
+  "storyline": "Decide whom to side with."
+}

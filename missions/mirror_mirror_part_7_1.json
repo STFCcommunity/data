@@ -1,0 +1,139 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mirror, Mirror Part 7",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Bring the Terran Enterprise towards the rift.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Who will we choose to lead the Terran crew home?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Mirror Kirk"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Mirror Spock"
+          },
+          {
+            "option_id": 3,
+            "option_title": "Mirror Uhura"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defend yourself against the Terrans.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_title": "Destroy ISS Enterprise",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the anomaly again.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "mirror sigil",
+            "value": 1
+          },
+          {
+            "type": "james t. kirk",
+            "value": 2
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend yourself against the Terrans.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_title": "Destroy ISS Enterprise",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the anomaly again.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "mirror sigil",
+            "value": 1
+          },
+          {
+            "type": "spock",
+            "value": 5
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend yourself against the Terrans.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_title": "Destroy ISS Enterprise",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the anomaly again.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "mirror sigil",
+            "value": 1
+          },
+          {
+            "type": "nyota uhura",
+            "value": 5
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mirror_mirror_part_6"
+  },
+  "storyline": "End the paradox."
+}

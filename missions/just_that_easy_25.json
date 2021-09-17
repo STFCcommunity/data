@@ -1,0 +1,70 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Just That Easy...",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_way_out"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Follow Tilly.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tenzen_1029_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Tilly's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tenzen_1029_23",
+        "task_title": "Destroy Tilly's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Hand Tilly over to Starfleet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tenzen_1029_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/caved_in"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 10
+      },
+      {
+        "type": "ship xp",
+        "value": 100
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 9000
+      }
+    ]
+  },
+  "storyline": "Capture Tilly."
+}

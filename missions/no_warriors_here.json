@@ -1,0 +1,83 @@
+{
+  "faction": "klingon",
+  "mission_name": "No Warriors Here",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_mind_s_eye"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to the Klingon colony in Morska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/morska_29",
+        "planet": "byand'on",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide the colony with 1,000,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Return to Firexii.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ok_vak_32",
+        "planet": "firexii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Nausicaan Vanquish in Morska.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/morska_29",
+        "task_title": "Destroy Nausicaan Vanquish",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/subspace_tremors"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 14
+      },
+      {
+        "type": "klingon credits",
+        "value": 300
+      },
+      {
+        "type": "kras",
+        "value": 5
+      },
+      {
+        "type": "federation points",
+        "value": -8800
+      },
+      {
+        "type": "romulan points",
+        "value": -23600
+      },
+      {
+        "type": "klingon points",
+        "value": 23000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assist a peaceful Klingon colony with their power generator."
+}

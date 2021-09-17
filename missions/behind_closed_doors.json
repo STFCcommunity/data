@@ -1,0 +1,67 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Behind Closed Doors",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_home_of_our_own"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the ship to Draken.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attempt to scan the Borg ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg Probe.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station for emergency repairs.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/first_contact"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "common",
+        "value": 125
+      }
+    ],
+    "others": [
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 140
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Track down the mysterious ships behind the assaults in Romulan space."
+}

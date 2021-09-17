@@ -1,0 +1,78 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "Proceed with Caution",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/caved_in"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Netron Alpha.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the scout ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_title": "Destroy Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Plant charges around the edge of the system.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 Hostiles of Level 23 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 12 Hostiles of Level 23 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_particular_set_of_skills"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 9
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 485000
+      },
+      {
+        "type": "dilithium",
+        "value": 15000
+      }
+    ]
+  },
+  "storyline": "Plant the explosives around Tilly\u2019s system."
+}

@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "mission_name": "Misappropriation",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/shoot_the_messenger"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the source of the Progenitor signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/maumo_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the source of the signal to Elvros.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/elvros_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the enhanced Legionary.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elvros_47",
+        "task_title": "Destroy Enhanced Legionary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Recall to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/an_appeal_to_reason"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 rare battleship parts",
+        "value": 23
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate a concerning signal coming from Romulan space."
+}

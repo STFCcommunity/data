@@ -1,0 +1,55 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Cybernetics",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/bartered_goods"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Deliver the Cybernetic Fragments to Dalen on Qualor IX.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "planet": "qualor ix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 50 Cybernetic Fragments to Dalen.",
+      "id": 2,
+      "task": {
+        "resource": "cybernetic fragments",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 50
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/deal_with_a_devil"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 70
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Deliver the newly acquired Cybernetic Fragments to Dalen on Qualor IX."
+}

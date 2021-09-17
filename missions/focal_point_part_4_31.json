@@ -1,0 +1,67 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Focal Point Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/focal_point_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Set a course to the arrival zone.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Enforcer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_title": "Destroy Orion Corvette",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Provide Geordi with 10,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Find the escape pod transponder.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/focal_point_part_3"
+  },
+  "recommended_level": 31,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 8369000
+      },
+      {
+        "type": "tritanium",
+        "value": 1231000
+      }
+    ]
+  },
+  "storyline": "Find an Enterprise escape pod."
+}

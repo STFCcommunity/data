@@ -1,0 +1,132 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 9",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_10"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Seek out a new doctor.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet the first doctor.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/imgra_10",
+        "planet": "dejugei",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet the second doctor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/honsao_10",
+        "planet": "cicedow",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Which doctor will you choose?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Nyssa Kani"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Telai Takov"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Dr. Crusher.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "planet": "zoriv",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Dr. Crusher to the Enterprise.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 6000
+          },
+          {
+            "type": "dilithium",
+            "value": 170
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Dr. Crusher.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/utoqa_10",
+        "planet": "zoriv",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Dr. Crusher to the Enterprise.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "common",
+            "value": 500
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 170
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/elva_11",
+        "planet": "goas",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_8"
+  },
+  "recommended_level": 12,
+  "storyline": "Find a replacement doctor."
+}

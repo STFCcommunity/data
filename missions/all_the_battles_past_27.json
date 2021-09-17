@@ -1,0 +1,60 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "All the Battles Past",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/all_the_wars_to_come"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Find Scotty's data logs.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "delta vega",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with Renba.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/obilent_17",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_road_to_hell"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 5
+      }
+    ],
+    "others": [
+      {
+        "type": "4 hr peace shield",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Try and bring Maia back online."
+}

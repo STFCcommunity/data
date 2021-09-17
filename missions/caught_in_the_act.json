@@ -1,0 +1,100 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/gemet_25"
+    },
+    {
+      "$ref": "systems/sufiday_25"
+    },
+    {
+      "$ref": "systems/yadow_25"
+    },
+    {
+      "$ref": "systems/doska_27"
+    },
+    {
+      "$ref": "systems/enthra_27"
+    },
+    {
+      "$ref": "systems/vendus_a_27"
+    }
+  ],
+  "mission_name": "Caught In The Act",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Go to the Vosak system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vosak_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Federation Agent.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/vosak_24",
+        "task_title": "Destroy Federation Agent",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Choose what to do with the Federation Agent.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Take the Agent to your station."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Retrieve the stash."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Take the Spy to your station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1342000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Retrieve the stash.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 33000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vosak_24",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Locate the source of the disturbance in Vosak."
+}

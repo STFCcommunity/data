@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Third Pillar",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_fourth_pillar"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to New Reykjavik.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 46 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 46 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Convergence Militant.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "task_title": "Destroy Convergence Militant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the civilian crew to safety on Riannon.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "planet": "riannon",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_second_pillar"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 120
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 270000000
+      }
+    ]
+  },
+  "storyline": "Deploy the third Conduit Pillar in the New Reykjavik system."
+}

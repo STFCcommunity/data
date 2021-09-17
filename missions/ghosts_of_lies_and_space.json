@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Ghosts of Lies and Space",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/burning_like_the_cold"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Try to find Toryn in the Lipig system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lipig_31",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow Toryn's trail to Orion.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Prison Ship to rescue Toryn.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_title": "Destroy Orion Prison Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Toryn to Deneva.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "planet": "deneva",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/naval_superiority"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 250000
+      }
+    ]
+  },
+  "storyline": "Rescue Toryn from his Orion captors."
+}

@@ -1,0 +1,86 @@
+{
+  "faction": "federation",
+  "mission_name": "Estranged Relations",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/cut_your_teeth"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Talvath and pursue the kidnapper.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/talvath_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Lajik, the Suliban kidnapper.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/talvath_43",
+        "task_title": "Destroy Lajik",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 16,200,000 Tritanium for the hijacked ship\u2019s repairs.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 16200000
+      }
+    },
+    {
+      "title": "Escort the Aenar to the rendezvous with Captain Sotan in Holles.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/holles_43",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/telepresence"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "common",
+        "value": 800
+      },
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 90
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 216000
+      },
+      {
+        "type": "romulan points",
+        "value": -70800
+      },
+      {
+        "type": "klingon points",
+        "value": -318800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Prevent repeating a dark chapter in Aenar history."
+}

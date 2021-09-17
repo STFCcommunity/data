@@ -1,0 +1,61 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the mercenary.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Locate the escape pod.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nilkino_10",
+        "planet": "ciloi",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_3"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 2,
+        "rarity": "common",
+        "value": 300
+      }
+    ],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 2
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Track Geordi La Forge\u2019s signal."
+}

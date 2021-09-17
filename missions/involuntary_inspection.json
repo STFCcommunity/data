@@ -1,0 +1,67 @@
+{
+  "faction": "neutral",
+  "mission_name": "Involuntary Inspection",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/hindsight"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the colonists.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/harrizon_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Release 1 Dilithium to dissolve the barrier.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Defeat 18 hostiles of level 44 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 18 hostiles of level 44 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring the colonists to their home planet.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/x5_tkv_46",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/introspection"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      }
+    ],
+    "others": [
+      {
+        "type": "4\u2605 uncommon survey parts",
+        "value": 210
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Save colonists from Progenitor experiments."
+}

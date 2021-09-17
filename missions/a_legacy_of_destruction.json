@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Legacy of Destruction",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Attack the remaining ships.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fect_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 42 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 42 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat final ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fect_42",
+        "task_title": "Destroy Servitor Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Arlen back to his station.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/pneuma_40",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/catch_and_release"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 1300
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Finish the Servitors off."
+}

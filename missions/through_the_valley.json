@@ -1,0 +1,71 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Through the Valley",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Get the Romulans' attention.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Lead the Romulans to Metra Beta.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/metra_beta_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 12 hostiles of level 27 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 12 hostiles of level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Borg Probe.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/metra_beta_25",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat to Vulcan.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_vision_of_discontent"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 250
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 300
+      },
+      {
+        "type": "premium recruit token",
+        "value": 150
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Show the Romulans the true threat of the Borg."
+}

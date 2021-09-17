@@ -1,0 +1,85 @@
+{
+  "faction": "klingon",
+  "mission_name": "Collision Course",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/malice"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Khol in Khitomer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet the Federation delegate on Rigel VII.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel vii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Help Khol in Enthra.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Independent ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/maclyyn_22",
+        "task_title": "Destroy Independent Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Khol Delok.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/reintegration"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 35
+      },
+      {
+        "type": "federation points",
+        "value": -96
+      },
+      {
+        "type": "romulan points",
+        "value": -256
+      },
+      {
+        "type": "klingon points",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 8000
+      }
+    ]
+  },
+  "storyline": "Meet with the Starfleet Delegate"
+}

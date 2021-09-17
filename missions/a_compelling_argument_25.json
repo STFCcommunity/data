@@ -1,0 +1,58 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "A Compelling Argument",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_particular_set_of_skills"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the mercenary boss.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/salara_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fight off the mercenary ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/salara_23",
+        "task_title": "Destroy Mercenary Leader Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_smell_of_fear"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 100
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 56000
+      }
+    ]
+  },
+  "storyline": "Try to turn the neutral mercenaries against Tilly."
+}

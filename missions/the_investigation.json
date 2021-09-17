@@ -1,0 +1,139 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Investigation",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/wrong_for_the_right_reasons",
+      "option": 1
+    },
+    {
+      "$ref": "missions/right_for_the_wrong_reasons",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Veisa with the Investigator.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with the son.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "planet": "mana'ri",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Speak with the wife.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "planet": "mitski",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Station",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Who is the killer?",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "The son."
+          },
+          {
+            "option_id": 2,
+            "option_title": "The wife."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to the Investigator.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Investigator.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 600
+          },
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/veisa_46",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Interrogate the suspects."
+}

@@ -1,0 +1,165 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/andoria_34"
+    }
+  ],
+  "mission_name": "Beneath the Ice",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Meet the Romulan Informant on Moya",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azati_34",
+        "planet": "moya",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Smuggle Garan in, or leave him behind?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Smuggle Garan across the border."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Go without Garan."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Smuggle Garan to Talpa in Gradientes.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "planet": "talpa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the Romulan Guard with 4,000,000 Dilithium.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000000
+      }
+    },
+    {
+      "title": "Take Garan and the medicine to Andoria Prime.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 50
+          },
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 6
+          }
+        ],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 330
+          },
+          {
+            "type": "federation points",
+            "value": 40000
+          },
+          {
+            "type": "romulan points",
+            "value": -10600
+          },
+          {
+            "type": "klingon points",
+            "value": -47500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Talpa in Gradientes.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "planet": "talpa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Eliminate the Romulan Guard.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "task_title": "Destroy Romulan Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Andoria with the medical supplies.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          },
+          {
+            "type": "federation recruit token",
+            "value": 250
+          },
+          {
+            "type": "federation credits",
+            "value": 330
+          },
+          {
+            "type": "federation points",
+            "value": 40000
+          },
+          {
+            "type": "romulan points",
+            "value": -10600
+          },
+          {
+            "type": "klingon points",
+            "value": -47500
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "The emerging Aenar on Andoria require an experimental medical solution to their surfacing problem."
+}

@@ -1,0 +1,159 @@
+{
+  "faction": "federation",
+  "mission_name": "Acquisitions",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/smoke_testing"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Starfleet informant.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yarega_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to deal with the informant.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay for the information."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Intimidate the informant."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay the informant 5,000,000 Tritanium for the location of the ship plans.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1
+      }
+    },
+    {
+      "title": "Retrieve the ship plans from the R&D Lab on Riannon.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "planet": "riannon",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the ship plans to the Trinity Council on Ireth Elendil.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 1300
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "planet": "ireth elendil",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Intimidate the contact and get the location of the ship plans.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/yarega_47",
+        "task_title": "Destroy Starfleet Informant",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retrieve the ship plans from the R&D Lab on Riannon.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/new_reykjavik_48",
+        "planet": "riannon",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the ship plans to the Trinity Council on Ireth Elendil.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m tritanium token",
+            "value": 18
+          },
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 114750000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "planet": "ireth",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_trinity_council"
+  },
+  "storyline": "Acquire a newly-constructed experimental vessel from a Federation shipyard."
+}

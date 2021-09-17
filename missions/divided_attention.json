@@ -1,0 +1,157 @@
+{
+  "faction": "federation",
+  "mission_name": "Divided Attention",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/missing_in_action"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 8 Hostiles in V\u2019varia.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 8 Hostiles in V\u2019varia.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Free the prisoners or destroy the weapons cache.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Free the prisoners."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy the weapons cache."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to the Eisenhorn system.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Guard.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_title": "Destroy Suliban Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the prisoners to your station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "north star blueprint part",
+            "value": 2
+          },
+          {
+            "type": "alliance event trophy",
+            "value": 2
+          },
+          {
+            "type": "federation credits",
+            "value": 30
+          },
+          {
+            "type": "federation points",
+            "value": 60
+          },
+          {
+            "type": "romulan points",
+            "value": -9
+          },
+          {
+            "type": "klingon points",
+            "value": -39
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to the Wezen system.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/wezen_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Suliban Guard.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/wezen_18",
+        "task_title": "Destroy Suliban Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rendezvous with the Enterprise in Sorenle.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 2100
+          },
+          {
+            "type": "alliance event trophy",
+            "value": 2
+          },
+          {
+            "type": "north star blueprint part",
+            "value": 2
+          },
+          {
+            "type": "federation points",
+            "value": 60
+          },
+          {
+            "type": "romulan points",
+            "value": -9
+          },
+          {
+            "type": "klingon points",
+            "value": -39
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/corbomite_maneuver"
+  },
+  "storyline": "Distract the Corvallen for long enough that the Enterprise can gather intelligence."
+}

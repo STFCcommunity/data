@@ -1,0 +1,88 @@
+{
+  "faction": "klingon",
+  "mission_name": "Under Heel",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/test_your_might"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Rebel assault fleet.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 18 hostiles of level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 18 hostiles of level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Rebel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "task_title": "Destroy Defeat the Arkonian Rebel.",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Battleship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/dok_vos_41",
+        "task_title": "Destroy Arkonian Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/prodigal_son"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "3 hour repair speed up",
+        "value": 9
+      },
+      {
+        "type": "1m tritanium token",
+        "value": 7
+      },
+      {
+        "type": "federation points",
+        "value": -86400
+      },
+      {
+        "type": "romulan points",
+        "value": -230400
+      },
+      {
+        "type": "klingon points",
+        "value": 180000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Destroy a Rebel fleet."
+}

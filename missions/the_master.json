@@ -1,0 +1,84 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Master",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find the fleeing Senators.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/draomn_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the senators to Rihala.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the secret safehouse.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Guard Ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_title": "Destroy Romulan Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the Praetor to Romulus.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fool_me_twice"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan recruit token",
+        "value": 160
+      },
+      {
+        "type": "latinum",
+        "value": 1400
+      },
+      {
+        "type": "romulan credits",
+        "value": 700
+      },
+      {
+        "type": "federation points",
+        "value": -891600
+      },
+      {
+        "type": "romulan points",
+        "value": 774000
+      },
+      {
+        "type": "klingon points",
+        "value": -594400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Hunt down the remaining Senators."
+}

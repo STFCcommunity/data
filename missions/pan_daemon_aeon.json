@@ -1,0 +1,139 @@
+{
+  "faction": "federation",
+  "mission_name": "Pan Daemon Aeon",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/kal_hyah"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the USS Mason in Odin.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect the sample from Beckett\u2019s contact on CRADLE-6.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "planet": "cradle-6",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Decide what to do with the Deamon sample.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Deploy the payload over the Romulan colony."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Jettison the sample into deep space."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Deploy the payload over the Romulan colony.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ardaji_45",
+        "planet": "nassak",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report back to Captain Beckett in Odin.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "1m tritanium token",
+            "value": 24
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Jettison the payload into deep space.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/hannlaw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report back to Captain Beckett.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 600
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 360
+          },
+          {
+            "type": "federation points",
+            "value": 538000
+          },
+          {
+            "type": "romulan points",
+            "value": -198000
+          },
+          {
+            "type": "klingon points",
+            "value": -890900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/odin_46",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/missing_ingredients"
+  },
+  "storyline": "Decide the fate of a Romulan colony on Nassak."
+}

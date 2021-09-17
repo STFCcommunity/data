@@ -1,0 +1,80 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Strike Three",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/strange_bedfellows"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the third Herald.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat L'Rana.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_title": "Destroy L'Rana",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Norath.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_title": "Destroy Norath",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape the ambush.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Repair the Discovery's impulse engines with 140,000 Tritanium.",
+      "id": 5,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 140000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/strike_two"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day peace shield",
+        "value": 2
+      },
+      {
+        "type": "officer xp",
+        "value": 125000
+      },
+      {
+        "type": "premium recruit token",
+        "value": 500
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Defeat the third Herald."
+}

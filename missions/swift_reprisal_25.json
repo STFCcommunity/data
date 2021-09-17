@@ -1,0 +1,67 @@
+{
+  "arc": "borg arc 1",
+  "faction": "neutral",
+  "mission_name": "Swift Reprisal",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/wiretap"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Quinton\u2019s last known location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "planet": "bos vehna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Quinton.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Quinton",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to Dalen on Qualor IX with the fragments.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/qualor_25",
+        "planet": "qualor ix",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Hand over 100 Cybernetic Fragments to Dalen.",
+      "id": 4,
+      "task": {
+        "resource": "cybernetic fragments",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 100
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/faustian_bargain"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 34
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Deal with the consequences of attacking a Federation target."
+}

@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "To the Surface",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/by_any_means_necessary"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Speak with the Klingon Commander.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hoeven_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Get in position to attack the Romulans.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/zova_rhen_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 25 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_next_move"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": -2600
+      },
+      {
+        "type": "romulan points",
+        "value": -6900
+      },
+      {
+        "type": "klingon points",
+        "value": 8000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 240000
+      }
+    ]
+  },
+  "storyline": "Find Sekula's whereabouts."
+}

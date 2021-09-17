@@ -1,0 +1,75 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 8",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomsday_part_9"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Rendezvous with the USS Constellation in Doska.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escort the Constellation to Villo.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/villo_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the USS Constellation.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/villo_27",
+        "task_title": "Destroy USS Constellation",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Donate 300,000 Tritanium to repair the hull of the Enterprise.",
+      "id": 5,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 300000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_7"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 60
+      },
+      {
+        "type": "3\u2605 battleship parts",
+        "value": 380
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Escort the USS Constellation back to Villo."
+}

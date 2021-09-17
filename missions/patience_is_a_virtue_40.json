@@ -1,0 +1,74 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Patience is a Virtue",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Investigate the incredible energy pulse.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/clytomenes_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow Maia's directions.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Ambush Mudd.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "planet": "dhi'ban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Capture Mudd.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "task_title": "Destroy Mudd",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Mudd to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/signal_interrupted"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 50
+      },
+      {
+        "type": "independent credits",
+        "value": 24
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 15677000
+      }
+    ]
+  },
+  "storyline": "Catch Mudd."
+}

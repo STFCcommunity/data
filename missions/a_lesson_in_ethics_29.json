@@ -1,0 +1,67 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "A Lesson in Ethics",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/safety_first"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat the Starfleet Officer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_title": "Destroy Starfleet Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Help evacuate the soldiers.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "planet": "desta",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Commander.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/balrosh_29",
+        "task_title": "Destroy Starfleet Commander Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/where_the_faction_is_fractioned"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 230
+      },
+      {
+        "type": "klingon credits",
+        "value": 230
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Get away from Starfleet."
+}

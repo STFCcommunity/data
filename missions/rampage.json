@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Rampage",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/last_stand"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/s_vona_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Crucible ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/s_vona_41",
+        "task_title": "Destroy Romulan Crucible Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 40 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/lost_pieces"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "100k dilithium token",
+        "value": 21
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 2032000
+      }
+    ]
+  },
+  "storyline": "Stop the Romulans."
+}

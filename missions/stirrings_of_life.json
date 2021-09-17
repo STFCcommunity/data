@@ -1,0 +1,89 @@
+{
+  "faction": "federation",
+  "mission_name": "Stirrings of Life",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_gift_horse"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Carol Marcus in Lorillia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate Marcus' coordinates.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take readings of Bos Vehna.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "planet": "bos vehna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Release 4,000 Dilithium to break apart the vortex.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 4000
+      }
+    },
+    {
+      "title": "Return the telemetry to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shadows_ruminations"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 250
+      },
+      {
+        "type": "officer xp",
+        "value": 101000
+      },
+      {
+        "type": "federation credits",
+        "value": 50
+      },
+      {
+        "type": "federation points",
+        "value": 500
+      },
+      {
+        "type": "romulan points",
+        "value": -84
+      },
+      {
+        "type": "klingon points",
+        "value": -378
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Carol Marcus investigate a possible new lifeform."
+}

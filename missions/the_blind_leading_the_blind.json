@@ -1,0 +1,81 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Blind Leading the Blind",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_light_in_the_darkness"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Convergence sanctum on Brannigan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "planet": "brannigan",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 46 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 46 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Convergence Preacher.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_title": "Destroy Convergence Preacher",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat Virgil.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/farnham_48",
+        "task_title": "Destroy Virgil",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 47 or higher.",
+      "id": 5,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 47 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escape to Kayla.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/kayla_46",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_convergence"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 210
+      },
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 210
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Visit the Convergence sanctum in an attempt to broker peace."
+}
