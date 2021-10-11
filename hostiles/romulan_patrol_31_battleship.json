@@ -11,16 +11,34 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Federation\u00a0Points",
+      "type": "klingon points",
+      "max_value": 109,
+      "min_value": 109,
+      "value": 109
+    },
+    {
+      "type": "tritanium",
+      "max_value": 404,
+      "min_value": 300,
+      "value": 352
+    },
+    {
+      "type": "federation points",
+      "max_value": 54,
+      "min_value": 54,
       "value": 54
     },
     {
-      "type": "Romulan\u00a0Points",
-      "value": 204
+      "type": "dilithium",
+      "max_value": 35,
+      "min_value": 27,
+      "value": 31
     },
     {
-      "type": "Klingon\u00a0Points",
-      "value": 109
+      "type": "romulan points",
+      "max_value": -204,
+      "min_value": -204,
+      "value": -204
     }
   ],
   "ship_class": "battleship",
@@ -30,61 +48,69 @@
       "armor_pierce": 3300,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 53000,
-      "shield_pierce": 23000
+      "damage_per_round": 53973,
+      "shield_pierce": 23100
     },
     "defense": {
-      "armor": 15000,
+      "armor": 15400,
       "dodge": 3300,
       "shield_deflect": 2888
     },
     "health": {
-      "hull_health": 54000,
-      "shield_health": 29000
+      "hull_health": 54600,
+      "shield_health": 29930
     }
   },
   "systems": [
     {
-      "$ref": "systems/galorndon_core_30"
-    },
-    {
-      "$ref": "systems/gradientes_30"
-    },
-    {
       "$ref": "systems/jaq_30"
-    },
-    {
-      "$ref": "systems/lloyd_30"
-    },
-    {
-      "$ref": "systems/parka_30"
-    },
-    {
-      "$ref": "systems/lempo_31"
     },
     {
       "$ref": "systems/robeton_31"
     },
     {
-      "$ref": "systems/tandorian_31"
-    },
-    {
-      "$ref": "systems/nelvana_32"
-    },
-    {
-      "$ref": "systems/unroth_32"
+      "$ref": "systems/gradientes_30"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 72
+      "impulse_speed": 14
     }
   ],
   "weapons": [
     {
       "firing_pattern": [
         1,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 2888,
+        "armor_pierce": 3300,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 16866,
+        "max_damage": 16133,
+        "min_damage": 13200,
+        "shield_pierce": 23100
+      },
+      "weapon_type": "energy"
+    },
+    {
+      "firing_pattern": [
         1,
         0,
         1,
@@ -94,46 +120,25 @@
         1,
         0,
         1,
-        0
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 2888,
+        "armor_pierce": 3300,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 20240,
+        "max_damage": 38720,
+        "min_damage": 31680,
+        "shield_pierce": 23100
+      },
       "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
     }
   ]
 }

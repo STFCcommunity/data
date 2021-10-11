@@ -1,6 +1,6 @@
 {
   "description": "These unknown aliens arrived in our galaxy via strange spatial anomalies. Nobody knows who they are or why they seem to be hostile.",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 104192,
     "defense": 107940,
@@ -11,50 +11,52 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Mycelium\u00a0Spore",
-      "value": 145
+      "type": "mycelium spore",
+      "max_value": 160,
+      "min_value": 145,
+      "value": 152
     }
   ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
       "accuracy": 3300,
-      "armor_pierce": 23000,
+      "armor_pierce": 23100,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 60000,
+      "damage_per_round": 60260,
       "shield_pierce": 2888
     },
     "defense": {
       "armor": 2888,
-      "dodge": 15000,
+      "dodge": 15400,
       "shield_deflect": 3300
     },
     "health": {
-      "hull_health": 38000,
-      "shield_health": 38000
+      "hull_health": 38640,
+      "shield_health": 38640
     }
   },
   "systems": [
     {
-      "$ref": "systems/cada_x_28"
-    },
-    {
-      "$ref": "systems/dis_28"
+      "$ref": "systems/risette_28"
     },
     {
       "$ref": "systems/nalomas_28"
     },
     {
-      "$ref": "systems/risette_28"
+      "$ref": "systems/sae_28"
     },
     {
-      "$ref": "systems/sae_28"
+      "$ref": "systems/cada_x_28"
+    },
+    {
+      "$ref": "systems/dis_28"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 73
+      "impulse_speed": 14
     }
   ],
   "weapons": [
@@ -76,28 +78,17 @@
         0,
         1
       ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1
-      ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 3300,
+        "armor_pierce": 23100,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 22080,
+        "max_damage": 42240,
+        "min_damage": 34560,
+        "shield_pierce": 2888
+      },
       "weapon_type": "kinetic"
     },
     {
@@ -119,6 +110,16 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 3300,
+        "armor_pierce": 23100,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 16100,
+        "max_damage": 15400,
+        "min_damage": 12600,
+        "shield_pierce": 2888
+      },
       "weapon_type": "energy"
     }
   ]

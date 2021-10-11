@@ -11,16 +11,34 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Federation\u00a0Points",
+      "type": "klingon points",
+      "max_value": -544,
+      "min_value": -544,
+      "value": -544
+    },
+    {
+      "type": "tritanium",
+      "max_value": 146,
+      "min_value": 108,
+      "value": 127
+    },
+    {
+      "type": "federation points",
+      "max_value": 290,
+      "min_value": 290,
       "value": 290
     },
     {
-      "type": "Romulan\u00a0Points",
-      "value": 145
+      "type": "parsteel",
+      "max_value": 2028,
+      "min_value": 1512,
+      "value": 1770
     },
     {
-      "type": "Klingon\u00a0Points",
-      "value": 544
+      "type": "romulan points",
+      "max_value": 145,
+      "min_value": 145,
+      "value": 145
     }
   ],
   "ship_class": "interceptor",
@@ -30,7 +48,7 @@
       "armor_pierce": 63000,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 174000,
+      "damage_per_round": 174754,
       "shield_pierce": 7875
     },
     "defense": {
@@ -39,30 +57,21 @@
       "shield_deflect": 9000
     },
     "health": {
-      "hull_health": 82000,
-      "shield_health": 82000
+      "hull_health": 82800,
+      "shield_health": 82800
     }
   },
   "systems": [
     {
-      "$ref": "systems/beta_penthe_34"
-    },
-    {
-      "$ref": "systems/lixar_35"
-    },
-    {
-      "$ref": "systems/jiwu_puh_36"
-    },
-    {
       "$ref": "systems/quv_qeb_36"
     },
     {
-      "$ref": "systems/quv_lw_36"
+      "$ref": "systems/lixar_35"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 98
+      "impulse_speed": 19
     }
   ],
   "weapons": [
@@ -79,31 +88,29 @@
         1,
         0,
         1,
-        0
+        0,
+        1,
+        0,
+        1
       ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 9000,
+        "armor_pierce": 63000,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 64032,
+        "max_damage": 122496,
+        "min_damage": 100224,
+        "shield_pierce": 7875
+      },
       "weapon_type": "kinetic"
     },
     {
       "firing_pattern": [
         1,
-        0,
         1,
-        0,
         1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0
-      ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
         1,
         1,
         1,
@@ -118,6 +125,16 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 9000,
+        "armor_pierce": 63000,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 46690,
+        "max_damage": 44660,
+        "min_damage": 36540,
+        "shield_pierce": 7875
+      },
       "weapon_type": "energy"
     }
   ]

@@ -11,12 +11,16 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Inert\u00a0Nanoprobe",
-      "value": 680
+      "type": "latinum antique",
+      "max_value": 1,
+      "min_value": 1,
+      "value": 1
     },
     {
-      "type": "Latinum\u00a0Antique",
-      "value": 1
+      "type": "inert nanoprobe",
+      "max_value": 778,
+      "min_value": 592,
+      "value": 685
     }
   ],
   "ship_class": "survey",
@@ -25,9 +29,9 @@
       "accuracy": 4875,
       "armor_pierce": 4875,
       "crit_chance": 0.25,
-      "crit_damage": 1.88,
-      "damage_per_round": 253000,
-      "shield_pierce": 29000
+      "crit_damage": 1.875,
+      "damage_per_round": 253895,
+      "shield_pierce": 29250
     },
     "defense": {
       "armor": 9661,
@@ -35,63 +39,24 @@
       "shield_deflect": 2415
     },
     "health": {
-      "hull_health": 2212000,
-      "shield_health": 1659000
+      "hull_health": 2212273,
+      "shield_health": 1659205
     }
   },
   "systems": [
+    {
+      "$ref": "systems/benes_alpha_26"
+    },
     {
       "$ref": "systems/benes_beta_26"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 400
+      "impulse_speed": 80
     }
   ],
   "weapons": [
-    {
-      "firing_pattern": [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
     {
       "firing_pattern": [
         1,
@@ -111,6 +76,16 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 4875,
+        "armor_pierce": 4875,
+        "crit_chance": 0.3,
+        "crit_damage": 2.0,
+        "damage_per_round": 9775,
+        "max_damage": 6720,
+        "min_damage": 5499,
+        "shield_pierce": 29250
+      },
       "weapon_type": "energy"
     },
     {
@@ -132,7 +107,79 @@
         0
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 4875,
+        "armor_pierce": 4875,
+        "crit_chance": 0.3,
+        "crit_damage": 2.0,
+        "damage_per_round": 13685,
+        "max_damage": 37634,
+        "min_damage": 30792,
+        "shield_pierce": 29250
+      },
       "weapon_type": "energy"
+    },
+    {
+      "firing_pattern": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 4875,
+        "armor_pierce": 4875,
+        "crit_chance": 0.3,
+        "crit_damage": 2.0,
+        "damage_per_round": 15640,
+        "max_damage": 32258,
+        "min_damage": 26393,
+        "shield_pierce": 29250
+      },
+      "weapon_type": "kinetic"
+    },
+    {
+      "firing_pattern": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 4875,
+        "armor_pierce": 4875,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 214795,
+        "max_damage": 2054558,
+        "min_damage": 1681002,
+        "shield_pierce": 29250
+      },
+      "weapon_type": "kinetic"
     }
   ]
 }

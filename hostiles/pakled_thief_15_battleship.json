@@ -1,6 +1,6 @@
 {
   "description": "This Hostile patrols the different systems of the universe, looking for easy prey",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 2338,
     "defense": 3000,
@@ -9,7 +9,14 @@
   "hostile_name": "Pakled Thief",
   "level": 15,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 47,
+      "min_value": 35,
+      "value": 41
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -32,24 +39,24 @@
   },
   "systems": [
     {
-      "$ref": "systems/dhi_ban_14"
-    },
-    {
-      "$ref": "systems/vindemiatrix_15"
-    },
-    {
       "$ref": "systems/coridan_16"
+    },
+    {
+      "$ref": "systems/pune_16"
     },
     {
       "$ref": "systems/kaus_australis_16"
     },
     {
-      "$ref": "systems/pune_16"
+      "$ref": "systems/dhi_ban_14"
+    },
+    {
+      "$ref": "systems/vindemiatrix_15"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 61
+      "impulse_speed": 12
     }
   ],
   "weapons": [
@@ -66,27 +73,22 @@
         1,
         1,
         1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
         1
       ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 100,
+        "armor_pierce": 100,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 769,
+        "max_damage": 735,
+        "min_damage": 602,
+        "shield_pierce": 600
+      },
       "weapon_type": "energy"
     }
   ]

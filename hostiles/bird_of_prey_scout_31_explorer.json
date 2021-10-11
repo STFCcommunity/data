@@ -1,6 +1,6 @@
 {
   "description": "These Klingon Invaders are ruthless and completely devoid of mercy. They have been seen wandering our galaxy, gathering forgotten, ancient technology for unknown purposes.",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 483872,
     "defense": 499030,
@@ -11,44 +11,64 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Mycelium\u00a0Spore",
-      "value": 179
+      "type": "mycelium spore",
+      "max_value": 195,
+      "min_value": 175,
+      "value": 185
     }
   ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
-      "accuracy": 106000,
-      "armor_pierce": 13000,
+      "accuracy": 106798,
+      "armor_pierce": 13350,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 280000,
-      "shield_pierce": 15000
+      "damage_per_round": 280764,
+      "shield_pierce": 15257
     },
     "defense": {
-      "armor": 15000,
-      "dodge": 13000,
-      "shield_deflect": 71000
+      "armor": 15257,
+      "dodge": 13350,
+      "shield_deflect": 71199
     },
     "health": {
-      "hull_health": 131000,
-      "shield_health": 190000
+      "hull_health": 131650,
+      "shield_health": 190150
     }
   },
   "systems": [
     {
+      "$ref": "systems/evans_38"
+    },
+    {
+      "$ref": "systems/tauro_34_38"
+    },
+    {
+      "$ref": "systems/pandosia_31"
+    },
+    {
       "$ref": "systems/aletara_31"
+    },
+    {
+      "$ref": "systems/velata_36"
     },
     {
       "$ref": "systems/blys_31"
     },
     {
-      "$ref": "systems/pandosia_31"
+      "$ref": "systems/sentaros_38"
+    },
+    {
+      "$ref": "systems/orai_12_36"
+    },
+    {
+      "$ref": "systems/kraatu_36"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 85
+      "impulse_speed": 17
     }
   ],
   "weapons": [
@@ -65,9 +85,22 @@
         1,
         0,
         1,
-        0
+        0,
+        1,
+        0,
+        1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 106798,
+        "armor_pierce": 13350,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 93588,
+        "max_damage": 179038,
+        "min_damage": 146486,
+        "shield_pierce": 15257
+      },
       "weapon_type": "kinetic"
     },
     {
@@ -83,27 +116,22 @@
         1,
         1,
         1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
         1
       ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 106798,
+        "armor_pierce": 13350,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 93588,
+        "max_damage": 89519,
+        "min_damage": 73243,
+        "shield_pierce": 15257
+      },
       "weapon_type": "energy"
     }
   ]
