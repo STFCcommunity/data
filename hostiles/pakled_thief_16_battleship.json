@@ -1,6 +1,6 @@
 {
   "description": "This Hostile patrols the different systems of the universe, looking for easy prey",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 3887,
     "defense": 3835,
@@ -9,7 +9,14 @@
   "hostile_name": "Pakled Thief",
   "level": 16,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 51,
+      "min_value": 38,
+      "value": 44
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -32,16 +39,16 @@
   },
   "systems": [
     {
-      "$ref": "systems/vindemiatrix_15"
-    },
-    {
       "$ref": "systems/coridan_16"
     },
     {
-      "$ref": "systems/kaus_australis_16"
+      "$ref": "systems/vemet_17"
     },
     {
       "$ref": "systems/pune_16"
+    },
+    {
+      "$ref": "systems/kaus_australis_16"
     },
     {
       "$ref": "systems/aciben_17"
@@ -50,18 +57,49 @@
       "$ref": "systems/nott_17"
     },
     {
-      "$ref": "systems/vemet_17"
+      "$ref": "systems/vindemiatrix_15"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 60
+      "impulse_speed": 12
     }
   ],
   "weapons": [
     {
       "firing_pattern": [
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 128,
+        "armor_pierce": 128,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 735,
+        "max_damage": 703,
+        "min_damage": 575,
+        "shield_pierce": 767
+      },
+      "weapon_type": "energy"
+    },
+    {
+      "firing_pattern": [
+        1,
         0,
         1,
         0,
@@ -78,49 +116,17 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 128,
+        "armor_pierce": 128,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 882,
+        "max_damage": 1688,
+        "min_damage": 1381,
+        "shield_pierce": 767
+      },
       "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
     }
   ]
 }

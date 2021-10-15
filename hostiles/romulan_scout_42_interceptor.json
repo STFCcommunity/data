@@ -2,59 +2,70 @@
   "description": "This ship is Romulan. Attacking it will result in a loss of reputation towards the Romulans and a gain of reputation towards the Federation and Klingon factions.",
   "group": "romulan",
   "head_stats": {
-    "attack": 881172,
+    "attack": 881173,
     "defense": 198635,
-    "health": 2268972
+    "health": 2268971
   },
   "hostile_name": "Romulan Scout \u2605",
   "level": 42,
   "rarity": "common",
   "rewards": [
     {
-      "type": "4\u2605\u00a0Broken\u00a0Interceptor\u00a0Parts",
-      "value": 190
+      "type": "klingon points",
+      "max_value": 7200,
+      "min_value": 7200,
+      "value": 7200
     },
     {
-      "type": "Federation\u00a0Points",
+      "type": "federation points",
+      "max_value": 3600,
+      "min_value": 3600,
       "value": 3600
     },
     {
-      "type": "Romulan\u00a0Points",
-      "value": 13500
+      "type": "4\u2605 broken interceptor parts",
+      "max_value": 217,
+      "min_value": 197,
+      "value": 207
     },
     {
-      "type": "Klingon\u00a0Points",
-      "value": 7200
+      "type": "romulan points",
+      "max_value": -13500,
+      "min_value": -13500,
+      "value": -13500
     }
   ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
-      "accuracy": 43000,
-      "armor_pierce": 118000,
+      "accuracy": 43420,
+      "armor_pierce": 118033,
       "crit_chance": 0.1,
       "crit_damage": 1.8,
-      "damage_per_round": 604000,
-      "shield_pierce": 22000
+      "damage_per_round": 604800,
+      "shield_pierce": 22795
     },
     "defense": {
-      "armor": 10000,
-      "dodge": 19000,
+      "armor": 10240,
+      "dodge": 19735,
       "shield_deflect": 9752
     },
     "health": {
-      "hull_health": 2377000,
-      "shield_health": 2160000
+      "hull_health": 2377018,
+      "shield_health": 2160925
     }
   },
   "systems": [
+    {
+      "$ref": "systems/delmas_42"
+    },
     {
       "$ref": "systems/corvidae_42"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 400
+      "impulse_speed": 80
     }
   ],
   "weapons": [
@@ -76,28 +87,17 @@
         0,
         3
       ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        3,
-        0,
-        3,
-        0,
-        3,
-        0,
-        3,
-        0,
-        3,
-        0,
-        3,
-        0,
-        3,
-        0,
-        3
-      ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 43420,
+        "armor_pierce": 118033,
+        "crit_chance": 0.1,
+        "crit_damage": 1.8,
+        "damage_per_round": 213458,
+        "max_damage": 132658,
+        "min_damage": 108538,
+        "shield_pierce": 22795
+      },
       "weapon_type": "kinetic"
     },
     {
@@ -119,6 +119,16 @@
         3
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 43420,
+        "armor_pierce": 118033,
+        "crit_chance": 0.1,
+        "crit_damage": 1.8,
+        "damage_per_round": 177883,
+        "max_damage": 55274,
+        "min_damage": 45225,
+        "shield_pierce": 22795
+      },
       "weapon_type": "energy"
     }
   ]

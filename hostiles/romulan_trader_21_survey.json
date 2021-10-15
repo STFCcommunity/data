@@ -11,16 +11,34 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Federation\u00a0Points",
+      "type": "klingon points",
+      "max_value": 10,
+      "min_value": 10,
+      "value": 10
+    },
+    {
+      "type": "tritanium",
+      "max_value": 237,
+      "min_value": 176,
+      "value": 206
+    },
+    {
+      "type": "federation points",
+      "max_value": 6,
+      "min_value": 6,
       "value": 6
     },
     {
-      "type": "Romulan\u00a0Points",
-      "value": 40
+      "type": "dilithium",
+      "max_value": 20,
+      "min_value": 16,
+      "value": 18
     },
     {
-      "type": "Klingon\u00a0Points",
-      "value": 10
+      "type": "romulan points",
+      "max_value": -40,
+      "min_value": -40,
+      "value": -40
     }
   ],
   "ship_class": "survey",
@@ -45,27 +63,27 @@
   },
   "systems": [
     {
-      "$ref": "systems/davidul_20"
+      "$ref": "systems/v_varia_21"
     },
     {
       "$ref": "systems/llorrac_21"
     },
     {
-      "$ref": "systems/mada_21"
-    },
-    {
-      "$ref": "systems/v_varia_21"
-    },
-    {
       "$ref": "systems/dauouuy_22"
     },
     {
+      "$ref": "systems/mada_21"
+    },
+    {
       "$ref": "systems/rosec_22"
+    },
+    {
+      "$ref": "systems/davidul_20"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 53
+      "impulse_speed": 10
     }
   ],
   "weapons": [
@@ -88,6 +106,16 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 700,
+        "armor_pierce": 700,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 3864,
+        "max_damage": 3696,
+        "min_damage": 3024,
+        "shield_pierce": 700
+      },
       "weapon_type": "energy"
     }
   ]

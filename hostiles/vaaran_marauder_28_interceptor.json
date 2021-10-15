@@ -1,6 +1,6 @@
 {
   "description": "This Hostile patrols the different systems of the universe, looking for easy prey",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 42306,
     "defense": 41250,
@@ -9,7 +9,14 @@
   "hostile_name": "Vaaran Marauder",
   "level": 28,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 1338,
+      "min_value": 1015,
+      "value": 1176
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
@@ -17,7 +24,7 @@
       "armor_pierce": 8250,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 25000,
+      "damage_per_round": 25806,
       "shield_pierce": 1375
     },
     "defense": {
@@ -26,8 +33,8 @@
       "shield_deflect": 1375
     },
     "health": {
-      "hull_health": 19000,
-      "shield_health": 19000
+      "hull_health": 19200,
+      "shield_health": 19200
     }
   },
   "systems": [
@@ -36,17 +43,11 @@
     },
     {
       "$ref": "systems/paradane_27"
-    },
-    {
-      "$ref": "systems/duriana_28"
-    },
-    {
-      "$ref": "systems/terazon_x31_28"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 81
+      "impulse_speed": 16
     }
   ],
   "weapons": [
@@ -68,28 +69,17 @@
         0,
         1
       ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1
-      ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 1375,
+        "armor_pierce": 8250,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 9108,
+        "max_damage": 17424,
+        "min_damage": 14256,
+        "shield_pierce": 1375
+      },
       "weapon_type": "kinetic"
     },
     {
@@ -111,6 +101,16 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 1375,
+        "armor_pierce": 8250,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 7590,
+        "max_damage": 7260,
+        "min_damage": 5940,
+        "shield_pierce": 1375
+      },
       "weapon_type": "energy"
     }
   ]

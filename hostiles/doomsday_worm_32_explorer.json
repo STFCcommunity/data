@@ -1,6 +1,6 @@
 {
   "description": "Doctor McCoy's studies suggest that these parasitic beings are discarded from the carapace of the Doomsday creature. Feeding on the planetary rubble left in the creature's wake of destruction, the Doomsday Worms roam the galaxy in search of their next meal.",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 178601,
     "defense": 176250,
@@ -9,45 +9,87 @@
   "hostile_name": "Doomsday Worm",
   "level": 32,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "parsteel",
+      "max_value": 512,
+      "min_value": 382,
+      "value": 447
+    },
+    {
+      "type": "dilithium",
+      "max_value": 123,
+      "min_value": 93,
+      "value": 108
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
-      "accuracy": 35000,
+      "accuracy": 35250,
       "armor_pierce": 5875,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 108000,
+      "damage_per_round": 108101,
       "shield_pierce": 5875
     },
     "defense": {
       "armor": 5875,
       "dodge": 5875,
-      "shield_deflect": 23000
+      "shield_deflect": 23500
     },
     "health": {
-      "hull_health": 62000,
-      "shield_health": 65000
+      "hull_health": 62100,
+      "shield_health": 65550
     }
   },
   "systems": [
     {
-      "$ref": "systems/etalon_32"
+      "$ref": "systems/mezara_33"
     },
     {
-      "$ref": "systems/mezara_33"
+      "$ref": "systems/etalon_32"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 85
+      "impulse_speed": 17
     }
   ],
   "weapons": [
     {
       "firing_pattern": [
         1,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 35250,
+        "armor_pierce": 5875,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 36034,
+        "max_damage": 34467,
+        "min_damage": 28200,
+        "shield_pierce": 5875
+      },
+      "weapon_type": "energy"
+    },
+    {
+      "firing_pattern": [
         1,
         0,
         1,
@@ -57,46 +99,25 @@
         1,
         0,
         1,
-        0
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 35250,
+        "armor_pierce": 5875,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 36034,
+        "max_damage": 68934,
+        "min_damage": 56400,
+        "shield_pierce": 5875
+      },
       "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
     }
   ]
 }

@@ -11,16 +11,34 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Federation\u00a0Points",
+      "type": "klingon points",
+      "max_value": -31,
+      "min_value": -31,
+      "value": -31
+    },
+    {
+      "type": "tritanium",
+      "max_value": 88,
+      "min_value": 66,
+      "value": 77
+    },
+    {
+      "type": "federation points",
+      "max_value": 17,
+      "min_value": 17,
       "value": 17
     },
     {
-      "type": "Romulan\u00a0Points",
-      "value": 8
+      "type": "parsteel",
+      "max_value": 1103,
+      "min_value": 827,
+      "value": 965
     },
     {
-      "type": "Klingon\u00a0Points",
-      "value": 31
+      "type": "romulan points",
+      "max_value": 8,
+      "min_value": 8,
+      "value": 8
     }
   ],
   "ship_class": "explorer",
@@ -45,25 +63,7 @@
   },
   "systems": [
     {
-      "$ref": "systems/loiat_24"
-    },
-    {
-      "$ref": "systems/vosak_24"
-    },
-    {
-      "$ref": "systems/laija_25"
-    },
-    {
       "$ref": "systems/loaiy_25"
-    },
-    {
-      "$ref": "systems/maranga_25"
-    },
-    {
-      "$ref": "systems/yadow_25"
-    },
-    {
-      "$ref": "systems/ias_26"
     },
     {
       "$ref": "systems/izth_26"
@@ -71,7 +71,7 @@
   ],
   "utility": [
     {
-      "impulse_speed": 100
+      "impulse_speed": 20
     }
   ],
   "weapons": [
@@ -93,7 +93,7 @@
         1,
         1
       ],
-      "quantity": 3,
+      "quantity": 2,
       "weapon_stats": {
         "accuracy": 4500,
         "armor_pierce": 875,
@@ -125,27 +125,16 @@
         1
       ],
       "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 4500,
+        "armor_pierce": 875,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 3220,
+        "max_damage": 3080,
+        "min_damage": 2520,
+        "shield_pierce": 656
+      },
       "weapon_type": "energy"
     }
   ]

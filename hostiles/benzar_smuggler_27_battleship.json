@@ -1,6 +1,6 @@
 {
   "description": "This Hostile patrols the different systems of the universe, looking for easy prey",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 29664,
     "defense": 30000,
@@ -9,7 +9,14 @@
   "hostile_name": "Benzar Smuggler",
   "level": 27,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "dilithium",
+      "max_value": 98,
+      "min_value": 73,
+      "value": 85
+    }
+  ],
   "ship_class": "battleship",
   "stats": {
     "attack": {
@@ -17,7 +24,7 @@
       "armor_pierce": 1000,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 17000,
+      "damage_per_round": 17664,
       "shield_pierce": 6000
     },
     "defense": {
@@ -26,8 +33,8 @@
       "shield_deflect": 1000
     },
     "health": {
-      "hull_health": 16000,
-      "shield_health": 12000
+      "hull_health": 16800,
+      "shield_health": 12600
     }
   },
   "systems": [
@@ -37,14 +44,43 @@
   ],
   "utility": [
     {
-      "impulse_speed": 60
+      "impulse_speed": 12
     }
   ],
   "weapons": [
     {
       "firing_pattern": [
         1,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 1000,
+        "armor_pierce": 1000,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 5520,
+        "max_damage": 5280,
+        "min_damage": 4320,
+        "shield_pierce": 6000
+      },
+      "weapon_type": "energy"
+    },
+    {
+      "firing_pattern": [
         1,
         0,
         1,
@@ -54,46 +90,25 @@
         1,
         0,
         1,
-        0
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 1000,
+        "armor_pierce": 1000,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 6624,
+        "max_damage": 12672,
+        "min_damage": 10368,
+        "shield_pierce": 6000
+      },
       "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
     }
   ]
 }

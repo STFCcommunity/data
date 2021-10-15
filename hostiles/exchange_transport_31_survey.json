@@ -11,8 +11,10 @@
   "rarity": "common",
   "rewards": [
     {
-      "type": "Eclipse\u00a0Security\u00a0Codes",
-      "value": 86
+      "type": "eclipse security codes",
+      "max_value": 90,
+      "min_value": 80,
+      "value": 85
     }
   ],
   "ship_class": "survey",
@@ -21,7 +23,7 @@
       "accuracy": 60050,
       "armor_pierce": 60050,
       "crit_chance": 0.2,
-      "crit_damage": 2,
+      "crit_damage": 2.0,
       "damage_per_round": 21479,
       "shield_pierce": 60050
     },
@@ -31,28 +33,28 @@
       "shield_deflect": 37500
     },
     "health": {
-      "hull_health": 2034000,
-      "shield_health": 1928000
+      "hull_health": 2034931,
+      "shield_health": 1928091
     }
   },
   "systems": [
     {
-      "$ref": "systems/andkara_30"
+      "$ref": "systems/wallach_30"
     },
     {
-      "$ref": "systems/exchange_beta_30"
+      "$ref": "systems/andkara_30"
     },
     {
       "$ref": "systems/kemetja_30"
     },
     {
+      "$ref": "systems/exchange_gamma_32"
+    },
+    {
       "$ref": "systems/resara_30"
     },
     {
-      "$ref": "systems/wallach_30"
-    },
-    {
-      "$ref": "systems/exchange_gamma_32"
+      "$ref": "systems/exchange_beta_30"
     },
     {
       "$ref": "systems/yuma_32"
@@ -60,44 +62,13 @@
   ],
   "utility": [
     {
-      "impulse_speed": 90
+      "impulse_speed": 18
     }
   ],
   "weapons": [
     {
       "firing_pattern": [
         2,
-        0,
-        2,
-        0,
-        2,
-        0,
-        2,
-        0,
-        2,
-        0,
-        2,
-        0,
-        2,
-        0,
-        2
-      ],
-      "quantity": 1,
-      "weapon_stats": {
-        "accuracy": 60050,
-        "armor_pierce": 60050,
-        "crit_chance": 0.2,
-        "crit_damage": 2,
-        "damage_per_round": 10739.4,
-        "max_damage": 8368,
-        "min_damage": 6974,
-        "shield_pierce": 60050
-      },
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        2,
         2,
         2,
         2,
@@ -118,13 +89,44 @@
         "accuracy": 60050,
         "armor_pierce": 60050,
         "crit_chance": 0.2,
-        "crit_damage": 2,
-        "damage_per_round": 10739.4,
+        "crit_damage": 2.0,
+        "damage_per_round": 10739,
         "max_damage": 4184,
         "min_damage": 3487,
         "shield_pierce": 60050
       },
       "weapon_type": "energy"
+    },
+    {
+      "firing_pattern": [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 60050,
+        "armor_pierce": 60050,
+        "crit_chance": 0.2,
+        "crit_damage": 2.0,
+        "damage_per_round": 10739,
+        "max_damage": 8368,
+        "min_damage": 6974,
+        "shield_pierce": 60050
+      },
+      "weapon_type": "kinetic"
     }
   ]
 }

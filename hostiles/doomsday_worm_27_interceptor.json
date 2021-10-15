@@ -1,6 +1,6 @@
 {
   "description": "Doctor McCoy's studies suggest that these parasitic beings are discarded from the carapace of the Doomsday creature. Feeding on the planetary rubble left in the creature's wake of destruction, the Doomsday Worms roam the galaxy in search of their next meal.",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 52280,
     "defense": 52500,
@@ -9,15 +9,28 @@
   "hostile_name": "Doomsday Worm",
   "level": 27,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 99,
+      "min_value": 74,
+      "value": 86
+    },
+    {
+      "type": "parsteel",
+      "max_value": 1260,
+      "min_value": 932,
+      "value": 1096
+    }
+  ],
   "ship_class": "interceptor",
   "stats": {
     "attack": {
       "accuracy": 1750,
-      "armor_pierce": 10000,
+      "armor_pierce": 10500,
       "crit_chance": 0.1,
       "crit_damage": 1.5,
-      "damage_per_round": 31000,
+      "damage_per_round": 31280,
       "shield_pierce": 1750
     },
     "defense": {
@@ -26,24 +39,24 @@
       "shield_deflect": 1750
     },
     "health": {
-      "hull_health": 26000,
-      "shield_health": 26000
+      "hull_health": 26400,
+      "shield_health": 26400
     }
   },
   "systems": [
+    {
+      "$ref": "systems/villo_27"
+    },
     {
       "$ref": "systems/elya_27"
     },
     {
       "$ref": "systems/piya_27"
-    },
-    {
-      "$ref": "systems/villo_27"
     }
   ],
   "utility": [
     {
-      "impulse_speed": 98
+      "impulse_speed": 19
     }
   ],
   "weapons": [
@@ -65,28 +78,17 @@
         0,
         1
       ],
-      "quantity": 1,
-      "weapon_type": "kinetic"
-    },
-    {
-      "firing_pattern": [
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
-        1
-      ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 1750,
+        "armor_pierce": 10500,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 11040,
+        "max_damage": 21120,
+        "min_damage": 17280,
+        "shield_pierce": 1750
+      },
       "weapon_type": "kinetic"
     },
     {
@@ -108,6 +110,16 @@
         1
       ],
       "quantity": 1,
+      "weapon_stats": {
+        "accuracy": 1750,
+        "armor_pierce": 10500,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 9200,
+        "max_damage": 8800,
+        "min_damage": 7200,
+        "shield_pierce": 1750
+      },
       "weapon_type": "energy"
     }
   ]

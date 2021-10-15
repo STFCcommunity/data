@@ -1,6 +1,6 @@
 {
   "description": "This Hostile patrols the different systems of the universe, looking for easy prey",
-  "group": "",
+  "group": "neutral",
   "head_stats": {
     "attack": 2338,
     "defense": 3000,
@@ -9,7 +9,14 @@
   "hostile_name": "Boslic Slave Trader",
   "level": 15,
   "rarity": "common",
-  "rewards": [],
+  "rewards": [
+    {
+      "type": "tritanium",
+      "max_value": 161,
+      "min_value": 119,
+      "value": 140
+    }
+  ],
   "ship_class": "explorer",
   "stats": {
     "attack": {
@@ -35,10 +42,10 @@
       "$ref": "systems/deneva_15"
     },
     {
-      "$ref": "systems/eizeb_16"
+      "$ref": "systems/jishui_16"
     },
     {
-      "$ref": "systems/jishui_16"
+      "$ref": "systems/eizeb_16"
     },
     {
       "$ref": "systems/madra_16"
@@ -46,7 +53,7 @@
   ],
   "utility": [
     {
-      "impulse_speed": 72
+      "impulse_speed": 14
     }
   ],
   "weapons": [
@@ -63,27 +70,22 @@
         1,
         1,
         1,
-        1
-      ],
-      "quantity": 1,
-      "weapon_type": "energy"
-    },
-    {
-      "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
         1
       ],
-      "quantity": 1,
+      "quantity": 2,
+      "weapon_stats": {
+        "accuracy": 600,
+        "armor_pierce": 100,
+        "crit_chance": 0.1,
+        "crit_damage": 1.5,
+        "damage_per_round": 769,
+        "max_damage": 735,
+        "min_damage": 602,
+        "shield_pierce": 100
+      },
       "weapon_type": "energy"
     }
   ]
