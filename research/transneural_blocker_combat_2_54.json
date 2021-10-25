@@ -1,11 +1,11 @@
 {
   "description": "Reduces all Defense stats of ASSIMILATED.",
-  "img_url": "./assets/transneural_blocker.png",
+  "img_url": "./assets/transneural_blocker_combat_2_54.png",
   "levels": [
     {
       "bonus": {
         "percentage": true,
-        "value": 2
+        "value": 0.02
       },
       "increased_power": 110000,
       "level": 1,
@@ -15,11 +15,11 @@
           "level": 1
         },
         {
-          "name": "4\u2605 Reinforced Bulkheads",
+          "name": "4\u2605 Shield Efficiency",
           "level": 1
         },
         {
-          "name": "4\u2605 Shield Efficiency",
+          "name": "4\u2605 Reinforced Bulkheads",
           "level": 1
         }
       ],
@@ -27,14 +27,16 @@
         {
           "name": "Adaptive Weaponry",
           "level": 1
-        },
-        {
-          "name": "R&D Department",
-          "level": 48
         }
       ],
       "research_costs": {
         "materials": [
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "common",
+            "value": 20000
+          },
           {
             "type": "crystal",
             "grade": 4,
@@ -43,12 +45,6 @@
           },
           {
             "type": "gas",
-            "grade": 4,
-            "rarity": "common",
-            "value": 20000
-          },
-          {
-            "type": "ore",
             "grade": 4,
             "rarity": "common",
             "value": 20000
@@ -67,7 +63,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 4
+        "value": 0.04
       },
       "increased_power": 7000,
       "level": 2,
@@ -81,19 +77,24 @@
       "research_costs": {
         "materials": [
           {
-            "type": "crystal",
+            "type": "gas",
             "grade": 4,
             "rarity": "common",
             "value": 24000
           },
           {
-            "type": "gas",
+            "type": "crystal",
             "grade": 4,
             "rarity": "common",
             "value": 24000
           }
         ],
-        "others": [],
+        "others": [
+          {
+            "type": "pattern disruptor",
+            "value": 300
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
@@ -106,7 +107,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 6
+        "value": 0.06
       },
       "increased_power": 8000,
       "level": 3,
@@ -120,13 +121,13 @@
       "research_costs": {
         "materials": [
           {
-            "type": "crystal",
+            "type": "gas",
             "grade": 4,
             "rarity": "uncommon",
             "value": 6600
           },
           {
-            "type": "gas",
+            "type": "crystal",
             "grade": 4,
             "rarity": "uncommon",
             "value": 6600
@@ -138,7 +139,12 @@
             "value": 6600
           }
         ],
-        "others": [],
+        "others": [
+          {
+            "type": "pattern disruptor",
+            "value": 1200
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
@@ -151,17 +157,12 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 8
+        "value": 0.08
       },
       "increased_power": 9000,
       "level": 4,
       "required_by": [],
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 50
-        }
-      ],
+      "requirements": [],
       "research_costs": {
         "materials": [
           {
@@ -179,7 +180,7 @@
         ],
         "others": [
           {
-            "type": "Pattern\u00a0Disruptor",
+            "type": "pattern disruptor",
             "value": 3750
           }
         ],
@@ -195,17 +196,12 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 10
+        "value": 0.1
       },
       "increased_power": 9000,
       "level": 5,
       "required_by": [],
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 50
-        }
-      ],
+      "requirements": [],
       "research_costs": {
         "materials": [
           {
@@ -223,7 +219,7 @@
         ],
         "others": [
           {
-            "type": "Pattern\u00a0Disruptor",
+            "type": "pattern disruptor",
             "value": 11700
           }
         ],
@@ -239,17 +235,12 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 12
+        "value": 0.12
       },
       "increased_power": 9000,
       "level": 6,
       "required_by": [],
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 50
-        }
-      ],
+      "requirements": [],
       "research_costs": {
         "materials": [
           {
@@ -267,7 +258,7 @@
         ],
         "others": [
           {
-            "type": "Pattern\u00a0Disruptor",
+            "type": "pattern disruptor",
             "value": 19000
           }
         ],
@@ -283,35 +274,30 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 14
+        "value": 0.14
       },
       "increased_power": 10000,
       "level": 7,
       "required_by": [],
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 50
-        }
-      ],
+      "requirements": [],
       "research_costs": {
         "materials": [
-          {
-            "type": "gas",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 32000
-          },
           {
             "type": "ore",
             "grade": 4,
             "rarity": "rare",
             "value": 4000
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 32000
           }
         ],
         "others": [
           {
-            "type": "Pattern\u00a0Disruptor",
+            "type": "pattern disruptor",
             "value": 50000
           }
         ],
@@ -327,17 +313,12 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 16
+        "value": 0.16
       },
       "increased_power": 10000,
       "level": 8,
       "required_by": [],
-      "requirements": [
-        {
-          "name": "R&D Department",
-          "level": 50
-        }
-      ],
+      "requirements": [],
       "research_costs": {
         "materials": [
           {
@@ -355,7 +336,7 @@
         ],
         "others": [
           {
-            "type": "Pattern\u00a0Disruptor",
+            "type": "pattern disruptor",
             "value": 68000
           }
         ],
@@ -371,7 +352,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 18
+        "value": 0.18
       },
       "increased_power": 10000,
       "level": 9,
@@ -383,12 +364,36 @@
         }
       ],
       "research_costs": {
-        "materials": [],
-        "others": [],
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 5,
+            "rarity": "common",
+            "value": 14000
+          },
+          {
+            "type": "gas",
+            "grade": 5,
+            "rarity": "common",
+            "value": 14000
+          },
+          {
+            "type": "ore",
+            "grade": 5,
+            "rarity": "common",
+            "value": 14000
+          }
+        ],
+        "others": [
+          {
+            "type": "pattern disruptor",
+            "value": 152000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
-            "value": 64784000000
+            "value": 23035000000
           }
         ]
       },
@@ -397,7 +402,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 20
+        "value": 0.2
       },
       "increased_power": 11000,
       "level": 10,
@@ -409,12 +414,36 @@
         }
       ],
       "research_costs": {
-        "materials": [],
-        "others": [],
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 5,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "crystal",
+            "grade": 5,
+            "rarity": "common",
+            "value": 20000
+          },
+          {
+            "type": "gas",
+            "grade": 5,
+            "rarity": "common",
+            "value": 20000
+          }
+        ],
+        "others": [
+          {
+            "type": "pattern disruptor",
+            "value": 204000
+          }
+        ],
         "resources": [
           {
             "type": "dilithium",
-            "value": 97176000000
+            "value": 34553000000
           }
         ]
       },

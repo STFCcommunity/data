@@ -1,15 +1,19 @@
 {
   "description": "Increases shield health for Interceptors.",
-  "img_url": "./assets/interceptor_shields.png",
+  "img_url": "./assets/interceptor_shields_territory_1_9.png",
   "levels": [
     {
       "bonus": {
         "percentage": true,
-        "value": 20
+        "value": 0.2
       },
       "increased_power": 9500,
       "level": 1,
       "required_by": [
+        {
+          "name": "Critical Interceptor Hit",
+          "level": 1
+        },
         {
           "name": "Battleship Shields",
           "level": 1
@@ -29,11 +33,11 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
+            "type": "iso-emulsion",
             "value": 1800
           },
           {
-            "type": "Quantum\u00a0Particle",
+            "type": "quantum particle",
             "value": 120
           }
         ],
@@ -49,7 +53,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 30
+        "value": 0.3
       },
       "increased_power": 4750,
       "level": 2,
@@ -73,12 +77,12 @@
         "materials": [],
         "others": [
           {
-            "type": "Quantum\u00a0Particle",
-            "value": 200
+            "type": "iso-emulsion",
+            "value": 9200
           },
           {
-            "type": "Iso-emulsion",
-            "value": 9200
+            "type": "quantum particle",
+            "value": 200
           }
         ],
         "resources": [
@@ -93,7 +97,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 40
+        "value": 0.4
       },
       "increased_power": 1250,
       "level": 3,
@@ -113,12 +117,12 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
-            "value": 14400
+            "type": "quantum particle",
+            "value": 220
           },
           {
-            "type": "Quantum\u00a0Particle",
-            "value": 220
+            "type": "iso-emulsion",
+            "value": 14400
           }
         ],
         "resources": [
@@ -133,15 +137,11 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 50
+        "value": 0.5
       },
       "increased_power": 1500,
       "level": 4,
       "required_by": [
-        {
-          "name": "Battleship Shields",
-          "level": 3
-        },
         {
           "name": "Explorer Shields",
           "level": 5
@@ -149,6 +149,10 @@
         {
           "name": "Interceptor Hull Boost",
           "level": 4
+        },
+        {
+          "name": "Battleship Shields",
+          "level": 3
         }
       ],
       "requirements": [
@@ -161,11 +165,11 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
+            "type": "iso-emulsion",
             "value": 17500
           },
           {
-            "type": "Quantum\u00a0Particle",
+            "type": "quantum particle",
             "value": 260
           }
         ],
@@ -181,17 +185,17 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 60
+        "value": 0.6
       },
       "increased_power": 1750,
       "level": 5,
       "required_by": [
         {
-          "name": "Battleship Shields",
+          "name": "Interceptor Hull Boost",
           "level": 5
         },
         {
-          "name": "Interceptor Hull Boost",
+          "name": "Battleship Shields",
           "level": 5
         }
       ],
@@ -205,11 +209,11 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
+            "type": "iso-emulsion",
             "value": 31000
           },
           {
-            "type": "Quantum\u00a0Particle",
+            "type": "quantum particle",
             "value": 280
           }
         ],
@@ -225,15 +229,11 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 75
+        "value": 0.75
       },
       "increased_power": 1750,
       "level": 6,
       "required_by": [
-        {
-          "name": "Battleship Shields",
-          "level": 7
-        },
         {
           "name": "Explorer Shields",
           "level": 7
@@ -241,6 +241,10 @@
         {
           "name": "Interceptor Hull Boost",
           "level": 6
+        },
+        {
+          "name": "Battleship Shields",
+          "level": 7
         }
       ],
       "requirements": [
@@ -253,12 +257,12 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
-            "value": 36100
+            "type": "quantum particle",
+            "value": 320
           },
           {
-            "type": "Quantum\u00a0Particle",
-            "value": 320
+            "type": "iso-emulsion",
+            "value": 36100
           }
         ],
         "resources": [
@@ -273,11 +277,15 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 90
+        "value": 0.9
       },
       "increased_power": 3500,
       "level": 7,
       "required_by": [
+        {
+          "name": "Interceptor Hull Boost",
+          "level": 7
+        },
         {
           "name": "Battleship Shields",
           "level": 7
@@ -297,12 +305,12 @@
         "materials": [],
         "others": [
           {
-            "type": "Quantum\u00a0Particle",
-            "value": 390
+            "type": "iso-emulsion",
+            "value": 69900
           },
           {
-            "type": "Iso-emulsion",
-            "value": 69900
+            "type": "quantum particle",
+            "value": 390
           }
         ],
         "resources": [
@@ -317,15 +325,11 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 105
+        "value": 1.05
       },
       "increased_power": 4000,
       "level": 8,
       "required_by": [
-        {
-          "name": "Battleship Shields",
-          "level": 9
-        },
         {
           "name": "Explorer Shields",
           "level": 9
@@ -333,6 +337,10 @@
         {
           "name": "Interceptor Hull Boost",
           "level": 8
+        },
+        {
+          "name": "Battleship Shields",
+          "level": 9
         }
       ],
       "requirements": [
@@ -345,11 +353,11 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
+            "type": "iso-emulsion",
             "value": 144000
           },
           {
-            "type": "Quantum\u00a0Particle",
+            "type": "quantum particle",
             "value": 480
           }
         ],
@@ -365,7 +373,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 125
+        "value": 1.25
       },
       "increased_power": 5000,
       "level": 9,
@@ -385,11 +393,11 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
+            "type": "iso-emulsion",
             "value": 253000
           },
           {
-            "type": "Quantum\u00a0Particle",
+            "type": "quantum particle",
             "value": 560
           }
         ],
@@ -405,7 +413,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 150
+        "value": 1.5
       },
       "increased_power": 5000,
       "level": 10,
@@ -425,11 +433,11 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
+            "type": "iso-emulsion",
             "value": 389000
           },
           {
-            "type": "Quantum\u00a0Particle",
+            "type": "quantum particle",
             "value": 650
           }
         ],
@@ -445,7 +453,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 175
+        "value": 1.75
       },
       "increased_power": 6000,
       "level": 11,
@@ -460,12 +468,12 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
-            "value": 608000
+            "type": "quantum particle",
+            "value": 740
           },
           {
-            "type": "Quantum\u00a0Particle",
-            "value": 740
+            "type": "iso-emulsion",
+            "value": 608000
           }
         ],
         "resources": [
@@ -480,7 +488,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 200
+        "value": 2.0
       },
       "increased_power": 6000,
       "level": 12,
@@ -492,11 +500,11 @@
       ],
       "requirements": [
         {
-          "name": "2\u21f4 Isogen Extraction",
+          "name": "Explorer Shields",
           "level": 12
         },
         {
-          "name": "Explorer Shields",
+          "name": "2\u21f4 Isogen Extraction",
           "level": 12
         },
         {
@@ -508,12 +516,12 @@
         "materials": [],
         "others": [
           {
-            "type": "Iso-emulsion",
-            "value": 990000
+            "type": "quantum particle",
+            "value": 830
           },
           {
-            "type": "Quantum\u00a0Particle",
-            "value": 830
+            "type": "iso-emulsion",
+            "value": 990000
           }
         ],
         "resources": [

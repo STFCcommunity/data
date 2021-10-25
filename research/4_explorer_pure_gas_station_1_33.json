@@ -1,11 +1,11 @@
 {
-  "description": "Increases Gas cost efficiency for Grade 4 Explorer components",
-  "img_url": "./assets/4_explorer_pure_gas.png",
+  "description": "Increases Gas cost efficiency for Grade 4+ Explorer components.",
+  "img_url": "./assets/4_explorer_pure_gas_station_1_33.png",
   "levels": [
     {
       "bonus": {
         "percentage": true,
-        "value": 2
+        "value": 0.02
       },
       "increased_power": 72000,
       "level": 1,
@@ -17,10 +17,6 @@
         },
         {
           "name": "Astronautics Studio",
-          "level": 40
-        },
-        {
-          "name": "Parsteel Vault",
           "level": 40
         }
       ],
@@ -50,14 +46,14 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 4
+        "value": 0.04
       },
       "increased_power": 6000,
       "level": 2,
       "required_by": [
         {
           "name": "Station Pure Resources",
-          "level": 2
+          "level": 1
         }
       ],
       "requirements": [
@@ -98,11 +94,16 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 6
+        "value": 0.06
       },
       "increased_power": 7000,
       "level": 3,
-      "required_by": [],
+      "required_by": [
+        {
+          "name": "4\u2605 Survey Pure Materials",
+          "level": 3
+        }
+      ],
       "requirements": [
         {
           "name": "Parsteel Fortification",
@@ -110,10 +111,6 @@
         },
         {
           "name": "Astronautics Studio",
-          "level": 42
-        },
-        {
-          "name": "Parsteel Vault",
           "level": 42
         }
       ],
@@ -141,11 +138,11 @@
         "others": [],
         "resources": [
           {
-            "type": "tritanium",
+            "type": "dilithium",
             "value": 224700000
           },
           {
-            "type": "dilithium",
+            "type": "tritanium",
             "value": 224700000
           }
         ]
@@ -155,7 +152,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 8
+        "value": 0.08
       },
       "increased_power": 7000,
       "level": 4,
@@ -171,8 +168,8 @@
           {
             "type": "gas",
             "grade": 4,
-            "rarity": "common",
-            "value": 9000
+            "rarity": "rare",
+            "value": 1500
           },
           {
             "type": "gas",
@@ -183,18 +180,18 @@
           {
             "type": "gas",
             "grade": 4,
-            "rarity": "rare",
-            "value": 1500
+            "rarity": "common",
+            "value": 9000
           }
         ],
         "others": [],
         "resources": [
           {
-            "type": "tritanium",
+            "type": "dilithium",
             "value": 326000000
           },
           {
-            "type": "dilithium",
+            "type": "tritanium",
             "value": 326000000
           }
         ]
@@ -204,27 +201,23 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 10
+        "value": 0.1
       },
       "increased_power": 7000,
       "level": 5,
       "required_by": [],
       "requirements": [
         {
-          "name": "4\u2605  Battleship Pure Ore",
+          "name": "4\u2605 Interceptor Pure Crystal",
           "level": 2
         },
         {
-          "name": "4\u2605  Interceptor Pure Crystal",
+          "name": "4\u2605 Battleship Pure Ore",
           "level": 2
         },
         {
           "name": "Astronautics Studio",
           "level": 44
-        },
-        {
-          "name": "Shipyard",
-          "level": 43
         }
       ],
       "research_costs": {
@@ -232,14 +225,14 @@
           {
             "type": "gas",
             "grade": 4,
-            "rarity": "common",
-            "value": 11000
+            "rarity": "uncommon",
+            "value": 2900
           },
           {
             "type": "gas",
             "grade": 4,
-            "rarity": "uncommon",
-            "value": 2900
+            "rarity": "common",
+            "value": 11000
           },
           {
             "type": "gas",
@@ -251,11 +244,11 @@
         "others": [],
         "resources": [
           {
-            "type": "tritanium",
+            "type": "dilithium",
             "value": 496500000
           },
           {
-            "type": "dilithium",
+            "type": "tritanium",
             "value": 496500000
           }
         ]
@@ -265,11 +258,16 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 12
+        "value": 0.12
       },
       "increased_power": 7000,
       "level": 6,
-      "required_by": [],
+      "required_by": [
+        {
+          "name": "Station Pure Resources",
+          "level": 5
+        }
+      ],
       "requirements": [
         {
           "name": "Astronautics Studio",
@@ -281,6 +279,12 @@
           {
             "type": "gas",
             "grade": 4,
+            "rarity": "rare",
+            "value": 1650
+          },
+          {
+            "type": "gas",
+            "grade": 4,
             "rarity": "common",
             "value": 13000
           },
@@ -289,22 +293,16 @@
             "grade": 4,
             "rarity": "uncommon",
             "value": 3300
-          },
-          {
-            "type": "gas",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 1650
           }
         ],
         "others": [],
         "resources": [
           {
-            "type": "tritanium",
+            "type": "dilithium",
             "value": 708000000
           },
           {
-            "type": "dilithium",
+            "type": "tritanium",
             "value": 708000000
           }
         ]
@@ -314,7 +312,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 14
+        "value": 0.14
       },
       "increased_power": 8000,
       "level": 7,
@@ -327,14 +325,16 @@
         {
           "name": "Astronautics Studio",
           "level": 46
-        },
-        {
-          "name": "Parsteel Vault",
-          "level": 46
         }
       ],
       "research_costs": {
         "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "rare",
+            "value": 1700
+          },
           {
             "type": "gas",
             "grade": 4,
@@ -346,12 +346,6 @@
             "grade": 4,
             "rarity": "uncommon",
             "value": 3500
-          },
-          {
-            "type": "gas",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 1700
           }
         ],
         "others": [],
@@ -371,7 +365,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 16
+        "value": 0.16
       },
       "increased_power": 9000,
       "level": 8,
@@ -387,6 +381,12 @@
           {
             "type": "gas",
             "grade": 4,
+            "rarity": "rare",
+            "value": 1800
+          },
+          {
+            "type": "gas",
+            "grade": 4,
             "rarity": "common",
             "value": 18000
           },
@@ -395,12 +395,6 @@
             "grade": 4,
             "rarity": "uncommon",
             "value": 3600
-          },
-          {
-            "type": "gas",
-            "grade": 4,
-            "rarity": "rare",
-            "value": 1800
           }
         ],
         "others": [],
@@ -420,7 +414,7 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 18
+        "value": 0.18
       },
       "increased_power": 8000,
       "level": 9,
@@ -433,10 +427,6 @@
         {
           "name": "Astronautics Studio",
           "level": 48
-        },
-        {
-          "name": "Parsteel Vault",
-          "level": 48
         }
       ],
       "research_costs": {
@@ -444,14 +434,14 @@
           {
             "type": "gas",
             "grade": 4,
-            "rarity": "common",
-            "value": 20000
+            "rarity": "uncommon",
+            "value": 4300
           },
           {
             "type": "gas",
             "grade": 4,
-            "rarity": "uncommon",
-            "value": 4300
+            "rarity": "common",
+            "value": 20000
           },
           {
             "type": "gas",
@@ -477,18 +467,23 @@
     {
       "bonus": {
         "percentage": true,
-        "value": 20
+        "value": 0.2
       },
       "increased_power": 10000,
       "level": 10,
-      "required_by": [],
+      "required_by": [
+        {
+          "name": "Station Pure Resources",
+          "level": 10
+        }
+      ],
       "requirements": [
         {
-          "name": "4\u2605  Battleship Pure Ore",
+          "name": "4\u2605 Interceptor Pure Crystal",
           "level": 9
         },
         {
-          "name": "4\u2605  Interceptor Pure Crystal",
+          "name": "4\u2605 Battleship Pure Ore",
           "level": 9
         },
         {
