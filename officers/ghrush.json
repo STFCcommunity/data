@@ -1,22 +1,22 @@
 {
-  "description": "The Orion Syndicate was built as an organized crime unit that specialized in piracy, smuggling, slave-trading, and assassination. Over the years, the Syndicate has become the true power on Orion Prime and has dealings far and wide across the quadrant. As a trusted recruiter and Agent for the Syndicate, Ghrush is responsible for finding and manipulating those reckless enough to want a stake in the underworld\u2019s high-risk rewards.Ghrush is a diligent and methodical operative. What he lacks in subtlety, he makes up for in reactionary tactical thinking. Having gotten himself into more than a few difficult situations, he has learned to trust his instincts. Fight or flight has become his motto, and Ghrush values his life more than one single payday. He\u2019d much rather risk the lives of initiates than put himself in danger, and as a public face for the Syndicate, he has plenty of opportunity for profit.",
+  "description": "Ghrush is a diligent and methodical operative. What he lacks in subtlety, he makes up for in reactionary tactical thinking. Having gotten himself into more than a few difficult situations, he has learned to trust his instincts. Fight or flight has become his motto, and Ghrush values his life more than one single payday. He\u2019d much rather risk the lives of initiates than put himself in danger, and as a public face for the Syndicate, he has plenty of opportunity for profit.",
   "ability_info": {
     "captain_maneuver": {
-      "name": "What's Mine Is Mine",
-      "bonus": "Ghrush increases the Protected Cargo of the ship by {value}..",
+      "name": "What's Mine is Mine",
+      "bonus": "Ghrush increases the Protected Cargo of the ship by {value}.",
       "percentage": true,
       "value": 1.0
     },
     "officer_ability": {
       "name": "Fight or Flight",
-      "bonus": "Ghrush increases the Warp Range of the ship by {value}..",
+      "bonus": "Ghrush increases the Warp Range of the ship by {value}.",
       "percentage": true
     }
   },
   "class": "command",
-  "faction": "None",
-  "group": "Syndicate",
-  "img_url": "./assets/ghrush",
+  "faction": "neutral",
+  "group": "syndicate",
+  "img_url": "./assets/ghrush.png",
   "officer_name": "Ghrush",
   "ranks": [
     {
@@ -25,9 +25,11 @@
       "rank_id": 1,
       "requirements": {
         "badges": 0,
+        "credits": 0,
+        "others": [],
+        "shards": 50,
         "xp": 0
-      },
-      "shards": 50
+      }
     },
     {
       "name": "Lieutenant JG II",
@@ -35,15 +37,11 @@
       "rank_id": 2,
       "requirements": {
         "badges": 0,
-        "others": [
-          {
-            "name": "Independent Credits",
-            "value": 1000
-          }
-        ],
+        "credits": 1000,
+        "others": [],
+        "shards": 75,
         "xp": 50000
-      },
-      "shards": 125
+      }
     },
     {
       "name": "Lieutenant III",
@@ -51,15 +49,11 @@
       "rank_id": 3,
       "requirements": {
         "badges": 1,
-        "others": [
-          {
-            "name": "Independent Credits",
-            "value": 4000
-          }
-        ],
+        "credits": 4000,
+        "others": [],
+        "shards": 125,
         "xp": 500000
-      },
-      "shards": 250
+      }
     },
     {
       "name": "Lt. Commander IV",
@@ -67,15 +61,11 @@
       "rank_id": 4,
       "requirements": {
         "badges": 2,
-        "others": [
-          {
-            "name": "Independent Credits",
-            "value": 10500
-          }
-        ],
+        "credits": 10500,
+        "others": [],
+        "shards": 225,
         "xp": 1250000
-      },
-      "shards": 475
+      }
     },
     {
       "name": "Commander V",
@@ -83,21 +73,17 @@
       "rank_id": 5,
       "requirements": {
         "badges": 4,
-        "others": [
-          {
-            "name": "Independent Credits",
-            "value": 22500
-          }
-        ],
+        "credits": 22500,
+        "others": [],
+        "shards": 375,
         "xp": 2500000
-      },
-      "shards": 850
+      }
     }
   ],
   "rarity": "epic",
   "synergy": {
-    "command": 1.0,
-    "engineering": 0.15,
+    "command": 0.15,
+    "engineering": 0.25,
     "science": 0.25
   },
   "traits": [
