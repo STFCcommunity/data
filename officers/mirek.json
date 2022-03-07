@@ -1,26 +1,22 @@
 {
-  "description": "Mirek is Charvanek's younger sister, and a capable science officer. Her expertise is in deflection fields and radiation phenomena, and has aided her sister in tracking wilier Klingon opponents.",
+  "description": "CLASS: SCIENCEGROUP: ROMULAN PATRIOTSFACTION: ROMULAN STAR EMPIREMirek is Charvanek's younger sister, and a capable science officer. Her expertise is in deflection fields and radiation phenomena, and has aided her sister in tracking wilier Klingon opponents.",
   "ability_info": {
     "captain_maneuver": {
       "name": "Burning Vengeance",
-      "bonus": "{value} chance to cause {buff} for 1 round when the ship is hit",
-      "buff": {
-        "name": "Burning",
-        "type": "use"
-      },
+      "bonus": "Every time the ship gets hit by a weapon attack, Mirek has a {value} chance of Burning the opponent's ship for 1 round.(Weapons with multiple shots will only trigger this maneuver once per attack.)",
       "percentage": true,
-      "value": 0.2
+      "value": 1.0
     },
     "officer_ability": {
       "name": "Acid bitterness",
-      "bonus": "{value} of the crew's defense bonus to Damage against Federation ships",
+      "bonus": " Mirek increases the Damage against Federation ships by {value} of the crew's Defense.  ",
       "percentage": true
     }
   },
   "class": "science",
   "faction": "romulan",
-  "group": "romulan patriots",
-  "img_url": "./assets/mirek.png",
+  "group": "Unknown 5",
+  "img_url": "./assets/mirek",
   "officer_name": "Mirek",
   "ranks": [
     {
@@ -29,11 +25,9 @@
       "rank_id": 1,
       "requirements": {
         "badges": 0,
-        "credits": 0,
-        "others": [],
-        "shards": 32,
         "xp": 0
-      }
+      },
+      "shards": 32
     },
     {
       "name": "Lieutenant JG II",
@@ -41,11 +35,10 @@
       "rank_id": 2,
       "requirements": {
         "badges": 0,
-        "credits": 0,
         "others": [],
-        "shards": 48,
         "xp": 10000
-      }
+      },
+      "shards": 80
     },
     {
       "name": "Lieutenant III",
@@ -53,11 +46,10 @@
       "rank_id": 3,
       "requirements": {
         "badges": 0,
-        "credits": 1050,
         "others": [],
-        "shards": 96,
         "xp": 100000
-      }
+      },
+      "shards": 176
     },
     {
       "name": "Lt. Commander IV",
@@ -65,71 +57,27 @@
       "rank_id": 4,
       "requirements": {
         "badges": 1,
-        "credits": 4200,
         "others": [],
-        "shards": 128,
         "xp": 250000
-      }
+      },
+      "shards": 304
     },
     {
       "name": "Commander V",
-      "officer_ability_value": 5,
+      "officer_ability_value": 5.0,
       "rank_id": 5,
       "requirements": {
         "badges": 2,
-        "credits": 10500,
         "others": [],
-        "shards": 192,
         "xp": 500000
-      }
+      },
+      "shards": 496
     }
   ],
   "rarity": "rare",
   "synergy": {
-    "command": 0.1,
-    "engineering": 0.1,
-    "science": 0.05
-  },
-  "traits": [
-    {
-      "name": "Scientist",
-      "levels": [
-        {
-          "level": 1,
-          "trait_xp": 1500
-        },
-        {
-          "level": 2,
-          "trait_xp": 2700
-        },
-        {
-          "level": 3,
-          "trait_xp": 3800
-        }
-      ],
-      "tier": 1
-    },
-    {
-      "name": "Patriotic",
-      "levels": [
-        {
-          "level": 1,
-          "trait_xp": 7650
-        },
-        {
-          "level": 2,
-          "trait_xp": 6000
-        },
-        {
-          "level": 3,
-          "trait_xp": 7000
-        },
-        {
-          "level": 4,
-          "trait_xp": 8850
-        }
-      ],
-      "tier": 2
-    }
-  ]
+    "command": 1.0,
+    "engineering": 1.0,
+    "science": 1.0
+  }
 }
