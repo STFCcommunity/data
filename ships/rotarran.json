@@ -10,7 +10,7 @@
   "rarity": "epic",
   "requirements": [
     {
-      "name": "shipyard",
+      "name": "Shipyard",
       "level": 60
     }
   ],
@@ -18,84 +18,20 @@
     "scrappable": false
   },
   "ship_ability": {
-    "title": "Bird Of Prey",
-    "description": "As long as the opponent has a Hull Breach, every time the Rotarran deals a Critical Hit with a weapon attack, it increases the Critical Hit Damage by 10% (cumulative).",
-    "percentage": true
+    "title": "Bird of Prey",
+    "description": "As long as the opponent has a Hull Breach, every time the Rotarran deals a Critical Hit with a weapon attack, it increases the Critical Hit Damage by 0.1 (cumulative). ",
+    "buff": {
+      "name": "Hull Breach",
+      "type": "use"
+    },
+    "percentage": false
   },
   "ship_class": "interceptor",
-  "ship_name": "rotarran",
+  "ship_name": "ROTARRAN",
   "tiers": [
     {
       "build_time": 21600000,
       "components": [
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 585,
-              "warp_speed": 4.9
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 287489,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 28637,
-              "shield_health": 4161257
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 28637,
-              "hull_health": 4697806
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
@@ -197,21 +133,89 @@
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": []
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 28637,
+              "shield_health": 4161257
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 585,
+              "warp_speed": 4.9
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 287489,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 28637,
+              "hull_health": 4697806
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": []
         }
       ],
       "initial_build_cost": {
         "materials": [
           {
-            "type": "gas",
-            "grade": 5,
-            "rarity": "common",
-            "value": 1782
-          },
-          {
             "type": "crystal",
             "grade": 5,
             "rarity": "common",
             "value": 5037
+          },
+          {
+            "type": "gas",
+            "grade": 5,
+            "rarity": "common",
+            "value": 1782
           }
         ],
         "others": [],
@@ -226,16 +230,6 @@
           }
         ]
       },
-      "initial_repair_cost": [
-        {
-          "type": "tritanium",
-          "value": 155310000000
-        },
-        {
-          "type": "dilithium",
-          "value": 3006000000
-        }
-      ],
       "levels": [
         {
           "ability_bonus": 0.1,
@@ -275,242 +269,6 @@
       "build_time": 3000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 610,
-              "warp_speed": 5.0
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 11200
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 4700
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 25300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 44800
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 39200000000
-              },
-              {
-                "type": "tritanium",
-                "value": 1558000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 10750405
-            },
-            {
-              "type": "tritanium",
-              "value": 555437605
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 306173,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 3400
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 25300
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 11200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 62700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2078000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 52300000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 10750405
-            },
-            {
-              "type": "tritanium",
-              "value": 555437605
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 30495,
-              "shield_health": 4431710
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 21100
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 2900
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 3400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 53800
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2494000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 62800000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 740583474
-            },
-            {
-              "type": "dilithium",
-              "value": 14333874
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 30495,
-              "hull_health": 5003129
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 6700
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 42200
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 4400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 71700
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 62800000000
-              },
-              {
-                "type": "tritanium",
-                "value": 2494000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 740583474
-            },
-            {
-              "type": "dilithium",
-              "value": 14333874
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -540,6 +298,12 @@
               {
                 "type": "crystal",
                 "grade": 5,
+                "rarity": "common",
+                "value": 37900
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
                 "rarity": "uncommon",
                 "value": 16800
               },
@@ -548,28 +312,22 @@
                 "grade": 5,
                 "rarity": "common",
                 "value": 5400
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 37900
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 26200
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 65400000000
-              },
-              {
                 "type": "tritanium",
                 "value": 2597000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 65400000000
               }
             ]
           },
@@ -577,12 +335,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 17917342
-            },
-            {
               "type": "tritanium",
               "value": 925729342
+            },
+            {
+              "type": "dilithium",
+              "value": 17917342
             }
           ]
         },
@@ -616,6 +374,12 @@
               {
                 "type": "crystal",
                 "grade": 5,
+                "rarity": "common",
+                "value": 50600
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
                 "rarity": "uncommon",
                 "value": 22400
               },
@@ -624,17 +388,11 @@
                 "grade": 5,
                 "rarity": "common",
                 "value": 6700
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 50600
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 36100
               }
             ],
@@ -653,12 +411,12 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 25084279
-            },
-            {
               "type": "tritanium",
               "value": 1296021079
+            },
+            {
+              "type": "dilithium",
+              "value": 25084279
             }
           ]
         },
@@ -698,30 +456,30 @@
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 4400
+                "rarity": "common",
+                "value": 5400
               },
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "common",
-                "value": 5400
+                "rarity": "uncommon",
+                "value": 4400
               }
             ],
             "others": [
               {
-                "type": "5\u2605 common interceptor parts",
+                "type": "5\u2605 Common Interceptor Parts",
                 "value": 80700
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 86300000000
-              },
-              {
                 "type": "tritanium",
                 "value": 3429000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 86300000000
               }
             ]
           },
@@ -729,12 +487,248 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 25084279
-            },
-            {
               "type": "tritanium",
               "value": 1296021079
+            },
+            {
+              "type": "dilithium",
+              "value": 25084279
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 30495,
+              "shield_health": 4431710
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 21100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 3400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 2900
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 53800
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2494000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 62800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 740583474
+            },
+            {
+              "type": "dilithium",
+              "value": 14333874
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 610,
+              "warp_speed": 5.0
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 25300
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 11200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 4700
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 44800
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1558000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 39200000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 555437605
+            },
+            {
+              "type": "dilithium",
+              "value": 10750405
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 306173,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 25300
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 11200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 3400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 62700
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2078000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 52300000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 555437605
+            },
+            {
+              "type": "dilithium",
+              "value": 10750405
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 30495,
+              "hull_health": 5003129
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 42200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 6700
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 4400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 71700
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2494000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 62800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 740583474
+            },
+            {
+              "type": "dilithium",
+              "value": 14333874
             }
           ]
         }
@@ -777,242 +771,6 @@
     {
       "build_time": 6000000,
       "components": [
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 635,
-              "warp_speed": 5.1
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 7400
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 72500
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 17300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 75500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2625000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 66100000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1136036534
-            },
-            {
-              "type": "dilithium",
-              "value": 21987804
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 329135,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 72500
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 17300
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 5300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 105700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 3500000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 88100000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 21987804
-            },
-            {
-              "type": "tritanium",
-              "value": 1136036534
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 32782,
-              "shield_health": 4764095
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 5300
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 60400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 2400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 90600
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4200000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 105800000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1514715379
-            },
-            {
-              "type": "dilithium",
-              "value": 29317072
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 32782,
-              "hull_health": 5378372
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 120900
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 10600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 3500
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 120800
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4200000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 105800000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 29317072
-            },
-            {
-              "type": "tritanium",
-              "value": 1514715379
-            }
-          ]
-        },
         {
           "name": "Photonic Torpedoes",
           "additional_info": {
@@ -1061,7 +819,7 @@
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 44200
               }
             ],
@@ -1137,7 +895,7 @@
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 60700
               }
             ],
@@ -1156,12 +914,12 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 51304876
-            },
-            {
               "type": "tritanium",
               "value": 2650751913
+            },
+            {
+              "type": "dilithium",
+              "value": 51304876
             }
           ]
         },
@@ -1201,19 +959,19 @@
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 3500
+                "rarity": "common",
+                "value": 8500
               },
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "common",
-                "value": 8500
+                "rarity": "uncommon",
+                "value": 3500
               }
             ],
             "others": [
               {
-                "type": "5\u2605 common interceptor parts",
+                "type": "5\u2605 Common Interceptor Parts",
                 "value": 135900
               }
             ],
@@ -1238,6 +996,242 @@
             {
               "type": "dilithium",
               "value": 51304876
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 32782,
+              "shield_health": 4764095
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 60400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 5300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 2400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 90600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4200000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 105800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1514715379
+            },
+            {
+              "type": "dilithium",
+              "value": 29317072
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 635,
+              "warp_speed": 5.1
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 72500
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 17300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 7400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 75500
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2625000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 66100000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1136036534
+            },
+            {
+              "type": "dilithium",
+              "value": 21987804
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 329135,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 72500
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 17300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 5300
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 105700
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3500000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 88100000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1136036534
+            },
+            {
+              "type": "dilithium",
+              "value": 21987804
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 32782,
+              "hull_health": 5378372
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 120900
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 10600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 3500
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 120800
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4200000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 105800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1514715379
+            },
+            {
+              "type": "dilithium",
+              "value": 29317072
             }
           ]
         }
@@ -1281,242 +1275,6 @@
       "build_time": 10000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 660,
-              "warp_speed": 5.2
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 23200
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 126900
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 3400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 220200
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 99100000000
-              },
-              {
-                "type": "tritanium",
-                "value": 3937000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1742936594
-            },
-            {
-              "type": "dilithium",
-              "value": 33734257
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 357106,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 18500
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 126900
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 23200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 308200
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 132200000000
-              },
-              {
-                "type": "tritanium",
-                "value": 5250000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 33734257
-            },
-            {
-              "type": "tritanium",
-              "value": 1742936594
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 35571,
-              "shield_health": 5168975
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 18500
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 19300
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 2900
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 264200
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6300000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 158600000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2323915459
-            },
-            {
-              "type": "dilithium",
-              "value": 44979009
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 35571,
-              "hull_health": 5835458
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 36900
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 211600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 4400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 40600
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 158600000000
-              },
-              {
-                "type": "tritanium",
-                "value": 6300000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2323915459
-            },
-            {
-              "type": "dilithium",
-              "value": 44979009
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -1544,21 +1302,21 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 4400
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "uncommon",
                 "value": 34700
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 4400
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 40600
               }
             ],
@@ -1614,21 +1372,21 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 5800
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "uncommon",
                 "value": 46300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 5800
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 55900
               }
             ],
@@ -1647,12 +1405,12 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 78713266
-            },
-            {
               "type": "tritanium",
               "value": 4066852053
+            },
+            {
+              "type": "dilithium",
+              "value": 78713266
             }
           ]
         },
@@ -1684,12 +1442,6 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 4400
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "common",
@@ -1700,11 +1452,17 @@
                 "grade": 5,
                 "rarity": "common",
                 "value": 29500
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 4400
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 45700
               }
             ],
@@ -1729,6 +1487,242 @@
             {
               "type": "dilithium",
               "value": 78713266
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 35571,
+              "shield_health": 5168975
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 19300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 18500
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 2900
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 264200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6300000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 158600000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2323915459
+            },
+            {
+              "type": "dilithium",
+              "value": 44979009
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 660,
+              "warp_speed": 5.2
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 126900
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 23200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 3400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 220200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 3937000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 99100000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1742936594
+            },
+            {
+              "type": "dilithium",
+              "value": 33734257
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 357106,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 126900
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 23200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 18500
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 308200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5250000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 132200000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1742936594
+            },
+            {
+              "type": "dilithium",
+              "value": 33734257
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 35571,
+              "hull_health": 5835458
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 211600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 36900
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 4400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 40600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6300000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 158600000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2323915459
+            },
+            {
+              "type": "dilithium",
+              "value": 44979009
             }
           ]
         }
@@ -1772,240 +1766,6 @@
       "build_time": 15000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 690,
-              "warp_speed": 5.3
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 5100
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 27000
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 11300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 330200
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 148700000000
-              },
-              {
-                "type": "tritanium",
-                "value": 5906000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 46012824
-            },
-            {
-              "type": "tritanium",
-              "value": 2377329227
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 391028,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 27000
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 324600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 3600
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 462300
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 198300000000
-              },
-              {
-                "type": "tritanium",
-                "value": 7874000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 46012824
-            },
-            {
-              "type": "tritanium",
-              "value": 2377329227
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 38948,
-              "shield_health": 5659957
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 22500
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 3600
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 47900
-              },
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 396300
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 237900000000
-              },
-              {
-                "type": "tritanium",
-                "value": 9449000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3169772303
-            },
-            {
-              "type": "dilithium",
-              "value": 61350432
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 38948,
-              "hull_health": 6389744
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 540900
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 86200
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 6500
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 20700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9449000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 237900000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 61350432
-            },
-            {
-              "type": "tritanium",
-              "value": 3169772303
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -2035,6 +1795,12 @@
               {
                 "type": "crystal",
                 "grade": 5,
+                "rarity": "uncommon",
+                "value": 40500
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
                 "rarity": "rare",
                 "value": 17000
               },
@@ -2043,28 +1809,22 @@
                 "grade": 5,
                 "rarity": "uncommon",
                 "value": 5800
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 40500
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 63900
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 247900000000
-              },
-              {
                 "type": "tritanium",
                 "value": 9843000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 247900000000
               }
             ]
           },
@@ -2072,12 +1832,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 76688040
-            },
-            {
               "type": "tritanium",
               "value": 3962215379
+            },
+            {
+              "type": "dilithium",
+              "value": 76688040
             }
           ]
         },
@@ -2129,7 +1889,7 @@
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 87800
               }
             ],
@@ -2185,12 +1945,6 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 6500
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "uncommon",
@@ -2201,11 +1955,17 @@
                 "grade": 5,
                 "rarity": "common",
                 "value": 68900
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 6500
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 71900
               }
             ],
@@ -2224,12 +1984,246 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 107363255
-            },
-            {
               "type": "tritanium",
               "value": 5547101530
+            },
+            {
+              "type": "dilithium",
+              "value": 107363255
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 38948,
+              "shield_health": 5659957
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 22500
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 3600
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 396300
+              },
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 47900
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9449000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 237900000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3169772303
+            },
+            {
+              "type": "dilithium",
+              "value": 61350432
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 690,
+              "warp_speed": 5.3
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 27000
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 11300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 5100
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 330200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5906000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 148700000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2377329227
+            },
+            {
+              "type": "dilithium",
+              "value": 46012824
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 391028,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 324600
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 27000
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 3600
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 462300
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 7874000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 198300000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2377329227
+            },
+            {
+              "type": "dilithium",
+              "value": 46012824
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 38948,
+              "hull_health": 6389744
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 540900
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 86200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 6500
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 20700
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9449000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 237900000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3169772303
+            },
+            {
+              "type": "dilithium",
+              "value": 61350432
             }
           ]
         }
@@ -2273,242 +2267,6 @@
       "build_time": 20000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 735,
-              "warp_speed": 5.4
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 12700
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 13500
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 108500
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 750600
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8203000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 206600000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 58847610
-            },
-            {
-              "type": "tritanium",
-              "value": 3040459847
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 432087,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 450800
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 13500
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 9100
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 77600
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 275400000000
-              },
-              {
-                "type": "tritanium",
-                "value": 10937000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3040459847
-            },
-            {
-              "type": "dilithium",
-              "value": 58847610
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 43039,
-              "shield_health": 6254255
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 90400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6700
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 9100
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 900700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 13124000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 330500000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 78463480
-            },
-            {
-              "type": "tritanium",
-              "value": 4053946462
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 43039,
-              "hull_health": 7060676
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 751300
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 215400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 16300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 6600
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 330500000000
-              },
-              {
-                "type": "tritanium",
-                "value": 13124000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 4053946462
-            },
-            {
-              "type": "dilithium",
-              "value": 78463480
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -2538,34 +2296,34 @@
               {
                 "type": "crystal",
                 "grade": 5,
-                "rarity": "epic",
-                "value": 6900
+                "rarity": "rare",
+                "value": 20200
               },
               {
                 "type": "crystal",
                 "grade": 5,
-                "rarity": "rare",
-                "value": 20200
+                "rarity": "epic",
+                "value": 6900
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 88700
               },
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 6600
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 344300000000
-              },
-              {
                 "type": "tritanium",
                 "value": 13671000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 344300000000
               }
             ]
           },
@@ -2573,12 +2331,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 98079350
-            },
-            {
               "type": "tritanium",
               "value": 5067433078
+            },
+            {
+              "type": "dilithium",
+              "value": 98079350
             }
           ]
         },
@@ -2624,11 +2382,11 @@
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 110900
               },
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 9000
               }
             ],
@@ -2684,10 +2442,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 5,
-                "rarity": "rare",
-                "value": 10100
+                "rarity": "uncommon",
+                "value": 144600
               },
               {
                 "type": "gas",
@@ -2696,26 +2454,26 @@
                 "value": 14500
               },
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 144600
+                "rarity": "rare",
+                "value": 10100
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 99800
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 454400000000
-              },
-              {
                 "type": "tritanium",
                 "value": 18046000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 454400000000
               }
             ]
           },
@@ -2729,6 +2487,242 @@
             {
               "type": "dilithium",
               "value": 137311090
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 43039,
+              "shield_health": 6254255
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 90400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 9100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 6700
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 900700
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 13124000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 330500000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4053946462
+            },
+            {
+              "type": "dilithium",
+              "value": 78463480
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 735,
+              "warp_speed": 5.4
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 108500
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 13500
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 12700
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 750600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8203000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 206600000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3040459847
+            },
+            {
+              "type": "dilithium",
+              "value": 58847610
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 432087,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 450800
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 13500
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 9100
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 77600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10937000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 275400000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3040459847
+            },
+            {
+              "type": "dilithium",
+              "value": 58847610
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 43039,
+              "hull_health": 7060676
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 751300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 215400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 16300
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 6600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 13124000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 330500000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4053946462
+            },
+            {
+              "type": "dilithium",
+              "value": 78463480
             }
           ]
         }
@@ -2772,242 +2766,6 @@
       "build_time": 25000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 780,
-              "warp_speed": 5.5
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3100
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 29800
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 793300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 80900
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 10827000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 272600000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 72263812
-            },
-            {
-              "type": "tritanium",
-              "value": 3733630283
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 479613,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "common",
-                "value": 793300
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 29800
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 18500
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 113300
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 14437000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 363500000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 72263812
-            },
-            {
-              "type": "tritanium",
-              "value": 3733630283
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 47772,
-              "shield_health": 6942181
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 24900
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 5400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 2200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 2179600
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17324000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 436200000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 96351749
-            },
-            {
-              "type": "tritanium",
-              "value": 4978173710
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 47772,
-              "hull_health": 7837300
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 453400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 284400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 33200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 6900
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 17324000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 436200000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 4978173710
-            },
-            {
-              "type": "dilithium",
-              "value": 96351749
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -3035,25 +2793,25 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3900
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
                 "value": 9100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 3900
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 129400
               },
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 6900
               }
             ],
@@ -3072,12 +2830,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 120439687
-            },
-            {
               "type": "tritanium",
               "value": 6222717138
+            },
+            {
+              "type": "dilithium",
+              "value": 120439687
             }
           ]
         },
@@ -3109,36 +2867,36 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5200
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
                 "value": 12100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 5200
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 9500
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 161800
               },
               {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 161800
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 9500
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 618000000000
-              },
-              {
                 "type": "tritanium",
                 "value": 24542000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 618000000000
               }
             ]
           },
@@ -3183,10 +2941,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 5,
                 "rarity": "rare",
-                "value": 3900
+                "value": 39800
               },
               {
                 "type": "gas",
@@ -3195,15 +2953,15 @@
                 "value": 29500
               },
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 5,
                 "rarity": "rare",
-                "value": 39800
+                "value": 3900
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 7700
               }
             ],
@@ -3228,6 +2986,242 @@
             {
               "type": "dilithium",
               "value": 168615561
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 47772,
+              "shield_health": 6942181
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 24900
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 2200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 5400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 2179600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17324000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 436200000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4978173710
+            },
+            {
+              "type": "dilithium",
+              "value": 96351749
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 780,
+              "warp_speed": 5.5
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 793300
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 29800
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 3100
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 80900
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 10827000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 272600000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3733630283
+            },
+            {
+              "type": "dilithium",
+              "value": 72263812
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 479613,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "common",
+                "value": 793300
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 29800
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 18500
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 113300
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 14437000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 363500000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3733630283
+            },
+            {
+              "type": "dilithium",
+              "value": 72263812
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 47772,
+              "hull_health": 7837300
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 453400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 284400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 33200
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 6900
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 17324000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 436200000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4978173710
+            },
+            {
+              "type": "dilithium",
+              "value": 96351749
             }
           ]
         }
@@ -3271,242 +3265,6 @@
       "build_time": 32500000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 825,
-              "warp_speed": 5.6
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 28400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 3200
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 302200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 93200
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 363500000000
-              },
-              {
-                "type": "tritanium",
-                "value": 14437000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 86287768
-            },
-            {
-              "type": "tritanium",
-              "value": 4458201340
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 529966,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "uncommon",
-                "value": 302200
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 28400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 2300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 130400
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 19249000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 484700000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 86287768
-            },
-            {
-              "type": "tritanium",
-              "value": 4458201340
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 52789,
-              "shield_health": 7671055
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 23700
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 2300
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 7300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 111800
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 23099000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 581600000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 115050357
-            },
-            {
-              "type": "tritanium",
-              "value": 5944268453
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 52789,
-              "hull_health": 8660155
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 4100
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 47400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "common",
-                "value": 379200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 9200
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 581600000000
-              },
-              {
-                "type": "tritanium",
-                "value": 23099000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 5944268453
-            },
-            {
-              "type": "dilithium",
-              "value": 115050357
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -3534,36 +3292,36 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 4100
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
                 "value": 12100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 4100
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 149000
               },
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 9200
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 605900000000
-              },
-              {
                 "type": "tritanium",
                 "value": 24061000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 605900000000
               }
             ]
           },
@@ -3571,12 +3329,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 143812946
-            },
-            {
               "type": "tritanium",
               "value": 7430335567
+            },
+            {
+              "type": "dilithium",
+              "value": 143812946
             }
           ]
         },
@@ -3608,36 +3366,36 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5500
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
                 "value": 16100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 5500
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 12600
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 186300
               },
               {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 186300
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 12600
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 824000000000
-              },
-              {
                 "type": "tritanium",
                 "value": 32723000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 824000000000
               }
             ]
           },
@@ -3690,30 +3448,30 @@
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "rare",
-                "value": 4100
+                "rarity": "uncommon",
+                "value": 108300
               },
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "uncommon",
-                "value": 108300
+                "rarity": "rare",
+                "value": 4100
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 10300
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 799800000000
-              },
-              {
                 "type": "tritanium",
                 "value": 31760000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 799800000000
               }
             ]
           },
@@ -3727,6 +3485,242 @@
             {
               "type": "dilithium",
               "value": 201338125
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 52789,
+              "shield_health": 7671055
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 23700
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 2300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 7300
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 111800
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 23099000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 581600000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 5944268453
+            },
+            {
+              "type": "dilithium",
+              "value": 115050357
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 825,
+              "warp_speed": 5.6
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 302200
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 28400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 3200
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 93200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 14437000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 363500000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4458201340
+            },
+            {
+              "type": "dilithium",
+              "value": 86287768
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 529966,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "uncommon",
+                "value": 302200
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 28400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 2300
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 130400
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 19249000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 484700000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4458201340
+            },
+            {
+              "type": "dilithium",
+              "value": 86287768
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 52789,
+              "hull_health": 8660155
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 47400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "common",
+                "value": 379200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 4100
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 9200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 23099000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 581600000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 5944268453
+            },
+            {
+              "type": "dilithium",
+              "value": 115050357
             }
           ]
         }
@@ -3770,6 +3764,291 @@
       "build_time": 40000000,
       "components": [
         {
+          "name": "Photonic Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 113192,
+              "armor_pierce": 1131976,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "max_damage": 291960,
+              "min_damage": 224533,
+              "shield_pierce": 113192,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 12400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 5600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1900
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 10400
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 31443000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 791800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 8692659110
+            },
+            {
+              "type": "dilithium",
+              "value": 168245015
+            }
+          ]
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 113192,
+              "armor_pierce": 1131976,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                5,
+                0,
+                0,
+                5,
+                0,
+                0,
+                5,
+                0
+              ],
+              "max_damage": 439754,
+              "min_damage": 399787,
+              "shield_pierce": 113192,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 16500
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 7000
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 2600
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 14200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 42763000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1076800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 12169722754
+            },
+            {
+              "type": "dilithium",
+              "value": 235543021
+            }
+          ]
+        },
+        {
+          "name": "Photonic Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 113192,
+              "armor_pierce": 1131976,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                0,
+                5,
+                0,
+                0,
+                5,
+                0,
+                0,
+                5
+              ],
+              "max_damage": 439754,
+              "min_damage": 399787,
+              "shield_pierce": 113192,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 59800
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 5600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1900
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 11600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 41505000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1045100000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 12169722754
+            },
+            {
+              "type": "dilithium",
+              "value": 235543021
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 57539,
+              "shield_health": 8361439
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 37300
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1100
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Common Interceptor Parts",
+                "value": 3797800
+              },
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 584300
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 30186000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 760100000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 6954127288
+            },
+            {
+              "type": "dilithium",
+              "value": 134596012
+            }
+          ]
+        },
+        {
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
@@ -3782,6 +4061,12 @@
               {
                 "type": "crystal",
                 "grade": 5,
+                "rarity": "rare",
+                "value": 44800
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
                 "rarity": "epic",
                 "value": 8300
               },
@@ -3790,17 +4075,11 @@
                 "grade": 5,
                 "rarity": "rare",
                 "value": 4900
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 44800
               }
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 486900
               }
             ],
@@ -3859,7 +4138,7 @@
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 9100
               }
             ],
@@ -3878,69 +4157,12 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 100947009
-            },
-            {
               "type": "tritanium",
               "value": 5215595466
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 57539,
-              "shield_health": 8361439
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 37300
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1100
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 584300
-              },
-              {
-                "type": "5\u2605 common interceptor parts",
-                "value": 3797800
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 30186000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 760100000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 6954127288
             },
             {
               "type": "dilithium",
-              "value": 134596012
+              "value": 100947009
             }
           ]
         },
@@ -3955,12 +4177,6 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 6300
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "rare",
@@ -3971,11 +4187,17 @@
                 "grade": 5,
                 "rarity": "uncommon",
                 "value": 141600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 6300
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 10400
               }
             ],
@@ -4000,234 +4222,6 @@
             {
               "type": "dilithium",
               "value": 134596012
-            }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 113192,
-              "armor_pierce": 1131976,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2,
-                2
-              ],
-              "max_damage": 291960,
-              "min_damage": 224533,
-              "shield_pierce": 113192,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1900
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 12400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5600
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 10400
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 791800000000
-              },
-              {
-                "type": "tritanium",
-                "value": 31443000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 2,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 8692659110
-            },
-            {
-              "type": "dilithium",
-              "value": 168245015
-            }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 113192,
-              "armor_pierce": 1131976,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                5,
-                0,
-                0,
-                5,
-                0,
-                0,
-                5,
-                0
-              ],
-              "max_damage": 439754,
-              "min_damage": 399787,
-              "shield_pierce": 113192,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 7000
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 16500
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 14200
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 42763000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1076800000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 12169722754
-            },
-            {
-              "type": "dilithium",
-              "value": 235543021
-            }
-          ]
-        },
-        {
-          "name": "Photonic Torpedoes",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 113192,
-              "armor_pierce": 1131976,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                0,
-                5,
-                0,
-                0,
-                5,
-                0,
-                0,
-                5
-              ],
-              "max_damage": 439754,
-              "min_damage": 399787,
-              "shield_pierce": 113192,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 5600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1900
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 59800
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 11600
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1045100000000
-              },
-              {
-                "type": "tritanium",
-                "value": 41505000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 235543021
-            },
-            {
-              "type": "tritanium",
-              "value": 12169722754
             }
           ]
         }
@@ -4271,238 +4265,6 @@
       "build_time": 50000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 925,
-              "warp_speed": 5.8
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 7000
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 141300
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 250800
-              },
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 6900
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 24608000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 619700000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 6007299546
-            },
-            {
-              "type": "dilithium",
-              "value": 116270314
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 620990,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 11000
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 141300
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 7000
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 9700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 32810000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 826200000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 116270314
-            },
-            {
-              "type": "tritanium",
-              "value": 6007299546
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 61855,
-              "shield_health": 8988584
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 5800
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1200
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 215000
-              },
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 8300
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 39372000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 991400000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 155027085
-            },
-            {
-              "type": "tritanium",
-              "value": 8009732728
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 61855,
-              "hull_health": 10147563
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 11600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 22000
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2100
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 11100
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 991400000000
-              },
-              {
-                "type": "tritanium",
-                "value": 39372000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 8009732728
-            },
-            {
-              "type": "dilithium",
-              "value": 155027085
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -4544,22 +4306,22 @@
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 286600
               },
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 11100
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 1032800000000
-              },
-              {
                 "type": "tritanium",
                 "value": 41013000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1032800000000
               }
             ]
           },
@@ -4567,12 +4329,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 193783856
-            },
-            {
               "type": "tritanium",
               "value": 10012165910
+            },
+            {
+              "type": "dilithium",
+              "value": 193783856
             }
           ]
         },
@@ -4618,22 +4380,22 @@
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 15300
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 358300
               },
               {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 358300
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 15300
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 1404500000000
-              },
-              {
                 "type": "tritanium",
                 "value": 55778000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1404500000000
               }
             ]
           },
@@ -4641,12 +4403,12 @@
           "quantity": 1,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 271297399
-            },
-            {
               "type": "tritanium",
               "value": 14017032273
+            },
+            {
+              "type": "dilithium",
+              "value": 271297399
             }
           ]
         },
@@ -4678,10 +4440,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
-                "value": 2100
+                "value": 9300
               },
               {
                 "type": "gas",
@@ -4690,15 +4452,15 @@
                 "value": 17600
               },
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 5,
                 "rarity": "epic",
-                "value": 9300
+                "value": 2100
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 12500
               }
             ],
@@ -4723,6 +4485,238 @@
             {
               "type": "dilithium",
               "value": 271297399
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 61855,
+              "shield_health": 8988584
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 5800
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1200
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 215000
+              },
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 8300
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 39372000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 991400000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 8009732728
+            },
+            {
+              "type": "dilithium",
+              "value": 155027085
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 925,
+              "warp_speed": 5.8
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 141300
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 7000
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 250800
+              },
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 6900
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 24608000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 619700000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 6007299546
+            },
+            {
+              "type": "dilithium",
+              "value": 116270314
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 620990,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 141300
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 7000
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 11000
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 9700
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 32810000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 826200000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 6007299546
+            },
+            {
+              "type": "dilithium",
+              "value": 116270314
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 61855,
+              "hull_health": 10147563
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 11600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 22000
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 2100
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 11100
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 39372000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 991400000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 8009732728
+            },
+            {
+              "type": "dilithium",
+              "value": 155027085
             }
           ]
         }
@@ -4766,238 +4760,6 @@
       "build_time": 65000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 975,
-              "warp_speed": 5.9
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 8800
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 179000
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 8800
-              },
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 317700
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 31170000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 784900000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 132287764
-            },
-            {
-              "type": "tritanium",
-              "value": 6834867820
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 658248,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 8800
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 179000
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 12300
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1046500000000
-              },
-              {
-                "type": "tritanium",
-                "value": 41560000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 132287764
-            },
-            {
-              "type": "tritanium",
-              "value": 6834867820
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 65567,
-              "shield_health": 9527896
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1400
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 7400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 272300
-              },
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 10600
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1255800000000
-              },
-              {
-                "type": "tritanium",
-                "value": 49872000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 176383686
-            },
-            {
-              "type": "tritanium",
-              "value": 9113157094
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 65567,
-              "hull_health": 10756415
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 2400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 35600
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 14700
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 14100
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1255800000000
-              },
-              {
-                "type": "tritanium",
-                "value": 49872000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 176383686
-            },
-            {
-              "type": "tritanium",
-              "value": 9113157094
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -5039,22 +4801,22 @@
             ],
             "others": [
               {
-                "type": "5\u2605 uncommon interceptor parts",
+                "type": "5\u2605 Uncommon Interceptor Parts",
                 "value": 363100
               },
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 14100
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 1308200000000
-              },
-              {
                 "type": "tritanium",
                 "value": 51950000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1308200000000
               }
             ]
           },
@@ -5113,22 +4875,22 @@
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 19300
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 453800
               },
               {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 453800
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 19300
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 1779100000000
-              },
-              {
                 "type": "tritanium",
                 "value": 70652000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1779100000000
               }
             ]
           },
@@ -5193,18 +4955,18 @@
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 15800
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 1726800000000
-              },
-              {
                 "type": "tritanium",
                 "value": 68574000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1726800000000
               }
             ]
           },
@@ -5218,6 +4980,238 @@
             {
               "type": "dilithium",
               "value": 308671450
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 65567,
+              "shield_health": 9527896
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 7400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 272300
+              },
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 10600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 49872000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1255800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9113157094
+            },
+            {
+              "type": "dilithium",
+              "value": 176383686
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 975,
+              "warp_speed": 5.9
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 179000
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 8800
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 317700
+              },
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 8800
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 31170000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 784900000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 6834867820
+            },
+            {
+              "type": "dilithium",
+              "value": 132287764
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 658248,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 179000
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 8800
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 12300
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 41560000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1046500000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 6834867820
+            },
+            {
+              "type": "dilithium",
+              "value": 132287764
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 65567,
+              "hull_health": 10756415
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 14700
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 35600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 2400
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 14100
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 49872000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1255800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9113157094
+            },
+            {
+              "type": "dilithium",
+              "value": 176383686
             }
           ]
         }
@@ -5261,238 +5255,6 @@
       "build_time": 90000000,
       "components": [
         {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "warp_distance": 1025,
-              "warp_speed": 6.0
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 74400
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 11600
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 11600
-              },
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 1358500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 41013000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1032800000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 7699924938
-            },
-            {
-              "type": "dilithium",
-              "value": 149030805
-            }
-          ]
-        },
-        {
-          "name": "Impulse Engines",
-          "additional_info": {
-            "impulse_info": {
-              "dodge": 694450,
-              "impulse_speed": 105
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 11600
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 74400
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 16200
-              },
-              {
-                "type": "5\u2605 uncommon interceptor parts",
-                "value": 970300
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 54684000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1377000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 149030805
-            },
-            {
-              "type": "tritanium",
-              "value": 7699924938
-            }
-          ]
-        },
-        {
-          "name": "Shield",
-          "additional_info": {
-            "shield_info": {
-              "shield_deflection": 69170,
-              "shield_health": 10051869
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 1900
-              },
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 9700
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 21100
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 13900
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1652400000000
-              },
-              {
-                "type": "tritanium",
-                "value": 65621000000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_shield.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 10266566584
-            },
-            {
-              "type": "dilithium",
-              "value": 198707740
-            }
-          ]
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 69170,
-              "hull_health": 11347951
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 19400
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "rare",
-                "value": 31600
-              },
-              {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 3900
-              }
-            ],
-            "others": [
-              {
-                "type": "5\u2605 rare interceptor parts",
-                "value": 18500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 65621000000000
-              },
-              {
-                "type": "dilithium",
-                "value": 1652400000000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 10266566584
-            },
-            {
-              "type": "dilithium",
-              "value": 198707740
-            }
-          ]
-        },
-        {
           "name": "Photonic Torpedoes",
           "additional_info": {
             "weapons_info": {
@@ -5526,21 +5288,21 @@
                 "value": 99100
               },
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 3500
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
                 "value": 17400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 3500
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 18500
               }
             ],
@@ -5559,12 +5321,12 @@
           "quantity": 2,
           "repair_cost": [
             {
-              "type": "dilithium",
-              "value": 248384675
-            },
-            {
               "type": "tritanium",
               "value": 12833208230
+            },
+            {
+              "type": "dilithium",
+              "value": 248384675
             }
           ]
         },
@@ -5602,21 +5364,21 @@
                 "value": 123900
               },
               {
-                "type": "gas",
-                "grade": 5,
-                "rarity": "epic",
-                "value": 4700
-              },
-              {
                 "type": "crystal",
                 "grade": 5,
                 "rarity": "epic",
                 "value": 23200
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 4700
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 25500
               }
             ],
@@ -5680,30 +5442,30 @@
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "epic",
-                "value": 3100
+                "rarity": "rare",
+                "value": 31600
               },
               {
                 "type": "gas",
                 "grade": 5,
-                "rarity": "rare",
-                "value": 31600
+                "rarity": "epic",
+                "value": 3100
               }
             ],
             "others": [
               {
-                "type": "5\u2605 rare interceptor parts",
+                "type": "5\u2605 Rare Interceptor Parts",
                 "value": 20800
               }
             ],
             "resources": [
               {
-                "type": "dilithium",
-                "value": 2272100000000
-              },
-              {
                 "type": "tritanium",
                 "value": 90229000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 2272100000000
               }
             ]
           },
@@ -5717,6 +5479,238 @@
             {
               "type": "dilithium",
               "value": 347738546
+            }
+          ]
+        },
+        {
+          "name": "Shield",
+          "additional_info": {
+            "shield_info": {
+              "shield_deflection": 69170,
+              "shield_health": 10051869
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 9700
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 21100
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 1900
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 13900
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 65621000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1652400000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_shield.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 10266566584
+            },
+            {
+              "type": "dilithium",
+              "value": 198707740
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "warp_distance": 1025,
+              "warp_speed": 6.0
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 74400
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 11600
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 1358500
+              },
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 11600
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 41013000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1032800000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 7699924938
+            },
+            {
+              "type": "dilithium",
+              "value": 149030805
+            }
+          ]
+        },
+        {
+          "name": "Impulse Engines",
+          "additional_info": {
+            "impulse_info": {
+              "dodge": 694450,
+              "impulse_speed": 105
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 74400
+              },
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 11600
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Uncommon Interceptor Parts",
+                "value": 970300
+              },
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 16200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 54684000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1377000000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_impulse_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 7699924938
+            },
+            {
+              "type": "dilithium",
+              "value": 149030805
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 69170,
+              "hull_health": 11347951
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 19400
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "rare",
+                "value": 31600
+              },
+              {
+                "type": "gas",
+                "grade": 5,
+                "rarity": "epic",
+                "value": 3900
+              }
+            ],
+            "others": [
+              {
+                "type": "5\u2605 Rare Interceptor Parts",
+                "value": 18500
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 65621000000000
+              },
+              {
+                "type": "dilithium",
+                "value": 1652400000000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 10266566584
+            },
+            {
+              "type": "dilithium",
+              "value": 198707740
             }
           ]
         }

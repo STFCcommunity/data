@@ -1,5 +1,5 @@
 {
-  "description": "The Meridian is a Survey ship that specializes in the extraction of Isogen. This vessel's design has roots that link it back to the old ECS cargo haulers of the 22nd century, which have become a staple of mining conglomerates, and plucky independent traders. Many iterations of these old Earth clunkers have been refined over the decades, resulting in efficient and versatile long-haul crafs appearing in the distant reaches of the quadrant.\n\nThe Meridian is a highly advanced new construction, pieced together during the recent rush for Isogen in the Origin Sector. Rival races, the Bolians and the Suliban, have been innovators in Isogen extraction, and their respective allies have contributed to the refinement of the Meridian's polished Iso-Resin infused hull. The ship has become an essential element of life in the Origin Sector, where it has been mass produced in order to maximize the resources within that region of space.",
+  "description": "The Meridian is a Survey ship that specializes in the extraction of Isogen. This vessel\u2019s design has roots that link it back to the old ECS cargo haulers of the 22nd century, which have become a staple of mining conglomerates, and plucky Independent traders. Many iterations of these old Earth clunkers have been refined over the decades, resulting in efficient and versatile long-haul crafts appearing in the distant reaches of the quadrant.\n\nThe Meridian is a highly advanced new construction, pieced together during the recent rush for Isogen in the Origin Sector. Rival races, the Bolians and the Suliban, have been innovators in Isogen extraction, and their respective allies have contributed to the refinement of the Meridian\u2019s polished Iso-Resin infused hull. The ship has become an essential element of life in the Origin Sector, where it has been mass produced in order to maximize the resources within that region of space.",
   "blueprints": {
     "cost": 0,
     "quantity": 100
@@ -19,11 +19,11 @@
   },
   "ship_ability": {
     "title": "Isogen Mining",
-    "description": "The Meridian's Mining Bonus from the Tungsten-Boride Grinder is increased by 2000% when mining Isogen.",
+    "description": "The Meridian's Mining Bonus from the Mining Laser is increased by 2000% when mining Isogen.",
     "percentage": true
   },
   "ship_class": "survey",
-  "ship_name": "meridian",
+  "ship_name": "MERIDIAN",
   "tiers": [
     {
       "build_time": 1068480,
@@ -59,6 +59,22 @@
             "resources": []
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.0
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_mining_laser.png",
           "quantity": 1,
           "repair_cost": []
         },
@@ -102,8 +118,8 @@
           "name": "Shield",
           "additional_info": {
             "shield_info": {
-              "shield_deflection": 968,
-              "shield_health": 14400
+              "shield_deflection": 287,
+              "shield_health": 4267
             }
           },
           "build_cost": {
@@ -129,22 +145,6 @@
             "resources": []
           },
           "img_url": "./assets/component_impulse_engines.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 600
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_mining_laser.png",
           "quantity": 1,
           "repair_cost": []
         }
@@ -229,16 +229,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 36
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "common",
                 "value": 24
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 36
               }
             ],
             "others": [
@@ -276,6 +276,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.2
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 28
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 60
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Survey Parts",
+                "value": 85
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 1534
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 487500
+              },
+              {
+                "type": "dilithium",
+                "value": 33750
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1268
+            },
+            {
+              "type": "dilithium",
+              "value": 721
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -288,16 +344,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 48
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "common",
                 "value": 35
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 48
               }
             ],
             "others": [
@@ -384,16 +440,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 41
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "common",
                 "value": 21
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 41
               }
             ],
             "others": [
@@ -476,62 +532,6 @@
               "value": 289
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 620
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 60
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 28
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Survey Parts",
-                "value": 85
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 1534
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 487500
-              },
-              {
-                "type": "dilithium",
-                "value": 33750
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1268
-            },
-            {
-              "type": "dilithium",
-              "value": 721
-            }
-          ]
         }
       ],
       "levels": [
@@ -600,16 +600,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 328
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "common",
                 "value": 138
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 328
               }
             ],
             "others": [
@@ -647,6 +647,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.4
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 37
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 53
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Survey Parts",
+                "value": 156
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 4000
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 850000
+              },
+              {
+                "type": "dilithium",
+                "value": 97800
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2685
+            },
+            {
+              "type": "dilithium",
+              "value": 1248
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -659,16 +715,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 64
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 31
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 64
               }
             ],
             "others": [
@@ -755,16 +811,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 293
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "common",
                 "value": 152
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 293
               }
             ],
             "others": [
@@ -847,62 +903,6 @@
               "value": 499
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 640
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 53
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 37
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Survey Parts",
-                "value": 156
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 4000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 850000
-              },
-              {
-                "type": "dilithium",
-                "value": 97800
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2685
-            },
-            {
-              "type": "dilithium",
-              "value": 1248
-            }
-          ]
         }
       ],
       "levels": [
@@ -971,16 +971,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 89
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 28
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 89
               }
             ],
             "others": [
@@ -1018,6 +1018,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.6
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 2
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 8
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Survey Parts",
+                "value": 289
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 7534
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2000000
+              },
+              {
+                "type": "dilithium",
+                "value": 240000
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 5349
+            },
+            {
+              "type": "dilithium",
+              "value": 2199
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -1030,16 +1086,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 10
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "rare",
                 "value": 2
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 10
               }
             ],
             "others": [
@@ -1095,12 +1151,12 @@
                 "value": 333
               },
               {
-                "type": "Iso-emulsion",
-                "value": 6404
-              },
-              {
                 "type": "Meridian Iso Warp Interlock",
                 "value": 1
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 6404
               }
             ],
             "resources": [
@@ -1130,16 +1186,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 80
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 31
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 80
               }
             ],
             "others": [
@@ -1222,62 +1278,6 @@
               "value": 880
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 660
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 8
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 2
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Survey Parts",
-                "value": 289
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 7534
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2000000
-              },
-              {
-                "type": "dilithium",
-                "value": 240000
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 5349
-            },
-            {
-              "type": "dilithium",
-              "value": 2199
-            }
-          ]
         }
       ],
       "levels": [
@@ -1346,16 +1346,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 178
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 67
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 178
               }
             ],
             "others": [
@@ -1393,6 +1393,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.8
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 7
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 23
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Survey Parts",
+                "value": 546
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 11200
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4462500
+              },
+              {
+                "type": "dilithium",
+                "value": 948150
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9473
+            },
+            {
+              "type": "dilithium",
+              "value": 3745
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -1405,16 +1461,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 27
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "rare",
                 "value": 5
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 27
               }
             ],
             "others": [
@@ -1501,16 +1557,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 159
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 73
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 159
               }
             ],
             "others": [
@@ -1593,62 +1649,6 @@
               "value": 1498
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 680
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 23
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 7
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Survey Parts",
-                "value": 546
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 11200
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 4462500
-              },
-              {
-                "type": "dilithium",
-                "value": 948150
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 9473
-            },
-            {
-              "type": "dilithium",
-              "value": 3745
-            }
-          ]
         }
       ],
       "levels": [
@@ -1717,22 +1717,22 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 361
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 120
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 361
               }
             ],
             "others": [
               {
                 "type": "3\u2605 Survey Parts",
-                "value": 1711
+                "value": 1771
               },
               {
                 "type": "Iso-emulsion",
@@ -1764,6 +1764,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 7.0
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 14
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 45
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Survey Parts",
+                "value": 1001
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 18800
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6862500
+              },
+              {
+                "type": "dilithium",
+                "value": 1890000
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 16493
+            },
+            {
+              "type": "dilithium",
+              "value": 6589
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -1776,16 +1832,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 54
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "rare",
                 "value": 11
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 54
               }
             ],
             "others": [
@@ -1841,12 +1897,12 @@
                 "value": 1155
               },
               {
-                "type": "Iso-emulsion",
-                "value": 15980
-              },
-              {
                 "type": "Meridian Iso Warp Regulator",
                 "value": 1
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 15980
               }
             ],
             "resources": [
@@ -1876,16 +1932,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 322
-              },
-              {
                 "type": "gas",
                 "grade": 3,
                 "rarity": "uncommon",
                 "value": 132
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 322
               }
             ],
             "others": [
@@ -1968,62 +2024,6 @@
               "value": 2636
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 700
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 45
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 14
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605 Survey Parts",
-                "value": 1001
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 18800
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6862500
-              },
-              {
-                "type": "dilithium",
-                "value": 1890000
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 16493
-            },
-            {
-              "type": "dilithium",
-              "value": 6589
-            }
-          ]
         }
       ],
       "levels": [
@@ -2092,16 +2092,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1397
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 1133
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1397
               }
             ],
             "others": [
@@ -2139,6 +2139,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 7.5
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 581
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 475
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 225
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 30000
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 21150000
+              },
+              {
+                "type": "dilithium",
+                "value": 6480000
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1316014
+            },
+            {
+              "type": "dilithium",
+              "value": 50475
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -2151,16 +2207,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 581
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 475
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 581
               }
             ],
             "others": [
@@ -2255,13 +2311,13 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
+                "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 1246
               },
               {
-                "type": "gas",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 1246
@@ -2347,62 +2403,6 @@
               "value": 43230
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 750
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 475
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 581
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Common Survey parts",
-                "value": 225
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 30000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 21150000
-              },
-              {
-                "type": "dilithium",
-                "value": 6480000
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1316014
-            },
-            {
-              "type": "dilithium",
-              "value": 50475
-            }
-          ]
         }
       ],
       "levels": [
@@ -2471,16 +2471,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 398
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 323
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 398
               }
             ],
             "others": [
@@ -2518,6 +2518,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 8.0
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 163
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 133
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 405
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 40000
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 30187500
+              },
+              {
+                "type": "dilithium",
+                "value": 9225000
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2073931
+            },
+            {
+              "type": "dilithium",
+              "value": 101872
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -2530,16 +2586,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 163
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 133
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 163
               }
             ],
             "others": [
@@ -2634,13 +2690,13 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
+                "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 355
               },
               {
-                "type": "gas",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 355
@@ -2726,62 +2782,6 @@
               "value": 90609
             }
           ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 800
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 133
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 163
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 405
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 40000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 30187500
-              },
-              {
-                "type": "dilithium",
-                "value": 9225000
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2073931
-            },
-            {
-              "type": "dilithium",
-              "value": 101872
-            }
-          ]
         }
       ],
       "levels": [
@@ -2850,16 +2850,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 110
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 89
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 110
               }
             ],
             "others": [
@@ -2897,6 +2897,62 @@
           ]
         },
         {
+          "name": "Tungsten-Boride Grinder",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 8.5
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "epic",
+                "value": 47
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "epic",
+                "value": 39
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Survey Parts",
+                "value": 360
+              },
+              {
+                "type": "Iso-emulsion",
+                "value": 50000
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 50250000
+              },
+              {
+                "type": "dilithium",
+                "value": 18300000
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4840404
+            },
+            {
+              "type": "dilithium",
+              "value": 212654
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -2909,16 +2965,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 47
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "epic",
                 "value": 39
+              },
+              {
+                "type": "ore",
+                "grade": 4,
+                "rarity": "epic",
+                "value": 47
               }
             ],
             "others": [
@@ -2947,11 +3003,11 @@
           "repair_cost": [
             {
               "type": "tritanium",
-              "value": 44220000
+              "value": 4906908
             },
             {
               "type": "dilithium",
-              "value": 6100000
+              "value": 180450
             }
           ]
         },
@@ -3013,13 +3069,13 @@
           "build_cost": {
             "materials": [
               {
-                "type": "ore",
+                "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 98
               },
               {
-                "type": "gas",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 98
@@ -3103,62 +3159,6 @@
             {
               "type": "dilithium",
               "value": 193332
-            }
-          ]
-        },
-        {
-          "name": "Tungsten-Boride Grinder",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 850
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "ore",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 39
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "epic",
-                "value": 47
-              }
-            ],
-            "others": [
-              {
-                "type": "4\u2605 Uncommon Survey Parts",
-                "value": 360
-              },
-              {
-                "type": "Iso-emulsion",
-                "value": 50000
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 50250000
-              },
-              {
-                "type": "dilithium",
-                "value": 18300000
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 4840404
-            },
-            {
-              "type": "dilithium",
-              "value": 212654
             }
           ]
         }
