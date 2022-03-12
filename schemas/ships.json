@@ -29,7 +29,7 @@
       },
       "faction": "federation",
       "grade": 3,
-      "img_url": "url",
+      "img_url": "./assets/uss_saladin.png",
       "rarity": "uncommon",
       "requirements": [
         {
@@ -86,7 +86,7 @@
                   }
                 ]
               },
-              "img_url": "url",
+              "img_url": "./assets/component_weapon_kinetic.png",
               "quantity": 1,
               "repair_cost": [
                 {
@@ -173,14 +173,6 @@
       "description": "The faction where the ship belongs to.",
       "type": "string",
       "default": "",
-      "enum": [
-        "neutral",
-        "federation",
-        "romulan",
-        "klingon",
-        "augment",
-        "rogue"
-      ],
       "examples": [
         "federation"
       ]
@@ -210,7 +202,7 @@
       "type": "string",
       "default": "",
       "examples": [
-        "url"
+        "./assets/uss_saladin.png"
       ]
     },
     "rarity": {
@@ -800,9 +792,7 @@
                                         "default": 0
                                       }
                                     ]
-                                  },
-                                  "maxItems": 9,
-                                  "minItems": 9
+                                  }
                                 },
                                 "max_damage": {
                                   "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/max_damage",
@@ -1057,7 +1047,7 @@
                           "type": "string",
                           "default": "",
                           "examples": [
-                            "url"
+                            "./assets/component_weapon_kinetic.png"
                           ]
                         },
                         "quantity": {
