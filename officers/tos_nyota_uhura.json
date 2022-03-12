@@ -1,15 +1,23 @@
 {
-  "description": "Many speak of \u201cunsung heroes\u201d aboard starships. Those intrepid souls who man the engines, run vital diagnostics or keep the very lights on. Their work will win them no fame, nor will they go down in history as heroes, but they are vital nonetheless.\nAnd none aboard the Enterprise could claim to be more vital than Lieutenant Nyota Uhura.\nMulti-lingual from a young age, Uhura had a fascination with language and communication. She was fluent in Swahili by the time she could walk and had an aptitude for mathematics before she started school.\nNo-one was surprised when this prodigy enlisted in Starfleet. \nUhura quickly made a name for herself as someone intelligent, reliable and extremely capable. She was assigned to the USS Enterprise as its department head of the communications section and was directly responsible for communications aboard Starfleet\u2019s flagship vessel.",
+  "description": "Many speak of \u201cunsung heroes\u201d aboard starships. Those intrepid souls who man the engines, run vital diagnostics or keep the very lights on. Their work will win them no fame, nor will they go down in history as heroes, but they are vital nonetheless.\nAnd none aboard the Enterprise could claim to be more vital than Lieutenant Nyota Uhura.\nMulti-lingual from a young age, Uhura had a fascination with language and communication. She was fluent in Swahili by the time she could walk and had an aptitude for mathematics before she started school.\nNo-one was surprised when this prodigy enlisted in Starfleet. \nUhura quickly made a name for herself as someone intelligent, reliable and extremely capable. She was assigned to the USS Enterprise as its department head of the communications section and was directly responsible for communications aboard Starfleet\u2019s flagship vessel.\nHer quick-thinking, diplomatic nature and intelligence won many victories for the Enterprise. Her skillset was so varied that she was even able to man the helm, navigation, and main science station when the need arose.",
   "ability_info": {
     "captain_maneuver": {
       "name": "Sorry, Neither",
-      "bonus": "{value} to opponent's critical hit chance",
+      "bonus": "When fighting players, as long as the ship has Morale, TOS Nyota Uhura decreases the opponent's Critical Hit Chance by {value}.",
+      "buff": {
+        "name": "Morale",
+        "type": "use"
+      },
       "percentage": true,
-      "value": -0.1
+      "value": 0.1
     },
     "officer_ability": {
       "name": "Modulation Frequency Found",
-      "bonus": "{value} to opponent's Shield Mitigation",
+      "bonus": "When fighting players, as long as the ship has Morale, TOS Nyota Uhura removes {value} from the Shield Mitigation of the opponent's ship.\nShield Mitigation determines the amount of damage dealt to the shield health",
+      "buff": {
+        "name": "Morale",
+        "type": "use"
+      },
       "percentage": true
     }
   },
@@ -20,7 +28,7 @@
   "officer_name": "TOS Nyota Uhura",
   "ranks": [
     {
-      "name": "Ensign I",
+      "name": "ENSIGN I",
       "officer_ability_value": 0.08,
       "rank_id": 1,
       "requirements": {
@@ -32,7 +40,7 @@
       }
     },
     {
-      "name": "Lieutenant JG II",
+      "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.1,
       "rank_id": 2,
       "requirements": {
@@ -44,7 +52,7 @@
       }
     },
     {
-      "name": "Lieutenant III",
+      "name": "LIEUTENANT III",
       "officer_ability_value": 0.12,
       "rank_id": 3,
       "requirements": {
@@ -56,7 +64,7 @@
       }
     },
     {
-      "name": "Lt. Commander IV",
+      "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.16,
       "rank_id": 4,
       "requirements": {
@@ -68,7 +76,7 @@
       }
     },
     {
-      "name": "Commander V",
+      "name": "COMMANDER V",
       "officer_ability_value": 0.2,
       "rank_id": 5,
       "requirements": {
@@ -82,9 +90,9 @@
   ],
   "rarity": "rare",
   "synergy": {
-    "command": 1,
+    "command": 1.0,
     "engineering": 0.25,
-    "science": 1
+    "science": 1.0
   },
   "traits": [
     {
