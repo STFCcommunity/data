@@ -57,18 +57,12 @@
       },
       "systems": [
         {
-          "$ref": "reference to system file"
+          "$ref": "systems/yaar_25"
         }
       ],
       "weapons": [
         {
           "firing_pattern": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
             1,
             1,
             1,
@@ -442,7 +436,7 @@
                 "type": "string",
                 "default": "",
                 "examples": [
-                  "reference to system file"
+                  "systems/yaar_25"
                 ]
               }
             }
@@ -495,9 +489,7 @@
                       ]
                     }
                   ]
-                },
-                "maxItems": 15,
-                "minItems": 15
+                }
               },
               "quantity": {
                 "$id": "#/properties/weapons/items/anyOf/0/properties/quantity",
@@ -571,7 +563,7 @@
                     "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/damage_per_round",
                     "title": "The damage_per_round schema",
                     "description": "The damage per round of this weapon.",
-                    "type": "number",
+                    "type": "integer",
                     "default": 0,
                     "examples": [
                       1594000
