@@ -1,15 +1,15 @@
 {
-  "description": "Commander Saru knows better than anyone what it is to feel fear. He lived his life on Kaminar constantly afraid, waiting for death to come, but it never did. Instead, he used his ingenuity to escape and forged a new life in Starfleet.\n\nEver since the Battle at the Binary Stars, Saru has continued to excel, proving to all who encounter him that he represents the best Starfleet has to offer. He is compassionate, wise, measured and cautious. All elements of a great Starfleet officer.\n\nThough his evolutionary tendency toward fear may hold him back at times, Saru has proven time and again that he will not let anything stop him from achieving his goals or protecting those closest to him.",
+  "description": "Commander Saru knows better than anyone what it is to feel fear. He lived his life on Kaminar constantly afraid, waiting for death to come, but it never did. Instead, he used his ingenuity to escape and forged a new life in Starfleet.\nEver since the Battle at the Binary Stars, Saru has continued to excel, proving to all who encounter him that he represents the best Starfleet has to offer. He is compassionate, wise, measured and cautious. All elements of a great Starfleet officer.\nThough his evolutionary tendency toward fear may hold him back at times, Saru has proven time and again that he will not let anything stop him from achieving his goals or protecting those closest to him.",
   "ability_info": {
     "captain_maneuver": {
       "name": "Precautions",
-      "bonus": "{value} to opponent's Critical Hit Chance when receiving a Critical Hit.",
+      "bonus": "When fighting players, every time your ship is hit by a Critical Hit, Saru decreases the Critical Hit Chance of the opponent's ship by {value}.",
       "percentage": true,
-      "value": -0.1
+      "value": 0.1
     },
     "officer_ability": {
       "name": "Avoid Danger",
-      "bonus": "{value} to opponent's weapon damage",
+      "bonus": "When fighting players, Saru decreases the opponent's weapon damage by {value}.",
       "percentage": true
     }
   },
@@ -20,7 +20,7 @@
   "officer_name": "Saru",
   "ranks": [
     {
-      "name": "Ensign I",
+      "name": "ENSIGN I",
       "officer_ability_value": 0.3,
       "rank_id": 1,
       "requirements": {
@@ -32,7 +32,7 @@
       }
     },
     {
-      "name": "Lieutenant JG II",
+      "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.4,
       "rank_id": 2,
       "requirements": {
@@ -44,7 +44,7 @@
       }
     },
     {
-      "name": "Lieutenant III",
+      "name": "LIEUTENANT III",
       "officer_ability_value": 0.5,
       "rank_id": 3,
       "requirements": {
@@ -56,7 +56,7 @@
       }
     },
     {
-      "name": "Lt. Commander IV",
+      "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.6,
       "rank_id": 4,
       "requirements": {
@@ -68,7 +68,7 @@
       }
     },
     {
-      "name": "Commander V",
+      "name": "COMMANDER V",
       "officer_ability_value": 0.7,
       "rank_id": 5,
       "requirements": {
@@ -86,5 +86,46 @@
     "engineering": 0.1,
     "science": 0.1
   },
-  "traits": []
+  "traits": [
+    {
+      "name": "Uncompromising",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 1500
+        },
+        {
+          "level": 2,
+          "trait_xp": 2700
+        },
+        {
+          "level": 3,
+          "trait_xp": 3800
+        }
+      ],
+      "tier": 1
+    },
+    {
+      "name": "Cautious",
+      "levels": [
+        {
+          "level": 1,
+          "trait_xp": 7650
+        },
+        {
+          "level": 2,
+          "trait_xp": 6000
+        },
+        {
+          "level": 3,
+          "trait_xp": 7000
+        },
+        {
+          "level": 4,
+          "trait_xp": 8850
+        }
+      ],
+      "tier": 2
+    }
+  ]
 }

@@ -3,13 +3,17 @@
   "ability_info": {
     "captain_maneuver": {
       "name": "Manipulation",
-      "bonus": "{value} to opponent's Damage",
+      "bonus": "When fighting players, at the start of each round, if the opponent has Hull Breach, Lorca decreases the opponent's Weapon damage by {value} for this turn.",
+      "buff": {
+        "name": "Hull Breach",
+        "type": "use"
+      },
       "percentage": true,
-      "value": -1
+      "value": 1.0
     },
     "officer_ability": {
       "name": "Quick Thinking",
-      "bonus": "{value} chance to inflict {buff}",
+      "bonus": "At the beginning of each round, Lorca has a {value} chance of dealing Hull Breach to the opponent's ship for 2 rounds.",
       "buff": {
         "name": "Hull Breach",
         "type": "apply"
@@ -24,7 +28,7 @@
   "officer_name": "Gabriel Lorca",
   "ranks": [
     {
-      "name": "Ensign I",
+      "name": "ENSIGN I",
       "officer_ability_value": 0.5,
       "rank_id": 1,
       "requirements": {
@@ -36,7 +40,7 @@
       }
     },
     {
-      "name": "Lieutenant JG II",
+      "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.6,
       "rank_id": 2,
       "requirements": {
@@ -48,7 +52,7 @@
       }
     },
     {
-      "name": "Lieutenant III",
+      "name": "LIEUTENANT III",
       "officer_ability_value": 0.7,
       "rank_id": 3,
       "requirements": {
@@ -60,7 +64,7 @@
       }
     },
     {
-      "name": "Lt. Commander IV",
+      "name": "LT. COMMANDER IV",
       "officer_ability_value": 0.75,
       "rank_id": 4,
       "requirements": {
@@ -72,7 +76,7 @@
       }
     },
     {
-      "name": "Commander V",
+      "name": "COMMANDER V",
       "officer_ability_value": 0.8,
       "rank_id": 5,
       "requirements": {
