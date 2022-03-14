@@ -11,16 +11,22 @@
   "rarity": "rare",
   "rewards": [
     {
-      "type": "Romulan\u00a0Points",
-      "value": 108
-    },
-    {
-      "type": "Klingon\u00a0Points",
+      "type": "Klingon Points",
+      "max_value": 48,
+      "min_value": 48,
       "value": 48
     },
     {
-      "type": "Rare\u00a0Armada\u00a0Credit",
-      "value": 299
+      "type": "Romulan Points",
+      "max_value": 108,
+      "min_value": 108,
+      "value": 108
+    },
+    {
+      "type": "Rare Armada Credit",
+      "max_value": 344,
+      "min_value": 255,
+      "value": 300
     }
   ],
   "stats": {
@@ -38,11 +44,14 @@
       "shield_deflect": 15050
     },
     "health": {
-      "hull_health": 1887000,
-      "shield_health": 1291000
+      "hull_health": 1887840,
+      "shield_health": 1291680
     }
   },
   "systems": [
+    {
+      "$ref": "systems/vulcan_23"
+    },
     {
       "$ref": "systems/iocau_22"
     },
@@ -50,48 +59,27 @@
       "$ref": "systems/priya_22"
     },
     {
-      "$ref": "systems/zadiaoo_22"
-    },
-    {
-      "$ref": "systems/foaiveb_23"
-    },
-    {
       "$ref": "systems/gowok_23"
     },
     {
-      "$ref": "systems/vulcan_23"
-    },
-    {
-      "$ref": "systems/bazamex_24"
-    },
-    {
-      "$ref": "systems/earorfilad_24"
+      "$ref": "systems/zadiaoo_22"
     },
     {
       "$ref": "systems/metea_24"
     },
     {
-      "$ref": "systems/angosia_25"
+      "$ref": "systems/earorfilad_24"
     },
     {
-      "$ref": "systems/s_mtharz_25"
+      "$ref": "systems/foaiveb_23"
     },
     {
-      "$ref": "systems/durchman_26"
-    },
-    {
-      "$ref": "systems/hann_26"
+      "$ref": "systems/bazamex_24"
     }
   ],
   "weapons": [
     {
       "firing_pattern": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -125,12 +113,6 @@
         0,
         1,
         0,
-        1,
-        0,
-        1,
-        0,
-        1,
-        0,
         1
       ],
       "quantity": 1,
@@ -139,7 +121,7 @@
         "armor_pierce": 2709,
         "crit_chance": 0.1,
         "crit_damage": 1.5,
-        "damage_per_round": 11232.9,
+        "damage_per_round": 11233,
         "max_damage": 21489,
         "min_damage": 17582,
         "shield_pierce": 3096
