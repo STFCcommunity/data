@@ -23,13 +23,47 @@
     "percentage": true
   },
   "ship_class": "battleship",
-  "ship_name": "hijacked legionary",
+  "ship_name": "HIJACKED LEGIONARY",
   "tiers": [
     {
       "build_time": 1116000,
       "components": [
         {
           "name": "Phaser Turrets",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 541,
+              "armor_pierce": 619,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 2964,
+              "min_damage": 2425,
+              "shield_pierce": 5195,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": []
+        },
+        {
+          "name": "Weapon",
           "additional_info": {
             "weapons_info": {
               "accuracy": 541,
@@ -82,23 +116,6 @@
           "repair_cost": []
         },
         {
-          "name": "Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 2139,
-              "hull_health": 25100
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
@@ -115,6 +132,23 @@
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
           "repair_cost": []
+        },
+        {
+          "name": "Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 2139,
+              "hull_health": 25100
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": []
         }
       ],
       "initial_build_cost": {
@@ -128,7 +162,7 @@
         ],
         "others": [
           {
-            "type": "Common\u00a0Plutonium",
+            "type": "Common Plutonium",
             "value": 200
           }
         ],
@@ -170,7 +204,7 @@
         },
         {
           "ability_bonus": 0.38,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 5,
           "ship_xp": 1700
         }
@@ -183,6 +217,80 @@
       "components": [
         {
           "name": "Phaser Turrets",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 605,
+              "armor_pierce": 692,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 3316,
+              "min_damage": 2713,
+              "shield_pierce": 5811,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 70
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 275
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 65
+              },
+              {
+                "type": "Common Plutonium",
+                "value": 90
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 430000
+              },
+              {
+                "type": "dilithium",
+                "value": 25500
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1656
+            },
+            {
+              "type": "dilithium",
+              "value": 273
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
           "additional_info": {
             "weapons_info": {
               "accuracy": 605,
@@ -223,11 +331,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 54
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 60
               }
             ],
@@ -276,11 +384,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 11
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 15
               }
             ],
@@ -297,6 +405,50 @@
             {
               "type": "tritanium",
               "value": 1656
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 26,
+              "warp_speed": 2.6
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 50
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 32
+              },
+              {
+                "type": "Common Plutonium",
+                "value": 35
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 12750
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 246
             }
           ]
         },
@@ -325,11 +477,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 43
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 50
               }
             ],
@@ -346,50 +498,6 @@
             {
               "type": "tritanium",
               "value": 4968
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 26,
-              "warp_speed": 2.6
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 50
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 32
-              },
-              {
-                "type": "Common\u00a0Plutonium",
-                "value": 35
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 12750
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 246
             }
           ]
         }
@@ -421,7 +529,7 @@
         },
         {
           "ability_bonus": 0.48,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 10,
           "ship_xp": 6000
         }
@@ -434,6 +542,80 @@
       "components": [
         {
           "name": "Phaser Turrets",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 695,
+              "armor_pierce": 795,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 3809,
+              "min_damage": 3117,
+              "shield_pierce": 6677,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 10
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 41
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 130
+              },
+              {
+                "type": "Uncommon Plutonium",
+                "value": 90
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 850000
+              },
+              {
+                "type": "dilithium",
+                "value": 59500
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 4219
+            },
+            {
+              "type": "dilithium",
+              "value": 494
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
           "additional_info": {
             "weapons_info": {
               "accuracy": 695,
@@ -474,11 +656,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 110
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 60
               }
             ],
@@ -527,11 +709,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 22
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 30
               }
             ],
@@ -548,6 +730,50 @@
             {
               "type": "tritanium",
               "value": 4219
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 28,
+              "warp_speed": 2.7
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 150
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 65
+              },
+              {
+                "type": "Common Plutonium",
+                "value": 70
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 30000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 445
             }
           ]
         },
@@ -576,11 +802,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 90
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 100
               }
             ],
@@ -597,50 +823,6 @@
             {
               "type": "tritanium",
               "value": 12656
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 28,
-              "warp_speed": 2.7
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 150
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 65
-              },
-              {
-                "type": "Common\u00a0Plutonium",
-                "value": 70
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 30000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 445
             }
           ]
         }
@@ -689,6 +871,80 @@
             "weapons_info": {
               "accuracy": 860,
               "armor_pierce": 984,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 4714,
+              "min_damage": 3857,
+              "shield_pierce": 8263,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 33
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 140
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 230
+              },
+              {
+                "type": "Uncommon Plutonium",
+                "value": 180
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1400000
+              },
+              {
+                "type": "dilithium",
+                "value": 126000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 8835
+            },
+            {
+              "type": "dilithium",
+              "value": 909
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 860,
+              "armor_pierce": 984,
               "crit_chance": 0.05,
               "crit_damage": 1.25,
               "firing_pattern": [
@@ -725,11 +981,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 190
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 120
               }
             ],
@@ -778,11 +1034,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 38
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 75
               }
             ],
@@ -799,6 +1055,50 @@
             {
               "type": "tritanium",
               "value": 8835
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 30,
+              "warp_speed": 2.8
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 400
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 110
+              },
+              {
+                "type": "Common Plutonium",
+                "value": 175
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 63000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 818
             }
           ]
         },
@@ -827,11 +1127,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 150
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 250
               }
             ],
@@ -848,50 +1148,6 @@
             {
               "type": "tritanium",
               "value": 26505
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 30,
-              "warp_speed": 2.8
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 400
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 110
-              },
-              {
-                "type": "Common\u00a0Plutonium",
-                "value": 175
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 63000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 818
             }
           ]
         }
@@ -923,7 +1179,7 @@
         },
         {
           "ability_bonus": 0.68,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 20,
           "ship_xp": 25000
         }
@@ -936,6 +1192,80 @@
       "components": [
         {
           "name": "Phaser Turrets",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1068,
+              "armor_pierce": 1221,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 5849,
+              "min_damage": 4786,
+              "shield_pierce": 10252,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 70
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 275
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 400
+              },
+              {
+                "type": "Uncommon Plutonium",
+                "value": 450
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2600000
+              },
+              {
+                "type": "dilithium",
+                "value": 250000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 16695
+            },
+            {
+              "type": "dilithium",
+              "value": 1654
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
           "additional_info": {
             "weapons_info": {
               "accuracy": 1068,
@@ -976,11 +1306,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 325
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 300
               }
             ],
@@ -1029,11 +1359,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 65
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 150
               }
             ],
@@ -1050,6 +1380,50 @@
             {
               "type": "tritanium",
               "value": 16695
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 33,
+              "warp_speed": 2.9
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 750
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 190
+              },
+              {
+                "type": "Common Plutonium",
+                "value": 350
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 124000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 1489
             }
           ]
         },
@@ -1078,11 +1452,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 250
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 250
               }
             ],
@@ -1099,50 +1473,6 @@
             {
               "type": "tritanium",
               "value": 50086
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 33,
-              "warp_speed": 2.9
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 750
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 190
-              },
-              {
-                "type": "Common\u00a0Plutonium",
-                "value": 350
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 124000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 1489
             }
           ]
         }
@@ -1191,6 +1521,80 @@
             "weapons_info": {
               "accuracy": 1233,
               "armor_pierce": 1410,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 6753,
+              "min_damage": 5525,
+              "shield_pierce": 11838,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 2
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 10
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 775
+              },
+              {
+                "type": "Rare Plutonium",
+                "value": 90
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 4700000
+              },
+              {
+                "type": "dilithium",
+                "value": 500000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 32106
+            },
+            {
+              "type": "dilithium",
+              "value": 3223
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1233,
+              "armor_pierce": 1410,
               "crit_chance": 0.05,
               "crit_damage": 1.25,
               "firing_pattern": [
@@ -1227,11 +1631,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 650
               },
               {
-                "type": "Rare\u00a0Plutonium",
+                "type": "Rare Plutonium",
                 "value": 60
               }
             ],
@@ -1280,11 +1684,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 130
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 300
               }
             ],
@@ -1301,6 +1705,50 @@
             {
               "type": "tritanium",
               "value": 32106
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 36,
+              "warp_speed": 3.0
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 120
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 400
+              },
+              {
+                "type": "Uncommon Plutonium",
+                "value": 245
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 250000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 2901
             }
           ]
         },
@@ -1329,11 +1777,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 525
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 350
               }
             ],
@@ -1350,50 +1798,6 @@
             {
               "type": "tritanium",
               "value": 96318
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 36,
-              "warp_speed": 3
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 120
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 400
-              },
-              {
-                "type": "Uncommon\u00a0Plutonium",
-                "value": 245
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 250000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 2901
             }
           ]
         }
@@ -1425,7 +1829,7 @@
         },
         {
           "ability_bonus": 0.88,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 30,
           "ship_xp": 69000
         }
@@ -1438,6 +1842,80 @@
       "components": [
         {
           "name": "Phaser Turrets",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1323,
+              "armor_pierce": 1513,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 7247,
+              "min_damage": 5930,
+              "shield_pierce": 12704,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 9
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 38
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 1700
+              },
+              {
+                "type": "Rare Plutonium",
+                "value": 270
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 11700000
+              },
+              {
+                "type": "dilithium",
+                "value": 1300000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 55314
+            },
+            {
+              "type": "dilithium",
+              "value": 5790
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
           "additional_info": {
             "weapons_info": {
               "accuracy": 1323,
@@ -1478,11 +1956,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 1500
               },
               {
-                "type": "Rare\u00a0Plutonium",
+                "type": "Rare Plutonium",
                 "value": 180
               }
             ],
@@ -1531,11 +2009,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 300
               },
               {
-                "type": "Common\u00a0Plutonium",
+                "type": "Common Plutonium",
                 "value": 750
               }
             ],
@@ -1552,6 +2030,50 @@
             {
               "type": "tritanium",
               "value": 55314
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 40,
+              "warp_speed": 3.1
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 275
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 875
+              },
+              {
+                "type": "Uncommon Plutonium",
+                "value": 350
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 650000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 5211
             }
           ]
         },
@@ -1580,11 +2102,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 1175
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 500
               }
             ],
@@ -1601,50 +2123,6 @@
             {
               "type": "tritanium",
               "value": 165942
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 40,
-              "warp_speed": 3.1
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 275
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 875
-              },
-              {
-                "type": "Uncommon\u00a0Plutonium",
-                "value": 350
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 650000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 5211
             }
           ]
         }
@@ -1693,6 +2171,80 @@
             "weapons_info": {
               "accuracy": 1362,
               "armor_pierce": 1558,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 7463,
+              "min_damage": 6106,
+              "shield_pierce": 13082,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 21
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 90
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 3200
+              },
+              {
+                "type": "Rare Plutonium",
+                "value": 450
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 20400000
+              },
+              {
+                "type": "dilithium",
+                "value": 2350000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 97175
+            },
+            {
+              "type": "dilithium",
+              "value": 10837
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1362,
+              "armor_pierce": 1558,
               "crit_chance": 0.05,
               "crit_damage": 1.25,
               "firing_pattern": [
@@ -1729,11 +2281,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 2700
               },
               {
-                "type": "Rare\u00a0Plutonium",
+                "type": "Rare Plutonium",
                 "value": 300
               }
             ],
@@ -1782,11 +2334,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 550
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 225
               }
             ],
@@ -1803,6 +2355,50 @@
             {
               "type": "tritanium",
               "value": 97175
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 45,
+              "warp_speed": 3.2
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 600
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 1600
+              },
+              {
+                "type": "Uncommon Plutonium",
+                "value": 525
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 1150000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 9753
             }
           ]
         },
@@ -1831,11 +2427,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 2200
               },
               {
-                "type": "Rare\u00a0Plutonium",
+                "type": "Rare Plutonium",
                 "value": 250
               }
             ],
@@ -1854,55 +2450,11 @@
               "value": 291526
             }
           ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 45,
-              "warp_speed": 3.2
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 600
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1600
-              },
-              {
-                "type": "Uncommon\u00a0Plutonium",
-                "value": 525
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1150000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 9753
-            }
-          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1,
+          "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 36,
           "ship_xp": 105000
@@ -1927,7 +2479,7 @@
         },
         {
           "ability_bonus": 1.08,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 40,
           "ship_xp": 140000
         }
@@ -1940,6 +2492,80 @@
       "components": [
         {
           "name": "Phaser Turrets",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1387,
+              "armor_pierce": 1586,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 7599,
+              "min_damage": 6217,
+              "shield_pierce": 13320,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 36
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 150
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 4900
+              },
+              {
+                "type": "Rare Plutonium",
+                "value": 720
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 32700000
+              },
+              {
+                "type": "dilithium",
+                "value": 3900000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 166856
+            },
+            {
+              "type": "dilithium",
+              "value": 21127
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
           "additional_info": {
             "weapons_info": {
               "accuracy": 1387,
@@ -1980,11 +2606,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 4100
               },
               {
-                "type": "Rare\u00a0Plutonium",
+                "type": "Rare Plutonium",
                 "value": 480
               }
             ],
@@ -2033,11 +2659,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 800
               },
               {
-                "type": "Uncommon\u00a0Plutonium",
+                "type": "Uncommon Plutonium",
                 "value": 300
               }
             ],
@@ -2054,6 +2680,50 @@
             {
               "type": "tritanium",
               "value": 166856
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 85,
+              "warp_distance": 50,
+              "warp_speed": 3.3
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 27
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 2400
+              },
+              {
+                "type": "Rare Plutonium",
+                "value": 280
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 1950000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "dilithium",
+              "value": 19015
             }
           ]
         },
@@ -2082,11 +2752,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 3200
               },
               {
-                "type": "Rare\u00a0Plutonium",
+                "type": "Rare Plutonium",
                 "value": 400
               }
             ],
@@ -2103,50 +2773,6 @@
             {
               "type": "tritanium",
               "value": 500567
-            }
-          ]
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 85,
-              "warp_distance": 50,
-              "warp_speed": 3.3
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 27
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 2400
-              },
-              {
-                "type": "Rare\u00a0Plutonium",
-                "value": 280
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 1950000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "dilithium",
-              "value": 19015
             }
           ]
         }

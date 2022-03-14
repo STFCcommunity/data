@@ -19,49 +19,15 @@
   },
   "ship_ability": {
     "title": "Close-Quarters Combat",
-    "description": "When attacking or defending on a capture or mining node in an active Takeover, the Sarcophagus' Weapon Damage is increased by 86000%.",
+    "description": "When attacking or defending on a capture or mining node in an active Takeover, the Sarcophagus' Weapon Damage is increased by 86000%.\n\nThe Sarcophagus' shields receive 10% of the total damage instead of 80%.",
     "percentage": true
   },
   "ship_class": "battleship",
-  "ship_name": "sarcophagus",
+  "ship_name": "SARCOPHAGUS",
   "tiers": [
     {
       "build_time": 1680000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 417,
-              "armor_pierce": 417,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 465,
-              "min_damage": 375,
-              "shield_pierce": 2497,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -97,6 +63,40 @@
           "repair_cost": []
         },
         {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 417,
+              "armor_pierce": 417,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 465,
+              "min_damage": 375,
+              "shield_pierce": 2497,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": []
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -116,23 +116,6 @@
           "repair_cost": []
         },
         {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 6719,
-              "hull_health": 123243
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
@@ -147,6 +130,23 @@
             "resources": []
           },
           "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 6719,
+              "hull_health": 123243
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_armor.png",
           "quantity": 1,
           "repair_cost": []
         }
@@ -180,32 +180,32 @@
       },
       "levels": [
         {
-          "ability_bonus": 860,
+          "ability_bonus": 860.0,
           "additional_officer_slot": false,
           "level": 1,
           "ship_xp": 0
         },
         {
-          "ability_bonus": 870,
+          "ability_bonus": 870.0,
           "additional_officer_slot": false,
           "level": 2,
           "ship_xp": 800
         },
         {
-          "ability_bonus": 880,
+          "ability_bonus": 880.0,
           "additional_officer_slot": false,
           "level": 3,
           "ship_xp": 1000
         },
         {
-          "ability_bonus": 890,
+          "ability_bonus": 890.0,
           "additional_officer_slot": false,
           "level": 4,
           "ship_xp": 1400
         },
         {
-          "ability_bonus": 900,
-          "additional_officer_slot": false,
+          "ability_bonus": 900.0,
+          "additional_officer_slot": true,
           "level": 5,
           "ship_xp": 1700
         }
@@ -217,67 +217,6 @@
     {
       "build_time": 324000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 506,
-              "armor_pierce": 506,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 521,
-              "min_damage": 428,
-              "shield_pierce": 3287,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 20
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 70
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 125
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1750000
-              },
-              {
-                "type": "dilithium",
-                "value": 60000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -320,7 +259,7 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 125
               }
             ],
@@ -337,14 +276,36 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 235
+            }
+          ]
         },
         {
-          "name": "Black Fleet Armor",
+          "name": "Isogenic Cannon",
           "additional_info": {
-            "armor_info": {
-              "armor": 7642,
-              "hull_health": 151732
+            "weapons_info": {
+              "accuracy": 506,
+              "armor_pierce": 506,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 521,
+              "min_damage": 428,
+              "shield_pierce": 3287,
+              "weapon_type": "energy"
             }
           },
           "build_cost": {
@@ -352,32 +313,41 @@
               {
                 "type": "crystal",
                 "grade": 3,
-                "rarity": "common",
-                "value": 200
+                "rarity": "uncommon",
+                "value": 20
               },
               {
                 "type": "ore",
                 "grade": 3,
-                "rarity": "common",
-                "value": 800
+                "rarity": "uncommon",
+                "value": 70
               }
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 105
+                "type": "3\u2605 Battleship Parts",
+                "value": 125
               }
             ],
             "resources": [
               {
                 "type": "tritanium",
-                "value": 1500000
+                "value": 1750000
+              },
+              {
+                "type": "dilithium",
+                "value": 60000
               }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 235
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -406,7 +376,7 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 35
               }
             ],
@@ -419,7 +389,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 70
+            }
+          ]
         },
         {
           "name": "Warp Engines",
@@ -447,7 +422,7 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 70
               }
             ],
@@ -460,36 +435,86 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 135
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 7642,
+              "hull_health": 151732
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 200
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 800
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 105
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1500000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 205
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 910,
+          "ability_bonus": 910.0,
           "additional_officer_slot": false,
           "level": 6,
           "ship_xp": 2400
         },
         {
-          "ability_bonus": 920,
+          "ability_bonus": 920.0,
           "additional_officer_slot": false,
           "level": 7,
           "ship_xp": 2900
         },
         {
-          "ability_bonus": 930,
+          "ability_bonus": 930.0,
           "additional_officer_slot": false,
           "level": 8,
           "ship_xp": 3900
         },
         {
-          "ability_bonus": 940,
+          "ability_bonus": 940.0,
           "additional_officer_slot": false,
           "level": 9,
           "ship_xp": 4600
         },
         {
-          "ability_bonus": 950,
+          "ability_bonus": 950.0,
           "additional_officer_slot": false,
           "level": 10,
           "ship_xp": 6000
@@ -502,67 +527,6 @@
     {
       "build_time": 648000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 580,
-              "armor_pierce": 580,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 579,
-              "min_damage": 475,
-              "shield_pierce": 3762,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 30
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 115
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 185
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2606000
-              },
-              {
-                "type": "dilithium",
-                "value": 105000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -605,7 +569,7 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 185
               }
             ],
@@ -622,7 +586,78 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 325
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 580,
+              "armor_pierce": 580,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 579,
+              "min_damage": 475,
+              "shield_pierce": 3762,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 30
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 115
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 185
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2606000
+              },
+              {
+                "type": "dilithium",
+                "value": 105000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 325
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -651,7 +686,7 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 55
               }
             ],
@@ -664,47 +699,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 8854,
-              "hull_health": 158401
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 95
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 325
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1250
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 160
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2233000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Warp Engines",
@@ -732,11 +732,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 105
               },
               {
-                "type": "Uncommon\u00a0Black\u00a0Fleet\u00a0Memorial",
+                "type": "Uncommon Black Fleet Memorial",
                 "value": 1
               }
             ],
@@ -749,37 +749,87 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 185
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 8854,
+              "hull_health": 158401
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 325
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 1250
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 160
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2233000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 280
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 960,
+          "ability_bonus": 960.0,
           "additional_officer_slot": false,
           "level": 11,
           "ship_xp": 7000
         },
         {
-          "ability_bonus": 970,
+          "ability_bonus": 970.0,
           "additional_officer_slot": false,
           "level": 12,
           "ship_xp": 8500
         },
         {
-          "ability_bonus": 980,
+          "ability_bonus": 980.0,
           "additional_officer_slot": false,
           "level": 13,
           "ship_xp": 9500
         },
         {
-          "ability_bonus": 990,
+          "ability_bonus": 990.0,
           "additional_officer_slot": false,
           "level": 14,
           "ship_xp": 11000
         },
         {
-          "ability_bonus": 1000,
-          "additional_officer_slot": false,
+          "ability_bonus": 1000.0,
+          "additional_officer_slot": true,
           "level": 15,
           "ship_xp": 13500
         }
@@ -791,117 +841,6 @@
     {
       "build_time": 1080000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 781,
-              "armor_pierce": 781,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 654,
-              "min_damage": 537,
-              "shield_pierce": 5657,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 40
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 165
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 640
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 270
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 6417000
-              },
-              {
-                "type": "dilithium",
-                "value": 271000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
-        {
-          "name": "Cargo Bay",
-          "additional_info": {
-            "cargo_info": {
-              "increased_cargo": 2490,
-              "increased_protected_cargo": 40,
-              "ship_increased_cargo": 2250,
-              "ship_increased_protected_cargo": 88
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 315
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 1165
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 185
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 80
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1833000
-              }
-            ]
-          },
-          "img_url": "./assets/component_cargo_bay.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -944,12 +883,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 640
+                "type": "3\u2605 Battleship Parts",
+                "value": 270
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 270
+                "type": "Duranium",
+                "value": 640
               }
             ],
             "resources": [
@@ -965,7 +904,183 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 630
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 781,
+              "armor_pierce": 781,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 654,
+              "min_damage": 537,
+              "shield_pierce": 5657,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 40
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 165
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 270
+              },
+              {
+                "type": "Duranium",
+                "value": 640
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6417000
+              },
+              {
+                "type": "dilithium",
+                "value": 271000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 630
+            }
+          ]
+        },
+        {
+          "name": "Cargo Bay",
+          "additional_info": {
+            "cargo_info": {
+              "increased_cargo": 2490,
+              "increased_protected_cargo": 40,
+              "ship_increased_cargo": 2250,
+              "ship_increased_protected_cargo": 88
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 315
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 1165
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 80
+              },
+              {
+                "type": "Duranium",
+                "value": 185
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1833000
+              }
+            ]
+          },
+          "img_url": "./assets/component_cargo_bay.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 180
+            }
+          ]
+        },
+        {
+          "name": "Warp Engines",
+          "additional_info": {
+            "warp_info": {
+              "impulse_speed": 80,
+              "warp_distance": 40,
+              "warp_speed": 3.0
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 635
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "common",
+                "value": 2335
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 155
+              },
+              {
+                "type": "Duranium",
+                "value": 365
+              }
+            ],
+            "resources": [
+              {
+                "type": "dilithium",
+                "value": 155000
+              }
+            ]
+          },
+          "img_url": "./assets/component_warp_engines.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 360
+            }
+          ]
         },
         {
           "name": "Black Fleet Armor",
@@ -992,12 +1107,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 550
+                "type": "3\u2605 Battleship Parts",
+                "value": 235
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 235
+                "type": "Duranium",
+                "value": 550
               }
             ],
             "resources": [
@@ -1009,81 +1124,41 @@
           },
           "img_url": "./assets/component_armor.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Warp Engines",
-          "additional_info": {
-            "warp_info": {
-              "impulse_speed": 80,
-              "warp_distance": 40,
-              "warp_speed": 3
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 540
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 635
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "common",
-                "value": 2335
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 365
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 155
-              }
-            ],
-            "resources": [
-              {
-                "type": "dilithium",
-                "value": 155000
-              }
-            ]
-          },
-          "img_url": "./assets/component_warp_engines.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1160,
+          "ability_bonus": 1160.0,
           "additional_officer_slot": false,
           "level": 16,
           "ship_xp": 15000
         },
         {
-          "ability_bonus": 1170,
+          "ability_bonus": 1170.0,
           "additional_officer_slot": false,
           "level": 17,
           "ship_xp": 17500
         },
         {
-          "ability_bonus": 1180,
+          "ability_bonus": 1180.0,
           "additional_officer_slot": false,
           "level": 18,
           "ship_xp": 19500
         },
         {
-          "ability_bonus": 1190,
+          "ability_bonus": 1190.0,
           "additional_officer_slot": false,
           "level": 19,
           "ship_xp": 23000
         },
         {
-          "ability_bonus": 1200,
+          "ability_bonus": 1200.0,
           "additional_officer_slot": false,
           "level": 20,
           "ship_xp": 25000
@@ -1096,71 +1171,6 @@
     {
       "build_time": 1620000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 915,
-              "armor_pierce": 915,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 770,
-              "min_damage": 632,
-              "shield_pierce": 6628,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 75
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 310
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 1175
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 400
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8016000
-              },
-              {
-                "type": "dilithium",
-                "value": 388000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -1203,12 +1213,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 1175
+                "type": "3\u2605 Battleship Parts",
+                "value": 400
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 400
+                "type": "Duranium",
+                "value": 1175
               }
             ],
             "resources": [
@@ -1224,14 +1234,36 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 895
+            }
+          ]
         },
         {
-          "name": "Black Fleet Armor",
+          "name": "Isogenic Cannon",
           "additional_info": {
-            "armor_info": {
-              "armor": 14982,
-              "hull_health": 256627
+            "weapons_info": {
+              "accuracy": 915,
+              "armor_pierce": 915,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 770,
+              "min_damage": 632,
+              "shield_pierce": 6628,
+              "weapon_type": "energy"
             }
           },
           "build_cost": {
@@ -1240,35 +1272,44 @@
                 "type": "crystal",
                 "grade": 3,
                 "rarity": "uncommon",
-                "value": 65
+                "value": 75
               },
               {
                 "type": "ore",
                 "grade": 3,
                 "rarity": "uncommon",
-                "value": 265
+                "value": 310
               }
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 1005
+                "type": "3\u2605 Battleship Parts",
+                "value": 400
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 340
+                "type": "Duranium",
+                "value": 1175
               }
             ],
             "resources": [
               {
                 "type": "tritanium",
-                "value": 6871000
+                "value": 8016000
+              },
+              {
+                "type": "dilithium",
+                "value": 388000
               }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 895
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -1297,12 +1338,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 335
+                "type": "3\u2605 Battleship Parts",
+                "value": 115
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 115
+                "type": "Duranium",
+                "value": 335
               }
             ],
             "resources": [
@@ -1314,7 +1355,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 255
+            }
+          ]
         },
         {
           "name": "Warp Engines",
@@ -1342,12 +1388,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 670
+                "type": "3\u2605 Battleship Parts",
+                "value": 230
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 230
+                "type": "Duranium",
+                "value": 670
               }
             ],
             "resources": [
@@ -1359,36 +1405,90 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 510
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 14982,
+              "hull_health": 256627
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 65
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 265
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 340
+              },
+              {
+                "type": "Duranium",
+                "value": 1005
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 6871000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 765
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1210,
+          "ability_bonus": 1210.0,
           "additional_officer_slot": false,
           "level": 21,
           "ship_xp": 29000
         },
         {
-          "ability_bonus": 1220,
+          "ability_bonus": 1220.0,
           "additional_officer_slot": false,
           "level": 22,
           "ship_xp": 31500
         },
         {
-          "ability_bonus": 1230,
+          "ability_bonus": 1230.0,
           "additional_officer_slot": false,
           "level": 23,
           "ship_xp": 36000
         },
         {
-          "ability_bonus": 1240,
+          "ability_bonus": 1240.0,
           "additional_officer_slot": false,
           "level": 24,
           "ship_xp": 39000
         },
         {
-          "ability_bonus": 1250,
+          "ability_bonus": 1250.0,
           "additional_officer_slot": false,
           "level": 25,
           "ship_xp": 42000
@@ -1401,71 +1501,6 @@
     {
       "build_time": 2160000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1034,
-              "armor_pierce": 1034,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 866,
-              "min_damage": 710,
-              "shield_pierce": 7497,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 115
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 455
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 1955
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 525
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9962000
-              },
-              {
-                "type": "dilithium",
-                "value": 596000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -1508,12 +1543,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 1955
+                "type": "3\u2605 Battleship Parts",
+                "value": 525
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 525
+                "type": "Duranium",
+                "value": 1955
               }
             ],
             "resources": [
@@ -1529,7 +1564,82 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1155
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1034,
+              "armor_pierce": 1034,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 866,
+              "min_damage": 710,
+              "shield_pierce": 7497,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 115
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 455
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 525
+              },
+              {
+                "type": "Duranium",
+                "value": 1955
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9962000
+              },
+              {
+                "type": "dilithium",
+                "value": 596000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1155
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -1558,12 +1668,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 560
+                "type": "3\u2605 Battleship Parts",
+                "value": 150
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 150
+                "type": "Duranium",
+                "value": 560
               }
             ],
             "resources": [
@@ -1575,51 +1685,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 16647,
-              "hull_health": 273007
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 330
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 95
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 390
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 1675
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 450
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8539000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Warp Engines",
@@ -1647,11 +1718,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 300
               },
               {
-                "type": "Rare\u00a0Black\u00a0Fleet\u00a0Memorial",
+                "type": "Rare Black Fleet Memorial",
                 "value": 1
               }
             ],
@@ -1664,37 +1735,91 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 660
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 16647,
+              "hull_health": 273007
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 95
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 390
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 450
+              },
+              {
+                "type": "Duranium",
+                "value": 1675
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8539000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 990
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1260,
+          "ability_bonus": 1260.0,
           "additional_officer_slot": false,
           "level": 26,
           "ship_xp": 47000
         },
         {
-          "ability_bonus": 1270,
+          "ability_bonus": 1270.0,
           "additional_officer_slot": false,
           "level": 27,
           "ship_xp": 51000
         },
         {
-          "ability_bonus": 1280,
+          "ability_bonus": 1280.0,
           "additional_officer_slot": false,
           "level": 28,
           "ship_xp": 57000
         },
         {
-          "ability_bonus": 1290,
+          "ability_bonus": 1290.0,
           "additional_officer_slot": false,
           "level": 29,
           "ship_xp": 61000
         },
         {
-          "ability_bonus": 1300,
-          "additional_officer_slot": false,
+          "ability_bonus": 1300.0,
+          "additional_officer_slot": true,
           "level": 30,
           "ship_xp": 69000
         }
@@ -1706,71 +1831,6 @@
     {
       "build_time": 2700000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1123,
-              "armor_pierce": 1123,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 997,
-              "min_damage": 818,
-              "shield_pierce": 8129,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 55
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 210
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 4185
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1605
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 26736000
-              },
-              {
-                "type": "dilithium",
-                "value": 2238000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -1813,12 +1873,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 4185
+                "type": "3\u2605 Battleship Parts",
+                "value": 1605
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1605
+                "type": "Duranium",
+                "value": 4185
               }
             ],
             "resources": [
@@ -1834,14 +1894,36 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1680
+            }
+          ]
         },
         {
-          "name": "Black Fleet Armor",
+          "name": "Isogenic Cannon",
           "additional_info": {
-            "armor_info": {
-              "armor": 18767,
-              "hull_health": 300932
+            "weapons_info": {
+              "accuracy": 1123,
+              "armor_pierce": 1123,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 997,
+              "min_damage": 818,
+              "shield_pierce": 8129,
+              "weapon_type": "energy"
             }
           },
           "build_cost": {
@@ -1849,36 +1931,45 @@
               {
                 "type": "crystal",
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 825
+                "rarity": "rare",
+                "value": 55
               },
               {
                 "type": "ore",
                 "grade": 3,
-                "rarity": "uncommon",
-                "value": 3250
+                "rarity": "rare",
+                "value": 210
               }
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 3585
+                "type": "3\u2605 Battleship Parts",
+                "value": 1605
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1380
+                "type": "Duranium",
+                "value": 4185
               }
             ],
             "resources": [
               {
                 "type": "tritanium",
-                "value": 22917000
+                "value": 26736000
+              },
+              {
+                "type": "dilithium",
+                "value": 2238000
               }
             ]
           },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1680
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -1907,12 +1998,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 1195
+                "type": "3\u2605 Battleship Parts",
+                "value": 460
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 460
+                "type": "Duranium",
+                "value": 1195
               }
             ],
             "resources": [
@@ -1924,7 +2015,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 480
+            }
+          ]
         },
         {
           "name": "Warp Engines",
@@ -1952,12 +2048,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 2390
+                "type": "3\u2605 Battleship Parts",
+                "value": 920
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 920
+                "type": "Duranium",
+                "value": 2390
               }
             ],
             "resources": [
@@ -1969,36 +2065,90 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 960
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 18767,
+              "hull_health": 300932
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 825
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 3250
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 1380
+              },
+              {
+                "type": "Duranium",
+                "value": 3585
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 22917000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1440
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1720,
+          "ability_bonus": 1720.0,
           "additional_officer_slot": false,
           "level": 31,
           "ship_xp": 72000
         },
         {
-          "ability_bonus": 1740,
+          "ability_bonus": 1740.0,
           "additional_officer_slot": false,
           "level": 32,
           "ship_xp": 81000
         },
         {
-          "ability_bonus": 1760,
+          "ability_bonus": 1760.0,
           "additional_officer_slot": false,
           "level": 33,
           "ship_xp": 86000
         },
         {
-          "ability_bonus": 1780,
+          "ability_bonus": 1780.0,
           "additional_officer_slot": false,
           "level": 34,
           "ship_xp": 95000
         },
         {
-          "ability_bonus": 1800,
+          "ability_bonus": 1800.0,
           "additional_officer_slot": false,
           "level": 35,
           "ship_xp": 100000
@@ -2011,71 +2161,6 @@
     {
       "build_time": 3510000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1252,
-              "armor_pierce": 1252,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 1056,
-              "min_damage": 865,
-              "shield_pierce": 9104,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 75
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 310
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 5940
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1960
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 49690000
-              },
-              {
-                "type": "dilithium",
-                "value": 2948000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -2118,12 +2203,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 5940
+                "type": "3\u2605 Battleship Parts",
+                "value": 1960
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1960
+                "type": "Duranium",
+                "value": 5940
               }
             ],
             "resources": [
@@ -2139,7 +2224,82 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2205
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1252,
+              "armor_pierce": 1252,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 1056,
+              "min_damage": 865,
+              "shield_pierce": 9104,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 75
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 310
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 1960
+              },
+              {
+                "type": "Duranium",
+                "value": 5940
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 49690000
+              },
+              {
+                "type": "dilithium",
+                "value": 2948000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2205
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -2168,12 +2328,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 1700
+                "type": "3\u2605 Battleship Parts",
+                "value": 560
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 560
+                "type": "Duranium",
+                "value": 1700
               }
             ],
             "resources": [
@@ -2185,51 +2345,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 20550,
-              "hull_health": 317856
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 630
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 1075
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 4250
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 5095
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1680
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 42592000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Warp Engines",
@@ -2257,12 +2378,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 3395
+                "type": "3\u2605 Battleship Parts",
+                "value": 1120
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1120
+                "type": "Duranium",
+                "value": 3395
               }
             ],
             "resources": [
@@ -2274,36 +2395,90 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1260
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 20550,
+              "hull_health": 317856
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 1075
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 4250
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 1680
+              },
+              {
+                "type": "Duranium",
+                "value": 5095
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 42592000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1890
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1820,
+          "ability_bonus": 1820.0,
           "additional_officer_slot": false,
           "level": 36,
           "ship_xp": 105000
         },
         {
-          "ability_bonus": 1840,
+          "ability_bonus": 1840.0,
           "additional_officer_slot": false,
           "level": 37,
           "ship_xp": 116000
         },
         {
-          "ability_bonus": 1860,
+          "ability_bonus": 1860.0,
           "additional_officer_slot": false,
           "level": 38,
           "ship_xp": 122000
         },
         {
-          "ability_bonus": 1880,
+          "ability_bonus": 1880.0,
           "additional_officer_slot": false,
           "level": 39,
           "ship_xp": 134000
         },
         {
-          "ability_bonus": 1900,
+          "ability_bonus": 1900.0,
           "additional_officer_slot": false,
           "level": 40,
           "ship_xp": 140000
@@ -2358,12 +2533,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 14485
+                "type": "3\u2605 Battleship Parts",
+                "value": 2330
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 2330
+                "type": "Duranium",
+                "value": 14485
               }
             ],
             "resources": [
@@ -2379,7 +2554,12 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2820
+            }
+          ]
         },
         {
           "name": "Isogenic Cannon",
@@ -2423,12 +2603,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 14485
+                "type": "3\u2605 Battleship Parts",
+                "value": 2330
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 2330
+                "type": "Duranium",
+                "value": 14485
               }
             ],
             "resources": [
@@ -2444,51 +2624,12 @@
           },
           "img_url": "./assets/component_weapon_energy.png",
           "quantity": 2,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 22707,
-              "hull_health": 321723
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2820
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 1300
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 5250
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 12415
-              },
-              {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 1995
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 61875000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -2517,12 +2658,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 4140
+                "type": "3\u2605 Battleship Parts",
+                "value": 665
               },
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
-                "value": 665
+                "type": "Duranium",
+                "value": 4140
               }
             ],
             "resources": [
@@ -2534,7 +2675,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 805
+            }
+          ]
         },
         {
           "name": "Warp Engines",
@@ -2562,11 +2708,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Battleship\u00a0Parts",
+                "type": "3\u2605 Battleship Parts",
                 "value": 1330
               },
               {
-                "type": "Epic\u00a0Black\u00a0Fleet\u00a0Memorial",
+                "type": "Epic Black Fleet Memorial",
                 "value": 1
               }
             ],
@@ -2579,37 +2725,91 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1610
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 22707,
+              "hull_health": 321723
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 1300
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 5250
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Battleship Parts",
+                "value": 1995
+              },
+              {
+                "type": "Duranium",
+                "value": 12415
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 61875000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2415
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 1920,
+          "ability_bonus": 1920.0,
           "additional_officer_slot": false,
           "level": 41,
           "ship_xp": 154000
         },
         {
-          "ability_bonus": 1940,
+          "ability_bonus": 1940.0,
           "additional_officer_slot": false,
           "level": 42,
           "ship_xp": 161000
         },
         {
-          "ability_bonus": 1960,
+          "ability_bonus": 1960.0,
           "additional_officer_slot": false,
           "level": 43,
           "ship_xp": 176000
         },
         {
-          "ability_bonus": 1980,
+          "ability_bonus": 1980.0,
           "additional_officer_slot": false,
           "level": 44,
           "ship_xp": 183000
         },
         {
-          "ability_bonus": 2000,
-          "additional_officer_slot": false,
+          "ability_bonus": 2000.0,
+          "additional_officer_slot": true,
           "level": 45,
           "ship_xp": 200000
         }
@@ -2621,71 +2821,6 @@
     {
       "build_time": 5400000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1785,
-              "armor_pierce": 1785,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 1259,
-              "min_damage": 1030,
-              "shield_pierce": 13001,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 115
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 455
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 28735
-              },
-              {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 43750
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 106944000
-              },
-              {
-                "type": "dilithium",
-                "value": 11694000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -2728,12 +2863,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 28735
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 43750
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 43750
+                "type": "Duranium",
+                "value": 28735
               }
             ],
             "resources": [
@@ -2749,7 +2884,82 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 3780
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1785,
+              "armor_pierce": 1785,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 1259,
+              "min_damage": 1030,
+              "shield_pierce": 13001,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 115
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 455
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 43750
+              },
+              {
+                "type": "Duranium",
+                "value": 28735
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 106944000
+              },
+              {
+                "type": "dilithium",
+                "value": 11694000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 3780
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -2778,12 +2988,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 8210
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 12500
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 12500
+                "type": "Duranium",
+                "value": 8210
               }
             ],
             "resources": [
@@ -2795,51 +3005,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 25530,
-              "hull_health": 361905
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1080
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 95
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 390
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 24630
-              },
-              {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 37500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 91667000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Warp Engines",
@@ -2867,12 +3038,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 16420
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 25000
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 25000
+                "type": "Duranium",
+                "value": 16420
               }
             ],
             "resources": [
@@ -2884,36 +3055,90 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2160
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 25530,
+              "hull_health": 361905
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 95
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 390
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 37500
+              },
+              {
+                "type": "Duranium",
+                "value": 24630
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 91667000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 3240
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 2220,
+          "ability_bonus": 2220.0,
           "additional_officer_slot": false,
           "level": 46,
           "ship_xp": 200000
         },
         {
-          "ability_bonus": 2240,
+          "ability_bonus": 2240.0,
           "additional_officer_slot": false,
           "level": 47,
           "ship_xp": 200000
         },
         {
-          "ability_bonus": 2260,
+          "ability_bonus": 2260.0,
           "additional_officer_slot": false,
           "level": 48,
           "ship_xp": 210000
         },
         {
-          "ability_bonus": 2280,
+          "ability_bonus": 2280.0,
           "additional_officer_slot": false,
           "level": 49,
           "ship_xp": 210000
         },
         {
-          "ability_bonus": 2300,
+          "ability_bonus": 2300.0,
           "additional_officer_slot": false,
           "level": 50,
           "ship_xp": 220000
@@ -2926,71 +3151,6 @@
     {
       "build_time": 7020000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2021,
-              "armor_pierce": 2021,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 1399,
-              "min_damage": 1144,
-              "shield_pierce": 14691,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 140
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 565
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 37540
-              },
-              {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 50750
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 160417000
-              },
-              {
-                "type": "dilithium",
-                "value": 13009000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -3033,12 +3193,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 37540
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 50750
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 50750
+                "type": "Duranium",
+                "value": 37540
               }
             ],
             "resources": [
@@ -3054,7 +3214,82 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 4480
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2021,
+              "armor_pierce": 2021,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 1399,
+              "min_damage": 1144,
+              "shield_pierce": 14691,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 140
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 565
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 50750
+              },
+              {
+                "type": "Duranium",
+                "value": 37540
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 160417000
+              },
+              {
+                "type": "dilithium",
+                "value": 13009000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 4480
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -3083,12 +3318,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 10725
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 14500
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 14500
+                "type": "Duranium",
+                "value": 10725
               }
             ],
             "resources": [
@@ -3100,51 +3335,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 28000,
-              "hull_health": 368975
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1280
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 120
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 485
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 32175
-              },
-              {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 43500
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 137500000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Warp Engines",
@@ -3172,12 +3368,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 21450
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 29000
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 29000
+                "type": "Duranium",
+                "value": 21450
               }
             ],
             "resources": [
@@ -3189,36 +3385,90 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2560
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 28000,
+              "hull_health": 368975
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 120
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 485
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 43500
+              },
+              {
+                "type": "Duranium",
+                "value": 32175
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 137500000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 3840
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 2320,
+          "ability_bonus": 2320.0,
           "additional_officer_slot": false,
           "level": 51,
           "ship_xp": 220000
         },
         {
-          "ability_bonus": 2340,
+          "ability_bonus": 2340.0,
           "additional_officer_slot": false,
           "level": 52,
           "ship_xp": 230000
         },
         {
-          "ability_bonus": 2360,
+          "ability_bonus": 2360.0,
           "additional_officer_slot": false,
           "level": 53,
           "ship_xp": 230000
         },
         {
-          "ability_bonus": 2380,
+          "ability_bonus": 2380.0,
           "additional_officer_slot": false,
           "level": 54,
           "ship_xp": 240000
         },
         {
-          "ability_bonus": 2400,
+          "ability_bonus": 2400.0,
           "additional_officer_slot": false,
           "level": 55,
           "ship_xp": 240000
@@ -3231,71 +3481,6 @@
     {
       "build_time": 9720000,
       "components": [
-        {
-          "name": "Isogenic Cannon",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 2592,
-              "armor_pierce": 2592,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1,
-                0,
-                1
-              ],
-              "max_damage": 1521,
-              "min_damage": 1244,
-              "shield_pierce": 16644,
-              "weapon_type": "energy"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 170
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 680
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 70375
-              },
-              {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 56875
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 240625000
-              },
-              {
-                "type": "dilithium",
-                "value": 16902000
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_energy.png",
-          "quantity": 2,
-          "repair_cost": []
-        },
         {
           "name": "Black Fleet Torpedo",
           "additional_info": {
@@ -3338,12 +3523,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 70375
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 56875
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 56875
+                "type": "Duranium",
+                "value": 70375
               }
             ],
             "resources": [
@@ -3359,7 +3544,82 @@
           },
           "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 2,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 5180
+            }
+          ]
+        },
+        {
+          "name": "Isogenic Cannon",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 2592,
+              "armor_pierce": 2592,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "max_damage": 1521,
+              "min_damage": 1244,
+              "shield_pierce": 16644,
+              "weapon_type": "energy"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 170
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 680
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 56875
+              },
+              {
+                "type": "Duranium",
+                "value": 70375
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 240625000
+              },
+              {
+                "type": "dilithium",
+                "value": 16902000
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 2,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 5180
+            }
+          ]
         },
         {
           "name": "Cargo Bay",
@@ -3388,12 +3648,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 20110
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 16250
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 16250
+                "type": "Duranium",
+                "value": 20110
               }
             ],
             "resources": [
@@ -3405,51 +3665,12 @@
           },
           "img_url": "./assets/component_cargo_bay.png",
           "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Black Fleet Armor",
-          "additional_info": {
-            "armor_info": {
-              "armor": 31000,
-              "hull_health": 387163
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 1480
             }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 145
-              },
-              {
-                "type": "ore",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 580
-              }
-            ],
-            "others": [
-              {
-                "type": "Duranium",
-                "value": 60325
-              },
-              {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 48750
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 206250000
-              }
-            ]
-          },
-          "img_url": "./assets/component_armor.png",
-          "quantity": 1,
-          "repair_cost": []
+          ]
         },
         {
           "name": "Warp Engines",
@@ -3477,12 +3698,12 @@
             ],
             "others": [
               {
-                "type": "Duranium",
-                "value": 40215
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 32500
               },
               {
-                "type": "4\u2605\u00a0Uncommon\u00a0Battleship\u00a0Parts",
-                "value": 32500
+                "type": "Duranium",
+                "value": 40215
               }
             ],
             "resources": [
@@ -3494,37 +3715,91 @@
           },
           "img_url": "./assets/component_warp_engines.png",
           "quantity": 1,
-          "repair_cost": []
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 2960
+            }
+          ]
+        },
+        {
+          "name": "Black Fleet Armor",
+          "additional_info": {
+            "armor_info": {
+              "armor": 31000,
+              "hull_health": 387163
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 145
+              },
+              {
+                "type": "ore",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 580
+              }
+            ],
+            "others": [
+              {
+                "type": "4\u2605 Uncommon Battleship Parts",
+                "value": 48750
+              },
+              {
+                "type": "Duranium",
+                "value": 60325
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 206250000
+              }
+            ]
+          },
+          "img_url": "./assets/component_armor.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "Fortified Baakonite",
+              "value": 4440
+            }
+          ]
         }
       ],
       "levels": [
         {
-          "ability_bonus": 2420,
+          "ability_bonus": 2420.0,
           "additional_officer_slot": false,
           "level": 56,
           "ship_xp": 251000
         },
         {
-          "ability_bonus": 2440,
+          "ability_bonus": 2440.0,
           "additional_officer_slot": false,
           "level": 57,
           "ship_xp": 251000
         },
         {
-          "ability_bonus": 2460,
+          "ability_bonus": 2460.0,
           "additional_officer_slot": false,
           "level": 58,
           "ship_xp": 251000
         },
         {
-          "ability_bonus": 2480,
+          "ability_bonus": 2480.0,
           "additional_officer_slot": false,
           "level": 59,
           "ship_xp": 262000
         },
         {
-          "ability_bonus": 2500,
-          "additional_officer_slot": false,
+          "ability_bonus": 2500.0,
+          "additional_officer_slot": true,
           "level": 60,
           "ship_xp": 262000
         }
