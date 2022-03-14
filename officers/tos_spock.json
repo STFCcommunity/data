@@ -1,15 +1,19 @@
 {
-  "description": "They say a Captain is only as good as his First Officer. If that is indeed the case, then Captain Kirk can rest easy knowing that his First Officer is one of the finest in the galaxy.\nSpock, a given name as his full name is unpronounceable to humans, is a human/Vulcan hybrid born on Vulcan in 2230. His hybrid status caused him no shortage of pain in his childhood, but the love of his mother and the wisdom of his father allowed him to overcome his aggressors.\nA prodigy even by Vulcan standards, Spock was destined for greatness. He was even granted a place in the prestigious Vulcan Science Academy, which he declined in favor of Starfleet.\nHe was granted a place on the Enterprise, where he served as Captain Pike\u2019s Science Officer. He forged a close relationship with his Captain and was intended to eventually take over command of the vessel.",
+  "description": "They say a Captain is only as good as his First Officer. If that is indeed the case, then Captain Kirk can rest easy knowing that his First Officer is one of the finest in the galaxy.\nSpock, a given name as his full name is unpronounceable to humans, is a human/Vulcan hybrid born on Vulcan in 2230. His hybrid status caused him no shortage of pain in his childhood, but the love of his mother and the wisdom of his father allowed him to overcome his aggressors.\nA prodigy even by Vulcan standards, Spock was destined for greatness. He was even granted a place in the prestigious Vulcan Science Academy, which he declined in favor of Starfleet.\nHe was granted a place on the Enterprise, where he served as Captain Pike\u2019s Science Officer. He forged a close relationship with his Captain and was intended to eventually take over command of the vessel.\nHowever, through a series of unexpected events, command of the Enterprise went to James T. Kirk, a result which neither pleased nor disappointed Spock. Command simply exists, and he will do whatever is logical.\nWith Spock\u2019s sage wisdom and unshakeable composure, he was able to guide the Enterprise and its Captain through their many trials.",
   "ability_info": {
     "captain_maneuver": {
       "name": "Live Long",
-      "bonus": "{value} of Defense to SHP of all ships",
+      "bonus": "When defending, at the start of each turn, TOS Spock restores Shield Health to an amount equal to {value} of the Defense of the Officers on the ship (restores the Shield Health of all your ships if the ship is defending the station).",
       "percentage": true,
-      "value": 1
+      "value": 1.0
     },
     "officer_ability": {
       "name": "Prosper",
-      "bonus": "{value} to opponent's Critical damage",
+      "bonus": "When fighting players, as long as the ship has Morale, TOS Spock decreases the Critical Hit Damage bonus of the opponent's ship by {value}.",
+      "buff": {
+        "name": "Morale",
+        "type": "use"
+      },
       "percentage": true
     }
   },
@@ -20,7 +24,7 @@
   "officer_name": "TOS Spock",
   "ranks": [
     {
-      "name": "Ensign I",
+      "name": "ENSIGN I",
       "officer_ability_value": 0.5,
       "rank_id": 1,
       "requirements": {
@@ -32,7 +36,7 @@
       }
     },
     {
-      "name": "Lieutenant JG II",
+      "name": "LIEUTENANT JG II",
       "officer_ability_value": 0.75,
       "rank_id": 2,
       "requirements": {
@@ -44,8 +48,8 @@
       }
     },
     {
-      "name": "Lieutenant III",
-      "officer_ability_value": 1,
+      "name": "LIEUTENANT III",
+      "officer_ability_value": 1.0,
       "rank_id": 3,
       "requirements": {
         "badges": 1,
@@ -56,7 +60,7 @@
       }
     },
     {
-      "name": "Lt. Commander IV",
+      "name": "LT. COMMANDER IV",
       "officer_ability_value": 1.25,
       "rank_id": 4,
       "requirements": {
@@ -68,7 +72,7 @@
       }
     },
     {
-      "name": "Commander V",
+      "name": "COMMANDER V",
       "officer_ability_value": 1.5,
       "rank_id": 5,
       "requirements": {
@@ -82,8 +86,8 @@
   ],
   "rarity": "epic",
   "synergy": {
-    "command": 1,
-    "engineering": 1,
+    "command": 1.0,
+    "engineering": 1.0,
     "science": 0.5
   },
   "traits": [
