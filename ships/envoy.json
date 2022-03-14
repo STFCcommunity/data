@@ -10,12 +10,12 @@
   "rarity": "common",
   "requirements": [
     {
-      "name": "Unlock Envoy",
-      "level": 1
-    },
-    {
       "name": "Shipyard",
       "level": 16
+    },
+    {
+      "name": "Unlock Envoy",
+      "level": 1
     }
   ],
   "scrap_info": {
@@ -28,7 +28,7 @@
     "percentage": true
   },
   "ship_class": "survey",
-  "ship_name": "envoy",
+  "ship_name": "ENVOY",
   "tiers": [
     {
       "build_time": 63000,
@@ -64,6 +64,22 @@
             "resources": []
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 2.25
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_mining_laser.png",
           "quantity": 1,
           "repair_cost": []
         },
@@ -120,22 +136,6 @@
           "img_url": "./assets/component_shield.png",
           "quantity": 1,
           "repair_cost": []
-        },
-        {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 225
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": []
         }
       ],
       "initial_build_cost": {
@@ -175,7 +175,7 @@
                 "value": 8400
               },
               {
-                "type": "Ship\u00a0XP",
+                "type": "Ship XP",
                 "value": 16
               }
             ],
@@ -194,7 +194,7 @@
                 "value": 8400
               },
               {
-                "type": "Ship\u00a0XP",
+                "type": "Ship XP",
                 "value": 34
               }
             ],
@@ -213,7 +213,7 @@
                 "value": 8400
               },
               {
-                "type": "Ship\u00a0XP",
+                "type": "Ship XP",
                 "value": 55
               }
             ],
@@ -232,7 +232,7 @@
                 "value": 8400
               },
               {
-                "type": "Ship\u00a0XP",
+                "type": "Ship XP",
                 "value": 85
               }
             ],
@@ -276,7 +276,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 12
               }
             ],
@@ -305,6 +305,45 @@
           ]
         },
         {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 2.8
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [
+              {
+                "type": "2\u2605 Survey Parts",
+                "value": 24
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 5500
+              },
+              {
+                "type": "dilithium",
+                "value": 575
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 35
+            },
+            {
+              "type": "dilithium",
+              "value": 16
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -318,7 +357,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 16
               }
             ],
@@ -355,7 +394,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 4
               }
             ],
@@ -387,7 +426,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 8
               }
             ],
@@ -410,45 +449,6 @@
               "value": 13
             }
           ]
-        },
-        {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 280
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
-                "value": 24
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 5500
-              },
-              {
-                "type": "dilithium",
-                "value": 575
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 35
-            },
-            {
-              "type": "dilithium",
-              "value": 16
-            }
-          ]
         }
       ],
       "levels": [
@@ -460,11 +460,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 17232
-              },
-              {
-                "type": "dilithium",
-                "value": 483
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -479,12 +475,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 1
+                "type": "Ship XP",
+                "value": 114
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 114
+                "type": "3\u2605 Survey Parts",
+                "value": 1
               }
             ],
             "scrap_time": 94500
@@ -499,11 +495,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 17232
-              },
-              {
-                "type": "dilithium",
-                "value": 483
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -518,12 +510,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 2
+                "type": "Ship XP",
+                "value": 153
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 153
+                "type": "3\u2605 Survey Parts",
+                "value": 2
               }
             ],
             "scrap_time": 94500
@@ -538,11 +530,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 17232
-              },
-              {
-                "type": "dilithium",
-                "value": 483
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -557,12 +545,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 2
+                "type": "Ship XP",
+                "value": 209
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 209
+                "type": "3\u2605 Survey Parts",
+                "value": 2
               }
             ],
             "scrap_time": 94500
@@ -577,11 +565,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 17232
-              },
-              {
-                "type": "dilithium",
-                "value": 483
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -596,12 +580,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 2
+                "type": "Ship XP",
+                "value": 271
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 271
+                "type": "3\u2605 Survey Parts",
+                "value": 2
               }
             ],
             "scrap_time": 94500
@@ -616,11 +600,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 17232
-              },
-              {
-                "type": "dilithium",
-                "value": 483
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -635,12 +615,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 3
+                "type": "Ship XP",
+                "value": 344
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 344
+                "type": "3\u2605 Survey Parts",
+                "value": 3
               }
             ],
             "scrap_time": 94500
@@ -683,7 +663,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 22
               }
             ],
@@ -712,6 +692,52 @@
           ]
         },
         {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 3.15
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 2,
+                "rarity": "common",
+                "value": 140
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605 Survey Parts",
+                "value": 43
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 9750
+              },
+              {
+                "type": "dilithium",
+                "value": 1225
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 136
+            },
+            {
+              "type": "dilithium",
+              "value": 34
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -725,7 +751,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 29
               }
             ],
@@ -762,7 +788,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 7
               }
             ],
@@ -794,7 +820,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 14
               }
             ],
@@ -817,52 +843,6 @@
               "value": 27
             }
           ]
-        },
-        {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 315
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 2,
-                "rarity": "common",
-                "value": 140
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
-                "value": 43
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 9750
-              },
-              {
-                "type": "dilithium",
-                "value": 1225
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 136
-            },
-            {
-              "type": "dilithium",
-              "value": 34
-            }
-          ]
         }
       ],
       "levels": [
@@ -874,11 +854,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 31414
-              },
-              {
-                "type": "dilithium",
-                "value": 1413
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -893,12 +869,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 3
+                "type": "Ship XP",
+                "value": 395
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 395
+                "type": "3\u2605 Survey Parts",
+                "value": 3
               }
             ],
             "scrap_time": 118140
@@ -913,11 +889,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 31414
-              },
-              {
-                "type": "dilithium",
-                "value": 1413
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -932,12 +904,12 @@
                 "value": 3
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 3
+                "type": "Ship XP",
+                "value": 489
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 489
+                "type": "3\u2605 Survey Parts",
+                "value": 3
               }
             ],
             "scrap_time": 118140
@@ -952,11 +924,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 31414
-              },
-              {
-                "type": "dilithium",
-                "value": 1413
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -971,12 +939,12 @@
                 "value": 4
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 4
+                "type": "Ship XP",
+                "value": 594
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 594
+                "type": "3\u2605 Survey Parts",
+                "value": 4
               }
             ],
             "scrap_time": 118140
@@ -991,11 +959,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 31414
-              },
-              {
-                "type": "dilithium",
-                "value": 1413
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1010,12 +974,12 @@
                 "value": 5
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 5
+                "type": "Ship XP",
+                "value": 710
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 710
+                "type": "3\u2605 Survey Parts",
+                "value": 5
               }
             ],
             "scrap_time": 118140
@@ -1030,11 +994,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 31414
-              },
-              {
-                "type": "dilithium",
-                "value": 1413
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1049,12 +1009,12 @@
                 "value": 7
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 6
+                "type": "Ship XP",
+                "value": 857
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 857
+                "type": "3\u2605 Survey Parts",
+                "value": 6
               }
             ],
             "scrap_time": 118140
@@ -1097,7 +1057,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 36
               }
             ],
@@ -1126,6 +1086,52 @@
           ]
         },
         {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 3.5
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 2,
+                "rarity": "common",
+                "value": 375
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605 Survey Parts",
+                "value": 70
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 16250
+              },
+              {
+                "type": "dilithium",
+                "value": 2600
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 350
+            },
+            {
+              "type": "dilithium",
+              "value": 75
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -1146,7 +1152,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 48
               }
             ],
@@ -1183,7 +1189,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 12
               }
             ],
@@ -1204,52 +1210,6 @@
           ]
         },
         {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 350
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 2,
-                "rarity": "common",
-                "value": 375
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
-                "value": 70
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 16250
-              },
-              {
-                "type": "dilithium",
-                "value": 2600
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 350
-            },
-            {
-              "type": "dilithium",
-              "value": 75
-            }
-          ]
-        },
-        {
           "name": "Shield",
           "additional_info": {
             "shield_info": {
@@ -1261,7 +1221,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 24
               }
             ],
@@ -1295,11 +1255,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 52601
-              },
-              {
-                "type": "dilithium",
-                "value": 3205
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1326,12 +1282,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 6
+                "type": "Ship XP",
+                "value": 952
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 952
+                "type": "3\u2605 Survey Parts",
+                "value": 6
               }
             ],
             "scrap_time": 141780
@@ -1346,11 +1302,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 52601
-              },
-              {
-                "type": "dilithium",
-                "value": 3205
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1377,12 +1329,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 7
+                "type": "Ship XP",
+                "value": 1117
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 1117
+                "type": "3\u2605 Survey Parts",
+                "value": 7
               }
             ],
             "scrap_time": 141780
@@ -1397,11 +1349,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 52601
-              },
-              {
-                "type": "dilithium",
-                "value": 3205
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1428,12 +1376,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 8
+                "type": "Ship XP",
+                "value": 1322
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 1322
+                "type": "3\u2605 Survey Parts",
+                "value": 8
               }
             ],
             "scrap_time": 141780
@@ -1448,11 +1396,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 52601
-              },
-              {
-                "type": "dilithium",
-                "value": 3205
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1479,12 +1423,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 10
+                "type": "Ship XP",
+                "value": 1546
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 1546
+                "type": "3\u2605 Survey Parts",
+                "value": 10
               }
             ],
             "scrap_time": 141780
@@ -1499,11 +1443,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 52601
-              },
-              {
-                "type": "dilithium",
-                "value": 3205
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1530,12 +1470,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 12
+                "type": "Ship XP",
+                "value": 1790
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 1790
+                "type": "3\u2605 Survey Parts",
+                "value": 12
               }
             ],
             "scrap_time": 141780
@@ -1585,7 +1525,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 60
               }
             ],
@@ -1614,6 +1554,52 @@
           ]
         },
         {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 4.15
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 48
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605 Survey Parts",
+                "value": 120
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 38000
+              },
+              {
+                "type": "dilithium",
+                "value": 4600
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 741
+            },
+            {
+              "type": "dilithium",
+              "value": 138
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -1634,7 +1620,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 80
               }
             ],
@@ -1671,7 +1657,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 20
               }
             ],
@@ -1703,7 +1689,7 @@
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 40
               }
             ],
@@ -1726,52 +1712,6 @@
               "value": 110
             }
           ]
-        },
-        {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 415
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 48
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
-                "value": 120
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 38000
-              },
-              {
-                "type": "dilithium",
-                "value": 4600
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 741
-            },
-            {
-              "type": "dilithium",
-              "value": 138
-            }
-          ]
         }
       ],
       "levels": [
@@ -1783,11 +1723,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 98400
-              },
-              {
-                "type": "dilithium",
-                "value": 6064
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1814,12 +1750,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 13
+                "type": "Ship XP",
+                "value": 1886
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 1886
+                "type": "3\u2605 Survey Parts",
+                "value": 13
               }
             ],
             "scrap_time": 165360
@@ -1834,11 +1770,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 98400
-              },
-              {
-                "type": "dilithium",
-                "value": 6064
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1865,12 +1797,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 14
+                "type": "Ship XP",
+                "value": 2174
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 2174
+                "type": "3\u2605 Survey Parts",
+                "value": 14
               }
             ],
             "scrap_time": 165360
@@ -1885,11 +1817,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 98400
-              },
-              {
-                "type": "dilithium",
-                "value": 6064
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1916,12 +1844,12 @@
                 "value": 2
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 16
+                "type": "Ship XP",
+                "value": 2480
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 2480
+                "type": "3\u2605 Survey Parts",
+                "value": 16
               }
             ],
             "scrap_time": 165360
@@ -1936,11 +1864,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 98400
-              },
-              {
-                "type": "dilithium",
-                "value": 6064
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -1967,12 +1891,12 @@
                 "value": 3
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 19
+                "type": "Ship XP",
+                "value": 2804
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 2804
+                "type": "3\u2605 Survey Parts",
+                "value": 19
               }
             ],
             "scrap_time": 165360
@@ -1987,11 +1911,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 98400
-              },
-              {
-                "type": "dilithium",
-                "value": 6064
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2018,12 +1938,12 @@
                 "value": 3
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 22
+                "type": "Ship XP",
+                "value": 3200
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 3200
+                "type": "3\u2605 Survey Parts",
+                "value": 22
               }
             ],
             "scrap_time": 165360
@@ -2073,7 +1993,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 110
               }
             ],
@@ -2102,6 +2022,52 @@
           ]
         },
         {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 5.15
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 120
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605 Survey Parts",
+                "value": 220
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 78000
+              },
+              {
+                "type": "dilithium",
+                "value": 11000
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 1498
+            },
+            {
+              "type": "dilithium",
+              "value": 343
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -2122,7 +2088,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 140
               }
             ],
@@ -2152,14 +2118,14 @@
             "warp_info": {
               "impulse_speed": 83,
               "warp_distance": 20,
-              "warp_speed": 2
+              "warp_speed": 2.0
             }
           },
           "build_cost": {
             "materials": [],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 36
               }
             ],
@@ -2198,7 +2164,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 70
               }
             ],
@@ -2221,52 +2187,6 @@
               "value": 275
             }
           ]
-        },
-        {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 515
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 120
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
-                "value": 220
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 78000
-              },
-              {
-                "type": "dilithium",
-                "value": 11000
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 1498
-            },
-            {
-              "type": "dilithium",
-              "value": 343
-            }
-          ]
         }
       ],
       "levels": [
@@ -2278,11 +2198,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 183851
-              },
-              {
-                "type": "dilithium",
-                "value": 12405
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2321,12 +2237,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 23
+                "type": "Ship XP",
+                "value": 3313
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 3313
+                "type": "3\u2605 Survey Parts",
+                "value": 23
               }
             ],
             "scrap_time": 189000
@@ -2341,11 +2257,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 183851
-              },
-              {
-                "type": "dilithium",
-                "value": 12405
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2384,12 +2296,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 24
+                "type": "Ship XP",
+                "value": 3717
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 3717
+                "type": "3\u2605 Survey Parts",
+                "value": 24
               }
             ],
             "scrap_time": 189000
@@ -2397,18 +2309,14 @@
           "ship_xp": 4900
         },
         {
-          "ability_bonus": 1,
+          "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 28,
           "scrap_details": {
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 183851
-              },
-              {
-                "type": "dilithium",
-                "value": 12405
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2447,12 +2355,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 28
+                "type": "Ship XP",
+                "value": 4130
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 4130
+                "type": "3\u2605 Survey Parts",
+                "value": 28
               }
             ],
             "scrap_time": 189000
@@ -2467,11 +2375,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 183851
-              },
-              {
-                "type": "dilithium",
-                "value": 12405
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2510,12 +2414,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 33
+                "type": "Ship XP",
+                "value": 4625
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 4625
+                "type": "3\u2605 Survey Parts",
+                "value": 33
               }
             ],
             "scrap_time": 189000
@@ -2530,11 +2434,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 183851
-              },
-              {
-                "type": "dilithium",
-                "value": 12405
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2573,12 +2473,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 39
+                "type": "Ship XP",
+                "value": 5161
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 5161
+                "type": "3\u2605 Survey Parts",
+                "value": 39
               }
             ],
             "scrap_time": 189000
@@ -2628,7 +2528,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 250
               }
             ],
@@ -2657,6 +2557,52 @@
           ]
         },
         {
+          "name": "Mining Laser",
+          "additional_info": {
+            "mining_laser_info": {
+              "mining_bonus": 6.45
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 2,
+                "rarity": "uncommon",
+                "value": 275
+              }
+            ],
+            "others": [
+              {
+                "type": "2\u2605 Survey Parts",
+                "value": 475
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 230000
+              },
+              {
+                "type": "dilithium",
+                "value": 34500
+              }
+            ]
+          },
+          "img_url": "./assets/component_mining_laser.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3223
+            },
+            {
+              "type": "dilithium",
+              "value": 1041
+            }
+          ]
+        },
+        {
           "name": "Cargo Bay",
           "additional_info": {
             "cargo_info": {
@@ -2677,7 +2623,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 325
               }
             ],
@@ -2721,7 +2667,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 80
               }
             ],
@@ -2760,7 +2706,7 @@
             ],
             "others": [
               {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
+                "type": "2\u2605 Survey Parts",
                 "value": 160
               }
             ],
@@ -2783,52 +2729,6 @@
               "value": 833
             }
           ]
-        },
-        {
-          "name": "Mining Laser",
-          "additional_info": {
-            "mining_laser_info": {
-              "mining_bonus": 645
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 2,
-                "rarity": "uncommon",
-                "value": 275
-              }
-            ],
-            "others": [
-              {
-                "type": "2\u2605\u00a0Survey\u00a0Parts",
-                "value": 475
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 230000
-              },
-              {
-                "type": "dilithium",
-                "value": 34500
-              }
-            ]
-          },
-          "img_url": "./assets/component_mining_laser.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3223
-            },
-            {
-              "type": "dilithium",
-              "value": 1041
-            }
-          ]
         }
       ],
       "levels": [
@@ -2840,11 +2740,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 415651
-              },
-              {
-                "type": "dilithium",
-                "value": 30652
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2883,12 +2779,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 40
+                "type": "Ship XP",
+                "value": 5180
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 5180
+                "type": "3\u2605 Survey Parts",
+                "value": 40
               }
             ],
             "scrap_time": 212640
@@ -2903,11 +2799,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 415651
-              },
-              {
-                "type": "dilithium",
-                "value": 30652
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -2946,12 +2838,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 44
+                "type": "Ship XP",
+                "value": 5780
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 5780
+                "type": "3\u2605 Survey Parts",
+                "value": 44
               }
             ],
             "scrap_time": 212640
@@ -2966,11 +2858,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 415651
-              },
-              {
-                "type": "dilithium",
-                "value": 30652
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -3009,12 +2897,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 51
+                "type": "Ship XP",
+                "value": 6380
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 6380
+                "type": "3\u2605 Survey Parts",
+                "value": 51
               }
             ],
             "scrap_time": 212640
@@ -3029,11 +2917,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 415651
-              },
-              {
-                "type": "dilithium",
-                "value": 30652
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -3072,12 +2956,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 61
+                "type": "Ship XP",
+                "value": 7017
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 7017
+                "type": "3\u2605 Survey Parts",
+                "value": 61
               }
             ],
             "scrap_time": 212640
@@ -3092,11 +2976,7 @@
             "rewards": [
               {
                 "type": "tritanium",
-                "value": 415651
-              },
-              {
-                "type": "dilithium",
-                "value": 30652
+                "value": 8400
               },
               {
                 "type": "crystal",
@@ -3135,12 +3015,12 @@
                 "value": 1
               },
               {
-                "type": "3\u2605\u00a0Survey\u00a0Parts",
-                "value": 74
+                "type": "Ship XP",
+                "value": 7767
               },
               {
-                "type": "Ship\u00a0XP",
-                "value": 7767
+                "type": "3\u2605 Survey Parts",
+                "value": 74
               }
             ],
             "scrap_time": 212640

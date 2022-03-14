@@ -23,7 +23,7 @@
     "percentage": true
   },
   "ship_class": "interceptor",
-  "ship_name": "vi'dar",
+  "ship_name": "VI'DAR",
   "tiers": [
     {
       "build_time": 882000,
@@ -63,6 +63,40 @@
           "repair_cost": []
         },
         {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 256,
+              "armor_pierce": 1536,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 4620,
+              "min_damage": 3780,
+              "shield_pierce": 256,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [],
+            "others": [],
+            "resources": []
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
+          "quantity": 1,
+          "repair_cost": []
+        },
+        {
           "name": "Railgun",
           "additional_info": {
             "weapons_info": {
@@ -83,40 +117,6 @@
               ],
               "max_damage": 17822,
               "min_damage": 14581,
-              "shield_pierce": 256,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [],
-            "others": [],
-            "resources": []
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": []
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 256,
-              "armor_pierce": 1536,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 4620,
-              "min_damage": 3780,
               "shield_pierce": 256,
               "weapon_type": "kinetic"
             }
@@ -153,7 +153,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 25,
               "warp_speed": 2.4
             }
@@ -201,7 +200,7 @@
       },
       "levels": [
         {
-          "ability_bonus": 240,
+          "ability_bonus": 240.0,
           "additional_officer_slot": false,
           "level": 1,
           "ship_xp": 0
@@ -213,7 +212,7 @@
           "ship_xp": 800
         },
         {
-          "ability_bonus": 245,
+          "ability_bonus": 245.0,
           "additional_officer_slot": false,
           "level": 3,
           "ship_xp": 1000
@@ -225,8 +224,8 @@
           "ship_xp": 1400
         },
         {
-          "ability_bonus": 250,
-          "additional_officer_slot": false,
+          "ability_bonus": 250.0,
+          "additional_officer_slot": true,
           "level": 5,
           "ship_xp": 1700
         }
@@ -279,11 +278,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 69
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 40
               }
             ],
@@ -299,6 +298,80 @@
             ]
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 2656
+            },
+            {
+              "type": "dilithium",
+              "value": 27
+            }
+          ]
+        },
+        {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 321,
+              "armor_pierce": 5065,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 5230,
+              "min_damage": 4279,
+              "shield_pierce": 333,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "common",
+                "value": 109
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "common",
+                "value": 25
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 158
+              },
+              {
+                "type": "Charged Nanoprobe",
+                "value": 90
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 378767
+              },
+              {
+                "type": "dilithium",
+                "value": 47346
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": [
             {
@@ -353,11 +426,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 217
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 125
               }
             ],
@@ -369,80 +442,6 @@
               {
                 "type": "dilithium",
                 "value": 65098
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 2656
-            },
-            {
-              "type": "dilithium",
-              "value": 27
-            }
-          ]
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 321,
-              "armor_pierce": 5065,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 5230,
-              "min_damage": 4279,
-              "shield_pierce": 333,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "common",
-                "value": 109
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "common",
-                "value": 25
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-                "value": 158
-              },
-              {
-                "type": "Charged\u00a0Nanoprobe",
-                "value": 90
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 378767
-              },
-              {
-                "type": "dilithium",
-                "value": 47346
               }
             ]
           },
@@ -486,11 +485,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 59
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 35
               }
             ],
@@ -522,7 +521,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 27,
               "warp_speed": 2.5
             }
@@ -544,11 +542,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 30
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 15
               }
             ],
@@ -601,11 +599,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 59
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 35
               }
             ],
@@ -642,7 +640,7 @@
           "ship_xp": 2400
         },
         {
-          "ability_bonus": 255,
+          "ability_bonus": 255.0,
           "additional_officer_slot": false,
           "level": 7,
           "ship_xp": 2900
@@ -654,14 +652,14 @@
           "ship_xp": 3900
         },
         {
-          "ability_bonus": 260,
+          "ability_bonus": 260.0,
           "additional_officer_slot": false,
           "level": 9,
           "ship_xp": 4600
         },
         {
           "ability_bonus": 262.5,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 10,
           "ship_xp": 6000
         }
@@ -714,11 +712,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 98
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 195
               }
             ],
@@ -734,6 +732,80 @@
             ]
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 3776
+            },
+            {
+              "type": "dilithium",
+              "value": 48
+            }
+          ]
+        },
+        {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 403,
+              "armor_pierce": 5666,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 5920,
+              "min_damage": 4844,
+              "shield_pierce": 433,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 57
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 13
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 225
+              },
+              {
+                "type": "Charged Nanoprobe",
+                "value": 450
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 787598
+              },
+              {
+                "type": "dilithium",
+                "value": 67508
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": [
             {
@@ -788,11 +860,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 309
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 620
               }
             ],
@@ -804,80 +876,6 @@
               {
                 "type": "dilithium",
                 "value": 92821
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 3776
-            },
-            {
-              "type": "dilithium",
-              "value": 48
-            }
-          ]
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 403,
-              "armor_pierce": 5666,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 5920,
-              "min_damage": 4844,
-              "shield_pierce": 433,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 57
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 13
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-                "value": 225
-              },
-              {
-                "type": "Charged\u00a0Nanoprobe",
-                "value": 450
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 787598
-              },
-              {
-                "type": "dilithium",
-                "value": 67508
               }
             ]
           },
@@ -921,11 +919,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 84
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 170
               }
             ],
@@ -957,7 +955,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 29,
               "warp_speed": 2.6
             }
@@ -979,11 +976,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 42
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 85
               }
             ],
@@ -1036,11 +1033,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 84
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 170
               }
             ],
@@ -1071,7 +1068,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 265,
+          "ability_bonus": 265.0,
           "additional_officer_slot": false,
           "level": 11,
           "ship_xp": 7000
@@ -1083,7 +1080,7 @@
           "ship_xp": 8500
         },
         {
-          "ability_bonus": 270,
+          "ability_bonus": 270.0,
           "additional_officer_slot": false,
           "level": 13,
           "ship_xp": 9500
@@ -1095,7 +1092,7 @@
           "ship_xp": 11000
         },
         {
-          "ability_bonus": 275,
+          "ability_bonus": 275.0,
           "additional_officer_slot": false,
           "level": 15,
           "ship_xp": 13500
@@ -1149,11 +1146,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 138
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 885
               }
             ],
@@ -1169,6 +1166,80 @@
             ]
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 5568
+            },
+            {
+              "type": "dilithium",
+              "value": 102
+            }
+          ]
+        },
+        {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 505,
+              "armor_pierce": 7129,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 6702,
+              "min_damage": 5483,
+              "shield_pierce": 563,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 68
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 16
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 317
+              },
+              {
+                "type": "Charged Nanoprobe",
+                "value": 2025
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 1267092
+              },
+              {
+                "type": "dilithium",
+                "value": 95032
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": [
             {
@@ -1223,11 +1294,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 436
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 2790
               }
             ],
@@ -1239,80 +1310,6 @@
               {
                 "type": "dilithium",
                 "value": 130664
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 5568
-            },
-            {
-              "type": "dilithium",
-              "value": 102
-            }
-          ]
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 505,
-              "armor_pierce": 7129,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 6702,
-              "min_damage": 5483,
-              "shield_pierce": 563,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 68
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 16
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-                "value": 317
-              },
-              {
-                "type": "Charged\u00a0Nanoprobe",
-                "value": 2025
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 1267092
-              },
-              {
-                "type": "dilithium",
-                "value": 95032
               }
             ]
           },
@@ -1356,11 +1353,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 119
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 760
               }
             ],
@@ -1392,7 +1389,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 31,
               "warp_speed": 2.7
             }
@@ -1414,11 +1410,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 59
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 380
               }
             ],
@@ -1471,11 +1467,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 119
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 760
               }
             ],
@@ -1512,7 +1508,7 @@
           "ship_xp": 15000
         },
         {
-          "ability_bonus": 280,
+          "ability_bonus": 280.0,
           "additional_officer_slot": false,
           "level": 17,
           "ship_xp": 17500
@@ -1524,14 +1520,14 @@
           "ship_xp": 19500
         },
         {
-          "ability_bonus": 285,
+          "ability_bonus": 285.0,
           "additional_officer_slot": false,
           "level": 19,
           "ship_xp": 23000
         },
         {
           "ability_bonus": 287.5,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 20,
           "ship_xp": 25000
         }
@@ -1584,11 +1580,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 193
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 2805
               }
             ],
@@ -1604,6 +1600,80 @@
             ]
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 9216
+            },
+            {
+              "type": "dilithium",
+              "value": 179
+            }
+          ]
+        },
+        {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 633,
+              "armor_pierce": 7200,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 7586,
+              "min_damage": 6207,
+              "shield_pierce": 732,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 84
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "uncommon",
+                "value": 19
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 442
+              },
+              {
+                "type": "Charged Nanoprobe",
+                "value": 6410
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 2652732
+              },
+              {
+                "type": "dilithium",
+                "value": 132637
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": [
             {
@@ -1658,11 +1728,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 608
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 8815
               }
             ],
@@ -1674,80 +1744,6 @@
               {
                 "type": "dilithium",
                 "value": 182369
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 9216
-            },
-            {
-              "type": "dilithium",
-              "value": 179
-            }
-          ]
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 633,
-              "armor_pierce": 7200,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 7586,
-              "min_damage": 6207,
-              "shield_pierce": 732,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 84
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "uncommon",
-                "value": 19
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-                "value": 442
-              },
-              {
-                "type": "Charged\u00a0Nanoprobe",
-                "value": 6410
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 2652732
-              },
-              {
-                "type": "dilithium",
-                "value": 132637
               }
             ]
           },
@@ -1791,11 +1787,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 166
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 2405
               }
             ],
@@ -1827,7 +1823,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 33,
               "warp_speed": 2.8
             }
@@ -1849,11 +1844,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 83
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 1200
               }
             ],
@@ -1906,11 +1901,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 166
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 2405
               }
             ],
@@ -1941,7 +1936,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 290,
+          "ability_bonus": 290.0,
           "additional_officer_slot": false,
           "level": 21,
           "ship_xp": 29000
@@ -1953,7 +1948,7 @@
           "ship_xp": 31500
         },
         {
-          "ability_bonus": 295,
+          "ability_bonus": 295.0,
           "additional_officer_slot": false,
           "level": 23,
           "ship_xp": 36000
@@ -1965,7 +1960,7 @@
           "ship_xp": 39000
         },
         {
-          "ability_bonus": 300,
+          "ability_bonus": 300.0,
           "additional_officer_slot": false,
           "level": 25,
           "ship_xp": 42000
@@ -2019,11 +2014,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 268
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 8315
               }
             ],
@@ -2052,7 +2047,7 @@
           ]
         },
         {
-          "name": "Photon Torpedo",
+          "name": "Photon Torpedoes",
           "additional_info": {
             "weapons_info": {
               "accuracy": 794,
@@ -2093,11 +2088,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 613
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 19015
               }
             ],
@@ -2167,11 +2162,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 843
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 26145
               }
             ],
@@ -2226,11 +2221,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 230
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 7130
               }
             ],
@@ -2262,7 +2257,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 35,
               "warp_speed": 2.9
             }
@@ -2284,11 +2278,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 115
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 3565
               }
             ],
@@ -2341,11 +2335,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 230
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 7130
               }
             ],
@@ -2382,7 +2376,7 @@
           "ship_xp": 47000
         },
         {
-          "ability_bonus": 305,
+          "ability_bonus": 305.0,
           "additional_officer_slot": false,
           "level": 27,
           "ship_xp": 51000
@@ -2394,14 +2388,14 @@
           "ship_xp": 57000
         },
         {
-          "ability_bonus": 310,
+          "ability_bonus": 310.0,
           "additional_officer_slot": false,
           "level": 29,
           "ship_xp": 61000
         },
         {
           "ability_bonus": 312.5,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 30,
           "ship_xp": 69000
         }
@@ -2454,11 +2448,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 371
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 17785
               }
             ],
@@ -2474,6 +2468,80 @@
             ]
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 23936
+            },
+            {
+              "type": "dilithium",
+              "value": 499
+            }
+          ]
+        },
+        {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 996,
+              "armor_pierce": 7638,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 9721,
+              "min_damage": 7953,
+              "shield_pierce": 1238,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 20
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 4
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 848
+              },
+              {
+                "type": "Charged Nanoprobe",
+                "value": 40680
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 8475059
+              },
+              {
+                "type": "dilithium",
+                "value": 254252
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": [
             {
@@ -2528,11 +2596,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 1165
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 55935
               }
             ],
@@ -2544,80 +2612,6 @@
               {
                 "type": "dilithium",
                 "value": 349584
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 23936
-            },
-            {
-              "type": "dilithium",
-              "value": 499
-            }
-          ]
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 996,
-              "armor_pierce": 7638,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 9721,
-              "min_damage": 7953,
-              "shield_pierce": 1238,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 20
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 4
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-                "value": 848
-              },
-              {
-                "type": "Charged\u00a0Nanoprobe",
-                "value": 40680
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 8475059
-              },
-              {
-                "type": "dilithium",
-                "value": 254252
               }
             ]
           },
@@ -2661,11 +2655,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 318
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 15255
               }
             ],
@@ -2697,9 +2691,8 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 37,
-              "warp_speed": 3
+              "warp_speed": 3.0
             }
           },
           "build_cost": {
@@ -2719,11 +2712,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 159
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 7625
               }
             ],
@@ -2776,11 +2769,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 318
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 15255
               }
             ],
@@ -2811,7 +2804,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 315,
+          "ability_bonus": 315.0,
           "additional_officer_slot": false,
           "level": 31,
           "ship_xp": 72000
@@ -2823,7 +2816,7 @@
           "ship_xp": 81000
         },
         {
-          "ability_bonus": 320,
+          "ability_bonus": 320.0,
           "additional_officer_slot": false,
           "level": 33,
           "ship_xp": 86000
@@ -2835,8 +2828,8 @@
           "ship_xp": 95000
         },
         {
-          "ability_bonus": 325,
-          "additional_officer_slot": false,
+          "ability_bonus": 325.0,
+          "additional_officer_slot": true,
           "level": 35,
           "ship_xp": 100000
         }
@@ -2889,11 +2882,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 510
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 33165
               }
             ],
@@ -2909,6 +2902,80 @@
             ]
           },
           "img_url": "./assets/component_weapon_energy.png",
+          "quantity": 1,
+          "repair_cost": [
+            {
+              "type": "tritanium",
+              "value": 38656
+            },
+            {
+              "type": "dilithium",
+              "value": 859
+            }
+          ]
+        },
+        {
+          "name": "Photon Torpedoes",
+          "additional_info": {
+            "weapons_info": {
+              "accuracy": 1249,
+              "armor_pierce": 12960,
+              "crit_chance": 0.1,
+              "crit_damage": 1.5,
+              "firing_pattern": [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "max_damage": 11003,
+              "min_damage": 9003,
+              "shield_pierce": 1609,
+              "weapon_type": "kinetic"
+            }
+          },
+          "build_cost": {
+            "materials": [
+              {
+                "type": "crystal",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 24
+              },
+              {
+                "type": "gas",
+                "grade": 3,
+                "rarity": "rare",
+                "value": 6
+              }
+            ],
+            "others": [
+              {
+                "type": "3\u2605 Interceptor Parts",
+                "value": 1167
+              },
+              {
+                "type": "Charged Nanoprobe",
+                "value": 75855
+              }
+            ],
+            "resources": [
+              {
+                "type": "tritanium",
+                "value": 16338175
+              },
+              {
+                "type": "dilithium",
+                "value": 466805
+              }
+            ]
+          },
+          "img_url": "./assets/component_weapon_kinetic.png",
           "quantity": 1,
           "repair_cost": [
             {
@@ -2963,11 +3030,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 1605
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 104300
               }
             ],
@@ -2979,80 +3046,6 @@
               {
                 "type": "dilithium",
                 "value": 641835
-              }
-            ]
-          },
-          "img_url": "./assets/component_weapon_kinetic.png",
-          "quantity": 1,
-          "repair_cost": [
-            {
-              "type": "tritanium",
-              "value": 38656
-            },
-            {
-              "type": "dilithium",
-              "value": 859
-            }
-          ]
-        },
-        {
-          "name": "Photon Torpedo",
-          "additional_info": {
-            "weapons_info": {
-              "accuracy": 1249,
-              "armor_pierce": 12960,
-              "crit_chance": 0.1,
-              "crit_damage": 1.5,
-              "firing_pattern": [
-                0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
-              ],
-              "max_damage": 11003,
-              "min_damage": 9003,
-              "shield_pierce": 1609,
-              "weapon_type": "kinetic"
-            }
-          },
-          "build_cost": {
-            "materials": [
-              {
-                "type": "crystal",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 24
-              },
-              {
-                "type": "gas",
-                "grade": 3,
-                "rarity": "rare",
-                "value": 6
-              }
-            ],
-            "others": [
-              {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
-                "value": 1167
-              },
-              {
-                "type": "Charged\u00a0Nanoprobe",
-                "value": 75855
-              }
-            ],
-            "resources": [
-              {
-                "type": "tritanium",
-                "value": 16338175
-              },
-              {
-                "type": "dilithium",
-                "value": 466805
               }
             ]
           },
@@ -3096,11 +3089,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 438
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 28440
               }
             ],
@@ -3132,7 +3125,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 39,
               "warp_speed": 3.1
             }
@@ -3154,11 +3146,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 219
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 14220
               }
             ],
@@ -3211,11 +3203,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 438
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 28440
               }
             ],
@@ -3252,7 +3244,7 @@
           "ship_xp": 105000
         },
         {
-          "ability_bonus": 330,
+          "ability_bonus": 330.0,
           "additional_officer_slot": false,
           "level": 37,
           "ship_xp": 116000
@@ -3264,14 +3256,14 @@
           "ship_xp": 122000
         },
         {
-          "ability_bonus": 335,
+          "ability_bonus": 335.0,
           "additional_officer_slot": false,
           "level": 39,
           "ship_xp": 134000
         },
         {
           "ability_bonus": 337.5,
-          "additional_officer_slot": false,
+          "additional_officer_slot": true,
           "level": 40,
           "ship_xp": 140000
         }
@@ -3324,11 +3316,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 684
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 77285
               }
             ],
@@ -3357,7 +3349,7 @@
           ]
         },
         {
-          "name": "Photon Torpedo",
+          "name": "Photon Torpedoes",
           "additional_info": {
             "weapons_info": {
               "accuracy": 1566,
@@ -3398,11 +3390,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 1564
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 176775
               }
             ],
@@ -3472,11 +3464,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 2151
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 243060
               }
             ],
@@ -3531,11 +3523,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 587
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 66285
               }
             ],
@@ -3567,7 +3559,6 @@
           "name": "Warp Engines",
           "additional_info": {
             "warp_info": {
-              "impulse_speed": 120,
               "warp_distance": 41,
               "warp_speed": 3.2
             }
@@ -3589,11 +3580,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 293
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 33140
               }
             ],
@@ -3646,11 +3637,11 @@
             ],
             "others": [
               {
-                "type": "3\u2605\u00a0Interceptor\u00a0Parts",
+                "type": "3\u2605 Interceptor Parts",
                 "value": 587
               },
               {
-                "type": "Charged\u00a0Nanoprobe",
+                "type": "Charged Nanoprobe",
                 "value": 66285
               }
             ],
@@ -3681,7 +3672,7 @@
       ],
       "levels": [
         {
-          "ability_bonus": 340,
+          "ability_bonus": 340.0,
           "additional_officer_slot": false,
           "level": 41,
           "ship_xp": 154000
@@ -3693,7 +3684,7 @@
           "ship_xp": 161000
         },
         {
-          "ability_bonus": 345,
+          "ability_bonus": 345.0,
           "additional_officer_slot": false,
           "level": 43,
           "ship_xp": 176000
@@ -3705,8 +3696,8 @@
           "ship_xp": 183000
         },
         {
-          "ability_bonus": 350,
-          "additional_officer_slot": false,
+          "ability_bonus": 350.0,
+          "additional_officer_slot": true,
           "level": 45,
           "ship_xp": 200000
         }
