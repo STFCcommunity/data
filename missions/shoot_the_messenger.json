@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "Shoot the Messenger",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/enter_the_man"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Pursue the fanatics to LSP-539.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 45 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 45 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Travel to the next system.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Fanatic Messenger.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/perralon_472_44",
+        "task_title": "Destroy Fanatic Messenger",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/misappropriation"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 7560000
+      }
+    ]
+  },
+  "storyline": "Defend your Station from the fanatics."
+}

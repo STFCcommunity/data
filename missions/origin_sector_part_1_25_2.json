@@ -1,0 +1,68 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Origin Sector - Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/origin_sector_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the Corvallen distress call.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tola_beta_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Tholian weapon systems.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tola_beta_17",
+        "task_title": "Destroy Tholians",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Transport the Corvallen to his outpost.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tola_beta_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to the mining system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vemmi_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 25 Raw Isogen.",
+      "id": 5,
+      "task": {
+        "resource": "1\u21f4 raw isogen",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 25
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 raw isogen",
+        "value": 2000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Begin your adventures within the Origin Sector."
+}

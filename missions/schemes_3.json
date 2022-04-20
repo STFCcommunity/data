@@ -1,0 +1,90 @@
+{
+  "faction": "neutral",
+  "mission_name": "Schemes",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/crosshairs"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Travel to the Federation outpost.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "What is your purpose here?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Tell the outpost that you are spying for the Klingons."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Lie about your intentions."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to the Station with your scans.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "next gen riker",
+            "value": 3
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 100
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to the Station with your scans.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "next gen la forge",
+            "value": 3
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 100
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/recruitment_drive"
+  },
+  "recommended_level": 3,
+  "storyline": "Help the Klingons spy on a Federation outpost."
+}

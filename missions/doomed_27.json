@@ -1,0 +1,73 @@
+{
+  "faction": "federation",
+  "mission_name": "Doomed",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/intention_and_action"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Approach the scientists' location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/strezhi_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan guard.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/strezhi_26",
+        "task_title": "Destroy Romulan Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the scientists back to Federation space.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/knowledge_as_a_virtue"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation points",
+        "value": 8000
+      },
+      {
+        "type": "romulan points",
+        "value": -1700
+      },
+      {
+        "type": "klingon points",
+        "value": -7800
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 160
+      }
+    ]
+  },
+  "storyline": "Rescue the Starfleet scientists."
+}

@@ -1,0 +1,69 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "A Sleeping Giant",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/hold_fast"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Get to Ro's Base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "planet": "verna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Get to Goon's Base.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/valance_28",
+        "planet": "confa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 28 or Higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 28 or Higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 day peace shield",
+        "value": 1
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 23
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 244000
+      }
+    ]
+  },
+  "storyline": "Defend the Outlaw bases from Eclipse."
+}

@@ -1,0 +1,151 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Homefront",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_parent_of_fear"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring the spy to a Vulcan base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "ket-cheleb",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 450,000 Dilithium to stop the chain reaction.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 450000
+      }
+    },
+    {
+      "title": "Bring survivors to Hann.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with a hacking expert.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vemet_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 2,800 Inert Nanoprobes.",
+      "id": 5,
+      "task": {
+        "resource": "inert nanoprobe",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2800
+      }
+    },
+    {
+      "title": "Donate 2800 Inert Nanoprobes.",
+      "id": 6,
+      "task": {
+        "resource": "inert nanoprobe",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2800
+      }
+    },
+    {
+      "title": "Decide what to do with the information.",
+      "id": 7,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Give it to the Vulcans."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Hide it from the Vulcans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to the Vulcan base.",
+      "id": 8,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 21
+          }
+        ],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 500
+          },
+          {
+            "type": "latinum",
+            "value": 30
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "ket-cheleb",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Vulcan base.",
+      "id": 8,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 21
+          }
+        ],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 30
+          },
+          {
+            "type": "premium recruit token",
+            "value": 150
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "planet": "ket-cheleb",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/we_do_what_we_must"
+  },
+  "storyline": "Transport your prisoner to a Vulcan base."
+}

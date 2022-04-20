@@ -1,0 +1,47 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/rator_29"
+    }
+  ],
+  "mission_name": "Power Drilling",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Defeat the mine\u2019s Security Vessel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "task_title": "Destroy Mining Security Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Mine 15,000 Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 15000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "encryption key",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 250000
+      }
+    ]
+  },
+  "storyline": "Mine a huge amount of Dilithium."
+}

@@ -1,0 +1,73 @@
+{
+  "faction": "neutral",
+  "mission_name": "Bloodthirst",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/illogical_behaviour"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Klingon space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ja_corash_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the Klingon station.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Hunter.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_title": "Destroy Klingon Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the signal.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/toh_kaht_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/toh_kaht_43",
+        "task_title": "Destroy Naren",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/wrong_foot_forward"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour repair speed up",
+        "value": 7
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 10890000
+      }
+    ]
+  },
+  "storyline": "Investigate Klingon space for evidence of Vulcan attacks."
+}

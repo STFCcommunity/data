@@ -1,0 +1,65 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Tribble Me This Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/tribble_me_this_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find flora samples for Spock.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "luna orionis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find fauna samples for Spock.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/tellun_7",
+        "planet": "elas",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find a live test subject.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/cymon_2",
+        "planet": "catilis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 11,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute speed up",
+        "value": 11
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 70
+      }
+    ]
+  },
+  "storyline": "Gather samples of local flora and fauna for Spock."
+}

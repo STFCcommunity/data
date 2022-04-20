@@ -1,0 +1,90 @@
+{
+  "faction": "romulan",
+  "mission_name": "Support of the Empire",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Arrange a deal with the Tal Shiar on Terixos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/terix_38",
+        "planet": "terixos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the hostile ships in the Yadalla system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/yadalla_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles of level 30 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 8 hostiles of level 30 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Operative Menra on Terixos.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/terix_38",
+        "planet": "terixos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide the Tal Shiar with a down payment of 10,000,000 Parsteel.",
+      "id": 5,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/for_the_greater_good"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 27
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 3
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 230
+      },
+      {
+        "type": "federation points",
+        "value": -7000
+      },
+      {
+        "type": "romulan points",
+        "value": 10000
+      },
+      {
+        "type": "klingon points",
+        "value": -4600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Establish a supply line from Romulus to Galorndon Core to bring strength to the Suliban fleets."
+}

@@ -1,0 +1,75 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Academy Dropout",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_chancellor_s_daughter"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the source of Gonzales\u2019 transmission.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/benes_gamma_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 Borg hostiles in Benes Gamma.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 8 Borg hostiles in Benes Gamma.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Find Gonzales in orbit over Tebik.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/benes_gamma_27",
+        "planet": "tebik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Gonzales\u2019 vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/benes_gamma_27",
+        "task_title": "Destroy Gonzales",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the cadets to Jihao.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lainey_27",
+        "planet": "jihao",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cold_and_hunted"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 37
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 80000
+      }
+    ]
+  },
+  "storyline": "Join the Starfleet Academy cadets on a mission to retrieve Lucia Gonzales from the Borg."
+}

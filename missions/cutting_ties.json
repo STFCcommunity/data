@@ -1,0 +1,135 @@
+{
+  "faction": "romulan",
+  "mission_name": "Cutting Ties",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/chaos_and_consequence"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Romulan Detention Center in Sufiday.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill or try to free the data forger.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Kill the data forger."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Try to help the data forger escape."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Draken I.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 130
+          },
+          {
+            "type": "federation points",
+            "value": -1200
+          },
+          {
+            "type": "romulan points",
+            "value": 2000
+          },
+          {
+            "type": "klingon points",
+            "value": -800
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 427000
+          },
+          {
+            "type": "tritanium",
+            "value": 63000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the guard ship.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_title": "Destroy Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Draken I.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "common",
+            "value": 1200
+          }
+        ],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 130
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 110
+          },
+          {
+            "type": "federation points",
+            "value": -1200
+          },
+          {
+            "type": "romulan points",
+            "value": 2000
+          },
+          {
+            "type": "klingon points",
+            "value": -800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken i",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_death_of_innocence"
+  },
+  "storyline": "Tie up the final loose end."
+}

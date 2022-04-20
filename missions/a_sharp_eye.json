@@ -1,0 +1,87 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/krahhor_18"
+    }
+  ],
+  "mission_name": "A Sharp Eye",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Locate the target on Lorillia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "lorillia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 7 hostiles in Lorillia.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 7 hostiles in Lorillia.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the IRW Viribus.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy IRW Viribus",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the IRW Superbia.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy IRW Superbia",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Krah\u2019Hor.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "alliance event trophy",
+        "value": 3
+      },
+      {
+        "type": "north star blueprint part",
+        "value": 3
+      },
+      {
+        "type": "federation points",
+        "value": -19
+      },
+      {
+        "type": "romulan points",
+        "value": -51
+      },
+      {
+        "type": "klingon points",
+        "value": 80
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 35000
+      }
+    ]
+  },
+  "storyline": "Capture a Starfleet officer to gain information on Federation activity."
+}

@@ -1,0 +1,80 @@
+{
+  "faction": "klingon",
+  "mission_name": "Honor Your Word",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/pledge_of_loyalty"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Kang on Kronos.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Travel to Arkonian Space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ja_corash_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Explorer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ja_corash_40",
+        "task_title": "Destroy Arkonian Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to B\u2019Oh for answers.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/b_oh_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 260
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 500
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 370
+      },
+      {
+        "type": "federation points",
+        "value": -86400
+      },
+      {
+        "type": "romulan points",
+        "value": -230400
+      },
+      {
+        "type": "klingon points",
+        "value": 180000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Ensure the Arkonian Oligarchy\u2019s loyalty to the Klingon Empire."
+}

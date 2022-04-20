@@ -1,0 +1,163 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/woxoxit_22"
+    },
+    {
+      "$ref": "systems/bazamex_24"
+    },
+    {
+      "$ref": "systems/loiat_24"
+    },
+    {
+      "$ref": "systems/metea_24"
+    },
+    {
+      "$ref": "systems/nipaj_24"
+    },
+    {
+      "$ref": "systems/vosak_24"
+    },
+    {
+      "$ref": "systems/wauoxic_24"
+    },
+    {
+      "$ref": "systems/loaiy_25"
+    },
+    {
+      "$ref": "systems/mapic_25"
+    }
+  ],
+  "mission_name": "Red Jack",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Take Oleanna to Rigel IV.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel iv",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 13 Hostiles in Rigel.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 13 Hostiles in Rigel.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow Red Jack's trail to Risa.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/risa_7",
+        "planet": "risa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe the Syndicate mobster.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 350000
+      }
+    },
+    {
+      "title": "Track Red Jack to Draken.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken iii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose a side.",
+      "id": 6,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Side with Red Jack."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Refuse Red Jack's offer."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Disable Oleanna's cruiser.",
+      "id": 7,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_title": "Destroy Oleanna's Cruiser",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Pick up the cache of Dilithium on Lacus S19.",
+      "id": 8,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 12000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/zehoro_11",
+        "planet": "lacus s19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Red Jack's Interceptor.",
+      "id": 7,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/draken_23",
+        "task_title": "Destroy Red Jack's Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take Red Jack to the containment facility on Youok.",
+      "id": 8,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 34000
+          },
+          {
+            "type": "premium recruit token",
+            "value": 300
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/coth_7",
+        "planet": "youok",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Oleanna needs help tracking down a notorious serial killer."
+}

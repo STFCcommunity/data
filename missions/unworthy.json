@@ -1,0 +1,74 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/dderidex_38"
+    }
+  ],
+  "mission_name": "Unworthy",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/the_pantheon"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Fly to the hostile Belak system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/belak_39",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy 5 hostile ships of level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Destroy 5 hostile ships of level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Crush the Rebellion Leader.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/belak_39",
+        "task_title": "Destroy Belak Rebel Leader",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan recruit token",
+        "value": 1000
+      },
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -98400
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -65600
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 814000
+      }
+    ]
+  },
+  "storyline": "Help with the shutdown of an uprising on a colony within Romulan territory."
+}

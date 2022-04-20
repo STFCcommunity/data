@@ -1,0 +1,62 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/labac_17"
+    }
+  ],
+  "mission_name": "Work Ethic",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the Federation scientist in Opla.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles in Opla.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles in Opla.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Donate 10,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Return Doctor Jenson to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "next gen crusher",
+        "value": 3
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 14000
+      }
+    ]
+  },
+  "storyline": "Find and extract a Federation scientist working in a dangerous area."
+}

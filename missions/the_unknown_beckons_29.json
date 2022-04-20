@@ -1,0 +1,63 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "The Unknown Beckons",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/house_of_mirrors"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Venture into Eclipse Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/resara_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse Ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/resara_30",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rescue Navi and Ahvix.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/resara_30",
+        "planet": "jalevan",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fallen"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 34
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 12
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 25000
+      }
+    ]
+  },
+  "storyline": "Rescue Ahvix and Navi."
+}

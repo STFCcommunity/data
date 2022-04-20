@@ -1,0 +1,74 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/thama_32"
+    }
+  ],
+  "mission_name": "Shock and Awe",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/serum"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Gradientes system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/gradientes_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles in the Gradientes system.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 Hostiles in the Gradientes system.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Admiral Johnson on Mimazub.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/thama_32",
+        "planet": "mimazub",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 300
+      },
+      {
+        "type": "3\u2605 explorer parts",
+        "value": 210
+      },
+      {
+        "type": "federation points",
+        "value": 23000
+      },
+      {
+        "type": "romulan points",
+        "value": -5900
+      },
+      {
+        "type": "klingon points",
+        "value": -26500
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 631000
+      }
+    ]
+  },
+  "storyline": "Send a message to the Romulans by launching a pre-emptive strike on Gradientes."
+}

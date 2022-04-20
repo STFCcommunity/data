@@ -11,6 +11,7 @@
     "description",
     "systems",
     "rewards",
+    "head_stats",
     "stats",
     "utility",
     "weapons"
@@ -22,6 +23,11 @@
     {
       "description": "This hostile patrols...",
       "group": "borg",
+      "head_stats": {
+        "attack": 30000,
+        "defense": 10000,
+        "health": 40000
+      },
       "hostile_name": "Borg Tactical Probe",
       "level": 30,
       "rarity": "common",
@@ -81,7 +87,6 @@
             1
           ],
           "quantity": 2,
-          "weapon_id": "E1",
           "weapon_stats": {
             "accuracy": 71402,
             "armor_pierce": 82997,
@@ -117,6 +122,51 @@
       "examples": [
         "borg"
       ]
+    },
+    "head_stats": {
+      "$id": "#/properties/head_stats",
+      "title": "The head stats schema",
+      "description": "All hostile main stats.",
+      "required": [
+        "attack",
+        "defense",
+        "health"
+      ],
+      "type": "object",
+      "additionalProperties": true,
+      "default": {},
+      "properties": {
+        "attack": {
+          "$id": "#/properties/head_stats/attack",
+          "title": "The main attack schema",
+          "description": "The total main attack stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            30000
+          ]
+        },
+        "defense": {
+          "$id": "#/properties/head_stats/defense",
+          "title": "The main defense schema",
+          "description": "The total main defense stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            10000
+          ]
+        },
+        "health": {
+          "$id": "#/properties/head_stats/health",
+          "title": "The main health schema",
+          "description": "The total main health stats.",
+          "type": "integer",
+          "default": 0,
+          "examples": [
+            40000
+          ]
+        }
+      }
     },
     "hostile_name": {
       "$id": "#/properties/hostile_name",
@@ -476,11 +526,9 @@
             "title": "The first anyOf schema",
             "description": "Single hostile weapon instance.",
             "required": [
-              "weapon_id",
               "weapon_type",
               "quantity",
-              "firing_pattern",
-              "weapon_stats"
+              "firing_pattern"
             ],
             "type": "object",
             "additionalProperties": true,
@@ -517,16 +565,6 @@
                 "default": 0,
                 "examples": [
                   2
-                ]
-              },
-              "weapon_id": {
-                "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_id",
-                "title": "The weapon_id schema",
-                "description": "Id of the weapon, for displaying purposes.",
-                "type": "string",
-                "default": "",
-                "examples": [
-                  "E1"
                 ]
               },
               "weapon_stats": {
@@ -591,7 +629,7 @@
                     "$id": "#/properties/weapons/items/anyOf/0/properties/weapon_stats/properties/damage_per_round",
                     "title": "The damage_per_round schema",
                     "description": "The damage per round of this weapon.",
-                    "type": "integer",
+                    "type": "number",
                     "default": 0,
                     "examples": [
                       1594000

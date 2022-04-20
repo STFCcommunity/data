@@ -1,0 +1,64 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Ignorance",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_target"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Search for Dalen in Romulan space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/strezhi_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 20 Hostiles of Level 24 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 20 Hostiles of Level 24 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/smokescreen"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 12
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 895000
+      }
+    ]
+  },
+  "storyline": "Continue investigation Dalen\u2019s disappearance."
+}

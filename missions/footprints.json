@@ -1,0 +1,83 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/bazamex_24"
+    },
+    {
+      "$ref": "systems/loiat_24"
+    },
+    {
+      "$ref": "systems/metea_24"
+    },
+    {
+      "$ref": "systems/nipaj_24"
+    },
+    {
+      "$ref": "systems/vosak_24"
+    },
+    {
+      "$ref": "systems/wauoxic_24"
+    },
+    {
+      "$ref": "systems/loaiy_25"
+    }
+  ],
+  "mission_name": "Footprints",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find the signal in Deneva.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the signal to Rigel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the source of the transmission at Zaurak.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Vigik.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_title": "Destroy Vigik's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 376000
+      }
+    ]
+  },
+  "storyline": "Track down an elusive criminal by following his trail of clues."
+}

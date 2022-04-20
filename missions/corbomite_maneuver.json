@@ -1,0 +1,200 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/lorillia_18"
+    }
+  ],
+  "mission_name": "Corbomite Maneuver",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/divided_attention"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate reports of aggression in Sorenle.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen ambushers.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Corvallen Ambusher",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat 8 Hostiles in Sorenle.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 8 Hostiles in Sorenle.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Investigate the hidden base or the silent colony.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Investigate the base."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Investigate the colony."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Investigate Vayuooaf.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/priya_22",
+        "planet": "vayuoaf",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Mercenary.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_title": "Destroy Corvallen Mercenary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Break the enemy\u2019s line.",
+      "id": 7,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Starbase 82.",
+      "id": 8,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "north star blueprint part",
+            "value": 2
+          },
+          {
+            "type": "federation credits",
+            "value": 40
+          },
+          {
+            "type": "alliance event trophy",
+            "value": 2
+          },
+          {
+            "type": "federation points",
+            "value": 60
+          },
+          {
+            "type": "romulan points",
+            "value": -9
+          },
+          {
+            "type": "klingon points",
+            "value": -39
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the colony in Aruna.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "planet": "ganok",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Mercenary.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "task_title": "Destroy Corvallen Mercenary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Break the enemy\u2019s line.",
+      "id": 7,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the prisoners to your Station.",
+      "id": 8,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 2,
+            "rarity": "uncommon",
+            "value": 15
+          }
+        ],
+        "others": [
+          {
+            "type": "alliance event trophy",
+            "value": 2
+          },
+          {
+            "type": "north star blueprint part",
+            "value": 2
+          },
+          {
+            "type": "federation points",
+            "value": 60
+          },
+          {
+            "type": "romulan points",
+            "value": -9
+          },
+          {
+            "type": "klingon points",
+            "value": -39
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "storyline": "Help the Enterprise investigate signs of aggression on Federation colonies."
+}

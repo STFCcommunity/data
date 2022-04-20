@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Sons of Vulcan",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/wrong_foot_forward"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Spock.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/goesting_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Spock to the Romulan colony.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the bandit.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_title": "Destroy Bandit",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Spock to the destroyed station.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/operations_43"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 129000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 63000000
+      }
+    ]
+  },
+  "storyline": "Work with Spock to investigate the Ah\u2019rak Fosh."
+}

@@ -1,0 +1,68 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/beta_assembly_25"
+    }
+  ],
+  "mission_name": "Call Your Shot",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/arbitrary_arbitration"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the General Darig.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go into Corvallen territory.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the guard ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "task_title": "Destroy Corvallen Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Sabotage the Corvallen systems.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 127000
+      }
+    ]
+  },
+  "storyline": "Help Darig sabotage Corvallen efforts."
+}

@@ -1,0 +1,69 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Bubble, Bubble, Toil and Tribble",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/big_tribble_in_little_shynna"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scan Siouxban for Tribble mutations.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rakkaus_16",
+        "planet": "siouxban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scan Yibom for Tribble mutations.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/zeta_polis_19",
+        "planet": "yibom",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scan Zopal for Tribble mutations.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/durchman_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet Shani\u2019s contact in Deneva.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/deneva_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Tribbles to Starbase 91.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/shynna_29",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tribble_threat"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 502000
+      }
+    ]
+  },
+  "storyline": "Investigate an odd Tribble mutation."
+}

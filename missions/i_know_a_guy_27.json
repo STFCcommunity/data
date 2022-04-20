@@ -1,0 +1,137 @@
+{
+  "arc": "outlaw arc 2",
+  "faction": "neutral",
+  "mission_name": "I Know A Guy...",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/breakdown"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Ro Mudd.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/d0d_g_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Eurydice's friend.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/leone_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track down the Orion Slavers.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How should we retrieve Mal?",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Pay for Mal\u2019s release."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Attack the slaver."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 12,000 Dilithium for Mal's release.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 12000
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 13
+          }
+        ],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 31
+          },
+          {
+            "type": "latinum",
+            "value": 15
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Orion Slaver.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_title": "Destroy Orion Slaver",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 645000
+          },
+          {
+            "type": "tritanium",
+            "value": 95000
+          },
+          {
+            "type": "dilithium",
+            "value": 19000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/practice_makes_perfect"
+  },
+  "recommended_level": 27,
+  "storyline": "Track down someone who can help with the bug."
+}

@@ -1,0 +1,95 @@
+{
+  "faction": "federation",
+  "mission_name": "On All Sides",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/reparations"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with a supplier in V'Varia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/v_varia_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay 16,000 Dilithium for supplies.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 16000
+      }
+    },
+    {
+      "title": "Discreetly meet the supplier in Enthra.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Klingon Hunter.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_title": "Destroy Klingon Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the stolen data to Starbase 82.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_radical_move"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 18
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "rare",
+        "value": 3
+      }
+    ],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 150
+      },
+      {
+        "type": "federation points",
+        "value": 3100
+      },
+      {
+        "type": "romulan points",
+        "value": -645
+      },
+      {
+        "type": "klingon points",
+        "value": -2900
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Gather materials for a last attempt to replicate the Mayflower's improvements."
+}

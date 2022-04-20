@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Brave New Worlds",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/deep_space"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scout a more valuable system where you can move your Station.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout another nearby system for potential base locations.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move Station to a system Level 6 or higher.",
+      "id": 4,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 6 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/multitasking"
+  },
+  "recommended_level": 5,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 230
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Move the Station to a more valuable strategic position."
+}

@@ -1,0 +1,66 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "To Forgive is Divine",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_fate_of_the_broken"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat Borg ship in your system.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Meet with the Starfleet Officer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Admiral Hoss.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/aruna_21",
+        "task_title": "Destroy Admiral Hoss' Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/to_err_is_human"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 interceptor parts",
+        "value": 170
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 26000
+      }
+    ]
+  },
+  "storyline": "Deal with Starfleet\u2019s interference."
+}

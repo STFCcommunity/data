@@ -1,0 +1,75 @@
+{
+  "faction": "romulan",
+  "mission_name": "Last of the Giants",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/in_sheep_s_clothing"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Suliban Nomads in Galorndon Core.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Capture Olin Fram.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "task_title": "Destroy Olin Fram",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring Olin Fram to Candor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "planet": "candor",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fake_empire"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 12
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 34
+      },
+      {
+        "type": "federation points",
+        "value": -91200
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -60800
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Assassinate the leader of the Candori Rebels."
+}

@@ -1,0 +1,65 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Two Sides of the Coin",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/perception_and_reality"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Speak with the Romulans.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Romulan Officer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sufiday_25",
+        "task_title": "Destroy Romulan Guard Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Appeal to Starfleet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/doska_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/unflinching"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m parsteel token",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 866000
+      }
+    ]
+  },
+  "storyline": "Rally the factions against the Borg."
+}

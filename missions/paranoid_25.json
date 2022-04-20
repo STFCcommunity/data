@@ -1,0 +1,81 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/beta_assembly_25"
+    }
+  ],
+  "mission_name": "Paranoid",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/double_take"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/amagi_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Suliban ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/amagi_23",
+        "task_title": "Destroy Suliban Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Find the Corvallen ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rosec_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rosec_22",
+        "task_title": "Destroy Corvallen Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 15
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 400000
+      },
+      {
+        "type": "dilithium",
+        "value": 13000
+      }
+    ]
+  },
+  "storyline": "Investigate the Suliban\u2019s claims."
+}

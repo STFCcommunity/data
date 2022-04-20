@@ -1,0 +1,64 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "A Rude Awakening Part 1",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_rude_awakening_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the report.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bor_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/bor_38",
+        "task_title": "Destroy Klingon Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Speak with the civilians.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/bor_38",
+        "planet": "requh",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "tos james t. kirk",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 619000
+      }
+    ]
+  },
+  "storyline": "Investigate the Klingon target."
+}

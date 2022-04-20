@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Center of the Universe",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/uncommon_tongue"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 15 hostiles of Level 38 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 38 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Try to communicate with the crucible.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "planet": "firenze",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the mercenary.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/awakening"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 13
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 37260000
+      }
+    ]
+  },
+  "storyline": "Find a way to communicate with the Crucible."
+}

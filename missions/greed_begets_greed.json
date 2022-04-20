@@ -1,0 +1,138 @@
+{
+  "faction": "federation",
+  "mission_name": "Greed Begets Greed",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/under_wraps"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Orion Underboss in Kepler-018.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Enforcer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_title": "Destroy Orion Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Disable the Underboss' vessel.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_title": "Destroy Underboss' Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the Underboss.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Arrest Thesaz"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Destroy Thesaz\u2019 ship"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Marcus in Lorillia.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 250
+          },
+          {
+            "type": "premium recruit token",
+            "value": 75
+          },
+          {
+            "type": "federation credits",
+            "value": 60
+          },
+          {
+            "type": "federation points",
+            "value": 600
+          },
+          {
+            "type": "romulan points",
+            "value": -106
+          },
+          {
+            "type": "klingon points",
+            "value": -475
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Marcus in Lorillia.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "15 minute repair speed up",
+            "value": 12
+          },
+          {
+            "type": "federation credits",
+            "value": 60
+          },
+          {
+            "type": "federation points",
+            "value": 600
+          },
+          {
+            "type": "romulan points",
+            "value": -106
+          },
+          {
+            "type": "klingon points",
+            "value": -475
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 189000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_gift_horse"
+  },
+  "storyline": "Meet with an Orion Underboss about the recent attack on the Mayflower."
+}

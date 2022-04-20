@@ -1,0 +1,89 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Mixed Messages",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/i_am_everywhere"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Admiral Boer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/doraboro_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the Admiral to the data hub.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/murasaki_312_10",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles of level 10 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 8 hostiles of level 10 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Follow the Admiral to the second data hub.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat VESTA's Drone.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_title": "Destroy VESTA's Drone",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Track VESTA down.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/liquidation"
+  },
+  "recommended_level": 11,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 2,
+        "rarity": "common",
+        "value": 500
+      }
+    ],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 500
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 4000
+      }
+    ]
+  },
+  "storyline": "Help Starfleet with a messaging problem."
+}

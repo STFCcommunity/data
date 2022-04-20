@@ -1,0 +1,150 @@
+{
+  "faction": "augment",
+  "locations": [
+    {
+      "$ref": "systems/kor_na_ron_27"
+    }
+  ],
+  "mission_name": "A Reliable Source",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate the strange signal in Raddan.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/raddan_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Save the Romulan vessel from pirates.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/raddan_22",
+        "task_title": "Destroy Vaaran Pirate",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide how to deal with the Tal Shiar agent.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help the Tal Shiar agent."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Lie to the Tal Shiar Agent."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Take readings of the Lydan system.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lydan_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take readings of the Terazon-X31 system.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/terazon_x31_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return your findings to Kaikara.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 9
+          }
+        ],
+        "others": [
+          {
+            "type": "3 hour speed up",
+            "value": 10
+          },
+          {
+            "type": "dark matter",
+            "value": 1
+          },
+          {
+            "type": "augment points",
+            "value": 200
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Take false readings of the Lydan system.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/lydan_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Report the false information to the agent in Kaikara.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan spy.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "dark matter",
+            "value": 1
+          },
+          {
+            "type": "augment points",
+            "value": 200
+          },
+          {
+            "type": "khan noonien singh",
+            "value": 4
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 180000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_title": "Destroy Romulan Spy",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "storyline": "A Tal Shiar agent wants to get more information on what's happening in Khan\u2019s space."
+}

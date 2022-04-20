@@ -1,0 +1,75 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "A Devil on Your Shoulder",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/boiling_point"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Confront the ship.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Trace the Tholians\u2019 steps into Federation space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Investigate the Intelligence building.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/gemet_25",
+        "planet": "starbase 74",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/along_came_a_spider"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 600
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 71000
+      }
+    ]
+  },
+  "storyline": "Help the Breen track the Tholian\u2019s steps."
+}

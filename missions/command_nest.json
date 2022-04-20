@@ -1,0 +1,121 @@
+{
+  "faction": "neutral",
+  "mission_name": "Command Nest",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/fight_back"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Yridian informant in the Afritalis system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/afritalis_30",
+        "planet": "onyxis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How will you deal with the Romulan Infiltrator?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Inform Spock of the Romulan spy."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Inform T'Yeka at the Vulcan Science Academy."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Bargain with the Romulans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to the Station to speak with Spock.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 40000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to the Station to speak with T'Yeka.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "relocation token",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 100000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Draken III and bargain with the Romulans.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 30
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 250000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken iii",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_link_to_the_past"
+  },
+  "storyline": "A Romulan spy has been uncovered within the Federation."
+}

@@ -1,0 +1,71 @@
+{
+  "faction": "klingon",
+  "mission_name": "Truth Is Subjective",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/could_it_be_true"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect 40 Federation Messages.",
+      "id": 1,
+      "task": {
+        "resource": "federation message",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 40
+      }
+    },
+    {
+      "title": "Donate 40 Federation Messages.",
+      "id": 2,
+      "task": {
+        "resource": "federation message",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 40
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/as_it_were"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 27
+      },
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "rare",
+        "value": 27
+      }
+    ],
+    "others": [
+      {
+        "type": "klingon credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -131000
+      },
+      {
+        "type": "romulan points",
+        "value": -349400
+      },
+      {
+        "type": "klingon points",
+        "value": 260000
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Collect Federation Encrypted Messages."
+}

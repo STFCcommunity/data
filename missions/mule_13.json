@@ -1,0 +1,55 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/orion_12"
+    }
+  ],
+  "mission_name": "Mule",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Enter the Yridia system with the Orion package.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Deliver the product to the surface of Yridia.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Ghoshan Drell for payment.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/orion_12",
+        "planet": "orion prime",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 13,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "orion manifest",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1700
+      }
+    ]
+  },
+  "storyline": "The Orions are looking for a smuggler to bring a highly addictive new narcotic into Yridian space."
+}

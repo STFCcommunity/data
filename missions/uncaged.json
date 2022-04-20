@@ -1,0 +1,105 @@
+{
+  "faction": "augment",
+  "locations": [
+    {
+      "$ref": "systems/elona_13"
+    },
+    {
+      "$ref": "systems/zaurak_13"
+    },
+    {
+      "$ref": "systems/astrida_14"
+    },
+    {
+      "$ref": "systems/lycia_14"
+    },
+    {
+      "$ref": "systems/labac_17"
+    },
+    {
+      "$ref": "systems/obilent_17"
+    },
+    {
+      "$ref": "systems/amador_19"
+    },
+    {
+      "$ref": "systems/midnight_19"
+    },
+    {
+      "$ref": "systems/azha_20"
+    }
+  ],
+  "mission_name": "Uncaged",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/misdirection"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress call from Lorillia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the Starfleet bombardment of Lorillia.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy Starfleet Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Repair Khan\u2019s ship with 20,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 20000
+      }
+    },
+    {
+      "title": "Defeat the second Starfleet vessel.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "task_title": "Destroy USS Andover",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Escape to the Astrida system.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "5 minute repair speed up",
+        "value": 32
+      },
+      {
+        "type": "john harrison",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 1500
+      }
+    ]
+  },
+  "storyline": "Respond to a distress call from a remote uninhabited planet."
+}

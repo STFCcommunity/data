@@ -1,0 +1,75 @@
+{
+  "faction": "romulan",
+  "mission_name": "Cloak and Dagger",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find the location of the Klingon flagship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/azha_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track down the Chancellor in Khitomer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/khitomer_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 22 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 22 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return the technology to Voros Outpost.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "planet": "voros outpost",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/their_war_not_yours"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "north star blueprint part",
+        "value": 2
+      },
+      {
+        "type": "alliance event trophy",
+        "value": 2
+      },
+      {
+        "type": "federation points",
+        "value": -81
+      },
+      {
+        "type": "romulan points",
+        "value": 160
+      },
+      {
+        "type": "klingon points",
+        "value": -54
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 300000
+      }
+    ]
+  },
+  "storyline": "Intercept the Klingon flagship and attempt to eliminate the Chancellor."
+}

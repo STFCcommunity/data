@@ -1,0 +1,71 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Tribble Me This Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/tribble_me_this_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat Bortana.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Bortana",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat K'Boshta.",
+      "id": 3,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy K'Boshta",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow the signal.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/tribble_me_this_part_2"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 75
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 900
+      },
+      {
+        "type": "dilithium",
+        "value": 170
+      }
+    ]
+  },
+  "storyline": "Defend your Station from a Klingon attack."
+}

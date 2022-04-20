@@ -1,0 +1,75 @@
+{
+  "faction": "neutral",
+  "mission_name": "Hope",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_desperate_plea"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Arlen.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pneuma_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the trader.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 12,000,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 12000000
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 40 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Bring the components back to Arlen.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/pneuma_40",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/futility"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 110
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 3611000
+      }
+    ]
+  },
+  "storyline": "Reunite with Arlen."
+}

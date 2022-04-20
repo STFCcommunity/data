@@ -1,0 +1,82 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/vulcan_23"
+    }
+  ],
+  "mission_name": "Friend of the Federation",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Go to the damaged Federation outpost on Maxom.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/freyda_17",
+        "planet": "maxom",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 25,000 Dilithium for the outpost\u2019s repairs.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 25000
+      }
+    },
+    {
+      "title": "Follow the signature to Marka\u2019s position and arrest him.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/ora_leraa_16",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Marka.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ora_leraa_16",
+        "task_title": "Destroy Marka's Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 20
+      }
+    ],
+    "others": [
+      {
+        "type": "cargo container",
+        "value": 1
+      },
+      {
+        "type": "federation credits",
+        "value": 100
+      },
+      {
+        "type": "federation points",
+        "value": 1000
+      },
+      {
+        "type": "romulan points",
+        "value": -192
+      },
+      {
+        "type": "klingon points",
+        "value": -864
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "The Vulcans need to know if they can trust you. Help them by hunting down a dangerous terrorist."
+}

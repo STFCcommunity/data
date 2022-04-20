@@ -1,0 +1,78 @@
+{
+  "arc": "tos arc 1",
+  "faction": "neutral",
+  "mission_name": "Dead Memories Part 3",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/dead_memories_part_4"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate another anomaly.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 100 Mycelium.",
+      "id": 2,
+      "task": {
+        "resource": "mycelium spore",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 100
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Allow Spock to inspect 100 Mycelium.",
+      "id": 4,
+      "task": {
+        "resource": "mycelium spore",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 100
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dead_memories_part_2"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 34
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 34
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 34
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Investigate spatial anomalies."
+}

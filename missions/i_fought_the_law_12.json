@@ -1,0 +1,59 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nausicaa_12"
+    }
+  ],
+  "mission_name": "I Fought The Law",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Locate the Federation Peacekeeping Ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the Federation Peacekeeping Vessel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "task_title": "Destroy Federation Peacekeeping Vessel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return with the Prisoners.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "orion manifest",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5500
+      },
+      {
+        "type": "tritanium",
+        "value": 1000
+      }
+    ]
+  },
+  "storyline": "Karnock is planning the heist of the century, but he needs you to break his men out of prison."
+}

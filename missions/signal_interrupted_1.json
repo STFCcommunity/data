@@ -1,0 +1,175 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Signal Interrupted",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/patience_is_a_virtue"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Launch the assault.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 4 Klingon Invaders in Ferrer.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 4 Klingon Invaders in Ferrer.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Who do we save?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Keller."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Marks."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat 3 Klingon Invaders in Ferrer.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 3 Klingon Invaders in Ferrer.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Warak.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_title": "Destroy Warak",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat T'Kara.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_title": "Destroy T'Kara",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Ensure the Relays have been shut down.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          },
+          {
+            "type": "1 day peace shield",
+            "value": 3
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 6825000
+          },
+          {
+            "type": "dilithium",
+            "value": 1365000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 3 Klingon Invaders in Ferrer.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "task_title": "Defeat 3 Klingon Invaders in Ferrer.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat Warak.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_title": "Destroy Warak",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat T'Kara.",
+      "id": 6,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_title": "Destroy T'Kara",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Ensure the Relays have been shut down.",
+      "id": 7,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 50
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day speed up",
+            "value": 6
+          },
+          {
+            "type": "1 day peace shield",
+            "value": 3
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 46410000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/ferrer_33",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/strange_bedfellows"
+  },
+  "storyline": "Launch an all out assault on the final Herald."
+}

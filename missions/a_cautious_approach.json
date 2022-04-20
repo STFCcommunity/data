@@ -1,0 +1,140 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Cautious Approach",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/lost_pieces"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Crucible in Federation Space.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/luoman_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with the Starfleet Officer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kurchee_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Accept the deal from Starfleet?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Accept the deal."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Reject the deal."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Donate 9,000,000 Tritanium.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 9000000
+      }
+    },
+    {
+      "title": "Attach the Crucible to your ship.",
+      "id": 5,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/luoman_41",
+        "planet": "hika",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 100
+          }
+        ],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 1400
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Starfleet Officer.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/kurchee_41",
+        "task_title": "Destroy Starfleet Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attach Crucible to your ship.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/luoman_41",
+        "planet": "hika",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1m parsteel token",
+            "value": 30
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 30360000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/emptiness"
+  },
+  "storyline": "Search Federation Space for Crucibles."
+}

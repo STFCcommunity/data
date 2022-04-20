@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "All the Devils are Here",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/ambitions"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Run a test with the ancient technology at the new coordinates.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/jinnia_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 2 Cargo Crates.",
+      "id": 2,
+      "task": {
+        "resource": "cargo crate",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 2
+      }
+    },
+    {
+      "title": "Hand over the Cargo Crates to Captain Avarr.",
+      "id": 3,
+      "task": {
+        "resource": "cargo crate",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 2
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/takret_incursion"
+  },
+  "recommended_level": 6,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 200
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2000
+      }
+    ]
+  },
+  "storyline": "Travel to the dangerous Briar Patch system of Jinnia."
+}

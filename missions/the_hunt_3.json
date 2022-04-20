@@ -1,0 +1,89 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Hunt",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/recruitment_drive"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Search for the Klingon traitor",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon traitor.",
+      "id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy K'Tok",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide the fate of K'Tok",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "<size=24>Let K'Tok go free</size>"
+          },
+          {
+            "option_id": 2,
+            "option_title": "<size=24>Transport K'Tok to the brig</size>"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Kurbon without K'Tok",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1\u2605 explorer parts",
+            "value": 50
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Kurbon with the prisoner",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 200
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/enhancements"
+  },
+  "recommended_level": 3,
+  "storyline": "Appease the Klingon Captain."
+}

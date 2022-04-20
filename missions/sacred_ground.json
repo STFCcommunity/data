@@ -1,0 +1,78 @@
+{
+  "faction": "romulan",
+  "mission_name": "Sacred Ground",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Investigate the dead Suliban homeworld of Brennis.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/suliban_35",
+        "planet": "brennis",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Arkonian Enforcer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/suliban_35",
+        "task_title": "Destroy Arkonian Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Arkonian terraformer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/suliban_35",
+        "task_title": "Destroy Arkonian Terraformer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring back data on Brennis to Kelia at Galorndon Core.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/galorndon_core_30",
+        "planet": "galorndon core",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_pyrrhic_victory"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "8 hour speed up",
+        "value": 6
+      },
+      {
+        "type": "romulan credits",
+        "value": 280
+      },
+      {
+        "type": "federation points",
+        "value": -13400
+      },
+      {
+        "type": "romulan points",
+        "value": 18000
+      },
+      {
+        "type": "klingon points",
+        "value": -8900
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 586000
+      }
+    ]
+  },
+  "storyline": "Ambush an Arkonian terraforming unit that is attempting to make a dead Suliban colony habitable again."
+}

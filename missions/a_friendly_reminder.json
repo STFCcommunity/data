@@ -1,0 +1,102 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Friendly Reminder",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/interference"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Corvallen fleet in Eisenhorn.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Provide 12,000 Tritanium to aid the Corvallen war effort.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 12000
+      }
+    },
+    {
+      "title": "Recruit the Corvallen mercenaries.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/aesuri_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Seek out the Corvallen pirate fleets on Vemet.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vemet_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay the Corvallen pirates 8,000 Dilithium for their services.",
+      "id": 5,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8000
+      }
+    },
+    {
+      "title": "Defeat the Klingon Vanguard.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/vemet_17",
+        "task_title": "Destroy Klingon Vanguard",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/what_they_don_t_know_will_hurt_them"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 12
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 50
+      },
+      {
+        "type": "legionary blueprint part",
+        "value": 4
+      },
+      {
+        "type": "federation points",
+        "value": -252
+      },
+      {
+        "type": "romulan points",
+        "value": 500
+      },
+      {
+        "type": "klingon points",
+        "value": -168
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Establish an alliance with the Corvallens."
+}

@@ -1,0 +1,90 @@
+{
+  "faction": "federation",
+  "mission_name": "There Are No Second Chances",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_recollection"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the chroniton pulse in the Riktor system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/riktor_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Visit Riktor II to investigate the evacuation.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/riktor_38",
+        "planet": "riktor ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Look for life on Andoria.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Suliban scout.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_title": "Destroy Suliban Scout",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the chroniton pulse to Riktor for the loop to continue.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/riktor_38",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_death_of_andoria"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": 100000
+      },
+      {
+        "type": "romulan points",
+        "value": -33600
+      },
+      {
+        "type": "klingon points",
+        "value": -151200
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2960000
+      },
+      {
+        "type": "dilithium",
+        "value": 592000
+      }
+    ]
+  },
+  "storyline": "Investigate the temporal anomaly in the Riktor system."
+}

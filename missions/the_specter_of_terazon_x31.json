@@ -1,0 +1,78 @@
+{
+  "faction": "augment",
+  "mission_name": "The Specter of Terazon X31",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_rest_for_the_wicked"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Scan the Lydan system for intruders.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lydan_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pay the native Lydanian for information.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 30000
+      }
+    },
+    {
+      "title": "Discover the intruder in Terazon X31.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/terazon_x31_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Confront the renegade Suliban.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/terazon_x31_28",
+        "task_title": "Destroy Renegade Suliban",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_die_is_thrown"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 12
+      },
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 12
+      }
+    ],
+    "others": [
+      {
+        "type": "ultra recruit token",
+        "value": 400
+      },
+      {
+        "type": "augment points",
+        "value": 250
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Follow up on rumors of a vessel found to be spying on Augment movements within the Vaara Expanse."
+}

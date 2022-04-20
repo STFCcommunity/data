@@ -1,0 +1,107 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nausicaa_12"
+    }
+  ],
+  "mission_name": "Sore Loser",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find Bork and calm him down.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "forma b",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the human cheater\u2019s ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/clytomenes_12",
+        "task_title": "Destroy Cheater's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do with the cheater.",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Return to Bork with the cheater."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let the cheater go."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Bork with the cheater.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "orion manifest",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 5000
+          },
+          {
+            "type": "tritanium",
+            "value": 500
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Tell Bork that the cheater escaped.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "orion manifest",
+            "value": 1
+          },
+          {
+            "type": "premium recruit token",
+            "value": 30
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 3000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 13,
+  "storyline": "Bork is ranting over the system wide subspace channels, find him and calm him down."
+}

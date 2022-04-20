@@ -1,0 +1,61 @@
+{
+  "arc": "borg arc 4",
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/elvros_47",
+      "planet": "strinax"
+    }
+  ],
+  "mission_name": "A Force of Nature",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/honor_for_three",
+      "option": 1
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Bring Spock to Renon.",
+      "id": 1,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 18
+          }
+        ],
+        "others": [
+          {
+            "type": "romulan points",
+            "value": -485000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 300
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Follow the Federation"
+          }
+        ],
+        "task_type": "choose"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/still_standing"
+  },
+  "recommended_level": 28,
+  "storyline": "Attack the Romulan armory."
+}

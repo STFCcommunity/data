@@ -1,0 +1,76 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Fallen",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_unknown_beckons"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Eurydice's base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Goon to the base.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "planet": "verna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse Ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Beam up the ship equipment.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/kuzukoh_29",
+        "planet": "verna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/big_brother"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "30 minute speed up",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 289000
+      }
+    ]
+  },
+  "storyline": "Gather data from Eurydice\u2019s base."
+}

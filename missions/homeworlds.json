@@ -1,0 +1,131 @@
+{
+  "faction": "neutral",
+  "mission_name": "Homeworlds",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/city_middle"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Hunt 15 hostile ships of Level 37 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Hunt 15 hostile ships of Level 37 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Collect a bounty with any Faction.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "The United Federation of Planets"
+          },
+          {
+            "option_id": 2,
+            "option_title": "The Romulan Star Empire"
+          },
+          {
+            "option_id": 3,
+            "option_title": "The Klingon Empire"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bring the IDs to the Federation on Earth.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 5000000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the IDs to the Romulans on Romulus.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [
+          {
+            "type": "relocation token",
+            "value": 1
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 5000000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the IDs to the Klingons on Kronos.",
+      "id": 3,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 25
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 5000000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/one_of_us"
+  },
+  "storyline": "The Federation, Romulans and Klingons are each looking for bounties on hostile ships."
+}

@@ -1,0 +1,140 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Death of Innocence",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/cutting_ties"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Priya to steal a Federation ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill the Federation pilot.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/priya_22",
+        "task_title": "Destroy Starfleet Pilot",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to Angosia II to find Veezen.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "planet": "angosia ii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Kill Veezen or let him live.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Kill him."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Let him live."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to Draken I.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "1 hour speed up",
+            "value": 26
+          },
+          {
+            "type": "romulan credits",
+            "value": 130
+          },
+          {
+            "type": "federation points",
+            "value": -1200
+          },
+          {
+            "type": "romulan points",
+            "value": 2000
+          },
+          {
+            "type": "klingon points",
+            "value": -800
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 15000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Draken I.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 400
+          },
+          {
+            "type": "officer xp",
+            "value": 62000
+          },
+          {
+            "type": "romulan credits",
+            "value": 130
+          },
+          {
+            "type": "federation points",
+            "value": -1200
+          },
+          {
+            "type": "romulan points",
+            "value": 2000
+          },
+          {
+            "type": "klingon points",
+            "value": -800
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "draken i",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_belly_of_the_beast"
+  },
+  "storyline": "Track down Veezen."
+}

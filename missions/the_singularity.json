@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Singularity",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/loop"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Enter the Mina system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scan the surface of Laok.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/mina_40",
+        "planet": "laok",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attempt to break away from the conflict.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Newton.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_title": "Destroy USS Newton",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Scan for tachyon emissions at the Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dark_space"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 4275000
+      },
+      {
+        "type": "dilithium",
+        "value": 1149000
+      }
+    ]
+  },
+  "storyline": "Boldly go where no one has gone before."
+}

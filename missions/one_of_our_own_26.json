@@ -1,0 +1,143 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "One of Our Own",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/old_acquaintances"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the energy signature.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "How should we respond to the Starfleet hail?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack them."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Go with them."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the USS Chaloner.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_title": "Destroy USS Chaloner",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 320,000 Tritanium to repair the Discovery's hull breach.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 320000
+      }
+    },
+    {
+      "title": "Catch Mudd!",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 500
+          },
+          {
+            "type": "15 minute repair speed up",
+            "value": 30
+          }
+        ],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 165000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Chaloner.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_title": "Destroy USS Chaloner",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 320,000 Tritanium to repair the Discovery's hull breach.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 320000
+      }
+    },
+    {
+      "title": "Catch Mudd!",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 32
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 1119000
+          },
+          {
+            "type": "dilithium",
+            "value": 33000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/many_moons"
+  },
+  "recommended_level": 26,
+  "storyline": "Deal with unwanted Starfleet attention."
+}

@@ -1,0 +1,71 @@
+{
+  "arc": "discovery arc 2",
+  "faction": "neutral",
+  "mission_name": "Strike One...",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/strike_two"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the first Herald.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/orion_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Try and analyze the Herald's warp path.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_title": "Destroy Klingon Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the first Herald.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_title": "Destroy Herald",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/only_in_your_mind"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 3400
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 600
+      }
+    ]
+  },
+  "storyline": "Destroy the first Herald."
+}

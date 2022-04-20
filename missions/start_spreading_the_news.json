@@ -1,0 +1,69 @@
+{
+  "faction": "neutral",
+  "mission_name": "Start Spreading the News",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/shall_we_begin"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to the Corvallens on Worrum.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kiina_48",
+        "planet": "worrum",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 13,000,000 Dilithium to hire mercenaries.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 13000000
+      }
+    },
+    {
+      "title": "Escort the mercenary fleet to the borders of Augment space.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_warrior_s_mind"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 800
+      },
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 100
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Hire a band of Corvallen mercenaries who will inform Khan of the captive Augment."
+}

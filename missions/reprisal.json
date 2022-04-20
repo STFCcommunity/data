@@ -1,0 +1,89 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/davidul_20"
+    }
+  ],
+  "mission_name": "Reprisal",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/revenge_begets_revenge"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress call in the Fastolf system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Follow the warp trail to Astrida.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Vulcan scout ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/astrida_14",
+        "task_title": "Destroy Vulcan Scout Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Travel to the Vulcan system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to the Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "nero",
+        "value": 3
+      },
+      {
+        "type": "alliance event trophy",
+        "value": 3
+      },
+      {
+        "type": "north star blueprint part",
+        "value": 3
+      },
+      {
+        "type": "federation points",
+        "value": -132
+      },
+      {
+        "type": "romulan points",
+        "value": 250
+      },
+      {
+        "type": "klingon points",
+        "value": -88
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "A Romulan ship has been destroyed in the Neutral Zone, but the aggressor remains a mystery."
+}

@@ -1,0 +1,64 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Pay Your Debts 5",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Go to the decoy's location.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of level 27 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of level 27 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Decoy.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_title": "Destroy Jakha's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/pay_your_debts_4"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 33
+      },
+      {
+        "type": "independent credits",
+        "value": 8
+      },
+      {
+        "type": "latinum",
+        "value": 10
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Finish off the debt collectors for good!"
+}

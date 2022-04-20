@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Middle Ground",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/reality_sinks_in"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tolain_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the refugees to a safe zone.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Ranelia to Romulus.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Ranelia to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/operations_42"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 120
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 990000
+      }
+    ]
+  },
+  "storyline": "Help a group of Romulan refugees in exchange for information on Toryn."
+}

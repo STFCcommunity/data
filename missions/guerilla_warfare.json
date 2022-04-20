@@ -1,0 +1,87 @@
+{
+  "faction": "romulan",
+  "mission_name": "Guerilla Warfare",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/eye_for_an_eye"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Corvallen Rebels in Mina.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/mina_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Infiltrate Romulan space.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rowla_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 Hostiles Level 39 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 15 Hostiles Level 39 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Officer.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rowla_40",
+        "task_title": "Destroy Romulan Officer Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/escape_route"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "premium recruit token",
+        "value": 320
+      },
+      {
+        "type": "1m tritanium token",
+        "value": 6
+      },
+      {
+        "type": "federation points",
+        "value": -172800
+      },
+      {
+        "type": "romulan points",
+        "value": 180000
+      },
+      {
+        "type": "klingon points",
+        "value": -115200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Carry out an attack."
+}

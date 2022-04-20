@@ -1,0 +1,139 @@
+{
+  "faction": "neutral",
+  "mission_name": "Making Amends",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/discovered"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to your Station.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Choose which group to help.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help the Andorians."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help the Vulcans."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Go to the supply warehouses.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "planet": "dhi'ban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Enforcer.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "task_title": "Destroy Orion Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Deliver the supplies to the Andorians on Wuqenat.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 3000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 8000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lycia_14",
+        "planet": "wuqenat",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the Vulcan mines.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Orion Enforcer.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/elona_13",
+        "task_title": "Destroy Orion Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 24,000 Parsteel to the Vulcans.",
+      "id": 5,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 2,
+            "rarity": "common",
+            "value": 12
+          }
+        ],
+        "others": [
+          {
+            "type": "30 minute speed up",
+            "value": 2
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 380
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 24000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/shifting_priorities"
+  },
+  "recommended_level": 13,
+  "storyline": "Choose between helping the Andorians or the Vulcans."
+}

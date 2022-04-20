@@ -1,0 +1,50 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/vindemiatrix_15"
+    }
+  ],
+  "mission_name": "Temporary Setback",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate the signal in Helvetios.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/helvetios_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Kriosian Rebel.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/helvetios_18",
+        "task_title": "Destroy Kriosian Rebel",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 8000 Tritanium to the Gorn Warrior.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 8000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 17000
+      }
+    ]
+  },
+  "storyline": "Help a wounded Gorn Warrior defeat his target."
+}

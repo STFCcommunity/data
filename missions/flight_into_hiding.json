@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "Flight Into Hiding",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/show_of_force"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the first potential system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/naalur_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate the next potential system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/hannlaw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station and prepare to move.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Move your Station to a system of Level 40 or higher.",
+      "id": 4,
+      "task": {
+        "task_info": "starbase",
+        "task_title": "Move your base to a minimum level 40 system",
+        "task_type": "other"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/operations_46"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 4,
+        "rarity": "common",
+        "value": 180
+      }
+    ],
+    "others": [
+      {
+        "type": "relocation token",
+        "value": 1
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Escape the retribution of the Alphas."
+}

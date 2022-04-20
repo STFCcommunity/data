@@ -1,0 +1,85 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/new_dozaria_25"
+    }
+  ],
+  "mission_name": "A Dent in the Armor",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_friendly_conversation"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Thot Rem.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nott_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Venture towards Tholian territory.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack a Tholian ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_title": "Destroy Tholian Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attack the Tholian embassy.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "planet": "tholian outpost",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Retreat to the Breen Outpost.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/new_dozaria_25",
+        "planet": "breen outpost",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 8
+      }
+    ],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 10
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 40000
+      }
+    ]
+  },
+  "storyline": "Attack the Tholian web."
+}

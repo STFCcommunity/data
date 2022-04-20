@@ -1,0 +1,139 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 4",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/doomsday_part_5"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Inquire about the components on Boxip.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "planet": "boxip",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to barter for the components.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Trade."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Perform a service."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Pay 75,000 Dilithium to the vendor.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 75000
+      }
+    },
+    {
+      "title": "Return with Leevoigh to Gawot.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 31
+          }
+        ],
+        "others": [
+          {
+            "type": "1 day peace shield",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "planet": "gawot",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to Huebr.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Mine 750 Raw 3\u2605 Ore.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "resource": "3\u2605 raw ore",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 750
+      }
+    },
+    {
+      "title": "Return to the vendor.",
+      "id": 5,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "planet": "boxip",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return with Leevoigh to Gawot.",
+      "id": 6,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 31
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 510000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/eisenhorn_19",
+        "planet": "gawot",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_3"
+  },
+  "recommended_level": 27,
+  "storyline": "Help Leevoigh secure vital components for upgrading Gawot\u2019s atmospheric condenser."
+}

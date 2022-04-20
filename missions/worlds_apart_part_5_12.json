@@ -1,0 +1,67 @@
+{
+  "arc": "tng arc 1",
+  "faction": "neutral",
+  "mission_name": "Worlds Apart Part 5",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/worlds_apart_part_6"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Locate Geordi.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles of Level 11 or Higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 5 Hostiles of Level 11 or Higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Geordi.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/bellas_12",
+        "planet": "vaset",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/worlds_apart_part_4"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 25000
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 6000
+      }
+    ]
+  },
+  "storyline": "Evacuate Geordi La Forge."
+}

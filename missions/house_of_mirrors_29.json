@@ -1,0 +1,65 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "House of Mirrors",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_burning_ember"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 3 Hostiles of Level 30 or Higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 3 Hostiles of Level 30 or Higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Find a way out.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kemetja_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse Ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/kemetja_30",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Get out of Eclipse Space.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/leone_27",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_unknown_beckons"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "latinum",
+        "value": 13
+      },
+      {
+        "type": "3 hour speed up",
+        "value": 16
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Escape from Eclipse space."
+}

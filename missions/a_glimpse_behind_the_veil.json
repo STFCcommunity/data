@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Glimpse Behind the Veil",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_one_knows"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to the Survivor ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 250,000,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250000000
+      }
+    },
+    {
+      "title": "Fight back against the strange ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/muhg_48",
+        "task_title": "Destroy Strange Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the tech to Scotty.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/avofall_48",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/trust_your_instincts"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 rare interceptor parts",
+        "value": 28
+      },
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Gather tech from the colonist ship."
+}

@@ -1,0 +1,67 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Into the Open",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/hunting_the_snake"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Tiza's Base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Extract Tiza's belongings.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "planet": "jaria",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Eclipse ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/exchange_beta_30",
+        "task_title": "Destroy Eclipse Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/on_your_feet"
+  },
+  "recommended_level": 29,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 12
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 259000
+      }
+    ]
+  },
+  "storyline": "Gather Tiza\u2019s equipment."
+}

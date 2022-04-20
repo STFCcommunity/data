@@ -1,0 +1,74 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Origins of the End",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/no_strings_no_master"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Scotty.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 1,000,000 Tritanium to assist Scotty's scans.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Investigate one of the strange structures.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nott_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/dangerous_appetites"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 32
+      }
+    ],
+    "others": [
+      {
+        "type": "1 day speed up",
+        "value": 6
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 947000
+      }
+    ]
+  },
+  "storyline": "Discover VESTA\u2019s true origins."
+}

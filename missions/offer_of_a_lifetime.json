@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Offer of a Lifetime",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/raised_stakes"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate Orion presence in New Berlin.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 25 hostiles of Level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 25 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Orion Enforcer.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_title": "Destroy Orion Enforcer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to New Vulcan.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/new_vulcan_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/disarmament"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 700
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 6480000
+      }
+    ]
+  },
+  "storyline": "Investigate an Orion Slaver ring."
+}

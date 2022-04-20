@@ -1,0 +1,73 @@
+{
+  "faction": "neutral",
+  "mission_name": "Truth and Rumor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mistrust"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet Koroth.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/imada_44",
+        "planet": "kaskaah",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find Koroth's family.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Klingon guard.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_title": "Destroy Klingon Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat second guard ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/somraw_44",
+        "task_title": "Destroy Klingon Guard Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Retreat from Klingon space.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/imada_44",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_black_sheep"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Help Koroth find his family."
+}

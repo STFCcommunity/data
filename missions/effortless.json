@@ -1,0 +1,91 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/zova_rhen_25"
+    }
+  ],
+  "mission_name": "Effortless",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/a_gentle_push_in_the_right_direction"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Major T\u2019Nara in Kaikara.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kaikara_18",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Scout the Angosia system.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 8 hostiles in Angosia.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 8 hostiles in Angosia.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the USS Browning.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/angosia_25",
+        "task_title": "Destroy USS Browning",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return Major T\u2019Nara to Valdore Outpost.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "valdore outpost",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "javaid",
+        "value": 5
+      },
+      {
+        "type": "romulan credits",
+        "value": 190
+      },
+      {
+        "type": "federation points",
+        "value": -1200
+      },
+      {
+        "type": "romulan points",
+        "value": 2000
+      },
+      {
+        "type": "klingon points",
+        "value": -800
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 25000
+      }
+    ]
+  },
+  "storyline": "Help the Tal Shiar to weaken Federation reinforcements that have been sent to deal with the Klingon Separatists."
+}

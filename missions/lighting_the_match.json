@@ -1,0 +1,121 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Lighting the Match",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/where_there_s_a_will",
+      "option": 1
+    },
+    {
+      "$ref": "missions/unbroken",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Respond to Khan's distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_title": "Destroy Klingon Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Who should get possession of the super soldiers?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Mudd"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Khan"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Beam Mudd on board.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Escape.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "latinum",
+            "value": 8
+          },
+          {
+            "type": "relocation token",
+            "value": 1
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Pursue Mudd.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Khan.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "augment credits",
+            "value": 35
+          }
+        ],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 43000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/seevor_28",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/profit_before_people"
+  },
+  "storyline": "Decide what to do with the super soldiers."
+}

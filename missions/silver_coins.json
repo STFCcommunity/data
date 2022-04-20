@@ -1,0 +1,161 @@
+{
+  "faction": "federation",
+  "mission_name": "Silver Coins",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/burning_wings"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the signal in Nabok.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose what to do with the Tal Shiar agent.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the Tal Shiar agent."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help the Tal Shiar agent."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Destroy the Tal Shiar agent.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_title": "Destroy Tal Shiar Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Tal Shiar's reinforcement.",
+      "id": 4,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/nabok_22",
+        "task_title": "Destroy Tal Shiar Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report the incident to Starbase 82.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 100
+          },
+          {
+            "type": "3\u2605 battleship parts",
+            "value": 180
+          },
+          {
+            "type": "3\u2605 explorer parts",
+            "value": 180
+          },
+          {
+            "type": "federation points",
+            "value": 1000
+          },
+          {
+            "type": "romulan points",
+            "value": -192
+          },
+          {
+            "type": "klingon points",
+            "value": -864
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the agent to Bos Vehna.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "planet": "bos vehna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Tal Shiar agent.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Tal Shiar Explorer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Starbase 82.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "premium recruit token",
+            "value": 75
+          },
+          {
+            "type": "federation credits",
+            "value": 100
+          },
+          {
+            "type": "3\u2605 interceptor parts",
+            "value": 180
+          },
+          {
+            "type": "federation points",
+            "value": 1000
+          },
+          {
+            "type": "romulan points",
+            "value": -192
+          },
+          {
+            "type": "klingon points",
+            "value": -864
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/recreations"
+  },
+  "storyline": "Investigate a strange signal near the Romulan border."
+}

@@ -1,0 +1,135 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Proposition",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/sold",
+      "option": 1
+    },
+    {
+      "$ref": "missions/the_best_defense",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Corvallen Loyalist.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen Officer.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_title": "Destroy Corvallen Loyalist Officer",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Betray the rebels or reject the Loyalist\u2019s offer?",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Betray the Rebels."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Reject the Loyalists\u2019 offer."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "4\u2605 uncommon explorer parts",
+            "value": 160
+          },
+          {
+            "type": "federation points",
+            "value": -262100
+          },
+          {
+            "type": "romulan points",
+            "value": 260000
+          },
+          {
+            "type": "klingon points",
+            "value": -174700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat Lieutenant Lotem.",
+      "id": 4,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_title": "Destroy Lieutenant Lotem's Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 900
+          },
+          {
+            "type": "romulan credits",
+            "value": 600
+          },
+          {
+            "type": "federation points",
+            "value": -262100
+          },
+          {
+            "type": "romulan points",
+            "value": 260000
+          },
+          {
+            "type": "klingon points",
+            "value": -174700
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_new_home"
+  },
+  "storyline": "Listen to the Loyalist\u2019s proposal."
+}

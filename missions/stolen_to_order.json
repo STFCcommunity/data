@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "Stolen to Order",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/breadcrumbs"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Nikola and look for clues regarding the Enterprise\u2019s whereabouts.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 hostiles of Level 40 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 10 hostiles of Level 40 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Interrogate the Mercenary Leader.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nikola_41",
+        "task_title": "Destroy Mercenary Leader",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow the new lead to Stradania.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/stradania_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Investigate the disappearance of the USS Enterprise."
+}

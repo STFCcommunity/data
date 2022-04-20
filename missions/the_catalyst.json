@@ -1,0 +1,77 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Catalyst",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/uprising"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Save the Corvallen family.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/rowla_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the Corvallen guards.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rowla_40",
+        "task_title": "Destroy Corvallen Guard",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the remaining Corvallen ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rowla_40",
+        "task_title": "Destroy Corvallen Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "4\u2605 common explorer parts",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 600
+      },
+      {
+        "type": "federation points",
+        "value": -172800
+      },
+      {
+        "type": "romulan points",
+        "value": 180000
+      },
+      {
+        "type": "klingon points",
+        "value": -115200
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Save the Corvallen family."
+}

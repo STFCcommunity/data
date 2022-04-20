@@ -1,0 +1,56 @@
+{
+  "faction": "neutral",
+  "mission_name": "The First Pillar",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_second_pillar"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Deliver the first Conduit Pillar to Livi.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles in Livi.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles in Livi.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Defeat the Convergence Preacher.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/livi_40",
+        "task_title": "Destroy Convergence Preacher",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/into_the_void"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "4\u2605 uncommon interceptor parts",
+        "value": 110
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 8580000
+      }
+    ]
+  },
+  "storyline": "Deploy the first Conduit Pillar in the Livi system."
+}

@@ -1,0 +1,55 @@
+{
+  "faction": "neutral",
+  "mission_name": "The Cycle",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/destination_is_origin"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the Tovla system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tovla_40",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Eject 250k Dilithium into the Tovla sun.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 250000
+      }
+    },
+    {
+      "title": "Scan the tachyon surge on Tovan.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tovla_40",
+        "planet": "tovan",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/loop"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 150
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Attempt a purge of tachyon emissions in the Tovla system."
+}

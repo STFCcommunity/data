@@ -1,0 +1,73 @@
+{
+  "faction": "romulan",
+  "mission_name": "From Every Angle",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/in_an_instant"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Join the Romulan Forces.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fight back against the Klingons.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/biruin_27",
+        "task_title": "Destroy Klingon Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Reach the Klingon fleet.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Stop the Klingon ship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/talmir_86_26",
+        "task_title": "Destroy Klingon Interceptor",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/fighting_for_our_lives"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 180
+      },
+      {
+        "type": "federation points",
+        "value": -5200
+      },
+      {
+        "type": "romulan points",
+        "value": 8000
+      },
+      {
+        "type": "klingon points",
+        "value": -3500
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Klingon assault."
+}

@@ -1,0 +1,115 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Cost of Obsession",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/smokescreen"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the Colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the organization.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "planet": "rohnik",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 10 Hostiles of Level 26 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 10 Hostiles of Level 26 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to the colony.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Attack the colony?",
+      "id": 5,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Attack the colony."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Abandon Dalen."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Defeat the colony leader.",
+      "id": 6,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/pasadoran_26",
+        "task_title": "Destroy Colony Leader Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 7,
+      "rewards": {
+        "materials": [],
+        "others": [],
+        "resources": [
+          {
+            "type": "dilithium",
+            "value": 75000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 182000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/over_the_line"
+  },
+  "storyline": "Search for the new Borg technology."
+}

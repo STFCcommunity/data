@@ -1,0 +1,107 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Gentle Push In The Right Direction",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/too_successful"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the scout in Sorenle.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the scout.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/sorenle_21",
+        "task_title": "Destroy Independent Scout",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Meet with the Federation forces in Voss.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/voss_20",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring the Starfleet forces to Ajilon.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the USS Yellowstone.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy USS Yellowstone",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the USS Riverbrooke.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/ajilon_25",
+        "task_title": "Destroy USS Riverbrooke",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to Valdore Outpost.",
+      "id": 7,
+      "task": {
+        "$ref": "systems/draken_23",
+        "planet": "valdore outpost",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/effortless"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 130
+      },
+      {
+        "type": "5 minute repair speed up",
+        "value": 35
+      },
+      {
+        "type": "federation points",
+        "value": -1200
+      },
+      {
+        "type": "romulan points",
+        "value": 2000
+      },
+      {
+        "type": "klingon points",
+        "value": -800
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 119000
+      }
+    ]
+  },
+  "storyline": "Act as a liaison to the Federation in order to lure Starfleet into a trap."
+}

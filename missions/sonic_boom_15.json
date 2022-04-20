@@ -1,0 +1,61 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nausicaa_12"
+    }
+  ],
+  "mission_name": "Sonic Boom",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Find Thrak.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "azaxa",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Help Thrak by giving him 5,000 Tritanium.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000
+      }
+    },
+    {
+      "title": "Deliver the Ultrasonic Generator to Borvang.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "forma b",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 15,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "orion manifest",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 6500
+      },
+      {
+        "type": "tritanium",
+        "value": 1250
+      }
+    ]
+  },
+  "storyline": "Thrak needs help with an important tool, find him and assist."
+}

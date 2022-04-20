@@ -1,0 +1,58 @@
+{
+  "arc": "outlaw arc 1",
+  "faction": "neutral",
+  "mission_name": "Bottom of the Barrel",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/digging_in_the_dirt"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Mudd.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/skarrl_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring Mudd to Khan.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Defeat the Klingons.",
+      "id": 3,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_title": "Destroy Klingon Ship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/target_acquired"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 19
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 32000
+      }
+    ]
+  },
+  "storyline": "Turn to Mudd for help."
+}

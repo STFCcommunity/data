@@ -1,0 +1,66 @@
+{
+  "faction": "neutral",
+  "mission_name": "Augments Exodus Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/augments_exodus_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Track the Takret ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable Melkov's ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_title": "Destroy Takret Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bribe Melkov with 1M Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1000000
+      }
+    },
+    {
+      "title": "Take Melkov's logs to the Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/augments_exodus"
+  },
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "corrupted data",
+        "value": 400
+      },
+      {
+        "type": "augment credits",
+        "value": 100
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Continue the search for Rima and Pan."
+}

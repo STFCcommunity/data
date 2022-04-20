@@ -1,0 +1,72 @@
+{
+  "faction": "neutral",
+  "mission_name": "Nari",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/higher_plain"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Trace the last known location of Nari.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/labac_17",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the informant on Segrib.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/azha_20",
+        "planet": "segrib",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Compensate the Yridian Captain 5,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 5000
+      }
+    },
+    {
+      "title": "Defeat Nari in the Cita Laga system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/cita_laga_15",
+        "task_title": "Destroy Nari",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sentinels"
+  },
+  "recommended_level": 15,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "relocation token",
+        "value": 1
+      },
+      {
+        "type": "premium recruit token",
+        "value": 50
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 25000
+      }
+    ]
+  },
+  "storyline": "Find and defeat the Takret escapee."
+}

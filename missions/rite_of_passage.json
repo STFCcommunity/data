@@ -1,0 +1,58 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/nausicaa_12"
+    }
+  ],
+  "mission_name": "Rite of Passage",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Investigate the transmission from Epocalyta.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "epocalyta",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 6 hostiles in Nausicaa.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 6 hostiles in Nausicaa.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to Uruk as Champion.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/nausicaa_12",
+        "planet": "nausicaa",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "next gen la forge",
+        "value": 1
+      },
+      {
+        "type": "orion manifest",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 3000
+      }
+    ]
+  },
+  "storyline": "The Nausicaan Crucible is taking place near Tellun. Show them how strong you are."
+}

@@ -1,0 +1,72 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/terminimurus_39"
+    }
+  ],
+  "mission_name": "Spoken For",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Report to the Stagnimea system.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/stagnimea_38",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 Hostiles of Level 39 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 Hostiles of Level 39 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Provide the colony with 60M Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 60000000
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 30
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 500
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 2400
+      },
+      {
+        "type": "federation points",
+        "value": -93600
+      },
+      {
+        "type": "romulan points",
+        "value": 100000
+      },
+      {
+        "type": "klingon points",
+        "value": -62400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Prevent opportunistic hostiles forces from claiming valuable resources from Stagnimea."
+}

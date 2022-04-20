@@ -1,0 +1,100 @@
+{
+  "arc": "borg arc 3",
+  "faction": "neutral",
+  "mission_name": "Against All Odds",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/our_fates_are_tied"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Alta.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/alta_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Borg probe.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alta_25",
+        "task_title": "Destroy Borg Probe",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rescue survivors.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/alta_25",
+        "planet": "salti",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the survivors to your Station.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Go to Panak.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/panak_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 78,000 Dilithium to the survivors.",
+      "id": 6,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 78000
+      }
+    },
+    {
+      "title": "Escort the survivors to your Station.",
+      "id": 7,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_long_way_home"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 17
+      },
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 17
+      }
+    ],
+    "others": [
+      {
+        "type": "premium recruit token",
+        "value": 150
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Try to fight back against the Borg invasion."
+}

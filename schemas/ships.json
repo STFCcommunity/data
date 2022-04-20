@@ -5,6 +5,7 @@
   "description": "A schema for ships used in STFC.",
   "required": [
     "ship_name",
+    "description",
     "rarity",
     "grade",
     "ship_class",
@@ -21,13 +22,14 @@
   "default": {},
   "examples": [
     {
+      "description": "The ship was built...",
       "blueprints": {
         "cost": 200,
         "quantity": 100
       },
       "faction": "federation",
       "grade": 3,
-      "img_url": "url",
+      "img_url": "./assets/uss_saladin.png",
       "rarity": "uncommon",
       "requirements": [
         {
@@ -37,11 +39,16 @@
       ],
       "scrap_info": {
         "required_scrapyard_level": 42,
-        "scrapable": true
+        "scrappable": true
       },
       "ship_ability": {
         "title": "Protector",
-        "description": "When the Station..."
+        "description": "When the Station...",
+        "buff": {
+          "name": "burning",
+          "type": "use"
+        },
+        "percentage": true
       },
       "ship_class": "interceptor",
       "ship_name": "USS Saladin",
@@ -52,28 +59,9 @@
             {
               "name": "Phaser Bank",
               "additional_info": {
-                "cargo_info": {
-                  "increased_cargo": 1960,
-                  "increased_protected_cargo": 10
-                },
-                "firing_pattern": {
-                  "pattern": [
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                    1
-                  ],
-                  "weapon_type": "kinetic"
-                },
-                "warp_info": {
-                  "impulse_speed": 120,
-                  "warp_distance": 27,
-                  "warp_speed": 2.4
+                "armor_info": {
+                  "armor": 40,
+                  "hull_health": 100
                 }
               },
               "build_cost": {
@@ -98,8 +86,8 @@
                   }
                 ]
               },
-              "id": 1,
-              "img_url": "url",
+              "img_url": "./assets/component_weapon_kinetic.png",
+              "quantity": 1,
               "repair_cost": [
                 {
                   "type": "tritanium",
@@ -110,44 +98,41 @@
           ],
           "levels": [
             {
-              "ability_bonus": 16.0,
+              "ability_bonus": 0.16,
               "additional_officer_slot": true,
               "level": 2,
               "scrap_details": {
-                "rewards": {
-                  "materials": [
-                    {
-                      "type": "gas",
-                      "grade": 3,
-                      "rarity": "common",
-                      "value": 275
-                    }
-                  ],
-                  "others": [
-                    {
-                      "type": "ship xp",
-                      "value": 25000
-                    }
-                  ],
-                  "resources": [
-                    {
-                      "type": "tritanium",
-                      "value": 1300000
-                    }
-                  ]
-                },
+                "rewards": [
+                  {
+                    "type": "gas",
+                    "grade": 3,
+                    "rarity": "common",
+                    "value": 40000
+                  }
+                ],
                 "scrap_time": 895620
               },
               "ship_xp": 800
             }
           ],
           "repair_time": 30000,
-          "tier": 1
+          "tier": 1,
+          "tier_locked_by_ops": 30
         }
       ]
     }
   ],
   "properties": {
+    "description": {
+      "$id": "#/properties/description",
+      "title": "The description schema",
+      "description": "Name of the ship.",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "The ship was built..."
+      ]
+    },
     "blueprints": {
       "$id": "#/properties/blueprints",
       "title": "The blueprints schema",
@@ -188,14 +173,6 @@
       "description": "The faction where the ship belongs to.",
       "type": "string",
       "default": "",
-      "enum": [
-        "neutral",
-        "federation",
-        "romulan",
-        "klingon",
-        "augment",
-        "rogue"
-      ],
       "examples": [
         "federation"
       ]
@@ -211,7 +188,8 @@
         2,
         3,
         4,
-        5
+        5,
+        6
       ],
       "examples": [
         1
@@ -224,7 +202,7 @@
       "type": "string",
       "default": "",
       "examples": [
-        "url"
+        "./assets/uss_saladin.png"
       ]
     },
     "rarity": {
@@ -295,11 +273,18 @@
       "title": "The scrap_info schema",
       "description": "Information about scrapping the ship.",
       "required": [
-        "scrapable"
+        "scrappable"
       ],
       "type": "object",
       "additionalProperties": true,
       "default": {},
+      "if": {
+        "properties": {
+          "scrappable": {
+            "const": true
+          }
+        }
+      },
       "properties": {
         "required_scrapyard_level": {
           "$id": "#/properties/scrap_info/properties/required_scrapyard_level",
@@ -311,9 +296,9 @@
             42
           ]
         },
-        "scrapable": {
-          "$id": "#/properties/scrap_info/properties/scrapable",
-          "title": "The scrapable schema",
+        "scrappable": {
+          "$id": "#/properties/scrap_info/properties/scrappable",
+          "title": "The scrappable schema",
           "description": "Boolean wether the ship can be scrapped or not.",
           "type": "boolean",
           "default": true,
@@ -321,6 +306,11 @@
             true
           ]
         }
+      },
+      "then": {
+        "required": [
+          "required_scrapyard_level"
+        ]
       }
     },
     "ship_ability": {
@@ -329,7 +319,8 @@
       "description": "Instance for the ability of the ship.",
       "required": [
         "title",
-        "description"
+        "description",
+        "percentage"
       ],
       "type": "object",
       "additionalProperties": true,
@@ -353,6 +344,54 @@
           "default": "",
           "examples": [
             "When the Station..."
+          ]
+        },
+        "buff": {
+          "$id": "#/properties/ship_ability/properties/buff",
+          "title": "The buff schema",
+          "description": "(Optional) buff information regarding the ability of the ship.",
+          "required": [
+            "name",
+            "type"
+          ],
+          "type": "object",
+          "additionalProperties": true,
+          "default": {},
+          "properties": {
+            "name": {
+              "$id": "#/properties/ship_ability/properties/buff/properties/name",
+              "title": "The name schema",
+              "description": "Name of the buff ability.",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "burning"
+              ]
+            },
+            "type": {
+              "$id": "#/properties/ship_ability/properties/buff/properties/type",
+              "title": "The title schema",
+              "description": "Type of the buff ability.",
+              "type": "string",
+              "default": "",
+              "enum": [
+                "use",
+                "apply"
+              ],
+              "examples": [
+                "use"
+              ]
+            }
+          }
+        },
+        "percentage": {
+          "$id": "#/properties/ship_ability/properties/percentage",
+          "title": "The percentage schema",
+          "description": "Boolean wether the ability is a percentage or not.",
+          "type": "boolean",
+          "default": true,
+          "examples": [
+            true
           ]
         }
       }
@@ -433,12 +472,12 @@
                       "title": "The first anyOf schema",
                       "description": "Single component schema",
                       "required": [
-                        "id",
                         "name",
                         "img_url",
                         "build_cost",
                         "repair_cost",
-                        "additional_info"
+                        "additional_info",
+                        "quantity"
                       ],
                       "type": "object",
                       "additionalProperties": true,
@@ -458,15 +497,49 @@
                           "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info",
                           "title": "The additional_info schema",
                           "description": "Instance of component specific info. Given sub schemas are optional, depending on component.",
-                          "required": [],
                           "type": "object",
                           "additionalProperties": true,
                           "default": {},
+                          "maxProperties": 1,
                           "properties": {
+                            "armor_info": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/armor_info",
+                              "title": "The armor_info schema",
+                              "description": "Holds info about the armor component.",
+                              "required": [
+                                "hull_health",
+                                "armor"
+                              ],
+                              "type": "object",
+                              "additionalProperties": true,
+                              "default": {},
+                              "properties": {
+                                "armor": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/armor_info/properties/armor",
+                                  "title": "The armor schema",
+                                  "description": "The total armor when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    40
+                                  ]
+                                },
+                                "hull_health": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/armor_info/properties/hull_health",
+                                  "title": "The hull_health schema",
+                                  "description": "The total hull health when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    100
+                                  ]
+                                }
+                              }
+                            },
                             "cargo_info": {
                               "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/cargo_info",
                               "title": "The cargo_info schema",
-                              "description": "Info about the ships cargo capabilities.",
+                              "description": "Holds info about the cargo bay component.",
                               "required": [
                                 "increased_cargo",
                                 "increased_protected_cargo"
@@ -478,50 +551,278 @@
                                 "increased_cargo": {
                                   "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/cargo_info/properties/increased_cargo",
                                   "title": "The increased_cargo schema",
-                                  "description": "Total amount of cargo the ship can hold.",
+                                  "description": "The total increased cargo when upgrading the component.",
                                   "type": "integer",
-                                  "default": 0
+                                  "default": 0,
+                                  "examples": [
+                                    1960
+                                  ]
                                 },
                                 "increased_protected_cargo": {
                                   "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/cargo_info/properties/increased_protected_cargo",
                                   "title": "The increased_protected_cargo schema",
-                                  "description": "The amount of cargo that is protected.",
+                                  "description": "The total increased protected cargo when upgrading the component.",
                                   "type": "integer",
-                                  "default": 0
+                                  "default": 0,
+                                  "examples": [
+                                    100
+                                  ]
+                                },
+                                "ship_increased_cargo": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/cargo_info/properties/ship_increased_cargo",
+                                  "title": "The ship_increased_cargo schema",
+                                  "description": "The total increased cargo when upgrading the ship.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    100
+                                  ]
+                                },
+                                "ship_increased_protected_cargo": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/cargo_info/properties/ship_increased_protected_cargo",
+                                  "title": "The ship_increased_protected_cargo schema",
+                                  "description": "The total increased protected cargo when upgrading the ship.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    50
+                                  ]
                                 }
                               }
                             },
-                            "firing_pattern": {
-                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/firing_pattern",
-                              "title": "The firing_pattern schema",
-                              "description": "Info about the weapon firing pattern.",
+                            "impulse_info": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/impulse_info",
+                              "title": "The impulse_info schema",
+                              "description": "Holds info about the impulse engine component.",
                               "required": [
-                                "weapon_type",
-                                "pattern"
+                                "dodge",
+                                "impulse_speed"
                               ],
                               "type": "object",
                               "additionalProperties": true,
                               "default": {},
                               "properties": {
-                                "pattern": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/firing_pattern/properties/pattern",
-                                  "title": "The pattern schema",
-                                  "description": "Array of the pattern on which the weapon fires.",
+                                "dodge": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/impulse_info/properties/dodge",
+                                  "title": "The dodge schema",
+                                  "description": "The total dodge capability when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    74
+                                  ]
+                                },
+                                "impulse_speed": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/impulse_info/properties/impulse_speed",
+                                  "title": "The impulse_speed schema",
+                                  "description": "The total impulse speed when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    120
+                                  ]
+                                }
+                              }
+                            },
+                            "mining_laser_info": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/mining_laser_info",
+                              "title": "The mining_laser_info schema",
+                              "description": "Holds info about the mining laser component.",
+                              "required": [
+                                "mining_bonus"
+                              ],
+                              "type": "object",
+                              "additionalProperties": true,
+                              "default": {},
+                              "properties": {
+                                "mining_bonus": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/mining_laser_info/properties/mining_bonus",
+                                  "title": "The mining_bonus schema",
+                                  "description": "The total mining bonus when upgrading the component (in percentage).",
+                                  "type": "number",
+                                  "default": 0.0,
+                                  "examples": [
+                                    4.5
+                                  ]
+                                }
+                              }
+                            },
+                            "shield_info": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/shield_info",
+                              "title": "The shield_info schema",
+                              "description": "Holds info about the shield component.",
+                              "required": [
+                                "shield_health",
+                                "shield_deflection"
+                              ],
+                              "type": "object",
+                              "additionalProperties": true,
+                              "default": {},
+                              "properties": {
+                                "shield_deflection": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/shield_info/properties/shield_deflection",
+                                  "title": "The shield_deflection schema",
+                                  "description": "The total shield deflection when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    93
+                                  ]
+                                },
+                                "shield_health": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/shield_info/properties/shield_health",
+                                  "title": "The shield_health schema",
+                                  "description": "The total shield health when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    300
+                                  ]
+                                }
+                              }
+                            },
+                            "warp_info": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info",
+                              "title": "The warp_info schema",
+                              "description": "Holds info about the warp engines component. Also for spore drive component.",
+                              "required": [
+                                "warp_speed",
+                                "warp_distance"
+                              ],
+                              "type": "object",
+                              "additionalProperties": true,
+                              "default": {},
+                              "properties": {
+                                "warp_distance": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info/properties/warp_distance",
+                                  "title": "The warp_distance schema",
+                                  "description": "The total warp distance when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    27
+                                  ]
+                                },
+                                "warp_speed": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info/properties/warp_speed",
+                                  "title": "The warp_speed schema",
+                                  "description": "The total warp speed when upgrading the component.",
+                                  "type": "number",
+                                  "default": 0.0,
+                                  "examples": [
+                                    2.4
+                                  ]
+                                }
+                              }
+                            },
+                            "weapons_info": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info",
+                              "title": "The weapons_info schema",
+                              "description": "Holds info about a weapon component.",
+                              "required": [
+                                "weapon_type",
+                                "min_damage",
+                                "max_damage",
+                                "armor_pierce",
+                                "shield_pierce",
+                                "accuracy",
+                                "crit_chance",
+                                "crit_damage",
+                                "firing_pattern"
+                              ],
+                              "type": "object",
+                              "additionalProperties": true,
+                              "default": {},
+                              "properties": {
+                                "accuracy": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/accuracy",
+                                  "title": "The accuracy schema",
+                                  "description": "The total accuracy when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    80
+                                  ]
+                                },
+                                "armor_pierce": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/armor_pierce",
+                                  "title": "The armor_pierce schema",
+                                  "description": "The total armor piercing when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    50
+                                  ]
+                                },
+                                "crit_chance": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/crit_chance",
+                                  "title": "The crit_chance schema",
+                                  "description": "The total critical chance when upgrading the component (in percentage).",
+                                  "type": "number",
+                                  "default": 0.0,
+                                  "examples": [
+                                    0.5
+                                  ]
+                                },
+                                "crit_damage": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/crit_damage",
+                                  "title": "The crit_damage schema",
+                                  "description": "The total critcal damage when upgrading the component (in percentage).",
+                                  "type": "number",
+                                  "default": 0.0,
+                                  "examples": [
+                                    0.1
+                                  ]
+                                },
+                                "firing_pattern": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/firing_pattern",
+                                  "title": "The firing_pattern schema",
+                                  "description": "The firing pattern of the weapon.",
                                   "type": "array",
                                   "additionalItems": true,
                                   "default": [],
                                   "items": {
-                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/firing_pattern/properties/pattern/items",
+                                    "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/firing_pattern/items",
                                     "anyOf": [
                                       {
-                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/firing_pattern/properties/pattern/items/anyOf/0",
+                                        "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/firing_pattern/items/anyOf/0",
                                         "title": "The first anyOf schema",
-                                        "description": "Pattern item. 1 for firing, 0 for loading.",
+                                        "description": "Single round. 0 when loading, otherwise number of shots in this round.",
                                         "type": "integer",
-                                        "default": 1
+                                        "default": 0
                                       }
                                     ]
                                   }
+                                },
+                                "max_damage": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/max_damage",
+                                  "title": "The max_damage schema",
+                                  "description": "The weapons maximum amount of damage.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    200
+                                  ]
+                                },
+                                "min_damage": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/min_damage",
+                                  "title": "The min_damage schema",
+                                  "description": "The weapons minimum amount of damage.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    100
+                                  ]
+                                },
+                                "shield_pierce": {
+                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/weapons_info/properties/shield_pierce",
+                                  "title": "The shield_pierce schema",
+                                  "description": "The total shield piercing when upgrading the component.",
+                                  "type": "integer",
+                                  "default": 0,
+                                  "examples": [
+                                    300
+                                  ]
                                 },
                                 "weapon_type": {
                                   "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/firing_pattern/properties/weapon_type",
@@ -536,42 +837,6 @@
                                   "examples": [
                                     "kinetic"
                                   ]
-                                }
-                              }
-                            },
-                            "warp_info": {
-                              "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info",
-                              "title": "The warp_info schema",
-                              "description": "Information about the warp capabilities.",
-                              "required": [
-                                "impulse_speed",
-                                "warp_speed",
-                                "warp_distance"
-                              ],
-                              "type": "object",
-                              "additionalProperties": true,
-                              "default": {},
-                              "properties": {
-                                "impulse_speed": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info/properties/impulse_speed",
-                                  "title": "The impulse_speed schema",
-                                  "description": "Value of the impulse speed at current tier.",
-                                  "type": "integer",
-                                  "default": 0
-                                },
-                                "warp_distance": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info/properties/warp_distance",
-                                  "title": "The warp_distance schema",
-                                  "description": "Warp distance at current tier.",
-                                  "type": "integer",
-                                  "default": 0
-                                },
-                                "warp_speed": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/additional_info/properties/warp_info/properties/warp_speed",
-                                  "title": "The warp_speed schema",
-                                  "description": "Value of warp speed at current tier.",
-                                  "type": "number",
-                                  "default": 0.0
                                 }
                               }
                             }
@@ -636,7 +901,8 @@
                                           2,
                                           3,
                                           4,
-                                          5
+                                          5,
+                                          6
                                         ],
                                         "examples": [
                                           1
@@ -774,16 +1040,6 @@
                             }
                           }
                         },
-                        "id": {
-                          "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/id",
-                          "title": "The id schema",
-                          "description": "Numeric id of the component.",
-                          "type": "integer",
-                          "default": 0,
-                          "examples": [
-                            1
-                          ]
-                        },
                         "img_url": {
                           "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/img_url",
                           "title": "The img_url schema",
@@ -791,7 +1047,17 @@
                           "type": "string",
                           "default": "",
                           "examples": [
-                            "url"
+                            "./assets/component_weapon_kinetic.png"
+                          ]
+                        },
+                        "quantity": {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/components/items/anyOf/0/properties/quantity",
+                          "title": "The quantity schema",
+                          "description": "The number of similar components.",
+                          "type": "integer",
+                          "default": 1,
+                          "examples": [
+                            1
                           ]
                         },
                         "repair_cost": {
@@ -847,6 +1113,204 @@
                   ]
                 }
               },
+              "initial_build_cost": {
+                "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost",
+                "title": "The initial_build_cost schema",
+                "description": "All cost needed to build the ship to tier 1. Field only used for tier 1.",
+                "required": [],
+                "type": "object",
+                "additionalProperties": false,
+                "default": {},
+                "properties": {
+                  "materials": {
+                    "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials",
+                    "title": "The materials schema",
+                    "description": "All materials needed to build the ship.",
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single material instance.",
+                          "required": [
+                            "type",
+                            "rarity",
+                            "grade",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "type": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/type",
+                              "title": "The type schema",
+                              "description": "The type of material needed.",
+                              "type": "string",
+                              "default": "",
+                              "enum": [
+                                "gas",
+                                "ore",
+                                "crystal"
+                              ],
+                              "examples": [
+                                "gas"
+                              ]
+                            },
+                            "grade": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/grade",
+                              "title": "The grade schema",
+                              "description": "The grade in stars of the material.",
+                              "type": "integer",
+                              "default": 1,
+                              "enum": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6
+                              ],
+                              "examples": [
+                                1
+                              ]
+                            },
+                            "rarity": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/rarity",
+                              "title": "The rarity schema",
+                              "description": "The rarity of the material.",
+                              "type": "string",
+                              "default": "",
+                              "enum": [
+                                "common",
+                                "uncommon",
+                                "rare",
+                                "epic"
+                              ],
+                              "examples": [
+                                "common"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/materials/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "The value needed of the material.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                275
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "others": {
+                    "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others",
+                    "title": "The others schema",
+                    "description": "All other costs required to build the ship.",
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single other cost instance.",
+                          "required": [
+                            "type",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "type": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items/anyOf/0/properties/type",
+                              "title": "The type schema",
+                              "description": "The type of cost required.",
+                              "type": "string",
+                              "default": "",
+                              "examples": [
+                                "charged nanoprobes"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/others/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "The amount required of this cost.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                500
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "resources": {
+                    "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources",
+                    "title": "The resources schema",
+                    "description": "All resources needed to build the ship.",
+                    "type": "array",
+                    "additionalItems": true,
+                    "default": [],
+                    "items": {
+                      "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items/anyOf/0",
+                          "title": "The first anyOf schema",
+                          "description": "Single resource instance.",
+                          "required": [
+                            "type",
+                            "value"
+                          ],
+                          "type": "object",
+                          "additionalProperties": true,
+                          "default": {},
+                          "properties": {
+                            "type": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items/anyOf/0/properties/type",
+                              "title": "The type schema",
+                              "description": "Type of resource needed.",
+                              "type": "string",
+                              "default": "",
+                              "enum": [
+                                "parsteel",
+                                "tritanium",
+                                "dilithium"
+                              ],
+                              "examples": [
+                                "tritanium"
+                              ]
+                            },
+                            "value": {
+                              "$id": "#/properties/tiers/items/anyOf/0/properties/initial_build_cost/properties/resources/items/anyOf/0/properties/value",
+                              "title": "The value schema",
+                              "description": "The amount needed of the current resource.",
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                1300000
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
               "levels": {
                 "$id": "#/properties/tiers/items/anyOf/0/properties/levels",
                 "title": "The levels schema",
@@ -878,7 +1342,7 @@
                           "type": "number",
                           "default": 0.0,
                           "examples": [
-                            16.0
+                            0.16
                           ]
                         },
                         "additional_officer_slot": {
@@ -917,197 +1381,81 @@
                               "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards",
                               "title": "The rewards schema",
                               "description": "List of all rewards gained from scrapping at current level.",
-                              "required": [],
-                              "type": "object",
-                              "additionalProperties": false,
-                              "default": {},
-                              "properties": {
-                                "materials": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials",
-                                  "title": "The materials schema",
-                                  "description": "List of all materials gained.",
-                                  "type": "array",
-                                  "additionalItems": true,
-                                  "default": [],
-                                  "items": {
-                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items",
-                                    "anyOf": [
-                                      {
-                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0",
-                                        "title": "The first anyOf schema",
-                                        "description": "Single material instance.",
-                                        "required": [
-                                          "type",
-                                          "rarity",
-                                          "grade",
-                                          "value"
+                              "type": "array",
+                              "additionalItems": true,
+                              "default": [],
+                              "items": {
+                                "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items",
+                                "anyOf": [
+                                  {
+                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyof/0",
+                                    "title": "The first anyOf schema",
+                                    "description": "Single reward item instance.",
+                                    "required": [
+                                      "type",
+                                      "value"
+                                    ],
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "default": {},
+                                    "properties": {
+                                      "type": {
+                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyof/0/properties/type",
+                                        "title": "The type schema",
+                                        "description": "Type of resource, material or other",
+                                        "type": "string",
+                                        "default": "",
+                                        "examples": [
+                                          "gas"
+                                        ]
+                                      },
+                                      "grade": {
+                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyof/0/properties/grade",
+                                        "title": "The grade schema",
+                                        "description": "(Optional) Grade in stars of the material.",
+                                        "type": "integer",
+                                        "default": 0,
+                                        "enum": [
+                                          1,
+                                          2,
+                                          3,
+                                          4,
+                                          5,
+                                          6
                                         ],
-                                        "type": "object",
-                                        "additionalProperties": true,
-                                        "default": {},
-                                        "properties": {
-                                          "type": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/type",
-                                            "title": "The type schema",
-                                            "description": "Type of material gained.",
-                                            "type": "string",
-                                            "default": "",
-                                            "enum": [
-                                              "gas",
-                                              "ore",
-                                              "crystal"
-                                            ],
-                                            "examples": [
-                                              "gas"
-                                            ]
-                                          },
-                                          "grade": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/grade",
-                                            "title": "The grade schema",
-                                            "description": "The grade in stars of the gained material.",
-                                            "type": "integer",
-                                            "default": 0,
-                                            "enum": [
-                                              1,
-                                              2,
-                                              3,
-                                              4,
-                                              5
-                                            ],
-                                            "examples": [
-                                              3
-                                            ]
-                                          },
-                                          "rarity": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/rarity",
-                                            "title": "The rarity schema",
-                                            "description": "The rarity of the gained material.",
-                                            "type": "string",
-                                            "default": "",
-                                            "enum": [
-                                              "common",
-                                              "uncommon",
-                                              "rare",
-                                              "epic"
-                                            ],
-                                            "examples": [
-                                              "common"
-                                            ]
-                                          },
-                                          "value": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/materials/items/anyOf/0/properties/value",
-                                            "title": "The value schema",
-                                            "description": "The amount of this material gained.",
-                                            "type": "integer",
-                                            "default": 0,
-                                            "examples": [
-                                              275
-                                            ]
-                                          }
-                                        }
-                                      }
-                                    ]
-                                  }
-                                },
-                                "others": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others",
-                                  "title": "The others schema",
-                                  "description": "List of all others gained.",
-                                  "type": "array",
-                                  "additionalItems": true,
-                                  "default": [],
-                                  "items": {
-                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items",
-                                    "anyOf": [
-                                      {
-                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items/anyOf/0",
-                                        "title": "The first anyOf schema",
-                                        "description": "Single other reward instance.",
-                                        "required": [
-                                          "type",
-                                          "value"
+                                        "examples": [
+                                          3
+                                        ]
+                                      },
+                                      "rarity": {
+                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyof/0/properties/rarity",
+                                        "title": "The rarity schema",
+                                        "description": "(Optional) Rarity of the material.",
+                                        "type": "string",
+                                        "default": "",
+                                        "enum": [
+                                          "common",
+                                          "uncommon",
+                                          "rare",
+                                          "epic"
                                         ],
-                                        "type": "object",
-                                        "additionalProperties": true,
-                                        "default": {},
-                                        "properties": {
-                                          "type": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items/anyOf/0/properties/type",
-                                            "title": "The type schema",
-                                            "description": "The type of other reward gained.",
-                                            "type": "string",
-                                            "default": "",
-                                            "examples": [
-                                              "ship xp"
-                                            ]
-                                          },
-                                          "value": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/others/items/anyOf/0/properties/value",
-                                            "title": "The value schema",
-                                            "description": "The amount of this other reward gained.",
-                                            "type": "integer",
-                                            "default": 0,
-                                            "examples": [
-                                              25000
-                                            ]
-                                          }
-                                        }
+                                        "examples": [
+                                          "common"
+                                        ]
+                                      },
+                                      "value": {
+                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/items/anyof/0/properties/value",
+                                        "title": "The value schema",
+                                        "description": "Amount given of this resource, material or other after scrapping at this level.",
+                                        "type": "integer",
+                                        "default": 0,
+                                        "examples": [
+                                          40000
+                                        ]
                                       }
-                                    ]
+                                    }
                                   }
-                                },
-                                "resources": {
-                                  "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources",
-                                  "title": "The resources schema",
-                                  "description": "List of all resources gained.",
-                                  "type": "array",
-                                  "additionalItems": true,
-                                  "default": [],
-                                  "items": {
-                                    "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items",
-                                    "anyOf": [
-                                      {
-                                        "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items/anyOf/0",
-                                        "title": "The first anyOf schema",
-                                        "description": "Single resource instance.",
-                                        "required": [
-                                          "type",
-                                          "value"
-                                        ],
-                                        "type": "object",
-                                        "additionalProperties": true,
-                                        "default": {},
-                                        "properties": {
-                                          "type": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items/anyOf/0/properties/type",
-                                            "title": "The type schema",
-                                            "description": "The type of resource gained.",
-                                            "type": "string",
-                                            "default": "",
-                                            "enum": [
-                                              "parsteel",
-                                              "tritanium",
-                                              "dilithium"
-                                            ],
-                                            "examples": [
-                                              "tritanium"
-                                            ]
-                                          },
-                                          "value": {
-                                            "$id": "#/properties/tiers/items/anyOf/0/properties/levels/items/anyOf/0/properties/scrap_details/properties/rewards/properties/resources/items/anyOf/0/properties/value",
-                                            "title": "The value schema",
-                                            "description": "The amount of this resource gained.",
-                                            "type": "integer",
-                                            "default": 0,
-                                            "examples": [
-                                              1300000
-                                            ]
-                                          }
-                                        }
-                                      }
-                                    ]
-                                  }
-                                }
+                                ]
                               }
                             },
                             "scrap_time": {
@@ -1155,6 +1503,16 @@
                 "default": 1,
                 "examples": [
                   1
+                ]
+              },
+              "tier_locked_by_ops": {
+                "$id": "#/properties/tiers/items/anyOf/0/properties/tier_locked_by_ops",
+                "title": "The tier locked by ops schema",
+                "description": "(Optional) Operations level required to upgrade to this tier.",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                  30
                 ]
               }
             }

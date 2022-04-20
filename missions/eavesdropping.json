@@ -1,0 +1,49 @@
+{
+  "faction": "klingon",
+  "locations": [
+    {
+      "$ref": "systems/okvak_32"
+    }
+  ],
+  "mission_name": "Eavesdropping",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Pick up the signal booster from Wezam.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_penthe_34",
+        "planet": "wezam",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Place the signal booster in May\u2019lang.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/may_lang_31",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Suliban scout.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/may_lang_31",
+        "task_title": "Destroy Suliban Defender",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 1100000
+      }
+    ]
+  },
+  "storyline": "Help the Gorn gather intelligence on Suliban movements."
+}

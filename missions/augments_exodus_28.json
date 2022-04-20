@@ -1,0 +1,63 @@
+{
+  "faction": "neutral",
+  "mission_name": "Augments Exodus",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/augments_exodus_part_2"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Augments in Willenia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Corvallen warship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/willenia_28",
+        "task_title": "Destroy Corvallen Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Rendezvous with Otto in Tejat.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Interrogate the Corvallen Captain.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/tejat_30",
+        "task_title": "Destroy Corvallen Battleship",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "recommended_level": 28,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "otto",
+        "value": 2
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 213000
+      }
+    ]
+  },
+  "storyline": "Work with Otto and Kati on their search for lost Augment brothers."
+}

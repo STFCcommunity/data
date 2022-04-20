@@ -1,0 +1,82 @@
+{
+  "faction": "federation",
+  "mission_name": "Pathogen",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/vulnerability"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate Zarri Goma.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/opla_20",
+        "planet": "zarri goma",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Gorn Marauder.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_title": "Destroy Gorn Marauder",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the Gorn Captain.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/opla_20",
+        "task_title": "Destroy Gorn Captain",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring wounded to Starbase 82.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/parentage"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 25
+      },
+      {
+        "type": "officer xp",
+        "value": 43000
+      },
+      {
+        "type": "premium recruit token",
+        "value": 75
+      },
+      {
+        "type": "federation points",
+        "value": 250
+      },
+      {
+        "type": "romulan points",
+        "value": -38
+      },
+      {
+        "type": "klingon points",
+        "value": -171
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "A Starfleet colony is being ravaged by a poison. Help Luis determine the cause."
+}

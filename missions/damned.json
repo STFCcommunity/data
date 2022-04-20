@@ -1,0 +1,110 @@
+{
+  "faction": "neutral",
+  "mission_name": "Damned",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/catch_and_release"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the fleets.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_niobe_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defend Klingon or Federation space?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Klingon Space"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Federation Space"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Enter Klingon Space.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/t_ong_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 41 or higher.",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "klingon recruit token",
+            "value": 300
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Enter Federation Space.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/new_calgary_43",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles of Level 41 or higher.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "common",
+            "value": 190
+          },
+          {
+            "type": "gas",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 22
+          }
+        ],
+        "others": [],
+        "resources": [
+          {
+            "type": "tritanium",
+            "value": 3150000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles of Level 41 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/alliance_of_shadows"
+  },
+  "storyline": "Fight back!"
+}

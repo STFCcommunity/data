@@ -1,0 +1,101 @@
+{
+  "faction": "neutral",
+  "mission_name": "Mirror, Mirror Part 5",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/mirror_mirror_part_6",
+      "option": 1
+    },
+    {
+      "$ref": "missions/mirror_mirror_part_6",
+      "option": 2
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Confront the Terrans.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the stolen Turas.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_title": "Destroy Stolen Turas",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Attempt to interrupt the dimensional rift.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose the fate of the Terrans.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Stop them before they risk our Enterprise crew. We'll handle the paradox somehow!"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Side with the Terrans. We need to restore the dimensional paradox now!"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Prepare to engage the Terrans.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation recruit token",
+            "value": 100
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Prepare to engage the USS Enterprise.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "ultra recruit token",
+            "value": 160
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/whinnul_9",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/mirror_mirror_part_4"
+  },
+  "storyline": "Decide the fate of the Mirror Enterprise."
+}

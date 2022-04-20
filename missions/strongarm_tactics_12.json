@@ -1,0 +1,64 @@
+{
+  "arc": "discovery arc 1",
+  "faction": "neutral",
+  "mission_name": "Strongarm Tactics",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/made_you_look"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find Mudd's old base.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Track the energy signature.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/nelve_12",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 13 hostiles of level 13 or higher.",
+      "id": 3,
+      "task": {
+        "task_title": "Defeat 13 hostiles of level 13 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Return to your Station with the data.",
+      "id": 4,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_suffering_game"
+  },
+  "recommended_level": 12,
+  "rewards": {
+    "materials": [],
+    "others": [],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 900
+      },
+      {
+        "type": "dilithium",
+        "value": 180
+      }
+    ]
+  },
+  "storyline": "Find Mudd before he can complete his plan."
+}

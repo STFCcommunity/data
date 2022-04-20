@@ -1,0 +1,72 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "The Vision of Discontent",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/through_the_valley"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the Vulcan Ambassador.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vulcan_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Investigate reports of a battle.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Repair the Vulcan vessel with 400,000 Tritanium.",
+      "id": 3,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 400000
+      }
+    },
+    {
+      "title": "Defeat the Romulan survivor.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/fastolf_21",
+        "task_title": "Destroy Romulan Gladius",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return the Ambassador to Federation space.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/legacies"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 31
+      }
+    ],
+    "others": [],
+    "resources": []
+  },
+  "storyline": "Work with the Vulcan Ambassador to prevent a war with Romulus."
+}

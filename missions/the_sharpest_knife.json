@@ -1,0 +1,66 @@
+{
+  "faction": "romulan",
+  "mission_name": "The Sharpest Knife",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Hunt down Vorun Celok.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat Vorun.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/corvidae_42",
+        "task_title": "Destroy Vorun Celok's ship.",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Report back to Lieutenant Lotem.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/delmas_42",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/sold"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour repair speed up",
+        "value": 4
+      },
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 330
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Kill Vorun Celok."
+}

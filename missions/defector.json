@@ -1,0 +1,66 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/vendus_a_27"
+    }
+  ],
+  "mission_name": "Defector",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Collect the container from the planet Denna.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "planet": "denna",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Arkonian Interceptor.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/kepler_018_20",
+        "task_title": "Destroy Arkonian Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Take the Klingon to safety.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/azha_20",
+        "planet": "segrib",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan recruit token",
+        "value": 250
+      },
+      {
+        "type": "romulan credits",
+        "value": 150
+      },
+      {
+        "type": "federation points",
+        "value": -1900
+      },
+      {
+        "type": "romulan points",
+        "value": 3100
+      },
+      {
+        "type": "klingon points",
+        "value": -1600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "The Tal Shiar require an unmarked transport vessel to take a large cargo container across the border."
+}

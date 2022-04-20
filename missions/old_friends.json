@@ -1,0 +1,57 @@
+{
+  "faction": "neutral",
+  "mission_name": "Old Friends",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/questionable_motives"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Look for Toryn in Izbrig.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/izbrig_45",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Bounty Hunter.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/izbrig_45",
+        "task_title": "Destroy Bounty Hunter",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the second Bounty Hunter.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/izbrig_45",
+        "task_title": "Destroy Bounty Hunter Captain",
+        "task_type": "destroy"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/change_of_heart"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 160000
+      }
+    ],
+    "resources": [
+      {
+        "type": "dilithium",
+        "value": 2430000
+      }
+    ]
+  },
+  "storyline": "Search for Toryn by tracking his transponder."
+}

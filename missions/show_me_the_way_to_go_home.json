@@ -1,0 +1,85 @@
+{
+  "faction": "federation",
+  "mission_name": "Show Me the Way to Go Home",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Go to Nassak and retrieve a case of Romulan Ale.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/ardaji_45",
+        "planet": "nassak",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Romulan Centurion.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ardaji_45",
+        "task_title": "Destroy Romulan Centurion",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Go to Muroy and retrieve a case of Klingon Bloodwine.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "planet": "muroy",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Klingon Warrior.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rixos_45",
+        "task_title": "Destroy Klingon Warrior",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/last_orders"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 700
+      },
+      {
+        "type": "4\u2605 common interceptor parts",
+        "value": 700
+      },
+      {
+        "type": "federation points",
+        "value": 374000
+      },
+      {
+        "type": "romulan points",
+        "value": -131600
+      },
+      {
+        "type": "klingon points",
+        "value": -592400
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Bring Scotty and Keenser home before they can cause more trouble."
+}

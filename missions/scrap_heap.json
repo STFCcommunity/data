@@ -1,0 +1,47 @@
+{
+  "faction": "neutral",
+  "mission_name": "Scrap Heap",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/resistance"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the ravaged colony.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/enthra_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 5 hostiles of Level 25 or higher.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 5 hostiles of Level 25 or higher.",
+        "task_type": "kill"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/choosing_sides"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "ship xp",
+        "value": 2100
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 50000
+      }
+    ]
+  },
+  "storyline": "Investigate reports of devastation on a newly formed Independent colony."
+}

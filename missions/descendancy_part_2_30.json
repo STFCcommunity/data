@@ -1,0 +1,89 @@
+{
+  "arc": "outlaw arc 3",
+  "faction": "neutral",
+  "mission_name": "Descendancy Part 2",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/descendancy_part_3"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the damaged Starfleet outpost.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Find the Aeqos lab.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Fend off the USS Carolina.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_title": "Destroy USS Carolina",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Give Sesha 100k Dilithium.",
+      "id": 4,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 100000
+      }
+    },
+    {
+      "title": "Disable the USS Wexford.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/earorfilad_24",
+        "task_title": "Destroy USS Wexford",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/descendancy_part_1"
+  },
+  "recommended_level": 30,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "15 minute repair speed up",
+        "value": 60
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5209000
+      },
+      {
+        "type": "dilithium",
+        "value": 154000
+      }
+    ]
+  },
+  "storyline": "Find a way to access some Starfleet restricted files."
+}

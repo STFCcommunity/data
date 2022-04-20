@@ -1,0 +1,68 @@
+{
+  "faction": "romulan",
+  "locations": [
+    {
+      "$ref": "systems/alpha_onias_36"
+    }
+  ],
+  "mission_name": "Annexation",
+  "mission_type": "start",
+  "next_missions": [
+    {
+      "$ref": "missions/fake_empire"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Defeat 15 Hostiles of Level 35 or higher.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat 15 Hostiles of Level 35 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Claim Candor for the Romulans.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/alpha_onias_36",
+        "planet": "candor",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "rewards": {
+    "materials": [
+      {
+        "type": "ore",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 13
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 400
+      },
+      {
+        "type": "15 minute repair speed up",
+        "value": 35
+      },
+      {
+        "type": "federation points",
+        "value": -51800
+      },
+      {
+        "type": "romulan points",
+        "value": 60000
+      },
+      {
+        "type": "klingon points",
+        "value": -34600
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Control the space around Candor and claim it for the Romulan Star Empire."
+}

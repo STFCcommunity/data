@@ -1,0 +1,73 @@
+{
+  "arc": "tos arc 2",
+  "faction": "neutral",
+  "mission_name": "Doomsday Part 5",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Investigate the disturbance in Villo.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/villo_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 15 hostiles in Villo.",
+      "id": 2,
+      "task": {
+        "task_title": "Defeat 15 hostiles in Villo.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Escape to Krlakh.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the straggler.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/krlakh_28",
+        "task_title": "Destroy Doomsday Worm",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/doomsday_part_4"
+  },
+  "recommended_level": 27,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1 hour speed up",
+        "value": 20
+      },
+      {
+        "type": "recruit token",
+        "value": 200
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 985000
+      }
+    ]
+  },
+  "storyline": "Investigate the Villo system."
+}

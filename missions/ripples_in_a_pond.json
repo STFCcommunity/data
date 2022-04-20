@@ -1,0 +1,102 @@
+{
+  "arc": "borg arc 2",
+  "faction": "neutral",
+  "mission_name": "Ripples in a Pond",
+  "mission_type": "auto start",
+  "next_missions": [
+    {
+      "$ref": "missions/we_do_what_we_must"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with Spock.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/hann_26",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet with a Vulcan representative.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lainey_27",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the extremist.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/lainey_27",
+        "task_title": "Destroy Vulcan Extremist",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Decide what to do about the extremist.",
+      "id": 4,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Let the Vulcans take them."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Finish them off."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "spock",
+            "value": 2
+          },
+          {
+            "type": "officer xp",
+            "value": 72000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 72000
+          },
+          {
+            "type": "premium recruit token",
+            "value": 150
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "storyline": "Meet with the Vulcans to ease their concerns about the Vi\u2019dar."
+}

@@ -1,0 +1,48 @@
+{
+  "faction": "neutral",
+  "mission_name": "A Long, Dark Walk Through The Void",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/double_helix"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Visit the alien monolith.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/dhi_ban_14",
+        "planet": "dhi'ban",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bring your findings back to the Station.",
+      "id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/triangulation"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3\u2605 survey parts",
+        "value": 250
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 2500000
+      }
+    ]
+  },
+  "storyline": "Investigate the alien monolith."
+}

@@ -1,0 +1,64 @@
+{
+  "faction": "neutral",
+  "mission_name": "Shared Hope",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/burden_of_proof"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet with the investigator.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Respond to the colony's distress call.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ganzin_48",
+        "planet": "ganzin i",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Disable the colonist's ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "task_title": "Destroy Colonist Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Search the ship for survivors.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/unarri_48",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_deadly_pattern"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 143000
+      },
+      {
+        "type": "ultra recruit token",
+        "value": 230
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Work with the Investigator."
+}

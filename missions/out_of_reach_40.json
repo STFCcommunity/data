@@ -1,0 +1,90 @@
+{
+  "arc": "discovery arc 3",
+  "faction": "neutral",
+  "mission_name": "Out of Reach",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/the_least_of_me"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Investigate the distress signal.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the warship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_title": "Destroy Warship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the raider.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/beta_assembly_25",
+        "task_title": "Destroy Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Donate 875,000 Tritanium to assist the colony.",
+      "id": 4,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 875000
+      }
+    },
+    {
+      "title": "Find VESTA.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Catch VESTA.",
+      "id": 6,
+      "task": {
+        "$ref": "systems/zaurak_13",
+        "planet": "zonelif",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/no_strings_no_master"
+  },
+  "recommended_level": 40,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "3 hour speed up",
+        "value": 10
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 42904000
+      },
+      {
+        "type": "dilithium",
+        "value": 1262000
+      }
+    ]
+  },
+  "storyline": "VESTA\u2019s war has begun. Stop her before it\u2019s too late."
+}

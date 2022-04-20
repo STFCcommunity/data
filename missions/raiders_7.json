@@ -1,0 +1,58 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/maluria_7"
+    }
+  ],
+  "mission_name": "Raiders",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Defeat a hostile ship in Maluria.",
+      "id": 1,
+      "task": {
+        "task_title": "Defeat a hostile ship in Maluria.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Destroy the Nausicaan Raider.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/maluria_7",
+        "task_title": "Destroy Nausicaan Raider",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to the Station for repairs.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "recommended_level": 7,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "officer xp",
+        "value": 200
+      },
+      {
+        "type": "encryption key",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 3000
+      }
+    ]
+  },
+  "storyline": "Deal with the Malurian problem with raiding parties."
+}

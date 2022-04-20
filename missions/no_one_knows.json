@@ -1,0 +1,60 @@
+{
+  "faction": "neutral",
+  "mission_name": "No One Knows",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/remembrance"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the independent engineer.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the strange ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/lsp_539_47",
+        "task_title": "Destroy Strange Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/a_glimpse_behind_the_veil"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "1m parsteel token",
+        "value": 180
+      },
+      {
+        "type": "4\u2605 common battleship parts",
+        "value": 300
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 180000000
+      }
+    ]
+  },
+  "storyline": "Meet with the engineer."
+}

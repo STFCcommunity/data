@@ -1,0 +1,88 @@
+{
+  "faction": "neutral",
+  "mission_name": "Small Favor",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/crewing_up"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Find the Rigellian crash site.",
+      "id": 1,
+      "task": {
+        "no_system_info": "Destination assigned at time of mission.",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Choose how to save the Rigellian.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "<color=#FFEF40>Recruit Beverly</color> Treat the wounded."
+          },
+          {
+            "option_id": 2,
+            "option_title": "<color=#FFEF40>Recruit Data</color> Repair the ship."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Treat the wounded at your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "next gen crusher",
+            "value": 3
+          },
+          {
+            "type": "officer xp",
+            "value": 50
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "next gen data",
+            "value": 3
+          },
+          {
+            "type": "officer xp",
+            "value": 50
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/intervention"
+  },
+  "recommended_level": 2,
+  "storyline": "Rescue a Rigellian Captain who has crash landed his freighter."
+}

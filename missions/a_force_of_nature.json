@@ -1,0 +1,96 @@
+{
+  "faction": "romulan",
+  "mission_name": "A Force of Nature",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/honor_for_thee"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Collect the Corvallen ship.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/new_berlin_42",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Meet the Suliban ships in Ril Korvas.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/ril_korvas_44",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Go to the Romulan armory.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/elvros_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat 18 hostiles Level 47 or higher.",
+      "id": 4,
+      "task": {
+        "task_title": "Defeat 18 hostiles Level 47 or higher.",
+        "task_type": "kill"
+      }
+    },
+    {
+      "title": "Use the Corvallen ship to bomb the armory.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/elvros_47",
+        "planet": "strinax",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 6,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/still_standing"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 700
+      },
+      {
+        "type": "3 hour repair speed up",
+        "value": 8
+      },
+      {
+        "type": "federation points",
+        "value": -727600
+      },
+      {
+        "type": "romulan points",
+        "value": 645000
+      },
+      {
+        "type": "klingon points",
+        "value": -485000
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 37875000
+      }
+    ]
+  },
+  "storyline": "Attack the Romulan armory."
+}

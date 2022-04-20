@@ -1,0 +1,81 @@
+{
+  "faction": "federation",
+  "mission_name": "Reparations",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Find the Romulan lab in Huebr.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Destroy the Romulan Augur.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_title": "Destroy Romulan Augur",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Romulan Legionary.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/huebr_24",
+        "task_title": "Destroy Romulan Legionary",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the lab on Nojusor.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/davidul_20",
+        "planet": "nojusor",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Starbase 82.",
+      "id": 5,
+      "task": {
+        "$ref": "systems/lorillia_18",
+        "planet": "starbase 82",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/on_all_sides"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "federation credits",
+        "value": 150
+      },
+      {
+        "type": "uss mayflower blueprint part",
+        "value": 6
+      },
+      {
+        "type": "federation points",
+        "value": 3100
+      },
+      {
+        "type": "romulan points",
+        "value": -645
+      },
+      {
+        "type": "klingon points",
+        "value": -2900
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Stop the Romulans from developing a dangerous weapon."
+}

@@ -1,0 +1,93 @@
+{
+  "faction": "romulan",
+  "mission_name": "Keep Your Enemies Closer",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/a_new_home"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Meet the Corvallen guard.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/vola_41",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Donate 25,000,000 Tritanium to the guard.",
+      "id": 2,
+      "task": {
+        "resource": "tritanium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 25000000
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Interceptor.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/vola_41",
+        "task_title": "Destroy Corvallen Interceptor",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Destroy the Corvallen Battleship.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/vola_41",
+        "task_title": "Destroy Corvallen Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 5,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/two_steps_ahead"
+  },
+  "rewards": {
+    "materials": [
+      {
+        "type": "gas",
+        "grade": 4,
+        "rarity": "uncommon",
+        "value": 120
+      }
+    ],
+    "others": [
+      {
+        "type": "romulan credits",
+        "value": 600
+      },
+      {
+        "type": "4\u2605 uncommon battleship parts",
+        "value": 230
+      },
+      {
+        "type": "federation points",
+        "value": -262100
+      },
+      {
+        "type": "romulan points",
+        "value": 260000
+      },
+      {
+        "type": "klingon points",
+        "value": -174700
+      }
+    ],
+    "resources": []
+  },
+  "storyline": "Use the Corvallen Guard to your advantage."
+}

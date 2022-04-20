@@ -1,0 +1,106 @@
+{
+  "faction": "romulan",
+  "mission_name": "Right for the Wrong Reasons",
+  "mission_type": "auto link / continuation",
+  "objectives": [
+    {
+      "title": "Track down the wife.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/urhaasi_47",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Arrest the wife or kill her?",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Arrest her."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Kill her."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "latinum",
+            "value": 1700
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Return to your Station.",
+      "id": 3,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "romulan credits",
+            "value": 700
+          },
+          {
+            "type": "romulan recruit token",
+            "value": 200
+          },
+          {
+            "type": "federation points",
+            "value": -727600
+          },
+          {
+            "type": "romulan points",
+            "value": 645000
+          },
+          {
+            "type": "klingon points",
+            "value": -485000
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/the_investigation"
+  },
+  "storyline": "Capture the wife."
+}

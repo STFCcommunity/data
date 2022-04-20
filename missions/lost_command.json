@@ -1,0 +1,131 @@
+{
+  "faction": "federation",
+  "locations": [
+    {
+      "$ref": "systems/axanar_36"
+    }
+  ],
+  "mission_name": "Lost Command",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Visit the shipyard on Mimazub that houses Talona's old vessel.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/thama_32",
+        "planet": "mimazub",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return to Andoria to convene with General Ontella.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/andoria_34",
+        "planet": "andoria prime",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Give your opinion on Talona's involvement",
+      "id": 3,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Forge communications data to help clear Talona"
+          },
+          {
+            "option_id": 2,
+            "option_title": "Present the available evidence to General Ontella"
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Bring Talona word of his reinstatement to the Imperial Guard",
+      "id": 4,
+      "rewards": {
+        "materials": [],
+        "others": [
+          {
+            "type": "federation credits",
+            "value": 200
+          },
+          {
+            "type": "ultra recruit token",
+            "value": 800
+          },
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "federation points",
+            "value": 30000
+          },
+          {
+            "type": "romulan points",
+            "value": -8600
+          },
+          {
+            "type": "klingon points",
+            "value": -38900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Tell Talona that the General will consider his request in due time.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "uncommon",
+            "value": 6
+          }
+        ],
+        "others": [
+          {
+            "type": "energy manifold",
+            "value": 1
+          },
+          {
+            "type": "federation credits",
+            "value": 200
+          },
+          {
+            "type": "federation points",
+            "value": 30000
+          },
+          {
+            "type": "romulan points",
+            "value": -8600
+          },
+          {
+            "type": "klingon points",
+            "value": -38900
+          }
+        ],
+        "resources": []
+      },
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/p_jem_29",
+        "planet": "p'jem",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "storyline": "Assist a disgraced Andorian Commander Talona with clearing his name."
+}

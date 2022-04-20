@@ -1,0 +1,48 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/rigel_13"
+    }
+  ],
+  "mission_name": "Imported",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Mine 10,000 Parsteel.",
+      "id": 1,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 10000
+      }
+    },
+    {
+      "title": "Import the freshly mined Parsteel to Rigel V.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel v",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 14,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "rigellian datapad",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 320
+      }
+    ]
+  },
+  "storyline": "Import a freshly mined batch of Parsteel to Rigel V."
+}

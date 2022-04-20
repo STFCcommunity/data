@@ -1,0 +1,174 @@
+{
+  "faction": "neutral",
+  "mission_name": "Invaluable Asset",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/power_up"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Return to the Station to decide your future.",
+      "id": 1,
+      "task": {
+        "task_title": "Return your ship to your station.",
+        "task_type": "return"
+      }
+    },
+    {
+      "title": "Gain favor with a major Faction.",
+      "id": 2,
+      "task": {
+        "options": [
+          {
+            "option_id": 1,
+            "option_title": "Help the Federation in the war."
+          },
+          {
+            "option_id": 2,
+            "option_title": "Help the Romulans in the war."
+          },
+          {
+            "option_id": 3,
+            "option_title": "Help the Klingons in the war."
+          }
+        ],
+        "task_type": "choose"
+      }
+    },
+    {
+      "title": "Set course for Earth to assist Starfleet.",
+      "id": 3,
+      "sub_id": 1,
+      "task": {
+        "$ref": "systems/sol_60",
+        "planet": "earth",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 4 Damaged Datapads.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "gas",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          }
+        ],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 100000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 10000000
+          }
+        ]
+      },
+      "sub_id": 1,
+      "task": {
+        "resource": "damaged datapad",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 4
+      }
+    },
+    {
+      "title": "Set course for Romulus to assist the Romulan Star Empire.",
+      "id": 3,
+      "sub_id": 2,
+      "task": {
+        "$ref": "systems/romulus_60",
+        "planet": "romulus",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect 4 Damaged Datapads.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "ore",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          }
+        ],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 100000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 10000000
+          }
+        ]
+      },
+      "sub_id": 2,
+      "task": {
+        "resource": "damaged datapad",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 4
+      }
+    },
+    {
+      "title": "Set course for Kronos to assist the Klingon Empire.",
+      "id": 3,
+      "sub_id": 3,
+      "task": {
+        "$ref": "systems/kronos_60",
+        "planet": "kronos",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Collect Damaged Datapads.",
+      "id": 4,
+      "rewards": {
+        "materials": [
+          {
+            "type": "crystal",
+            "grade": 3,
+            "rarity": "rare",
+            "value": 50
+          }
+        ],
+        "others": [
+          {
+            "type": "officer xp",
+            "value": 100000
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 10000000
+          }
+        ]
+      },
+      "sub_id": 3,
+      "task": {
+        "resource": "parsteel",
+        "task_info": "collect",
+        "task_type": "resource",
+        "value": 5
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/ancestral_answer"
+  },
+  "storyline": "Work with your chosen Faction in the galactic war."
+}

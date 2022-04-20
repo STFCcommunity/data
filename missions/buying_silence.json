@@ -1,0 +1,54 @@
+{
+  "faction": "neutral",
+  "mission_name": "Buying Silence",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/distant_memories"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Go to Yridia.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/yridia_7",
+        "planet": "yridia",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Bribe Yursa with 1.25M Dilithium.",
+      "id": 2,
+      "task": {
+        "resource": "dilithium",
+        "task_info": "deliver",
+        "task_type": "resource",
+        "value": 1250000
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/close_calls"
+  },
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "relocation token",
+        "value": 1
+      },
+      {
+        "type": "3\u2605 survey parts",
+        "value": 400
+      }
+    ],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 5000000
+      }
+    ]
+  },
+  "storyline": "Ensure that Yursa does not sell information on your part in the recovery of the Progenitor artifact."
+}

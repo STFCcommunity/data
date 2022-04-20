@@ -1,0 +1,73 @@
+{
+  "arc": "discovery arc 4",
+  "faction": "neutral",
+  "mission_name": "The Masks We Wear",
+  "mission_type": "auto link / continuation",
+  "next_missions": [
+    {
+      "$ref": "missions/guns_blazing"
+    }
+  ],
+  "objectives": [
+    {
+      "title": "Fly into the ambush.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the first mercenary ship.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Defeat the second mercenary ship.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/netron_omega_23",
+        "task_title": "Destroy Mercenary Ship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Follow Burnham to Tilly's system.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/netron_alpha_23",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "previous_mission": {
+    "$ref": "missions/cognitive_dissonance"
+  },
+  "recommended_level": 25,
+  "rewards": {
+    "materials": [
+      {
+        "type": "crystal",
+        "grade": 3,
+        "rarity": "uncommon",
+        "value": 5
+      }
+    ],
+    "others": [],
+    "resources": [
+      {
+        "type": "parsteel",
+        "value": 335000
+      },
+      {
+        "type": "tritanium",
+        "value": 50000
+      }
+    ]
+  },
+  "storyline": "Defeat the ambush."
+}

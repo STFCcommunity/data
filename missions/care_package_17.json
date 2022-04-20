@@ -1,0 +1,65 @@
+{
+  "faction": "neutral",
+  "locations": [
+    {
+      "$ref": "systems/rigel_13"
+    }
+  ],
+  "mission_name": "Care Package",
+  "mission_type": "start",
+  "objectives": [
+    {
+      "title": "Deliver the care package to Nomahn.",
+      "id": 1,
+      "task": {
+        "$ref": "systems/tellun_7",
+        "planet": "nomahn",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Return the shipment to Governor Kop.",
+      "id": 2,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel vii",
+        "task_type": "travel to"
+      }
+    },
+    {
+      "title": "Defeat the Nausicaans to acquire some power cells.",
+      "id": 3,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "task_title": "Destroy Nausicaan Battleship",
+        "task_type": "destroy"
+      }
+    },
+    {
+      "title": "Bring the power cells to Governor Kop.",
+      "id": 4,
+      "task": {
+        "$ref": "systems/rigel_13",
+        "planet": "rigel vii",
+        "task_type": "travel to"
+      }
+    }
+  ],
+  "recommended_level": 17,
+  "rewards": {
+    "materials": [],
+    "others": [
+      {
+        "type": "rigellian datapad",
+        "value": 1
+      }
+    ],
+    "resources": [
+      {
+        "type": "tritanium",
+        "value": 2500
+      }
+    ]
+  },
+  "storyline": "The Rigellians wish to send a freight container of homegrown supplies to their colonists on Nomahn in the Tellun system."
+}
