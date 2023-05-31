@@ -1,2041 +1,1877 @@
 {
-  "description": "The Scrapyard lets you scrap ships for resources and materials. Upgrade to allow scrapping of more advanced ship classes, and to increase scrapping speed.",
+  "description": "The Artifact Gallery houses a collection of valuable artifacts that have been acquired from across the quadrant and beyond. Visitors to the station are welcome to see these rare and fascinating objects on display.",
   "bonuses": {
     "bonus1": {
-      "name": "Ship Scrapping Speed",
+      "name": "Artifact Token Bonus",
+      "percentage": true
+    },
+    "bonus2": {
+      "name": "Hull Health Bonus",
+      "percentage": true
+    },
+    "bonus3": {
+      "name": "Shield Health Bonus",
       "percentage": true
     }
   },
-  "building_name": "Scrapyard",
+  "building_name": "Artifact Gallery",
   "levels": [
     {
       "bonuses": {
-        "bonus1": 0.02
+        "bonus1": 0.01,
+        "bonus2": 0.07,
+        "bonus3": 0.07
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery key",
+            "value": 100
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 204
+            "value": 800
           }
         ]
       },
-      "build_time": 60,
+      "build_time": 35,
       "increased_power": 20,
       "level": 1,
       "requirements": [
         {
-          "name": "Unlock Scrapyard",
-          "level": 1
+          "name": "Operations",
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.03
+        "bonus1": 0.02,
+        "bonus2": 0.14,
+        "bonus3": 0.14
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 20
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 306
+            "value": 1000
           }
         ]
       },
-      "build_time": 240,
+      "build_time": 150,
       "increased_power": 20,
       "level": 2,
       "requirements": [
         {
           "name": "Operations",
-          "level": 2
-        },
-        {
-          "name": "Shipyard",
-          "level": 2
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.05
+        "bonus1": 0.03,
+        "bonus2": 0.21,
+        "bonus3": 0.21
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 22
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 510
+            "value": 1200
           }
         ]
       },
-      "build_time": 540,
+      "build_time": 330,
       "increased_power": 25,
       "level": 3,
       "requirements": [
         {
           "name": "Operations",
-          "level": 3
-        },
-        {
-          "name": "Shipyard",
-          "level": 3
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.06
+        "bonus1": 0.04,
+        "bonus2": 0.28,
+        "bonus3": 0.28
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 24
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 816
+            "value": 1500
           }
         ]
       },
-      "build_time": 780,
+      "build_time": 480,
       "increased_power": 25,
       "level": 4,
       "requirements": [
         {
           "name": "Operations",
-          "level": 4
-        },
-        {
-          "name": "Shipyard",
-          "level": 4
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.08
+        "bonus1": 0.05,
+        "bonus2": 0.35,
+        "bonus3": 0.35
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 26
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 1530
+            "value": 1800
           }
         ]
       },
-      "build_time": 1320,
+      "build_time": 780,
       "increased_power": 30,
       "level": 5,
       "requirements": [
         {
           "name": "Operations",
-          "level": 5
-        },
-        {
-          "name": "Shipyard",
-          "level": 5
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.09
+        "bonus1": 0.06,
+        "bonus2": 0.42,
+        "bonus3": 0.42
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 28
+          }
+        ],
         "resources": [
           {
             "type": "parsteel",
-            "value": 2295
+            "value": 2200
           }
         ]
       },
-      "build_time": 2160,
+      "build_time": 1380,
       "increased_power": 40,
       "level": 6,
       "requirements": [
         {
           "name": "Operations",
-          "level": 6
-        },
-        {
-          "name": "Shipyard",
-          "level": 6
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.11
+        "bonus1": 0.07,
+        "bonus2": 0.49,
+        "bonus3": 0.49
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 30
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 19
-          },
-          {
             "type": "parsteel",
-            "value": 3825
+            "value": 3000
           }
         ]
       },
-      "build_time": 4200,
+      "build_time": 2640,
       "increased_power": 50,
       "level": 7,
       "requirements": [
         {
           "name": "Operations",
-          "level": 7
-        },
-        {
-          "name": "Shipyard",
-          "level": 7
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.12
+        "bonus1": 0.08,
+        "bonus2": 0.56,
+        "bonus3": 0.56
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 32
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 60
-          },
-          {
             "type": "parsteel",
-            "value": 6120
+            "value": 4000
           }
         ]
       },
-      "build_time": 6000,
+      "build_time": 3600,
       "increased_power": 60,
       "level": 8,
       "requirements": [
         {
           "name": "Operations",
-          "level": 8
-        },
-        {
-          "name": "Shipyard",
-          "level": 8
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.14
+        "bonus1": 0.09,
+        "bonus2": 0.63,
+        "bonus3": 0.63
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 35
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 150
-          },
-          {
             "type": "parsteel",
-            "value": 10200
+            "value": 5500
           }
         ]
       },
-      "build_time": 9000,
+      "build_time": 5400,
       "increased_power": 70,
       "level": 9,
       "requirements": [
         {
           "name": "Operations",
-          "level": 9
-        },
-        {
-          "name": "Shipyard",
-          "level": 9
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.15
+        "bonus1": 0.1,
+        "bonus2": 0.7,
+        "bonus3": 0.7
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 38
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 300
-          },
-          {
             "type": "parsteel",
-            "value": 15300
+            "value": 7000
           }
         ]
       },
-      "build_time": 9900,
+      "build_time": 6600,
       "increased_power": 80,
       "level": 10,
       "requirements": [
         {
           "name": "Operations",
-          "level": 10
-        },
-        {
-          "name": "Shipyard",
-          "level": 10
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.17
+        "bonus1": 0.11,
+        "bonus2": 0.77,
+        "bonus3": 0.77
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 41
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 400
-          },
-          {
             "type": "parsteel",
-            "value": 20400
+            "value": 6800
           }
         ]
       },
-      "build_time": 10200,
+      "build_time": 7500,
       "increased_power": 105,
       "level": 11,
       "requirements": [
         {
           "name": "Operations",
-          "level": 11
-        },
-        {
-          "name": "Shipyard",
-          "level": 11
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.19
+        "bonus1": 0.12,
+        "bonus2": 0.84,
+        "bonus3": 0.84
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 44
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 550
-          },
-          {
             "type": "parsteel",
-            "value": 28050
+            "value": 9350
           }
         ]
       },
-      "build_time": 18300,
+      "build_time": 13800,
       "increased_power": 125,
       "level": 12,
       "requirements": [
         {
           "name": "Operations",
-          "level": 12
-        },
-        {
-          "name": "Shipyard",
-          "level": 12
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.21
+        "bonus1": 0.13,
+        "bonus2": 0.91,
+        "bonus3": 0.91
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 48
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 800
-          },
-          {
             "type": "parsteel",
-            "value": 40800
+            "value": 13600
           }
         ]
       },
-      "build_time": 27360,
+      "build_time": 19500,
       "increased_power": 150,
       "level": 13,
       "requirements": [
         {
           "name": "Operations",
-          "level": 13
-        },
-        {
-          "name": "Shipyard",
-          "level": 13
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.23
+        "bonus1": 0.14,
+        "bonus2": 0.98,
+        "bonus3": 0.98
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 52
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 1100
-          },
-          {
             "type": "parsteel",
-            "value": 56100
+            "value": 18700
           }
         ]
       },
-      "build_time": 38160,
+      "build_time": 25920,
       "increased_power": 175,
       "level": 14,
       "requirements": [
         {
           "name": "Operations",
-          "level": 14
-        },
-        {
-          "name": "Shipyard",
-          "level": 14
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.25
+        "bonus1": 0.15,
+        "bonus2": 1.05,
+        "bonus3": 1.05
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 56
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 1500
-          },
-          {
             "type": "parsteel",
-            "value": 76500
+            "value": 25500
           }
         ]
       },
-      "build_time": 48960,
+      "build_time": 34560,
       "increased_power": 200,
       "level": 15,
       "requirements": [
         {
           "name": "Operations",
-          "level": 15
-        },
-        {
-          "name": "Shipyard",
-          "level": 15
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.27
+        "bonus1": 0.16,
+        "bonus2": 1.12,
+        "bonus3": 1.12
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 60
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 2000
-          },
+            "type": "parsteel",
+            "value": 34000
+          }
+        ]
+      },
+      "build_time": 41760,
+      "increased_power": 225,
+      "level": 16,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 26
+        }
+      ]
+    },
+    {
+      "bonuses": {
+        "bonus1": 0.17,
+        "bonus2": 1.21,
+        "bonus3": 1.21
+      },
+      "build_costs": {
+        "materials": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 65
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 47600
+          }
+        ]
+      },
+      "build_time": 43200,
+      "increased_power": 300,
+      "level": 17,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 26
+        }
+      ]
+    },
+    {
+      "bonuses": {
+        "bonus1": 0.18,
+        "bonus2": 1.3,
+        "bonus3": 1.3
+      },
+      "build_costs": {
+        "materials": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 70
+          }
+        ],
+        "resources": [
+          {
+            "type": "parsteel",
+            "value": 68000
+          }
+        ]
+      },
+      "build_time": 64800,
+      "increased_power": 300,
+      "level": 18,
+      "requirements": [
+        {
+          "name": "Operations",
+          "level": 26
+        }
+      ]
+    },
+    {
+      "bonuses": {
+        "bonus1": 0.19,
+        "bonus2": 1.39,
+        "bonus3": 1.39
+      },
+      "build_costs": {
+        "materials": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 75
+          }
+        ],
+        "resources": [
           {
             "type": "parsteel",
             "value": 102000
           }
         ]
       },
-      "build_time": 58320,
-      "increased_power": 225,
-      "level": 16,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 16
-        },
-        {
-          "name": "Shipyard",
-          "level": 16
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.29
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 2800
-          },
-          {
-            "type": "parsteel",
-            "value": 142800
-          }
-        ]
-      },
-      "build_time": 62640,
-      "increased_power": 300,
-      "level": 17,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 17
-        },
-        {
-          "name": "Shipyard",
-          "level": 17
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.31
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 4000
-          },
-          {
-            "type": "parsteel",
-            "value": 204000
-          }
-        ]
-      },
-      "build_time": 95760,
-      "increased_power": 300,
-      "level": 18,
-      "requirements": [
-        {
-          "name": "Operations",
-          "level": 18
-        },
-        {
-          "name": "Shipyard",
-          "level": 18
-        }
-      ]
-    },
-    {
-      "bonuses": {
-        "bonus1": 0.33
-      },
-      "build_costs": {
-        "materials": [],
-        "others": [],
-        "resources": [
-          {
-            "type": "tritanium",
-            "value": 6000
-          },
-          {
-            "type": "parsteel",
-            "value": 306000
-          }
-        ]
-      },
-      "build_time": 138960,
+      "build_time": 93600,
       "increased_power": 300,
       "level": 19,
       "requirements": [
         {
           "name": "Operations",
-          "level": 19
-        },
-        {
-          "name": "Shipyard",
-          "level": 19
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.35
+        "bonus1": 0.2,
+        "bonus2": 1.48,
+        "bonus3": 1.48
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 80
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 8500
-          },
-          {
             "type": "parsteel",
-            "value": 433500
+            "value": 144500
           }
         ]
       },
-      "build_time": 208800,
+      "build_time": 134640,
       "increased_power": 400,
       "level": 20,
       "requirements": [
         {
           "name": "Operations",
-          "level": 20
-        },
-        {
-          "name": "Shipyard",
-          "level": 20
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.38
+        "bonus1": 0.23,
+        "bonus2": 1.59,
+        "bonus3": 1.59
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 90
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 14310
-          },
-          {
             "type": "parsteel",
-            "value": 729810
+            "value": 243270
           }
         ]
       },
-      "build_time": 190800,
+      "build_time": 117360,
       "increased_power": 400,
       "level": 21,
       "requirements": [
         {
           "name": "Operations",
-          "level": 21
-        },
-        {
-          "name": "Shipyard",
-          "level": 21
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.4
+        "bonus1": 0.26,
+        "bonus2": 1.7,
+        "bonus3": 1.7
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 100
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 22260
-          },
-          {
             "type": "parsteel",
-            "value": 1135260
+            "value": 378420
           }
         ]
       },
-      "build_time": 296640,
+      "build_time": 177840,
       "increased_power": 500,
       "level": 22,
       "requirements": [
         {
           "name": "Operations",
-          "level": 22
-        },
-        {
-          "name": "Shipyard",
-          "level": 22
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.43
+        "bonus1": 0.29,
+        "bonus2": 1.81,
+        "bonus3": 1.81
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 110
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 36630
-          },
-          {
             "type": "parsteel",
-            "value": 1868130
+            "value": 622710
           }
         ]
       },
-      "build_time": 349920,
+      "build_time": 216000,
       "increased_power": 500,
       "level": 23,
       "requirements": [
         {
           "name": "Operations",
-          "level": 23
-        },
-        {
-          "name": "Shipyard",
-          "level": 23
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.45
+        "bonus1": 0.32,
+        "bonus2": 1.92,
+        "bonus3": 1.92
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 120
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 57720
-          },
-          {
             "type": "parsteel",
-            "value": 2943720
+            "value": 981240
           }
         ]
       },
-      "build_time": 429120,
+      "build_time": 264960,
       "increased_power": 600,
       "level": 24,
       "requirements": [
         {
           "name": "Operations",
-          "level": 24
-        },
-        {
-          "name": "Shipyard",
-          "level": 24
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.48
+        "bonus1": 0.35,
+        "bonus2": 2.03,
+        "bonus3": 2.03
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 130
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 93600
-          },
-          {
             "type": "parsteel",
-            "value": 4773600
+            "value": 1591200
           }
         ]
       },
-      "build_time": 397440,
+      "build_time": 237600,
       "increased_power": 550,
       "level": 25,
       "requirements": [
         {
           "name": "Operations",
-          "level": 25
-        },
-        {
-          "name": "Shipyard",
-          "level": 25
+          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.5
+        "bonus1": 0.38,
+        "bonus2": 2.17,
+        "bonus3": 2.17
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 140
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 146250
-          },
-          {
             "type": "parsteel",
-            "value": 7458750
+            "value": 2486250
           }
         ]
       },
-      "build_time": 538560,
+      "build_time": 334080,
       "increased_power": 750,
       "level": 26,
       "requirements": [
         {
           "name": "Operations",
           "level": 26
-        },
-        {
-          "name": "Shipyard",
-          "level": 26
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.53
+        "bonus1": 0.41,
+        "bonus2": 2.31,
+        "bonus3": 2.31
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 160
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 223200
-          },
-          {
             "type": "parsteel",
-            "value": 11383200
+            "value": 3794400
           }
         ]
       },
-      "build_time": 613440,
+      "build_time": 381600,
       "increased_power": 750,
       "level": 27,
       "requirements": [
         {
           "name": "Operations",
           "level": 27
-        },
-        {
-          "name": "Shipyard",
-          "level": 27
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.55
+        "bonus1": 0.44,
+        "bonus2": 2.45,
+        "bonus3": 2.45
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 180
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 334800
-          },
-          {
             "type": "parsteel",
-            "value": 17074800
+            "value": 5691600
           }
         ]
       },
-      "build_time": 712800,
+      "build_time": 427680,
       "increased_power": 750,
       "level": 28,
       "requirements": [
         {
           "name": "Operations",
           "level": 28
-        },
-        {
-          "name": "Shipyard",
-          "level": 28
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.58
+        "bonus1": 0.47,
+        "bonus2": 2.59,
+        "bonus3": 2.59
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 200
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 533000
-          },
-          {
             "type": "parsteel",
-            "value": 27183000
+            "value": 9061000
           }
         ]
       },
-      "build_time": 784800,
+      "build_time": 491040,
       "increased_power": 1000,
       "level": 29,
       "requirements": [
         {
           "name": "Operations",
           "level": 29
-        },
-        {
-          "name": "Shipyard",
-          "level": 29
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.6
+        "bonus1": 0.5,
+        "bonus2": 2.73,
+        "bonus3": 2.73
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 220
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 780000
-          },
-          {
             "type": "parsteel",
-            "value": 39780000
+            "value": 13260000
           }
         ]
       },
-      "build_time": 851040,
+      "build_time": 531360,
       "increased_power": 1000,
       "level": 30,
       "requirements": [
         {
           "name": "Operations",
           "level": 30
-        },
-        {
-          "name": "Shipyard",
-          "level": 30
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.63
+        "bonus1": 0.55,
+        "bonus2": 2.87,
+        "bonus3": 2.87
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 250
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 1233000
-          },
-          {
             "type": "parsteel",
-            "value": 62883000
+            "value": 20961000
           }
         ]
       },
-      "build_time": 1117440,
+      "build_time": 669600,
       "increased_power": 1000,
       "level": 31,
       "requirements": [
         {
           "name": "Operations",
           "level": 31
-        },
-        {
-          "name": "Shipyard",
-          "level": 31
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.66
+        "bonus1": 0.6,
+        "bonus2": 3.01,
+        "bonus3": 3.01
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 280
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 1781000
-          },
-          {
             "type": "parsteel",
-            "value": 90831000
+            "value": 30277000
           }
         ]
       },
-      "build_time": 1091520,
+      "build_time": 685440,
       "increased_power": 1250,
       "level": 32,
       "requirements": [
         {
           "name": "Operations",
           "level": 32
-        },
-        {
-          "name": "Shipyard",
-          "level": 32
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.69
+        "bonus1": 0.65,
+        "bonus2": 3.15,
+        "bonus3": 3.15
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 310
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 2755000
-          },
-          {
             "type": "parsteel",
-            "value": 140505000
+            "value": 46835000
           }
         ]
       },
-      "build_time": 1585440,
+      "build_time": 996480,
       "increased_power": 1250,
       "level": 33,
       "requirements": [
         {
           "name": "Operations",
           "level": 33
-        },
-        {
-          "name": "Shipyard",
-          "level": 33
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.72
+        "bonus1": 0.7,
+        "bonus2": 3.29,
+        "bonus3": 3.29
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 350
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 4350000
-          },
-          {
             "type": "parsteel",
-            "value": 221850000
+            "value": 73950000
           }
         ]
       },
-      "build_time": 2099520,
+      "build_time": 1260000,
       "increased_power": 1250,
       "level": 34,
       "requirements": [
         {
           "name": "Operations",
           "level": 34
-        },
-        {
-          "name": "Shipyard",
-          "level": 34
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.75
+        "bonus1": 0.75,
+        "bonus2": 3.47,
+        "bonus3": 3.47
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 390
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 6732000
-          },
-          {
             "type": "parsteel",
-            "value": 343332000
+            "value": 114444000
           }
         ]
       },
-      "build_time": 2767680,
+      "build_time": 1752480,
       "increased_power": 1250,
       "level": 35,
       "requirements": [
         {
           "name": "Operations",
           "level": 35
-        },
-        {
-          "name": "Shipyard",
-          "level": 35
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.78
+        "bonus1": 0.8,
+        "bonus2": 3.65,
+        "bonus3": 3.65
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 440
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 9486000
-          },
-          {
             "type": "parsteel",
-            "value": 483786000
+            "value": 161262000
           }
         ]
       },
-      "build_time": 3536640,
+      "build_time": 2239200,
       "increased_power": 1500,
       "level": 36,
       "requirements": [
         {
           "name": "Operations",
           "level": 36
-        },
-        {
-          "name": "Shipyard",
-          "level": 36
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.81
+        "bonus1": 0.85,
+        "bonus2": 3.83,
+        "bonus3": 3.83
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 490
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 14580000
-          },
-          {
             "type": "parsteel",
-            "value": 743580000
+            "value": 247860000
           }
         ]
       },
-      "build_time": 3654720,
+      "build_time": 2193120,
       "increased_power": 1750,
       "level": 37,
       "requirements": [
         {
           "name": "Operations",
           "level": 37
-        },
-        {
-          "name": "Shipyard",
-          "level": 37
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.84
+        "bonus1": 0.9,
+        "bonus2": 4.01,
+        "bonus3": 4.01
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 550
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 22680000
-          },
-          {
             "type": "parsteel",
-            "value": 1156680000
+            "value": 385560000
           }
         ]
       },
-      "build_time": 5927040,
+      "build_time": 3801600,
       "increased_power": 1750,
       "level": 38,
       "requirements": [
         {
           "name": "Operations",
           "level": 38
-        },
-        {
-          "name": "Shipyard",
-          "level": 38
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.87
+        "bonus1": 0.95,
+        "bonus2": 4.19,
+        "bonus3": 4.19
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 620
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 38700000
-          },
-          {
             "type": "parsteel",
-            "value": 1973700000
+            "value": 657900000
           }
         ]
       },
-      "build_time": 7866720,
+      "build_time": 5045760,
       "increased_power": 1500,
       "level": 39,
       "requirements": [
         {
           "name": "Operations",
           "level": 39
-        },
-        {
-          "name": "Shipyard",
-          "level": 39
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.9
+        "bonus1": 1.0,
+        "bonus2": 4.41,
+        "bonus3": 4.41
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 1000
+            "type": "artifact gallery schematics",
+            "value": 700
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 60200000
-          },
-          {
             "type": "parsteel",
-            "value": 8596560000
+            "value": 2865520000
           }
         ]
       },
-      "build_time": 13962240,
+      "build_time": 8377920,
       "increased_power": 2000,
       "level": 40,
       "requirements": [
         {
           "name": "Operations",
           "level": 40
-        },
-        {
-          "name": "Shipyard",
-          "level": 40
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 0.95
+        "bonus1": 1.05,
+        "bonus2": 4.63,
+        "bonus3": 4.63
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 1500
+            "type": "artifact gallery schematics",
+            "value": 800
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 86000000
-          },
-          {
             "type": "parsteel",
-            "value": 8772000000
+            "value": 2924000000
           }
         ]
       },
-      "build_time": 13085280,
+      "build_time": 7850880,
       "increased_power": 2000,
       "level": 41,
       "requirements": [
         {
           "name": "Operations",
           "level": 41
-        },
-        {
-          "name": "Shipyard",
-          "level": 41
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.0
+        "bonus1": 1.1,
+        "bonus2": 4.85,
+        "bonus3": 4.85
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 2000
+            "type": "artifact gallery schematics",
+            "value": 900
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 128100000
-          },
-          {
             "type": "parsteel",
-            "value": 13066200000
+            "value": 4355400000
           }
         ]
       },
-      "build_time": 20113920,
+      "build_time": 12068640,
       "increased_power": 2000,
       "level": 42,
       "requirements": [
         {
           "name": "Operations",
           "level": 42
-        },
-        {
-          "name": "Shipyard",
-          "level": 42
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.05
+        "bonus1": 1.15,
+        "bonus2": 5.07,
+        "bonus3": 5.07
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 2500
+            "type": "artifact gallery schematics",
+            "value": 1000
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 183000000
-          },
-          {
             "type": "parsteel",
-            "value": 18666000000
+            "value": 6222000000
           }
         ]
       },
-      "build_time": 26575200,
+      "build_time": 15945120,
       "increased_power": 2500,
       "level": 43,
       "requirements": [
         {
           "name": "Operations",
           "level": 43
-        },
-        {
-          "name": "Shipyard",
-          "level": 43
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.1
+        "bonus1": 1.2,
+        "bonus2": 5.29,
+        "bonus3": 5.29
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 3000
+            "type": "artifact gallery schematics",
+            "value": 1100
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 274500000
-          },
-          {
             "type": "parsteel",
-            "value": 27999000000
+            "value": 9333000000
           }
         ]
       },
-      "build_time": 34686720,
+      "build_time": 20812320,
       "increased_power": 2500,
       "level": 44,
       "requirements": [
         {
           "name": "Operations",
           "level": 44
-        },
-        {
-          "name": "Shipyard",
-          "level": 44
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.15
+        "bonus1": 1.25,
+        "bonus2": 5.51,
+        "bonus3": 5.51
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 3500
+            "type": "artifact gallery schematics",
+            "value": 1250
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 390000000
-          },
-          {
             "type": "parsteel",
-            "value": 39780000000
+            "value": 13260000000
           }
         ]
       },
-      "build_time": 44779680,
+      "build_time": 26867520,
       "increased_power": 2500,
       "level": 45,
       "requirements": [
         {
           "name": "Operations",
           "level": 45
-        },
-        {
-          "name": "Shipyard",
-          "level": 45
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.2
+        "bonus1": 1.3,
+        "bonus2": 5.77,
+        "bonus3": 5.77
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 4000
+            "type": "artifact gallery schematics",
+            "value": 1400
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 536250000
-          },
-          {
             "type": "parsteel",
-            "value": 54697500000
+            "value": 18232500000
           }
         ]
       },
-      "build_time": 57241440,
+      "build_time": 34344000,
       "increased_power": 2500,
       "level": 46,
       "requirements": [
         {
           "name": "Operations",
           "level": 46
-        },
-        {
-          "name": "Shipyard",
-          "level": 46
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.25
+        "bonus1": 1.35,
+        "bonus2": 6.03,
+        "bonus3": 6.03
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 4500
+            "type": "artifact gallery schematics",
+            "value": 1600
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 780000000
-          },
-          {
             "type": "parsteel",
-            "value": 79560000000
+            "value": 26520000000
           }
         ]
       },
-      "build_time": 72511200,
+      "build_time": 43506720,
       "increased_power": 3000,
       "level": 47,
       "requirements": [
         {
           "name": "Operations",
           "level": 47
-        },
-        {
-          "name": "Shipyard",
-          "level": 47
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.3
+        "bonus1": 1.4,
+        "bonus2": 6.29,
+        "bonus3": 6.29
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 5000
+            "type": "artifact gallery schematics",
+            "value": 1800
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 1260000000
-          },
-          {
             "type": "parsteel",
-            "value": 128520000000
+            "value": 42840000000
           }
         ]
       },
-      "build_time": 91101600,
+      "build_time": 54660960,
       "increased_power": 3000,
       "level": 48,
       "requirements": [
         {
           "name": "Operations",
           "level": 48
-        },
-        {
-          "name": "Shipyard",
-          "level": 48
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.35
+        "bonus1": 1.45,
+        "bonus2": 6.56,
+        "bonus3": 6.56
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 5500
+            "type": "artifact gallery schematics",
+            "value": 2000
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 2100000000
-          },
-          {
             "type": "parsteel",
-            "value": 214200000000
+            "value": 71400000000
           }
         ]
       },
-      "build_time": 113587200,
+      "build_time": 68152320,
       "increased_power": 3000,
       "level": 49,
       "requirements": [
         {
           "name": "Operations",
           "level": 49
-        },
-        {
-          "name": "Shipyard",
-          "level": 49
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.4
+        "bonus1": 1.5,
+        "bonus2": 6.84,
+        "bonus3": 6.84
       },
       "build_costs": {
         "materials": [],
-        "others": [],
+        "others": [
+          {
+            "type": "artifact gallery schematics",
+            "value": 2300
+          }
+        ],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 3675000000
-          },
-          {
             "type": "parsteel",
-            "value": 374850000000
+            "value": 124950000000
           }
         ]
       },
-      "build_time": 140627520,
+      "build_time": 84376800,
       "increased_power": 3000,
       "level": 50,
       "requirements": [
         {
           "name": "Operations",
           "level": 50
-        },
-        {
-          "name": "Shipyard",
-          "level": 50
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.45
+        "bonus1": 1.55,
+        "bonus2": 7.12,
+        "bonus3": 7.12
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 5400
+            "type": "artifact gallery schematics",
+            "value": 2600
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 7800000000
-          },
-          {
             "type": "parsteel",
-            "value": 1869660000000
+            "value": 623220000000
           }
         ]
       },
-      "build_time": 149065920,
+      "build_time": 89439840,
       "increased_power": 3500,
       "level": 51,
       "requirements": [
         {
           "name": "Operations",
           "level": 51
-        },
-        {
-          "name": "Shipyard",
-          "level": 51
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.5
+        "bonus1": 1.6,
+        "bonus2": 7.4,
+        "bonus3": 7.4
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 9400
+            "type": "artifact gallery schematics",
+            "value": 3000
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 13260000000
-          },
-          {
             "type": "parsteel",
-            "value": 3381300000000
+            "value": 1127100000000
           }
         ]
       },
-      "build_time": 158009760,
+      "build_time": 94805280,
       "increased_power": 3500,
       "level": 52,
       "requirements": [
         {
           "name": "Operations",
           "level": 52
-        },
-        {
-          "name": "Shipyard",
-          "level": 52
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.55
+        "bonus1": 1.65,
+        "bonus2": 7.68,
+        "bonus3": 7.68
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 10200
+            "type": "artifact gallery schematics",
+            "value": 3400
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 23200000000
-          },
-          {
             "type": "parsteel",
-            "value": 5679360000000
+            "value": 1893120000000
           }
         ]
       },
-      "build_time": 167490720,
+      "build_time": 100494720,
       "increased_power": 4000,
       "level": 53,
       "requirements": [
         {
           "name": "Operations",
           "level": 53
-        },
-        {
-          "name": "Shipyard",
-          "level": 53
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.6
+        "bonus1": 1.7,
+        "bonus2": 7.96,
+        "bonus3": 7.96
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 19500
+            "type": "artifact gallery schematics",
+            "value": 3900
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 34800000000
-          },
-          {
             "type": "parsteel",
-            "value": 8519040000000
+            "value": 2839680000000
           }
         ]
       },
-      "build_time": 177540480,
+      "build_time": 106524000,
       "increased_power": 4000,
       "level": 54,
       "requirements": [
         {
           "name": "Operations",
           "level": 54
-        },
-        {
-          "name": "Shipyard",
-          "level": 54
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.65
+        "bonus1": 1.75,
+        "bonus2": 8.26,
+        "bonus3": 8.26
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 23900
+            "type": "artifact gallery schematics",
+            "value": 4500
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 54600000000
-          },
-          {
             "type": "parsteel",
-            "value": 14479920000000
+            "value": 4826640000000
           }
         ]
       },
-      "build_time": 188192160,
+      "build_time": 112914720,
       "increased_power": 4000,
       "level": 55,
       "requirements": [
         {
           "name": "Operations",
           "level": 55
-        },
-        {
-          "name": "Shipyard",
-          "level": 55
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.7
+        "bonus1": 1.8,
+        "bonus2": 8.57,
+        "bonus3": 8.57
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 31900
+            "type": "artifact gallery schematics",
+            "value": 5200
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 85800000000
-          },
-          {
             "type": "parsteel",
-            "value": 22754160000000
+            "value": 7584720000000
           }
         ]
       },
-      "build_time": 199483200,
+      "build_time": 119689920,
       "increased_power": 4000,
       "level": 56,
       "requirements": [
         {
           "name": "Operations",
           "level": 56
-        },
-        {
-          "name": "Shipyard",
-          "level": 56
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.75
+        "bonus1": 1.85,
+        "bonus2": 8.9,
+        "bonus3": 8.9
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 34200
+            "type": "artifact gallery schematics",
+            "value": 5900
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 134320000000
-          },
-          {
             "type": "parsteel",
-            "value": 35621664000000
+            "value": 11873888000000
           }
         ]
       },
-      "build_time": 211452480,
+      "build_time": 126871200,
       "increased_power": 4000,
       "level": 57,
       "requirements": [
         {
           "name": "Operations",
           "level": 57
-        },
-        {
-          "name": "Shipyard",
-          "level": 57
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.8
+        "bonus1": 1.9,
+        "bonus2": 9.23,
+        "bonus3": 9.23
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 35500
+            "type": "artifact gallery schematics",
+            "value": 6700
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 210240000000
-          },
-          {
             "type": "parsteel",
-            "value": 51466752000000
+            "value": 17155584000000
           }
         ]
       },
-      "build_time": 224140320,
+      "build_time": 134484480,
       "increased_power": 5000,
       "level": 58,
       "requirements": [
         {
           "name": "Operations",
           "level": 58
-        },
-        {
-          "name": "Shipyard",
-          "level": 58
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.85
+        "bonus1": 1.95,
+        "bonus2": 9.61,
+        "bonus3": 9.61
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 37800
+            "type": "artifact gallery schematics",
+            "value": 7600
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 315360000000
-          },
-          {
             "type": "parsteel",
-            "value": 77200128000000
+            "value": 25733376000000
           }
         ]
       },
-      "build_time": 237588480,
+      "build_time": 142552800,
       "increased_power": 5000,
       "level": 59,
       "requirements": [
         {
           "name": "Operations",
           "level": 59
-        },
-        {
-          "name": "Shipyard",
-          "level": 59
         }
       ]
     },
     {
       "bonuses": {
-        "bonus1": 1.9
+        "bonus1": 2.0,
+        "bonus2": 10.0,
+        "bonus3": 10.0
       },
       "build_costs": {
-        "materials": [
+        "materials": [],
+        "others": [
           {
-            "type": "crystal",
-            "grade": 5,
-            "rarity": "common",
-            "value": 47800
+            "type": "artifact gallery schematics",
+            "value": 9000
           }
         ],
-        "others": [],
         "resources": [
           {
-            "type": "tritanium",
-            "value": 492500000000
-          },
-          {
             "type": "parsteel",
-            "value": 120564000000000
+            "value": 40188000000000
           }
         ]
       },
-      "build_time": 251843040,
+      "build_time": 151106400,
       "increased_power": 5000,
       "level": 60,
       "requirements": [
         {
           "name": "Operations",
-          "level": 60
-        },
-        {
-          "name": "Shipyard",
           "level": 60
         }
       ]
