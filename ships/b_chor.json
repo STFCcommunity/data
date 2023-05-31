@@ -1,7 +1,7 @@
 {
   "description": "With hostilities on the rise, the Klingon Empire knows that they will need to protect their precious mining operations. Sneering at the Federation\u2019s trickery and the Romulans\u2019s cowardice, the Empire have designed a ship that will guarantee their economic dominance: The B\u2019Chor. This gargantuan vessel features fourteen compartmentalized cargo holds for storing materials, each one protected by a seven inch Tritanium hull. While their enemies flee at the first sight of danger, the B\u2019Chor will stand strong.",
   "blueprints": {
-    "cost": 1200,
+    "cost": 0,
     "quantity": 150
   },
   "faction": "klingon",
@@ -19,11 +19,12 @@
     }
   ],
   "scrap_info": {
-    "scrappable": false
+    "required_scrapyard_level": 53,
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Crystal Mining Laser",
-    "description": "The Mining Rate of Crystal is increased by 120%.",
+    "description": "The Mining Rate of Crystal is increased by {value}.",
     "percentage": true
   },
   "ship_class": "survey",
@@ -173,16 +174,16 @@
       "initial_build_cost": {
         "materials": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 6000
-          },
-          {
             "type": "gas",
             "grade": 4,
             "rarity": "common",
             "value": 2100
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 6000
           }
         ],
         "others": [],
@@ -202,30 +203,111 @@
           "ability_bonus": 1.2,
           "additional_officer_slot": false,
           "level": 1,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              }
+            ],
+            "scrap_time": 1799280
+          },
           "ship_xp": 0
         },
         {
           "ability_bonus": 1.26,
           "additional_officer_slot": false,
           "level": 2,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 160
+              }
+            ],
+            "scrap_time": 1799280
+          },
           "ship_xp": 8000
         },
         {
           "ability_bonus": 1.29,
           "additional_officer_slot": false,
           "level": 3,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 600
+              }
+            ],
+            "scrap_time": 1799280
+          },
           "ship_xp": 12000
         },
         {
           "ability_bonus": 1.32,
           "additional_officer_slot": false,
           "level": 4,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 1600
+              }
+            ],
+            "scrap_time": 1799280
+          },
           "ship_xp": 20000
         },
         {
           "ability_bonus": 1.35,
           "additional_officer_slot": true,
           "level": 5,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 3190
+              }
+            ],
+            "scrap_time": 1799280
+          },
           "ship_xp": 29000
         }
       ],
@@ -263,16 +345,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1075
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 705
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1075
               }
             ],
             "others": [
@@ -315,16 +397,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 2570
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 1230
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 2570
               }
             ],
             "others": [
@@ -370,16 +452,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1825
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 965
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1825
               }
             ],
             "others": [
@@ -423,16 +505,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1450
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 835
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1450
               }
             ],
             "others": [
@@ -476,16 +558,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1075
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 705
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1075
               }
             ],
             "others": [
@@ -529,16 +611,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1075
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 705
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1075
               }
             ],
             "others": [
@@ -582,16 +664,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 700
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 575
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 700
               }
             ],
             "others": [
@@ -630,30 +712,175 @@
           "ability_bonus": 1.38,
           "additional_officer_slot": false,
           "level": 6,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 4715
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 123
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 210
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 298
+              }
+            ],
+            "scrap_time": 2019600
+          },
           "ship_xp": 41000
         },
         {
           "ability_bonus": 1.41,
           "additional_officer_slot": false,
           "level": 7,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 7080
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 127
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 216
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 303
+              }
+            ],
+            "scrap_time": 2019600
+          },
           "ship_xp": 59000
         },
         {
           "ability_bonus": 1.44,
           "additional_officer_slot": false,
           "level": 8,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 9750
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 130
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 222
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 309
+              }
+            ],
+            "scrap_time": 2019600
+          },
           "ship_xp": 78000
         },
         {
           "ability_bonus": 1.47,
           "additional_officer_slot": false,
           "level": 9,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 13000
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 134
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 228
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 314
+              }
+            ],
+            "scrap_time": 2019600
+          },
           "ship_xp": 100000
         },
         {
           "ability_bonus": 1.5,
           "additional_officer_slot": true,
           "level": 10,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 17225
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 137
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 234
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 320
+              }
+            ],
+            "scrap_time": 2019600
+          },
           "ship_xp": 130000
         }
       ],
@@ -691,16 +918,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1915
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 2030
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1915
               }
             ],
             "others": [
@@ -747,10 +974,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 5090
+                "rarity": "uncommon",
+                "value": 940
               },
               {
                 "type": "crystal",
@@ -759,10 +986,10 @@
                 "value": 2160
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 940
+                "rarity": "common",
+                "value": 5090
               }
             ],
             "others": [
@@ -808,10 +1035,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 3500
+                "rarity": "uncommon",
+                "value": 700
               },
               {
                 "type": "crystal",
@@ -820,10 +1047,10 @@
                 "value": 1460
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 700
+                "rarity": "common",
+                "value": 3500
               }
             ],
             "others": [
@@ -867,10 +1094,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 2705
+                "rarity": "uncommon",
+                "value": 575
               },
               {
                 "type": "crystal",
@@ -879,10 +1106,10 @@
                 "value": 1110
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 575
+                "rarity": "common",
+                "value": 2705
               }
             ],
             "others": [
@@ -926,16 +1153,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1915
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 2030
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1915
               }
             ],
             "others": [
@@ -983,16 +1210,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1915
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 2030
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1915
               }
             ],
             "others": [
@@ -1040,16 +1267,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 1120
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "common",
                 "value": 1235
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 1120
               }
             ],
             "others": [
@@ -1092,30 +1319,235 @@
           "ability_bonus": 1.54,
           "additional_officer_slot": false,
           "level": 11,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 21330
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 4
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 321
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 18
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 688
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 2
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 999
+              }
+            ],
+            "scrap_time": 2239920
+          },
           "ship_xp": 158000
         },
         {
           "ability_bonus": 1.58,
           "additional_officer_slot": false,
           "level": 12,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 26125
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 5
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 330
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 19
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 707
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 2
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 1017
+              }
+            ],
+            "scrap_time": 2239920
+          },
           "ship_xp": 190000
         },
         {
           "ability_bonus": 1.62,
           "additional_officer_slot": false,
           "level": 13,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 32900
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 5
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 339
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 20
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 726
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 3
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 1036
+              }
+            ],
+            "scrap_time": 2239920
+          },
           "ship_xp": 235000
         },
         {
           "ability_bonus": 1.66,
           "additional_officer_slot": false,
           "level": 14,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 39188
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 5
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 349
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 21
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 746
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 3
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 1054
+              }
+            ],
+            "scrap_time": 2239920
+          },
           "ship_xp": 275000
         },
         {
           "ability_bonus": 1.7,
           "additional_officer_slot": false,
           "level": 15,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 46110
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 5
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 358
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 21
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 767
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 3
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 1073
+              }
+            ],
+            "scrap_time": 2239920
+          },
           "ship_xp": 318000
         }
       ],
@@ -1153,16 +1585,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 880
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 495
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 880
               }
             ],
             "others": [
@@ -1209,10 +1641,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 13505
+                "rarity": "uncommon",
+                "value": 1065
               },
               {
                 "type": "crystal",
@@ -1221,10 +1653,10 @@
                 "value": 2510
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1065
+                "rarity": "common",
+                "value": 13505
               }
             ],
             "others": [
@@ -1270,10 +1702,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 9110
+                "rarity": "uncommon",
+                "value": 780
               },
               {
                 "type": "crystal",
@@ -1282,10 +1714,10 @@
                 "value": 1695
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 780
+                "rarity": "common",
+                "value": 9110
               }
             ],
             "others": [
@@ -1329,10 +1761,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 6915
+                "rarity": "uncommon",
+                "value": 635
               },
               {
                 "type": "crystal",
@@ -1341,10 +1773,10 @@
                 "value": 1285
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 635
+                "rarity": "common",
+                "value": 6915
               }
             ],
             "others": [
@@ -1388,16 +1820,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 880
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 495
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 880
               }
             ],
             "others": [
@@ -1445,16 +1877,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 880
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 495
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 880
               }
             ],
             "others": [
@@ -1502,16 +1934,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 470
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 350
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 470
               }
             ],
             "others": [
@@ -1554,30 +1986,235 @@
           "ability_bonus": 1.74,
           "additional_officer_slot": false,
           "level": 16,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 55755
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 15
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 368
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 59
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 1621
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 8
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 2351
+              }
+            ],
+            "scrap_time": 2496960
+          },
           "ship_xp": 378000
         },
         {
           "ability_bonus": 1.78,
           "additional_officer_slot": false,
           "level": 17,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 64500
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 16
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 378
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 62
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 1665
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 8
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 2394
+              }
+            ],
+            "scrap_time": 2496960
+          },
           "ship_xp": 430000
         },
         {
           "ability_bonus": 1.82,
           "additional_officer_slot": false,
           "level": 18,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 72933
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 17
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 389
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 65
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 1711
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 8
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 2437
+              }
+            ],
+            "scrap_time": 2496960
+          },
           "ship_xp": 483000
         },
         {
           "ability_bonus": 1.86,
           "additional_officer_slot": false,
           "level": 19,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 85880
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 18
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 400
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 68
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 1759
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 9
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 2481
+              }
+            ],
+            "scrap_time": 2496960
+          },
           "ship_xp": 565000
         },
         {
           "ability_bonus": 1.9,
           "additional_officer_slot": true,
           "level": 20,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 96084
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 18
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 411
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 71
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 1807
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 9
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 2526
+              }
+            ],
+            "scrap_time": 2496960
+          },
           "ship_xp": 628000
         }
       ],
@@ -1615,16 +2252,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 1390
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 670
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 1390
               }
             ],
             "others": [
@@ -1671,10 +2308,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 21745
+                "rarity": "uncommon",
+                "value": 1600
               },
               {
                 "type": "crystal",
@@ -1683,10 +2320,10 @@
                 "value": 4035
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1600
+                "rarity": "common",
+                "value": 21745
               }
             ],
             "others": [
@@ -1732,10 +2369,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 14605
+                "rarity": "uncommon",
+                "value": 1135
               },
               {
                 "type": "crystal",
@@ -1744,10 +2381,10 @@
                 "value": 2710
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1135
+                "rarity": "common",
+                "value": 14605
               }
             ],
             "others": [
@@ -1791,10 +2428,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 11035
+                "rarity": "uncommon",
+                "value": 905
               },
               {
                 "type": "crystal",
@@ -1803,10 +2440,10 @@
                 "value": 2050
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 905
+                "rarity": "common",
+                "value": 11035
               }
             ],
             "others": [
@@ -1850,16 +2487,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 1390
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 670
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 1390
               }
             ],
             "others": [
@@ -1907,16 +2544,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 1390
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 670
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 1390
               }
             ],
             "others": [
@@ -1964,16 +2601,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 725
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 440
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 725
               }
             ],
             "others": [
@@ -2016,30 +2653,235 @@
           "ability_bonus": 1.95,
           "additional_officer_slot": false,
           "level": 21,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 107030
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 39
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 422
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 146
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3388
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 18
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 4746
+              }
+            ],
+            "scrap_time": 2717280
+          },
           "ship_xp": 695000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 22,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 123690
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 41
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 434
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 153
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3482
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 19
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 4832
+              }
+            ],
+            "scrap_time": 2717280
+          },
           "ship_xp": 798000
         },
         {
           "ability_bonus": 2.05,
           "additional_officer_slot": false,
           "level": 23,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 136500
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 43
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 446
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 161
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3578
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 20
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 4919
+              }
+            ],
+            "scrap_time": 2717280
+          },
           "ship_xp": 875000
         },
         {
           "ability_bonus": 2.1,
           "additional_officer_slot": false,
           "level": 24,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 149935
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 46
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 458
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 168
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3677
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 22
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 5008
+              }
+            ],
+            "scrap_time": 2717280
+          },
           "ship_xp": 955000
         },
         {
           "ability_bonus": 2.15,
           "additional_officer_slot": false,
           "level": 25,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 171114
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 48
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 471
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 176
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3779
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 23
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 5098
+              }
+            ],
+            "scrap_time": 2717280
+          },
           "ship_xp": 1083000
         }
       ],
@@ -2077,16 +2919,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2175
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 950
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 2175
               }
             ],
             "others": [
@@ -2133,10 +2975,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 34500
+                "rarity": "uncommon",
+                "value": 2425
               },
               {
                 "type": "crystal",
@@ -2145,10 +2987,10 @@
                 "value": 6395
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 2425
+                "rarity": "common",
+                "value": 34500
               }
             ],
             "others": [
@@ -2194,10 +3036,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 23110
+                "rarity": "uncommon",
+                "value": 1685
               },
               {
                 "type": "crystal",
@@ -2206,10 +3048,10 @@
                 "value": 4285
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1685
+                "rarity": "common",
+                "value": 23110
               }
             ],
             "others": [
@@ -2253,10 +3095,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "gas",
                 "grade": 4,
-                "rarity": "common",
-                "value": 17415
+                "rarity": "uncommon",
+                "value": 1315
               },
               {
                 "type": "crystal",
@@ -2265,10 +3107,10 @@
                 "value": 3230
               },
               {
-                "type": "gas",
+                "type": "crystal",
                 "grade": 4,
-                "rarity": "uncommon",
-                "value": 1315
+                "rarity": "common",
+                "value": 17415
               }
             ],
             "others": [
@@ -2312,16 +3154,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2175
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 950
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 2175
               }
             ],
             "others": [
@@ -2369,16 +3211,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2175
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 950
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 2175
               }
             ],
             "others": [
@@ -2426,16 +3268,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 1120
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 580
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 1120
               }
             ],
             "others": [
@@ -2478,30 +3320,235 @@
           "ability_bonus": 2.2,
           "additional_officer_slot": false,
           "level": 26,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 186825
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 91
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 484
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 321
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 6662
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 40
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 8786
+              }
+            ],
+            "scrap_time": 2937600
+          },
           "ship_xp": 1175000
         },
         {
           "ability_bonus": 2.25,
           "additional_officer_slot": false,
           "level": 27,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 203200
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 96
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 497
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 336
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 6846
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 43
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 8944
+              }
+            ],
+            "scrap_time": 2937600
+          },
           "ship_xp": 1270000
         },
         {
           "ability_bonus": 2.3,
           "additional_officer_slot": false,
           "level": 28,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 229103
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 101
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 511
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 352
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 7035
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 45
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 9106
+              }
+            ],
+            "scrap_time": 2937600
+          },
           "ship_xp": 1423000
         },
         {
           "ability_bonus": 2.35,
           "additional_officer_slot": false,
           "level": 29,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 247860
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 106
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 525
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 369
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 7230
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 47
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 9270
+              }
+            ],
+            "scrap_time": 2937600
+          },
           "ship_xp": 1530000
         },
         {
           "ability_bonus": 2.4,
           "additional_officer_slot": false,
           "level": 30,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "ship xp",
+                "value": 267320
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 112
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 539
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 387
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 7430
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 50
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 9438
+              }
+            ],
+            "scrap_time": 2937600
+          },
           "ship_xp": 1640000
         }
       ],
@@ -2539,16 +3586,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1280
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1120
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1280
               }
             ],
             "others": [
@@ -2595,6 +3642,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1725
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -2605,12 +3658,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 3010
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1725
               }
             ],
             "others": [
@@ -2656,6 +3703,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1425
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -2666,12 +3719,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 2145
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1425
               }
             ],
             "others": [
@@ -2715,6 +3762,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1270
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -2725,12 +3778,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1710
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1270
               }
             ],
             "others": [
@@ -2774,16 +3821,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1280
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1120
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1280
               }
             ],
             "others": [
@@ -2831,16 +3878,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1280
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1120
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1280
               }
             ],
             "others": [
@@ -2888,16 +3935,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 845
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 970
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 845
               }
             ],
             "others": [
@@ -2940,30 +3987,275 @@
           "ability_bonus": 2.46,
           "additional_officer_slot": false,
           "level": 31,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 11
+              },
+              {
+                "type": "ship xp",
+                "value": 299300
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 194
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 554
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 657
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 14
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 7635
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 53
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 15386
+              }
+            ],
+            "scrap_time": 3157920
+          },
           "ship_xp": 1825000
         },
         {
           "ability_bonus": 2.52,
           "additional_officer_slot": false,
           "level": 32,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 11
+              },
+              {
+                "type": "ship xp",
+                "value": 321420
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 205
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 570
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 688
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 14
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 7846
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 56
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 15664
+              }
+            ],
+            "scrap_time": 3157920
+          },
           "ship_xp": 1948000
         },
         {
           "ability_bonus": 2.58,
           "additional_officer_slot": false,
           "level": 33,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 11
+              },
+              {
+                "type": "ship xp",
+                "value": 344450
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 216
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 585
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 721
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 15
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 8063
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 59
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 15947
+              }
+            ],
+            "scrap_time": 3157920
+          },
           "ship_xp": 2075000
         },
         {
           "ability_bonus": 2.64,
           "additional_officer_slot": false,
           "level": 34,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 11
+              },
+              {
+                "type": "ship xp",
+                "value": 382931
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 228
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 601
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 756
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 15
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 8286
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 62
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 16234
+              }
+            ],
+            "scrap_time": 3157920
+          },
           "ship_xp": 2293000
         },
         {
           "ability_bonus": 2.7,
           "additional_officer_slot": true,
           "level": 35,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 12
+              },
+              {
+                "type": "ship xp",
+                "value": 408744
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 240
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 618
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 792
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 15
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 8515
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 65
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 16527
+              }
+            ],
+            "scrap_time": 3157920
+          },
           "ship_xp": 2433000
         }
       ],
@@ -3001,16 +4293,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1695
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1265
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1695
               }
             ],
             "others": [
@@ -3057,6 +4349,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 2165
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -3067,12 +4365,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 4265
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2165
               }
             ],
             "others": [
@@ -3118,6 +4410,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1715
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -3128,12 +4426,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 2980
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1715
               }
             ],
             "others": [
@@ -3177,6 +4469,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1490
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -3187,12 +4485,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 2335
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1490
               }
             ],
             "others": [
@@ -3236,16 +4528,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1695
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1265
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1695
               }
             ],
             "others": [
@@ -3293,16 +4585,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1695
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1265
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1695
               }
             ],
             "others": [
@@ -3350,16 +4642,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1055
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1040
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1055
               }
             ],
             "others": [
@@ -3402,30 +4694,275 @@
           "ability_bonus": 2.76,
           "additional_officer_slot": false,
           "level": 36,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 26
+              },
+              {
+                "type": "ship xp",
+                "value": 435682
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 400
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 635
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 1286
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 37
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 8751
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 69
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 25946
+              }
+            ],
+            "scrap_time": 3378240
+          },
           "ship_xp": 2578000
         },
         {
           "ability_bonus": 2.82,
           "additional_officer_slot": false,
           "level": 37,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 26
+              },
+              {
+                "type": "ship xp",
+                "value": 481100
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 422
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 653
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 1348
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 38
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 8993
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 72
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 26414
+              }
+            ],
+            "scrap_time": 3378240
+          },
           "ship_xp": 2830000
         },
         {
           "ability_bonus": 2.88,
           "additional_officer_slot": false,
           "level": 38,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 27
+              },
+              {
+                "type": "ship xp",
+                "value": 514280
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 445
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 671
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 1413
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 39
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9241
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 76
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 26891
+              }
+            ],
+            "scrap_time": 3378240
+          },
           "ship_xp": 2990000
         },
         {
           "ability_bonus": 2.94,
           "additional_officer_slot": false,
           "level": 39,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 28
+              },
+              {
+                "type": "ship xp",
+                "value": 548622
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 469
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 689
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 1480
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 40
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9497
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 81
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 27376
+              }
+            ],
+            "scrap_time": 3378240
+          },
           "ship_xp": 3153000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 40,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 29
+              },
+              {
+                "type": "ship xp",
+                "value": 606320
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 495
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 708
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 1551
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 41
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9759
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 85
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 27871
+              }
+            ],
+            "scrap_time": 3378240
+          },
           "ship_xp": 3445000
         }
       ],
@@ -3463,16 +5000,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2240
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1455
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 2240
               }
             ],
             "others": [
@@ -3519,6 +5056,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 2740
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -3529,12 +5072,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 5900
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2740
               }
             ],
             "others": [
@@ -3580,6 +5117,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 2100
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -3590,12 +5133,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 4070
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2100
               }
             ],
             "others": [
@@ -3639,6 +5176,12 @@
           "build_cost": {
             "materials": [
               {
+                "type": "gas",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1775
+              },
+              {
                 "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
@@ -3649,12 +5192,6 @@
                 "grade": 4,
                 "rarity": "rare",
                 "value": 3155
-              },
-              {
-                "type": "gas",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1775
               }
             ],
             "others": [
@@ -3698,16 +5235,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2240
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1455
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 2240
               }
             ],
             "others": [
@@ -3755,16 +5292,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 2240
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1455
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 2240
               }
             ],
             "others": [
@@ -3812,16 +5349,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 1325
-              },
-              {
                 "type": "gas",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 1135
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 1325
               }
             ],
             "others": [
@@ -3864,30 +5401,275 @@
           "ability_bonus": 3.08,
           "additional_officer_slot": false,
           "level": 41,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 48
+              },
+              {
+                "type": "ship xp",
+                "value": 644894
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 794
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 728
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 2446
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 75
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10029
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 90
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 42593
+              }
+            ],
+            "scrap_time": 3635280
+          },
           "ship_xp": 3623000
         },
         {
           "ability_bonus": 3.15,
           "additional_officer_slot": false,
           "level": 42,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 50
+              },
+              {
+                "type": "ship xp",
+                "value": 684900
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 838
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 748
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 2563
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 77
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10307
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 94
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 43361
+              }
+            ],
+            "scrap_time": 3635280
+          },
           "ship_xp": 3805000
         },
         {
           "ability_bonus": 3.23,
           "additional_officer_slot": false,
           "level": 43,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 51
+              },
+              {
+                "type": "ship xp",
+                "value": 753480
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 884
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 769
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 2686
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 79
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10592
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 100
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 44144
+              }
+            ],
+            "scrap_time": 3635280
+          },
           "ship_xp": 4140000
         },
         {
           "ability_bonus": 3.3,
           "additional_officer_slot": false,
           "level": 44,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 52
+              },
+              {
+                "type": "ship xp",
+                "value": 798560
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 932
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 790
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 2815
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 81
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10884
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 105
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 44941
+              }
+            ],
+            "scrap_time": 3635280
+          },
           "ship_xp": 4340000
         },
         {
           "ability_bonus": 3.38,
           "additional_officer_slot": false,
           "level": 45,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 54
+              },
+              {
+                "type": "ship xp",
+                "value": 844998
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 983
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 812
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 2950
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 84
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11185
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 111
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 45752
+              }
+            ],
+            "scrap_time": 3635280
+          },
           "ship_xp": 4543000
         }
       ],
@@ -3939,12 +5721,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 234360
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 6080
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 234360
               }
             ],
             "resources": [
@@ -3983,12 +5765,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 12660
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 2900
               },
@@ -3997,6 +5773,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1605
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 12660
               }
             ],
             "others": [
@@ -4044,12 +5826,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 8575
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 2135
               },
@@ -4058,6 +5834,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1335
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 8575
               }
             ],
             "others": [
@@ -4103,12 +5885,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 6535
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 1755
               },
@@ -4117,6 +5893,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1205
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 6535
               }
             ],
             "others": [
@@ -4174,12 +5956,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 234360
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 6080
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 234360
               }
             ],
             "resources": [
@@ -4231,12 +6013,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 234360
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 6080
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 234360
               }
             ],
             "resources": [
@@ -4288,12 +6070,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 117180
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 4545
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 117180
               }
             ],
             "resources": [
@@ -4326,30 +6108,295 @@
           "ability_bonus": 3.45,
           "additional_officer_slot": false,
           "level": 46,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 56
+              },
+              {
+                "type": "ship xp",
+                "value": 925524
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1038
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 834
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 3092
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 135
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11495
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 117
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 152
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 68566
+              }
+            ],
+            "scrap_time": 4002480
+          },
           "ship_xp": 4923000
         },
         {
           "ability_bonus": 3.53,
           "additional_officer_slot": false,
           "level": 47,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 57
+              },
+              {
+                "type": "ship xp",
+                "value": 977170
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1095
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 857
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 3240
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 139
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11812
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 123
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 159
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 69804
+              }
+            ],
+            "scrap_time": 4002480
+          },
           "ship_xp": 5143000
         },
         {
           "ability_bonus": 3.6,
           "additional_officer_slot": false,
           "level": 48,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 59
+              },
+              {
+                "type": "ship xp",
+                "value": 1031040
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1155
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 881
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 3396
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 143
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 12139
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 130
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 167
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 71064
+              }
+            ],
+            "scrap_time": 4002480
+          },
           "ship_xp": 5370000
         },
         {
           "ability_bonus": 3.68,
           "additional_officer_slot": false,
           "level": 49,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 61
+              },
+              {
+                "type": "ship xp",
+                "value": 1124812
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1218
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 905
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 3559
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 148
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 12475
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 137
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 174
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 72346
+              }
+            ],
+            "scrap_time": 4002480
+          },
           "ship_xp": 5798000
         },
         {
           "ability_bonus": 3.75,
           "additional_officer_slot": false,
           "level": 50,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 62
+              },
+              {
+                "type": "ship xp",
+                "value": 1183840
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1285
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 930
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 3730
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 152
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 12820
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 145
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 183
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 73652
+              }
+            ],
+            "scrap_time": 4002480
+          },
           "ship_xp": 6040000
         }
       ],
@@ -4401,12 +6448,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 324930
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 7270
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 324930
               }
             ],
             "resources": [
@@ -4445,12 +6492,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 17390
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 3785
               },
@@ -4459,6 +6500,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1915
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 17390
               }
             ],
             "others": [
@@ -4506,12 +6553,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 11730
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 2730
               },
@@ -4520,6 +6561,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1545
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 11730
               }
             ],
             "others": [
@@ -4565,12 +6612,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 8900
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 2200
               },
@@ -4579,6 +6620,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1360
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 8900
               }
             ],
             "others": [
@@ -4636,12 +6683,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 324930
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 7270
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 324930
               }
             ],
             "resources": [
@@ -4693,12 +6740,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 324930
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 7270
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 324930
               }
             ],
             "resources": [
@@ -4750,12 +6797,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 162465
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 5140
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 162465
               }
             ],
             "resources": [
@@ -4788,30 +6835,295 @@
           "ability_bonus": 3.85,
           "additional_officer_slot": false,
           "level": 51,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 64
+              },
+              {
+                "type": "ship xp",
+                "value": 1245420
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1356
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 956
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 3909
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 234
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 13174
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 153
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 427
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 108319
+              }
+            ],
+            "scrap_time": 4369680
+          },
           "ship_xp": 6290000
         },
         {
           "ability_bonus": 3.95,
           "additional_officer_slot": false,
           "level": 52,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 66
+              },
+              {
+                "type": "ship xp",
+                "value": 1354000
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1430
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 982
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 4096
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 241
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 13538
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 161
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 447
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 110275
+              }
+            ],
+            "scrap_time": 4369680
+          },
           "ship_xp": 6770000
         },
         {
           "ability_bonus": 4.05,
           "additional_officer_slot": false,
           "level": 53,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 68
+              },
+              {
+                "type": "ship xp",
+                "value": 1425195
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1509
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1009
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 4293
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 248
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 13913
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 170
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 468
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 112265
+              }
+            ],
+            "scrap_time": 4369680
+          },
           "ship_xp": 7038000
         },
         {
           "ability_bonus": 4.15,
           "additional_officer_slot": false,
           "level": 54,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 70
+              },
+              {
+                "type": "ship xp",
+                "value": 1498550
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1592
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1037
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 4499
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 255
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 14297
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 179
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 491
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 114291
+              }
+            ],
+            "scrap_time": 4369680
+          },
           "ship_xp": 7310000
         },
         {
           "ability_bonus": 4.25,
           "additional_officer_slot": true,
           "level": 55,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 72
+              },
+              {
+                "type": "ship xp",
+                "value": 1628460
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1680
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1066
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 4715
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 263
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 14692
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 189
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 514
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 116354
+              }
+            ],
+            "scrap_time": 4369680
+          },
           "ship_xp": 7848000
         }
       ],
@@ -4863,12 +7175,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 443435
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 8820
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 443435
               }
             ],
             "resources": [
@@ -4907,12 +7219,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 23575
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 4945
               },
@@ -4921,6 +7227,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 2320
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 23575
               }
             ],
             "others": [
@@ -4968,12 +7280,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 15855
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 3500
               },
@@ -4982,6 +7288,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1815
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 15855
               }
             ],
             "others": [
@@ -5027,12 +7339,6 @@
               {
                 "type": "crystal",
                 "grade": 4,
-                "rarity": "rare",
-                "value": 11995
-              },
-              {
-                "type": "crystal",
-                "grade": 4,
                 "rarity": "epic",
                 "value": 2775
               },
@@ -5041,6 +7347,12 @@
                 "grade": 4,
                 "rarity": "epic",
                 "value": 1560
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 11995
               }
             ],
             "others": [
@@ -5098,12 +7410,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 443435
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 8820
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 443435
               }
             ],
             "resources": [
@@ -5155,12 +7467,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 443435
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 8820
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 443435
               }
             ],
             "resources": [
@@ -5212,12 +7524,12 @@
             ],
             "others": [
               {
-                "type": "4\u2605 Common Survey Parts",
-                "value": 221715
-              },
-              {
                 "type": "4\u2605 Rare Survey Parts",
                 "value": 5915
+              },
+              {
+                "type": "4\u2605 Common Survey Parts",
+                "value": 221715
               }
             ],
             "resources": [
@@ -5250,30 +7562,295 @@
           "ability_bonus": 4.35,
           "additional_officer_slot": false,
           "level": 56,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 74
+              },
+              {
+                "type": "ship xp",
+                "value": 1710030
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1772
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1095
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 4941
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 392
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 15099
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 199
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 909
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 168208
+              }
+            ],
+            "scrap_time": 4810320
+          },
           "ship_xp": 8143000
         },
         {
           "ability_bonus": 4.5,
           "additional_officer_slot": false,
           "level": 57,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 76
+              },
+              {
+                "type": "ship xp",
+                "value": 1793500
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1869
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1126
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 5178
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 404
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 15516
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 210
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 952
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 171244
+              }
+            ],
+            "scrap_time": 4810320
+          },
           "ship_xp": 8440000
         },
         {
           "ability_bonus": 4.65,
           "additional_officer_slot": false,
           "level": 58,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 78
+              },
+              {
+                "type": "ship xp",
+                "value": 1943170
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1972
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1157
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 5427
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 415
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 15945
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 222
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 998
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 174335
+              }
+            ],
+            "scrap_time": 4810320
+          },
           "ship_xp": 9038000
         },
         {
           "ability_bonus": 4.8,
           "additional_officer_slot": false,
           "level": 59,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 81
+              },
+              {
+                "type": "ship xp",
+                "value": 2034713
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2081
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1189
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 5687
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 428
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 16386
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 234
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 1046
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 177482
+              }
+            ],
+            "scrap_time": 4810320
+          },
           "ship_xp": 9355000
         },
         {
           "ability_bonus": 5.0,
           "additional_officer_slot": false,
           "level": 60,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 1897631
+              },
+              {
+                "type": "dilithium",
+                "value": 222708
+              },
+              {
+                "type": "5\u2605 rare refined gas",
+                "value": 83
+              },
+              {
+                "type": "ship xp",
+                "value": 2200000
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2195
+              },
+              {
+                "type": "5\u2605 common refined gas",
+                "value": 1222
+              },
+              {
+                "type": "5\u2605 uncommon survey parts",
+                "value": 5960
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 440
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 16839
+              },
+              {
+                "type": "5\u2605 uncommon refined gas",
+                "value": 247
+              },
+              {
+                "type": "5\u2605 rare survey parts",
+                "value": 1096
+              },
+              {
+                "type": "5\u2605 common survey parts",
+                "value": 180685
+              }
+            ],
+            "scrap_time": 4810320
+          },
           "ship_xp": 10000000
         }
       ],
