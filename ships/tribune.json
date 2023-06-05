@@ -1,7 +1,7 @@
 {
   "description": "The elegant Romulan Tribune class is the most prominent battleship in the Star Empire fleet as the war rages on with the Federation and the Klingons. Mass produced by Reman construction sites, the birdlike feather-plated wing span of the Tribune is gargantuan in breadth and houses a vast array of weaponry for combat situations.",
   "blueprints": {
-    "cost": 1600,
+    "cost": 0,
     "quantity": 650
   },
   "faction": "romulan",
@@ -19,15 +19,12 @@
     }
   ],
   "scrap_info": {
-    "scrappable": false
+    "required_scrapyard_level": 57,
+    "scrappable": true
   },
   "ship_ability": {
     "title": "Fire Barrage",
-    "description": "As long as the opponent is Burning at the start of a round, the Tribune increases the number of shots of each weapon by 100% for this round.",
-    "buff": {
-      "name": "Burning",
-      "type": "use"
-    },
+    "description": "As long as the opponent is Burning at the start of a round, the Tribune increases the number of shots of each weapon by {value} for this round.",
     "percentage": true
   },
   "ship_class": "battleship",
@@ -210,16 +207,16 @@
       "initial_build_cost": {
         "materials": [
           {
-            "type": "crystal",
-            "grade": 4,
-            "rarity": "common",
-            "value": 3150
-          },
-          {
             "type": "ore",
             "grade": 4,
             "rarity": "common",
             "value": 9000
+          },
+          {
+            "type": "crystal",
+            "grade": 4,
+            "rarity": "common",
+            "value": 3150
           }
         ],
         "others": [],
@@ -239,30 +236,111 @@
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 1,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              }
+            ],
+            "scrap_time": 3834000
+          },
           "ship_xp": 0
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 2,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 1040
+              }
+            ],
+            "scrap_time": 3834000
+          },
           "ship_xp": 8000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 3,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 1680
+              }
+            ],
+            "scrap_time": 3834000
+          },
           "ship_xp": 12000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 4,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 3000
+              }
+            ],
+            "scrap_time": 3834000
+          },
           "ship_xp": 20000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": true,
           "level": 5,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 4640
+              }
+            ],
+            "scrap_time": 3834000
+          },
           "ship_xp": 29000
         }
       ],
@@ -300,16 +378,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 5465
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 9475
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 5465
               }
             ],
             "others": [
@@ -370,16 +448,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 7180
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 14370
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 7180
               }
             ],
             "others": [
@@ -440,16 +518,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 6320
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 11925
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 6320
               }
             ],
             "others": [
@@ -493,16 +571,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 4180
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 5800
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 4180
               }
             ],
             "others": [
@@ -546,16 +624,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 5035
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 8250
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 5035
               }
             ],
             "others": [
@@ -599,16 +677,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 5035
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 8250
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 5035
               }
             ],
             "others": [
@@ -652,16 +730,16 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 4180
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 5800
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 4180
               }
             ],
             "others": [
@@ -700,30 +778,175 @@
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 6,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 6692
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 26102
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 6499
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3554
+              }
+            ],
+            "scrap_time": 4600800
+          },
           "ship_xp": 41000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 7,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 9824
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 26864
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 6679
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3639
+              }
+            ],
+            "scrap_time": 4600800
+          },
           "ship_xp": 59000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 8,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 13245
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 27649
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 6864
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3725
+              }
+            ],
+            "scrap_time": 4600800
+          },
           "ship_xp": 78000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 9,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 17320
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 28457
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 7053
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3814
+              }
+            ],
+            "scrap_time": 4600800
+          },
           "ship_xp": 100000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": true,
           "level": 10,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "ship xp",
+                "value": 23114
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 29288
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 7249
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 3904
+              }
+            ],
+            "scrap_time": 4600800
+          },
           "ship_xp": 130000
         }
       ],
@@ -761,10 +984,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 3840
+                "value": 7530
               },
               {
                 "type": "ore",
@@ -773,10 +996,10 @@
                 "value": 17125
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 7530
+                "value": 3840
               }
             ],
             "others": [
@@ -837,10 +1060,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 5500
+                "value": 12270
               },
               {
                 "type": "ore",
@@ -849,10 +1072,10 @@
                 "value": 27125
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 12270
+                "value": 5500
               }
             ],
             "others": [
@@ -913,10 +1136,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 4670
+                "value": 9900
               },
               {
                 "type": "ore",
@@ -925,10 +1148,10 @@
                 "value": 22125
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 9900
+                "value": 4670
               }
             ],
             "others": [
@@ -972,26 +1195,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 9455
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 9630
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 9455
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 47320
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 5735
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 47320
               }
             ],
             "resources": [
@@ -1029,26 +1252,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 13830
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 14625
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 13830
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 78865
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 9110
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 78865
               }
             ],
             "resources": [
@@ -1086,26 +1309,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 13830
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 14625
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 13830
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 78865
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 9110
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 78865
               }
             ],
             "resources": [
@@ -1143,26 +1366,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "common",
-                "value": 9455
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "common",
                 "value": 9630
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "common",
+                "value": 9455
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 47320
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 5735
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 47320
               }
             ],
             "resources": [
@@ -1195,30 +1418,235 @@
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 11,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 2610
+              },
+              {
+                "type": "ship xp",
+                "value": 28662
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 165
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 418
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 91692
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 20847
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 8975
+              }
+            ],
+            "scrap_time": 5060880
+          },
           "ship_xp": 158000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 12,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 2659
+              },
+              {
+                "type": "ship xp",
+                "value": 35150
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 168
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 423
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 94371
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 21423
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9188
+              }
+            ],
+            "scrap_time": 5060880
+          },
           "ship_xp": 190000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 13,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 2709
+              },
+              {
+                "type": "ship xp",
+                "value": 44345
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 170
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 428
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 97128
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 22016
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9406
+              }
+            ],
+            "scrap_time": 5060880
+          },
           "ship_xp": 235000
         },
         {
           "ability_bonus": 1.0,
           "additional_officer_slot": false,
           "level": 14,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 2760
+              },
+              {
+                "type": "ship xp",
+                "value": 52938
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 173
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 433
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 99966
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 22624
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9630
+              }
+            ],
+            "scrap_time": 5060880
+          },
           "ship_xp": 275000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 15,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 2812
+              },
+              {
+                "type": "ship xp",
+                "value": 62424
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 175
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 438
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 102887
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 23250
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 9859
+              }
+            ],
+            "scrap_time": 5060880
+          },
           "ship_xp": 318000
         }
       ],
@@ -1256,10 +1684,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 3865
+                "value": 7605
               },
               {
                 "type": "ore",
@@ -1268,10 +1696,10 @@
                 "value": 44215
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 7605
+                "value": 3865
               }
             ],
             "others": [
@@ -1332,10 +1760,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 5540
+                "value": 12390
               },
               {
                 "type": "ore",
@@ -1344,10 +1772,10 @@
                 "value": 72270
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 12390
+                "value": 5540
               }
             ],
             "others": [
@@ -1408,10 +1836,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 4700
+                "value": 10000
               },
               {
                 "type": "ore",
@@ -1420,10 +1848,10 @@
                 "value": 58245
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 10000
+                "value": 4700
               }
             ],
             "others": [
@@ -1467,26 +1895,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2610
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 4015
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 2610
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 79670
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 9195
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 79670
               }
             ],
             "resources": [
@@ -1524,26 +1952,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 3445
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 6405
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 3445
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 132780
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 14875
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 132780
               }
             ],
             "resources": [
@@ -1581,26 +2009,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 3445
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 6405
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 3445
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 132780
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 14875
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 132780
               }
             ],
             "resources": [
@@ -1638,26 +2066,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 2610
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 4015
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 2610
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 79670
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 9195
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 79670
               }
             ],
             "resources": [
@@ -1690,30 +2118,235 @@
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 16,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 7559
+              },
+              {
+                "type": "ship xp",
+                "value": 75676
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 511
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 1200
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 225566
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 47247
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10093
+              }
+            ],
+            "scrap_time": 5566320
+          },
           "ship_xp": 378000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 17,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 7701
+              },
+              {
+                "type": "ship xp",
+                "value": 87806
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 519
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 1214
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 232156
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 48554
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10333
+              }
+            ],
+            "scrap_time": 5566320
+          },
           "ship_xp": 430000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 18,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 7845
+              },
+              {
+                "type": "ship xp",
+                "value": 100609
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 527
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 1228
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 238938
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 49897
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10579
+              }
+            ],
+            "scrap_time": 5566320
+          },
           "ship_xp": 483000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 19,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 7993
+              },
+              {
+                "type": "ship xp",
+                "value": 120063
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 535
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 1243
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 245919
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 51277
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 10830
+              }
+            ],
+            "scrap_time": 5566320
+          },
           "ship_xp": 565000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": true,
           "level": 20,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 8143
+              },
+              {
+                "type": "ship xp",
+                "value": 136088
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 543
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 1258
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 253104
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 52695
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11088
+              }
+            ],
+            "scrap_time": 5566320
+          },
           "ship_xp": 628000
         }
       ],
@@ -1751,10 +2384,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 5315
+                "value": 11755
               },
               {
                 "type": "ore",
@@ -1763,10 +2396,10 @@
                 "value": 68580
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 11755
+                "value": 5315
               }
             ],
             "others": [
@@ -1827,10 +2460,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 7960
+                "value": 19305
               },
               {
                 "type": "ore",
@@ -1839,10 +2472,10 @@
                 "value": 112885
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 19305
+                "value": 7960
               }
             ],
             "others": [
@@ -1903,10 +2536,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 6640
+                "value": 15530
               },
               {
                 "type": "ore",
@@ -1915,10 +2548,10 @@
                 "value": 90735
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 15530
+                "value": 6640
               }
             ],
             "others": [
@@ -1962,26 +2595,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 3335
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 6090
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 3335
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 125795
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 14120
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 125795
               }
             ],
             "resources": [
@@ -2019,26 +2652,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 4655
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 9865
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 4655
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 209660
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 23080
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 209660
               }
             ],
             "resources": [
@@ -2076,26 +2709,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 4655
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 9865
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 4655
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 209660
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 23080
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 209660
               }
             ],
             "resources": [
@@ -2133,26 +2766,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 3335
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 6090
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 3335
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 125795
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 14120
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 125795
               }
             ],
             "resources": [
@@ -2185,30 +2818,235 @@
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 21,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 16307
+              },
+              {
+                "type": "ship xp",
+                "value": 151371
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1044
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 2512
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 478725
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 95851
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11352
+              }
+            ],
+            "scrap_time": 6123600
+          },
           "ship_xp": 695000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 22,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 16613
+              },
+              {
+                "type": "ship xp",
+                "value": 174683
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1060
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 2542
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 492711
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 98501
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11621
+              }
+            ],
+            "scrap_time": 6123600
+          },
           "ship_xp": 798000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 23,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 16926
+              },
+              {
+                "type": "ship xp",
+                "value": 192500
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1077
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 2572
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 507106
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 101225
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 11898
+              }
+            ],
+            "scrap_time": 6123600
+          },
           "ship_xp": 875000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 24,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 17244
+              },
+              {
+                "type": "ship xp",
+                "value": 211151
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1094
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 2603
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 521922
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 104025
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 12181
+              }
+            ],
+            "scrap_time": 6123600
+          },
           "ship_xp": 955000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 25,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 17568
+              },
+              {
+                "type": "ship xp",
+                "value": 240643
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1111
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 2633
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 537170
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 106901
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 12470
+              }
+            ],
+            "scrap_time": 6123600
+          },
           "ship_xp": 1083000
         }
       ],
@@ -2246,10 +3084,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 7260
+                "value": 17310
               },
               {
                 "type": "ore",
@@ -2258,10 +3096,10 @@
                 "value": 101160
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 17310
+                "value": 7260
               }
             ],
             "others": [
@@ -2322,10 +3160,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 11200
+                "value": 28565
               },
               {
                 "type": "ore",
@@ -2334,10 +3172,10 @@
                 "value": 167185
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 28565
+                "value": 11200
               }
             ],
             "others": [
@@ -2398,10 +3236,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 9230
+                "value": 22935
               },
               {
                 "type": "ore",
@@ -2410,10 +3248,10 @@
                 "value": 134170
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "uncommon",
-                "value": 22935
+                "value": 9230
               }
             ],
             "others": [
@@ -2457,26 +3295,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 4305
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 8865
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 4305
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 187470
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 20710
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 187470
               }
             ],
             "resources": [
@@ -2514,26 +3352,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 6275
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 14495
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 6275
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 312450
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 34070
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 312450
               }
             ],
             "resources": [
@@ -2571,26 +3409,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 6275
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 14495
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 6275
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 312450
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 34070
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 312450
               }
             ],
             "resources": [
@@ -2628,26 +3466,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "uncommon",
-                "value": 4305
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "uncommon",
                 "value": 8865
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "uncommon",
+                "value": 4305
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 187470
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 20710
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 187470
               }
             ],
             "resources": [
@@ -2680,30 +3518,235 @@
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 26,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 30891
+              },
+              {
+                "type": "ship xp",
+                "value": 262378
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1852
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 4600
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 928447
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 180531
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 12767
+              }
+            ],
+            "scrap_time": 6737040
+          },
           "ship_xp": 1175000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 27,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 31472
+              },
+              {
+                "type": "ship xp",
+                "value": 284988
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1881
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 4654
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 955572
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 185523
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 13070
+              }
+            ],
+            "scrap_time": 6737040
+          },
           "ship_xp": 1270000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 28,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 32064
+              },
+              {
+                "type": "ship xp",
+                "value": 321029
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1911
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 4709
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 983490
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 190654
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 13381
+              }
+            ],
+            "scrap_time": 6737040
+          },
           "ship_xp": 1423000
         },
         {
           "ability_bonus": 2.0,
           "additional_officer_slot": false,
           "level": 29,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 32667
+              },
+              {
+                "type": "ship xp",
+                "value": 346851
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1940
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 4765
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1012224
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 195926
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 13699
+              }
+            ],
+            "scrap_time": 6737040
+          },
           "ship_xp": 1530000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": true,
           "level": 30,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 33281
+              },
+              {
+                "type": "ship xp",
+                "value": 373592
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 1971
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 4821
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1041797
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 201344
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 14025
+              }
+            ],
+            "scrap_time": 6737040
+          },
           "ship_xp": 1640000
         }
       ],
@@ -2741,10 +3784,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 7590
+                "value": 9635
               },
               {
                 "type": "ore",
@@ -2753,10 +3796,10 @@
                 "value": 42250
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 9635
+                "value": 7590
               }
             ],
             "others": [
@@ -2817,10 +3860,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 9230
+                "value": 14320
               },
               {
                 "type": "ore",
@@ -2829,10 +3872,10 @@
                 "value": 70130
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 14320
+                "value": 9230
               }
             ],
             "others": [
@@ -2893,10 +3936,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 8410
+                "value": 11980
               },
               {
                 "type": "ore",
@@ -2905,10 +3948,10 @@
                 "value": 56190
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 11980
+                "value": 8410
               }
             ],
             "others": [
@@ -2952,26 +3995,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 6360
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 6115
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 6360
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 271660
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 29710
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 271660
               }
             ],
             "resources": [
@@ -3009,26 +4052,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 7180
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 8460
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 7180
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 452770
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 49065
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 452770
               }
             ],
             "resources": [
@@ -3066,26 +4109,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 7180
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 8460
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 7180
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 452770
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 49065
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 452770
               }
             ],
             "resources": [
@@ -3123,26 +4166,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 6360
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 6115
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 6360
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 271660
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 29710
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 271660
               }
             ],
             "resources": [
@@ -3175,30 +4218,275 @@
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 31,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 54461
+              },
+              {
+                "type": "ship xp",
+                "value": 417925
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2002
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 7872
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1700776
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 206912
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 1059
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 14358
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 653
+              }
+            ],
+            "scrap_time": 7408800
+          },
           "ship_xp": 1825000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 32,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 55484
+              },
+              {
+                "type": "ship xp",
+                "value": 448235
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2033
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 7966
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1750466
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 212634
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 1077
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 14699
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 668
+              }
+            ],
+            "scrap_time": 7408800
+          },
           "ship_xp": 1948000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 33,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 56528
+              },
+              {
+                "type": "ship xp",
+                "value": 479948
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2065
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 8060
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1801608
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 218514
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 1094
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 15049
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 684
+              }
+            ],
+            "scrap_time": 7408800
+          },
           "ship_xp": 2075000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 34,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 57590
+              },
+              {
+                "type": "ship xp",
+                "value": 532894
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2097
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 8155
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1854243
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 224557
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 1112
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 15407
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 701
+              }
+            ],
+            "scrap_time": 7408800
+          },
           "ship_xp": 2293000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 35,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 58673
+              },
+              {
+                "type": "ship xp",
+                "value": 568349
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2130
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 8251
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 1908417
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 230767
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 1130
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 15773
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 717
+              }
+            ],
+            "scrap_time": 7408800
+          },
           "ship_xp": 2433000
         }
       ],
@@ -3236,10 +4524,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 8680
+                "value": 12745
               },
               {
                 "type": "ore",
@@ -3248,10 +4536,10 @@
                 "value": 60715
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 12745
+                "value": 8680
               }
             ],
             "others": [
@@ -3312,10 +4600,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 11045
+                "value": 19505
               },
               {
                 "type": "ore",
@@ -3324,10 +4612,10 @@
                 "value": 100910
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 19505
+                "value": 11045
               }
             ],
             "others": [
@@ -3388,10 +4676,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 9865
+                "value": 16125
               },
               {
                 "type": "ore",
@@ -3400,10 +4688,10 @@
                 "value": 80815
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 16125
+                "value": 9865
               }
             ],
             "others": [
@@ -3447,26 +4735,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 6905
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 7670
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 6905
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 391940
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 42535
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 391940
               }
             ],
             "resources": [
@@ -3504,26 +4792,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 8090
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 11055
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 8090
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 653230
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 70440
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 653230
               }
             ],
             "resources": [
@@ -3561,26 +4849,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 8090
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 11055
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 8090
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 653230
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 70440
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 653230
               }
             ],
             "resources": [
@@ -3618,26 +4906,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 6905
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 7670
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 6905
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 391940
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 42535
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 391940
               }
             ],
             "resources": [
@@ -3670,30 +4958,275 @@
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 36,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 92182
+              },
+              {
+                "type": "ship xp",
+                "value": 605057
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2163
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 12916
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 3011440
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 237148
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 2456
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 16148
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 1702
+              }
+            ],
+            "scrap_time": 8149680
+          },
           "ship_xp": 2578000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 37,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 93915
+              },
+              {
+                "type": "ship xp",
+                "value": 667597
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2197
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 13069
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 3099422
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 243706
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 2496
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 16532
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 1742
+              }
+            ],
+            "scrap_time": 8149680
+          },
           "ship_xp": 2830000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 38,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 95681
+              },
+              {
+                "type": "ship xp",
+                "value": 708929
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2231
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 13223
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 3189975
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 250446
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 2537
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 16925
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 1784
+              }
+            ],
+            "scrap_time": 8149680
+          },
           "ship_xp": 2990000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 39,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 97480
+              },
+              {
+                "type": "ship xp",
+                "value": 751360
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2266
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 13380
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 3283173
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 257372
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 2579
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 17327
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 1826
+              }
+            ],
+            "scrap_time": 8149680
+          },
           "ship_xp": 3153000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": true,
           "level": 40,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 99312
+              },
+              {
+                "type": "ship xp",
+                "value": 825078
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2302
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 13538
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 3379095
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 264489
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 2621
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 17739
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 1870
+              }
+            ],
+            "scrap_time": 8149680
+          },
           "ship_xp": 3445000
         }
       ],
@@ -3731,10 +5264,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 10120
+                "value": 16865
               },
               {
                 "type": "ore",
@@ -3743,10 +5276,10 @@
                 "value": 85215
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 16865
+                "value": 10120
               }
             ],
             "others": [
@@ -3807,10 +5340,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 13450
+                "value": 26375
               },
               {
                 "type": "ore",
@@ -3819,10 +5352,10 @@
                 "value": 141740
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 26375
+                "value": 13450
               }
             ],
             "others": [
@@ -3883,10 +5416,10 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
+                "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 11785
+                "value": 21620
               },
               {
                 "type": "ore",
@@ -3895,10 +5428,10 @@
                 "value": 113480
               },
               {
-                "type": "ore",
+                "type": "crystal",
                 "grade": 4,
                 "rarity": "rare",
-                "value": 21620
+                "value": 11785
               }
             ],
             "others": [
@@ -3942,26 +5475,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 7625
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 9735
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 7625
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 551195
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 59545
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 551195
               }
             ],
             "resources": [
@@ -3999,26 +5532,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 9290
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 14490
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 9290
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 918660
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 98790
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 918660
               }
             ],
             "resources": [
@@ -4056,26 +5589,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 9290
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 14490
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 9290
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 918660
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 98790
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 918660
               }
             ],
             "resources": [
@@ -4113,26 +5646,26 @@
           "build_cost": {
             "materials": [
               {
-                "type": "crystal",
-                "grade": 4,
-                "rarity": "rare",
-                "value": 7625
-              },
-              {
                 "type": "ore",
                 "grade": 4,
                 "rarity": "rare",
                 "value": 9735
+              },
+              {
+                "type": "crystal",
+                "grade": 4,
+                "rarity": "rare",
+                "value": 7625
               }
             ],
             "others": [
               {
-                "type": "4\u2605 Common Battleship Parts",
-                "value": 551195
-              },
-              {
                 "type": "4\u2605 Uncommon Battleship Parts",
                 "value": 59545
+              },
+              {
+                "type": "4\u2605 Common Battleship Parts",
+                "value": 551195
               }
             ],
             "resources": [
@@ -4165,30 +5698,275 @@
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 41,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 151081
+              },
+              {
+                "type": "ship xp",
+                "value": 872057
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2338
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 20499
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 5178714
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 271803
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4310
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 18161
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 3351
+              }
+            ],
+            "scrap_time": 8966160
+          },
           "ship_xp": 3623000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 42,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 153921
+              },
+              {
+                "type": "ship xp",
+                "value": 920430
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2374
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 20742
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 5330015
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 279320
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4380
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 18593
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 3430
+              }
+            ],
+            "scrap_time": 8966160
+          },
           "ship_xp": 3805000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 43,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 156815
+              },
+              {
+                "type": "ship xp",
+                "value": 1006434
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2412
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 20987
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 5485736
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 287044
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4452
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 19035
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 3512
+              }
+            ],
+            "scrap_time": 8966160
+          },
           "ship_xp": 4140000
         },
         {
           "ability_bonus": 3.0,
           "additional_officer_slot": false,
           "level": 44,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 159763
+              },
+              {
+                "type": "ship xp",
+                "value": 1060262
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2449
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 21235
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 5646008
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 294982
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4525
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 19487
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 3595
+              }
+            ],
+            "scrap_time": 8966160
+          },
           "ship_xp": 4340000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": true,
           "level": 45,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 162767
+              },
+              {
+                "type": "ship xp",
+                "value": 1115307
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2488
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 21486
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 5810961
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 303139
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4598
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 19951
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 3681
+              }
+            ],
+            "scrap_time": 8966160
+          },
           "ship_xp": 4543000
         }
       ],
@@ -4660,30 +6438,335 @@
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 46,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 165827
+              },
+              {
+                "type": "ship xp",
+                "value": 1212535
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2527
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 21740
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 18386
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 8721219
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 311522
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4674
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 20425
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 1340
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 1044
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 5772
+              }
+            ],
+            "scrap_time": 10584000
+          },
           "ship_xp": 4923000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 47,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 168944
+              },
+              {
+                "type": "ship xp",
+                "value": 1270321
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2566
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 21997
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 18732
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 8976018
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 320137
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4750
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 20910
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 1361
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 1061
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 5909
+              }
+            ],
+            "scrap_time": 10584000
+          },
           "ship_xp": 5143000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 48,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 172120
+              },
+              {
+                "type": "ship xp",
+                "value": 1330149
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2606
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 22257
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 19084
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 9238261
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 328990
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4827
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 21408
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 1382
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 1077
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 6049
+              }
+            ],
+            "scrap_time": 10584000
+          },
           "ship_xp": 5370000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 49,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 175356
+              },
+              {
+                "type": "ship xp",
+                "value": 1440803
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2647
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 22520
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 19443
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 9508166
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 338088
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4906
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 21917
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 1404
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 1094
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 6193
+              }
+            ],
+            "scrap_time": 10584000
+          },
           "ship_xp": 5798000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 50,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 178653
+              },
+              {
+                "type": "ship xp",
+                "value": 1503960
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2688
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 22786
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 19808
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 9785957
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 347437
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 4986
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 22438
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 1426
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 1111
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 6341
+              }
+            ],
+            "scrap_time": 10584000
+          },
           "ship_xp": 6040000
         }
       ],
@@ -5155,30 +7238,335 @@
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 51,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 182012
+              },
+              {
+                "type": "ship xp",
+                "value": 1589483
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2730
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 23055
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 45097
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 14518611
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 357045
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5068
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 22971
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 3238
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 2382
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 9605
+              }
+            ],
+            "scrap_time": 11512800
+          },
           "ship_xp": 6290000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 52,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 185433
+              },
+              {
+                "type": "ship xp",
+                "value": 1736505
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2773
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 23328
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 45944
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 14942787
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 366919
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5151
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 23517
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 3288
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 2420
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 9834
+              }
+            ],
+            "scrap_time": 11512800
+          },
           "ship_xp": 6770000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 53,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 188919
+              },
+              {
+                "type": "ship xp",
+                "value": 1832696
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2817
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 23604
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 46808
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 15379355
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 377066
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5235
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 24076
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 3340
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 2458
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 10068
+              }
+            ],
+            "scrap_time": 11512800
+          },
           "ship_xp": 7038000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 54,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 192471
+              },
+              {
+                "type": "ship xp",
+                "value": 1932033
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2861
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 23883
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 47688
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 15828679
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 387493
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5320
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 24649
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 3392
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 2496
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 10307
+              }
+            ],
+            "scrap_time": 11512800
+          },
           "ship_xp": 7310000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": true,
           "level": 55,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 196090
+              },
+              {
+                "type": "ship xp",
+                "value": 2079720
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2905
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 24165
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 48585
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 16291129
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 398209
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5407
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 25235
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 3445
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 2535
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 10552
+              }
+            ],
+            "scrap_time": 11512800
+          },
           "ship_xp": 7848000
         }
       ],
@@ -5650,30 +8038,335 @@
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 56,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 199776
+              },
+              {
+                "type": "ship xp",
+                "value": 2179882
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2951
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 24451
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 83093
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 23682808
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 409221
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5495
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 25835
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 5880
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 4094
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 15471
+              }
+            ],
+            "scrap_time": 12441600
+          },
           "ship_xp": 8143000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 57,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 203532
+              },
+              {
+                "type": "ship xp",
+                "value": 2281332
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 2997
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 24740
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 84655
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 24374725
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 420538
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5585
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 26449
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 5972
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 4158
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 15839
+              }
+            ],
+            "scrap_time": 12441600
+          },
           "ship_xp": 8440000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 58,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 207358
+              },
+              {
+                "type": "ship xp",
+                "value": 2467374
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 3044
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 25032
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 86246
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 25086857
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 432167
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5676
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 27078
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 6065
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 4223
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 16215
+              }
+            ],
+            "scrap_time": 12441600
+          },
           "ship_xp": 9038000
         },
         {
           "ability_bonus": 4.0,
           "additional_officer_slot": false,
           "level": 59,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 211257
+              },
+              {
+                "type": "ship xp",
+                "value": 2580109
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 3092
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 25328
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 87868
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 25819795
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 444118
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5769
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 27721
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 6160
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 4289
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 16601
+              }
+            ],
+            "scrap_time": 12441600
+          },
           "ship_xp": 9355000
         },
         {
           "ability_bonus": 5.0,
           "additional_officer_slot": false,
           "level": 60,
+          "scrap_details": {
+            "rewards": [
+              {
+                "type": "tritanium",
+                "value": 72266948
+              },
+              {
+                "type": "dilithium",
+                "value": 3112571
+              },
+              {
+                "type": "5\u2605 uncommon battleship parts",
+                "value": 215228
+              },
+              {
+                "type": "ship xp",
+                "value": 2772000
+              },
+              {
+                "type": "5\u2605 uncommon refined crystal",
+                "value": 3140
+              },
+              {
+                "type": "5\u2605 uncommon refined ore",
+                "value": 25627
+              },
+              {
+                "type": "5\u2605 rare battleship parts",
+                "value": 89520
+              },
+              {
+                "type": "5\u2605 common battleship parts",
+                "value": 26574146
+              },
+              {
+                "type": "5\u2605 common refined ore",
+                "value": 456400
+              },
+              {
+                "type": "5\u2605 rare refined crystal",
+                "value": 5863
+              },
+              {
+                "type": "5\u2605 common refined crystal",
+                "value": 28381
+              },
+              {
+                "type": "5\u2605 epic refined ore",
+                "value": 6256
+              },
+              {
+                "type": "5\u2605 epic refined crystal",
+                "value": 4356
+              },
+              {
+                "type": "5\u2605 rare refined ore",
+                "value": 16996
+              }
+            ],
+            "scrap_time": 12441600
+          },
           "ship_xp": 10000000
         }
       ],
