@@ -1,16 +1,23 @@
 {
-  "description": "Captain Gabriel Lorca is one of Starfleet\u2019s most decorated officers. During the Federation-Klingon war, Lorca was trusted with the command of the USS Discovery. This put him in a position to lead the conflict from the front lines, and develop highly experimental technologies that could mean life or death for Starfleet.",
+  "description": "Captain Gabriel Lorca is one of Starfleet\u2019s most decorated officers. During the Federation-Klingon war, Lorca was trusted with the command of the <i>USS Discovery.</i> This put him in a position to lead the conflict from the front lines, and develop highly experimental technologies that could mean life or death for Starfleet.",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Manipulation",
       "bonus": "When fighting players, at the start of each round, if the opponent has Hull Breach, Lorca decreases the opponent's Weapon damage by {value} for this turn.",
+      "buff": {
+        "name": "Hull Breach",
+        "type": "use"
+      },
       "percentage": true,
       "value": 1.0
     },
     "officer_ability": {
       "name": "Quick Thinking",
       "bonus": "At the beginning of each round, Lorca has a {value} chance of dealing Hull Breach to the opponent's ship for 2 rounds.",
+      "buff": {
+        "name": "Hull Breach",
+        "type": "apply"
+      },
       "percentage": true
     }
   },

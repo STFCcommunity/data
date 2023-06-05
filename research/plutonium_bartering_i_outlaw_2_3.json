@@ -1,5 +1,5 @@
 {
-  "description": "Improves the base cost efficiency of Common Plutonium for components.",
+  "description": "Improves the cost efficiency of Common Plutonium for components",
   "img_url": "./assets/plutonium_bartering_i_outlaw_2_3.png",
   "levels": [
     {
@@ -54,7 +54,12 @@
       },
       "increased_power": 500,
       "level": 2,
-      "required_by": [],
+      "required_by": [
+        {
+          "name": "Data Storage",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Fighting Dirty",
@@ -185,7 +190,20 @@
       },
       "increased_power": 550,
       "level": 5,
-      "required_by": [],
+      "required_by": [
+        {
+          "name": "Interceptor Bartering",
+          "level": 2
+        },
+        {
+          "name": "Battleship Bartering",
+          "level": 2
+        },
+        {
+          "name": "Explorer Bartering",
+          "level": 2
+        }
+      ],
       "requirements": [
         {
           "name": "Fighting Dirty",
@@ -201,14 +219,14 @@
           {
             "type": "gas",
             "grade": 3,
-            "rarity": "uncommon",
-            "value": 50
+            "rarity": "common",
+            "value": 410
           },
           {
             "type": "gas",
             "grade": 3,
-            "rarity": "common",
-            "value": 410
+            "rarity": "uncommon",
+            "value": 50
           }
         ],
         "others": [],

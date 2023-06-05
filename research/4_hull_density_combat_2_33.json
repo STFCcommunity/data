@@ -1,5 +1,5 @@
 {
-  "description": "Increases base Hull Health for all Grade 4+ ships.",
+  "description": "Increases Hull Health for all Grade 4+ ships.",
   "img_url": "./assets/4_hull_density_combat_2_33.png",
   "levels": [
     {
@@ -9,7 +9,16 @@
       },
       "increased_power": 48000,
       "level": 1,
-      "required_by": [],
+      "required_by": [
+        {
+          "name": "4\u2605 Tactical Explorers",
+          "level": 1
+        },
+        {
+          "name": "4\u2605 Explorer Barriers",
+          "level": 1
+        }
+      ],
       "requirements": [
         {
           "name": "Grade 4 Ship Research",
@@ -66,16 +75,16 @@
       "research_costs": {
         "materials": [
           {
-            "type": "ore",
-            "grade": 4,
-            "rarity": "uncommon",
-            "value": 2500
-          },
-          {
             "type": "gas",
             "grade": 4,
             "rarity": "uncommon",
             "value": 500
+          },
+          {
+            "type": "ore",
+            "grade": 4,
+            "rarity": "uncommon",
+            "value": 2500
           }
         ],
         "others": [],

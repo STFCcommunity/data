@@ -1,16 +1,23 @@
 {
   "description": "James Tiberius Kirk is the Captain of the USS Enterprise, the flagship of the Federation. Kirk was born on January 4th, 2233 aboard a fleeing shuttlecraft during the attack on the USS Kelvin by the time-traveling Romulan vessel, the Narada.\n\nHe joined Starfleet after some persuasion on the part of Captain Christopher Pike and was promoted to First Officer on his first mission aboard. Acting-Captain Spock relinquished command of the USS Enterprise to Kirk in the aftermath of the destruction of the planet Vulcan. Kirk remains the only Starfleet Cadet to ever \"beat\" the Kobayashi Maru simulation test at Starfleet Academy.\n\nHe was instrumental in the capture of the renegade, Khan, and uncovered a conspiracy by Section 31 operatives to provoke the Klingon Empire into open war.",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Leader",
       "bonus": "As long as the ship has Morale, Kirk gives all Officers on the ship a bonus of {value} to all their stats.",
+      "buff": {
+        "name": "Morale",
+        "type": "use"
+      },
       "percentage": true,
       "value": 0.4
     },
     "officer_ability": {
       "name": "Inspirational",
       "bonus": "At the beginning of each round, Kirk has a {value} chance of inspiring Morale to the ship for 2 rounds.",
+      "buff": {
+        "name": "Morale",
+        "type": "apply"
+      },
       "percentage": true
     }
   },

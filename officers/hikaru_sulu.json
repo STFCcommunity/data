@@ -1,16 +1,23 @@
 {
   "description": "Hikaru Sulu is the helmsman of the Enterprise. Sulu's diverse skill set includes command, astrophysics, botany, and fencing; his talents have helped the crew of the Enterprise survive a variety of crises, and he has proved to be impressively intimidating in the chair.",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Do Not Test Me",
       "bonus": "When the ship is getting hit by a Critical Hit, Sulu has a {value} chance of inspiring Morale to the ship for one round.",
+      "buff": {
+        "name": "Morale",
+        "type": "apply"
+      },
       "percentage": true,
       "value": 0.4
     },
     "officer_ability": {
       "name": "Ranking Fire",
       "bonus": "When the ship has Morale, Sulu increases the total damage made by Energy Weapons by {value}.",
+      "buff": {
+        "name": "Morale",
+        "type": "use"
+      },
       "percentage": true
     }
   },

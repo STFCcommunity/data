@@ -1,16 +1,19 @@
 {
   "description": "Gorkon, an accomplished general, is respected and feared by the Klingon Empire's enemies. He is seen as a rising star in Klingon politics, and is expected to take a seat on the High Council within the decade.",
   "ability_info": {
-    "below_decks_ability": null,
     "captain_maneuver": {
       "name": "Quick Victory",
-      "bonus": "Gorkon increases the chances of dealing a Critical Hit by {value} for the first 2 Rounds.",
+      "bonus": "Gorkon increases the chances of dealing a Critical Hit by  {value} for the first 2 Rounds.",
       "percentage": true,
       "value": 0.1
     },
     "officer_ability": {
       "name": "Creating Opportunities",
       "bonus": "When the ship hits the opponent with a Critical Hit, Gorkon has a {value} chance of causing a Hull Breach for three rounds on the opponent's ship.",
+      "buff": {
+        "name": "Hull Breach",
+        "type": "apply"
+      },
       "percentage": true
     }
   },
